@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>Wiktionary</ShortName>
+    <Description>Wiktionary</Description>
+    <Url method="get" type="text/html" template="http://{country}.wiktionary.org/w/index.php?title=Special:Search&amp;search={searchTerms}"/>
+    <Image>http://en.wiktionary.org/favicon.ico</Image>
+</OpenSearchDescription>

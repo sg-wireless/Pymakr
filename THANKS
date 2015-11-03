@@ -1,0 +1,41 @@
+THANKS
+------
+
+Phil Thompson for providing PyQt and QScintilla and pushing me into this
+business some years ago.
+
+Andrew Bushnell of Fluent Inc. for contributing the multithreading debugger
+and a bunch of fixes to enhance the platform independance.
+
+Tobias Rzepka for providing Python2 compatibility for eric6.
+
+Henk Spaay
+Gordon Tyler
+Hans-Peter Jansen
+Ralf Ahlbrink
+Stefan Jaensch
+Martin v. Löwis
+Thorsten Kohnhorst
+Torsten Marek
+Maciek Fijalkowski
+for providing patches to improve eric3/4/5/6.
+
+Alexander Darovsky and Mikhail Terekhov for providing Russian translations.
+Julien Vienne for providing French translations.
+Zdenek Böhm for providing Czech translations.
+Jaime Seuma for providing Spanish translations.
+Serdar Kocdas for providing Turkish translations.
+Xia WeiPeng for providing Chinese translations.
+Gianluca, Leonardo Giordani, Gianpietro Zamolo for providing Italian
+translations.
+Candido Fontes for providing Portugese translations.
+
+Shane Richards for Crystal Icons.
+
+The Kumula Team for the (old Troll based) splash screen.
+Thimo Kraemer for the (new Python based) splash screen and icons.
+
+And all the people who reported bugs and made suggestions.
+
+Thanks,
+Detlev

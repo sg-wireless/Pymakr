@@ -1,0 +1,191 @@
+<ui version="4.0" >
+ <class>EmailDialog</class>
+ <widget class="QDialog" name="EmailDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>547</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Send bug report</string>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2" >
+   <item>
+    <widget class="QSplitter" name="mainSplitter" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QGroupBox" name="messageGroup" >
+      <property name="title" >
+       <string>Message</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout" >
+       <item>
+        <layout class="QHBoxLayout" >
+         <item>
+          <widget class="QLabel" name="textLabel1" >
+           <property name="text" >
+            <string>&amp;Subject:</string>
+           </property>
+           <property name="buddy" >
+            <cstring>subject</cstring>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="subject" >
+           <property name="toolTip" >
+            <string>Enter the subject</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="msgLabel" >
+         <property name="buddy" >
+          <cstring>message</cstring>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="message" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="lineWrapMode" >
+          <enum>QTextEdit::FixedColumnWidth</enum>
+         </property>
+         <property name="lineWrapColumnOrWidth" >
+          <number>70</number>
+         </property>
+         <property name="tabStopWidth" >
+          <number>8</number>
+         </property>
+         <property name="acceptRichText" >
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="attachmentsGroup" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="title" >
+       <string>Attachments</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout" >
+       <item row="0" column="0" >
+        <widget class="QTreeWidget" name="attachments" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="alternatingRowColors" >
+          <bool>true</bool>
+         </property>
+         <property name="rootIsDecorated" >
+          <bool>false</bool>
+         </property>
+         <column>
+          <property name="text" >
+           <string>Name</string>
+          </property>
+         </column>
+         <column>
+          <property name="text" >
+           <string>Type</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item row="0" column="1" >
+        <layout class="QVBoxLayout" >
+         <item>
+          <widget class="QPushButton" name="addButton" >
+           <property name="toolTip" >
+            <string>Press to add an attachment</string>
+           </property>
+           <property name="text" >
+            <string>&amp;Add...</string>
+           </property>
+           <property name="shortcut" >
+            <string>Alt+A</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="deleteButton" >
+           <property name="toolTip" >
+            <string>Delete the selected entry from the list of attachments</string>
+           </property>
+           <property name="text" >
+            <string>&amp;Delete</string>
+           </property>
+           <property name="shortcut" >
+            <string>Alt+D</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType" >
+            <enum>QSizePolicy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0" >
+            <size>
+             <width>20</width>
+             <height>16</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>subject</tabstop>
+  <tabstop>message</tabstop>
+  <tabstop>addButton</tabstop>
+  <tabstop>attachments</tabstop>
+  <tabstop>deleteButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

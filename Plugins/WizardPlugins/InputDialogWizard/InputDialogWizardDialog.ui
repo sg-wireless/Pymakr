@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InputDialogWizardDialog</class>
+ <widget class="QDialog" name="InputDialogWizardDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>501</width>
+    <height>684</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QInputDialog Wizard</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Type</string>
+     </property>
+     <layout class="QHBoxLayout">
+      <item>
+       <widget class="QRadioButton" name="rText">
+        <property name="text">
+         <string>Text</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rInteger">
+        <property name="text">
+         <string>Integer</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rDouble">
+        <property name="text">
+         <string>Double</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rItem">
+        <property name="text">
+         <string>Item</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Result:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="eResultVar">
+     <property name="toolTip">
+      <string>Enter the result variable name</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="TextLabel1">
+     <property name="text">
+      <string>Title</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="eCaption"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="TextLabel2">
+     <property name="text">
+      <string>Label</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="eLabel"/>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="parentGroup">
+     <property name="title">
+      <string>Parent</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="parentSelf">
+        <property name="toolTip">
+         <string>Select &quot;self&quot; as parent</string>
+        </property>
+        <property name="text">
+         <string>self</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QRadioButton" name="parentNone">
+        <property name="toolTip">
+         <string>Select &quot;None&quot; as parent</string>
+        </property>
+        <property name="text">
+         <string>None</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QRadioButton" name="parentOther">
+          <property name="toolTip">
+           <string>Select to enter a parent expression</string>
+          </property>
+          <property name="text">
+           <string>Expression:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="parentEdit">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Enter the parent expression</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Text</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string>Echo Mode</string>
+        </property>
+        <layout class="QHBoxLayout">
+         <item>
+          <widget class="QRadioButton" name="rEchoNormal">
+           <property name="text">
+            <string>Normal</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rEchoNoEcho">
+           <property name="text">
+            <string>No Echo</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rEchoPassword">
+           <property name="text">
+            <string>Password</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="TextLabel3">
+        <property name="text">
+         <string>Default</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="eTextDefault"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>Integer</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="1" column="3">
+       <widget class="QSpinBox" name="sIntStep">
+        <property name="minimum">
+         <number>-2147483647</number>
+        </property>
+        <property name="maximum">
+         <number>2147483647</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QSpinBox" name="sIntTo">
+        <property name="minimum">
+         <number>-2147483647</number>
+        </property>
+        <property name="maximum">
+         <number>2147483647</number>
+        </property>
+        <property name="value">
+         <number>2147483647</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="sIntFrom">
+        <property name="minimum">
+         <number>-2147483647</number>
+        </property>
+        <property name="maximum">
+         <number>2147483647</number>
+        </property>
+        <property name="value">
+         <number>-2147483647</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QSpinBox" name="sIntDefault">
+        <property name="minimum">
+         <number>-2147483647</number>
+        </property>
+        <property name="maximum">
+         <number>2147483647</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="TextLabel4_4">
+        <property name="text">
+         <string>Step</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="TextLabel4_3">
+        <property name="text">
+         <string>To</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="TextLabel4_2">
+        <property name="text">
+         <string>From</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="TextLabel4">
+        <property name="text">
+         <string>Default</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>Double</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="1" column="3">
+       <widget class="QSpinBox" name="sDoubleDecimals">
+        <property name="minimum">
+         <number>-2147483647</number>
+        </property>
+        <property name="maximum">
+         <number>2147483647</number>
+        </property>
+        <property name="value">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="eDoubleTo">
+        <property name="text">
+         <string>2147483647</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="eDoubleFrom">
+        <property name="text">
+         <string>-2147483647</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="eDoubleDefault">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="TextLabel5">
+        <property name="text">
+         <string>Default</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="TextLabel6">
+        <property name="text">
+         <string>From</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="TextLabel7">
+        <property name="text">
+         <string>To</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="TextLabel8">
+        <property name="text">
+         <string>Decimals</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>Item</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="1" column="2">
+       <widget class="QCheckBox" name="cEditable">
+        <property name="text">
+         <string>Editable</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="sCurrentItem"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="eVariable"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="TextLabel10">
+        <property name="text">
+         <string>Current Item</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="TextLabel9">
+        <property name="text">
+         <string>String List Variable</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>rText</tabstop>
+  <tabstop>rInteger</tabstop>
+  <tabstop>rDouble</tabstop>
+  <tabstop>rItem</tabstop>
+  <tabstop>eResultVar</tabstop>
+  <tabstop>eCaption</tabstop>
+  <tabstop>eLabel</tabstop>
+  <tabstop>parentSelf</tabstop>
+  <tabstop>parentNone</tabstop>
+  <tabstop>parentOther</tabstop>
+  <tabstop>parentEdit</tabstop>
+  <tabstop>rEchoNormal</tabstop>
+  <tabstop>rEchoNoEcho</tabstop>
+  <tabstop>rEchoPassword</tabstop>
+  <tabstop>eTextDefault</tabstop>
+  <tabstop>sIntDefault</tabstop>
+  <tabstop>sIntFrom</tabstop>
+  <tabstop>sIntTo</tabstop>
+  <tabstop>sIntStep</tabstop>
+  <tabstop>eDoubleDefault</tabstop>
+  <tabstop>eDoubleFrom</tabstop>
+  <tabstop>eDoubleTo</tabstop>
+  <tabstop>sDoubleDecimals</tabstop>
+  <tabstop>eVariable</tabstop>
+  <tabstop>sCurrentItem</tabstop>
+  <tabstop>cEditable</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>rText</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_2</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>39</x>
+     <y>411</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rInteger</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_4</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>247</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>178</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rDouble</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_5</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>364</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>283</x>
+     <y>567</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rItem</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_6</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>481</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>448</x>
+     <y>645</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>InputDialogWizardDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>34</x>
+     <y>674</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>25</x>
+     <y>622</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>InputDialogWizardDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>674</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>111</x>
+     <y>621</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>parentOther</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>parentEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>81</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>124</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

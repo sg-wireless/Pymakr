@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditorAPIsPage</class>
+ <widget class="QWidget" name="EditorAPIsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>462</width>
+    <height>422</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QLabel" name="headerLabel">
+     <property name="text">
+      <string>&lt;b&gt;Configure API files&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line5">
+     <property name="frameShape">
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="apiAutoPrepareCheckBox">
+     <property name="toolTip">
+      <string>Select to compile the APIs automatically upon loading</string>
+     </property>
+     <property name="text">
+      <string>Compile APIs automatically</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QLabel" name="TextLabel1_3_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Language:</string>
+       </property>
+       <property name="buddy">
+        <cstring></cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="apiLanguageComboBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Select the language to be configured.</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="apiGroup">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>APIs</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="0" column="0" colspan="4">
+       <widget class="QListWidget" name="apiList">
+        <property name="toolTip">
+         <string>List of API files</string>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="deleteApiFileButton">
+        <property name="toolTip">
+         <string>Press to delete the selected file from the list</string>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="addApiFileButton">
+        <property name="toolTip">
+         <string>Press to add the entered file to the list</string>
+        </property>
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="apiFileEdit">
+        <property name="toolTip">
+         <string>Enter a file to be added</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="3">
+       <widget class="QPushButton" name="addInstalledApiFileButton">
+        <property name="toolTip">
+         <string>Press to select an API file from the list of installed API files</string>
+        </property>
+        <property name="text">
+         <string>Add from installed APIs</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" colspan="3">
+       <widget class="QPushButton" name="addPluginApiFileButton">
+        <property name="toolTip">
+         <string>Press to select an API file from the list of API files installed by plugins</string>
+        </property>
+        <property name="text">
+         <string>Add from Plugin APIs</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="4">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <widget class="QPushButton" name="prepareApiButton">
+        <property name="toolTip">
+         <string>Press to compile the selected APIs definition</string>
+        </property>
+        <property name="text">
+         <string>Compile APIs</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2" colspan="2">
+       <widget class="QProgressBar" name="prepareApiProgressBar">
+        <property name="value">
+         <number>0</number>
+        </property>
+        <property name="textVisible">
+         <bool>false</bool>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QToolButton" name="apiFileButton">
+        <property name="toolTip">
+         <string>Press to select an API file via a selection dialog</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>apiAutoPrepareCheckBox</tabstop>
+  <tabstop>apiLanguageComboBox</tabstop>
+  <tabstop>apiList</tabstop>
+  <tabstop>deleteApiFileButton</tabstop>
+  <tabstop>apiFileEdit</tabstop>
+  <tabstop>apiFileButton</tabstop>
+  <tabstop>addApiFileButton</tabstop>
+  <tabstop>addInstalledApiFileButton</tabstop>
+  <tabstop>addPluginApiFileButton</tabstop>
+  <tabstop>prepareApiButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

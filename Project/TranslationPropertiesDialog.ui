@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TranslationPropertiesDialog</class>
+ <widget class="QDialog" name="TranslationPropertiesDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>592</width>
+    <height>543</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Translation Properties</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="_2">
+   <item>
+    <layout class="QGridLayout" name="_3">
+     <item row="3" column="0">
+      <widget class="QLineEdit" name="transBinPathEdit">
+       <property name="toolTip">
+        <string>Enter the path for the binary translation files (*.qm)</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Binary Translations Path&lt;/b&gt;
+&lt;p&gt;Enter the directory for the binary translation files (*.qm). Leave it empty to store them together with the *.ts files.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="2">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>&amp;Binary Translations Path:</string>
+       </property>
+       <property name="buddy">
+        <cstring>transBinPathEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLineEdit" name="transPatternEdit">
+       <property name="toolTip">
+        <string>Enter the path pattern for the translation files</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Translation Pattern&lt;/b&gt;
+&lt;p&gt;Enter the path pattern for the translation files using %language% at the place of the language code (e.g. /path_to_eric/i18n/eric6_%language%.ts). This will result in translation files like /path_to_eric/i18n/eric6_de.ts.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="textLabel1_3">
+       <property name="text">
+        <string>&amp;Translation Path Pattern:
+(Use '%language%' where the language code should be inserted, e.g. i18n/eric6_%language%.ts)</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="buddy">
+        <cstring>transPatternEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QToolButton" name="transPatternButton">
+       <property name="toolTip">
+        <string>Show directory selection dialog</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Translation Pattern&lt;/b&gt;
+&lt;p&gt;Select a translation file via a file selection dialog.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QToolButton" name="transBinPathButton">
+       <property name="toolTip">
+        <string>Show directory selection dialog</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Binary Translations Path&lt;/b&gt;
+&lt;p&gt;Select the directory for the binary translations via a directory selection dialog.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="exceptionsGroup">
+     <property name="title">
+      <string>Exclude from translation</string>
+     </property>
+     <layout class="QGridLayout" name="_4">
+      <item row="2" column="3">
+       <widget class="QPushButton" name="exceptDirButton">
+        <property name="toolTip">
+         <string>Press to select a directory via a selection dialog</string>
+        </property>
+        <property name="text">
+         <string>Select d&amp;irectory...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="exceptFileButton">
+        <property name="toolTip">
+         <string>Press to select a file via a selection dialog</string>
+        </property>
+        <property name="text">
+         <string>Select &amp;file...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="addExceptionButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Press to add the entered path or file to the list</string>
+        </property>
+        <property name="text">
+         <string>&amp;Add</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="deleteExceptionButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Press to delete the selected entry from the list</string>
+        </property>
+        <property name="text">
+         <string>&amp;Delete</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="4">
+       <widget class="QLineEdit" name="exceptionEdit">
+        <property name="toolTip">
+         <string>Enter a path or file to be added</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="4">
+       <widget class="QListWidget" name="exceptionsList">
+        <property name="toolTip">
+         <string>List of paths or files to excude from translation</string>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>transPatternEdit</tabstop>
+  <tabstop>transPatternButton</tabstop>
+  <tabstop>transBinPathEdit</tabstop>
+  <tabstop>transBinPathButton</tabstop>
+  <tabstop>exceptionsList</tabstop>
+  <tabstop>exceptionEdit</tabstop>
+  <tabstop>deleteExceptionButton</tabstop>
+  <tabstop>addExceptionButton</tabstop>
+  <tabstop>exceptFileButton</tabstop>
+  <tabstop>exceptDirButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>TranslationPropertiesDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>523</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>39</x>
+     <y>543</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>TranslationPropertiesDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>110</x>
+     <y>530</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>111</x>
+     <y>543</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

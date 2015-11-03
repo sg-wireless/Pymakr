@@ -1,0 +1,111 @@
+<ui version="4.0" >
+ <class>EditorCalltipsQScintillaPage</class>
+ <widget class="QWidget" name="EditorCalltipsQScintillaPage" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>406</width>
+    <height>369</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QLabel" name="headerLabel" >
+     <property name="text" >
+      <string>&lt;b>Configure QScintilla Calltips&lt;/b></string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line18" >
+     <property name="frameShape" >
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox" >
+     <property name="title" >
+      <string>Context display options</string>
+     </property>
+     <layout class="QVBoxLayout" >
+      <item>
+       <widget class="QRadioButton" name="ctNoContextButton" >
+        <property name="toolTip" >
+         <string>Select to display calltips without a context</string>
+        </property>
+        <property name="text" >
+         <string>Don't show context information</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="ctNoAutoCompletionButton" >
+        <property name="toolTip" >
+         <string>Select to display calltips with a context only if the user hasn't already implicitly identified the context using autocompletion</string>
+        </property>
+        <property name="text" >
+         <string>Show context information, if no prior autocompletion</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="ctContextButton" >
+        <property name="toolTip" >
+         <string>Select to display calltips with a context</string>
+        </property>
+        <property name="text" >
+         <string>Show context information</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line" >
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label" >
+        <property name="text" >
+         <string>A context is any scope (e.g. a C++ namespace or a Python module) prior to the function/method name.</string>
+        </property>
+        <property name="wordWrap" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>388</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>ctNoContextButton</tabstop>
+  <tabstop>ctNoAutoCompletionButton</tabstop>
+  <tabstop>ctContextButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

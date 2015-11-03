@@ -1,0 +1,161 @@
+<ui version="4.0" >
+ <class>PyRegExpWizardCharactersDialog</class>
+ <widget class="QDialog" name="PyRegExpWizardCharactersDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Editor for character sets</string>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QCheckBox" name="negativeCheckBox" >
+     <property name="text" >
+      <string>The defined characters should not match</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox" >
+     <property name="title" >
+      <string>Predefined character ranges</string>
+     </property>
+     <layout class="QGridLayout" >
+      <item row="1" column="2" >
+       <widget class="QCheckBox" name="nonWhitespaceCheckBox" >
+        <property name="text" >
+         <string>Non-whitespace characters</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="QCheckBox" name="nonDigitsCheckBox" >
+        <property name="text" >
+         <string>Non-digits</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" >
+       <widget class="QCheckBox" name="whitespaceCheckBox" >
+        <property name="text" >
+         <string>Whitespace characters</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="QCheckBox" name="digitsCheckBox" >
+        <property name="text" >
+         <string>Digits</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QCheckBox" name="nonWordCharCheckBox" >
+        <property name="text" >
+         <string>Non-word characters</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" >
+       <widget class="QCheckBox" name="wordCharCheckBox" >
+        <property name="text" >
+         <string>Word character</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="singlesBox" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Expanding" hsizetype="Preferred" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title" >
+      <string>Single character</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="rangesBox" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Expanding" hsizetype="Preferred" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title" >
+      <string>Character ranges</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>negativeCheckBox</tabstop>
+  <tabstop>wordCharCheckBox</tabstop>
+  <tabstop>nonWordCharCheckBox</tabstop>
+  <tabstop>digitsCheckBox</tabstop>
+  <tabstop>nonDigitsCheckBox</tabstop>
+  <tabstop>whitespaceCheckBox</tabstop>
+  <tabstop>nonWhitespaceCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>PyRegExpWizardCharactersDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>157</x>
+     <y>476</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>157</x>
+     <y>498</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>PyRegExpWizardCharactersDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>269</x>
+     <y>477</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>269</x>
+     <y>499</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

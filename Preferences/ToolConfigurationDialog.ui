@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToolConfigurationDialog</class>
+ <widget class="QDialog" name="ToolConfigurationDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>591</width>
+    <height>487</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Configure Tools Menu</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <layout class="QGridLayout">
+     <item row="7" column="3">
+      <widget class="QPushButton" name="separatorButton">
+       <property name="toolTip">
+        <string>Add a separator</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Add separator&lt;/b&gt;&lt;p&gt;Add a separator for the menu.&lt;/p&gt;</string>
+       </property>
+       <property name="text">
+        <string>Add &amp;Separator</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="addButton">
+       <property name="toolTip">
+        <string>Add a new tools entry</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Add&lt;/b&gt;
+&lt;p&gt;Add a new tools entry with the values entered below.&lt;/p&gt;</string>
+       </property>
+       <property name="text">
+        <string>&amp;Add</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+A</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" rowspan="9" colspan="3">
+      <widget class="QListWidget" name="toolsList"/>
+     </item>
+     <item row="13" column="1" colspan="2">
+      <widget class="QComboBox" name="redirectCombo">
+       <property name="toolTip">
+        <string>Select the output redirection mode</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Redirect output&lt;b&gt;&lt;p&gt;Select the output redirection mode. The standard error channel is either not redirected or shown in the log viewer.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="QLineEdit" name="argumentsEdit">
+       <property name="toolTip">
+        <string>Enter the arguments for the executable</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Arguments&lt;/b&gt;
+&lt;p&gt;Enter the arguments for the executable.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QPushButton" name="upButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>Move up</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Move Up&lt;/b&gt;
+&lt;p&gt;Move the selected entry up.&lt;/p&gt;</string>
+       </property>
+       <property name="text">
+        <string>&amp;Up</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+U</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QPushButton" name="deleteButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>Delete the selected entry</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Delete&lt;/b&gt;
+&lt;p&gt;Delete the selected entry.&lt;/p&gt;</string>
+       </property>
+       <property name="text">
+        <string>&amp;Delete</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+D</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="newButton">
+       <property name="toolTip">
+        <string>Clear all entry fields</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;New&lt;/b&gt;
+&lt;p&gt;Clear all entry fields for entering a new tools entry.&lt;/p&gt;</string>
+       </property>
+       <property name="text">
+        <string>&amp;New</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+N</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLineEdit" name="executableEdit">
+       <property name="toolTip">
+        <string>Enter the filename of the executable</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Executable&lt;/b&gt;
+&lt;p&gt;Enter the filename of the executable.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QPushButton" name="downButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>Move down</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Move Down&lt;/b&gt;
+&lt;p&gt;Move the selected entry down.&lt;/p&gt;</string>
+       </property>
+       <property name="text">
+        <string>Do&amp;wn</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+W</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <spacer>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>105</width>
+         <height>22</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLineEdit" name="menuEdit">
+       <property name="toolTip">
+        <string>Enter the menu text</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Menu text&lt;/b&gt;
+&lt;p&gt;Enter the menu text. Precede the accelerator key with an &amp; character.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="changeButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>Change the values of the selected entry</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Change&lt;/b&gt;
+&lt;p&gt;Change the values of the selected entry.&lt;/p&gt;</string>
+       </property>
+       <property name="text">
+        <string>C&amp;hange</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+H</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>&amp;Icon file:</string>
+       </property>
+       <property name="buddy">
+        <cstring>iconEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="TextLabel3">
+       <property name="text">
+        <string>Ar&amp;guments:</string>
+       </property>
+       <property name="buddy">
+        <cstring>argumentsEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="TextLabel2">
+       <property name="text">
+        <string>&amp;Menu text:</string>
+       </property>
+       <property name="buddy">
+        <cstring>menuEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLineEdit" name="iconEdit">
+       <property name="toolTip">
+        <string>Enter the filename of the icon</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Icon&lt;/b&gt;
+&lt;p&gt;Enter the filename of the icon.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>&amp;Redirect output</string>
+       </property>
+       <property name="buddy">
+        <cstring>redirectCombo</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="TextLabel1">
+       <property name="text">
+        <string>&amp;Executable file:</string>
+       </property>
+       <property name="buddy">
+        <cstring>executableEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="QToolButton" name="iconButton">
+       <property name="toolTip">
+        <string>Select the icon via a file selection dialog</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Icon&lt;/b&gt;
+&lt;p&gt;Select the icon via a file selection dialog.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="QToolButton" name="executableButton">
+       <property name="toolTip">
+        <string>Select the executable via a file selection dialog</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Executable&lt;/b&gt;
+&lt;p&gt;Select the executable via a file selection dialog.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>toolsList</tabstop>
+  <tabstop>menuEdit</tabstop>
+  <tabstop>iconEdit</tabstop>
+  <tabstop>iconButton</tabstop>
+  <tabstop>executableEdit</tabstop>
+  <tabstop>executableButton</tabstop>
+  <tabstop>argumentsEdit</tabstop>
+  <tabstop>redirectCombo</tabstop>
+  <tabstop>newButton</tabstop>
+  <tabstop>addButton</tabstop>
+  <tabstop>changeButton</tabstop>
+  <tabstop>deleteButton</tabstop>
+  <tabstop>upButton</tabstop>
+  <tabstop>downButton</tabstop>
+  <tabstop>separatorButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ToolConfigurationDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>62</x>
+     <y>465</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>62</x>
+     <y>486</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ToolConfigurationDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>177</x>
+     <y>466</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>178</x>
+     <y>486</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

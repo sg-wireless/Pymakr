@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TabnannyDialog</class>
+ <widget class="QDialog" name="TabnannyDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tabnanny Result</string>
+  </property>
+  <property name="whatsThis">
+   <string>&lt;b&gt;Tabnanny Results&lt;/b&gt;
+&lt;p&gt;This dialog shows the results of the tabnanny command. Double clicking an
+entry will open an editor window and position the cursor at the respective line.&lt;/p&gt;</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="filterFrame">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="margin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Exclude Files:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="E5ClearableLineEdit" name="excludeFilesEdit">
+        <property name="toolTip">
+         <string>Enter filename patterns of files to be excluded separated by a comma</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="startButton">
+        <property name="toolTip">
+         <string>Press to start the tabnanny run</string>
+        </property>
+        <property name="text">
+         <string>Start</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTreeWidget" name="resultList">
+     <property name="whatsThis">
+      <string>&lt;b&gt;Result List&lt;/b&gt;
+&lt;p&gt;This list shows the results of the tabnanny command. Double clicking
+an entry will open this entry in an editor window and position the cursor at
+the respective line.&lt;/p&gt;</string>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="rootIsDecorated">
+      <bool>false</bool>
+     </property>
+     <property name="itemsExpandable">
+      <bool>false</bool>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text">
+       <string>Filename</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>#</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Source</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="E5SqueezeLabelPath" name="checkProgressLabel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QProgressBar" name="checkProgress">
+     <property name="toolTip">
+      <string>Shows the progress of the tabnanny action</string>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="format">
+      <string>%v/%m Files</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>E5SqueezeLabelPath</class>
+   <extends>QLabel</extends>
+   <header>E5Gui/E5SqueezeLabels.h</header>
+  </customwidget>
+  <customwidget>
+   <class>E5ClearableLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>E5Gui/E5LineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>startButton</tabstop>
+  <tabstop>excludeFilesEdit</tabstop>
+  <tabstop>resultList</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

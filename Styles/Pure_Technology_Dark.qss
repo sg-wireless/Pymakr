@@ -1,0 +1,16 @@
+QProgressBar:horizontal {
+    border: 1px solid gray;
+    border-radius: 3px;
+    background: white;
+    padding: 1px;
+    text-align: center;
+}
+QProgressBar::chunk:horizontal {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, 
+        stop: 0 #c8ff67, stop: 1 #ace44a);
+}
+
+* { 
+    selection-background-color: #BCF952;
+    selection-color: #000000;
+}

@@ -1,0 +1,19 @@
+<!-- This is the DTD for eric4's multi project file version 4.2 -->
+
+<!ELEMENT   Description         (#PCDATA)>
+
+<!ELEMENT   ProjectName         (#PCDATA)>
+<!ELEMENT   ProjectFile         (#PCDATA)>
+<!ELEMENT   ProjectDescription  (#PCDATA)>
+<!ELEMENT   Project             (ProjectName,
+                                 ProjectFile,
+                                 ProjectDescription)>
+<!ATTLIST   Project
+    isMaster    CDATA   #REQUIRED>
+
+<!ELEMENT   Projects            (Project*)>
+
+<!ELEMENT   MultiProject        (Description,
+                                 Projects)>
+<!ATTLIST   MultiProject
+    version     CDATA   #REQUIRED>

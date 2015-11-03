@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditorMouseClickHandlerPage</class>
+ <widget class="QWidget" name="EditorMouseClickHandlerPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>506</width>
+    <height>398</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="headerLabel">
+     <property name="text">
+      <string>&lt;b&gt;Configure Mouse Click Handler Support&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line6">
+     <property name="frameShape">
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="mcEnabledCheckBox">
+     <property name="toolTip">
+      <string>Select this to enable support for mouse click handlers</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;b&gt;Mouse Click Handlers Enabled&lt;/b&gt;&lt;p&gt;Select to enable support for mouse click handlers. Individual mouse click handlers may be configured on subordinate pages, if such have been installed and registered. This is usually done by plug-ins.&lt;/p&gt;</string>
+     </property>
+     <property name="text">
+      <string>Mouse Click Handlers Enabled</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>456</width>
+       <height>51</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>mcEnabledCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

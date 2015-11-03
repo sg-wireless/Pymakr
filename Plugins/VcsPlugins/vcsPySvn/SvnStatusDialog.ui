@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SvnStatusDialog</class>
+ <widget class="QWidget" name="SvnStatusDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>955</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Subversion Status</string>
+  </property>
+  <property name="whatsThis">
+   <string>&lt;b&gt;Subversion Status&lt;/b&gt;
+&lt;p&gt;This dialog shows the status of the selected file or project.&lt;/p&gt;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>&amp;Filter on Status:</string>
+       </property>
+       <property name="buddy">
+        <cstring>statusFilterCombo</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="statusFilterCombo">
+       <property name="toolTip">
+        <string>Select the status of entries to be shown</string>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QComboBox::AdjustToContents</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTreeWidget" name="statusList">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>4</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::ExtendedSelection</enum>
+     </property>
+     <property name="rootIsDecorated">
+      <bool>false</bool>
+     </property>
+     <property name="itemsExpandable">
+      <bool>false</bool>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text">
+       <string>Commit</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Changelist</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Prop. Status</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Locked</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>History</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Switched</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Lock Info</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Up to date</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Revision</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Last Change</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Author</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Path</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="commitButton">
+       <property name="toolTip">
+        <string>Commit the selected changes</string>
+       </property>
+       <property name="text">
+        <string>&amp;Commit</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addButton">
+       <property name="toolTip">
+        <string>Add the selected entries to the repository</string>
+       </property>
+       <property name="text">
+        <string>&amp;Add</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="diffButton">
+       <property name="toolTip">
+        <string>Show differences of the selected entries to the repository</string>
+       </property>
+       <property name="text">
+        <string>&amp;Differences</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="sbsDiffButton">
+       <property name="toolTip">
+        <string>Show differences of the selected entry to the repository in a side-by-side manner</string>
+       </property>
+       <property name="text">
+        <string>Side-b&amp;y-Side Diff</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="revertButton">
+       <property name="toolTip">
+        <string>Revert the selected entries to the last revision in the repository</string>
+       </property>
+       <property name="text">
+        <string>Re&amp;vert</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="restoreButton">
+       <property name="toolTip">
+        <string>Restore the selected missing entries from the repository</string>
+       </property>
+       <property name="text">
+        <string>&amp;Restore</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="errorGroup">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Errors</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <widget class="QTextEdit" name="errors">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="acceptRichText">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>statusFilterCombo</tabstop>
+  <tabstop>statusList</tabstop>
+  <tabstop>commitButton</tabstop>
+  <tabstop>addButton</tabstop>
+  <tabstop>diffButton</tabstop>
+  <tabstop>sbsDiffButton</tabstop>
+  <tabstop>revertButton</tabstop>
+  <tabstop>restoreButton</tabstop>
+  <tabstop>errors</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

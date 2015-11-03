@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=eric6@MARKER@
+MimeType=text/x-python;
+Icon=eric@MARKER@
+Terminal=false
+Name=eric6@PY_MARKER@
+Name[de]=eric6@PY_MARKER@
+Comment=Integrated Development Environment for Python
+Comment[de]=Integrierte Entwicklungsumgebung für Python
+GenericName=IDE for Python
+GenericName[de]=IDE für Python
+Categories=Qt;Python;Development;IDE;
+StartupNotify=true

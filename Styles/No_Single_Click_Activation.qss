@@ -1,0 +1,3 @@
+* {
+    activate-on-singleclick: 0;
+}

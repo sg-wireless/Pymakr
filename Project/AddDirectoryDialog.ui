@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddDirectoryDialog</class>
+ <widget class="QDialog" name="AddDirectoryDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>391</width>
+    <height>174</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Add Directory</string>
+  </property>
+  <property name="toolTip">
+   <string>Add a directory to the current project</string>
+  </property>
+  <property name="whatsThis">
+   <string>&lt;b&gt;Add Directory Dialog&lt;/b&gt;
+&lt;p&gt;This dialog is used to add a directory to the current project.&lt;/p&gt;</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <layout class="QGridLayout">
+     <item row="0" column="1" colspan="2">
+      <widget class="QComboBox" name="filterComboBox"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="targetDirLabel">
+       <property name="text">
+        <string>&amp;Target Directory:</string>
+       </property>
+       <property name="buddy">
+        <cstring>targetDirEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="sourceDirEdit">
+       <property name="toolTip">
+        <string>Enter the name of the directory to add</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Source Directory&lt;/b&gt;
+&lt;p&gt;Enter the name of the directory to add to the current project.
+ You may select it with a dialog by pressing the button to
+ the right.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="3">
+      <widget class="QCheckBox" name="recursiveCheckBox">
+       <property name="toolTip">
+        <string>Select, whether a recursive add should be performed</string>
+       </property>
+       <property name="text">
+        <string>&amp;Recurse into subdirectories</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="targetDirEdit">
+       <property name="toolTip">
+        <string>Enter the target directory for the file</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Target Directory&lt;/b&gt;
+&lt;p&gt;Enter the target directory. You may select it
+ with a dialog by pressing the button to the right.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="sourceDirLabel">
+       <property name="text">
+        <string>&amp;Source Directory:</string>
+       </property>
+       <property name="buddy">
+        <cstring>sourceDirEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="textLabel1">
+       <property name="text">
+        <string>&amp;File Type:</string>
+       </property>
+       <property name="buddy">
+        <cstring>filterComboBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QToolButton" name="sourceDirButton">
+       <property name="whatsThis">
+        <string>&lt;b&gt;Source Directory&lt;/b&gt;
+&lt;p&gt;Select the source directory via a directory selection dialog.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QToolButton" name="targetDirButton">
+       <property name="whatsThis">
+        <string>&lt;b&gt;Target Directory&lt;/b&gt;
+&lt;p&gt;Select the target directory via a directory selection dialog.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>filterComboBox</tabstop>
+  <tabstop>sourceDirEdit</tabstop>
+  <tabstop>sourceDirButton</tabstop>
+  <tabstop>targetDirEdit</tabstop>
+  <tabstop>targetDirButton</tabstop>
+  <tabstop>recursiveCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>AddDirectoryDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>29</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>30</x>
+     <y>153</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>AddDirectoryDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>112</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

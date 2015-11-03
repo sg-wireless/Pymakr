@@ -1,0 +1,220 @@
+<ui version="4.0" >
+ <class>ViewmanagerPage</class>
+ <widget class="QWidget" name="ViewmanagerPage" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>406</width>
+    <height>315</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QLabel" name="headerLabel" >
+     <property name="text" >
+      <string>&lt;b>Configure viewmanager&lt;/b></string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line9_2" >
+     <property name="frameShape" >
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="TextLabel1_2_2_2_3" >
+     <property name="text" >
+      <string>&lt;font color="#FF0000">&lt;b>Note:&lt;/b> This setting is activated at the next startup of the application.&lt;/font></string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" >
+     <item>
+      <widget class="QLabel" name="windowLabel" >
+       <property name="text" >
+        <string>Window view:</string>
+       </property>
+       <property name="buddy" >
+        <cstring>windowComboBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="windowComboBox" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip" >
+        <string>Select the window view type.</string>
+       </property>
+       <property name="whatsThis" >
+        <string>The kind of window view can be selected from this list. The picture below gives an example of the selected view type.</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="previewPixmap" >
+     <property name="toolTip" >
+      <string>Preview of selected window view</string>
+     </property>
+     <property name="whatsThis" >
+      <string>This displays a small preview of the selected window view. This is the way the source windows are displayed in the application.</string>
+     </property>
+     <property name="pixmap" >
+      <pixmap/>
+     </property>
+     <property name="scaledContents" >
+      <bool>false</bool>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="tabViewGroupBox" >
+     <property name="enabled" >
+      <bool>false</bool>
+     </property>
+     <property name="title" >
+      <string>Tabbed View</string>
+     </property>
+     <layout class="QVBoxLayout" >
+      <item>
+       <layout class="QHBoxLayout" >
+        <item>
+         <widget class="QLabel" name="filenameLengthLabel" >
+          <property name="text" >
+           <string>Filename Length of Tab:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="filenameLengthSpinBox" >
+          <property name="toolTip" >
+           <string>Enter the number of characters to be shown in the tab.</string>
+          </property>
+          <property name="minimum" >
+           <number>1</number>
+          </property>
+          <property name="maximum" >
+           <number>100</number>
+          </property>
+          <property name="value" >
+           <number>40</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0" >
+           <size>
+            <width>81</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="filenameOnlyCheckBox" >
+        <property name="toolTip" >
+         <string>Select to display the filename only</string>
+        </property>
+        <property name="text" >
+         <string>Show filename only</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_7" >
+     <property name="title" >
+      <string>Recent Files</string>
+     </property>
+     <layout class="QHBoxLayout" >
+      <item>
+       <widget class="QLabel" name="label" >
+        <property name="text" >
+         <string>Number of recent files:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="recentFilesSpinBox" >
+        <property name="toolTip" >
+         <string>Enter the number of recent files to remember</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="minimum" >
+         <number>5</number>
+        </property>
+        <property name="maximum" >
+         <number>50</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer>
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0" >
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>388</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

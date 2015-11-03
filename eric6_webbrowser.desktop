@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=eric6_webbrowser@MARKER@
+MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;
+Icon=ericWeb@MARKER@
+Terminal=false
+Name=eric6 Web Browser@PY_MARKER@
+Name[de]=eric6 Web Browser@PY_MARKER@
+Comment=Web Browser for PyQt5
+Comment[de]=Web Browser für PyQt5
+GenericName=Web Browser
+GenericName[de]=Web Browser
+Categories=Qt;Python;Network;WebBrowser;
+StartupNotify=true

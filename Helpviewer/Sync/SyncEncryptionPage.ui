@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SyncEncryptionPage</class>
+ <widget class="QWizardPage" name="SyncEncryptionPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="title">
+   <string>Encryption Settings</string>
+  </property>
+  <property name="subTitle">
+   <string>Please select, if the synchronized data should be encrypted and enter the encryption key</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="encryptionGroupBox">
+     <property name="toolTip">
+      <string>Select to encrypt the synchronzed data</string>
+     </property>
+     <property name="title">
+      <string>Encrypt Data</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>&lt;p&gt;The encryption key will be used to encrypt and decrypt the synchronizde data. If the data should be re-encrypted, the respective selection should be done. The key must only be repeated, if a re-encryption is requested.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Note: If you forget the encryption key, the encrypted data cannot be recovered!&lt;/b&gt;&lt;br/&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QCheckBox" name="reencryptCheckBox">
+        <property name="toolTip">
+         <string>Select to re-encrypt the synchronized data</string>
+        </property>
+        <property name="text">
+         <string>Re-encrypt synchronized data</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Encryption Key:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="encryptionKeyEdit">
+        <property name="toolTip">
+         <string>Enter the encryption key</string>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Encryption Key (again):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="encryptionKeyAgainEdit">
+        <property name="toolTip">
+         <string>Repeat the encryption key</string>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="E5PasswordMeter" name="passwordMeter">
+        <property name="toolTip">
+         <string>Shows an indication for the encryption key strength</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Size of generated encryption key:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="keySizeComboBox">
+          <property name="toolTip">
+           <string>Select the size of the generated encryption key</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="6" column="0" colspan="2">
+       <widget class="QLabel" name="errorLabel">
+        <property name="styleSheet">
+         <string notr="true">color : red;</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" colspan="2">
+       <widget class="QCheckBox" name="loginsOnlyCheckBox">
+        <property name="toolTip">
+         <string>Select to encrypt only the passwords</string>
+        </property>
+        <property name="text">
+         <string>Encrypt Passwords Only</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>191</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>E5PasswordMeter</class>
+   <extends>QProgressBar</extends>
+   <header>E5Gui/E5PasswordMeter</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>encryptionGroupBox</tabstop>
+  <tabstop>reencryptCheckBox</tabstop>
+  <tabstop>encryptionKeyEdit</tabstop>
+  <tabstop>encryptionKeyAgainEdit</tabstop>
+  <tabstop>keySizeComboBox</tabstop>
+  <tabstop>loginsOnlyCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,236 @@
+<ui version="4.0" >
+ <class>ToolGroupConfigurationDialog</class>
+ <widget class="QDialog" name="ToolGroupConfigurationDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>475</width>
+    <height>391</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Configure Tool Groups</string>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <layout class="QGridLayout" >
+     <item row="3" column="2" >
+      <widget class="QPushButton" name="deleteButton" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="toolTip" >
+        <string>Delete the selected entry</string>
+       </property>
+       <property name="whatsThis" >
+        <string>&lt;b>Delete&lt;/b>
+&lt;p>Delete the selected entry.&lt;/p></string>
+       </property>
+       <property name="text" >
+        <string>&amp;Delete</string>
+       </property>
+       <property name="shortcut" >
+        <string>Alt+D</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" >
+      <widget class="QPushButton" name="addButton" >
+       <property name="toolTip" >
+        <string>Add a new tools entry</string>
+       </property>
+       <property name="whatsThis" >
+        <string>&lt;b>Add&lt;/b>
+&lt;p>Add a new tool groups entry with the name entered below.&lt;/p></string>
+       </property>
+       <property name="text" >
+        <string>&amp;Add</string>
+       </property>
+       <property name="shortcut" >
+        <string>Alt+A</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0" >
+      <widget class="QLabel" name="TextLabel2" >
+       <property name="text" >
+        <string>&amp;Group name:</string>
+       </property>
+       <property name="buddy" >
+        <cstring>nameEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2" >
+      <widget class="QPushButton" name="changeButton" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="toolTip" >
+        <string>Change the values of the selected entry</string>
+       </property>
+       <property name="whatsThis" >
+        <string>&lt;b>Change&lt;/b>
+&lt;p>Change the values of the selected entry.&lt;/p></string>
+       </property>
+       <property name="text" >
+        <string>C&amp;hange</string>
+       </property>
+       <property name="shortcut" >
+        <string>Alt+H</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2" >
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType" >
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>87</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="2" >
+      <widget class="QPushButton" name="newButton" >
+       <property name="toolTip" >
+        <string>Clear all entry fields</string>
+       </property>
+       <property name="whatsThis" >
+        <string>&lt;b>New&lt;/b>
+&lt;p>Clear all entry fields for entering a new tool groups entry.&lt;/p></string>
+       </property>
+       <property name="text" >
+        <string>&amp;New</string>
+       </property>
+       <property name="shortcut" >
+        <string>Alt+N</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2" >
+      <widget class="QPushButton" name="upButton" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="toolTip" >
+        <string>Move up</string>
+       </property>
+       <property name="whatsThis" >
+        <string>&lt;b>Move Up&lt;/b>
+&lt;p>Move the selected entry up.&lt;/p></string>
+       </property>
+       <property name="text" >
+        <string>&amp;Up</string>
+       </property>
+       <property name="shortcut" >
+        <string>Alt+U</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2" >
+      <widget class="QPushButton" name="downButton" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="toolTip" >
+        <string>Move down</string>
+       </property>
+       <property name="whatsThis" >
+        <string>&lt;b>Move Down&lt;/b>
+&lt;p>Move the selected entry down.&lt;/p></string>
+       </property>
+       <property name="text" >
+        <string>Do&amp;wn</string>
+       </property>
+       <property name="shortcut" >
+        <string>Alt+W</string>
+       </property>
+      </widget>
+     </item>
+     <item rowspan="7" row="0" column="0" colspan="2" >
+      <widget class="QListWidget" name="groupsList" />
+     </item>
+     <item row="7" column="1" >
+      <widget class="QLineEdit" name="nameEdit" >
+       <property name="toolTip" >
+        <string>Enter the menu text</string>
+       </property>
+       <property name="whatsThis" >
+        <string>&lt;b>Menu text&lt;/b>
+&lt;p>Enter the menu text. Precede the accelerator key with an &amp; character.&lt;/p></string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>groupsList</tabstop>
+  <tabstop>nameEdit</tabstop>
+  <tabstop>newButton</tabstop>
+  <tabstop>addButton</tabstop>
+  <tabstop>changeButton</tabstop>
+  <tabstop>deleteButton</tabstop>
+  <tabstop>upButton</tabstop>
+  <tabstop>downButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ToolGroupConfigurationDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>20</x>
+     <y>365</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>22</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ToolGroupConfigurationDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>143</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>145</x>
+     <y>391</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

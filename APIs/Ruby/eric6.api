@@ -1,0 +1,162 @@
+eric6.DebugClients.Ruby.AsyncFile.<<?4(s)
+eric6.DebugClients.Ruby.AsyncFile.AsyncFile.@@maxbuffersize?7
+eric6.DebugClients.Ruby.AsyncFile.AsyncFile.@@maxtries?7
+eric6.DebugClients.Ruby.AsyncFile.AsyncFile.checkMode?4()
+eric6.DebugClients.Ruby.AsyncFile.AsyncFile.initialize?4(mode, name)
+eric6.DebugClients.Ruby.AsyncFile.AsyncFile.nWrite?4()
+eric6.DebugClients.Ruby.AsyncFile.AsyncPendingWrite?4(file)
+eric6.DebugClients.Ruby.AsyncFile.close?4()
+eric6.DebugClients.Ruby.AsyncFile.fileno?4()
+eric6.DebugClients.Ruby.AsyncFile.flush?4()
+eric6.DebugClients.Ruby.AsyncFile.getSock?4()
+eric6.DebugClients.Ruby.AsyncFile.gets?4()
+eric6.DebugClients.Ruby.AsyncFile.isatty?4()
+eric6.DebugClients.Ruby.AsyncFile.pendingWrite?4()
+eric6.DebugClients.Ruby.AsyncFile.read?4(size = -1)
+eric6.DebugClients.Ruby.AsyncFile.readline?4(size = -1)
+eric6.DebugClients.Ruby.AsyncFile.readlines?4(sizehint = -1)
+eric6.DebugClients.Ruby.AsyncFile.seek?4(offset, whence=IO::SEEK_SET)
+eric6.DebugClients.Ruby.AsyncFile.tell?4()
+eric6.DebugClients.Ruby.AsyncFile.write?4(s)
+eric6.DebugClients.Ruby.AsyncFile.writelines?4(list)
+eric6.DebugClients.Ruby.Completer.Completer.Operators?7
+eric6.DebugClients.Ruby.Completer.Completer.ReservedWords?7
+eric6.DebugClients.Ruby.Completer.Completer.complete?4()
+eric6.DebugClients.Ruby.Completer.Completer.initialize?4()
+eric6.DebugClients.Ruby.Completer.Completer.select_message?4(message, candidates, sep = ".")
+eric6.DebugClients.Ruby.Config.ConfigVarTypeStrings?7
+eric6.DebugClients.Ruby.DebugClient.DebugClient.initialize?4()
+eric6.DebugClients.Ruby.DebugClientCapabilities.HasAll?7
+eric6.DebugClients.Ruby.DebugClientCapabilities.HasCompleter?7
+eric6.DebugClients.Ruby.DebugClientCapabilities.HasCoverage?7
+eric6.DebugClients.Ruby.DebugClientCapabilities.HasDebugger?7
+eric6.DebugClients.Ruby.DebugClientCapabilities.HasInterpreter?7
+eric6.DebugClients.Ruby.DebugClientCapabilities.HasProfiler?7
+eric6.DebugClients.Ruby.DebugClientCapabilities.HasShell?7
+eric6.DebugClients.Ruby.DebugClientCapabilities.HasUnittest?7
+eric6.DebugClients.Ruby.DebugProtocol.DebugAddress?7
+eric6.DebugClients.Ruby.DebugProtocol.EOT?7
+eric6.DebugClients.Ruby.DebugProtocol.PassiveStartup?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestBanner?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestBreak?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestBreakEnable?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestBreakIgnore?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestCapabilities?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestCompletion?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestContinue?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestCoverage?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestEnv?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestEval?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestExec?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestLoad?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestOK?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestProfile?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestRun?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestSetFilter?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestShutdown?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestStep?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestStepOut?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestStepOver?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestStepQuit?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestUTPrepare?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestUTRun?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestUTStop?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestVariable?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestVariables?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestWatch?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestWatchEnable?7
+eric6.DebugClients.Ruby.DebugProtocol.RequestWatchIgnore?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseBanner?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseCapabilities?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseClearBreak?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseClearWatch?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseCompletion?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseContinue?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseException?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseExit?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseLine?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseOK?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseRaw?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseSyntax?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseUTFinished?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseUTPrepared?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseUTStartTest?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseUTStopTest?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseUTTestErrored?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseUTTestFailed?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseVariable?7
+eric6.DebugClients.Ruby.DebugProtocol.ResponseVariables?7
+eric6.DebugClients.Ruby.Debuggee.Client.eventLoop?4()
+eric6.DebugClients.Ruby.Debuggee.Client.eventPoll?4()
+eric6.DebugClients.Ruby.Debuggee.Client.initialize?4()
+eric6.DebugClients.Ruby.Debuggee.Client.printf?4()
+eric6.DebugClients.Ruby.Debuggee.Client.printf_clear_breakpoint?4(line)
+eric6.DebugClients.Ruby.Debuggee.Client.printf_clear_watchexpression?4()
+eric6.DebugClients.Ruby.Debuggee.Client.printf_excn?4()
+eric6.DebugClients.Ruby.Debuggee.Client.printf_exit?4()
+eric6.DebugClients.Ruby.Debuggee.Client.printf_line?4()
+eric6.DebugClients.Ruby.Debuggee.Client.printf_scriptExcn?4()
+eric6.DebugClients.Ruby.Debuggee.Client.traceRuby??4()
+eric6.DebugClients.Ruby.Debuggee.Context.clear_suspend?4()
+eric6.DebugClients.Ruby.Debuggee.Context.current_binding?4()
+eric6.DebugClients.Ruby.Debuggee.Context.current_frame?4()
+eric6.DebugClients.Ruby.Debuggee.Context.eventLoop?4()
+eric6.DebugClients.Ruby.Debuggee.Context.eventPoll?4()
+eric6.DebugClients.Ruby.Debuggee.Context.get_binding?4()
+eric6.DebugClients.Ruby.Debuggee.Context.get_frame?4()
+eric6.DebugClients.Ruby.Debuggee.Context.initialize?4()
+eric6.DebugClients.Ruby.Debuggee.Context.set_suspend?4()
+eric6.DebugClients.Ruby.Debuggee.Context.step_continue?4()
+eric6.DebugClients.Ruby.Debuggee.Context.step_out?4()
+eric6.DebugClients.Ruby.Debuggee.Context.step_over?4()
+eric6.DebugClients.Ruby.Debuggee.Context.step_quit?4()
+eric6.DebugClients.Ruby.Debuggee.Context.stop_next?4()
+eric6.DebugClients.Ruby.Debuggee.Context.suspend_all?4()
+eric6.DebugClients.Ruby.Debuggee.Context.traceRuby??4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.MUTEX?7
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.SilentClient?7
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.add_break_point?4(pos, temp = false, cond = nil)
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.add_watch_point?4(temp = false)
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.attach?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.attached??4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.break_points?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.check_break_points?4(pos, binding_, id)
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.check_suspend?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.clear_break_point?4(pos)
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.clear_watch_point?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.client?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.context?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.debug_command?4(line, id, binding_)
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.debug_silent_eval?4(binding_)
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.delete_break_point?4(pos)
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.delete_watch_point?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.enable_break_point?4(pos, enable)
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.enable_watch_point?4(enable)
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.excn_handle?4(line, id, binding_)
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.frame_set_pos?4(line)
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.ignore_break_point?4(pos, count)
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.ignore_watch_point?4(count)
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.last_thread?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.quit?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.resume?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.resume_all?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.set_client?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.set_last_thread?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.skip_it??4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.stdout=?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.stdout?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.suspend?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.thnum?4()
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.trace_func?4(file, line, id, binding_, klass)
+eric6.DebugClients.Ruby.Debuggee.DEBUGGER__.waiting?4()
+eric6.DebugClients.Ruby.Debuggee.SilentObject.method_missing?4(*a, &b)
+eric6.DebugClients.Ruby.Debuggee.context?4(thread=Thread.current)
+eric6.DebugClients.Ruby.Debuggee.debug_thread_info?4(input, binding_)
+eric6.DebugClients.Ruby.Debuggee.eventLoop?4()
+eric6.DebugClients.Ruby.Debuggee.eventPoll?4()
+eric6.DebugClients.Ruby.Debuggee.get_thread?4(num)
+eric6.DebugClients.Ruby.Debuggee.interrupt?4()
+eric6.DebugClients.Ruby.Debuggee.make_thread_list?4()
+eric6.DebugClients.Ruby.Debuggee.thread_list?4(num)
+eric6.DebugClients.Ruby.Debuggee.thread_list_all?4()
+eric6.DebugClients.Ruby.Debuggee.traceRuby??4()

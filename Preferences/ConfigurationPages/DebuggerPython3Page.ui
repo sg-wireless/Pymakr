@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DebuggerPython3Page</class>
+ <widget class="QWidget" name="DebuggerPython3Page">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>455</width>
+    <height>449</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QLabel" name="headerLabel">
+     <property name="text">
+      <string>&lt;b&gt;Configure Python3 Debugger&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line11_2">
+     <property name="frameShape">
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Python3 Interpreter for Debug Client</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="interpreterEdit">
+        <property name="toolTip">
+         <string>Enter the path of the Python3 interpreter to be used by the debug client. Leave empty to use the default.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="interpreterButton">
+        <property name="toolTip">
+         <string>Press to select the Python3 interpreter via a file selection dialog</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Debug Client Type</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="1" column="0" colspan="3">
+       <layout class="QHBoxLayout">
+        <item>
+         <widget class="QLineEdit" name="debugClientEdit">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Enter the path of the Debug Client to be used.  Leave empty to use the default.</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="debugClientButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Press to select the Debug Client via a file selection dialog</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="standardButton">
+        <property name="toolTip">
+         <string>Select the standard debug client</string>
+        </property>
+        <property name="text">
+         <string>Standard</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QRadioButton" name="customButton">
+        <property name="toolTip">
+         <string>Select the custom selected debug client</string>
+        </property>
+        <property name="text">
+         <string>Custom</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QRadioButton" name="threadedButton">
+        <property name="toolTip">
+         <string>Select the multi threaded debug client</string>
+        </property>
+        <property name="text">
+         <string>Multi Threaded</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Source association</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Enter the file extensions to be associated with the Python3 debugger separated by a space. They must not overlap with the ones for Python2.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="sourceExtensionsEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="pyRedirectCheckBox">
+     <property name="toolTip">
+      <string>Select, to redirect stdin, stdout and stderr of the program being debugged to the eric6 IDE</string>
+     </property>
+     <property name="text">
+      <string>Redirect stdin/stdout/stderr</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="pyNoEncodingCheckBox">
+     <property name="toolTip">
+      <string>Select to not set the debug client encoding</string>
+     </property>
+     <property name="text">
+      <string>Don't set the encoding of the debug client</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>435</width>
+       <height>21</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>interpreterEdit</tabstop>
+  <tabstop>interpreterButton</tabstop>
+  <tabstop>standardButton</tabstop>
+  <tabstop>threadedButton</tabstop>
+  <tabstop>customButton</tabstop>
+  <tabstop>debugClientEdit</tabstop>
+  <tabstop>debugClientButton</tabstop>
+  <tabstop>sourceExtensionsEdit</tabstop>
+  <tabstop>pyRedirectCheckBox</tabstop>
+  <tabstop>pyNoEncodingCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>customButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>debugClientEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>368</x>
+     <y>194</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>219</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

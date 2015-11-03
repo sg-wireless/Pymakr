@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VcsCommandOptionsDialog</class>
+ <widget class="QDialog" name="VcsCommandOptionsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>531</width>
+    <height>413</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VCS Command Options</string>
+  </property>
+  <property name="whatsThis">
+   <string>&lt;b&gt;VCS Command Options Dialog&lt;/b&gt;
+&lt;p&gt;Enter the options for the different VCS commands. The &quot;Global Options&quot; entry applies to all VCS commands.&lt;/p&gt;</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <layout class="QGridLayout">
+     <item row="8" column="0">
+      <widget class="QLabel" name="historyLabel">
+       <property name="text">
+        <string>&amp;History Options:</string>
+       </property>
+       <property name="buddy">
+        <cstring>historyEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="addLabel">
+       <property name="text">
+        <string>&amp;Add Options:</string>
+       </property>
+       <property name="buddy">
+        <cstring>addEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="removeLabel">
+       <property name="text">
+        <string>&amp;Remove Options:</string>
+       </property>
+       <property name="buddy">
+        <cstring>removeEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="tagLabel">
+       <property name="text">
+        <string>&amp;Tag Options:</string>
+       </property>
+       <property name="buddy">
+        <cstring>tagEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="commitEdit">
+       <property name="toolTip">
+        <string>Enter the options for the commit command.</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Commit Options&lt;/b&gt;
+&lt;p&gt;Enter the options for the commit command.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="historyEdit">
+       <property name="toolTip">
+        <string>Enter the options for the history command.</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;History Options&lt;/b&gt;
+&lt;p&gt;Enter the options for the history command.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="diffEdit">
+       <property name="toolTip">
+        <string>Enter the options for the diff command.</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Diff Options&lt;/b&gt;
+&lt;p&gt;Enter the options for the diff command.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="updateEdit">
+       <property name="toolTip">
+        <string>Enter the options for the update command.</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Update Options&lt;/b&gt;
+&lt;p&gt;Enter the options for the update command.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="logEdit">
+       <property name="toolTip">
+        <string>Enter the options for the log command.</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Log Options&lt;/b&gt;
+&lt;p&gt;Enter the options for the log command.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLineEdit" name="tagEdit">
+       <property name="toolTip">
+        <string>Enter the options for the tag command.</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Tag Options&lt;/b&gt;
+&lt;p&gt;Enter the options for the tag command.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLineEdit" name="statusEdit">
+       <property name="toolTip">
+        <string>Enter the options for the status command.</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Status Options&lt;/b&gt;
+&lt;p&gt;Enter the options for the status command.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="diffLabel">
+       <property name="text">
+        <string>&amp;Diff Options:</string>
+       </property>
+       <property name="buddy">
+        <cstring>diffEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="globalLabel">
+       <property name="text">
+        <string>&amp;Global Options:</string>
+       </property>
+       <property name="buddy">
+        <cstring>globalEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLineEdit" name="exportEdit">
+       <property name="toolTip">
+        <string>Enter the options for the export command.</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Export Options&lt;/b&gt;
+&lt;p&gt;Enter the options for the export command.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="addEdit">
+       <property name="toolTip">
+        <string>Enter the options for the add command.</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Add Options&lt;/b&gt;
+&lt;p&gt;Enter the options for the add command.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="logLabel">
+       <property name="text">
+        <string>&amp;Log Options:</string>
+       </property>
+       <property name="buddy">
+        <cstring>logEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="statusLabel">
+       <property name="text">
+        <string>&amp;StatusOptions:</string>
+       </property>
+       <property name="buddy">
+        <cstring>statusEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="removeEdit">
+       <property name="toolTip">
+        <string>Enter the options for the remove command.</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Remove Options&lt;/b&gt;
+&lt;p&gt;Enter the options for the remove command.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="checkoutEdit">
+       <property name="toolTip">
+        <string>Enter the options for the checkout command.</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Checkout Options&lt;/b&gt;
+&lt;p&gt;Enter the options for the checkout command.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="commitLabel">
+       <property name="text">
+        <string>Co&amp;mmit Options:</string>
+       </property>
+       <property name="buddy">
+        <cstring>commitEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="exportLabel">
+       <property name="text">
+        <string>&amp;Export Options:</string>
+       </property>
+       <property name="buddy">
+        <cstring>exportEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="checkoutLabel">
+       <property name="text">
+        <string>Check&amp;out Options:</string>
+       </property>
+       <property name="buddy">
+        <cstring>checkoutEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="updateLabel">
+       <property name="text">
+        <string>&amp;Update Options:</string>
+       </property>
+       <property name="buddy">
+        <cstring>updateEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="globalEdit">
+       <property name="toolTip">
+        <string>Enter the global options.</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Global Options&lt;/b&gt;
+&lt;p&gt;Enter the global options.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>globalEdit</tabstop>
+  <tabstop>commitEdit</tabstop>
+  <tabstop>checkoutEdit</tabstop>
+  <tabstop>updateEdit</tabstop>
+  <tabstop>addEdit</tabstop>
+  <tabstop>removeEdit</tabstop>
+  <tabstop>diffEdit</tabstop>
+  <tabstop>logEdit</tabstop>
+  <tabstop>historyEdit</tabstop>
+  <tabstop>statusEdit</tabstop>
+  <tabstop>tagEdit</tabstop>
+  <tabstop>exportEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>VcsCommandOptionsDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>120</x>
+     <y>411</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>VcsCommandOptionsDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>191</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>193</x>
+     <y>410</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>Linux-Magazin</ShortName>
+    <Description>Suche auf www.linux-magazin.de</Description>
+    <Url method="get" type="text/html" template="http://www.linux-magazin.de/content/search?SearchText={searchTerms}"/>
+    <Image>http://www.linux-magazin.de/extension/lnm/design/linux_magazin/images/favicon.ico</Image>
+</OpenSearchDescription>

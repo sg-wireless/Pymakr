@@ -1,0 +1,270 @@
+<ui version="4.0" >
+ <class>SpellCheckingDialog</class>
+ <widget class="QDialog" name="SpellCheckingDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>696</width>
+    <height>366</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Check spelling</string>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2" >
+   <item row="0" column="0" colspan="2" >
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <spacer name="horizontalSpacer_2" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2" >
+       <property name="text" >
+        <string>Current language:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="languageLabel" >
+       <property name="toolTip" >
+        <string>Shows the language used for spell checking</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>328</width>
+         <height>17</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0" colspan="2" >
+    <widget class="Line" name="line_2" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" >
+    <layout class="QGridLayout" name="gridLayout" >
+     <item row="0" column="0" colspan="2" >
+      <widget class="QLabel" name="label" >
+       <property name="text" >
+        <string>Not found in dictionary</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2" >
+      <widget class="QLabel" name="contextLabel" >
+       <property name="toolTip" >
+        <string>Shows the unrecognized word with some context</string>
+       </property>
+       <property name="frameShape" >
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow" >
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="textFormat" >
+        <enum>Qt::RichText</enum>
+       </property>
+       <property name="wordWrap" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" >
+      <widget class="QLabel" name="label_3" >
+       <property name="text" >
+        <string>Change &amp;to:</string>
+       </property>
+       <property name="buddy" >
+        <cstring>changeEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" >
+      <widget class="QLineEdit" name="changeEdit" />
+     </item>
+     <item row="3" column="0" colspan="2" >
+      <widget class="QLabel" name="label_4" >
+       <property name="text" >
+        <string>&amp;Suggestions:</string>
+       </property>
+       <property name="buddy" >
+        <cstring>suggestionsList</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="2" >
+      <widget class="QListWidget" name="suggestionsList" />
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="1" >
+    <layout class="QVBoxLayout" name="verticalLayout" >
+     <item>
+      <widget class="QPushButton" name="ignoreButton" >
+       <property name="toolTip" >
+        <string>Press to ignore once</string>
+       </property>
+       <property name="text" >
+        <string>&amp;Ignore</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ignoreAllButton" >
+       <property name="toolTip" >
+        <string>Press to always ignore</string>
+       </property>
+       <property name="text" >
+        <string>I&amp;gnore All</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addButton" >
+       <property name="toolTip" >
+        <string>Press to add to dictionary</string>
+       </property>
+       <property name="text" >
+        <string>&amp;Add to dictionary</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="replaceButton" >
+       <property name="toolTip" >
+        <string>Press to replace the word</string>
+       </property>
+       <property name="text" >
+        <string>&amp;Replace</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="replaceAllButton" >
+       <property name="toolTip" >
+        <string>Press to replace all occurrences</string>
+       </property>
+       <property name="text" >
+        <string>Re&amp;place All</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0" colspan="2" >
+    <widget class="Line" name="line_3" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2" >
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>changeEdit</tabstop>
+  <tabstop>suggestionsList</tabstop>
+  <tabstop>ignoreButton</tabstop>
+  <tabstop>ignoreAllButton</tabstop>
+  <tabstop>addButton</tabstop>
+  <tabstop>replaceButton</tabstop>
+  <tabstop>replaceAllButton</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SpellCheckingDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SpellCheckingDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

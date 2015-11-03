@@ -1,0 +1,27 @@
+<!-- This is the DTD for eric4's basic marshaller -->
+
+<!ELEMENT   int         (#PCDATA)>
+<!ELEMENT   long        (#PCDATA)>
+<!ELEMENT   float       (#PCDATA)>
+<!ELEMENT   complex     (#PCDATA)>
+<!ELEMENT   bool        (#PCDATA)>
+<!ELEMENT   string      (#PCDATA)>
+<!ELEMENT   unicode     (#PCDATA)>
+<!ELEMENT   none        EMPTY>
+
+<!ELEMENT   pickle      (#PCDATA)>
+<!ATTLIST   pickle
+    method      CDATA   #REQUIRED
+    encoding    CDATA   #REQUIRED>
+
+<!ELEMENT   key         (int | long | float | complex | string | unicode)>
+<!ELEMENT   value       (int | long | float | complex | bool | string | unicode | none | 
+    dict | tuple | list | pickle)>
+
+<!ELEMENT   dict        (key, value)*>
+
+<!ELEMENT   tuple       (int | long | float | complex | bool | string | unicode | none | 
+    dict | tuple | list | pickle)*>
+
+<!ELEMENT   list        (int | long | float | complex | bool | string | unicode | none | 
+    dict | tuple | list | pickle)*>

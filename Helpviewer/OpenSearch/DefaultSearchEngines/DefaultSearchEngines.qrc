@@ -1,0 +1,21 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+  <file>YouTube.xml</file>
+  <file>Amazoncom.xml</file>
+  <file>Bing.xml</file>
+  <file>DeEn_Beolingus.xml</file>
+  <file>DuckDuckGo.xml</file>
+  <file>Facebook.xml</file>
+  <file>Google_Im_Feeling_Lucky.xml</file>
+  <file>Google.xml</file>
+  <file>LEO_DeuEng.xml</file>
+  <file>LinuxMagazin.xml</file>
+  <file>Reddit.xml</file>
+  <file>Wikia_en.xml</file>
+  <file>Wikia.xml</file>
+  <file>Wikipedia.xml</file>
+  <file>Wiktionary.xml</file>
+  <file>Yahoo.xml</file>
+</qresource>
+</RCC>

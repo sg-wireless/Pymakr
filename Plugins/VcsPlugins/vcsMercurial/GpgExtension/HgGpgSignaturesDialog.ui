@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HgGpgSignaturesDialog</class>
+ <widget class="QDialog" name="HgGpgSignaturesDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Signed Changesets</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QComboBox" name="categoryCombo">
+       <property name="toolTip">
+        <string>Select the category to filter on</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Revision</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Signature</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="E5ClearableLineEdit" name="rxEdit">
+       <property name="toolTip">
+        <string>Enter the regular expression to filter on</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTreeWidget" name="signaturesList">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>3</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="rootIsDecorated">
+      <bool>false</bool>
+     </property>
+     <property name="headerHidden">
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text">
+       <string notr="true">1</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="verifyButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>Press to verify the signatures of the selected revision</string>
+       </property>
+       <property name="text">
+        <string>&amp;Verify...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="errorGroup">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Errors</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <widget class="QTextEdit" name="errors">
+        <property name="whatsThis">
+         <string>&lt;b&gt;Mercurial errors&lt;/b&gt;&lt;p&gt;This shows possible error messages.&lt;/p&gt;</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="acceptRichText">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="inputGroup">
+     <property name="title">
+      <string>Input</string>
+     </property>
+     <layout class="QGridLayout" name="_2">
+      <item row="1" column="1">
+       <spacer>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>327</width>
+          <height>29</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="sendButton">
+        <property name="toolTip">
+         <string>Press to send the input to the hg process</string>
+        </property>
+        <property name="text">
+         <string>&amp;Send</string>
+        </property>
+        <property name="shortcut">
+         <string>Alt+S</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="3">
+       <widget class="QLineEdit" name="input">
+        <property name="toolTip">
+         <string>Enter data to be sent to the hg process</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="passwordCheckBox">
+        <property name="toolTip">
+         <string>Select to switch the input field to password mode</string>
+        </property>
+        <property name="text">
+         <string>&amp;Password Mode</string>
+        </property>
+        <property name="shortcut">
+         <string>Alt+P</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>E5ClearableLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>E5Gui/E5LineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>categoryCombo</tabstop>
+  <tabstop>rxEdit</tabstop>
+  <tabstop>signaturesList</tabstop>
+  <tabstop>verifyButton</tabstop>
+  <tabstop>errors</tabstop>
+  <tabstop>input</tabstop>
+  <tabstop>passwordCheckBox</tabstop>
+  <tabstop>sendButton</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

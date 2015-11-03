@@ -1,0 +1,311 @@
+<ui version="4.0" >
+ <class>PyRegExpWizardRepeatDialog</class>
+ <widget class="QDialog" name="PyRegExpWizardRepeatDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>331</width>
+    <height>223</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Number of repetitions</string>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QGroupBox" name="groupBox" >
+     <property name="title" >
+      <string/>
+     </property>
+     <property name="flat" >
+      <bool>true</bool>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <item row="2" column="2" >
+       <widget class="QLabel" name="textLabel1_6" >
+        <property name="text" >
+         <string>times</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2" >
+       <widget class="QLabel" name="textLabel1_7" >
+        <property name="text" >
+         <string>times</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2" >
+       <widget class="QLabel" name="textLabel1_5" >
+        <property name="text" >
+         <string>times</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" >
+       <widget class="QSpinBox" name="lowerSpin" >
+        <property name="enabled" >
+         <bool>false</bool>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight</set>
+        </property>
+        <property name="value" >
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3" >
+       <widget class="QSpinBox" name="upperSpin" >
+        <property name="enabled" >
+         <bool>false</bool>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight</set>
+        </property>
+        <property name="value" >
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2" >
+       <widget class="QLabel" name="textLabel6" >
+        <property name="text" >
+         <string>and</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" >
+       <widget class="QRadioButton" name="betweenButton" >
+        <property name="text" >
+         <string>Between</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" >
+       <widget class="QSpinBox" name="exactSpin" >
+        <property name="enabled" >
+         <bool>false</bool>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight</set>
+        </property>
+        <property name="value" >
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" >
+       <widget class="QRadioButton" name="exactButton" >
+        <property name="text" >
+         <string>Exactly</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" >
+       <widget class="QSpinBox" name="maxSpin" >
+        <property name="enabled" >
+         <bool>false</bool>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight</set>
+        </property>
+        <property name="value" >
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QRadioButton" name="maxButton" >
+        <property name="text" >
+         <string>Maximum</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QRadioButton" name="minButton" >
+        <property name="text" >
+         <string>Minimum</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="QSpinBox" name="minSpin" >
+        <property name="enabled" >
+         <bool>false</bool>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight</set>
+        </property>
+        <property name="value" >
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="4" >
+       <widget class="QRadioButton" name="unlimitedButton" >
+        <property name="text" >
+         <string>Unlimited (incl. zero times)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="minimalCheckBox" >
+     <property name="text" >
+      <string>Minimal match</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>unlimitedButton</tabstop>
+  <tabstop>minButton</tabstop>
+  <tabstop>minSpin</tabstop>
+  <tabstop>maxButton</tabstop>
+  <tabstop>maxSpin</tabstop>
+  <tabstop>exactButton</tabstop>
+  <tabstop>exactSpin</tabstop>
+  <tabstop>betweenButton</tabstop>
+  <tabstop>lowerSpin</tabstop>
+  <tabstop>upperSpin</tabstop>
+  <tabstop>minimalCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>minButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>minSpin</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>53</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>121</x>
+     <y>47</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>maxButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>maxSpin</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>58</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>117</x>
+     <y>67</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exactButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>exactSpin</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>61</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>162</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>betweenButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lowerSpin</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>60</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>162</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>betweenButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>upperSpin</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>61</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>322</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>PyRegExpWizardRepeatDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>19</x>
+     <y>190</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>19</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>PyRegExpWizardRepeatDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>61</x>
+     <y>192</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>61</x>
+     <y>210</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

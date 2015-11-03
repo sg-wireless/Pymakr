@@ -1,0 +1,104 @@
+<!-- This is the DTD for eric4's (project) session file version 4.3 -->
+
+<!ELEMENT   MultiProject    (#PCDATA)>
+
+<!ELEMENT   Project         (#PCDATA)>
+
+<!ELEMENT   Filename        (#PCDATA)>
+<!ATTLIST   Filename
+    cline       CDATA   #REQUIRED
+    cindex      CDATA   #REQUIRED
+    folds       CDATA   #REQUIRED>
+
+<!ELEMENT   Filenames       (Filename*)>
+
+<!ELEMENT   ActiveWindow    (#PCDATA)>
+<!ATTLIST   ActiveWindow
+    cline       CDATA   #REQUIRED
+    cindex      CDATA   #REQUIRED>
+
+<!ELEMENT   BpFilename      (#PCDATA)>
+<!ELEMENT   Linenumber      EMPTY>
+<!ATTLIST   Linenumber
+    value       CDATA   #REQUIRED>
+<!ELEMENT   Condition       (#PCDATA)>
+<!ELEMENT   Temporary       EMPTY>
+<!ATTLIST   Temporary
+    value       CDATA   #REQUIRED>
+<!ELEMENT   Enabled         EMPTY>
+<!ATTLIST   Enabled
+    value       CDATA   #REQUIRED>
+<!ELEMENT   Count           EMPTY>
+<!ATTLIST   Count
+    value       CDATA   #REQUIRED>
+
+<!ELEMENT   Breakpoint      (BpFilename,
+                             Linenumber,
+                             Condition,
+                             Temporary,
+                             Enabled,
+                             Count)>
+
+<!ELEMENT   Breakpoints     (Breakpoint*)>
+
+<!ELEMENT   Special         (#PCDATA)>
+
+<!ELEMENT   Watchexpression (Condition,
+                             Temporary,
+                             Enabled,
+                             Count,
+                             Special)>
+
+<!ELEMENT   Watchexpressions (Watchexpression*)>
+
+<!ELEMENT   Exception       (#PCDATA)>
+
+<!ELEMENT   IgnoredException (#PCDATA)>
+
+<!ELEMENT   CommandLine      (#PCDATA)>
+<!ELEMENT   WorkingDirectory (#PCDATA)>
+<!ELEMENT   Environment      (#PCDATA)>
+<!ELEMENT   ReportExceptions EMPTY>
+<!ATTLIST   ReportExceptions
+    value       CDATA   #REQUIRED>
+<!ELEMENT   Exceptions       (Exception*)>
+<!ELEMENT   IgnoredExceptions (IgnoredException*)>
+<!ELEMENT   AutoClearShell   EMPTY>
+<!ATTLIST   AutoClearShell
+    value       CDATA   #REQUIRED>
+<!ELEMENT   TracePython      EMPTY>
+<!ATTLIST   TracePython
+    value       CDATA   #REQUIRED>
+<!ELEMENT   AutoContinue     EMPTY>
+<!ATTLIST   AutoContinue
+    value       CDATA   #REQUIRED>
+<!ELEMENT   CovexcPattern    (#PCDATA)>
+
+<!ELEMENT   DebugInfo       (CommandLine,
+                             WorkingDirectory,
+                             Environment,
+                             ReportExceptions,
+                             Exceptions,
+                             IgnoredExceptions,
+                             AutoClearShell,
+                             TracePython,
+                             AutoContinue,
+                             CovexcPattern)>
+
+<!ELEMENT   BmFilename      (#PCDATA)>
+
+<!ELEMENT   Bookmark        (BmFilename,
+                             Linenumber)>
+
+<!ELEMENT   Bookmarks       (Bookmark*)>
+
+<!ELEMENT   Session         (MultiProject?,
+                             Project?,
+                             Filenames,
+                             ActiveWindow?,
+                             Breakpoints,
+                             Watchexpressions,
+                             DebugInfo,
+                             Bookmarks)>
+<!ATTLIST   Session
+    version     CDATA   #REQUIRED>

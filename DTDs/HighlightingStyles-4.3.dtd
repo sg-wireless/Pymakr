@@ -1,0 +1,17 @@
+<!-- This is the DTD for eric4's highlightings styles file version 4.3 -->
+
+<!ELEMENT   Style       (#PCDATA)>
+<!ATTLIST   Style
+    style       CDATA   #REQUIRED
+    color       CDATA   #REQUIRED
+    paper       CDATA   #REQUIRED
+    font        CDATA   #REQUIRED
+    eolfill     CDATA   #REQUIRED>
+
+<!ELEMENT   Lexer       (Style+)>
+<!ATTLIST   Lexer
+    name        CDATA   #REQUIRED>
+
+<!ELEMENT   HighlightingStyles   (Lexer+)>
+<!ATTLIST   HighlightingStyles
+    version     CDATA   #REQUIRED>

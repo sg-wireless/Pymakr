@@ -1,0 +1,129 @@
+<ui version="4.0" >
+ <class>SvnRepoBrowserDialog</class>
+ <widget class="QDialog" name="SvnRepoBrowserDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Subversion Repository Browser</string>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QLabel" name="label" >
+     <property name="text" >
+      <string>URL:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QComboBox" name="urlCombo" >
+     <property name="toolTip" >
+      <string>Enter the URL of the repository</string>
+     </property>
+     <property name="editable" >
+      <bool>true</bool>
+     </property>
+     <property name="insertPolicy" >
+      <enum>QComboBox::InsertAtTop</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2" >
+    <widget class="QTreeWidget" name="repoTree" >
+     <property name="alternatingRowColors" >
+      <bool>true</bool>
+     </property>
+     <property name="sortingEnabled" >
+      <bool>true</bool>
+     </property>
+     <property name="allColumnsShowFocus" >
+      <bool>true</bool>
+     </property>
+     <property name="columnCount" >
+      <number>5</number>
+     </property>
+     <column>
+      <property name="text" >
+       <string>File</string>
+      </property>
+     </column>
+     <column>
+      <property name="text" >
+       <string>Revision</string>
+      </property>
+     </column>
+     <column>
+      <property name="text" >
+       <string>Author</string>
+      </property>
+     </column>
+     <column>
+      <property name="text" >
+       <string>Size</string>
+      </property>
+     </column>
+     <column>
+      <property name="text" >
+       <string>Date</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="2" column="1" >
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Close|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>urlCombo</tabstop>
+  <tabstop>repoTree</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SvnRepoBrowserDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>353</x>
+     <y>493</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SvnRepoBrowserDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>140</x>
+     <y>474</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>8</x>
+     <y>472</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

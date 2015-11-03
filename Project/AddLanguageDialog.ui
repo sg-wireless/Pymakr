@@ -1,0 +1,407 @@
+<ui version="4.0" >
+ <class>AddLanguageDialog</class>
+ <widget class="QDialog" name="AddLanguageDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>245</width>
+    <height>77</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Add Language</string>
+  </property>
+  <property name="toolTip" >
+   <string>Add a language to the current project</string>
+  </property>
+  <property name="whatsThis" >
+   <string>&lt;b>Add Language Dialog&lt;/b>
+&lt;p>This dialog is used to add a language to the current project.&lt;/p></string>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <layout class="QHBoxLayout" >
+     <item>
+      <widget class="QLabel" name="languageLabel" >
+       <property name="text" >
+        <string>&amp;Language:</string>
+       </property>
+       <property name="buddy" >
+        <cstring>languageCombo</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="languageCombo" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip" >
+        <string>Select a language to add to the current project</string>
+       </property>
+       <property name="whatsThis" >
+        <string>&lt;b>Language&lt;/b>
+&lt;p>Select a language to add to the current project.&lt;/p></string>
+       </property>
+       <property name="editable" >
+        <bool>true</bool>
+       </property>
+       <property name="duplicatesEnabled" >
+        <bool>false</bool>
+       </property>
+       <item>
+        <property name="text" >
+         <string>af</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>ar</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>bg</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>bo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>br</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>bs</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>ca</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>cs</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>cy</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>da</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>de</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>el</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>en</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>en_GB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>en_US</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>eo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>es</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>et</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>eu</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>fi</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>fr</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>ga</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>gl</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>gu</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>he</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>hi</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>hu</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>id</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>is</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>it</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>ja</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>km</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>ko</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>lt</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>lv</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>mi</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>mk</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>mr</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>nl</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>no</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>no_NY</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>oc</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>pl</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>pt</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>pt_BR</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>ro</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>ru</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>sk</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>sl</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>sr</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>sv</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>ta</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>th</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>tr</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>uk</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>vn</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>wa</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>zh_CN.GB2312</string>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>zh_TW.Big5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>AddLanguageDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>38</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>38</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>AddLanguageDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>85</x>
+     <y>54</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>85</x>
+     <y>73</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

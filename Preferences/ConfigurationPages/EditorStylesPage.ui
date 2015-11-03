@@ -1,0 +1,2051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditorStylesPage</class>
+ <widget class="QWidget" name="EditorStylesPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>625</width>
+    <height>2312</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_7">
+   <item>
+    <widget class="QLabel" name="headerLabel">
+     <property name="text">
+      <string>&lt;b&gt;Configure editor styles&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line3">
+     <property name="frameShape">
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>&lt;b&gt;Note:&lt;/b&gt; Fonts and colors of the syntax highlighters have to be configured on the syntax highlighter styles page.</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_12">
+     <property name="title">
+      <string>Colours</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_6">
+      <item row="0" column="0" colspan="4">
+       <widget class="QCheckBox" name="editAreaOverrideCheckBox">
+        <property name="toolTip">
+         <string>Select to set the colour of the edit area different to the default style</string>
+        </property>
+        <property name="text">
+         <string>Override edit area colours</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="TextLabel2_2_2_2_2_12">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Edit area foreground:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="editAreaForegroundButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the foreground colour for the edit area.</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="TextLabel2_2_2_2_2_11">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Edit area background:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="editAreaBackgroundButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the background colour for the edit area.</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="title">
+      <string>Fonts</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="1" column="2">
+       <widget class="QCheckBox" name="monospacedCheckBox">
+        <property name="toolTip">
+         <string>Select, whether the monospaced font should be used as default</string>
+        </property>
+        <property name="text">
+         <string>Use monospaced as default</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="defaultFontSample">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>Default Text</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignHCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="defaultFontButton">
+        <property name="toolTip">
+         <string>Press to select the default font for the editor's text</string>
+        </property>
+        <property name="text">
+         <string>Default Text Font</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="monospacedFontButton">
+        <property name="toolTip">
+         <string>Press to select the font to be used as the monospaced font</string>
+        </property>
+        <property name="text">
+         <string>Monospaced Font</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="monospacedFontSample">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>Monospaced Text</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignHCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Margins</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QCheckBox" name="linenoCheckBox">
+          <property name="toolTip">
+           <string>Select whether line numbers margin should be shown.</string>
+          </property>
+          <property name="text">
+           <string>Show Line Numbers Margin</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QCheckBox" name="foldingCheckBox">
+          <property name="toolTip">
+           <string>Select whether the fold margin should be shown.</string>
+          </property>
+          <property name="text">
+           <string>Show Fold Margin</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QCheckBox" name="unifiedMarginsCheckBox">
+          <property name="toolTip">
+           <string>Select to show unified margins (like eric4 &lt; 4.3.0)</string>
+          </property>
+          <property name="text">
+           <string>Show unified margins</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout">
+        <item>
+         <widget class="QLabel" name="TextLabel1_4_2_2">
+          <property name="text">
+           <string>Folding style:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="foldingStyleComboBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>Select the folding style to be used in the folding margin</string>
+          </property>
+          <property name="whatsThis">
+           <string>&lt;b&gt;Folding style&lt;/b&gt;
+&lt;p&gt;Select the desired folding style to be used in the folding margin.&lt;/p&gt;
+&lt;p&gt;The available styles are:
+&lt;ul&gt;
+&lt;li&gt;Plain - simple plus and minus symbols&lt;/li&gt;
+&lt;li&gt;Circled - circled plus and minus symbols&lt;/li&gt;
+&lt;li&gt;Boxed - boxed plus and minus symbols&lt;/li&gt;
+&lt;li&gt;Circled Tree - circled plus and minus symbols and flattened tree with rounded corners&lt;/li&gt;
+&lt;li&gt;Boxed Tree - boxed plus and minus symbols and flattened tree with rectangled corners&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Plain</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Circled</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Boxed</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Circled Tree</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Boxed Tree</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Arrow</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Arrow Tree</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="TextLabel2_2_2_2_2_6">
+          <property name="text">
+           <string>Margins foreground:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="marginsForegroundButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the foreground colour for the margins</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="TextLabel2_2_2_2_2_7">
+          <property name="text">
+           <string>Margins background:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="marginsBackgroundButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the background colour for the margins</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="TextLabel2_2_2_2_2_8">
+          <property name="text">
+           <string>Foldmargin background:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="foldmarginBackgroundButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the background colour for the foldmargin</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Foldmarkers foreground:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="foldmarkersForegroundButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the foreground colour of the foldmarkers</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Foldmarkers background:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="foldmarkersBackgroundButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the background colour of the foldmarkers</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="linenumbersFontButton">
+          <property name="toolTip">
+           <string>Press to select the font for the editor line numbers</string>
+          </property>
+          <property name="text">
+           <string>Line Numbers Font</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="marginsFontSample">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="text">
+           <string>2345</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignHCenter</set>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Selection</string>
+     </property>
+     <layout class="QVBoxLayout" name="_2">
+      <item>
+       <layout class="QGridLayout" name="_3">
+        <item row="0" column="0">
+         <widget class="QCheckBox" name="customSelColourCheckBox">
+          <property name="toolTip">
+           <string>Select to use custom selection colours</string>
+          </property>
+          <property name="whatsThis">
+           <string>&lt;b&gt;Use custom selection colours&lt;/b&gt;&lt;p&gt;Select this entry in order to use custom selection colours in the editor and shell windows. The colours for the selection foreground and background are defined on the colours page.&lt;/p&gt;</string>
+          </property>
+          <property name="text">
+           <string>Use custom selection colours</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QCheckBox" name="colourizeSelTextCheckBox">
+          <property name="toolTip">
+           <string>Select, if selected text should be colourized by the lexer.</string>
+          </property>
+          <property name="text">
+           <string>Colourize selected text</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QCheckBox" name="extentSelEolCheckBox">
+          <property name="toolTip">
+           <string>Select to extend selection to end of line</string>
+          </property>
+          <property name="text">
+           <string>Extend selection to end of line</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="_4">
+        <item>
+         <widget class="QLabel" name="TextLabel2_2_2_2_2_4">
+          <property name="text">
+           <string>Selection foreground:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="selectionForegroundButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the foreground colour for the selection.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="TextLabel2_2_2_2_2_5">
+          <property name="text">
+           <string>Selection background:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="selectionBackgroundButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the background colour for the selection.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>Caret</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QCheckBox" name="caretlineVisibleCheckBox">
+          <property name="toolTip">
+           <string>Select, whether the caretline should be highlighted</string>
+          </property>
+          <property name="text">
+           <string>Caretline visible</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="caretlineAlwaysVisibleCheckBox">
+          <property name="toolTip">
+           <string>Select, whether the caretline should be highlighted even if the editor doesn't have the focus</string>
+          </property>
+          <property name="text">
+           <string>Caretline always visible</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="_6">
+        <item>
+         <widget class="QLabel" name="textLabel1_7">
+          <property name="text">
+           <string>Caret width:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="caretWidthSpinBox">
+          <property name="toolTip">
+           <string>Select caret width (1, 2 or 3 pixels)</string>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>3</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="_7">
+        <item>
+         <widget class="QLabel" name="TextLabel2_2_2_2_2_2">
+          <property name="text">
+           <string>Caret foreground:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="caretForegroundButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the colour for the caret.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="TextLabel2_2_2_2_2_3">
+          <property name="text">
+           <string>Caretline background:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="caretlineBackgroundButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the background colour for the line containing the caret.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Debugging Line Markers</string>
+     </property>
+     <layout class="QHBoxLayout" name="_8">
+      <item>
+       <widget class="QLabel" name="TextLabel3_2_2">
+        <property name="text">
+         <string>Current line marker:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="currentLineMarkerButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the colour for the current line marker.</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="TextLabel4_2_2">
+        <property name="text">
+         <string>Error line marker:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="errorMarkerButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the colour for the error line marker.</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="title">
+      <string>Braces</string>
+     </property>
+     <layout class="QGridLayout" name="_9">
+      <item row="0" column="0" colspan="2">
+       <widget class="QCheckBox" name="bracehighlightingCheckBox">
+        <property name="toolTip">
+         <string>Select whether matching and bad braces shall be highlighted.</string>
+        </property>
+        <property name="text">
+         <string>Highlight braces</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="TextLabel1_3_2">
+        <property name="text">
+         <string>Matched braces:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="matchingBracesButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the colour for highlighting matching braces.</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="TextLabel1_3_2_2">
+        <property name="text">
+         <string>Matched braces background:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="matchingBracesBackButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the background colour for highlighting matching braces.</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="TextLabel2_2_2">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Unmatched brace:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="nonmatchingBracesButton">
+        <property name="toolTip">
+         <string>Select the colour for  highlighting nonmatching braces.</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="TextLabel2_2_2_3">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Unmatched brace background:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="nonmatchingBracesBackButton">
+        <property name="toolTip">
+         <string>Select the background colour for  highlighting nonmatching braces.</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="title">
+      <string>End of Line</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QCheckBox" name="eolCheckBox">
+        <property name="toolTip">
+         <string>Select whether end of line shall be shown</string>
+        </property>
+        <property name="text">
+         <string>Show End of Line</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="wrapLongLinesGroup">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="title">
+         <string>Wrap long lines</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_7">
+         <item row="0" column="0">
+          <widget class="QLabel" name="textLabel1_15">
+           <property name="text">
+            <string>Mode:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="wrapModeComboBox">
+           <property name="toolTip">
+            <string>Select the wrap mode for long lines</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>400</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Indication:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="wrapVisualComboBox">
+           <property name="toolTip">
+            <string>Select, how wrapped lines are indicated</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="title">
+         <string>Edge Mode</string>
+        </property>
+        <layout class="QGridLayout" name="_13">
+         <item row="0" column="2" colspan="2">
+          <spacer>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>211</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="2" colspan="2">
+          <spacer>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>201</width>
+             <height>31</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="edgeBackgroundColorButton">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Select the colour for the edge marker.</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="TextLabel13_3_2_2">
+           <property name="text">
+            <string>Background colour:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="2">
+          <widget class="QSlider" name="edgeLineColumnSlider">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>11</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string>Move to set the edge column.</string>
+           </property>
+           <property name="minimum">
+            <number>0</number>
+           </property>
+           <property name="maximum">
+            <number>160</number>
+           </property>
+           <property name="value">
+            <number>80</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="tickInterval">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLCDNumber" name="edgeLineColumnLCD">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string>Displays the selected tab width.</string>
+           </property>
+           <property name="digitCount">
+            <number>3</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+           <property name="value" stdset="0">
+            <double>80.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="TextLabel13_3_2">
+           <property name="text">
+            <string>Column number:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="textLabel1_14">
+           <property name="text">
+            <string>Mode:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="edgeModeCombo">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <item>
+            <property name="text">
+             <string>Disabled</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Draw Line</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Change Background Colour</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="title">
+      <string>Zoom</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="TextLabel13_2_2_3">
+        <property name="text">
+         <string>Initial zoom factor:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="zoomfactorSlider">
+        <property name="toolTip">
+         <string>Move to set the initial zoom factor</string>
+        </property>
+        <property name="minimum">
+         <number>-10</number>
+        </property>
+        <property name="maximum">
+         <number>20</number>
+        </property>
+        <property name="value">
+         <number>0</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickInterval">
+         <number>5</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="zoomfactorLCD">
+        <property name="toolTip">
+         <string>Displays the selected initial zoom factor</string>
+        </property>
+        <property name="digitCount">
+         <number>3</number>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="annotationsGroup">
+     <property name="title">
+      <string>Annotations</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_8">
+      <item row="0" column="0" colspan="2">
+       <widget class="QCheckBox" name="enableAnnotationsCheckBox">
+        <property name="statusTip">
+         <string>Select to enable the display of annotations</string>
+        </property>
+        <property name="text">
+         <string>Show annotations</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="annotationsWarningGroup">
+        <property name="title">
+         <string>Warnings</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="annotationsWarningFgButton">
+           <property name="toolTip">
+            <string>Press to select the foreground colour</string>
+           </property>
+           <property name="text">
+            <string>Foreground</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="annotationsWarningBgButton">
+           <property name="toolTip">
+            <string>Press to select the background colour</string>
+           </property>
+           <property name="text">
+            <string>Background</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QLineEdit" name="annotationsWarningSample">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>Warning: There might be an issue.</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QGroupBox" name="annotationsErrorGroup">
+        <property name="title">
+         <string>Errors</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="annotationsErrorFgButton">
+           <property name="toolTip">
+            <string>Press to select the foreground colour</string>
+           </property>
+           <property name="text">
+            <string>Foreground</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="annotationsErrorBgButton">
+           <property name="toolTip">
+            <string>Press to select the background colour</string>
+           </property>
+           <property name="text">
+            <string>Background</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QLineEdit" name="annotationsErrorSample">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>Error: There is an issue.</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="annotationsStyleWarningGroup">
+        <property name="title">
+         <string>Style</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="annotationsStyleWarningFgButton">
+           <property name="toolTip">
+            <string>Press to select the foreground colour</string>
+           </property>
+           <property name="text">
+            <string>Foreground</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="annotationsStyleWarningBgButton">
+           <property name="toolTip">
+            <string>Press to select the background colour</string>
+           </property>
+           <property name="text">
+            <string>Background</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QLineEdit" name="annotationsStyleWarningSample">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>Style: There is a style issue.</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_13">
+     <property name="title">
+      <string>Change Tracing</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QCheckBox" name="enableChangeTraceCheckBox">
+        <property name="toolTip">
+         <string>Select to mark changed lines</string>
+        </property>
+        <property name="text">
+         <string>Mark changed lines</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="_16">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Timeout for marking changed lines:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="changeTraceTimeoutSpinBox">
+          <property name="toolTip">
+           <string>Enter the time in milliseconds after which changed lines will be marked</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::PlusMinus</enum>
+          </property>
+          <property name="correctionMode">
+           <enum>QAbstractSpinBox::CorrectToNearestValue</enum>
+          </property>
+          <property name="suffix">
+           <string> ms</string>
+          </property>
+          <property name="minimum">
+           <number>100</number>
+          </property>
+          <property name="maximum">
+           <number>5000</number>
+          </property>
+          <property name="singleStep">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="TextLabel13_3_2_3">
+          <property name="text">
+           <string>Unsaved changes colour:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="changeMarkerUnsavedColorButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the colour for the change marker for unsaved changes.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="TextLabel13_3_2_4">
+          <property name="text">
+           <string>Saved changes colour:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="changeMarkerSavedColorButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the colour for the change marker for saved changes.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_11">
+     <property name="title">
+      <string>Whitespace</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QCheckBox" name="whitespaceCheckBox">
+        <property name="toolTip">
+         <string>Select whether whitspace characters shall be shown</string>
+        </property>
+        <property name="text">
+         <string>Show Whitespace</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="_12">
+        <item>
+         <widget class="QLabel" name="textLabel1_8">
+          <property name="text">
+           <string>Whitespace size:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="whitespaceSizeSpinBox">
+          <property name="toolTip">
+           <string>Select the size of the dots used to represent visible whitespace</string>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="_15">
+        <item>
+         <widget class="QLabel" name="TextLabel2_2_2_2_2_9">
+          <property name="text">
+           <string>Whitespace foreground:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="whitespaceForegroundButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the foreground colour for visible whitespace</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="TextLabel2_2_2_2_2_10">
+          <property name="text">
+           <string>Whitespace background:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="whitespaceBackgroundButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the background colour for visible whitespace</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_15">
+     <property name="title">
+      <string>Indentation Guides</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QCheckBox" name="indentguidesCheckBox">
+        <property name="toolTip">
+         <string>Select whether indentation guides should be shown.</string>
+        </property>
+        <property name="text">
+         <string>Show Indentation Guides</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="_18">
+        <item>
+         <widget class="QLabel" name="TextLabel2_2_2_2_2_13">
+          <property name="text">
+           <string>Indentation Guides foreground:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="indentationGuidesForegroundButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the foreground colour for indentation guides</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="TextLabel2_2_2_2_2_14">
+          <property name="text">
+           <string>Indentation Guides background:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="indentationGuidesBackgroundButton">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Select the background colour for indentation guides</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_14">
+     <property name="title">
+      <string>Marker Map</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_9">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Errors:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="errorsMapButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the colour for error markers</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Warnings:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="warningsMapButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the colour for warning markers</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Bookmarks:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="bookmarksMapButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the colour for bookmark markers</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Breakpoints:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="breakpointsMapButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the colour for breakpoint markers</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>Tasks:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="tasksMapButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the colour for task markers</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>Changes:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="changesMapButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the colour for change markers</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>Coverage:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="coverageMapButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the colour for coverage markers</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>Current Line:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QPushButton" name="currentMapButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the colour for the current line marker</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>Search Markers:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="searchMarkerMapButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the colour for the search marker</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>Background:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QPushButton" name="markerMapBackgroundButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the background colour for the marker map</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_10">
+     <property name="title">
+      <string>Various</string>
+     </property>
+     <layout class="QGridLayout" name="_14">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="miniMenuCheckBox">
+        <property name="toolTip">
+         <string>Select to show a minimalistic context menu</string>
+        </property>
+        <property name="text">
+         <string>Show minimal context menu</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>558</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>editAreaOverrideCheckBox</tabstop>
+  <tabstop>editAreaForegroundButton</tabstop>
+  <tabstop>editAreaBackgroundButton</tabstop>
+  <tabstop>defaultFontButton</tabstop>
+  <tabstop>monospacedFontButton</tabstop>
+  <tabstop>monospacedCheckBox</tabstop>
+  <tabstop>linenoCheckBox</tabstop>
+  <tabstop>foldingCheckBox</tabstop>
+  <tabstop>unifiedMarginsCheckBox</tabstop>
+  <tabstop>foldingStyleComboBox</tabstop>
+  <tabstop>marginsForegroundButton</tabstop>
+  <tabstop>marginsBackgroundButton</tabstop>
+  <tabstop>foldmarginBackgroundButton</tabstop>
+  <tabstop>foldmarkersForegroundButton</tabstop>
+  <tabstop>foldmarkersBackgroundButton</tabstop>
+  <tabstop>linenumbersFontButton</tabstop>
+  <tabstop>customSelColourCheckBox</tabstop>
+  <tabstop>colourizeSelTextCheckBox</tabstop>
+  <tabstop>extentSelEolCheckBox</tabstop>
+  <tabstop>selectionForegroundButton</tabstop>
+  <tabstop>selectionBackgroundButton</tabstop>
+  <tabstop>caretlineVisibleCheckBox</tabstop>
+  <tabstop>caretlineAlwaysVisibleCheckBox</tabstop>
+  <tabstop>caretWidthSpinBox</tabstop>
+  <tabstop>caretForegroundButton</tabstop>
+  <tabstop>caretlineBackgroundButton</tabstop>
+  <tabstop>currentLineMarkerButton</tabstop>
+  <tabstop>errorMarkerButton</tabstop>
+  <tabstop>bracehighlightingCheckBox</tabstop>
+  <tabstop>matchingBracesButton</tabstop>
+  <tabstop>matchingBracesBackButton</tabstop>
+  <tabstop>nonmatchingBracesButton</tabstop>
+  <tabstop>nonmatchingBracesBackButton</tabstop>
+  <tabstop>eolCheckBox</tabstop>
+  <tabstop>wrapModeComboBox</tabstop>
+  <tabstop>wrapVisualComboBox</tabstop>
+  <tabstop>edgeModeCombo</tabstop>
+  <tabstop>edgeLineColumnSlider</tabstop>
+  <tabstop>edgeBackgroundColorButton</tabstop>
+  <tabstop>zoomfactorSlider</tabstop>
+  <tabstop>enableAnnotationsCheckBox</tabstop>
+  <tabstop>annotationsWarningFgButton</tabstop>
+  <tabstop>annotationsWarningBgButton</tabstop>
+  <tabstop>annotationsErrorFgButton</tabstop>
+  <tabstop>annotationsErrorBgButton</tabstop>
+  <tabstop>annotationsStyleWarningFgButton</tabstop>
+  <tabstop>annotationsStyleWarningBgButton</tabstop>
+  <tabstop>enableChangeTraceCheckBox</tabstop>
+  <tabstop>changeTraceTimeoutSpinBox</tabstop>
+  <tabstop>changeMarkerUnsavedColorButton</tabstop>
+  <tabstop>changeMarkerSavedColorButton</tabstop>
+  <tabstop>whitespaceCheckBox</tabstop>
+  <tabstop>whitespaceSizeSpinBox</tabstop>
+  <tabstop>whitespaceForegroundButton</tabstop>
+  <tabstop>whitespaceBackgroundButton</tabstop>
+  <tabstop>indentguidesCheckBox</tabstop>
+  <tabstop>indentationGuidesForegroundButton</tabstop>
+  <tabstop>indentationGuidesBackgroundButton</tabstop>
+  <tabstop>errorsMapButton</tabstop>
+  <tabstop>warningsMapButton</tabstop>
+  <tabstop>bookmarksMapButton</tabstop>
+  <tabstop>breakpointsMapButton</tabstop>
+  <tabstop>tasksMapButton</tabstop>
+  <tabstop>changesMapButton</tabstop>
+  <tabstop>coverageMapButton</tabstop>
+  <tabstop>currentMapButton</tabstop>
+  <tabstop>searchMarkerMapButton</tabstop>
+  <tabstop>markerMapBackgroundButton</tabstop>
+  <tabstop>miniMenuCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>edgeLineColumnSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>edgeLineColumnLCD</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>492</x>
+     <y>1144</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>544</x>
+     <y>1148</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>zoomfactorSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>zoomfactorLCD</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>1265</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>555</x>
+     <y>1269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>editAreaOverrideCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>TextLabel2_2_2_2_2_12</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>75</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>75</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>editAreaOverrideCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>editAreaForegroundButton</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>201</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>209</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>editAreaOverrideCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>TextLabel2_2_2_2_2_11</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>313</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>editAreaOverrideCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>editAreaBackgroundButton</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>447</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>489</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

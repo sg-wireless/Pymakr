@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FindFileNameDialog</class>
+ <widget class="QWidget" name="FindFileNameDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>599</width>
+    <height>478</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Find File</string>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QLabel" name="textLabel1">
+     <property name="text">
+      <string>Enter filename (? matches any single character, * matches everything)</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QLineEdit" name="fileNameEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>9</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Enter file name to search for </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="extsepLabel">
+       <property name="text">
+        <string>.</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="fileExtEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Enter file extension to search for</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QCheckBox" name="searchDirCheckBox">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>Enabled to include the entered directory into the search</string>
+       </property>
+       <property name="text">
+        <string>Search Path:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="searchDirEdit">
+       <property name="toolTip">
+        <string>Enter the directory, the file should be searched in</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="searchDirButton">
+       <property name="toolTip">
+        <string>Press to select the directory, the file should be searched in</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QCheckBox" name="projectCheckBox">
+       <property name="toolTip">
+        <string>Select to search in the project path</string>
+       </property>
+       <property name="text">
+        <string>Search in &amp;project</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+P</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="syspathCheckBox">
+       <property name="toolTip">
+        <string>Select to search in sys.path</string>
+       </property>
+       <property name="text">
+        <string>Search in &amp;sys.path</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+S</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTreeWidget" name="fileList">
+     <property name="rootIsDecorated">
+      <bool>false</bool>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text">
+       <string>Filename</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Path</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Close|QDialogButtonBox::Open</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>fileNameEdit</tabstop>
+  <tabstop>fileExtEdit</tabstop>
+  <tabstop>searchDirEdit</tabstop>
+  <tabstop>searchDirButton</tabstop>
+  <tabstop>searchDirCheckBox</tabstop>
+  <tabstop>projectCheckBox</tabstop>
+  <tabstop>syspathCheckBox</tabstop>
+  <tabstop>fileList</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>FindFileNameDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>40</x>
+     <y>458</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>41</x>
+     <y>477</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

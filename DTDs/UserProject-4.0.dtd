@@ -1,0 +1,12 @@
+<!-- This is the DTD for eric4's user project file version 4.0 -->
+
+<!ELEMENT   VcsType                     (#PCDATA)>
+
+<!ELEMENT   VcsStatusMonitorInterval    EMPTY>
+<!ATTLIST   VcsStatusMonitorInterval
+    value       CDATA   #REQUIRED>
+
+<!ELEMENT   UserProject                 (VcsType?,
+                                         VcsStatusMonitorInterval?)>
+<!ATTLIST   UserProject
+    version     CDATA   #REQUIRED>

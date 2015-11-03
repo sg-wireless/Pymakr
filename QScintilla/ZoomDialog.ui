@@ -1,0 +1,104 @@
+<ui version="4.0" >
+ <class>ZoomDialog</class>
+ <widget class="QDialog" name="ZoomDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>206</width>
+    <height>77</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Zoom</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <layout class="QHBoxLayout" >
+     <item>
+      <widget class="QLabel" name="zoomLabel" >
+       <property name="text" >
+        <string>Zoom &amp;Factor:</string>
+       </property>
+       <property name="buddy" >
+        <cstring>zoomSpinBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="zoomSpinBox" >
+       <property name="toolTip" >
+        <string>Enter zoom factor</string>
+       </property>
+       <property name="whatsThis" >
+        <string>&lt;b>Zoom Factor&lt;/b>
+&lt;p>Enter the desired zoom factor here. The zoom factor
+may be between -10 and +20 and is the increment that is 
+added to the size of the fonts used in the editor windows.&lt;/p></string>
+       </property>
+       <property name="alignment" >
+        <set>Qt::AlignRight</set>
+       </property>
+       <property name="minimum" >
+        <number>-10</number>
+       </property>
+       <property name="maximum" >
+        <number>20</number>
+       </property>
+       <property name="value" >
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ZoomDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>50</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>49</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ZoomDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>140</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>140</x>
+     <y>68</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

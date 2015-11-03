@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EricapiConfigDialog</class>
+ <widget class="QDialog" name="EricapiConfigDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ericapi Configuration</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QGridLayout">
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="outputFileEdit">
+       <property name="toolTip">
+        <string>Enter an output filename</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Output Filename&lt;/b&gt;&lt;p&gt;Enter the filename of the output file. A '%L' placeholder is replaced by the language of the API file.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="TextLabel6">
+       <property name="text">
+        <string>Output File:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QToolButton" name="outputFileButton">
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="toolTip">
+        <string>Press to open a file selection dialog</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Languages</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QListWidget" name="languagesList">
+        <property name="toolTip">
+         <string>Select the languages of the  APIs to generate</string>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::ExtendedSelection</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QLabel" name="textLabel1_3">
+       <property name="text">
+        <string>Additional source extensions:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="sourceExtEdit">
+       <property name="toolTip">
+        <string>Enter additional source extensions separated by a comma</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout">
+     <item row="0" column="1">
+      <spacer>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>31</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="recursionCheckBox">
+       <property name="toolTip">
+        <string>Select to recurse into subdirectories</string>
+       </property>
+       <property name="text">
+        <string>Recurse into subdirectories</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QCheckBox" name="includePrivateCheckBox">
+       <property name="toolTip">
+        <string>Select to include private classes, methods and functions in the API file</string>
+       </property>
+       <property name="text">
+        <string>Include private classes, methods and functions</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Base package name:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="baseEdit">
+       <property name="toolTip">
+        <string>Enter the name of the base package</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Exclude Files:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="excludeFilesEdit">
+       <property name="toolTip">
+        <string>Enter filename patterns of files to be excluded separated by a comma</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>2</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Exclude Directories</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="ignoreDirEdit">
+        <property name="toolTip">
+         <string>Enter a directory basename to be ignored</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="addButton">
+        <property name="toolTip">
+         <string>Press to add the entered directory to the list</string>
+        </property>
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="deleteButton">
+        <property name="toolTip">
+         <string>Press to delete the selected directory from the list</string>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="4">
+       <widget class="QListWidget" name="ignoreDirsList">
+        <property name="toolTip">
+         <string>List of directory basenames to be ignored</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QToolButton" name="ignoreDirButton">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Press to open a directory selection dialog</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>outputFileEdit</tabstop>
+  <tabstop>languagesList</tabstop>
+  <tabstop>sourceExtEdit</tabstop>
+  <tabstop>recursionCheckBox</tabstop>
+  <tabstop>includePrivateCheckBox</tabstop>
+  <tabstop>baseEdit</tabstop>
+  <tabstop>excludeFilesEdit</tabstop>
+  <tabstop>ignoreDirEdit</tabstop>
+  <tabstop>addButton</tabstop>
+  <tabstop>ignoreDirsList</tabstop>
+  <tabstop>deleteButton</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>EricapiConfigDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>41</x>
+     <y>477</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>41</x>
+     <y>497</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>EricapiConfigDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>480</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>113</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PropertiesDialog</class>
+ <widget class="QDialog" name="PropertiesDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>555</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Project Properties</string>
+  </property>
+  <property name="whatsThis">
+   <string>&lt;b&gt;Project Properties Dialog&lt;/b&gt;
+&lt;p&gt;This dialog is used to show and edit the projects properties.&lt;/p&gt;
+&lt;p&gt;If the project is controlled by a version control system, the &quot;Show Repository Info&quot; button displays information about the repository.&lt;/p&gt;</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="nameLabel">
+       <property name="text">
+        <string>Project &amp;Name:</string>
+       </property>
+       <property name="buddy">
+        <cstring>nameEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="nameEdit">
+       <property name="toolTip">
+        <string>Enter the project name</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Project Name&lt;/b&gt;
+&lt;p&gt;Enter the project name&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="spellPropertiesButton">
+       <property name="toolTip">
+        <string>Press to edit the spell checking properties</string>
+       </property>
+       <property name="text">
+        <string>Spell Checking Properties...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="textLabel1">
+       <property name="text">
+        <string>&amp;Progr. Language:</string>
+       </property>
+       <property name="buddy">
+        <cstring>languageComboBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="languageComboBox">
+       <property name="toolTip">
+        <string>Select the project's programming language</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QCheckBox" name="mixedLanguageCheckBox">
+       <property name="toolTip">
+        <string>Select, if the project uses other programming languages as well</string>
+       </property>
+       <property name="text">
+        <string>Mi&amp;xed programming languages</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+X</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="textLabel1_2">
+       <property name="text">
+        <string>Project &amp;Type:</string>
+       </property>
+       <property name="buddy">
+        <cstring>projectTypeComboBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="projectTypeComboBox">
+       <property name="toolTip">
+        <string>Select the type of the project</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="dirLabel">
+       <property name="text">
+        <string>Project &amp;Directory:</string>
+       </property>
+       <property name="buddy">
+        <cstring>dirEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="dirEdit">
+       <property name="toolTip">
+        <string>Enter the project directory</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Project Directory&lt;/b&gt;
+&lt;p&gt;Enter the project directory. You may select it
+ with a dialog by pressing the button to the right.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="versionLabel">
+       <property name="text">
+        <string>&amp;Version No.:</string>
+       </property>
+       <property name="buddy">
+        <cstring>versionEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="versionEdit">
+       <property name="toolTip">
+        <string>Enter the version number</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Version No.&lt;/b&gt;
+&lt;p&gt;Enter the version no.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="mainscriptLabel">
+       <property name="text">
+        <string>&amp;Main Script:</string>
+       </property>
+       <property name="buddy">
+        <cstring>mainscriptEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="mainscriptEdit">
+       <property name="toolTip">
+        <string>Enter the main script</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Main Script&lt;/b&gt;
+&lt;p&gt;Enter the main script of the project. You may select it
+ with a dialog by pressing the button to the right.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QPushButton" name="transPropertiesButton">
+       <property name="toolTip">
+        <string>Press to edit the translations properties</string>
+       </property>
+       <property name="text">
+        <string>Translations Properties...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="eolLabel">
+       <property name="text">
+        <string>End of &amp;Line Character:</string>
+       </property>
+       <property name="buddy">
+        <cstring>eolComboBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QComboBox" name="eolComboBox">
+       <property name="toolTip">
+        <string>Select the end of line character to be used by the project</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>System</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Unix</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Macintosh</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Windows/DOS</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="authorLabel">
+       <property name="text">
+        <string>&amp;Author:</string>
+       </property>
+       <property name="buddy">
+        <cstring>authorEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLineEdit" name="authorEdit">
+       <property name="toolTip">
+        <string>Enter authors name</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Author&lt;/b&gt;
+&lt;p&gt;Enter the name of the author.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="emailLabel">
+       <property name="text">
+        <string>&amp;Email:</string>
+       </property>
+       <property name="buddy">
+        <cstring>emailEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLineEdit" name="emailEdit">
+       <property name="toolTip">
+        <string>Enter authors email</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Email&lt;/b&gt;
+&lt;p&gt;Enter the email address of the author&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="descriptionLabel">
+       <property name="text">
+        <string>&amp;Description:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignTop</set>
+       </property>
+       <property name="buddy">
+        <cstring>descriptionEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="QTextEdit" name="descriptionEdit">
+       <property name="toolTip">
+        <string>Enter description</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Description&lt;/b&gt;
+&lt;p&gt;Enter a short description for the project.&lt;/p&gt;</string>
+       </property>
+       <property name="tabChangesFocus">
+        <bool>true</bool>
+       </property>
+       <property name="acceptRichText">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QToolButton" name="dirButton">
+       <property name="toolTip">
+        <string>Show directory selection dialog</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Project Directory&lt;/b&gt;
+&lt;p&gt;Select a project directory via a directory selection dialog.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QToolButton" name="mainscriptButton">
+       <property name="toolTip">
+        <string>Show file selection dialog</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Main Script&lt;/b&gt;
+&lt;p&gt;Select the projects main script via a file selection dialog.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="vcsCheckBox">
+     <property name="toolTip">
+      <string>Select to create a version controlled project</string>
+     </property>
+     <property name="text">
+      <string>Version Controlled Project</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="_2">
+     <item>
+      <widget class="QLabel" name="vcsLabel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="vcsInfoButton">
+       <property name="toolTip">
+        <string>Press to show information about the repository</string>
+       </property>
+       <property name="text">
+        <string>Show &amp;Repository Info</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+R</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>nameEdit</tabstop>
+  <tabstop>spellPropertiesButton</tabstop>
+  <tabstop>languageComboBox</tabstop>
+  <tabstop>mixedLanguageCheckBox</tabstop>
+  <tabstop>projectTypeComboBox</tabstop>
+  <tabstop>dirEdit</tabstop>
+  <tabstop>dirButton</tabstop>
+  <tabstop>versionEdit</tabstop>
+  <tabstop>mainscriptEdit</tabstop>
+  <tabstop>mainscriptButton</tabstop>
+  <tabstop>transPropertiesButton</tabstop>
+  <tabstop>eolComboBox</tabstop>
+  <tabstop>authorEdit</tabstop>
+  <tabstop>emailEdit</tabstop>
+  <tabstop>descriptionEdit</tabstop>
+  <tabstop>vcsCheckBox</tabstop>
+  <tabstop>vcsInfoButton</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>PropertiesDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>511</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>57</x>
+     <y>529</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>PropertiesDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>516</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>145</x>
+     <y>531</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

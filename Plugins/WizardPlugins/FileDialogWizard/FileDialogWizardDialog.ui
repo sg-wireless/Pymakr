@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileDialogWizardDialog</class>
+ <widget class="QDialog" name="FileDialogWizardDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>604</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QFileDialog Wizard</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>PyQt Variant:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="pyqtComboBox"/>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="typeGroupBox">
+     <property name="title">
+      <string>Type</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="rOpenFile">
+        <property name="toolTip">
+         <string>Select to create an 'Open File' dialog</string>
+        </property>
+        <property name="text">
+         <string>Open File</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QRadioButton" name="rOpenFiles">
+        <property name="toolTip">
+         <string>Select to create an 'Open Files' dialog</string>
+        </property>
+        <property name="text">
+         <string>Open Files</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QRadioButton" name="rSaveFile">
+        <property name="toolTip">
+         <string>Select to create a 'Save File' dialog</string>
+        </property>
+        <property name="text">
+         <string>Save File</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QRadioButton" name="rDirectory">
+        <property name="toolTip">
+         <string>Select to create a 'Select Directory' dialog</string>
+        </property>
+        <property name="text">
+         <string>Select Directory</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QRadioButton" name="rfOpenFile">
+        <property name="toolTip">
+         <string>Select to create an 'Open File' dialog capturing the selected filter</string>
+        </property>
+        <property name="text">
+         <string>Open File and Filter</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QRadioButton" name="rfOpenFiles">
+        <property name="toolTip">
+         <string>Select to create an 'Open Files' dialog capturing the selected filter</string>
+        </property>
+        <property name="text">
+         <string>Open Files and Filter</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QRadioButton" name="rfSaveFile">
+        <property name="toolTip">
+         <string>Select to create a 'Save File' dialog capturing the selected filter</string>
+        </property>
+        <property name="text">
+         <string>Save File and Filter</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Results</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Name Variable:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="eNameVariable"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="lFilterVariable">
+        <property name="text">
+         <string>Filter Variable:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="eFilterVariable"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="TextLabel1">
+       <property name="text">
+        <string>Title:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="eCaption">
+       <property name="toolTip">
+        <string>Enter the title text</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="cSymlinks">
+     <property name="toolTip">
+      <string>Check to resolve symbolic links</string>
+     </property>
+     <property name="text">
+      <string>Resolve Symlinks</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="parentGroup">
+     <property name="title">
+      <string>Parent</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="parentSelf">
+        <property name="toolTip">
+         <string>Select &quot;self&quot; as parent</string>
+        </property>
+        <property name="text">
+         <string>self</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QRadioButton" name="parentNone">
+        <property name="toolTip">
+         <string>Select &quot;None&quot; as parent</string>
+        </property>
+        <property name="text">
+         <string>None</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QRadioButton" name="parentOther">
+          <property name="toolTip">
+           <string>Select to enter a parent expression</string>
+          </property>
+          <property name="text">
+           <string>Expression:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="parentEdit">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Enter the parent expression</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="filePropertiesGroup">
+     <property name="title">
+      <string>File Dialog Properties</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="TextLabel3">
+        <property name="text">
+         <string>Start With / Working Directory</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="eStartWith">
+        <property name="toolTip">
+         <string>Enter the working directory or a filename</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="cStartWith">
+        <property name="toolTip">
+         <string>Check this if the contents of the edit names a variable or variable function</string>
+        </property>
+        <property name="text">
+         <string>Is Variable</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QLabel" name="TextLabel2">
+        <property name="text">
+         <string>Filters</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLineEdit" name="eFilters">
+        <property name="toolTip">
+         <string>Enter the filter specifications separated by ';;'</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QCheckBox" name="cFilters">
+        <property name="toolTip">
+         <string>Check this if the contents of the edit names a variable or variable function</string>
+        </property>
+        <property name="text">
+         <string>Is Variable</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QLabel" name="lInitialFilter">
+        <property name="text">
+         <string>Initial Filter</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLineEdit" name="eInitialFilter">
+        <property name="toolTip">
+         <string>Enter the initial filter</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QCheckBox" name="cInitialFilter">
+        <property name="toolTip">
+         <string>Check this if the contents of the edit names a variable or variable function</string>
+        </property>
+        <property name="text">
+         <string>Is Variable</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" colspan="2">
+       <widget class="QCheckBox" name="cConfirmOverwrite">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Select to show an overwrite confirmation dialog</string>
+        </property>
+        <property name="text">
+         <string>Show overwrite confirmation</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="dirPropertiesGroup">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>Directory Dialog Properties</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="eWorkDir">
+        <property name="toolTip">
+         <string>Enter the working directory</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="TextLabel4">
+        <property name="text">
+         <string>Working Directory</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="cWorkDir">
+        <property name="toolTip">
+         <string>Check this if the contents of the edit names a variable or variable function</string>
+        </property>
+        <property name="text">
+         <string>Is Variable</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QCheckBox" name="cDirOnly">
+        <property name="toolTip">
+         <string>Check to display directories only</string>
+        </property>
+        <property name="text">
+         <string>Show Directories Only</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>pyqtComboBox</tabstop>
+  <tabstop>rOpenFile</tabstop>
+  <tabstop>rOpenFiles</tabstop>
+  <tabstop>rSaveFile</tabstop>
+  <tabstop>rDirectory</tabstop>
+  <tabstop>rfOpenFile</tabstop>
+  <tabstop>rfOpenFiles</tabstop>
+  <tabstop>rfSaveFile</tabstop>
+  <tabstop>eNameVariable</tabstop>
+  <tabstop>eFilterVariable</tabstop>
+  <tabstop>eCaption</tabstop>
+  <tabstop>cSymlinks</tabstop>
+  <tabstop>parentSelf</tabstop>
+  <tabstop>parentNone</tabstop>
+  <tabstop>parentOther</tabstop>
+  <tabstop>parentEdit</tabstop>
+  <tabstop>eStartWith</tabstop>
+  <tabstop>cStartWith</tabstop>
+  <tabstop>eFilters</tabstop>
+  <tabstop>cFilters</tabstop>
+  <tabstop>eInitialFilter</tabstop>
+  <tabstop>cInitialFilter</tabstop>
+  <tabstop>cConfirmOverwrite</tabstop>
+  <tabstop>eWorkDir</tabstop>
+  <tabstop>cWorkDir</tabstop>
+  <tabstop>cDirOnly</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>FileDialogWizardDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>29</x>
+     <y>615</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>24</x>
+     <y>488</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>FileDialogWizardDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>128</x>
+     <y>615</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>124</x>
+     <y>485</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>parentOther</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>parentEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>141</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

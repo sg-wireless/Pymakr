@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TemplatesPage</class>
+ <widget class="QWidget" name="TemplatesPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>532</width>
+    <height>541</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="headerLabel">
+     <property name="text">
+      <string>&lt;b&gt;Configure Templates&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line11_2_2_2_2_2">
+     <property name="frameShape">
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Groups</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <widget class="QCheckBox" name="templatesAutoOpenGroupsCheckBox">
+        <property name="toolTip">
+         <string>Select, if groups having entries should be opened automatically</string>
+        </property>
+        <property name="text">
+         <string>Expand groups automatically</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Variables</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <layout class="QHBoxLayout">
+        <item>
+         <widget class="QLabel" name="textLabel1_19">
+          <property name="text">
+           <string>Separator:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="templatesSeparatorCharEdit">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>Enter the character that encloses variables</string>
+          </property>
+          <property name="maxLength">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string>Input method for variables</string>
+        </property>
+        <layout class="QVBoxLayout">
+         <item>
+          <widget class="QRadioButton" name="templatesMultiDialogButton">
+           <property name="toolTip">
+            <string>Select, if a new dialog should be opened for every template variable</string>
+           </property>
+           <property name="text">
+            <string>One dialog per template variable</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="templatesSingleDialogButton">
+           <property name="toolTip">
+            <string>Select, if only one dialog for all template variables should be shown</string>
+           </property>
+           <property name="text">
+            <string>One dialog for all template variables</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>Tooltips</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <widget class="QCheckBox" name="templatesToolTipCheckBox">
+        <property name="toolTip">
+         <string>Select, if the template text should be shown in a tooltip</string>
+        </property>
+        <property name="text">
+         <string>Show template text in tooltip</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="title">
+      <string>Template Editor</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="editorFontButton">
+        <property name="toolTip">
+         <string>Press to select the font to be used for the code editor</string>
+        </property>
+        <property name="text">
+         <string>Editor Font</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="editorFontSample">
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>Template Code Editor</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignHCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>templatesAutoOpenGroupsCheckBox</tabstop>
+  <tabstop>templatesSeparatorCharEdit</tabstop>
+  <tabstop>templatesMultiDialogButton</tabstop>
+  <tabstop>templatesSingleDialogButton</tabstop>
+  <tabstop>templatesToolTipCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

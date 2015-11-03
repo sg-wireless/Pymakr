@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FindFileDialog</class>
+ <widget class="QWidget" name="FindFileDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Find in Files</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QLabel" name="TextLabel1">
+       <property name="text">
+        <string>Find &amp;text:</string>
+       </property>
+       <property name="buddy">
+        <cstring>findtextCombo</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="findtextCombo">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Enter the search text or regular expression</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="insertPolicy">
+        <enum>QComboBox::InsertAtTop</enum>
+       </property>
+       <property name="duplicatesEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="replaceLabel">
+       <property name="text">
+        <string>Replace te&amp;xt:</string>
+       </property>
+       <property name="buddy">
+        <cstring>findtextCombo</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="replacetextCombo">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Enter the replacement text or regular expression</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="insertPolicy">
+        <enum>QComboBox::InsertAtTop</enum>
+       </property>
+       <property name="duplicatesEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QCheckBox" name="caseCheckBox">
+       <property name="toolTip">
+        <string>Select to match case sensitive</string>
+       </property>
+       <property name="text">
+        <string>&amp;Match upper/lower case</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="wordCheckBox">
+       <property name="toolTip">
+        <string>Select to match whole words only</string>
+       </property>
+       <property name="text">
+        <string>Whole &amp;word</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="regexpCheckBox">
+       <property name="toolTip">
+        <string>Select if the searchtext is a regular expression</string>
+       </property>
+       <property name="text">
+        <string>Regular &amp;Expression</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="feelLikeCheckBox">
+       <property name="toolTip">
+        <string>Select to open the first occurence automatically</string>
+       </property>
+       <property name="text">
+        <string>Feeling Like</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>File type</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QCheckBox" name="sourcesCheckBox">
+          <property name="toolTip">
+           <string>Search in source files</string>
+          </property>
+          <property name="text">
+           <string>&amp;Sources</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QCheckBox" name="resourcesCheckBox">
+          <property name="toolTip">
+           <string>Search in resources</string>
+          </property>
+          <property name="text">
+           <string>&amp;Resources</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QCheckBox" name="formsCheckBox">
+          <property name="toolTip">
+           <string>Search in forms</string>
+          </property>
+          <property name="text">
+           <string>&amp;Forms</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QCheckBox" name="interfacesCheckBox">
+          <property name="toolTip">
+           <string>Search in interfaces</string>
+          </property>
+          <property name="text">
+           <string>&amp;Interfaces</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QCheckBox" name="filterCheckBox">
+          <property name="toolTip">
+           <string>Select to filter the files by a given filename pattern</string>
+          </property>
+          <property name="text">
+           <string>Fi&amp;lter</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="filterEdit">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>Enter the filename wildcards separated by ';'</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="title">
+        <string>Find in</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QRadioButton" name="projectButton">
+            <property name="toolTip">
+             <string>Search in files of the current project</string>
+            </property>
+            <property name="text">
+             <string>&amp;Project</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="dirButton">
+            <property name="toolTip">
+             <string>Search in files of a directory tree to be entered below</string>
+            </property>
+            <property name="text">
+             <string>&amp;Directory tree</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QComboBox" name="dirCombo">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Enter the directory to search in</string>
+            </property>
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+            <property name="insertPolicy">
+             <enum>QComboBox::InsertAtTop</enum>
+            </property>
+            <property name="sizeAdjustPolicy">
+             <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="dirSelectButton">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="toolTip">
+             <string>Select the directory via a directory selection dialog</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QRadioButton" name="openFilesButton">
+            <property name="toolTip">
+             <string>Search in open files only </string>
+            </property>
+            <property name="text">
+             <string>&amp;Open files only</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="E5SqueezeLabelPath" name="findProgressLabel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QProgressBar" name="findProgress">
+     <property name="toolTip">
+      <string>Shows the progress of the search action</string>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="format">
+      <string>%v/%m Files</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTreeWidget" name="findList">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>3</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="columnCount">
+      <number>2</number>
+     </property>
+     <column>
+      <property name="text">
+       <string>File/Line</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Text</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="replaceButton">
+     <property name="toolTip">
+      <string>Press to apply the selected replacements</string>
+     </property>
+     <property name="text">
+      <string>Replace</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>E5SqueezeLabelPath</class>
+   <extends>QLabel</extends>
+   <header>E5Gui/E5SqueezeLabels.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>findtextCombo</tabstop>
+  <tabstop>replacetextCombo</tabstop>
+  <tabstop>caseCheckBox</tabstop>
+  <tabstop>wordCheckBox</tabstop>
+  <tabstop>regexpCheckBox</tabstop>
+  <tabstop>feelLikeCheckBox</tabstop>
+  <tabstop>sourcesCheckBox</tabstop>
+  <tabstop>formsCheckBox</tabstop>
+  <tabstop>resourcesCheckBox</tabstop>
+  <tabstop>interfacesCheckBox</tabstop>
+  <tabstop>filterCheckBox</tabstop>
+  <tabstop>filterEdit</tabstop>
+  <tabstop>projectButton</tabstop>
+  <tabstop>dirButton</tabstop>
+  <tabstop>dirCombo</tabstop>
+  <tabstop>dirSelectButton</tabstop>
+  <tabstop>openFilesButton</tabstop>
+  <tabstop>findList</tabstop>
+  <tabstop>replaceButton</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>FindFileDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>740</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>34</x>
+     <y>660</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>filterCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>filterEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>195</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dirButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dirCombo</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>577</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>545</x>
+     <y>183</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dirButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dirSelectButton</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>515</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>563</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

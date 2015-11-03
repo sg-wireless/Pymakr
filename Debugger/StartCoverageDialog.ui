@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StartCoverageDialog</class>
+ <widget class="QDialog" name="StartCoverageDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>488</width>
+    <height>225</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Start coverage run</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="TextLabel1">
+     <property name="text">
+      <string>Command&amp;line:</string>
+     </property>
+     <property name="buddy">
+      <cstring>cmdlineCombo</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="3">
+    <widget class="QComboBox" name="cmdlineCombo">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>Enter the commandline parameters</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;b&gt;Commandline&lt;/b&gt;
+&lt;p&gt;Enter the commandline parameters in this field.&lt;/p&gt;</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <property name="insertPolicy">
+      <enum>QComboBox::InsertAtTop</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+     </property>
+     <property name="duplicatesEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="TextLabel2">
+     <property name="text">
+      <string>&amp;Working directory:</string>
+     </property>
+     <property name="buddy">
+      <cstring>workdirCombo</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QComboBox" name="workdirCombo">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>Enter the working directory</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;b&gt;Working directory&lt;/b&gt;
+&lt;p&gt;Enter the working directory of the application to be debugged. Leave it empty to set the working directory to the executable directory.&lt;/p&gt;</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <property name="insertPolicy">
+      <enum>QComboBox::InsertAtTop</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+     </property>
+     <property name="duplicatesEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="textLabel1">
+     <property name="text">
+      <string>&amp;Environment:</string>
+     </property>
+     <property name="buddy">
+      <cstring>environmentCombo</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="3">
+    <widget class="QComboBox" name="environmentCombo">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string>Enter the environment variables to be set.</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;b&gt;Environment&lt;/b&gt;
+&lt;p&gt;Enter the environment variables to be set for the program. The individual settings must be separated by whitespace and be given in the form 'var=value'. In order to add to an environment variable, enter it in the form 'var+=value'.&lt;/p&gt;
+&lt;p&gt;Example: var1=1 var2=&quot;hello world&quot; var3+=&quot;:/tmp&quot;&lt;/p&gt;</string>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <property name="insertPolicy">
+      <enum>QComboBox::InsertAtTop</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+     </property>
+     <property name="duplicatesEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QCheckBox" name="exceptionCheckBox">
+     <property name="toolTip">
+      <string>Uncheck to disable exception reporting</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;b&gt;Report exceptions&lt;/b&gt;
+&lt;p&gt;Uncheck this in order to disable exception reporting.&lt;/p&gt;</string>
+     </property>
+     <property name="text">
+      <string>Report &amp;exceptions</string>
+     </property>
+     <property name="shortcut">
+      <string>Alt+E</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QCheckBox" name="clearShellCheckBox">
+     <property name="toolTip">
+      <string>Select to clear the display of the interpreter window</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;b&gt;Clear interpreter window&lt;/b&gt;&lt;p&gt;This clears the display of the interpreter window before starting the debug client.&lt;/p&gt;</string>
+     </property>
+     <property name="text">
+      <string>Clear &amp;interpreter window</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="QCheckBox" name="consoleCheckBox">
+     <property name="toolTip">
+      <string>Select to start the debugger in a console window</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;b&gt;Start in console&lt;/b&gt;
+&lt;p&gt;Select to start the debugger in a console window. The console command has to be configured on the Debugger-&amp;gt;General page&lt;/p&gt;</string>
+     </property>
+     <property name="text">
+      <string>Start in console</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="4">
+    <widget class="QCheckBox" name="eraseCheckBox">
+     <property name="toolTip">
+      <string>Select this to erase the collected coverage information</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;b&gt;Erase coverage information&lt;/b&gt;
+&lt;p&gt;Select this to erase the collected coverage information before the next coverage run.&lt;/p&gt;</string>
+     </property>
+     <property name="text">
+      <string>Erase &amp;coverage information</string>
+     </property>
+     <property name="shortcut">
+      <string>Alt+C</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="4">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QToolButton" name="dirButton">
+     <property name="toolTip">
+      <string>Select directory using a directory selection dialog</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;b&gt;Select directory&lt;/b&gt;
+&lt;p&gt;Select the working directory via a directory selection dialog.&lt;/p&gt;</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>cmdlineCombo</tabstop>
+  <tabstop>workdirCombo</tabstop>
+  <tabstop>dirButton</tabstop>
+  <tabstop>environmentCombo</tabstop>
+  <tabstop>exceptionCheckBox</tabstop>
+  <tabstop>clearShellCheckBox</tabstop>
+  <tabstop>consoleCheckBox</tabstop>
+  <tabstop>eraseCheckBox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>StartCoverageDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>28</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>28</x>
+     <y>201</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>StartCoverageDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>113</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

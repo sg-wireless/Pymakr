@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>@TITLE@</title>
+<link rel="icon" href="data:image/png;base64,@FAVICON@" type="image/x-icon" />
+<style>
+body {
+  padding: 3em 0em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#85784A), to(#FDFDFD), color-stop(0.5, #FDFDFD));
+  background-repeat: repeat-x;
+}
+img {
+  float: left;
+  opacity: .8;
+}
+#box {
+  background: white;
+  border: 1px solid #85784A;
+  width: 600px;
+  padding: 60px;
+  margin: auto;
+  border-radius: 0.8em;
+}
+h1 {
+  font-size: 130%;
+  font-weight: bold;
+  border-bottom: 1px solid #85784A;
+  margin-left: 64px;
+}
+h2 {
+  font-size: 100%;
+  font-weight: normal;
+  border-bottom: 1px solid #85784A;
+  margin-left: 64px;
+}
+ul {
+  font-size: 100%;
+  padding-left: 64px;
+  margin: 5px 0;
+}
+</style>
+</head>
+<body>
+  <div id="box">
+    <img src="data:image/png;base64,@IMAGE@" width="48" height="48"/>
+    <h1>@H1@</h1>
+    <h2>@H2@</h2>
+    <ul>
+      <li>@LI-1@</li>
+      <li>@LI-2@</li>
+      <li>@LI-3@</li>
+      <li>@LI-4@</li>
+      <input type="submit" id="reloadButton" value="@BUTTON@" onclick="window.location.reload()">
+    </ul>
+  </div>
+</body>
+</html>

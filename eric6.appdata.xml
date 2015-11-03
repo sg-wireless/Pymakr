@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+ <id type="desktop">eric6@MARKER@.desktop</id>
+ <metadata_license>CC-BY-3.0</metadata_license>
+ <project_license>GPL-3.0+</project_license>
+ <name>eric6@MARKER@</name>
+ <summary>Integrated Development Environment for Python</summary>
+ <description>
+  <p>
+    Eric is a full featured Python and Ruby editor and IDE, written
+    in python. It is based on the cross platform Qt gui toolkit, integrating
+    the highly flexible Scintilla editor control. It is designed to be
+    usable as everdays' quick and dirty editor as well as being usable as a
+    professional project management tool integrating many advanced features
+    Python offers the professional coder. Eric includes a plug-in system, which
+    allows easy extension of the IDE functionality with plug-ins downloadable
+    from the net.
+  </p>
+ </description>
+ <screenshots>
+  <screenshot type="default" width="1931" height="1404">http://eric-ide.python-projects.org/images/eric5-screen-01.png</screenshot>
+  <screenshot width="1936" height="1404">http://eric-ide.python-projects.org/images/eric5-screen-02.png</screenshot>
+  <screenshot width="1330" height="1405">http://eric-ide.python-projects.org/images/eric5-screen-04.png</screenshot>
+  <screenshot width="1431" height="1254">http://eric-ide.python-projects.org/images/eric5-screen-10.png</screenshot>
+ </screenshots>
+ <url type="homepage">http://eric-ide.python-projects.org</url>
+ <updatecontact>detlev_at_die-offenbachs.de</updatecontact>
+</application>

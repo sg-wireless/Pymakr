@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SvnLogBrowserDialog</class>
+ <widget class="QWidget" name="SvnLogBrowserDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Subversion Log</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>From:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="fromDate">
+       <property name="toolTip">
+        <string>Enter the start date</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>To:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="toDate">
+       <property name="toolTip">
+        <string>Enter the end date</string>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="fieldCombo">
+       <property name="toolTip">
+        <string>Select the field to filter on</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Revision</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Author</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Message</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="E5ClearableLineEdit" name="rxEdit">
+       <property name="toolTip">
+        <string>Enter the regular expression to filter on</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTreeWidget" name="logTree">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>5</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::ExtendedSelection</enum>
+     </property>
+     <property name="rootIsDecorated">
+      <bool>false</bool>
+     </property>
+     <property name="itemsExpandable">
+      <bool>false</bool>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="allColumnsShowFocus">
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text">
+       <string>Revision</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Author</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Date</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Message</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="messageEdit">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>2</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTreeWidget" name="filesTree">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>3</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="rootIsDecorated">
+      <bool>false</bool>
+     </property>
+     <property name="itemsExpandable">
+      <bool>false</bool>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="allColumnsShowFocus">
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text">
+       <string>Action</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Path</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Copy from</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Copy from Rev</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="nextButton">
+       <property name="toolTip">
+        <string>Press to get the next bunch of log entries</string>
+       </property>
+       <property name="text">
+        <string>&amp;Next</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QSpinBox" name="limitSpinBox">
+       <property name="toolTip">
+        <string>Enter the limit of entries to fetch</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>10000</number>
+       </property>
+       <property name="value">
+        <number>20</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QCheckBox" name="stopCheckBox">
+       <property name="toolTip">
+        <string>Select to stop listing log messages at a copy or move</string>
+       </property>
+       <property name="text">
+        <string>Stop on Copy/Move</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" rowspan="2">
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="diffPreviousButton">
+       <property name="toolTip">
+        <string>Press to generate a diff to the previous revision</string>
+       </property>
+       <property name="text">
+        <string>&amp;Diff to Previous</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QPushButton" name="diffRevisionsButton">
+       <property name="toolTip">
+        <string>Press to compare two revisions</string>
+       </property>
+       <property name="text">
+        <string>&amp;Compare Revisions</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <spacer>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>38</width>
+         <height>29</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="4" colspan="3">
+      <widget class="QCheckBox" name="sbsCheckBox">
+       <property name="toolTip">
+        <string>Select to show differences side-by-side</string>
+       </property>
+       <property name="text">
+        <string>Show differences side-by-side</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>E5ClearableLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>E5Gui/E5LineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>fromDate</tabstop>
+  <tabstop>toDate</tabstop>
+  <tabstop>fieldCombo</tabstop>
+  <tabstop>rxEdit</tabstop>
+  <tabstop>logTree</tabstop>
+  <tabstop>messageEdit</tabstop>
+  <tabstop>filesTree</tabstop>
+  <tabstop>nextButton</tabstop>
+  <tabstop>limitSpinBox</tabstop>
+  <tabstop>stopCheckBox</tabstop>
+  <tabstop>diffPreviousButton</tabstop>
+  <tabstop>diffRevisionsButton</tabstop>
+  <tabstop>sbsCheckBox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PyRegExpWizardDialog</class>
+ <widget class="QWidget" name="PyRegExpWizardDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Python re Wizard</string>
+  </property>
+  <property name="sizeGripEnabled" stdset="0">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="versionGroup">
+     <property name="title">
+      <string>Python Version</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QRadioButton" name="py2Button">
+        <property name="statusTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Python 2</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="py3Button">
+        <property name="text">
+         <string>Python 3</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>535</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QLabel" name="variableLabel">
+       <property name="text">
+        <string>Variable Name:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="variableLineEdit"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="importCheckBox">
+     <property name="text">
+      <string>Include import statement</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="variableLine">
+     <property name="frameShape">
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QToolButton" name="commentButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Comment: (?#)&lt;/b&gt;
+&lt;p&gt;Insert some comment inside your regexp.&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Comment: (?#)&lt;/b&gt;
+&lt;p&gt;Insert some comment inside your regexp.The regex engine ignores everything after the (?# until the first closing round bracket. 
+The following example could clarify the regexp which match a valid date: &lt;/p&gt;
+&lt;p&gt;(?#year)(19|20)\d\d[- /.](?#month)(0[1-9]|1[012])[- /.](?#day)(0[1-9]|[12][0-9]|3[01])&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="charButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog.&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog. This dialog will help to edit the range of characters and add some specific conditions.&lt;/p&gt;s</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="anycharButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Any character: '.'&lt;/b&gt;
+&lt;p&gt;Select to insert a dot (.) in your regexp.&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Any character: '.'&lt;/b&gt;
+&lt;p&gt;Select to insert a dot (.) in your regexp. The dot matches a single character, except line break characters (by default). 
+E.g. 'gr.y' matches 'gray', 'grey', 'gr%y', etc. Use the dot sparingly. Often, a character class or negated
+character class is faster and more precise.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="repeatButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Repeat contents&lt;/b&gt;
+&lt;p&gt;Select a repetition condition via a specific dialog. This dialog will help to specify the allowed range for repetitions.&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Repeat contents&lt;/b&gt;
+&lt;p&gt;Select a repetition condition via a specific dialog. This dialog will help to specify the allowed range for repetitions.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="nonGroupButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Non capturing parentheses: (?:)&lt;/b&gt;
+&lt;p&gt;Select to insert some non capturing brackets.&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Non capturing parentheses: (?:)&lt;/b&gt;
+&lt;p&gt;Select to insert some non capturing brackets. It can be used to apply a regexp quantifier (eg. '?' or '+') to the entire
+group of characters inside the brakets. E.g. the regex 'Set(?:Value)?' matches 'Set' or 'SetValue'. The '?:' inside the brakets
+means that the content of the match (called the backreference) is not stored for further use.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="groupButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Group: ()&lt;/b&gt;
+&lt;p&gt;Select to insert some capturing brackets.&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Group: ()&lt;/b&gt;
+&lt;p&gt;Select to insert some capturing brackets. They can be used to apply a regexp quantifier (e.g. '?' or '+') to the entire group of 
+characters inside the brakets. E.g. the regex 'Set(Value)?' matches 'Set' or 'SetValue'. Contrary to non-capturing parentheses, 
+the backreference matched inside the brakets is stored for further use (i.e. 'Value' in the second example above). 
+One can access the backereference with the '\1' expression. &lt;/p&gt;
+&lt;p&gt;E.g. '([a-c])x\1x\1' will match 'axaxa', 'bxbxb' and 'cxcxc'.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="namedGroupButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Named group: (?P&amp;lt;&lt;i&gt;groupname&lt;/i&gt;&amp;gt;)&lt;/b&gt;
+&lt;p&gt;Select to insert some named group brackets.&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Named group: (?P&amp;lt;&lt;i&gt;groupname&lt;/i&gt;&amp;gt;)&lt;/b&gt;
+&lt;p&gt;Select to insert some named group brackets. Usage is similar to standard group parentheses as the matched 
+backreference is also stored for further usage. The difference is that a name is given to the match. This is useful when 
+the work to do on the match becomes a bit complicated. One can access the backreference via the group name (i.e (?P=&lt;i&gt;groupname&lt;/i&gt;)).
+E.g. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x matches 'axaxax','bxbxbx' or 'cxcxcx' ('foo' is the group name)&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="namedReferenceButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Reference named group: (?P=&lt;i&gt;groupname&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Select to insert a reference to named group previously declared.&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Reference named group: (?P=&lt;i&gt;groupname&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Select to insert a reference to named group previously declared. Each reference group refers to the match
+ found by the corresponding named group. In the following example, (?P=foo) may refer to the charaters 'a','b' or 'c'.&lt;/p&gt;
+&lt;p&gt;E.g. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x matches 'axaxax','bxbxbx' or 'cxcxcx'.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="altnButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Alternatives: '|'&lt;/b&gt;
+&lt;p&gt;Select to insert the alternation symbol '|'. &lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Alternatives: '|'&lt;/b&gt;
+&lt;p&gt;Select to insert the alternation symbol '|'. The alternation is used to match a single regular expression out of 
+several possible regular expressions. E.g. 'cat|dog|mouse|fish' matches words containing the word 'cat', 'dog','mouse' or 'fish'.
+Be aware that in the above example, the alternatives refer to whole or part of words. If you want to match exactly the
+ words 'cat', 'dog', ... you should express the fact that you only want to match complete words: '\b(cat|dog|mouse|fish)\b'&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="beglineButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Begin of line: '^'&lt;/b&gt;
+&lt;p&gt;Select to insert the start line character (^).&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Begin of line: '^'&lt;/b&gt;
+&lt;p&gt;Select to insert the start line character (^). It is used to find some expressions at the begining of lines.
+E.g. '^[A-Z]' match lines starting with a capitalized character. &lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="endlineButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;End of line: '$'&lt;/b&gt;
+&lt;p&gt;Select to insert the end of line character ($).&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;End of line: '$'&lt;/b&gt;
+&lt;p&gt;Select to insert the end of line character ($). It is used to find some expressions at the end of lines.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="wordboundButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Word boundary&lt;/b&gt;
+&lt;p&gt;Select to insert the word boudary character (\b).&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Word boundary&lt;/b&gt;
+&lt;p&gt;Select to insert the word boudary character (\b). This character is used to express the fact that word 
+must begin or end at this position. E.g. '\bcat\b' matches exactly the word 'cat' while 'concatenation' is ignored.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="nonwordboundButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Non word boundary&lt;/b&gt;
+&lt;p&gt;Select to insert the word boudary character (\B). \B is the negated version of \b.&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Non word boundary&lt;/b&gt;
+&lt;p&gt;Select to insert the word boudary character (\B). \B is the negated version of \b. \B matches at every position where \b 
+does not. Effectively, \B matches at any position between two word characters as well as at any position between two non-word characters.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="poslookaheadButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Positive lookahead: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Select to insert the positive lookhead brackets.&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Positive lookahead: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Select to insert the positive lookhead brackets. Basically, positive lookhead is used to match a character only if followed by another one.
+Writting 'q(?=u)' means that you want to match the 'q' character only if it is followed by 'u'. In this statement 'u' is a trivial 
+regexp which may be replaced by a more complex expression; q(?=[abc])' will match a 'q' if followed by either 'a', 'b' or 'c'.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="neglookaheadButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Negative lookahead: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Select to insert the negative lookhead brackets.&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Negative lookahead: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Select to insert the negative lookhead brackets. Basically, negative lookhead is used to match a character only if it is not
+followed by a another one. Writting 'q(?!u)' means that you want to match 'q' only if it is not followed by 'u'. In this statement, 'u' is a
+trivial regexp which may be replaced by a more complex expression; 'q(?![abc])' will match a 'q' if it is followed by anything else than 'a', 'b' or 'c'.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="poslookbehindButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Positive lookbehind: (?&amp;lt;=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Select to insert the positive lookbehind brackets.&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Positive lookbehind: (?&amp;lt;=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Select to insert the positive lookbehind brackets. Lookbehind has the same effect as lookahead, but works backwards. 
+It is used to match a character only if preceded by another one. Writting '(?&amp;lt;=u)q' means that you want to match the 'q' character 
+only if it is preceded by 'u'. As with lookhead, 'u' may be replaced by a more complex expression; '(?&amp;lt;=[abc])q' will match a 'q' if preceded by either 'a', 'b' or 'c'.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="neglookbehindButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Negative lookbehind (?&amp;lt;!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Select to insert the negative lookbehind brackets.&lt;/p&gt;</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Negative lookbehind (?&amp;lt;!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Select to insert the negative lookbehind brackets. Lookbehind has the same effect as lookahead, 
+but works backwards. It is used to match a character only if not preceded by another one. Writting '(?&amp;lt;!u)q' means that you want to match the 'q' 
+character only if it is not preceded by 'u'. As other lookaround, 'u' may be replaced by a more complex 
+expression; '(?&amp;lt;![abc])q' will match a 'q' only if not preceded by either 'a', 'b' nor 'c'.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>16</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QToolButton" name="undoButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Undo last edit&lt;/b&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="redoButton">
+       <property name="toolTip">
+        <string>&lt;b&gt;Redo last edit&lt;/b&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="textLabel1">
+       <property name="text">
+        <string>Regexp:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignTop</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QTextEdit" name="regexpTextEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="acceptRichText">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="2">
+      <widget class="QTableWidget" name="resultTable">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>2</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="2">
+      <layout class="QGridLayout">
+       <item row="0" column="1">
+        <widget class="QCheckBox" name="multilineCheckBox">
+         <property name="toolTip">
+          <string>&quot;^&quot; matches beginning of line, &quot;$&quot; matches end of line</string>
+         </property>
+         <property name="text">
+          <string>Match Linebreaks</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QCheckBox" name="unicodeCheckBox">
+         <property name="text">
+          <string>ASCII</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="verboseCheckBox">
+         <property name="text">
+          <string>Verbose Regexp</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="caseSensitiveCheckBox">
+         <property name="text">
+          <string>Case Sensitive</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QCheckBox" name="localeCheckBox">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Observe Locale</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QCheckBox" name="dotallCheckBox">
+         <property name="toolTip">
+          <string>&quot;.&quot; matches linebreaks as well</string>
+         </property>
+         <property name="text">
+          <string>Dot matches Linebreak</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="textLabel2">
+       <property name="text">
+        <string>Text:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignTop</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QTextEdit" name="textTextEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="acceptRichText">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Close|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>py2Button</tabstop>
+  <tabstop>py3Button</tabstop>
+  <tabstop>variableLineEdit</tabstop>
+  <tabstop>importCheckBox</tabstop>
+  <tabstop>commentButton</tabstop>
+  <tabstop>charButton</tabstop>
+  <tabstop>anycharButton</tabstop>
+  <tabstop>repeatButton</tabstop>
+  <tabstop>nonGroupButton</tabstop>
+  <tabstop>groupButton</tabstop>
+  <tabstop>namedGroupButton</tabstop>
+  <tabstop>namedReferenceButton</tabstop>
+  <tabstop>altnButton</tabstop>
+  <tabstop>beglineButton</tabstop>
+  <tabstop>endlineButton</tabstop>
+  <tabstop>wordboundButton</tabstop>
+  <tabstop>nonwordboundButton</tabstop>
+  <tabstop>poslookaheadButton</tabstop>
+  <tabstop>neglookaheadButton</tabstop>
+  <tabstop>poslookbehindButton</tabstop>
+  <tabstop>neglookbehindButton</tabstop>
+  <tabstop>undoButton</tabstop>
+  <tabstop>redoButton</tabstop>
+  <tabstop>regexpTextEdit</tabstop>
+  <tabstop>textTextEdit</tabstop>
+  <tabstop>caseSensitiveCheckBox</tabstop>
+  <tabstop>verboseCheckBox</tabstop>
+  <tabstop>multilineCheckBox</tabstop>
+  <tabstop>localeCheckBox</tabstop>
+  <tabstop>dotallCheckBox</tabstop>
+  <tabstop>unicodeCheckBox</tabstop>
+  <tabstop>resultTable</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

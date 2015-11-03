@@ -1,0 +1,155 @@
+<ui version="4.0" >
+ <class>ExceptionsFilterDialog</class>
+ <widget class="QDialog" name="ExceptionsFilterDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>464</width>
+    <height>385</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Exceptions Filter</string>
+  </property>
+  <property name="whatsThis" >
+   <string>&lt;b>Exception Filter&lt;/b>
+&lt;p>This dialog is used to enter the exception types, that shall be highlighted during a debugging session. If this list is empty, all exception types will be highlighted. If the exception reporting flag in the "Start Debugging" dialog is unchecked, no exception will be reported at all.&lt;/p>
+&lt;p>Please note, that unhandled exceptions are always highlighted independent of these settings.&lt;/p></string>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" >
+   <item>
+    <widget class="QListWidget" name="exceptionList" >
+     <property name="toolTip" >
+      <string>List of exceptions that shall be highlighted</string>
+     </property>
+     <property name="alternatingRowColors" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <widget class="QPushButton" name="addButton" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="toolTip" >
+        <string>Press to add the entered exception to the list</string>
+       </property>
+       <property name="text" >
+        <string>Add</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="exceptionEdit" >
+       <property name="toolTip" >
+        <string>Enter an exception type that shall be highlighted</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" >
+     <item>
+      <widget class="QPushButton" name="deleteButton" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="toolTip" >
+        <string>Press to delete the selected exception from the list</string>
+       </property>
+       <property name="text" >
+        <string>Delete</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteAllButton" >
+       <property name="toolTip" >
+        <string>Press to delete all exceptions from the list</string>
+       </property>
+       <property name="text" >
+        <string>Delete All</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>exceptionList</tabstop>
+  <tabstop>exceptionEdit</tabstop>
+  <tabstop>addButton</tabstop>
+  <tabstop>deleteButton</tabstop>
+  <tabstop>deleteAllButton</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ExceptionsFilterDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>26</x>
+     <y>309</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>26</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ExceptionsFilterDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>85</x>
+     <y>310</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>85</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

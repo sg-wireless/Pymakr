@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>De-En Beolingus</ShortName>
+    <Description>Beolingus: German-English Dictionary</Description>
+    <Url method="get" type="text/html" template="http://dict.tu-chemnitz.de/?query={searchTerms}"/>
+    <Url method="get" type="application/x-suggestions+json" template="http://dict.tu-chemnitz.de/sugg.php?json=1&amp;s={searchTerms}"/>
+    <Image>http://dict.tu-chemnitz.de/pics/beo-de.png</Image>
+</OpenSearchDescription>

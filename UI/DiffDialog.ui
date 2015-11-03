@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DiffDialog</class>
+ <widget class="QWidget" name="DiffDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>File Differences</string>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QLabel" name="textLabel1">
+       <property name="text">
+        <string>File &amp;1:</string>
+       </property>
+       <property name="buddy">
+        <cstring>file1Edit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="file1Edit">
+       <property name="toolTip">
+        <string>Enter the name of the first file</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="file1Button">
+       <property name="toolTip">
+        <string>Press to select the file via a file selection dialog</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QLabel" name="textLabel2">
+       <property name="text">
+        <string>File &amp;2:</string>
+       </property>
+       <property name="buddy">
+        <cstring>file1Edit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="file2Edit">
+       <property name="toolTip">
+        <string>Enter the name of the second file</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="file2Button">
+       <property name="toolTip">
+        <string>Press to select the file via a file selection dialog</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="diffFormatGroup">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QHBoxLayout">
+      <item>
+       <widget class="QRadioButton" name="unifiedRadioButton">
+        <property name="toolTip">
+         <string>Select to generate a unified diff</string>
+        </property>
+        <property name="text">
+         <string>&amp;Unified Diff</string>
+        </property>
+        <property name="shortcut">
+         <string>Alt+U</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="contextRadioButton">
+        <property name="toolTip">
+         <string>Select to generate a context diff</string>
+        </property>
+        <property name="text">
+         <string>Co&amp;ntext Diff</string>
+        </property>
+        <property name="shortcut">
+         <string>Alt+N</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="E5TextEditSearchWidget" name="searchWidget" native="true">
+     <property name="focusPolicy">
+      <enum>Qt::WheelFocus</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="contents">
+     <property name="lineWrapMode">
+      <enum>QTextEdit::NoWrap</enum>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="tabStopWidth">
+      <number>8</number>
+     </property>
+     <property name="acceptRichText">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>E5TextEditSearchWidget</class>
+   <extends>QWidget</extends>
+   <header>E5Gui/E5TextEditSearchWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>file1Edit</tabstop>
+  <tabstop>file1Button</tabstop>
+  <tabstop>file2Edit</tabstop>
+  <tabstop>file2Button</tabstop>
+  <tabstop>unifiedRadioButton</tabstop>
+  <tabstop>contextRadioButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DiffDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>80</x>
+     <y>578</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>82</x>
+     <y>594</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

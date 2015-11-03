@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddFileDialog</class>
+ <widget class="QDialog" name="AddFileDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>391</width>
+    <height>141</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Add Files</string>
+  </property>
+  <property name="whatsThis">
+   <string>&lt;b&gt;Add Files Dialog&lt;/b&gt;
+&lt;p&gt;This dialog is used to add files to the current project.&lt;/p&gt;</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <layout class="QGridLayout">
+     <item row="1" column="0">
+      <widget class="QLabel" name="targetDirLabel">
+       <property name="text">
+        <string>&amp;Target Directory:</string>
+       </property>
+       <property name="buddy">
+        <cstring>targetDirEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="targetDirEdit">
+       <property name="toolTip">
+        <string>Enter the target directory for the file</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Target Directory&lt;/b&gt;
+&lt;p&gt;Enter the target directory. You may select it
+ with a dialog by pressing the button to the right.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="sourceFileLabel">
+       <property name="text">
+        <string>&amp;Source Files:</string>
+       </property>
+       <property name="buddy">
+        <cstring>sourceFileEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="sourceFileEdit">
+       <property name="toolTip">
+        <string>Enter the name of files to add separated by the path separator</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Source Files&lt;/b&gt;
+&lt;p&gt;Enter the name of files to add to the current project separated
+by the path separator. You may select them with a dialog by pressing 
+the button to the right.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QToolButton" name="sourceFileButton">
+       <property name="whatsThis">
+        <string>&lt;b&gt;Source Files&lt;/b&gt;
+&lt;p&gt;Select the source files via a files selection dialog.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QToolButton" name="targetDirButton">
+       <property name="whatsThis">
+        <string>&lt;b&gt;Target Directory&lt;/b&gt;
+&lt;p&gt;Select the target directory via a directory selection dialog.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="sourcecodeCheckBox">
+     <property name="toolTip">
+      <string>Select, if the files should be added as sourcecode (overriding automatic detection)</string>
+     </property>
+     <property name="text">
+      <string>Is source&amp;code files</string>
+     </property>
+     <property name="shortcut">
+      <string>Alt+C</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>sourceFileEdit</tabstop>
+  <tabstop>sourceFileButton</tabstop>
+  <tabstop>targetDirEdit</tabstop>
+  <tabstop>targetDirButton</tabstop>
+  <tabstop>sourcecodeCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>AddFileDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>43</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>43</x>
+     <y>128</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>AddFileDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>124</x>
+     <y>128</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

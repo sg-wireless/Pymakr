@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HgLogDialog</class>
+ <widget class="QWidget" name="HgLogDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>751</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Mercurial Log</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="contentsGroup">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>3</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Log</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <widget class="QTextBrowser" name="contents">
+        <property name="whatsThis">
+         <string>&lt;b&gt;Mercurial Log&lt;/b&gt;&lt;p&gt;This shows the output of the hg log command. By clicking on the links you may show the difference between revisions.&lt;/p&gt;</string>
+        </property>
+        <property name="openLinks">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="sbsCheckBox">
+     <property name="toolTip">
+      <string>Select to show differences side-by-side</string>
+     </property>
+     <property name="text">
+      <string>Show differences side-by-side</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="errorGroup">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Errors</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <widget class="QTextEdit" name="errors">
+        <property name="whatsThis">
+         <string>&lt;b&gt;Mercurial log errors&lt;/b&gt;&lt;p&gt;This shows possible error messages of the hg log command.&lt;/p&gt;</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="acceptRichText">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="inputGroup">
+     <property name="title">
+      <string>Input</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="1" column="1">
+       <spacer>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>327</width>
+          <height>29</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="sendButton">
+        <property name="toolTip">
+         <string>Press to send the input to the hg process</string>
+        </property>
+        <property name="text">
+         <string>&amp;Send</string>
+        </property>
+        <property name="shortcut">
+         <string>Alt+S</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="3">
+       <widget class="QLineEdit" name="input">
+        <property name="toolTip">
+         <string>Enter data to be sent to the hg process</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="passwordCheckBox">
+        <property name="toolTip">
+         <string>Select to switch the input field to password mode</string>
+        </property>
+        <property name="text">
+         <string>&amp;Password Mode</string>
+        </property>
+        <property name="shortcut">
+         <string>Alt+P</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>contents</tabstop>
+  <tabstop>sbsCheckBox</tabstop>
+  <tabstop>errors</tabstop>
+  <tabstop>input</tabstop>
+  <tabstop>passwordCheckBox</tabstop>
+  <tabstop>sendButton</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>HgLogDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>262</x>
+     <y>624</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>271</x>
+     <y>647</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditorPropertiesPage</class>
+ <widget class="QWidget" name="EditorPropertiesPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>558</width>
+    <height>2611</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="headerLabel">
+     <property name="text">
+      <string>&lt;b&gt;Configure lexer properties&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line4">
+     <property name="frameShape">
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>All Lexers Properties</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <widget class="QCheckBox" name="allFoldCompactCheckBox">
+        <property name="toolTip">
+         <string>Select to include trailing blank lines in a fold block</string>
+        </property>
+        <property name="text">
+         <string>Fold compact (except CMake, Python)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Bash Lexer Properties</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <widget class="QCheckBox" name="foldBashCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>C++ , C# , IDL, Java and JavaScript Lexer Properties</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="foldCppCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="foldCppAtElseCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding at else statement should be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold at else</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="foldCppPreprocessorCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of preprocessor directives shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold preprocessor directives</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QCheckBox" name="cppIndentOpeningBraceCheckBox">
+        <property name="toolTip">
+         <string>Select, whether the line containing the opening brace should be indented</string>
+        </property>
+        <property name="text">
+         <string>Indent opening brace</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="cppIndentClosingBraceCheckBox">
+        <property name="toolTip">
+         <string>Select, whether the line containing the closing brace should be indented</string>
+        </property>
+        <property name="text">
+         <string>Indent closing brace</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QCheckBox" name="cppCaseInsensitiveCheckBox">
+        <property name="toolTip">
+         <string>Select to use case insensitive keywords</string>
+        </property>
+        <property name="text">
+         <string>Case insensitive keywords (C/C++ only)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QCheckBox" name="cppDollarAllowedCheckBox">
+        <property name="toolTip">
+         <string>Select to allow '$' characters in identifier names</string>
+        </property>
+        <property name="text">
+         <string>Allow '$' in identifier names</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QCheckBox" name="cppStylePreprocessorCheckBox">
+        <property name="toolTip">
+         <string>Select to style preprocessor lines</string>
+        </property>
+        <property name="text">
+         <string>Style preprocessor lines</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QCheckBox" name="cppHighlightTripleQuotedCheckBox">
+        <property name="toolTip">
+         <string>Select to highlight triple quoted strings</string>
+        </property>
+        <property name="text">
+         <string>Highlight triple quoted strings</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QCheckBox" name="cppHighlightHashQuotedCheckBox">
+        <property name="toolTip">
+         <string>Select to highlight hash quoted strings</string>
+        </property>
+        <property name="text">
+         <string>Highlight hash quoted strings</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QCheckBox" name="cppHighlightBackQuotedCheckBox">
+        <property name="toolTip">
+         <string>Select to highlight back quoted strings</string>
+        </property>
+        <property name="text">
+         <string>Highlight back quoted strings</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QCheckBox" name="cppHighlightEsacepSequencesCheckBox">
+        <property name="toolTip">
+         <string>Select to highlight escape sequences</string>
+        </property>
+        <property name="text">
+         <string>Highlight escape sequences</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QCheckBox" name="cppVerbatimStringEscapeAllowedCheckBox">
+        <property name="toolTip">
+         <string>Select to allow verbatim string escape sequences</string>
+        </property>
+        <property name="text">
+         <string>Allow verbatim string escape sequences</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="title">
+      <string>CMake Lexer Properties</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="cmakeFoldAtElseCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding at else statement should be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold at else</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="coffeeScriptGroup">
+     <property name="title">
+      <string>CoffeeScript</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_11">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="foldCoffeeScriptCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="coffeeScriptDollarAllowedCheckBox">
+        <property name="toolTip">
+         <string>Select to allow '$' characters in identifier names</string>
+        </property>
+        <property name="text">
+         <string>Allow '$' in identifier names</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="coffeeScriptStylePreprocessorCheckBox">
+        <property name="toolTip">
+         <string>Select to style preprocessor lines</string>
+        </property>
+        <property name="text">
+         <string>Style preprocessor lines</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>CSS Lexer Properties</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_10">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="foldCssCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="cssHssCheckBox">
+        <property name="toolTip">
+         <string>Select to activate HSS support</string>
+        </property>
+        <property name="text">
+         <string>HSS support</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="cssLessCheckBox">
+        <property name="toolTip">
+         <string>Select to activate Less CSS support</string>
+        </property>
+        <property name="text">
+         <string>Less CSS support</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QCheckBox" name="cssSassyCheckBox">
+        <property name="toolTip">
+         <string>Select to activate Sassy CSS support</string>
+        </property>
+        <property name="text">
+         <string>Sassy CSS support</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="title">
+      <string>D Lexer Properties</string>
+     </property>
+     <layout class="QGridLayout" name="_7">
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="dIndentClosingBraceCheckBox">
+        <property name="toolTip">
+         <string>Select, whether the line containing the closing brace should be indented</string>
+        </property>
+        <property name="text">
+         <string>Indent closing brace</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="dIndentOpeningBraceCheckBox">
+        <property name="toolTip">
+         <string>Select, whether the line containing the opening brace should be indented</string>
+        </property>
+        <property name="text">
+         <string>Indent opening brace</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="foldDAtElseCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding at else statement should be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold at else</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="foldDCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="gettextGroup">
+     <property name="title">
+      <string>Gettext Lexer Properties</string>
+     </property>
+     <layout class="QVBoxLayout" name="_5">
+      <item>
+       <widget class="QCheckBox" name="foldPoCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_10">
+     <property name="title">
+      <string>HTML Lexer Properties</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="foldHtmlPreprocessorCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of preprocessor directives shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold preprocessor directives</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="foldHtmlScriptCommentsCheckBox">
+        <property name="toolTip">
+         <string>Select to enable folding of script comments</string>
+        </property>
+        <property name="text">
+         <string>Fold script comments</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="foldHtmlScriptHereDocsCheckBox">
+        <property name="toolTip">
+         <string>Select to enable folding of script heredocs</string>
+        </property>
+        <property name="text">
+         <string>Fold script heredocs</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QCheckBox" name="htmlCaseSensitiveTagsCheckBox">
+        <property name="toolTip">
+         <string>Select whether HTML tags should be case sensitive</string>
+        </property>
+        <property name="text">
+         <string>Case sensitive tags</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QCheckBox" name="htmlDjangoCheckBox">
+        <property name="toolTip">
+         <string>Select to enable support for Django templates</string>
+        </property>
+        <property name="text">
+         <string>Enable Django templates</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QCheckBox" name="htmlMakoCheckBox">
+        <property name="toolTip">
+         <string>Select to enable support for Mako templates</string>
+        </property>
+        <property name="text">
+         <string>Enable Mako templates</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QGroupBox" name="xmlGroup">
+        <property name="title">
+         <string>XML Lexer Properties</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <widget class="QCheckBox" name="xmlSyleScriptsCheckBox">
+           <property name="toolTip">
+            <string>Select to enable styling of scripts</string>
+           </property>
+           <property name="text">
+            <string>Style scripts</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="pascalGroup">
+     <property name="title">
+      <string>Pascal Lexer Properties</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="foldPascalCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="foldPascalPreprocessorCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of preprocessor directives shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold preprocessor directives</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="pascalSmartHighlightingCheckBox">
+        <property name="toolTip">
+         <string>Select to enable smart highlighting of keywords</string>
+        </property>
+        <property name="text">
+         <string>Smart Highlighting</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_9">
+     <property name="title">
+      <string>Perl Lexer Properties</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="foldPerlCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="foldPerlPackagesCheckBox">
+        <property name="toolTip">
+         <string>Select to enable folding of Perl packages</string>
+        </property>
+        <property name="text">
+         <string>Fold packages</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="foldPerlPODBlocksCheckBox">
+        <property name="toolTip">
+         <string>Select to enable folding of Perl POD blocks</string>
+        </property>
+        <property name="text">
+         <string>Fold POD blocks</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="foldPerlAtElseCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding at else statement should be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold at else</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="postscriptGroup">
+     <property name="title">
+      <string>PostScript Lexer Properties</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="psFoldAtElseCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding at else statement should be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold at else</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="psMarkTokensCheckBox">
+        <property name="toolTip">
+         <string>Select to mark tokens</string>
+        </property>
+        <property name="text">
+         <string>Mark Tokens</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>PostScript Level:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="psLevelSpinBox">
+          <property name="toolTip">
+           <string>Select the PostScript level</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>9</number>
+          </property>
+          <property name="value">
+           <number>3</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="title">
+      <string>Povray Lexer Properties</string>
+     </property>
+     <layout class="QGridLayout" name="_8">
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="foldPovrayDirectivesCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of directives shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold directives</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="foldPovrayCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_13">
+     <property name="title">
+      <string>Properties Lexer Properties</string>
+     </property>
+     <layout class="QVBoxLayout" name="_2">
+      <item>
+       <widget class="QCheckBox" name="propertiesInitialSpacesCheckBox">
+        <property name="toolTip">
+         <string>Select to allow initial spaces in a line</string>
+        </property>
+        <property name="text">
+         <string>Allow initial spaces</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="title">
+      <string>Python Lexer Properties</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="foldPythonCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="foldPythonStringCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of strings shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold strings</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="foldPythonQuotesCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of triple quoted strings shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold triple quoted strings</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QCheckBox" name="pythonAutoindentCheckBox">
+        <property name="toolTip">
+         <string>Select whether text should be autoindented after a ':'</string>
+        </property>
+        <property name="text">
+         <string>Auto indentation after ':'</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QCheckBox" name="pythonStringsOverNewlineCheckBox">
+        <property name="toolTip">
+         <string>Select to allow strings to span newline characters</string>
+        </property>
+        <property name="text">
+         <string>Strings may span newline characters</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QCheckBox" name="pythonV2UnicodeAllowedCheckBox">
+        <property name="toolTip">
+         <string>Select to allow Python v2 unicode string literals (e.g. u&quot;utf8&quot;)</string>
+        </property>
+        <property name="text">
+         <string>Allow v2 unicode string literals</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QCheckBox" name="pythonV3BinaryAllowedCheckBox">
+        <property name="toolTip">
+         <string>Select to allow Python v3 binary and octal literals (e.g. 0b1011, 0o712)</string>
+        </property>
+        <property name="text">
+         <string>Allow v3 binary and octal literals</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QCheckBox" name="pythonV3BytesAllowedCheckBox">
+        <property name="toolTip">
+         <string>Select to allow Python v3 bytes string literals (e.g. b&quot;bytes&quot;)</string>
+        </property>
+        <property name="text">
+         <string>Allow v3 bytes string literals</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QCheckBox" name="pythonHighlightSubidentifierCheckBox">
+        <property name="toolTip">
+         <string>Select to highlight sub-identifiers defined in keyword set 2</string>
+        </property>
+        <property name="text">
+         <string>Highlight sub-identifiers</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" colspan="2">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Highlight bad indentation:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="pythonBadIndentationComboBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>Select whether bad indentation shall be highlighted</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_14">
+     <property name="title">
+      <string>Ruby Lexer Properties</string>
+     </property>
+     <layout class="QVBoxLayout" name="_3">
+      <item>
+       <widget class="QCheckBox" name="foldRubyCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_12">
+     <property name="title">
+      <string>SQL Lexer Properties</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_8">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="foldSqlCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="sqlFoldAtElseCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding at else statement should be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold at else</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QCheckBox" name="sqlFoldOnlyBeginCheckBox">
+        <property name="toolTip">
+         <string>Select whether only BEGIN blocks can be folded</string>
+        </property>
+        <property name="text">
+         <string>Only BEGIN blocks can be folded</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QCheckBox" name="sqlBackslashEscapesCheckBox">
+        <property name="toolTip">
+         <string>Select to enable Backslash Escapes</string>
+        </property>
+        <property name="text">
+         <string>Backslash Escapes</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="sqlDottedWordsCheckBox">
+        <property name="toolTip">
+         <string>Select if words may contain dots</string>
+        </property>
+        <property name="text">
+         <string>Words may contain dots</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QCheckBox" name="sqlHashCommentsCheckBox">
+        <property name="toolTip">
+         <string>Select to allow '#' as a comment character</string>
+        </property>
+        <property name="text">
+         <string>Allow '#' as comment character</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QCheckBox" name="sqlQuotedIdentifiersCheckBox">
+        <property name="toolTip">
+         <string>Select to enable quoted identifiers</string>
+        </property>
+        <property name="text">
+         <string>Enable quoted identifiers</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_15">
+     <property name="title">
+      <string>TCL Lexer Properties</string>
+     </property>
+     <layout class="QVBoxLayout" name="_4">
+      <item>
+       <widget class="QCheckBox" name="foldTclCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_16">
+     <property name="title">
+      <string>TeX Lexer Properties</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_9">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="foldTexCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="texProcessCommentsCheckBox">
+        <property name="toolTip">
+         <string>Select to treat comments as TeX source</string>
+        </property>
+        <property name="text">
+         <string>Treat comments as TeX source</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="texProcessIfCheckBox">
+        <property name="toolTip">
+         <string>Select to treat \if&lt;unknown&gt; as a command</string>
+        </property>
+        <property name="text">
+         <string>Treat \if&lt;unknown&gt; as command</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_11">
+     <property name="title">
+      <string>VHDL Lexer Properties</string>
+     </property>
+     <layout class="QGridLayout" name="_12">
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="vhdlFoldAtParenthesisCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of blocks at a parenthesis shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold at parenthesis</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="vhdlFoldAtBeginCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of begin blocks shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold at begin</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="vhdlFoldAtElseCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding at else statement should be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold at else</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="vhdlFoldCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="yamlGroup">
+     <property name="title">
+      <string>YAML Lexer Properties</string>
+     </property>
+     <layout class="QVBoxLayout" name="_14">
+      <item>
+       <widget class="QCheckBox" name="foldYamlCommentCheckBox">
+        <property name="toolTip">
+         <string>Select whether folding of comments shall be possible</string>
+        </property>
+        <property name="text">
+         <string>Fold comments</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>467</width>
+       <height>21</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>allFoldCompactCheckBox</tabstop>
+  <tabstop>foldBashCommentCheckBox</tabstop>
+  <tabstop>foldCppCommentCheckBox</tabstop>
+  <tabstop>foldCppAtElseCheckBox</tabstop>
+  <tabstop>foldCppPreprocessorCheckBox</tabstop>
+  <tabstop>cppIndentOpeningBraceCheckBox</tabstop>
+  <tabstop>cppIndentClosingBraceCheckBox</tabstop>
+  <tabstop>cppCaseInsensitiveCheckBox</tabstop>
+  <tabstop>cppDollarAllowedCheckBox</tabstop>
+  <tabstop>cppStylePreprocessorCheckBox</tabstop>
+  <tabstop>cppHighlightTripleQuotedCheckBox</tabstop>
+  <tabstop>cppHighlightHashQuotedCheckBox</tabstop>
+  <tabstop>cppHighlightBackQuotedCheckBox</tabstop>
+  <tabstop>cppHighlightEsacepSequencesCheckBox</tabstop>
+  <tabstop>cppVerbatimStringEscapeAllowedCheckBox</tabstop>
+  <tabstop>cmakeFoldAtElseCheckBox</tabstop>
+  <tabstop>foldCoffeeScriptCommentCheckBox</tabstop>
+  <tabstop>coffeeScriptDollarAllowedCheckBox</tabstop>
+  <tabstop>coffeeScriptStylePreprocessorCheckBox</tabstop>
+  <tabstop>foldCssCommentCheckBox</tabstop>
+  <tabstop>cssHssCheckBox</tabstop>
+  <tabstop>cssLessCheckBox</tabstop>
+  <tabstop>cssSassyCheckBox</tabstop>
+  <tabstop>foldDCommentCheckBox</tabstop>
+  <tabstop>foldDAtElseCheckBox</tabstop>
+  <tabstop>dIndentOpeningBraceCheckBox</tabstop>
+  <tabstop>dIndentClosingBraceCheckBox</tabstop>
+  <tabstop>foldPoCommentCheckBox</tabstop>
+  <tabstop>foldHtmlPreprocessorCheckBox</tabstop>
+  <tabstop>foldHtmlScriptCommentsCheckBox</tabstop>
+  <tabstop>foldHtmlScriptHereDocsCheckBox</tabstop>
+  <tabstop>htmlCaseSensitiveTagsCheckBox</tabstop>
+  <tabstop>htmlDjangoCheckBox</tabstop>
+  <tabstop>htmlMakoCheckBox</tabstop>
+  <tabstop>xmlSyleScriptsCheckBox</tabstop>
+  <tabstop>foldPascalCommentCheckBox</tabstop>
+  <tabstop>foldPascalPreprocessorCheckBox</tabstop>
+  <tabstop>pascalSmartHighlightingCheckBox</tabstop>
+  <tabstop>foldPerlCommentCheckBox</tabstop>
+  <tabstop>foldPerlPackagesCheckBox</tabstop>
+  <tabstop>foldPerlPODBlocksCheckBox</tabstop>
+  <tabstop>foldPerlAtElseCheckBox</tabstop>
+  <tabstop>psFoldAtElseCheckBox</tabstop>
+  <tabstop>psMarkTokensCheckBox</tabstop>
+  <tabstop>psLevelSpinBox</tabstop>
+  <tabstop>foldPovrayCommentCheckBox</tabstop>
+  <tabstop>foldPovrayDirectivesCheckBox</tabstop>
+  <tabstop>propertiesInitialSpacesCheckBox</tabstop>
+  <tabstop>foldPythonCommentCheckBox</tabstop>
+  <tabstop>foldPythonStringCheckBox</tabstop>
+  <tabstop>foldPythonQuotesCheckBox</tabstop>
+  <tabstop>pythonAutoindentCheckBox</tabstop>
+  <tabstop>pythonStringsOverNewlineCheckBox</tabstop>
+  <tabstop>pythonV2UnicodeAllowedCheckBox</tabstop>
+  <tabstop>pythonV3BinaryAllowedCheckBox</tabstop>
+  <tabstop>pythonV3BytesAllowedCheckBox</tabstop>
+  <tabstop>pythonHighlightSubidentifierCheckBox</tabstop>
+  <tabstop>pythonBadIndentationComboBox</tabstop>
+  <tabstop>foldRubyCommentCheckBox</tabstop>
+  <tabstop>foldSqlCommentCheckBox</tabstop>
+  <tabstop>sqlFoldAtElseCheckBox</tabstop>
+  <tabstop>sqlFoldOnlyBeginCheckBox</tabstop>
+  <tabstop>sqlBackslashEscapesCheckBox</tabstop>
+  <tabstop>sqlDottedWordsCheckBox</tabstop>
+  <tabstop>sqlHashCommentsCheckBox</tabstop>
+  <tabstop>sqlQuotedIdentifiersCheckBox</tabstop>
+  <tabstop>foldTclCommentCheckBox</tabstop>
+  <tabstop>foldTexCommentCheckBox</tabstop>
+  <tabstop>texProcessCommentsCheckBox</tabstop>
+  <tabstop>texProcessIfCheckBox</tabstop>
+  <tabstop>vhdlFoldCommentCheckBox</tabstop>
+  <tabstop>vhdlFoldAtElseCheckBox</tabstop>
+  <tabstop>vhdlFoldAtBeginCheckBox</tabstop>
+  <tabstop>vhdlFoldAtParenthesisCheckBox</tabstop>
+  <tabstop>foldYamlCommentCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

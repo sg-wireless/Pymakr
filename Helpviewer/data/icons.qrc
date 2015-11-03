@@ -1,0 +1,17 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+  <file>icons/ericWeb16.png</file>
+  <file>icons/ericWeb32.png</file>
+  <file>icons/adBlockPlus16.png</file>
+  <file>icons/adBlockPlus64.png</file>
+  <file>icons/close.png</file>
+  <file>icons/edit.png</file>
+  <file>icons/loading.gif</file>
+  <file>icons/plus.png</file>
+  <file>icons/reload.png</file>
+  <file>icons/setting.png</file>
+  <file>icons/brokenPage.png</file>
+  <file>icons/box-border-small.png</file>
+</qresource>
+</RCC>

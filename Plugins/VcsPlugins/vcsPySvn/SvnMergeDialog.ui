@@ -1,0 +1,176 @@
+<ui version="4.0" >
+ <class>SvnMergeDialog</class>
+ <widget class="QDialog" name="SvnMergeDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>456</width>
+    <height>152</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Subversion Merge</string>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="3" column="0" colspan="2" >
+    <widget class="QCheckBox" name="forceCheckBox" >
+     <property name="toolTip" >
+      <string>Select to force the merge operation</string>
+     </property>
+     <property name="text" >
+      <string>Enforce merge</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2" >
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" >
+    <widget class="QLabel" name="textLabel1" >
+     <property name="text" >
+      <string>Target:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" >
+    <widget class="QComboBox" name="targetCombo" >
+     <property name="toolTip" >
+      <string>Enter the target</string>
+     </property>
+     <property name="whatsThis" >
+      <string>&lt;b>Target&lt;/b>
+&lt;p>Enter the target for the merge operation into this field. Leave it empty to
+get the target URL from the working copy.&lt;/p>
+&lt;p>&lt;b>Note:&lt;/b> This entry is only needed, if you enter revision numbers above.&lt;/p></string>
+     </property>
+     <property name="editable" >
+      <bool>true</bool>
+     </property>
+     <property name="insertPolicy" >
+      <enum>QComboBox::InsertAtTop</enum>
+     </property>
+     <property name="duplicatesEnabled" >
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" >
+    <widget class="QComboBox" name="tag2Combo" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip" >
+      <string>Enter an URL or a revision number</string>
+     </property>
+     <property name="whatsThis" >
+      <string>&lt;b>URL/Revision&lt;/b>
+&lt;p>Enter an URL or a revision number to be merged into
+the working copy.&lt;/p></string>
+     </property>
+     <property name="editable" >
+      <bool>true</bool>
+     </property>
+     <property name="duplicatesEnabled" >
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QComboBox" name="tag1Combo" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip" >
+      <string>Enter an URL or a revision number</string>
+     </property>
+     <property name="whatsThis" >
+      <string>&lt;b>URL/Revision&lt;/b>
+&lt;p>Enter an URL or a revision number to be merged into
+the working copy.&lt;/p></string>
+     </property>
+     <property name="editable" >
+      <bool>true</bool>
+     </property>
+     <property name="duplicatesEnabled" >
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QLabel" name="TextLabel1_2" >
+     <property name="text" >
+      <string>2. URL/Revision:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QLabel" name="TextLabel1" >
+     <property name="text" >
+      <string>1. URL/Revision:</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>tag1Combo</tabstop>
+  <tabstop>tag2Combo</tabstop>
+  <tabstop>targetCombo</tabstop>
+  <tabstop>forceCheckBox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SvnMergeDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>40</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>40</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SvnMergeDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>119</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>119</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

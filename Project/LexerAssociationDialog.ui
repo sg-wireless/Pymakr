@@ -1,0 +1,173 @@
+<ui version="4.0" >
+ <class>LexerAssociationDialog</class>
+ <widget class="QDialog" name="LexerAssociationDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>418</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Project Lexer Associations</string>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" >
+   <item>
+    <widget class="QTreeWidget" name="editorLexerList" >
+     <property name="alternatingRowColors" >
+      <bool>true</bool>
+     </property>
+     <property name="rootIsDecorated" >
+      <bool>false</bool>
+     </property>
+     <property name="sortingEnabled" >
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text" >
+       <string>Filename Pattern</string>
+      </property>
+     </column>
+     <column>
+      <property name="text" >
+       <string>Lexer Language</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout" >
+     <item row="0" column="0" >
+      <widget class="QLabel" name="textLabel2_6" >
+       <property name="text" >
+        <string>Filename &amp;Pattern:</string>
+       </property>
+       <property name="buddy" >
+        <cstring>editorFileExtEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" >
+      <widget class="QLineEdit" name="editorFileExtEdit" >
+       <property name="toolTip" >
+        <string>Enter the filename pattern to be associated</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" >
+      <widget class="QPushButton" name="addLexerButton" >
+       <property name="toolTip" >
+        <string>Press to add or change the entered association</string>
+       </property>
+       <property name="text" >
+        <string>Add/&amp;Change</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" >
+      <widget class="QLabel" name="textLabel3_3" >
+       <property name="text" >
+        <string>&amp;Lexer Language:</string>
+       </property>
+       <property name="buddy" >
+        <cstring>editorLexerCombo</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" >
+      <widget class="QComboBox" name="editorLexerCombo" >
+       <property name="toolTip" >
+        <string>Select the lexer language to associate</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" >
+      <widget class="QPushButton" name="deleteLexerButton" >
+       <property name="toolTip" >
+        <string>Press to delete the selected association</string>
+       </property>
+       <property name="text" >
+        <string>&amp;Delete</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" >
+      <widget class="QLabel" name="pygmentsLabel" >
+       <property name="text" >
+        <string>Alternative Le&amp;xer:</string>
+       </property>
+       <property name="buddy" >
+        <cstring>pygmentsLexerCombo</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" >
+      <widget class="QComboBox" name="pygmentsLexerCombo" >
+       <property name="toolTip" >
+        <string>Select the alternative lexer to associate</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>editorLexerList</tabstop>
+  <tabstop>editorFileExtEdit</tabstop>
+  <tabstop>editorLexerCombo</tabstop>
+  <tabstop>pygmentsLexerCombo</tabstop>
+  <tabstop>addLexerButton</tabstop>
+  <tabstop>deleteLexerButton</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>LexerAssociationDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>LexerAssociationDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

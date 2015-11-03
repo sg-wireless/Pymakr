@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HgUserConfigDataDialog</class>
+ <widget class="QDialog" name="HgUserConfigDataDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>455</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Mercurial User Data</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>User Data</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>First Name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="E5ClearableLineEdit" name="firstNameEdit">
+        <property name="toolTip">
+         <string>Enter the first name</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Last Name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="E5ClearableLineEdit" name="lastNameEdit">
+        <property name="toolTip">
+         <string>Enter the last name</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Email:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="E5ClearableLineEdit" name="emailEdit">
+        <property name="toolTip">
+         <string>Enter the email address</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Extensions</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="fetchCheckBox">
+        <property name="toolTip">
+         <string>Select to activate the fetch extension</string>
+        </property>
+        <property name="text">
+         <string>Fetch</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="gpgCheckBox">
+        <property name="toolTip">
+         <string>Select to activate the GPG extension</string>
+        </property>
+        <property name="text">
+         <string>GPG</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="largefilesCheckBox">
+        <property name="toolTip">
+         <string>Select to activate the largefiles extension</string>
+        </property>
+        <property name="text">
+         <string>Large Files</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="purgeCheckBox">
+        <property name="toolTip">
+         <string>Select to activate the Purge extension</string>
+        </property>
+        <property name="text">
+         <string>Purge</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QCheckBox" name="queuesCheckBox">
+        <property name="toolTip">
+         <string>Select to activate the queues extension</string>
+        </property>
+        <property name="text">
+         <string>Queues</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="rebaseCheckBox">
+        <property name="toolTip">
+         <string>Select to activate the rebase extension</string>
+        </property>
+        <property name="text">
+         <string>Rebase</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QCheckBox" name="shelveCheckBox">
+        <property name="toolTip">
+         <string>Select to activate the shelve extension</string>
+        </property>
+        <property name="text">
+         <string>Shelve</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QCheckBox" name="transplantCheckBox">
+        <property name="toolTip">
+         <string>Select to activate the transplant extension</string>
+        </property>
+        <property name="text">
+         <string>Transplant</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="largefilesGroup">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>Large Files</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Minimum file size:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="lfFileSizeSpinBox">
+        <property name="toolTip">
+         <string>Enter the minimum file size in MB for files to be treated as Large Files</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="suffix">
+         <string> MB</string>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="value">
+         <number>10</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>215</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Patterns:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QLineEdit" name="lfFilePatternsEdit">
+        <property name="toolTip">
+         <string>Enter file patterns (space separated) for files to be treated as Large Files</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>E5ClearableLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>E5Gui/E5LineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>firstNameEdit</tabstop>
+  <tabstop>lastNameEdit</tabstop>
+  <tabstop>emailEdit</tabstop>
+  <tabstop>fetchCheckBox</tabstop>
+  <tabstop>gpgCheckBox</tabstop>
+  <tabstop>largefilesCheckBox</tabstop>
+  <tabstop>purgeCheckBox</tabstop>
+  <tabstop>queuesCheckBox</tabstop>
+  <tabstop>rebaseCheckBox</tabstop>
+  <tabstop>shelveCheckBox</tabstop>
+  <tabstop>transplantCheckBox</tabstop>
+  <tabstop>lfFileSizeSpinBox</tabstop>
+  <tabstop>lfFilePatternsEdit</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>HgUserConfigDataDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>378</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>HgUserConfigDataDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>325</x>
+     <y>378</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>largefilesCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>largefilesGroup</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>225</x>
+     <y>173</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>55</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

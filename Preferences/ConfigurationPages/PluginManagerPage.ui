@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PluginManagerPage</class>
+ <widget class="QWidget" name="PluginManagerPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>528</width>
+    <height>436</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="headerLabel">
+     <property name="text">
+      <string>&lt;b&gt;Configure plugin manager&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line9_2">
+     <property name="frameShape">
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Plugins download directory:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="downloadDirEdit">
+       <property name="toolTip">
+        <string>Enter the plugins download directory</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="downloadDirButton">
+       <property name="toolTip">
+        <string>Select the plugins download directory via a directory selection dialog</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Download Housekeeping</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>No. of generations to keep:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="generationsSpinBox">
+        <property name="toolTip">
+         <string>Enter the number of generations to keep for each plugin</string>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>9</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>252</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0" colspan="3">
+       <widget class="QCheckBox" name="keepHiddenCheckBox">
+        <property name="toolTip">
+         <string>Select to keep generations of hidden plugins</string>
+        </property>
+        <property name="text">
+         <string>Keep generations of hidden plugins</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="TextLabel1_2_2_2_3">
+     <property name="text">
+      <string>&lt;font color=&quot;#FF0000&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; The following settings are activated at the next startup of the application.&lt;/font&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="activateExternalPluginsCheckBox">
+     <property name="toolTip">
+      <string>Select to enable external plugins to be loaded</string>
+     </property>
+     <property name="text">
+      <string>Load external plugins</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Check for plugin updates</string>
+     </property>
+     <layout class="QHBoxLayout" name="_2">
+      <item>
+       <widget class="QRadioButton" name="noCheckRadioButton">
+        <property name="toolTip">
+         <string>Select to disable update checking</string>
+        </property>
+        <property name="text">
+         <string>Never</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="dailyCheckRadioButton">
+        <property name="toolTip">
+         <string>Select to check for updates once a day</string>
+        </property>
+        <property name="text">
+         <string>Daily</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="weeklyCheckRadioButton">
+        <property name="toolTip">
+         <string>Select to check for updates once a week</string>
+        </property>
+        <property name="text">
+         <string>Weekly</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="monthlyCheckRadioButton">
+        <property name="toolTip">
+         <string>Select to check for updates once a month</string>
+        </property>
+        <property name="text">
+         <string>Monthly</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="downloadedOnlyCheckBox">
+     <property name="toolTip">
+      <string>Select to check only already installed plugins for updates</string>
+     </property>
+     <property name="text">
+      <string>Check only installed plugins for updates</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Repository URL:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="repositoryUrlEdit">
+       <property name="toolTip">
+        <string>Shows the repository URL</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="repositoryUrlEditButton">
+       <property name="toolTip">
+        <string>Press to edit the plugin repository URL</string>
+       </property>
+       <property name="text">
+        <string>Edit URL</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>435</width>
+       <height>121</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>downloadDirEdit</tabstop>
+  <tabstop>downloadDirButton</tabstop>
+  <tabstop>generationsSpinBox</tabstop>
+  <tabstop>keepHiddenCheckBox</tabstop>
+  <tabstop>activateExternalPluginsCheckBox</tabstop>
+  <tabstop>noCheckRadioButton</tabstop>
+  <tabstop>dailyCheckRadioButton</tabstop>
+  <tabstop>weeklyCheckRadioButton</tabstop>
+  <tabstop>monthlyCheckRadioButton</tabstop>
+  <tabstop>downloadedOnlyCheckBox</tabstop>
+  <tabstop>repositoryUrlEdit</tabstop>
+  <tabstop>repositoryUrlEditButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

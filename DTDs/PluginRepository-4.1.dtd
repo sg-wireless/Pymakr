@@ -1,0 +1,27 @@
+<!-- This is the DTD for eric4's plugin repository file version 4.1 -->
+
+<!ELEMENT   Name            (#PCDATA)>
+
+<!ELEMENT   Short           (#PCDATA)>
+
+<!ELEMENT   Description     (#PCDATA)>
+
+<!ELEMENT   Url             (#PCDATA)>
+
+<!ELEMENT   Author          (#PCDATA)>
+
+<!ELEMENT   Version         (#PCDATA)>
+
+<!ELEMENT   Filename        (#PCDATA)>
+
+<!ELEMENT   Plugin          (Name,
+                             Short,
+                             Description,
+                             Url,
+                             Author,
+                             Version,
+                             Filename)>
+
+<!ELEMENT   Plugins         (Plugin*)>
+<!ATTLIST   Plugins
+    version     CDATA   #REQUIRED>

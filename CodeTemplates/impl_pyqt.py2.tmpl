@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+
+"""
+Module implementing $CLASSNAME$.
+"""
+
+from PyQt4.QtCore import pyqtSignature
+from PyQt4.QtGui import $SUPERCLASS$
+
+from .Ui_$FORMFILE$ import Ui_$FORMCLASS$
+
+
+class $CLASSNAME$($SUPERCLASS$, Ui_$FORMCLASS$):
+    """
+    Class documentation goes here.
+    """
+    def __init__(self, parent=None):
+        """
+        Constructor
+        
+        @param parent reference to the parent widget
+        @type QWidget
+        """
+        $SUPERCLASS$.__init__(self, parent)
+        self.setupUi(self)

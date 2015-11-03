@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ColorDialogWizardDialog</class>
+ <widget class="QDialog" name="ColorDialogWizardDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>381</width>
+    <height>481</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QColorDialog Wizard</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Type</string>
+     </property>
+     <layout class="QHBoxLayout">
+      <item>
+       <widget class="QRadioButton" name="rColor">
+        <property name="toolTip">
+         <string>Select to generate a QColorDialog.getColor dialog</string>
+        </property>
+        <property name="text">
+         <string>Colour</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rRGBA">
+        <property name="toolTip">
+         <string>Select to generate a QColorDialog.getRgba dialog</string>
+        </property>
+        <property name="text">
+         <string>RGBA</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>Result</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="eResultVar">
+        <property name="toolTip">
+         <string>Enter the result variable name</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="titleGroup">
+     <property name="title">
+      <string>Title</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLineEdit" name="eTitle">
+        <property name="toolTip">
+         <string>Enter the dialog title</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="parentGroup">
+     <property name="title">
+      <string>Parent</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="parentSelf">
+        <property name="toolTip">
+         <string>Select &quot;self&quot; as parent</string>
+        </property>
+        <property name="text">
+         <string>self</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QRadioButton" name="parentNone">
+        <property name="toolTip">
+         <string>Select &quot;None&quot; as parent</string>
+        </property>
+        <property name="text">
+         <string>None</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QRadioButton" name="parentOther">
+          <property name="toolTip">
+           <string>Select to enter a parent expression</string>
+          </property>
+          <property name="text">
+           <string>Expression:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="parentEdit">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Enter the parent expression</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Colour</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <widget class="QComboBox" name="eColor">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip">
+         <string>Enter a variable name or a colour</string>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.red</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.darkRed</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.green</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.darkGreen</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.blue</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.darkBlue</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.cyan</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.darkCyan</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.magenta</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.darkMagenta</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.yellow</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.darkYellow</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.white</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.lightGray</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.gray</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.darkGray</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.black</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.transparent</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.color0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Qt.color1</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>RGBA</string>
+     </property>
+     <layout class="QGridLayout">
+      <property name="verticalSpacing">
+       <number>6</number>
+      </property>
+      <item row="3" column="0" colspan="4">
+       <widget class="QLineEdit" name="eRGB">
+        <property name="toolTip">
+         <string>Enter a variable name</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="4">
+       <widget class="QLabel" name="TextLabel2">
+        <property name="text">
+         <string>Colour Variable</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QSpinBox" name="sAlpha">
+        <property name="toolTip">
+         <string>Enter the alpha value</string>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QSpinBox" name="sBlue">
+        <property name="toolTip">
+         <string>Enter the blue value</string>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="value">
+         <number>128</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="sGreen">
+        <property name="toolTip">
+         <string>Enter the green value</string>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="value">
+         <number>128</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QSpinBox" name="sRed">
+        <property name="toolTip">
+         <string>Enter the red value</string>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="value">
+         <number>128</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="TextLabel1_4">
+        <property name="text">
+         <string>Alpha</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="TextLabel1_3">
+        <property name="text">
+         <string>Blue</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="TextLabel1">
+        <property name="text">
+         <string>Red</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="TextLabel1_2">
+        <property name="text">
+         <string>Green</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>rColor</tabstop>
+  <tabstop>rRGBA</tabstop>
+  <tabstop>eResultVar</tabstop>
+  <tabstop>eTitle</tabstop>
+  <tabstop>parentSelf</tabstop>
+  <tabstop>parentNone</tabstop>
+  <tabstop>parentOther</tabstop>
+  <tabstop>parentEdit</tabstop>
+  <tabstop>eColor</tabstop>
+  <tabstop>sRed</tabstop>
+  <tabstop>sGreen</tabstop>
+  <tabstop>sBlue</tabstop>
+  <tabstop>sAlpha</tabstop>
+  <tabstop>eRGB</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>rColor</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_2</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>38</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>45</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rRGBA</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_3</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>218</x>
+     <y>442</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ColorDialogWizardDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>29</x>
+     <y>471</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ColorDialogWizardDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>85</x>
+     <y>471</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>76</x>
+     <y>278</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>parentOther</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>parentEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>122</x>
+     <y>240</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

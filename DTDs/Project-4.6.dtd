@@ -1,0 +1,155 @@
+<!-- This is the DTD for eric4's project file version 4.6 -->
+
+<!-- This is a copy of the Basic DTD -->
+<!ELEMENT   int         (#PCDATA)>
+<!ELEMENT   long        (#PCDATA)>
+<!ELEMENT   float       (#PCDATA)>
+<!ELEMENT   complex     (#PCDATA)>
+<!ELEMENT   bool        (#PCDATA)>
+<!ELEMENT   string      (#PCDATA)>
+<!ELEMENT   unicode     (#PCDATA)>
+<!ELEMENT   none        EMPTY>
+
+<!ELEMENT   pickle      (#PCDATA)>
+<!ATTLIST   pickle
+    method      CDATA   #REQUIRED
+    encoding    CDATA   #REQUIRED>
+
+<!ELEMENT   key         (int | long | float | complex | string | unicode)>
+<!ELEMENT   value       (int | long | float | complex | bool | string | unicode | none | 
+    dict | tuple | list | pickle)>
+
+<!ELEMENT   dict        (key, value)*>
+
+<!ELEMENT   tuple        (int | long | float | complex | bool | string | unicode | none | 
+    dict | tuple | list | pickle)*>
+
+<!ELEMENT   list        (int | long | float | complex | bool | string | unicode | none | 
+    dict | tuple | list | pickle)*>
+<!-- End of the Basic DTD -->
+
+<!ELEMENT   ProgLanguage        (#PCDATA)>
+<!ATTLIST   ProgLanguage
+    mixed       CDATA   #REQUIRED>
+
+<!ELEMENT   ProjectType         (#PCDATA)>
+
+<!ELEMENT   Description         (#PCDATA)>
+
+<!ELEMENT   Version             (#PCDATA)>
+
+<!ELEMENT   Author              (#PCDATA)>
+
+<!ELEMENT   Email               (#PCDATA)>
+
+<!ELEMENT   TranslationPattern  (#PCDATA)>
+
+<!ELEMENT   TranslationsBinPath (#PCDATA)>
+
+<!ELEMENT   Source              (#PCDATA)>
+
+<!ELEMENT   Sources             (Source*)>
+
+<!ELEMENT   Form                (#PCDATA)>
+
+<!ELEMENT   Forms               (Form*)>
+
+<!ELEMENT   Translation         (#PCDATA)>
+
+<!ELEMENT   Translations        (Translation*)>
+
+<!ELEMENT   TranslationException  (#PCDATA)>
+
+<!ELEMENT   TranslationExceptions (TranslationException*)>
+
+<!ELEMENT   Resource            (#PCDATA)>
+
+<!ELEMENT   Resources           (Resource*)>
+
+<!ELEMENT   Interface           (#PCDATA)>
+
+<!ELEMENT   Interfaces          (Interface*)>
+
+<!ELEMENT   Other               (#PCDATA)>
+
+<!ELEMENT   Others              (Other*)>
+
+<!ELEMENT   MainScript          (#PCDATA)>
+
+<!ELEMENT   VcsType             (#PCDATA)>
+<!ELEMENT   VcsOptions          (dict)>
+<!ELEMENT   VcsOtherData        (dict)>
+
+<!ELEMENT   Vcs                 (VcsType?,
+                                 VcsOptions?,
+                                 VcsOtherData?)>
+
+<!ELEMENT   FiletypeAssociation EMPTY>
+<!ATTLIST   FiletypeAssociation
+    pattern     CDATA   #REQUIRED
+    type        CDATA   #REQUIRED>
+
+<!ELEMENT   FiletypeAssociations (FiletypeAssociation*)>
+
+<!ELEMENT   LexerAssociation EMPTY>
+<!ATTLIST   LexerAssociation
+    pattern     CDATA   #REQUIRED
+    lexer       CDATA   #REQUIRED>
+
+<!ELEMENT   LexerAssociations (LexerAssociation*)>
+
+<!ELEMENT   ProjectTypeSpecificData (dict)>
+
+<!ELEMENT   ProjectTypeSpecific (ExtraData?)>
+
+<!ELEMENT   DocumentationParams (dict)>
+
+<!ELEMENT   Documentation       (DocumentationParams?)>
+
+<!ELEMENT   PackagersParams     (dict)>
+
+<!ELEMENT   Packagers           (PackagersParams?)>
+
+<!ELEMENT   CheckersParams      (dict)>
+
+<!ELEMENT   Checkers            (CheckersParams?)>
+
+<!ELEMENT   OtherToolsParams    (dict)>
+
+<!ELEMENT   OtherTools          (OtherToolsParams?)>
+
+<!ELEMENT   Language            (#PCDATA)>
+
+<!ELEMENT   ProjectWordList     (#PCDATA)>
+
+<!ELEMENT   ProjectExcludeList  (#PCDATA)>
+
+<!ELEMENT   Project             (Language,
+                                 ProjectWordList?,
+                                 ProjectExcludeList?,
+                                 ProgLanguage,
+                                 ProjectType,
+                                 Description?,
+                                 Version?,
+                                 Author?,
+                                 Email?,
+                                 TranslationPattern?,
+                                 TranslationsBinPath?,
+                                 Sources,
+                                 Forms,
+                                 Translations,
+                                 TranslationExceptions?,
+                                 Resources,
+                                 Interfaces,
+                                 Others,
+                                 MainScript?,
+                                 Vcs,
+                                 FiletypeAssociations,
+                                 LexerAssociations?,
+                                 Extra?,
+                                 Documentation?,
+                                 Packagers?,
+                                 Checkers?,
+                                 OtherTools?)>
+<!ATTLIST   Project
+    version     CDATA   #REQUIRED>

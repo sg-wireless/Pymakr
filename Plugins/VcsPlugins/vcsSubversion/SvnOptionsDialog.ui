@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SvnOptionsDialog</class>
+ <widget class="QDialog" name="SvnOptionsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>565</width>
+    <height>169</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Repository Infos</string>
+  </property>
+  <property name="whatsThis">
+   <string>&lt;b&gt;Repository Infos Dialog&lt;/b&gt;
+&lt;p&gt;Enter the various infos into the entry fields. These values are used to generate a new project in the repository. If the checkbox is selected, the URL must end in the project name. A directory tree with project/tags, project/branches and project/trunk will be generated in the repository. If the checkbox is not selected, the URL must contain the complete path in the repository.&lt;/p&gt;
+&lt;p&gt;For remote repositories the URL must contain the hostname.&lt;/p&gt;</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <layout class="QGridLayout">
+     <item row="2" column="0">
+      <widget class="QLabel" name="TextLabel5">
+       <property name="text">
+        <string>Log &amp;Message:</string>
+       </property>
+       <property name="buddy">
+        <cstring>vcsLogEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="2">
+      <widget class="QCheckBox" name="layoutCheckBox">
+       <property name="toolTip">
+        <string>Select, if the standard repository layout (projectdir/trunk, projectdir/tags, projectdir/branches) should be generated</string>
+       </property>
+       <property name="text">
+        <string>Create standard repository &amp;layout</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+L</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="protocolCombo">
+       <property name="toolTip">
+        <string>Select the protocol to access the repository</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="vcsUrlLabel">
+       <property name="text">
+        <string>&amp;URL:</string>
+       </property>
+       <property name="buddy">
+        <cstring>vcsUrlEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="vcsLogEdit">
+       <property name="toolTip">
+        <string>Enter the log message for the new project.</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Log Message&lt;/b&gt;
+&lt;p&gt;Enter the log message to be used for the new project.&lt;/p&gt;</string>
+       </property>
+       <property name="text">
+        <string>new project started</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="textLabel1">
+       <property name="text">
+        <string>&amp;Protocol:</string>
+       </property>
+       <property name="buddy">
+        <cstring>protocolCombo</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="vcsUrlEdit">
+       <property name="toolTip">
+        <string>Enter the url path of the module in the repository (without protocol part)</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;URL&lt;/b&gt;&lt;p&gt;Enter the URL to the module. For a repository with standard layout, this must not contain the trunk, tags or branches part.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QToolButton" name="vcsUrlButton">
+       <property name="toolTip">
+        <string>Select the repository url via a directory selection dialog or the repository browser</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>protocolCombo</tabstop>
+  <tabstop>vcsUrlEdit</tabstop>
+  <tabstop>vcsUrlButton</tabstop>
+  <tabstop>vcsLogEdit</tabstop>
+  <tabstop>layoutCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SvnOptionsDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>47</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>51</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SvnOptionsDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>204</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>205</x>
+     <y>165</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

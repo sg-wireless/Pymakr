@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BookmarkedFilesDialog</class>
+ <widget class="QDialog" name="BookmarkedFilesDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>475</width>
+    <height>391</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Configure Bookmarked Files Menu</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <layout class="QGridLayout">
+     <item row="0" column="0" rowspan="6" colspan="3">
+      <widget class="QListWidget" name="filesList">
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="deleteButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>Delete the selected entry</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Delete&lt;/b&gt;
+&lt;p&gt;Delete the selected entry.&lt;/p&gt;</string>
+       </property>
+       <property name="text">
+        <string>&amp;Delete</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+D</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <spacer>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>87</width>
+         <height>130</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="3" column="3">
+      <widget class="QPushButton" name="upButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>Move up</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Move Up&lt;/b&gt;
+&lt;p&gt;Move the selected entry up.&lt;/p&gt;</string>
+       </property>
+       <property name="text">
+        <string>&amp;Up</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+U</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QPushButton" name="downButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>Move down</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Move Down&lt;/b&gt;
+&lt;p&gt;Move the selected entry down.&lt;/p&gt;</string>
+       </property>
+       <property name="text">
+        <string>&amp;Down</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+D</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="addButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>Add a new bookmarked file</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Add&lt;/b&gt;
+&lt;p&gt;Add a new bookmarked file with the value entered below.&lt;/p&gt;</string>
+       </property>
+       <property name="text">
+        <string>&amp;Add</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+A</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="TextLabel1">
+       <property name="text">
+        <string>&amp;File:</string>
+       </property>
+       <property name="buddy">
+        <cstring>fileEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="changeButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>Change the value of the selected entry</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Change&lt;/b&gt;
+&lt;p&gt;Change the value of the selected entry.&lt;/p&gt;</string>
+       </property>
+       <property name="text">
+        <string>C&amp;hange</string>
+       </property>
+       <property name="shortcut">
+        <string>Alt+H</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="fileEdit">
+       <property name="toolTip">
+        <string>Enter the filename of the file</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;File&lt;/b&gt;
+&lt;p&gt;Enter the filename of the bookmarked file.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QToolButton" name="fileButton">
+       <property name="toolTip">
+        <string>Select the file via a file selection dialog</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;File&lt;/b&gt;
+&lt;p&gt;Select the file to be bookmarked via a file selection dialog.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>filesList</tabstop>
+  <tabstop>addButton</tabstop>
+  <tabstop>changeButton</tabstop>
+  <tabstop>deleteButton</tabstop>
+  <tabstop>upButton</tabstop>
+  <tabstop>downButton</tabstop>
+  <tabstop>fileEdit</tabstop>
+  <tabstop>fileButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>BookmarkedFilesDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>25</x>
+     <y>373</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>25</x>
+     <y>388</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>BookmarkedFilesDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>105</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>105</x>
+     <y>389</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

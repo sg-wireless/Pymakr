@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpClearPrivateDataDialog</class>
+ <widget class="QDialog" name="HelpClearPrivateDataDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>305</width>
+    <height>289</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Clear Private Data</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QCheckBox" name="historyCheckBox">
+     <property name="toolTip">
+      <string>Select to clear the browsing history</string>
+     </property>
+     <property name="text">
+      <string>&amp;Browsing History</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QComboBox" name="historyCombo">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Select the history period to be deleted</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Last Hour</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Last Day</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Last Week</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Last 4 Weeks</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Whole Period</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="searchCheckBox">
+     <property name="toolTip">
+      <string>Select to clear the search history</string>
+     </property>
+     <property name="text">
+      <string>&amp;Search History</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="downloadsCheckBox">
+     <property name="toolTip">
+      <string>Select to clear the download history</string>
+     </property>
+     <property name="text">
+      <string>Download &amp;History</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="cookiesCheckBox">
+     <property name="toolTip">
+      <string>Select to clear the cookies</string>
+     </property>
+     <property name="text">
+      <string>&amp;Cookies</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="cacheCheckBox">
+     <property name="toolTip">
+      <string>Select to clear the disk cache</string>
+     </property>
+     <property name="text">
+      <string>Cached &amp;Web Pages</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="iconsCheckBox">
+     <property name="toolTip">
+      <string>Select to clear the website icons</string>
+     </property>
+     <property name="text">
+      <string>Website &amp;Icons</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="passwordsCheckBox">
+     <property name="toolTip">
+      <string>Select to clear the saved passwords</string>
+     </property>
+     <property name="text">
+      <string>Saved &amp;Passwords</string>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="databasesCheckBox">
+     <property name="toolTip">
+      <string>Select to delete all web databases</string>
+     </property>
+     <property name="text">
+      <string>Web &amp;Databases</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="flashCookiesCheckBox">
+     <property name="toolTip">
+      <string>Select to clear cookies set by the Adobe Flash Player</string>
+     </property>
+     <property name="text">
+      <string>Cookies from Adobe &amp;Flash Player</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>historyCheckBox</tabstop>
+  <tabstop>historyCombo</tabstop>
+  <tabstop>searchCheckBox</tabstop>
+  <tabstop>downloadsCheckBox</tabstop>
+  <tabstop>cookiesCheckBox</tabstop>
+  <tabstop>cacheCheckBox</tabstop>
+  <tabstop>iconsCheckBox</tabstop>
+  <tabstop>passwordsCheckBox</tabstop>
+  <tabstop>databasesCheckBox</tabstop>
+  <tabstop>flashCookiesCheckBox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>HelpClearPrivateDataDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>HelpClearPrivateDataDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>295</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>historyCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>historyCombo</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>19</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>83</x>
+     <y>45</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

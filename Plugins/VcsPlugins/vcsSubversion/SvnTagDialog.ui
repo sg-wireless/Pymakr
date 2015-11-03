@@ -1,0 +1,173 @@
+<ui version="4.0" >
+ <class>SvnTagDialog</class>
+ <widget class="QDialog" name="SvnTagDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>391</width>
+    <height>216</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Subversion Tag</string>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="2" column="0" colspan="2" >
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QComboBox" name="tagCombo" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip" >
+      <string>Enter the name of the tag</string>
+     </property>
+     <property name="whatsThis" >
+      <string>&lt;b>Tag Name&lt;/b>
+&lt;p>Enter the name of the tag to be created, moved or deleted.&lt;/p></string>
+     </property>
+     <property name="editable" >
+      <bool>true</bool>
+     </property>
+     <property name="duplicatesEnabled" >
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QLabel" name="TextLabel1" >
+     <property name="text" >
+      <string>Name:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" >
+    <widget class="QGroupBox" name="TagActionGroup" >
+     <property name="title" >
+      <string>Tag Action</string>
+     </property>
+     <layout class="QVBoxLayout" >
+      <item>
+       <widget class="QRadioButton" name="createRegularButton" >
+        <property name="toolTip" >
+         <string>Select to create a regular tag</string>
+        </property>
+        <property name="whatsThis" >
+         <string>&lt;b>Create Regular Tag&lt;/b>
+&lt;p>Select this entry in order to create a regular tag in the repository.&lt;/p></string>
+        </property>
+        <property name="text" >
+         <string>Create Regular Tag</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="createBranchButton" >
+        <property name="toolTip" >
+         <string>Select to create a branch tag</string>
+        </property>
+        <property name="whatsThis" >
+         <string>&lt;b>Create Branch Tag&lt;/b>
+&lt;p>Select this entry in order to create a branch in the repository.&lt;/p></string>
+        </property>
+        <property name="text" >
+         <string>Create Branch Tag</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="deleteRegularButton" >
+        <property name="toolTip" >
+         <string>Select to delete a regular tag</string>
+        </property>
+        <property name="whatsThis" >
+         <string>&lt;b>Delete Regular Tag&lt;/b>
+&lt;p>Select this entry in order to delete the selected regular tag.&lt;/p></string>
+        </property>
+        <property name="text" >
+         <string>Delete Regular Tag</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="deleteBranchButton" >
+        <property name="toolTip" >
+         <string>Select to delete a branch tag</string>
+        </property>
+        <property name="whatsThis" >
+         <string>&lt;b>Delete Branch Tag&lt;/b>
+&lt;p>Select this entry in order to delete the selected branch tag.&lt;/p></string>
+        </property>
+        <property name="text" >
+         <string>Delete Branch Tag</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>tagCombo</tabstop>
+  <tabstop>createRegularButton</tabstop>
+  <tabstop>createBranchButton</tabstop>
+  <tabstop>deleteRegularButton</tabstop>
+  <tabstop>deleteBranchButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SvnTagDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>85</x>
+     <y>192</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>25</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SvnTagDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>122</x>
+     <y>193</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>128</x>
+     <y>210</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

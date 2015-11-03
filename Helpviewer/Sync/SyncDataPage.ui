@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SyncDataPage</class>
+ <widget class="QWizardPage" name="SyncDataPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="title">
+   <string>Basic synchronization settings</string>
+  </property>
+  <property name="subTitle">
+   <string>Please select, if synchronization should be enabled and which data should be synchronized.</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QCheckBox" name="activeCheckBox">
+     <property name="toolTip">
+      <string>Select to activate data synchronization</string>
+     </property>
+     <property name="text">
+      <string>Activate synchronization</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="syncDataBox">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>Data to be synchronized</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QCheckBox" name="bookmarksCheckBox">
+        <property name="toolTip">
+         <string>Select to synchronize bookmarks</string>
+        </property>
+        <property name="text">
+         <string>Bookmarks</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="historyCheckBox">
+        <property name="toolTip">
+         <string>Select to synchronize history</string>
+        </property>
+        <property name="text">
+         <string>History</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="passwordsCheckBox">
+        <property name="toolTip">
+         <string>Select to synchronize passwords</string>
+        </property>
+        <property name="text">
+         <string>Passwords</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="userAgentsCheckBox">
+        <property name="toolTip">
+         <string>Select to synchronize user agent settings</string>
+        </property>
+        <property name="text">
+         <string>User Agent Settings</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="speedDialCheckBox">
+        <property name="toolTip">
+         <string>Select to synchronize the speed dial data</string>
+        </property>
+        <property name="text">
+         <string>Speed Dial Settings</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>150</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>activeCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>syncDataBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>15</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>63</x>
+     <y>42</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

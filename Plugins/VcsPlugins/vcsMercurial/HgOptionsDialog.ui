@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HgOptionsDialog</class>
+ <widget class="QDialog" name="HgOptionsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>565</width>
+    <height>78</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Initial Commit</string>
+  </property>
+  <property name="whatsThis">
+   <string>&lt;b&gt;Initial Commit Dialog&lt;/b&gt;
+&lt;p&gt;Enter the message for the initial commit.&lt;/p&gt;</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="TextLabel5">
+       <property name="text">
+        <string>Commit &amp;Message:</string>
+       </property>
+       <property name="buddy">
+        <cstring>vcsLogEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="vcsLogEdit">
+       <property name="toolTip">
+        <string>Enter the log message for the new project.</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Log Message&lt;/b&gt;
+&lt;p&gt;Enter the log message to be used for the new project.&lt;/p&gt;</string>
+       </property>
+       <property name="text">
+        <string>new project started</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>vcsLogEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>HgOptionsDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>56</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>51</x>
+     <y>77</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>HgOptionsDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>213</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>205</x>
+     <y>77</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

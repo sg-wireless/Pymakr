@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpDocumentationPage</class>
+ <widget class="QWidget" name="HelpDocumentationPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>526</width>
+    <height>894</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="headerLabel">
+     <property name="text">
+      <string>&lt;b&gt;Configure help documentation&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line17">
+     <property name="frameShape">
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="title">
+      <string>Python 2 Documentation</string>
+     </property>
+     <layout class="QGridLayout" name="_2">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="python2DocDirEdit">
+        <property name="toolTip">
+         <string>Enter the Python 2 documentation directory</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="textLabel1_8_3">
+        <property name="text">
+         <string>&lt;b&gt;Note&lt;/b&gt;: Leave empty to use the PYTHON2DOCDIR environment variable, if set.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="python2DocDirButton">
+        <property name="toolTip">
+         <string>Press to select the Python 2 documentation directory via a dialog</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>Python 3 Documentation</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="pythonDocDirEdit">
+        <property name="toolTip">
+         <string>Enter the Python 3 documentation directory</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="textLabel1_8_2">
+        <property name="text">
+         <string>&lt;b&gt;Note&lt;/b&gt;: Leave empty to use the PYTHON3DOCDIR environment variable, if set.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="pythonDocDirButton">
+        <property name="toolTip">
+         <string>Press to select the Python 3 documentation directory via a dialog</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="title">
+      <string>Qt4 Documentation</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="qt4DocDirEdit">
+        <property name="toolTip">
+         <string>Enter the Qt4 documentation directory</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="textLabel1_8_2_2_2">
+        <property name="text">
+         <string>&lt;b&gt;Note&lt;/b&gt;: Leave empty to use the QT4DOCDIR environment variable, if set.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="qt4DocDirButton">
+        <property name="toolTip">
+         <string>Press to select the Qt4 documentation directory via a dialog</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="title">
+      <string>Qt5 Documentation</string>
+     </property>
+     <layout class="QGridLayout" name="_3">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="qt5DocDirEdit">
+        <property name="toolTip">
+         <string>Enter the Qt5 documentation directory</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="textLabel1_8_2_2_4">
+        <property name="text">
+         <string>&lt;b&gt;Note&lt;/b&gt;: Leave empty to use the QT5DOCDIR environment variable, if set.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="qt5DocDirButton">
+        <property name="toolTip">
+         <string>Press to select the Qt5 documentation directory via a dialog</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="title">
+      <string>PyQt4 Documentation</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="pyqt4DocDirEdit">
+        <property name="toolTip">
+         <string>Enter the PyQt4 documentation directory</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="textLabel1_8_2_2_3">
+        <property name="text">
+         <string>&lt;b&gt;Note&lt;/b&gt;: Leave empty to use the PYQT4DOCDIR environment variable, if set.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="pyqt4DocDirButton">
+        <property name="toolTip">
+         <string>Press to select the PyQt4 documentation directory via a dialog</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="pyqt5Group">
+     <property name="title">
+      <string>PyQt5 Documentation</string>
+     </property>
+     <layout class="QGridLayout" name="_4">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="pyqt5DocDirEdit">
+        <property name="toolTip">
+         <string>Enter the PyQt5 documentation directory</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="textLabel1_8_2_2_5">
+        <property name="text">
+         <string>&lt;b&gt;Note&lt;/b&gt;: Leave empty to use the PYQT5DOCDIR environment variable, if set.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="pyqt5DocDirButton">
+        <property name="toolTip">
+         <string>Press to select the PyQt5 documentation directory via a dialog</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="pysideGroup">
+     <property name="title">
+      <string>PySide Documentation</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="pysideDocDirEdit">
+        <property name="toolTip">
+         <string>Enter the PySide documentation directory</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="textLabel1_8_2_2">
+        <property name="text">
+         <string>&lt;b&gt;Note&lt;/b&gt;: Leave empty to use the PYSIDEDOCDIR environment variable, if set.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="pysideDocDirButton">
+        <property name="toolTip">
+         <string>Press to select the PySide documentation directory via a dialog</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>479</width>
+       <height>41</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>python2DocDirEdit</tabstop>
+  <tabstop>python2DocDirButton</tabstop>
+  <tabstop>pythonDocDirEdit</tabstop>
+  <tabstop>pythonDocDirButton</tabstop>
+  <tabstop>qt4DocDirEdit</tabstop>
+  <tabstop>qt4DocDirButton</tabstop>
+  <tabstop>qt5DocDirEdit</tabstop>
+  <tabstop>qt5DocDirButton</tabstop>
+  <tabstop>pyqt4DocDirEdit</tabstop>
+  <tabstop>pyqt4DocDirButton</tabstop>
+  <tabstop>pyqt5DocDirEdit</tabstop>
+  <tabstop>pyqt5DocDirButton</tabstop>
+  <tabstop>pysideDocDirEdit</tabstop>
+  <tabstop>pysideDocDirButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

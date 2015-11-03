@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DebuggerPropertiesDialog</class>
+ <widget class="QDialog" name="DebuggerPropertiesDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>592</width>
+    <height>656</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Debugger Properties</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="_2">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Debug Client</string>
+     </property>
+     <layout class="QHBoxLayout" name="_4">
+      <item>
+       <widget class="QLineEdit" name="debugClientEdit">
+        <property name="toolTip">
+         <string>Enter the path of the Debug Client to be used.  Leave empty to use the default.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="debugClientButton">
+        <property name="toolTip">
+         <string>Press to select the Debug Client via a file selection dialog</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Interpreter for Debug Client</string>
+     </property>
+     <layout class="QHBoxLayout" name="_5">
+      <item>
+       <widget class="QLineEdit" name="interpreterEdit">
+        <property name="toolTip">
+         <string>Enter the path of the interpreter to be used by the debug client.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="interpreterButton">
+        <property name="toolTip">
+         <string>Press to select the interpreter via a file selection dialog</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Environment for Debug Client</string>
+     </property>
+     <layout class="QGridLayout" name="_6">
+      <item row="0" column="0" colspan="2">
+       <widget class="QCheckBox" name="debugEnvironmentOverrideCheckBox">
+        <property name="toolTip">
+         <string>Select, if the environment of the debug client should be replaced</string>
+        </property>
+        <property name="text">
+         <string>Replace Environment</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="debugEnvironmentEdit">
+        <property name="toolTip">
+         <string>Enter the environment variables to be set.</string>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;b&gt;Environment&lt;/b&gt;
+&lt;p&gt;Enter the environment variables to be set for the debugger. The individual settings must be separate by whitespace and be given in the form 'var=value'.&lt;/p&gt;
+&lt;p&gt;Example: var1=1 var2=&quot;hello world&quot;&lt;/p&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="textLabel1_16">
+        <property name="text">
+         <string>Environment:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="remoteDebuggerGroup">
+     <property name="toolTip">
+      <string>Select, if the debugger should be run remotely</string>
+     </property>
+     <property name="title">
+      <string>Remote Debugger</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <layout class="QGridLayout" name="_7">
+      <item row="2" column="0" colspan="2">
+       <widget class="QGroupBox" name="pathTranslationGroup">
+        <property name="toolTip">
+         <string>Select, if path translation for remote debugging should be done</string>
+        </property>
+        <property name="title">
+         <string>Perform Path Translation</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <layout class="QGridLayout">
+         <item row="1" column="0">
+          <widget class="QLabel" name="textLabel2_9">
+           <property name="text">
+            <string>Local Path:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="translationLocalEdit">
+           <property name="toolTip">
+            <string>Enter the local path</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="translationRemoteEdit">
+           <property name="toolTip">
+            <string>Enter the remote path</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="textLabel1_18">
+           <property name="text">
+            <string>Remote Path:</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="hostLabel">
+        <property name="text">
+         <string>Remote Host:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="remoteCommandEdit">
+        <property name="toolTip">
+         <string>Enter the remote execution command.</string>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;b&gt;Remote Execution&lt;/b&gt;
+&lt;p&gt;Enter the remote execution command (e.g. ssh). This command is used to log into the remote host and execute the remote debugger.&lt;/p&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="execLabel">
+        <property name="text">
+         <string>Remote Execution:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="remoteHostEdit">
+        <property name="toolTip">
+         <string>Enter the hostname of the remote machine.</string>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;b&gt;Remote Host&lt;/b&gt;
+&lt;p&gt;Enter the hostname of the remote machine.&lt;/p&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="consoleDebuggerGroup">
+     <property name="toolTip">
+      <string>Select, if the debugger should be executed in a console window</string>
+     </property>
+     <property name="title">
+      <string>Console Debugger</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <layout class="QHBoxLayout" name="_3">
+      <item>
+       <widget class="QLabel" name="textLabel1_17">
+        <property name="text">
+         <string>Console Command:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="consoleCommandEdit">
+        <property name="toolTip">
+         <string>Enter the console command (e.g. xterm -e)</string>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;b&gt;Console Command&lt;/b&gt;
+&lt;p&gt;Enter the console command (e.g. xterm -e). This command is used to open a command window for the debugger.&lt;/p&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="redirectCheckBox">
+     <property name="toolTip">
+      <string>Select to redirect stdin, stdout and stderr of the program being debugged to the eric6 IDE</string>
+     </property>
+     <property name="text">
+      <string>Redirect stdin/stdout/stderr</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="noEncodingCheckBox">
+     <property name="toolTip">
+      <string>Select to not set the debug client encoding</string>
+     </property>
+     <property name="text">
+      <string>Don't set the encoding of the debug client</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>debugClientEdit</tabstop>
+  <tabstop>debugClientButton</tabstop>
+  <tabstop>interpreterEdit</tabstop>
+  <tabstop>interpreterButton</tabstop>
+  <tabstop>debugEnvironmentOverrideCheckBox</tabstop>
+  <tabstop>debugEnvironmentEdit</tabstop>
+  <tabstop>remoteDebuggerGroup</tabstop>
+  <tabstop>remoteHostEdit</tabstop>
+  <tabstop>remoteCommandEdit</tabstop>
+  <tabstop>pathTranslationGroup</tabstop>
+  <tabstop>translationRemoteEdit</tabstop>
+  <tabstop>translationLocalEdit</tabstop>
+  <tabstop>consoleDebuggerGroup</tabstop>
+  <tabstop>consoleCommandEdit</tabstop>
+  <tabstop>redirectCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DebuggerPropertiesDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>493</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>84</x>
+     <y>510</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DebuggerPropertiesDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>494</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>212</x>
+     <y>508</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

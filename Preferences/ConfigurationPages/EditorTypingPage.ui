@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditorTypingPage</class>
+ <widget class="QWidget" name="EditorTypingPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>543</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QLabel" name="headerLabel">
+     <property name="text">
+      <string>&lt;b&gt;Configure typing&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line1">
+     <property name="frameShape">
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QLabel" name="TextLabel1_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Programming Language:</string>
+       </property>
+       <property name="buddy">
+        <cstring></cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="languageCombo">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Select the programming language to be configured.</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="emptyPage"/>
+     <widget class="QWidget" name="pythonPage">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="pythonGroup">
+         <property name="focusPolicy">
+          <enum>Qt::TabFocus</enum>
+         </property>
+         <property name="toolTip">
+          <string>Select to enable Python typing aids</string>
+         </property>
+         <property name="title">
+          <string>Enable Python typing aids</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QCheckBox" name="pythonInsertClosingBraceCheckBox">
+            <property name="toolTip">
+             <string>Select to insert a closing parenthesis</string>
+            </property>
+            <property name="text">
+             <string>Automatic parenthesis insertion</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout">
+            <item>
+             <spacer>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="pythonSkipBraceCheckBox">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="toolTip">
+               <string>Select to skip matching braces when typing</string>
+              </property>
+              <property name="text">
+               <string>Automatically skip matching braces when typing</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>131</width>
+                <height>21</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="pythonColonDetectionCheckBox">
+            <property name="toolTip">
+             <string>Select to skip a ':', if typed next to another ':'</string>
+            </property>
+            <property name="text">
+             <string>Automatic colon detection</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="pythonIndentBraceCheckBox">
+            <property name="toolTip">
+             <string>Select to indent to the brace level after typing 'return'</string>
+            </property>
+            <property name="text">
+             <string>After '(' indent to its level</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="pythonInsertQuoteCheckBox">
+            <property name="toolTip">
+             <string>Select to insert the matching quote character</string>
+            </property>
+            <property name="text">
+             <string>Automatic quote insertion</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="pythonDedentElseCheckBox">
+            <property name="toolTip">
+             <string>Select to dedent 'else:' and 'elif' to the matching 'if'</string>
+            </property>
+            <property name="text">
+             <string>Automatic dedent of 'else:' and 'elif'</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="pythonDedentExceptCheckBox">
+            <property name="toolTip">
+             <string>Select to dedent 'except' and 'finally' to the matching 'try:'</string>
+            </property>
+            <property name="text">
+             <string>Automatic dedent of 'except' and 'finally'</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout">
+            <item>
+             <spacer>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="pythonDedentExceptPy24CheckBox">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="toolTip">
+               <string>Select to treat code as Python 2.4 code</string>
+              </property>
+              <property name="text">
+               <string>Python 2.4 style 'try:' blocks</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>261</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="pythonInsertImportCheckBox">
+            <property name="toolTip">
+             <string>Select to insert the 'import' string</string>
+            </property>
+            <property name="text">
+             <string>Automatic insertion of the 'import' string on 'from xxx'</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="pythonInsertSelfCheckBox">
+            <property name="toolTip">
+             <string>Select to insert the 'self' string when declaring a method</string>
+            </property>
+            <property name="text">
+             <string>Automatic insertion of 'self' when declaring methods</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="pythonInsertBlankCheckBox">
+            <property name="toolTip">
+             <string>Select to insert a blank after ','</string>
+            </property>
+            <property name="text">
+             <string>Automatic insertion of ' ' (blank) after ','</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="pythonDedentDefCheckBox">
+            <property name="toolTip">
+             <string>Select to dedent 'def' statements to the last 'def' or 'class'</string>
+            </property>
+            <property name="text">
+             <string>Automatic dedent of 'def' statements</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>507</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="rubyPage">
+      <layout class="QVBoxLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="rubyGroup">
+         <property name="focusPolicy">
+          <enum>Qt::TabFocus</enum>
+         </property>
+         <property name="toolTip">
+          <string>Select to enable Ruby typing aids</string>
+         </property>
+         <property name="title">
+          <string>Enable Ruby typing aids</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <layout class="QVBoxLayout">
+          <item>
+           <widget class="QCheckBox" name="rubyInsertClosingBraceCheckBox">
+            <property name="toolTip">
+             <string>Select to insert a closing parenthesis</string>
+            </property>
+            <property name="text">
+             <string>Automatic parenthesis insertion</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="rubySkipBraceCheckBox">
+            <property name="toolTip">
+             <string>Select to skip matching braces when typing</string>
+            </property>
+            <property name="text">
+             <string>Automatically skip matching braces when typing</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="rubyIndentBraceCheckBox">
+            <property name="toolTip">
+             <string>Select to indent to the brace level after typing 'return'</string>
+            </property>
+            <property name="text">
+             <string>After '(' indent to its level</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="rubyInsertQuoteCheckBox">
+            <property name="toolTip">
+             <string>Select to insert the matching quote character</string>
+            </property>
+            <property name="text">
+             <string>Automatic quote insertion</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="rubyInsertBlankCheckBox">
+            <property name="toolTip">
+             <string>Select to insert a blank after ','</string>
+            </property>
+            <property name="text">
+             <string>Automatic insertion of ' ' (blank) after ','</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="rubyInsertHereDocCheckBox">
+            <property name="toolTip">
+             <string>Select to automatically complete a here document</string>
+            </property>
+            <property name="text">
+             <string>Automatic completion of here document</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="rubyInsertInlineDocCheckBox">
+            <property name="toolTip">
+             <string>Select to automatically insert '=end' after entering '=begin'</string>
+            </property>
+            <property name="text">
+             <string>Automatic insertion of '=end' after '=begin'</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>519</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>languageCombo</tabstop>
+  <tabstop>pythonGroup</tabstop>
+  <tabstop>pythonInsertClosingBraceCheckBox</tabstop>
+  <tabstop>pythonSkipBraceCheckBox</tabstop>
+  <tabstop>pythonColonDetectionCheckBox</tabstop>
+  <tabstop>pythonIndentBraceCheckBox</tabstop>
+  <tabstop>pythonInsertQuoteCheckBox</tabstop>
+  <tabstop>pythonDedentElseCheckBox</tabstop>
+  <tabstop>pythonDedentExceptCheckBox</tabstop>
+  <tabstop>pythonDedentExceptPy24CheckBox</tabstop>
+  <tabstop>pythonInsertImportCheckBox</tabstop>
+  <tabstop>pythonInsertSelfCheckBox</tabstop>
+  <tabstop>pythonInsertBlankCheckBox</tabstop>
+  <tabstop>pythonDedentDefCheckBox</tabstop>
+  <tabstop>rubyGroup</tabstop>
+  <tabstop>rubyInsertClosingBraceCheckBox</tabstop>
+  <tabstop>rubySkipBraceCheckBox</tabstop>
+  <tabstop>rubyIndentBraceCheckBox</tabstop>
+  <tabstop>rubyInsertQuoteCheckBox</tabstop>
+  <tabstop>rubyInsertBlankCheckBox</tabstop>
+  <tabstop>rubyInsertHereDocCheckBox</tabstop>
+  <tabstop>rubyInsertInlineDocCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pythonInsertClosingBraceCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pythonSkipBraceCheckBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>99</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>116</x>
+     <y>144</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pythonInsertClosingBraceCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pythonSkipBraceCheckBox</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>198</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pythonDedentExceptCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pythonDedentExceptPy24CheckBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>69</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>80</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

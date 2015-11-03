@@ -1,0 +1,19 @@
+<!-- This is the DTD for eric3's templates file version 4.0 -->
+
+<!ELEMENT   TemplateText        (#PCDATA)>
+
+<!ELEMENT   TemplateDescription (#PCDATA)>
+
+<!ELEMENT   Template            (TemplateDescription,
+                                 TemplateText)>
+<!ATTLIST   Template
+    name        CDATA   #REQUIRED>
+
+<!ELEMENT   TemplateGroup       (Template*)>
+<!ATTLIST   TemplateGroup
+    name        CDATA   #REQUIRED
+    language    CDATA   #REQUIRED>
+
+<!ELEMENT   Templates           (TemplateGroup*)>
+<!ATTLIST   Templates
+    version     CDATA   #REQUIRED>

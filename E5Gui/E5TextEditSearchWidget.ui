@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>E5TextEditSearchWidget</class>
+ <widget class="QWidget" name="E5TextEditSearchWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>475</width>
+    <height>22</height>
+   </rect>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Find:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="findtextCombo">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <property name="insertPolicy">
+      <enum>QComboBox::InsertAtTop</enum>
+     </property>
+     <property name="duplicatesEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="caseCheckBox">
+     <property name="text">
+      <string>Match case</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="wordCheckBox">
+     <property name="text">
+      <string>Whole word</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QToolButton" name="findPrevButton">
+     <property name="toolTip">
+      <string>Press to find the previous occurrence</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QToolButton" name="findNextButton">
+     <property name="toolTip">
+      <string>Press to find the next occurrence</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>findtextCombo</tabstop>
+  <tabstop>caseCheckBox</tabstop>
+  <tabstop>wordCheckBox</tabstop>
+  <tabstop>findPrevButton</tabstop>
+  <tabstop>findNextButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

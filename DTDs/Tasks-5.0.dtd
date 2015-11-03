@@ -1,0 +1,29 @@
+<!-- This is the DTD for eric5's tasks file version 5.0 -->
+
+<!ELEMENT   Summary             (#PCDATA)>
+
+<!ELEMENT   Description         (#PCDATA)>
+
+<!ELEMENT   Created             (#PCDATA)>
+
+<!ELEMENT   Filename            (#PCDATA)>
+
+<!ELEMENT   Linenumber          (#PCDATA)>
+
+<!ELEMENT   Resource            (Filename, Linenumber)>
+
+<!ELEMENT   Task                (Summary,
+                                 Description,
+                                 Created,
+                                 Resource?)>
+<!ATTLIST   Task
+    priority    CDATA   #REQUIRED
+    completed   CDATA   #REQUIRED
+    bugfix      CDATA   #IMPLIED>
+
+<!ELEMENT   ProjectScanFilter   (#PCDATA)>
+
+<!ELEMENT   Tasks               (ProjectScanFilter?,
+                                 Task*)>
+<!ATTLIST   Tasks
+    version     CDATA   #REQUIRED>

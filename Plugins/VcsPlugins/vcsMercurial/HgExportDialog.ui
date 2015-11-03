@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HgExportDialog</class>
+ <widget class="QDialog" name="HgExportDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>456</width>
+    <height>301</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Export Patches</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Export Directory:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="directoryEdit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>File Name Pattern:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="2">
+      <widget class="QLineEdit" name="patternEdit">
+       <property name="toolTip">
+        <string>Enter the file name pattern for the export files</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;File Name Pattern&lt;/b&gt;
+&lt;p&gt;Enter the file name pattern to be used to generate the export files
+here. Valid recognized patterns are:&lt;/p&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;%%&lt;/td&gt;&lt;td&gt;literal &quot;%&quot; character&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;%H&lt;/td&gt;&lt;td&gt;changeset hash (40 hexadecimal digits)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;%N&lt;/td&gt;&lt;td&gt;number of patches being generated&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;%R&lt;/td&gt;&lt;td&gt;changeset revision number&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;%b&lt;/td&gt;&lt;td&gt;basename of the exporting repository&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;%h&lt;/td&gt;&lt;td&gt;short-form changeset hash (12 hexadecimal digits)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;%n&lt;/td&gt;&lt;td&gt;zero-padded sequence number, starting at 1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;%r&lt;/td&gt;&lt;td&gt;zero-padded changeset revision number&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;    
+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Changesets:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" colspan="2">
+      <widget class="QPlainTextEdit" name="changesetsEdit">
+       <property name="toolTip">
+        <string>Enter changesets by number, id, range or revset expression one per line</string>
+       </property>
+       <property name="tabChangesFocus">
+        <bool>true</bool>
+       </property>
+       <property name="lineWrapMode">
+        <enum>QPlainTextEdit::NoWrap</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QToolButton" name="directoryButton">
+       <property name="toolTip">
+        <string>Press to select the export directory via a directory selection dialog</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="switchParentCheckBox">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Compare Against Second Parent</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="textCheckBox">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Treat all Files as Text</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="datesCheckBox">
+     <property name="text">
+      <string>Omit Dates</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="gitCheckBox">
+     <property name="text">
+      <string>Use Git extended Diff-Format</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>directoryEdit</tabstop>
+  <tabstop>directoryButton</tabstop>
+  <tabstop>patternEdit</tabstop>
+  <tabstop>changesetsEdit</tabstop>
+  <tabstop>switchParentCheckBox</tabstop>
+  <tabstop>textCheckBox</tabstop>
+  <tabstop>datesCheckBox</tabstop>
+  <tabstop>gitCheckBox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>HgExportDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>HgExportDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

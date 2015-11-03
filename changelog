@@ -1,0 +1,161 @@
+Change Log
+----------
+Version 6.1-snapshot-2015mmdd:
+- bug fixes
+- General
+  -- added a configuration page to edit the list of mime types to
+     be opened in an eric editor
+  -- added the '--settings=' command line switch to store the
+     settings files in a non-standard directory
+- Checkers
+  -- added a batch mode to the code style checker to make use of
+     multiple CPUs/CPU-Cores
+  -- added a batch mode to the syntax checker to make use of
+     multiple CPUs/CPU-Cores
+  -- added a batch mode to the indentation checker to make use of
+     multiple CPUs/CPU-Cores
+  -- added a code complexity checker iaw. McCabe to the code style
+     checker
+  -- added miscellaneous checks to the code style checker (coding
+     comment, copyright, blind except, print statements, one element
+     tuples, __future__ imports, old style string formats, string
+     format strings)
+- Debugger
+  -- added signal handlers for the Python debug clients
+- Editor
+  -- added capability to configure the indentation guides colors
+  -- added capability to ask multiple completion list and call-tip
+     providers
+  -- added support for mouse click handlers to be provided by plug-ins
+  -- added the search markers to the marker map
+  -- added capability to save a copy of the editor contents
+  -- Lexers
+     --- added support for the new C++ lexer properties (as of
+         QScintilla V. 2.9.0)
+- File Browser
+  -- added capability to show imports of a Python script
+- Log Viewer
+  -- added a message filter including a configuration page
+- Mini Editor
+  -- added capability to save a copy of the editor contents
+- Preferences Dialog
+  -- changed the 'filter' function to a 'search' function disabling
+     all entries, that don't contain the entered string
+  -- changed the handling of the configuration page list entries
+     to be collapsed on first show and remember the expanded ones
+     while eric is running (but not between invocations)
+- Previewers
+  -- added capability to use 'Sphinx' to preview ReST files
+- Project
+  -- added functionality to reorganize the files automatically,
+     when the project type or file type associations are changed
+- Project Browser
+  -- added capability to show imports of a Python script
+- Source Code Documentor
+  -- added tags to describe the type of parameters (@type, @ptype)
+     and return values (@rtype)
+- Task Viewer
+  -- added capability to add sub-tasks (i.e. a task hierarchy) for
+     manually generated tasks
+- Tools
+  -- Diff Dialog
+     --- added capability to search in the output
+- Version Control System Interfaces
+  -- All
+     --- added capability to search in the output of Diff dialogs
+  -- Mercurial
+     --- enhanced the log browser functionality by a search mode
+     --- enhanced the log browser functionality by pull and push actions
+     --- enhanced the status dialog functionality by a diff view
+- Web Browser
+  -- added support for HTML5 feature permissions
+  -- improved parsing of the content disposition header analog to
+     the way it is done in qutebrowser
+  -- modified and extended the VirusTotal interface for the v2 API
+  -- added our own web inspector window to overcome a Qt weekness
+  -- added a manager for Flash Cookies
+- Third Party packages
+  -- updated coverage to 4.0
+  -- updated Pygments to 2.0.2
+
+Version 6.0.0:
+- bug fixes
+- Debugger
+  -- added capability to show exceptions in the shell window
+
+Version 6.0.0-RC1:
+- bug fixes
+- General
+  -- added Portugese translations provided by Candido Fontes
+  -- extended the code base to be usable with PyQt4 as well
+- Multi Project
+  -- changed multi project file format to contain relative paths to
+     the contained project files
+- Project Forms Browser
+  -- added functionality to modify some form code creation options (see
+     Qt configuration page)
+- Web Browser
+  -- added DuckDuckGo to the list of default search engines
+
+Version 6.0-snapshot-20140720:
+- bug fixes
+- General
+  -- ported from eric5 to be used with PyQt5
+  -- changed the eric mascot to be a Python (i.e. the snake). New icons
+     and pixmaps provided by Thimo Kraemer.
+  -- changed the code to be executed with Python 2 as well (thanks to
+     Tobias Rzepka)
+  -- implemented a background service which execute Python2 and Python3 scripts
+     in the background independent of the current interpreter
+- Checkers
+  -- updated pep8 to 1.5.6
+  -- updated pyflakes to version 0.8.1 (Python 3.4.0 compatible)
+  -- added syntax checker for JavaScript files
+  -- added capability to check multiple files from the project sources browser
+- Debugger
+  -- updated coverage to 3.7.1
+  -- enabled coverage info in Python2 projects
+- Editor
+  -- added a scrolling map like display showing all markers
+  -- added a context menu entry to reload a file with a given encoding
+  -- added a lexer for Qt style sheet files (when upgrading from older
+     eric versions a change of the lexer association for *.qss files needs
+     to be done via the configuration dialog)
+  -- added support for the QScintilla Gettext lexer (QsciLexerPO) as of
+     QScintilla 2.8.2
+  -- added support for the QScintilla CoffeeScript lexer
+     (QsciLexerCoffeeScript) as of QScintilla 2.8.3
+- Multi Project
+  -- added support for the categorisation of projects and changed the
+     multi project file format
+- Plugin Manager
+  -- extended the plugin repository dialog to allow to hide unwanted entries
+     and cleanup the plugin downloads area
+  -- implemented the Python2 compatibility check for plug-ins (new boolean flag
+     'python2Compatible'
+- Project
+  -- added support for JavaScript projects
+  -- added code to move deleted files/directories to the recycle bin falling
+     back to removing them (os.remove), if send2trash cannot be imported due
+     to missing dependencies
+- Version Control System Interfaces
+  -- All
+     --- made the status LED (right lower corner) clickable (depending on
+         overall VCS status it will show the log browser or the status dialog)
+  -- Mercurial
+     --- enhanced the tag dialog and extended the log browser to allow
+         tagging of a specific revision
+     --- added dialogs to enter the contents for initial .hgrc/mercurial.ini
+         and .hg/hgrc files
+     --- added a configuration option to enforce the usage of the internal
+         merge tool
+     --- made availablity of push/pull related actions dependent on configured
+         remote repository (default/default-push in .hg/hgrc)
+     --- extended the log browser by an action to switch to the selected
+         revision
+     --- added support for the shelve extension (as of Mercurial 2.8)
+     --- added support for the largefiles extension (as of Mercurial 2.0)
+     --- added support for Mercurial queues summary
+     --- added support for various 'resolve' subcommands
+- Third Party packages
+  -- updated CharDet to 2.2.1

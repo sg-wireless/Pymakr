@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>LEO Deu-Eng</ShortName>
+    <Description>Deutsch-Englisch Wörterbuch von LEO</Description>
+    <Url method="get" type="text/html" template="http://dict.leo.org/ende?lang=de&amp;search={searchTerms}"/>
+    <Url method="get" type="application/x-suggestions+json" template="http://dict.leo.org/dictQuery/m-query/conf/ende/query.conf/strlist.json?q={searchTerms}&amp;sort=PLa&amp;shortQuery&amp;noDescription&amp;noQueryURLs"/>
+    <Image>http://dict.leo.org/img/favicons/ende.ico</Image>
+</OpenSearchDescription>

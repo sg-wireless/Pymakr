@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProjectPage</class>
+ <widget class="QWidget" name="ProjectPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>602</width>
+    <height>685</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QLabel" name="headerLabel">
+     <property name="text">
+      <string>&lt;b&gt;Configure project settings&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line8">
+     <property name="frameShape">
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="title">
+      <string>XML</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <widget class="QCheckBox" name="projectTimestampCheckBox">
+        <property name="toolTip">
+         <string>Select, if a timestamp should be written to all project related XML files</string>
+        </property>
+        <property name="text">
+         <string>Include timestamp in project related XML files</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Search new files</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="projectSearchNewFilesRecursiveCheckBox">
+        <property name="text">
+         <string>Search for new files recursively</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="projectSearchNewFilesCheckBox">
+        <property name="toolTip">
+         <string>Select whether a search for new files on a project open should be performed.</string>
+        </property>
+        <property name="text">
+         <string>Search for new files on open</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="projectAutoIncludeNewFilesCheckBox">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Select whether the found files should be included automatically.</string>
+        </property>
+        <property name="text">
+         <string>Automatically include found files</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>Debugger Properties</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="projectLoadDebugPropertiesCheckBox">
+        <property name="toolTip">
+         <string>Select, whether a project debugger properties file shall be read on opening the project</string>
+        </property>
+        <property name="text">
+         <string>Load debugger properties upon opening</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="projectSaveDebugPropertiesCheckBox">
+        <property name="toolTip">
+         <string>Select, whether a project debugger properties file shall be written on closing the project</string>
+        </property>
+        <property name="text">
+         <string>Save debugger properties upon closing</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Sessions</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="projectLoadSessionCheckBox">
+        <property name="toolTip">
+         <string>Select, whether a project session file shall be read on opening the project</string>
+        </property>
+        <property name="text">
+         <string>Load session upon opening</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="projectSaveSessionCheckBox">
+        <property name="toolTip">
+         <string>Select, whether a project session file shall be written on closing the project</string>
+        </property>
+        <property name="text">
+         <string>Save session upon closing</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="projectSessionAllBpCheckBox">
+        <property name="toolTip">
+         <string>Select whether all breakpoints should be saved to the session file.</string>
+        </property>
+        <property name="text">
+         <string>Save all breakpoints</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="title">
+      <string>Automatically compile</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="projectAutoCompileFormsCheckBox">
+        <property name="toolTip">
+         <string>Select, if changed forms should be compiled automatically upon a run action</string>
+        </property>
+        <property name="text">
+         <string>changed forms</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="projectAutoCompileResourcesCheckBox">
+        <property name="toolTip">
+         <string>Select, if changed resources should be compiled automatically upon a run action</string>
+        </property>
+        <property name="text">
+         <string>changed resources</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Python Variant</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QCheckBox" name="pythonVariantCheckBox">
+        <property name="toolTip">
+         <string>Select to determine the Python variant from the project language</string>
+        </property>
+        <property name="text">
+         <string>Determine Python variant from project language</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="title">
+      <string>Recent Projects</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Number of recent projects:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="projectRecentSpinBox">
+        <property name="toolTip">
+         <string>Enter the number of recent projects to remember</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="minimum">
+         <number>5</number>
+        </property>
+        <property name="maximum">
+         <number>50</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="title">
+      <string>Tasks</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QCheckBox" name="autosaveTasksCheckBox">
+        <property name="toolTip">
+         <string>Select to save the project tasks automatically</string>
+        </property>
+        <property name="text">
+         <string>Save tasks automatically</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>584</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>projectTimestampCheckBox</tabstop>
+  <tabstop>projectSearchNewFilesRecursiveCheckBox</tabstop>
+  <tabstop>projectSearchNewFilesCheckBox</tabstop>
+  <tabstop>projectAutoIncludeNewFilesCheckBox</tabstop>
+  <tabstop>projectLoadDebugPropertiesCheckBox</tabstop>
+  <tabstop>projectSaveDebugPropertiesCheckBox</tabstop>
+  <tabstop>projectLoadSessionCheckBox</tabstop>
+  <tabstop>projectSaveSessionCheckBox</tabstop>
+  <tabstop>projectSessionAllBpCheckBox</tabstop>
+  <tabstop>projectAutoCompileFormsCheckBox</tabstop>
+  <tabstop>projectAutoCompileResourcesCheckBox</tabstop>
+  <tabstop>pythonVariantCheckBox</tabstop>
+  <tabstop>projectRecentSpinBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>projectSearchNewFilesCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>projectAutoIncludeNewFilesCheckBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>73</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

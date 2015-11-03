@@ -1,0 +1,11 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+  <file>aim-cursor.xpm</file>
+  <file>colorpicker-cursor.xpm</file>
+  <file>cursors.qrc</file>
+  <file>eraser-cursor.xpm</file>
+  <file>fill-cursor.xpm</file>
+  <file>paintbrush-cursor.xpm</file>
+</qresource>
+</RCC>

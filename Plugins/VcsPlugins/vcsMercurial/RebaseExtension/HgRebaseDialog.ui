@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HgRebaseDialog</class>
+ <widget class="QDialog" name="HgRebaseDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>394</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Rebase Changesets</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>Source / Base Revision</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QRadioButton" name="parentButton">
+          <property name="toolTip">
+           <string>Select to use the parent of the working directory as the base</string>
+          </property>
+          <property name="text">
+           <string>Use &amp;Parent as Base</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="sourceButton">
+          <property name="toolTip">
+           <string>Select to use a revision as the source</string>
+          </property>
+          <property name="text">
+           <string>&amp;Source Revision</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="baseButton">
+          <property name="toolTip">
+           <string>Select to use a revision as the base</string>
+          </property>
+          <property name="text">
+           <string>&amp;Base Revision</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="rev1GroupBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="title">
+           <string>&amp;Revision</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="number1Button">
+             <property name="toolTip">
+              <string>Select to specify a revision by number</string>
+             </property>
+             <property name="text">
+              <string>Number</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="number1SpinBox">
+             <property name="toolTip">
+              <string>Enter a revision number</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight</set>
+             </property>
+             <property name="maximum">
+              <number>999999999</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <spacer>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="id1Button">
+             <property name="toolTip">
+              <string>Select to specify a revision by changeset id</string>
+             </property>
+             <property name="text">
+              <string>Id:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1" colspan="2">
+            <widget class="QLineEdit" name="id1Edit">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="toolTip">
+              <string>Enter a changeset id</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QRadioButton" name="tag1Button">
+             <property name="toolTip">
+              <string>Select to specify a revision by a tag</string>
+             </property>
+             <property name="text">
+              <string>Tag:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1" colspan="2">
+            <widget class="QComboBox" name="tag1Combo">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="toolTip">
+              <string>Enter a tag name</string>
+             </property>
+             <property name="editable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QRadioButton" name="branch1Button">
+             <property name="toolTip">
+              <string>Select to specify a revision by a branch</string>
+             </property>
+             <property name="text">
+              <string>Branch:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1" colspan="2">
+            <widget class="QComboBox" name="branch1Combo">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="toolTip">
+              <string>Enter a branch name</string>
+             </property>
+             <property name="editable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QRadioButton" name="bookmark1Button">
+             <property name="toolTip">
+              <string>Select to specify a revision by a bookmark</string>
+             </property>
+             <property name="text">
+              <string>Bookmark:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1" colspan="2">
+            <widget class="QComboBox" name="bookmark1Combo">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="toolTip">
+              <string>Enter a bookmark name</string>
+             </property>
+             <property name="editable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>18</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QGroupBox" name="rev2GroupBox">
+       <property name="title">
+        <string>&amp;Destination Revision</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QRadioButton" name="number2Button">
+          <property name="toolTip">
+           <string>Select to specify a revision by number</string>
+          </property>
+          <property name="text">
+           <string>Number</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="number2SpinBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Enter a revision number</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight</set>
+          </property>
+          <property name="maximum">
+           <number>999999999</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <spacer>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <widget class="QRadioButton" name="id2Button">
+          <property name="toolTip">
+           <string>Select to specify a revision by changeset id</string>
+          </property>
+          <property name="text">
+           <string>Id:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QLineEdit" name="id2Edit">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Enter a changeset id</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QRadioButton" name="tag2Button">
+          <property name="toolTip">
+           <string>Select to specify a revision by a tag</string>
+          </property>
+          <property name="text">
+           <string>Tag:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="2">
+         <widget class="QComboBox" name="tag2Combo">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Enter a tag name</string>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QRadioButton" name="branch2Button">
+          <property name="toolTip">
+           <string>Select to specify a revision by a branch</string>
+          </property>
+          <property name="text">
+           <string>Branch:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1" colspan="2">
+         <widget class="QComboBox" name="branch2Combo">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Enter a branch name</string>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QRadioButton" name="bookmark2Button">
+          <property name="toolTip">
+           <string>Select to specify a revision by a bookmark</string>
+          </property>
+          <property name="text">
+           <string>Bookmark:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1" colspan="2">
+         <widget class="QComboBox" name="bookmark2Combo">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>Enter a bookmark name</string>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="3">
+         <widget class="QRadioButton" name="tip2Button">
+          <property name="toolTip">
+           <string>Select tip revision of repository</string>
+          </property>
+          <property name="text">
+           <string>Current branch tip</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="collapseCheckBox">
+       <property name="toolTip">
+        <string>Select to collapse the rebased changesets</string>
+       </property>
+       <property name="text">
+        <string>Collapse Changesets</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="keepChangesetsCheckBox">
+       <property name="toolTip">
+        <string>Select to keep the original changesets</string>
+       </property>
+       <property name="text">
+        <string>Keep Original Changesets</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="keepBranchCheckBox">
+       <property name="toolTip">
+        <string>Select to keep the original branch names</string>
+       </property>
+       <property name="text">
+        <string>Keep Original Branch Name</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="detachCheckBox">
+       <property name="toolTip">
+        <string>Select to detach the source from its original branch</string>
+       </property>
+       <property name="text">
+        <string>Detach Source</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>parentButton</tabstop>
+  <tabstop>sourceButton</tabstop>
+  <tabstop>baseButton</tabstop>
+  <tabstop>number1Button</tabstop>
+  <tabstop>number1SpinBox</tabstop>
+  <tabstop>id1Button</tabstop>
+  <tabstop>id1Edit</tabstop>
+  <tabstop>tag1Button</tabstop>
+  <tabstop>tag1Combo</tabstop>
+  <tabstop>branch1Button</tabstop>
+  <tabstop>branch1Combo</tabstop>
+  <tabstop>bookmark1Button</tabstop>
+  <tabstop>bookmark1Combo</tabstop>
+  <tabstop>number2Button</tabstop>
+  <tabstop>number2SpinBox</tabstop>
+  <tabstop>id2Button</tabstop>
+  <tabstop>id2Edit</tabstop>
+  <tabstop>tag2Button</tabstop>
+  <tabstop>tag2Combo</tabstop>
+  <tabstop>branch2Button</tabstop>
+  <tabstop>branch2Combo</tabstop>
+  <tabstop>bookmark2Button</tabstop>
+  <tabstop>bookmark2Combo</tabstop>
+  <tabstop>tip2Button</tabstop>
+  <tabstop>collapseCheckBox</tabstop>
+  <tabstop>keepChangesetsCheckBox</tabstop>
+  <tabstop>keepBranchCheckBox</tabstop>
+  <tabstop>detachCheckBox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>HgRebaseDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>864</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>21</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>HgRebaseDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>864</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>73</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>number1Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>number1SpinBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>86</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>201</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>number2Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>number2SpinBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>99</x>
+     <y>699</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>204</x>
+     <y>700</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>id1Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>id1Edit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>56</x>
+     <y>189</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>245</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>id2Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>id2Edit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>95</x>
+     <y>725</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>248</x>
+     <y>726</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tag1Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>tag1Combo</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>83</x>
+     <y>215</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>241</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>branch1Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>branch1Combo</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tag2Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>tag2Combo</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>751</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>248</x>
+     <y>752</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>branch2Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>branch2Combo</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>777</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>248</x>
+     <y>778</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bookmark1Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>bookmark1Combo</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>48</x>
+     <y>267</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>245</x>
+     <y>268</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bookmark2Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>bookmark2Combo</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>48</x>
+     <y>803</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>248</x>
+     <y>804</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>parentButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>rev1GroupBox</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>226</x>
+     <y>126</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

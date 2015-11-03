@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SvnCopyDialog</class>
+ <widget class="QDialog" name="SvnCopyDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>409</width>
+    <height>138</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Subversion Copy</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <layout class="QGridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="textLabel1">
+       <property name="text">
+        <string>Source:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="sourceEdit">
+       <property name="toolTip">
+        <string>Shows the name of the source</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Source name&lt;/b&gt;
+&lt;p&gt;This field shows the name of the source.&lt;/p&gt;</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="targetEdit">
+       <property name="toolTip">
+        <string>Enter the target name</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Target name&lt;/b&gt;
+&lt;p&gt;Enter the new name in this field. The target must be the new name or an absolute path.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="textLabel2">
+       <property name="text">
+        <string>Target:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QToolButton" name="dirButton">
+       <property name="toolTip">
+        <string>Press to open a selection dialog</string>
+       </property>
+       <property name="whatsThis">
+        <string>&lt;b&gt;Target directory&lt;/b&gt;
+&lt;p&gt;Select the target name for the operation via a selection dialog.&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="forceCheckBox">
+     <property name="toolTip">
+      <string>Select to force the operation</string>
+     </property>
+     <property name="text">
+      <string>Enforce operation</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>targetEdit</tabstop>
+  <tabstop>dirButton</tabstop>
+  <tabstop>forceCheckBox</tabstop>
+  <tabstop>buttonBox</tabstop>
+  <tabstop>sourceEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SvnCopyDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>32</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>32</x>
+     <y>97</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SvnCopyDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>97</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SyncHostTypePage</class>
+ <widget class="QWizardPage" name="SyncHostTypePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="title">
+   <string>Host Type Selection</string>
+  </property>
+  <property name="subTitle">
+   <string>Please select the type of the host to be used for synchronization.</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Synchronization Host Type</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QRadioButton" name="ftpRadioButton">
+        <property name="toolTip">
+         <string>Select to use a FTP host</string>
+        </property>
+        <property name="text">
+         <string>FTP</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="directoryRadioButton">
+        <property name="toolTip">
+         <string>Select to use a shared directory</string>
+        </property>
+        <property name="text">
+         <string>Shared Directory</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="noneRadioButton">
+        <property name="toolTip">
+         <string>Select to use no particular host type</string>
+        </property>
+        <property name="text">
+         <string>None</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>191</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>ftpRadioButton</tabstop>
+  <tabstop>directoryRadioButton</tabstop>
+  <tabstop>noneRadioButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

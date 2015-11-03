@@ -1,0 +1,2977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Shortcuts SYSTEM "Shortcuts-3.6.dtd">
+<!-- Eric6 keyboard shortcuts -->
+<!-- Saved: 2012-01-01, 17:32:05-->
+<!-- Author: Detlev Offenbach <detlev@die-offenbachs.de> -->
+<Shortcuts version="3.6">
+  <Shortcut category="Project">
+    <Name>project_new</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_open</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_close</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_save</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_save_as</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_add_file</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_add_directory</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_add_translation</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_search_new_files</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_properties</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_user_properties</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_filetype_associatios</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_lexer_associatios</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_debugger_properties</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_debugger_properties_load</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_debugger_properties_save</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_debugger_properties_delete</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_debugger_properties_resets</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_load_session</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_save_session</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_delete_session</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_code_metrics</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_code_coverage</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_profile_data</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_application_diagram</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_plugin_pkglist</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_plugin_archive</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_plugin_sarchive</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>doc_eric6_api</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>doc_eric6_doc</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_check_pep8</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_check_syntax</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Project">
+    <Name>project_check_indentations</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>quit</Name>
+    <Accel>Ctrl+Q</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>new_window</Name>
+    <Accel>Ctrl+Shift+N</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>edit_profile</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>debug_profile</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>project_viewer</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>project_viewer_activate</Name>
+    <Accel>Alt+Shift+P</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>multi_project_viewer</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>multi_project_viewer_activate</Name>
+    <Accel>Alt+Shift+M</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>debug_viewer</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>debug_viewer_activate</Name>
+    <Accel>Alt+Shift+D</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>interpreter_shell</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>interprter_shell_activate</Name>
+    <Accel>Alt+Shift+S</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>terminal</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>terminal_activate</Name>
+    <Accel>Alt+Shift+R</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>file_browser</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>file_browser_activate</Name>
+    <Accel>Alt+Shift+F</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>log_viewer</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>log_viewer_activate</Name>
+    <Accel>Alt+Shift+G</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>task_viewer</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>task_viewer_activate</Name>
+    <Accel>Alt+Shift+T</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>template_viewer</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>template_viewer_activate</Name>
+    <Accel>Alt+Shift+A</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>vertical_toolbox</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>horizontal_toolbox</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>left_sidebar</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>bottom_sidebar</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>cooperation_viewer</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>cooperation_viewer_activate</Name>
+    <Accel>Alt+Shift+O</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>symbols_viewer</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>symbols_viewer_activate</Name>
+    <Accel>Alt+Shift+Y</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>numbers_viewer</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>numbers_viewer_activate</Name>
+    <Accel>Alt+Shift+B</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>whatsThis</Name>
+    <Accel>Shift+F1</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>helpviewer</Name>
+    <Accel>F1</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>qt4_documentation</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>pyqt4_documentation</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>python3_documentation</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>python2_documentation</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>eric_documentation</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>show_versions</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>check_updates</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>show_downloadable_versions</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>report_bug</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>request_feature</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>unittest</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>unittest_restart</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>unittest_rerun_failed</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>unittest_script</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>unittest_project</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>qt_designer4</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>qt_linguist4</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>ui_previewer</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>tr_previewer</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>diff_files</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>compare_files</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>sql_browser</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>mini_editor</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>web_browser</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>icon_editor</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>preferences</Name>
+    <Accel>Ctrl+,</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>export_preferences</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>import_preferences</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>reload_apis</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>show_external_tools</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>view_profiles</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>configure_toolbars</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>keyboard_shortcuts</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>export_keyboard_shortcuts</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>import_keyboard_shortcuts</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>viewmanager_activate</Name>
+    <Accel>Alt+Shift+E</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>view_next_tab</Name>
+    <Accel>Ctrl+Alt+Tab</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>view_previous_tab</Name>
+    <Accel>Ctrl+Alt+Shift+Tab</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>switch_tabs</Name>
+    <Accel>Ctrl+1</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>plugin_infos</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>plugin_install</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>plugin_deinstall</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>plugin_repository</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>about_eric</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="General">
+    <Name>about_qt</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Wizards">
+    <Name>wizards_e5messagebox</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Wizards">
+    <Name>wizards_python_re</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Wizards">
+    <Name>wizards_qcolordialog</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Wizards">
+    <Name>wizards_qfiledialog</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Wizards">
+    <Name>wizards_qfontdialog</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Wizards">
+    <Name>wizards_qinputdialog</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Wizards">
+    <Name>wizards_qmessagebox</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Wizards">
+    <Name>wizards_qregexp</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_run_script</Name>
+    <Accel>F2</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_run_project</Name>
+    <Accel>Shift+F2</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_coverage_script</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_coverage_project</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_profile_script</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_profile_project</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_debug_script</Name>
+    <Accel>F5</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_debug_project</Name>
+    <Accel>Shift+F5</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_restart_script</Name>
+    <Accel>F4</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_stop_script</Name>
+    <Accel>Shift+F10</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_continue</Name>
+    <Accel>F6</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_continue_to_cursor</Name>
+    <Accel>Shift+F6</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_single_step</Name>
+    <Accel>F7</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_step_over</Name>
+    <Accel>F8</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_step_out</Name>
+    <Accel>F9</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_stop</Name>
+    <Accel>F10</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_evaluate</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_execute</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_variables_filter</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_exceptions_filter</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_ignored_exceptions</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_toggle_breakpoint</Name>
+    <Accel>Shift+F11</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_edit_breakpoint</Name>
+    <Accel>Shift+F12</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_next_breakpoint</Name>
+    <Accel>Ctrl+Shift+PgDown</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_previous_breakpoint</Name>
+    <Accel>Ctrl+Shift+PgUp</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Debug">
+    <Name>dbg_clear_breakpoint</Name>
+    <Accel>Ctrl+Shift+C</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_undo</Name>
+    <Accel>Ctrl+Z</Accel>
+    <AltAccel>Alt+Backspace</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_redo</Name>
+    <Accel>Ctrl+Shift+Z</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_revert</Name>
+    <Accel>Ctrl+Y</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_cut</Name>
+    <Accel>Ctrl+X</Accel>
+    <AltAccel>Shift+Del</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_copy</Name>
+    <Accel>Ctrl+C</Accel>
+    <AltAccel>Ctrl+Ins</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_paste</Name>
+    <Accel>Ctrl+V</Accel>
+    <AltAccel>Shift+Ins</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_clear</Name>
+    <Accel>Alt+Shift+C</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_join_lines</Name>
+    <Accel>Ctrl+J</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_indent</Name>
+    <Accel>Ctrl+I</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_unindent</Name>
+    <Accel>Ctrl+Shift+I</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_smart_indent</Name>
+    <Accel>Ctrl+Alt+I</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_comment</Name>
+    <Accel>Ctrl+M</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_uncomment</Name>
+    <Accel>Ctrl+Alt+M</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_toggle_comment</Name>
+    <Accel>Ctrl+Shift+M</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_stream_comment</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_box_comment</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_select_to_brace</Name>
+    <Accel>Ctrl+E</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_select_all</Name>
+    <Accel>Ctrl+A</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_deselect_all</Name>
+    <Accel>Ctrl+Alt+A</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_convert_eol</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_shorten_empty_lines</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_autocomplete</Name>
+    <Accel>Ctrl+Space</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_autocomplete_from_document</Name>
+    <Accel>Ctrl+Shift+Space</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_autocomplete_from_api</Name>
+    <Accel>Ctrl+Alt+Space</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_autocomplete_from_all</Name>
+    <Accel>Alt+Shift+Space</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_calltip</Name>
+    <Accel>Alt+Space</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_left_char</Name>
+    <Accel>Left</Accel>
+    <AltAccel>Meta+B</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_right_char</Name>
+    <Accel>Right</Accel>
+    <AltAccel>Meta+F</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_up_line</Name>
+    <Accel>Up</Accel>
+    <AltAccel>Meta+P</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_down_line</Name>
+    <Accel>Down</Accel>
+    <AltAccel>Meta+N</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_left_word_part</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_right_word_part</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_left_word</Name>
+    <Accel>Alt+Left</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_right_word</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_first_visible_char</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_start_line</Name>
+    <Accel>Ctrl+Left</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_end_line</Name>
+    <Accel>Meta+E</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_scroll_down_line</Name>
+    <Accel>Ctrl+Down</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_scroll_up_line</Name>
+    <Accel>Ctrl+Up</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_up_para</Name>
+    <Accel>Alt+Up</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_down_para</Name>
+    <Accel>Alt+Down</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_up_page</Name>
+    <Accel>PgUp</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_down_page</Name>
+    <Accel>PgDown</Accel>
+    <AltAccel>Meta+V</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_start_text</Name>
+    <Accel>Ctrl+Up</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_end_text</Name>
+    <Accel>Ctrl+Down</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_indent_one_level</Name>
+    <Accel>Tab</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_unindent_one_level</Name>
+    <Accel>Shift+Tab</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_left_char</Name>
+    <Accel>Shift+Left</Accel>
+    <AltAccel>Meta+Shift+B</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_right_char</Name>
+    <Accel>Shift+Right</Accel>
+    <AltAccel>Meta+Shift+F</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_up_line</Name>
+    <Accel>Shift+Up</Accel>
+    <AltAccel>Meta+Shift+P</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_down_line</Name>
+    <Accel>Shift+Down</Accel>
+    <AltAccel>Meta+Shift+N</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_left_word_part</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_right_word_part</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_left_word</Name>
+    <Accel>Alt+Shift+Left</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_right_word</Name>
+    <Accel>Alt+Shift+Right</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_first_visible_char</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_end_line</Name>
+    <Accel>Meta+Shift+E</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_up_para</Name>
+    <Accel>Alt+Shift+Up</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_down_para</Name>
+    <Accel>Alt+Shift+Down</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_up_page</Name>
+    <Accel>Shift+PgUp</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_down_page</Name>
+    <Accel>Shift+PgDown</Accel>
+    <AltAccel>Meta+Shift+V</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_start_text</Name>
+    <Accel>Ctrl+Shift+Up</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_end_text</Name>
+    <Accel>Ctrl+Shift+Down</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_delete_previous_char</Name>
+    <Accel>Backspace</Accel>
+    <AltAccel>Meta+H</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_delet_previous_char_not_line_start</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_delete_current_char</Name>
+    <Accel>Del</Accel>
+    <AltAccel>Meta+D</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_delete_word_left</Name>
+    <Accel>Ctrl+Backspace</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_delete_word_right</Name>
+    <Accel>Ctrl+Del</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_delete_line_left</Name>
+    <Accel>Ctrl+Shift+Backspace</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_delete_line_right</Name>
+    <Accel>Meta+K</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_insert_line</Name>
+    <Accel>Return</Accel>
+    <AltAccel>Enter</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_insert_line_below</Name>
+    <Accel>Shift+Return</Accel>
+    <AltAccel>Shift+Enter</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_delete_current_line</Name>
+    <Accel>Ctrl+Shift+L</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_duplicate_current_line</Name>
+    <Accel>Ctrl+D</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_swap_current_previous_line</Name>
+    <Accel>Ctrl+T</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_cut_current_line</Name>
+    <Accel>Alt+Shift+L</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_copy_current_line</Name>
+    <Accel>Ctrl+Shift+T</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_toggle_insert_overtype</Name>
+    <Accel>Ins</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_convert_selection_lower</Name>
+    <Accel>Alt+Shift+U</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_convert_selection_upper</Name>
+    <Accel>Ctrl+Shift+U</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_end_displayed_line</Name>
+    <Accel>Ctrl+Right</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_end_displayed_line</Name>
+    <Accel>Ctrl+Shift+Right</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_formfeed</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_escape</Name>
+    <Accel>Esc</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_rect_selection_down_line</Name>
+    <Accel>Ctrl+Alt+Down</Accel>
+    <AltAccel>Meta+Alt+Shift+N</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_rect_selection_up_line</Name>
+    <Accel>Ctrl+Alt+Up</Accel>
+    <AltAccel>Meta+Alt+Shift+P</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_rect_selection_left_char</Name>
+    <Accel>Ctrl+Alt+Left</Accel>
+    <AltAccel>Meta+Alt+Shift+B</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_rect_selection_right_char</Name>
+    <Accel>Ctrl+Alt+Right</Accel>
+    <AltAccel>Meta+Alt+Shift+F</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_rect_selection_first_visible_char</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_rect_selection_end_line</Name>
+    <Accel>Meta+Alt+Shift+E</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_rect_selection_up_page</Name>
+    <Accel>Ctrl+Alt+PgUp</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_rect_selection_down_page</Name>
+    <Accel>Alt+Shift+PgDown</Accel>
+    <AltAccel>Meta+Alt+Shift+V</AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_duplicate_current_selection</Name>
+    <Accel>Ctrl+Shift+D</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_scroll_start_text</Name>
+    <Accel>Home</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_scroll_end_text</Name>
+    <Accel>End</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_scroll_vertically_center</Name>
+    <Accel>Meta+L</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_end_next_word</Name>
+    <Accel>Alt+Right</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_select_end_next_word</Name>
+    <Accel>Alt+Shift+Right</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_end_previous_word</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_select_end_previous_word</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_start_document_line</Name>
+    <Accel>Meta+A</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_start_document_line</Name>
+    <Accel>Meta+Shift+A</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_select_rect_start_line</Name>
+    <Accel>Meta+Alt+Shift+A</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_start_display_line</Name>
+    <Accel>Ctrl+Shift+Left</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_start_display_document_line</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_start_display_document_line</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_first_visible_char_document_line</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_first_visible_char_document_line</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_end_start_display_document_line</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_extend_selection_end_display_document_line</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_stuttered_move_up_page</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_stuttered_extend_selection_up_page</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_stuttered_move_down_page</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_stuttered_extend_selection_down_page</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_delete_right_end_next_word</Name>
+    <Accel>Alt+Del</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_selection_up_one_line</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Edit">
+    <Name>vm_edit_move_selection_down_one_line</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="File">
+    <Name>vm_file_new</Name>
+    <Accel>Ctrl+N</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="File">
+    <Name>vm_file_open</Name>
+    <Accel>Ctrl+O</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="File">
+    <Name>vm_file_close</Name>
+    <Accel>Ctrl+W</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="File">
+    <Name>vm_file_close_all</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="File">
+    <Name>vm_file_save</Name>
+    <Accel>Ctrl+S</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="File">
+    <Name>vm_file_save_as</Name>
+    <Accel>Ctrl+Shift+S</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="File">
+    <Name>vm_file_save_all</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="File">
+    <Name>vm_file_print</Name>
+    <Accel>Ctrl+P</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="File">
+    <Name>vm_file_print_preview</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="File">
+    <Name>vm_file_search_file</Name>
+    <Accel>Ctrl+Alt+F</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_search</Name>
+    <Accel>Ctrl+F</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_search_next</Name>
+    <Accel>F3</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_search_previous</Name>
+    <Accel>Shift+F3</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_clear_search_markers</Name>
+    <Accel>Ctrl+3</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_search_replace</Name>
+    <Accel>Ctrl+R</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_quicksearch</Name>
+    <Accel>Ctrl+Shift+K</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_quicksearch_backwards</Name>
+    <Accel>Ctrl+Shift+J</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_quicksearch_extend</Name>
+    <Accel>Ctrl+Shift+H</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_search_goto_line</Name>
+    <Accel>Ctrl+G</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_search_goto_brace</Name>
+    <Accel>Ctrl+L</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_search_goto_last_edit_location</Name>
+    <Accel>Ctrl+Shift+G</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_search_goto_previous_method_or_class</Name>
+    <Accel>Ctrl+Shift+Up</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_search_goto_next_method_or_class</Name>
+    <Accel>Ctrl+Shift+Down</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_search_in_files</Name>
+    <Accel>Ctrl+Shift+F</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Search">
+    <Name>vm_replace_in_files</Name>
+    <Accel>Ctrl+Shift+R</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="View">
+    <Name>vm_view_zoom_in</Name>
+    <Accel>Ctrl++</Accel>
+    <AltAccel>Zoom In</AltAccel>
+  </Shortcut>
+  <Shortcut category="View">
+    <Name>vm_view_zoom_out</Name>
+    <Accel>Ctrl+-</Accel>
+    <AltAccel>Zoom Out</AltAccel>
+  </Shortcut>
+  <Shortcut category="View">
+    <Name>vm_view_zoom_reset</Name>
+    <Accel>Ctrl+0</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="View">
+    <Name>vm_view_zoom</Name>
+    <Accel>Ctrl+#</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="View">
+    <Name>vm_view_toggle_all_folds</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="View">
+    <Name>vm_view_toggle_all_folds_children</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="View">
+    <Name>vm_view_toggle_current_fold</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="View">
+    <Name>vm_view_unhighlight</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="View">
+    <Name>vm_view_split_view</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="View">
+    <Name>vm_view_arrange_horizontally</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="View">
+    <Name>vm_view_remove_split</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="View">
+    <Name>vm_next_split</Name>
+    <Accel>Ctrl+Alt+N</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="View">
+    <Name>vm_previous_split</Name>
+    <Accel>Ctrl+Alt+P</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="View">
+    <Name>vm_preview</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Macro">
+    <Name>vm_macro_start_recording</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Macro">
+    <Name>vm_macro_stop_recording</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Macro">
+    <Name>vm_macro_run</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Macro">
+    <Name>vm_macro_delete</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Macro">
+    <Name>vm_macro_load</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Macro">
+    <Name>vm_macro_save</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Bookmarks">
+    <Name>vm_bookmark_toggle</Name>
+    <Accel>Ctrl+Alt+T</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Bookmarks">
+    <Name>vm_bookmark_next</Name>
+    <Accel>Ctrl+PgDown</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Bookmarks">
+    <Name>vm_bookmark_previous</Name>
+    <Accel>Ctrl+PgUp</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Bookmarks">
+    <Name>vm_bookmark_clear</Name>
+    <Accel>Ctrl+Alt+C</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Bookmarks">
+    <Name>vm_syntaxerror_goto</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Bookmarks">
+    <Name>vm_syntaxerror_clear</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Bookmarks">
+    <Name>vm_warning_next</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Bookmarks">
+    <Name>vm_warning_previous</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Bookmarks">
+    <Name>vm_warnings_clear</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Bookmarks">
+    <Name>vm_uncovered_next</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Bookmarks">
+    <Name>vm_uncovered_previous</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Bookmarks">
+    <Name>vm_task_next</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Bookmarks">
+    <Name>vm_task_previous</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Spelling">
+    <Name>vm_spelling_spellcheck</Name>
+    <Accel>Shift+F7</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Spelling">
+    <Name>vm_spelling_autospellcheck</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_new</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_update</Name>
+    <Accel>Meta+Alt+U</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_commit</Name>
+    <Accel>Meta+Alt+O</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_add</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_remove</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_log</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_log_browser</Name>
+    <Accel>Meta+Alt+G</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_diff</Name>
+    <Accel>Meta+Alt+D</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_extendeddiff</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_urldiff</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_status</Name>
+    <Accel>Meta+Alt+S</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_tag</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_export</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_options</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_revert</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_merge</Name>
+    <Accel>Meta+Alt+M</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_switch</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_resolve</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_cleanup</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_command</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_list_tags</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_list_branches</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_contents</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_property_set</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_property_list</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_property_delete</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_relocate</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_repo_browser</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Subversion">
+    <Name>subversion_configure</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_rename</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_rename_local</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_rename_module</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_change_occurrences</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_extract_method</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_extract_variable</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_inline</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_move_method</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_move_module</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_use_function</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_introduce_factory_method</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_introduce_parameter_method</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_organize_imports</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_expand_star_imports</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_relative_to_absolute_imports</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_froms_to_imports</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_organize_imports</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_restructure</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_change_method_signature</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_inline_argument_default</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_transform_module_to_package</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_encapsulate_attribute</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_local_variable_to_attribute</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_method_to_methodobject</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_undo</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_redo</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_show_project_undo_history</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_show_project_redo_history</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_show_file_undo_history</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_show_file_redo_history</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_clear_history</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_find_occurrences</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_find_definition</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_find_implementations</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_edit_config</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_help</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_analyze_all</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="RefactoringRope">
+    <Name>refactoring_update_configuration</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_new</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_update</Name>
+    <Accel>Meta+Alt+U</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_commit</Name>
+    <Accel>Meta+Alt+O</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_add</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_remove</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_log</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_log_browser</Name>
+    <Accel>Meta+Alt+G</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_diff</Name>
+    <Accel>Meta+Alt+D</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_extendeddiff</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_urldiff</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_status</Name>
+    <Accel>Meta+Alt+S</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_repoinfo</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_tag</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_export</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_options</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_revert</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_merge</Name>
+    <Accel>Meta+Alt+M</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_switch</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_resolve</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_cleanup</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_command</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_list_tags</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_list_branches</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_contents</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_property_set</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_property_list</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_property_delete</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_relocate</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_repo_browser</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="PySvn">
+    <Name>subversion_configure</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_new</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_incoming</Name>
+    <Accel>Meta+Alt+I</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_pull</Name>
+    <Accel>Meta+Alt+P</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_update</Name>
+    <Accel>Meta+Alt+U</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_commit</Name>
+    <Accel>Meta+Alt+O</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_outgoing</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_push</Name>
+    <Accel>Meta+Alt+H</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_push_forced</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>subversion_export</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_add</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_remove</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_log</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_log_browser</Name>
+    <Accel>Meta+Alt+G</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_diff</Name>
+    <Accel>Meta+Alt+D</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_extendeddiff</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_status</Name>
+    <Accel>Meta+Alt+S</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_heads</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_parents</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_tip</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_revert</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_merge</Name>
+    <Accel>Meta+Alt+M</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_resolve</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_tag</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_list_tags</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_list_branches</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_branch</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_push_branch</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_close_branch</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_show_branch</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_switch</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_cleanup</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_command</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_options</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_configure</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_user_configure</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_repo_configure</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_show_config</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_show_paths</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_verify</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_recover</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_identify</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_create ignore</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_bundle</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_preview_bundle</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_identify_bundle</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_unbundle</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_bisect_good</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_bisect_bad</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_bisect_skip</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_bisect_reset</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_backout</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_rollback</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_serve</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_import</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_import</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_rebase</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_rebase_continue</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_rebase_abort</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_gpg_list</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_gpg_verify</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_gpg_sign</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_purge</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_purge_all</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_purge_list</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_purge_all_list</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_new</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_refresh</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_refresh_message</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_show</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_show_message</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_list</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_finish_applied</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_rename</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_delete</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_fold</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_push_next</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_push_all</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_push_until</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_pop_current</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_pop_all</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_pop_until</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_goto</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_push_next_force</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_push_all_force</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_push_until_force</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_pop_current_force</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_pop_all_force</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_pop_until_force</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_goto_force</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_guards_define</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_guards_drop_all</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_guards_list</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_guards_list_all</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_guards_set_active</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_guards_deactivate</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_guards_identify_active</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_create_queue</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_rename_queue</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_delete_queue</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_purge_queue</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_activate_queue</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_queues_list_queues</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_list_bookmarks</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_define_bookmark</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_delete_bookmark</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_rename_bookmark</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_move_bookmark</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_incoming_bookmarks</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_pull_bookmark</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_outgoing_bookmarks</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_push_bookmark</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_fetch</Name>
+    <Accel>Meta+Alt+F</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_transplant</Name>
+    <Accel>Meta+Alt+T</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="Mercurial">
+    <Name>mercurial_transplant_continue</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_file_new_tab</Name>
+    <Accel>Ctrl+T</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_file_new_window</Name>
+    <Accel>Ctrl+N</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_file_open</Name>
+    <Accel>Ctrl+O</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_file_open_tab</Name>
+    <Accel>Ctrl+Shift+O</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_file_save_as</Name>
+    <Accel>Ctrl+Shift+S</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_file_import_bookmarks</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_file_export_bookmarks</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_file_print</Name>
+    <Accel>Ctrl+P</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_file_print_pdf</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_file_print_preview</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_file_close</Name>
+    <Accel>Ctrl+W</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_file_close_all</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_file_private_browsing</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_file_quit</Name>
+    <Accel>Ctrl+Q</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_go_backward</Name>
+    <Accel>Alt+Left</Accel>
+    <AltAccel>Backspace</AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_go_foreward</Name>
+    <Accel>Alt+Right</Accel>
+    <AltAccel>Shift+Backspace</AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_go_home</Name>
+    <Accel>Ctrl+Home</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_go_reload</Name>
+    <Accel>Ctrl+R</Accel>
+    <AltAccel>F5</AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_go_stop</Name>
+    <Accel>Ctrl+.</Accel>
+    <AltAccel>Esc</AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_edit_copy</Name>
+    <Accel>Ctrl+C</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_edit_find</Name>
+    <Accel>Ctrl+F</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_edit_find_next</Name>
+    <Accel>F3</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_edit_find_previous</Name>
+    <Accel>Shift+F3</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_bookmarks_manage</Name>
+    <Accel>Ctrl+Shift+B</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_bookmark_add</Name>
+    <Accel>Ctrl+D</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_bookmark_show_all</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_bookmark_all_tabs</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_help_whats_this</Name>
+    <Accel>Shift+F1</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_help_about</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_help_about_qt</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_view_zoom_in</Name>
+    <Accel>Ctrl++</Accel>
+    <AltAccel>Zoom In</AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_view_zoom_out</Name>
+    <Accel>Ctrl+-</Accel>
+    <AltAccel>Zoom Out</AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_view_zoom_reset</Name>
+    <Accel>Ctrl+0</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_view_zoom_text_only</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_show_page_source</Name>
+    <Accel>Ctrl+U</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_view_full_scree</Name>
+    <Accel>F11</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_view_next_tab</Name>
+    <Accel>Ctrl+Alt+Tab</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_view_previous_tab</Name>
+    <Accel>Ctrl+Alt+Shift+Tab</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_switch_tabs</Name>
+    <Accel>Ctrl+1</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_preferences</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_accepted_languages</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_cookies</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_offline_storage</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_sync_toc</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_show_toc</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_show_index</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_show_search</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_qthelp_documents</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_qthelp_filters</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_qthelp_reindex</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_clear_private_data</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_clear_icons_db</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_search_engines</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_manage_passwords</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_adblock</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_manage_certificates</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_tools_network_monitor</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_show_downloads</Name>
+    <Accel></Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_rss_feeds</Name>
+    <Accel>Ctrl+Shift+F</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+  <Shortcut category="HelpViewer">
+    <Name>help_siteinfo</Name>
+    <Accel>Ctrl+Shift+I</Accel>
+    <AltAccel></AltAccel>
+  </Shortcut>
+</Shortcuts>

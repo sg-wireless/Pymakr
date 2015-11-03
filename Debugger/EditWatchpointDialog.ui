@@ -1,0 +1,242 @@
+<ui version="4.0" >
+ <class>EditWatchpointDialog</class>
+ <widget class="QDialog" name="EditWatchpointDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>402</width>
+    <height>234</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Edit Watch Expression</string>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="4" column="0" colspan="3" >
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType" >
+      <enum>QSizePolicy::Expanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>211</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1" >
+    <widget class="QSpinBox" name="ignoreSpinBox" >
+     <property name="toolTip" >
+      <string>Enter an ignore count for the watch expression</string>
+     </property>
+     <property name="maximum" >
+      <number>9999</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QLabel" name="textLabel2" >
+     <property name="text" >
+      <string>Ignore Count:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="3" >
+    <widget class="QCheckBox" name="enabledCheckBox" >
+     <property name="toolTip" >
+      <string>Select, whether the watch expression is enabled</string>
+     </property>
+     <property name="text" >
+      <string>Enabled</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3" >
+    <widget class="QCheckBox" name="temporaryCheckBox" >
+     <property name="toolTip" >
+      <string>Select whether this is a temporary watch expression</string>
+     </property>
+     <property name="text" >
+      <string>Temporary Watch Expression</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="3" >
+    <widget class="QGroupBox" name="groupBox" >
+     <property name="title" >
+      <string/>
+     </property>
+     <layout class="QGridLayout" >
+      <item row="1" column="0" >
+       <widget class="QRadioButton" name="specialButton" >
+        <property name="text" >
+         <string>Variable:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" >
+       <widget class="QRadioButton" name="conditionButton" >
+        <property name="text" >
+         <string>Expression:</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="QLineEdit" name="specialEdit" >
+        <property name="enabled" >
+         <bool>false</bool>
+        </property>
+        <property name="toolTip" >
+         <string>Enter a variable and select the special condition below</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" >
+       <widget class="QComboBox" name="specialCombo" >
+        <property name="enabled" >
+         <bool>false</bool>
+        </property>
+        <property name="toolTip" >
+         <string>Select a special condition</string>
+        </property>
+        <item>
+         <property name="text" >
+          <string>created</string>
+         </property>
+        </item>
+        <item>
+         <property name="text" >
+          <string>changed</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="QLineEdit" name="conditionEdit" >
+        <property name="toolTip" >
+         <string>Enter the expression for the watch expression</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>conditionButton</tabstop>
+  <tabstop>conditionEdit</tabstop>
+  <tabstop>specialButton</tabstop>
+  <tabstop>specialEdit</tabstop>
+  <tabstop>specialCombo</tabstop>
+  <tabstop>ignoreSpinBox</tabstop>
+  <tabstop>temporaryCheckBox</tabstop>
+  <tabstop>enabledCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>conditionButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>conditionEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>63</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>143</x>
+     <y>21</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>specialButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>specialCombo</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>56</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>123</x>
+     <y>73</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>specialButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>specialEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>81</x>
+     <y>46</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>122</x>
+     <y>47</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>EditWatchpointDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>16</x>
+     <y>202</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>16</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>EditWatchpointDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>87</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>87</x>
+     <y>218</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

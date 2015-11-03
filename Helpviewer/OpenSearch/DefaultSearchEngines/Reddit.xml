@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>Reddit</ShortName>
+    <Description>Reddit Site Search</Description>
+    <Url method="get" type="text/html" template="http://www.reddit.com/search?q={searchTerms}"/>
+    <Image>http://www.reddit.com/favicon.ico</Image>
+</OpenSearchDescription>

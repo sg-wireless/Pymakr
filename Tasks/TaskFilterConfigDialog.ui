@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TaskFilterConfigDialog</class>
+ <widget class="QDialog" name="TaskFilterConfigDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>562</width>
+    <height>405</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Task filter configuration</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Select the categories, the tasks list should be filtered on. Within each category, enter the selection criteria. The enabled categories are combined using an &quot;&lt;b&gt;and&lt;/b&gt;&quot; operation.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="summaryGroup">
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Select to filter on the task summary</string>
+     </property>
+     <property name="title">
+      <string>Summary</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLineEdit" name="summaryEdit">
+        <property name="toolTip">
+         <string>Enter the summary filter as a regular expression.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="filenameGroup">
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Select to filter on the task filename</string>
+     </property>
+     <property name="title">
+      <string>Filename</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="filenameEdit">
+        <property name="toolTip">
+         <string>Enter the filename filter as a wildcard expression.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="typeGroup">
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Select to filter on the task type</string>
+     </property>
+     <property name="title">
+      <string>Type</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QComboBox" name="typeCombo">
+        <property name="toolTip">
+         <string>Select the task type to be shown</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="scopeGroup">
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Select to filter on the task scope</string>
+     </property>
+     <property name="title">
+      <string>Scope</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QRadioButton" name="globalRadioButton">
+        <property name="toolTip">
+         <string>Select to show global tasks only</string>
+        </property>
+        <property name="text">
+         <string>Global tasks</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="projectRadioButton">
+        <property name="toolTip">
+         <string>Select to show project tasks only</string>
+        </property>
+        <property name="text">
+         <string>Project tasks</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="statusGroup">
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Select to filter on the task completion status</string>
+     </property>
+     <property name="title">
+      <string>Completion status</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="uncompletedRadioButton">
+        <property name="toolTip">
+         <string>Select to show uncompleted tasks only</string>
+        </property>
+        <property name="text">
+         <string>Uncompleted tasks</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="completedRadioButton">
+        <property name="toolTip">
+         <string>Select to show completed tasks only</string>
+        </property>
+        <property name="text">
+         <string>Completed tasks</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="priorityGroup">
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Select to filter on the task priority</string>
+     </property>
+     <property name="title">
+      <string>Priority</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QCheckBox" name="priorityHighCheckBox">
+        <property name="toolTip">
+         <string>Select to show high priority tasks</string>
+        </property>
+        <property name="text">
+         <string>High priority tasks</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="priorityNormalCheckBox">
+        <property name="toolTip">
+         <string>Select to show normal priority tasks</string>
+        </property>
+        <property name="text">
+         <string>Normal priority tasks</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="priorityLowCheckBox">
+        <property name="toolTip">
+         <string>Select to show low priority tasks</string>
+        </property>
+        <property name="text">
+         <string>Low priority tasks</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>summaryGroup</tabstop>
+  <tabstop>summaryEdit</tabstop>
+  <tabstop>filenameGroup</tabstop>
+  <tabstop>filenameEdit</tabstop>
+  <tabstop>typeGroup</tabstop>
+  <tabstop>typeCombo</tabstop>
+  <tabstop>scopeGroup</tabstop>
+  <tabstop>globalRadioButton</tabstop>
+  <tabstop>projectRadioButton</tabstop>
+  <tabstop>statusGroup</tabstop>
+  <tabstop>uncompletedRadioButton</tabstop>
+  <tabstop>completedRadioButton</tabstop>
+  <tabstop>priorityGroup</tabstop>
+  <tabstop>priorityHighCheckBox</tabstop>
+  <tabstop>priorityNormalCheckBox</tabstop>
+  <tabstop>priorityLowCheckBox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>TaskFilterConfigDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>46</x>
+     <y>425</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>46</x>
+     <y>445</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>TaskFilterConfigDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>432</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>168</x>
+     <y>452</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

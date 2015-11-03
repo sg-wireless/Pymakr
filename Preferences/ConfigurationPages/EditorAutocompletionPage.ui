@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditorAutocompletionPage</class>
+ <widget class="QWidget" name="EditorAutocompletionPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>506</width>
+    <height>398</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QLabel" name="headerLabel">
+     <property name="text">
+      <string>&lt;b&gt;Configure Completion Support&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line6">
+     <property name="frameShape">
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="acEnabledCheckBox">
+     <property name="toolTip">
+      <string>Select this to enable autocompletion</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;b&gt;Autocompletion Enabled&lt;/b&gt;&lt;p&gt;Select to enable autocompletion. In order to get autocompletion from alternative autocompletion providers (if installed), these have to be enabled on their respective configuration page. Only one alternative provider might be enabled.&lt;/p&gt;</string>
+     </property>
+     <property name="text">
+      <string>Automatic Completion Enabled</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>General</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="acCaseSensitivityCheckBox">
+        <property name="toolTip">
+         <string>Select this to have case sensitive auto-completion lists</string>
+        </property>
+        <property name="text">
+         <string>Case sensitive</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="acReplaceWordCheckBox">
+        <property name="toolTip">
+         <string>Select this, if the word to the right should be replaced by the selected entry</string>
+        </property>
+        <property name="text">
+         <string>Replace word</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <layout class="QHBoxLayout" name="_2">
+        <item>
+         <widget class="QLabel" name="textLabel1_2">
+          <property name="text">
+           <string>Threshold:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="acThresholdSlider">
+          <property name="toolTip">
+           <string>Move to set the threshold for display of an autocompletion list</string>
+          </property>
+          <property name="maximum">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>2</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="tickInterval">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLCDNumber" name="lCDNumber4">
+          <property name="toolTip">
+           <string>Displays the selected autocompletion threshold</string>
+          </property>
+          <property name="digitCount">
+           <number>2</number>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+          <property name="value" stdset="0">
+           <double>2.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Plug-In Behavior</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QCheckBox" name="acScintillaCheckBox">
+        <property name="toolTip">
+         <string>Select to show QScintilla provided completions, if the selected plug-ins fail</string>
+        </property>
+        <property name="whatsThis">
+         <string>Qscintilla provided completions are shown, if this option is enabled and completions shall be provided by plug-ins (see completions sub-page of the plug-in) and the plugin-ins don't deliver any completions.</string>
+        </property>
+        <property name="text">
+         <string>Show QScintilla completions, if plug-ins fail</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>456</width>
+       <height>51</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>acEnabledCheckBox</tabstop>
+  <tabstop>acCaseSensitivityCheckBox</tabstop>
+  <tabstop>acReplaceWordCheckBox</tabstop>
+  <tabstop>acThresholdSlider</tabstop>
+  <tabstop>acScintillaCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>acThresholdSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lCDNumber4</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>304</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>465</x>
+     <y>116</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>acEnabledCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>103</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>114</x>
+     <y>64</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

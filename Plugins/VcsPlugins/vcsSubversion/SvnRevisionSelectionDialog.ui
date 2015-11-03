@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SvnRevisionSelectionDialog</class>
+ <widget class="QDialog" name="SvnRevisionSelectionDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>399</width>
+    <height>519</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Subversion Diff</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QGroupBox" name="rev1GroupBox">
+     <property name="title">
+      <string>Revision &amp;1</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="6" column="0">
+       <widget class="QRadioButton" name="prev1Button">
+        <property name="toolTip">
+         <string>Select revision before last commit</string>
+        </property>
+        <property name="text">
+         <string>PREV</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QRadioButton" name="committed1Button">
+        <property name="toolTip">
+         <string>Select last committed revision</string>
+        </property>
+        <property name="text">
+         <string>COMMITTED</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QRadioButton" name="base1Button">
+        <property name="toolTip">
+         <string>Select base revision</string>
+        </property>
+        <property name="text">
+         <string>BASE</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QRadioButton" name="head1Button">
+        <property name="toolTip">
+         <string>Select head revision of repository</string>
+        </property>
+        <property name="text">
+         <string>HEAD</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QRadioButton" name="working1Button">
+        <property name="toolTip">
+         <string>Select working revision</string>
+        </property>
+        <property name="text">
+         <string>WORKING</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="number1SpinBox">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip">
+         <string>Enter a revision number</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight</set>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>999999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QTimeEdit" name="time1Edit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Enter time of revision</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QDateEdit" name="date1Edit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Enter date of revision</string>
+        </property>
+        <property name="displayFormat">
+         <string>yyyy-MM-dd</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="number1Button">
+        <property name="toolTip">
+         <string>Select to specify a revision by number</string>
+        </property>
+        <property name="text">
+         <string>Number</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QRadioButton" name="date1Button">
+        <property name="toolTip">
+         <string>Select to specify a revision by date and time</string>
+        </property>
+        <property name="text">
+         <string>Date</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="rev2GroupBox">
+     <property name="title">
+      <string>Revision &amp;2</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="6" column="0">
+       <widget class="QRadioButton" name="prev2Button">
+        <property name="toolTip">
+         <string>Select revision before last commit</string>
+        </property>
+        <property name="text">
+         <string>PREV</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QRadioButton" name="committed2Button">
+        <property name="toolTip">
+         <string>Select last committed revision</string>
+        </property>
+        <property name="text">
+         <string>COMMITTED</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QRadioButton" name="base2Button">
+        <property name="toolTip">
+         <string>Select base revision</string>
+        </property>
+        <property name="text">
+         <string>BASE</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QRadioButton" name="head2Button">
+        <property name="toolTip">
+         <string>Select head revision of repository</string>
+        </property>
+        <property name="text">
+         <string>HEAD</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QRadioButton" name="working2Button">
+        <property name="toolTip">
+         <string>Select working revision</string>
+        </property>
+        <property name="text">
+         <string>WORKING</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="number2SpinBox">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip">
+         <string>Enter a revision number</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight</set>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>999999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QTimeEdit" name="time2Edit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Enter time of revision</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QDateEdit" name="date2Edit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Enter date of revision</string>
+        </property>
+        <property name="displayFormat">
+         <string>yyyy-MM-dd</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="number2Button">
+        <property name="toolTip">
+         <string>Select to specify a revision by number</string>
+        </property>
+        <property name="text">
+         <string>Number</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QRadioButton" name="date2Button">
+        <property name="toolTip">
+         <string>Select to specify a revision by date and time</string>
+        </property>
+        <property name="text">
+         <string>Date</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>number1Button</tabstop>
+  <tabstop>number1SpinBox</tabstop>
+  <tabstop>date1Button</tabstop>
+  <tabstop>date1Edit</tabstop>
+  <tabstop>time1Edit</tabstop>
+  <tabstop>head1Button</tabstop>
+  <tabstop>working1Button</tabstop>
+  <tabstop>base1Button</tabstop>
+  <tabstop>committed1Button</tabstop>
+  <tabstop>prev1Button</tabstop>
+  <tabstop>number2Button</tabstop>
+  <tabstop>number2SpinBox</tabstop>
+  <tabstop>date2Button</tabstop>
+  <tabstop>date2Edit</tabstop>
+  <tabstop>time2Edit</tabstop>
+  <tabstop>head2Button</tabstop>
+  <tabstop>working2Button</tabstop>
+  <tabstop>base2Button</tabstop>
+  <tabstop>committed2Button</tabstop>
+  <tabstop>prev2Button</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SvnRevisionSelectionDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>27</x>
+     <y>512</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>21</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SvnRevisionSelectionDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>512</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>73</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>number1Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>number1SpinBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>62</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>148</x>
+     <y>43</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>date1Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>date1Edit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>136</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>date1Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>time1Edit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>16</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>257</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>number2Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>number2SpinBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>32</x>
+     <y>281</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>128</x>
+     <y>283</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>date2Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>date2Edit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>310</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>134</x>
+     <y>310</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>date2Button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>time2Edit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>322</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>264</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

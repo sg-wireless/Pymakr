@@ -1,0 +1,188 @@
+<ui version="4.0" >
+ <class>EditorSearchPage</class>
+ <widget class="QWidget" name="EditorSearchPage" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>576</width>
+    <height>596</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QLabel" name="headerLabel" >
+     <property name="text" >
+      <string>&lt;b>Configure editor search options&lt;/b></string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line3" >
+     <property name="frameShape" >
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_4" >
+     <property name="title" >
+      <string>Search Markers</string>
+     </property>
+     <layout class="QVBoxLayout" >
+      <item>
+       <widget class="QCheckBox" name="occurrencesMarkersEnabledCheckBox" >
+        <property name="toolTip" >
+         <string>Select, whether markers for all occurrences of the current word shall be shown</string>
+        </property>
+        <property name="text" >
+         <string>Highlight all occurrences of current word</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="searchMarkersEnabledCheckBox" >
+        <property name="toolTip" >
+         <string>Select, whether search markers shall be shown for a standard search</string>
+        </property>
+        <property name="text" >
+         <string>Highlight all occurrences of search text</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="quicksearchMarkersEnabledCheckBox" >
+        <property name="toolTip" >
+         <string>Select, whether search markers shall be shown for a quicksearch</string>
+        </property>
+        <property name="text" >
+         <string>Highlight all occurrences of quicksearch text</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" >
+        <item>
+         <widget class="QLabel" name="label" >
+          <property name="text" >
+           <string>Timeout for current word highlighting:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="markOccurrencesTimeoutSpinBox" >
+          <property name="toolTip" >
+           <string>Enter the time in milliseconds after which occurrences of the current word shall be highlighted</string>
+          </property>
+          <property name="alignment" >
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="buttonSymbols" >
+           <enum>QAbstractSpinBox::PlusMinus</enum>
+          </property>
+          <property name="correctionMode" >
+           <enum>QAbstractSpinBox::CorrectToNearestValue</enum>
+          </property>
+          <property name="suffix" >
+           <string> ms</string>
+          </property>
+          <property name="minimum" >
+           <number>100</number>
+          </property>
+          <property name="maximum" >
+           <number>5000</number>
+          </property>
+          <property name="singleStep" >
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0" >
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" >
+        <item>
+         <widget class="QLabel" name="TextLabel2_2_2_2_2_2" >
+          <property name="text" >
+           <string>Marker Colour:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="searchMarkerButton" >
+          <property name="minimumSize" >
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip" >
+           <string>Select the colour for the search markers.</string>
+          </property>
+          <property name="text" >
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0" >
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>558</width>
+       <height>231</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>occurrencesMarkersEnabledCheckBox</tabstop>
+  <tabstop>searchMarkersEnabledCheckBox</tabstop>
+  <tabstop>quicksearchMarkersEnabledCheckBox</tabstop>
+  <tabstop>markOccurrencesTimeoutSpinBox</tabstop>
+  <tabstop>searchMarkerButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SortOptionsDialog</class>
+ <widget class="QDialog" name="SortOptionsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>209</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sort Options</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="directionGroupBox">
+     <property name="title">
+      <string>Direction</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QRadioButton" name="ascendingButton">
+        <property name="toolTip">
+         <string>Select to sort in ascending order</string>
+        </property>
+        <property name="text">
+         <string>Ascending</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="descendingButton">
+        <property name="toolTip">
+         <string>Select to sort in descending order</string>
+        </property>
+        <property name="text">
+         <string>Descending</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="typeGroupBox">
+     <property name="title">
+      <string>Type</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="alnumButton">
+        <property name="toolTip">
+         <string>Select to sort alphanumerically</string>
+        </property>
+        <property name="text">
+         <string>Alphanumerical</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="numButton">
+        <property name="toolTip">
+         <string>Select to sort numerically</string>
+        </property>
+        <property name="text">
+         <string>Numerical</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="caseGroupBox">
+     <property name="title">
+      <string>Case Sensitivity</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QRadioButton" name="respectCaseButton">
+        <property name="toolTip">
+         <string>Select to respect the case while sorting</string>
+        </property>
+        <property name="text">
+         <string>Respect Case</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="ignoreCaseButton">
+        <property name="toolTip">
+         <string>Select to ignore the case while sorting</string>
+        </property>
+        <property name="text">
+         <string>Ignore Case</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>ascendingButton</tabstop>
+  <tabstop>descendingButton</tabstop>
+  <tabstop>alnumButton</tabstop>
+  <tabstop>numButton</tabstop>
+  <tabstop>respectCaseButton</tabstop>
+  <tabstop>ignoreCaseButton</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SortOptionsDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SortOptionsDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>295</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>alnumButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>caseGroupBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>47</x>
+     <y>127</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

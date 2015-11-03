@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EricdocConfigDialog</class>
+ <widget class="QDialog" name="EricdocConfigDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>554</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ericdoc Configuration</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="generalTab">
+      <attribute name="title">
+       <string>General</string>
+      </attribute>
+      <layout class="QVBoxLayout">
+       <item>
+        <layout class="QHBoxLayout">
+         <item>
+          <widget class="QLabel" name="TextLabel6">
+           <property name="text">
+            <string>Output Directory:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="outputDirEdit">
+           <property name="toolTip">
+            <string>Enter an output directory</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="outputDirButton">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Press to open a directory selection dialog</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout">
+         <item>
+          <widget class="QLabel" name="textLabel1_3">
+           <property name="text">
+            <string>Additional source extensions:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="sourceExtEdit">
+           <property name="toolTip">
+            <string>Enter additional source extensions separated by a comma</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout">
+         <item>
+          <widget class="QCheckBox" name="recursionCheckBox">
+           <property name="toolTip">
+            <string>Select to recurse into subdirectories</string>
+           </property>
+           <property name="text">
+            <string>Recurse into subdirectories</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="noindexCheckBox">
+           <property name="toolTip">
+            <string>Select, if no index files should be generated</string>
+           </property>
+           <property name="text">
+            <string>Don't generate index files</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>145</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout">
+         <item>
+          <widget class="QCheckBox" name="noemptyCheckBox">
+           <property name="toolTip">
+            <string>Select to exclude empty modules</string>
+           </property>
+           <property name="text">
+            <string>Don't include empty modules</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Exclude Files:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="excludeFilesEdit">
+           <property name="toolTip">
+            <string>Enter filename patterns of files to be excluded separated by a comma</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>Exclude Directories</string>
+         </property>
+         <layout class="QGridLayout">
+          <item row="1" column="2">
+           <widget class="QLineEdit" name="ignoreDirEdit">
+            <property name="toolTip">
+             <string>Enter a directory basename to be ignored</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="addButton">
+            <property name="toolTip">
+             <string>Press to add the entered directory to the list</string>
+            </property>
+            <property name="text">
+             <string>Add</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="deleteButton">
+            <property name="toolTip">
+             <string>Press to delete the selected directory from the list</string>
+            </property>
+            <property name="text">
+             <string>Delete</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="4">
+           <widget class="QListWidget" name="ignoreDirsList">
+            <property name="toolTip">
+             <string>List of directory basenames to be ignored</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QToolButton" name="ignoreDirButton">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="toolTip">
+             <string>Press to open a directory selection dialog</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="styleTab">
+      <attribute name="title">
+       <string>Style</string>
+      </attribute>
+      <layout class="QVBoxLayout">
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>Style Sheet</string>
+         </property>
+         <layout class="QHBoxLayout">
+          <item>
+           <widget class="QLineEdit" name="cssEdit">
+            <property name="toolTip">
+             <string>Enter the filename of a CSS style sheet. Leave empty to use the colours defined below.</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="cssButton">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="toolTip">
+             <string>Press to open a file selection dialog</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>Colours</string>
+         </property>
+         <layout class="QGridLayout">
+          <item row="3" column="1">
+           <widget class="QPushButton" name="cfBgButton">
+            <property name="toolTip">
+             <string>Press to select the class and function header background colour.</string>
+            </property>
+            <property name="text">
+             <string>Class/Function Header Background</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="cfFgButton">
+            <property name="toolTip">
+             <string>Press to select the class and function header foreground colour.</string>
+            </property>
+            <property name="text">
+             <string>Class/Function Header Foreground</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="l2BgButton">
+            <property name="toolTip">
+             <string>Press to select the level 2 header background colour.</string>
+            </property>
+            <property name="text">
+             <string>Level 2 Header Background</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="l2FgButton">
+            <property name="toolTip">
+             <string>Press to select the level 2 header foreground colour.</string>
+            </property>
+            <property name="text">
+             <string>Level 2 Header Foreground</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="l1BgButton">
+            <property name="toolTip">
+             <string>Press to select the level 1 header background colour.</string>
+            </property>
+            <property name="text">
+             <string>Level 1 Header Background</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="l1FgButton">
+            <property name="toolTip">
+             <string>Press to select the level 1 header foreground colour.</string>
+            </property>
+            <property name="text">
+             <string>Level 1 Header Foreground</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="bodyBgButton">
+            <property name="toolTip">
+             <string>Press to select the body background colour.</string>
+            </property>
+            <property name="text">
+             <string>Body Background</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="bodyFgButton">
+            <property name="toolTip">
+             <string>Press to select the body foreground colour.</string>
+            </property>
+            <property name="text">
+             <string>Body Foreground</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QPushButton" name="linkFgButton">
+            <property name="toolTip">
+             <string>Press to select the foreground colour of links.</string>
+            </property>
+            <property name="text">
+             <string>Links</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0" colspan="2">
+           <widget class="QTextEdit" name="sample">
+            <property name="toolTip">
+             <string>This shows an example of the selected colours.</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="qtHelpTab">
+      <attribute name="title">
+       <string>QtHelp</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="qtHelpGroup">
+         <property name="title">
+          <string>Generate QtHelp Files</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="TextLabel6_2">
+            <property name="text">
+             <string>Output Directory:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLineEdit" name="qtHelpDirEdit">
+              <property name="toolTip">
+               <string>Enter an output directory</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="qtHelpDirButton">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="toolTip">
+               <string>Press to open a directory selection dialog</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Namespace:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="qtHelpNamespaceEdit">
+            <property name="toolTip">
+             <string>Enter the namespace</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Virtual Folder:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="qtHelpFolderEdit">
+            <property name="toolTip">
+             <string>Enter the name of the virtual folder (must not contain '/')</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Filter Name:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="qtHelpFilterNameEdit">
+            <property name="toolTip">
+             <string>Enter the name of the custom filter</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Filter Attributes:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="qtHelpFilterAttributesEdit">
+            <property name="toolTip">
+             <string>Enter the filter attributes separated by ':'</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Title:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="qtHelpTitleEdit">
+            <property name="toolTip">
+             <string>Enter a short title for the top entry</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0" colspan="2">
+           <widget class="QCheckBox" name="qtHelpGenerateCollectionCheckBox">
+            <property name="toolTip">
+             <string>Select to generate the QtHelp collection files</string>
+            </property>
+            <property name="text">
+             <string>Generate QtHelp collection files</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>271</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="6"/>
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>outputDirEdit</tabstop>
+  <tabstop>sourceExtEdit</tabstop>
+  <tabstop>recursionCheckBox</tabstop>
+  <tabstop>noindexCheckBox</tabstop>
+  <tabstop>noemptyCheckBox</tabstop>
+  <tabstop>excludeFilesEdit</tabstop>
+  <tabstop>ignoreDirsList</tabstop>
+  <tabstop>ignoreDirEdit</tabstop>
+  <tabstop>addButton</tabstop>
+  <tabstop>deleteButton</tabstop>
+  <tabstop>cssEdit</tabstop>
+  <tabstop>bodyFgButton</tabstop>
+  <tabstop>bodyBgButton</tabstop>
+  <tabstop>l1FgButton</tabstop>
+  <tabstop>l1BgButton</tabstop>
+  <tabstop>l2FgButton</tabstop>
+  <tabstop>l2BgButton</tabstop>
+  <tabstop>cfFgButton</tabstop>
+  <tabstop>cfBgButton</tabstop>
+  <tabstop>linkFgButton</tabstop>
+  <tabstop>sample</tabstop>
+  <tabstop>qtHelpGroup</tabstop>
+  <tabstop>qtHelpDirEdit</tabstop>
+  <tabstop>qtHelpNamespaceEdit</tabstop>
+  <tabstop>qtHelpFolderEdit</tabstop>
+  <tabstop>qtHelpFilterNameEdit</tabstop>
+  <tabstop>qtHelpFilterAttributesEdit</tabstop>
+  <tabstop>qtHelpTitleEdit</tabstop>
+  <tabstop>qtHelpGenerateCollectionCheckBox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>EricdocConfigDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>31</x>
+     <y>480</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>31</x>
+     <y>498</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>EricdocConfigDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>482</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>499</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

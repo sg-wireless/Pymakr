@@ -1,0 +1,134 @@
+<ui version="4.0" >
+ <class>EditorHighlightersPage</class>
+ <widget class="QWidget" name="EditorHighlightersPage" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>361</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" >
+   <item>
+    <widget class="QLabel" name="headerLabel" >
+     <property name="text" >
+      <string>&lt;b>Configure syntax highlighters&lt;/b></string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line19" >
+     <property name="frameShape" >
+      <enum>QFrame::HLine</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTreeWidget" name="editorLexerList" >
+     <property name="alternatingRowColors" >
+      <bool>true</bool>
+     </property>
+     <property name="rootIsDecorated" >
+      <bool>false</bool>
+     </property>
+     <property name="sortingEnabled" >
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text" >
+       <string>Filename Pattern</string>
+      </property>
+     </column>
+     <column>
+      <property name="text" >
+       <string>Lexer Language</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout" >
+     <item row="0" column="0" >
+      <widget class="QLabel" name="textLabel2_6" >
+       <property name="text" >
+        <string>Filename Pattern:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" >
+      <widget class="QLineEdit" name="editorFileExtEdit" >
+       <property name="toolTip" >
+        <string>Enter the filename pattern to be associated</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" >
+      <widget class="QPushButton" name="addLexerButton" >
+       <property name="toolTip" >
+        <string>Press to add or change the entered association</string>
+       </property>
+       <property name="text" >
+        <string>Add/Change</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" >
+      <widget class="QLabel" name="textLabel3_3" >
+       <property name="text" >
+        <string>Lexer Language:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" >
+      <widget class="QComboBox" name="editorLexerCombo" >
+       <property name="toolTip" >
+        <string>Select the lexer language to associate</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" >
+      <widget class="QPushButton" name="deleteLexerButton" >
+       <property name="toolTip" >
+        <string>Press to delete the selected association</string>
+       </property>
+       <property name="text" >
+        <string>Delete</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" >
+      <widget class="QLabel" name="pygmentsLabel" >
+       <property name="text" >
+        <string>Alternative Lexer:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" >
+      <widget class="QComboBox" name="pygmentsLexerCombo" >
+       <property name="toolTip" >
+        <string>Select the alternative lexer to associate</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>editorLexerList</tabstop>
+  <tabstop>editorFileExtEdit</tabstop>
+  <tabstop>editorLexerCombo</tabstop>
+  <tabstop>pygmentsLexerCombo</tabstop>
+  <tabstop>addLexerButton</tabstop>
+  <tabstop>deleteLexerButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

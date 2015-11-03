@@ -1,0 +1,34 @@
+<!-- This is the DTD for eric5's basic marshaller -->
+
+<!ELEMENT   int         (#PCDATA)>
+<!ELEMENT   long        (#PCDATA)>
+<!ELEMENT   float       (#PCDATA)>
+<!ELEMENT   complex     (#PCDATA)>
+<!ELEMENT   bool        (#PCDATA)>
+<!ELEMENT   string      (#PCDATA)>
+<!ELEMENT   bytes       (#PCDATA)>
+<!ELEMENT   bytearray   (#PCDATA)>
+<!ELEMENT   none        EMPTY>
+
+<!ELEMENT   pickle      (#PCDATA)>
+<!ATTLIST   pickle
+    method      CDATA   #REQUIRED
+    encoding    CDATA   #REQUIRED>
+
+<!ELEMENT   key         (int | long | float | complex | string | bytes)>
+<!ELEMENT   value       (int | long | float | complex | bool | string | bytes | 
+    bytearray | none | dict | tuple | list | set | frozenset | pickle)>
+
+<!ELEMENT   dict        (key, value)*>
+
+<!ELEMENT   tuple       (int | long | float | complex | bool | string | bytes | 
+    bytearray | none | dict | tuple | list | set | frozenset | pickle)*>
+
+<!ELEMENT   list        (int | long | float | complex | bool | string | bytes | 
+    bytearray | none | dict | tuple | list | set | frozenset | pickle)*>
+
+<!ELEMENT   set         (int | long | float | complex | bool | string | bytes | 
+    bytearray | none | dict | tuple | list | set | frozenset | pickle)*>
+
+<!ELEMENT   frozenset   (int | long | float | complex | bool | string | bytes | 
+    bytearray | none | dict | tuple | list | set | frozenset | pickle)*>

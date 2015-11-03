@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+  <file>javascript/jquery-ui.js</file>
+  <file>javascript/jquery.js</file>
+</qresource>
+</RCC>

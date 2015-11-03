@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>Wikia (en)</ShortName>
+    <Description>Wikia (en)</Description>
+    <Url method="get" type="text/html" template="http://www.wikia.com/index.php?title=Special:Search&amp;search={searchTerms}"/>
+    <Url method="get" type="application/x-suggestions+json" template="http://www.wikia.com/api.php?action=opensearch&amp;search={searchTerms}&amp;namespace=1"/>
+    <Image>http://images.wikia.com/wikiaglobal/images/6/64/Favicon.ico</Image>
+</OpenSearchDescription>

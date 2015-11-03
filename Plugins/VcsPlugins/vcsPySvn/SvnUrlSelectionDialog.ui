@@ -1,0 +1,154 @@
+<ui version="4.0" >
+ <class>SvnUrlSelectionDialog</class>
+ <widget class="QDialog" name="SvnUrlSelectionDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>542</width>
+    <height>195</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Subversion Diff</string>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QGroupBox" name="urlGroup1" >
+     <property name="title" >
+      <string>Repository URL 1</string>
+     </property>
+     <layout class="QHBoxLayout" >
+      <item>
+       <widget class="QLabel" name="repoRootLabel1" />
+      </item>
+      <item>
+       <widget class="QComboBox" name="typeCombo1" >
+        <property name="toolTip" >
+         <string>Select the URL type</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="labelCombo1" >
+        <property name="sizePolicy" >
+         <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip" >
+         <string>Enter the label name or path</string>
+        </property>
+        <property name="editable" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="urlGroup2" >
+     <property name="title" >
+      <string>Repository URL 2</string>
+     </property>
+     <layout class="QHBoxLayout" >
+      <item>
+       <widget class="QLabel" name="repoRootLabel2" />
+      </item>
+      <item>
+       <widget class="QComboBox" name="typeCombo2" >
+        <property name="toolTip" >
+         <string>Select the URL type</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="labelCombo2" >
+        <property name="sizePolicy" >
+         <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="toolTip" >
+         <string>Enter the label name or path</string>
+        </property>
+        <property name="editable" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="summaryCheckBox" >
+     <property name="toolTip" >
+      <string>Select to just show a summary of differences</string>
+     </property>
+     <property name="text" >
+      <string>Summary only</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>typeCombo1</tabstop>
+  <tabstop>labelCombo1</tabstop>
+  <tabstop>typeCombo2</tabstop>
+  <tabstop>labelCombo2</tabstop>
+  <tabstop>summaryCheckBox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SvnUrlSelectionDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>230</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>157</x>
+     <y>178</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SvnUrlSelectionDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>292</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>286</x>
+     <y>178</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
