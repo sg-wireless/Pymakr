@@ -51,6 +51,7 @@ BrowserClassItem BrowserItem
 BrowserCodingItem BrowserItem
 BrowserDirectoryItem BrowserItem
 BrowserFileItem BrowserItem
+BrowserGlobalsItem BrowserClassAttributesItem
 BrowserImportItem BrowserItem
 BrowserImportsItem BrowserItem
 BrowserMethodItem BrowserItem

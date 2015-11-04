@@ -1744,14 +1744,13 @@ class BrowserGlobalsItem(BrowserClassAttributesItem):
     """
     Class implementing the data structure for browser globals items.
     """
-    def __init__(self, parent, attributes, text, isClass=False):
+    def __init__(self, parent, attributes, text):
         """
         Constructor
         
         @param parent parent item
         @param attributes list of attributes
         @param text text to be shown by this item (string)
-        @param isClass flag indicating class attributes (boolean)
         """
         BrowserClassAttributesItem.__init__(self, parent, attributes, text)
 
