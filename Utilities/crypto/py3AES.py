@@ -1,4 +1,5 @@
-#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 #
 # aes.py: implements AES - Advanced Encryption Standard
 # from the SlowAES project, http://code.google.com/p/slowaes/
