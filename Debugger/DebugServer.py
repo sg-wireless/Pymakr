@@ -282,10 +282,6 @@ class DebugServer(QTcpServer):
         """
         Public slot to handle the preferencesChanged signal.
         """
-        # TODO: eric 6.2: change this to call all registered debugger
-        #       interfaces getRegistryData() method ignoring the client
-        #       language and update the client capabilities and client
-        #       associations.
         self.__registerDebuggerInterfaces()
         
     def __registerDebuggerInterfaces(self):
@@ -294,17 +290,6 @@ class DebugServer(QTcpServer):
         """
         self.__clientCapabilities = {}
         self.__clientAssociations = {}
-        # TODO: eric 6.2: Add a debugger interface registry dictionary with the
-        #       debugger name (language) as a key
-        # TODO: eric 6.2: Add a registerDebuggerInterface() method taking a
-        #       name and a getRegistryData() method. This method should be
-        #       called when a debugger backend plug-in is activated.
-        #       getRegistryData() shall return the client language, the client
-        #       capabilities, the list of associated file extensions and a
-        #       function reference to create the debugger interface (see
-        #       __createDebuggerInterface() below
-        # TODO: eric 6.2: Add an unregisterDebuggerInterface() method with a
-        #       name as parameter to revert the above.
         
         for interface in DebuggerInterfaces:
             modName = "Debugger.{0}".format(interface)
@@ -364,8 +349,6 @@ class DebugServer(QTcpServer):
         
         @param clientType type of the client interface to be created (string)
         """
-        # TODO: eric 6.2: make debugger interfaces be registered in order to
-        # allow to implement a debugger backend as a plug-in.
         if self.lastClientType != self.clientType or clientType is not None:
             if clientType is None:
                 clientType = self.clientType
