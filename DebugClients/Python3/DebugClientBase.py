@@ -1432,7 +1432,7 @@ class DebugClientBase(object):
                     udict = dict
                 ndict = {}
                 # this has to be in line with VariablesViewer.indicators
-                if var[i][-2:] in ["[]", "()", "{}"]:
+                if var[i][-2:] in ["[]", "()", "{}"]:       # __IGNORE_WARNING__
                     if i + 1 == len(var):
                         if var[i][:-2] == '...':
                             dictkeys = [var[i - 1]]
@@ -1461,7 +1461,7 @@ class DebugClientBase(object):
                                 else:
                                     access = '{0!s}[{1!s}]'.format(
                                         access, var[i][:-2])
-                        if var[i][-2:] == "{}":
+                        if var[i][-2:] == "{}":     # __IGNORE_WARNING__
                             isDict = True
                         break
                     else:
@@ -1588,7 +1588,7 @@ class DebugClientBase(object):
                     exec('qvar = udict{0!s}'.format(access), globals(), loc)
                     qvar = loc["qvar"]
                 # this has to be in line with VariablesViewer.indicators
-                elif rvar and rvar[0][-2:] in ["[]", "()", "{}"]:
+                elif rvar and rvar[0][-2:] in ["[]", "()", "{}"]:   # __IGNORE_WARNING__
                     loc = {"udict": udict}
                     exec('qvar = udict["{0!s}"][{1!s}]'.format(rvar[0][:-2],
                          rvar[1]),
@@ -1610,7 +1610,7 @@ class DebugClientBase(object):
                              globals(), loc)
                         qvar = loc["qvar"]
                     # this has to be in line with VariablesViewer.indicators
-                    elif rvar and rvar[0][-2:] in ["[]", "()", "{}"]:
+                    elif rvar and rvar[0][-2:] in ["[]", "()", "{}"]:   # __IGNORE_WARNING__
                         loc = {"udict": udict}
                         exec('qvar = udict["{0!s}"][{1!s}]'.format(
                              rvar[0][:-2], rvar[1]), globals(), loc)
@@ -2268,3 +2268,6 @@ class DebugClientBase(object):
         sysPath.insert(0, firstEntry)
         sysPath.insert(0, '')
         return sysPath
+
+#
+# eflag: noqa = M702

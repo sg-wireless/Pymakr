@@ -2721,7 +2721,7 @@ class LineShortener(object):
         @return number of unmatched open/close brackets (integer)
         """
         count = 0
-        for opening, closing in ['()', '[]', '{}']:
+        for opening, closing in ['()', '[]', '{}']:     # __IGNORE_WARNING__
             count += abs(line.count(opening) - line.count(closing))
         
         return count

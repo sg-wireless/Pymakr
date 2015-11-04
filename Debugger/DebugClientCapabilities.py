@@ -7,6 +7,8 @@
 Module defining the debug clients capabilities.
 """
 
+from __future__ import unicode_literals
+
 HasDebugger = 0x0001
 HasInterpreter = 0x0002
 HasProfiler = 0x0004

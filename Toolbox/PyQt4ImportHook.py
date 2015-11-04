@@ -7,6 +7,8 @@
 Module implementing an import hook converting PyQt5 imports to PyQt4 imports.
 """
 
+from __future__ import unicode_literals
+
 import sys
 try:
     if "--pyqt4" in sys.argv:

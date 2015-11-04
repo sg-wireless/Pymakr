@@ -7,6 +7,8 @@
 Module implementing an interface to the Mercurial command server.
 """
 
+from __future__ import unicode_literals
+
 try:
     str = unicode
 except NameError:

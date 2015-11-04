@@ -54,3 +54,4 @@ default_getpass = getpass
 
 #
 # eflag: FileType = Python2
+# eflag: noqa = M601, M702

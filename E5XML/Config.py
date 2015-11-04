@@ -7,6 +7,8 @@
 Module implementing some common configuration stuf for the XML package.
 """
 
+from __future__ import unicode_literals
+
 # version number of the multi project file
 multiProjectFileFormatVersion = "5.1"
 

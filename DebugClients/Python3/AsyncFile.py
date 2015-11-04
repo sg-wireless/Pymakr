@@ -325,3 +325,6 @@ class AsyncFile(object):
         """
         for l in list:
             self.write(l)
+
+#
+# eflag: noqa = M702

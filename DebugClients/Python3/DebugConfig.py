@@ -17,3 +17,6 @@ ConfigVarTypeStrings = [
     'function', 'builtin_function_or_method', 'code', 'module',
     'ellipsis', 'traceback', 'frame', 'other'
 ]
+
+#
+# eflag: noqa = M702

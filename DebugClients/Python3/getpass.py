@@ -51,3 +51,6 @@ def getpass(prompt='Password: '):
 unix_getpass = getpass
 win_getpass = getpass
 default_getpass = getpass
+
+#
+# eflag: noqa = M702

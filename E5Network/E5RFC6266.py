@@ -42,7 +42,7 @@ try:
             super().__setitem__(key, value)
 
     # RFC 2616
-    separator_chars = "()<>@,;:\\\"/[]?={} \t"
+    separator_chars = "()<>@,;:\\\"/[]?={} \t"      # __IGNORE_WARNING__
     ctl_chars = ''.join(chr(i) for i in range(32)) + chr(127)
     nontoken_chars = separator_chars + ctl_chars
 
@@ -51,12 +51,12 @@ try:
     attr_chars = string.ascii_letters + string.digits + attr_chars_nonalnum
 
     # RFC 5987 gives this alternative construction of the token character class
-    token_chars = attr_chars + "*'%"
+    token_chars = attr_chars + "*'%"        # __IGNORE_WARNING__
 
     # Definitions from https://tools.ietf.org/html/rfc2616#section-2.2
     # token was redefined from attr_chars to avoid using AnyBut,
     # which might include non-ascii octets.
-    token_re = '[{}]+'.format(re.escape(token_chars))
+    token_re = '[{0}]+'.format(re.escape(token_chars))
 
     class Token(str):
         """
@@ -77,15 +77,15 @@ try:
     # Everything else in this grammar (including RFC 5987 ext values)
     # is in an ascii-safe encoding.
 
-    qdtext_re = r'[^"{}]'.format(re.escape(ctl_chars))
-    quoted_pair_re = r'\\[{}]'.format(re.escape(
+    qdtext_re = r'[^"{0}]'.format(re.escape(ctl_chars))
+    quoted_pair_re = r'\\[{0}]'.format(re.escape(
         ''.join(chr(i) for i in range(128))))
 
     class QuotedString(str):
         """
         A quoted string (RFC 2616, Section 2.2).
         """
-        grammar = re.compile(r'"({}|{})+"'.format(quoted_pair_re, qdtext_re))
+        grammar = re.compile(r'"({0}|{1})+"'.format(quoted_pair_re, qdtext_re))
 
         def __str__(self):
             s = super().__str__()
@@ -116,7 +116,7 @@ try:
         """
         grammar = re.compile('[A-Za-z0-9-]+')
 
-    attr_char_re = '[{}]'.format(re.escape(attr_chars))
+    attr_char_re = '[{0}]'.format(re.escape(attr_chars))
     hex_digit_re = '%[' + string.hexdigits + ']{2}'
 
     class ValueChars(str):
@@ -126,7 +126,7 @@ try:
         Fixme: Can we merge this with Value?
         https://github.com/The-Compiler/qutebrowser/issues/105
         """
-        grammar = re.compile('({}|{})*'.format(attr_char_re, hex_digit_re))
+        grammar = re.compile('({0}|{1})*'.format(attr_char_re, hex_digit_re))
 
     class ExtValue(peg.List):
         """

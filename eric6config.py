@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+
+# Copyright (c) 2002 - 2015 Detlev Offenbach <detlev@die-offenbachs.de>
+#
+
 #
 # This module contains the configuration of the individual eric installation
 #

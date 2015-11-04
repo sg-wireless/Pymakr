@@ -74,7 +74,7 @@ def usage():
     print("        This option may be repeated multiple times.")
     print("  -o filename or --output=filename")
     print("        Write the API information to the named file."
-          " A '%L' placeholder")
+          " A '%L' placeholder")        # __IGNORE_WARNING__
     print("        is replaced by the language of the API file"
           " (see --language).")
     print("  -p or --private")

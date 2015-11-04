@@ -7,6 +7,8 @@
 Module implementing a dialog to show the 'whois' information.
 """
 
+from __future__ import unicode_literals
+
 from PyQt5.QtWidgets import QDialog
 
 from .Ui_VirusTotalWhoisDialog import Ui_VirusTotalWhoisDialog

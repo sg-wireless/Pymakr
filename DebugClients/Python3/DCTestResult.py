@@ -119,3 +119,6 @@ class DCTestResult(TestResult):
 
         if self.parent.readstream in rrdy:
             self.parent.readReady(self.parent.readstream.fileno())
+
+#
+# eflag: noqa = M702

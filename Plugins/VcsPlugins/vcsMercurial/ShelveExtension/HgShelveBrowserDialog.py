@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+# Copyright (c) 2014 - 2015 Detlev Offenbach <detlev@die-offenbachs.de>
+#
+
 """
 Module implementing Mercurial shelve browser dialog.
 """

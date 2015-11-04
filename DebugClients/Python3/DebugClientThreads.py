@@ -197,3 +197,6 @@ class DebugClientThreads(DebugClientBase.DebugClientBase, AsyncIO):
 if __name__ == '__main__':
     debugClient = DebugClientThreads()
     debugClient.main()
+
+#
+# eflag: noqa = M702

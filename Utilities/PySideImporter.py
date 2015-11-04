@@ -7,6 +7,8 @@
 Module to check for the presence of PySide by importing it.
 """
 
+from __future__ import unicode_literals
+
 import sys
 
 if __name__ == "__main__":

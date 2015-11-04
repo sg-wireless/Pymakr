@@ -844,3 +844,4 @@ class DebugBase(bdb.Bdb):
 
 #
 # eflag: FileType = Python2
+# eflag: noqa = M601, M702

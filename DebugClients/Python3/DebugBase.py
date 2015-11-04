@@ -890,3 +890,6 @@ class DebugBase(bdb.Bdb):
         @return last debugger event (string)
         """
         return self.__event
+
+#
+# eflag: noqa = M702

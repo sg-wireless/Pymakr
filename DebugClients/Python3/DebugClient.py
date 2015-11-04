@@ -36,3 +36,6 @@ class DebugClient(DebugClientBase.DebugClientBase, AsyncIO, DebugBase):
 if __name__ == '__main__':
     debugClient = DebugClient()
     debugClient.main()
+
+#
+# eflag: noqa = M702

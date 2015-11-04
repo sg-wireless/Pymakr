@@ -11,6 +11,8 @@
 Module providing the class Message and its subclasses.
 """
 
+from __future__ import unicode_literals
+
 
 class Message(object):
     """

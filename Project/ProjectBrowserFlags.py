@@ -7,6 +7,8 @@
 Module defining the project browser flags.
 """
 
+from __future__ import unicode_literals
+
 SourcesBrowserFlag = 1
 FormsBrowserFlag = 2
 ResourcesBrowserFlag = 4

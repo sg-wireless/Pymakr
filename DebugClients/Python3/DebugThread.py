@@ -127,3 +127,6 @@ class DebugThread(DebugBase):
             self._dbgClient.unlockClient()
         
         return retval
+
+#
+# eflag: noqa = M702

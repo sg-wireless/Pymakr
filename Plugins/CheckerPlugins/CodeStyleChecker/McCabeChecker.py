@@ -7,6 +7,8 @@
 Module implementing a checker for code complexity.
 """
 
+from __future__ import unicode_literals
+
 import sys
 import ast
 

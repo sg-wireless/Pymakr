@@ -7,6 +7,8 @@
 Module implementing a checker for naming conventions.
 """
 
+from __future__ import unicode_literals
+
 import collections
 import ast
 import re

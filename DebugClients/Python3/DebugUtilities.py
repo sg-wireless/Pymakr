@@ -44,7 +44,7 @@ def getargvalues(frame):
     @exception TypeError raised if the input parameter is not a frame object
     """
     if not isframe(frame):
-        raise TypeError('{!r} is not a frame object'.format(frame))
+        raise TypeError('{0!r} is not a frame object'.format(frame))
 
     args, varargs, kwonlyargs, varkw = _getfullargs(frame.f_code)
     return ArgInfo(args + kwonlyargs, varargs, varkw, frame.f_locals)
@@ -63,7 +63,7 @@ def _getfullargs(co):
     @exception TypeError raised if the input parameter is not a code object
     """
     if not iscode(co):
-        raise TypeError('{!r} is not a code object'.format(co))
+        raise TypeError('{0!r} is not a code object'.format(co))
 
     nargs = co.co_argcount
     names = co.co_varnames
@@ -122,3 +122,6 @@ def formatargvalues(args, varargs, varkw, locals,
     if '__return__' in locals:
         argvalues += " -> " + formatvalue(locals['__return__'])
     return argvalues
+
+#
+# eflag: noqa = M702

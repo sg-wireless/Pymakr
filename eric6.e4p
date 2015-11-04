@@ -2175,7 +2175,7 @@
               <string>ExcludeMessages</string>
             </key>
             <value>
-              <string>C101, E265, N802, N803, N807, N808, N821, W293, M801</string>
+              <string>C101, E265, M121, M801, N802, N803, N807, N808, N821, W293, M811</string>
             </value>
             <key>
               <string>FixCodes</string>
@@ -2193,7 +2193,7 @@
               <string>FutureChecker</string>
             </key>
             <value>
-              <string></string>
+              <string>unicode_literals</string>
             </value>
             <key>
               <string>HangClosing</string>

@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+# Copyright (c) 2009 - 2015 Detlev Offenbach <detlev@die-offenbachs.de>
+#
+
 """
 Module implementing a dialog to enter the icon size.
 """

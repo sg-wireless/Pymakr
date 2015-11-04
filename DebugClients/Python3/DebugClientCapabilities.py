@@ -17,3 +17,6 @@ HasShell = 0x0040
 
 HasAll = HasDebugger | HasInterpreter | HasProfiler | \
     HasCoverage | HasCompleter | HasUnittest | HasShell
+
+#
+# eflag: noqa = M702

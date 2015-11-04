@@ -169,3 +169,4 @@ class PyProfile(profile.Profile):
 
 #
 # eflag: FileType = Python2
+# eflag: noqa = M601, M702

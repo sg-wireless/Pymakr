@@ -82,3 +82,6 @@ class AsyncIO(object):
         @param s the data to be written (string)
         """
         self.wbuf = self.wbuf + s
+
+#
+# eflag: noqa = M702

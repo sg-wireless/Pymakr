@@ -7,6 +7,8 @@
 Module implementing the Flash Cookies Manager configuration page.
 """
 
+from __future__ import unicode_literals
+
 from PyQt5.QtCore import pyqtSlot
 
 from E5Gui.E5Completers import E5DirCompleter

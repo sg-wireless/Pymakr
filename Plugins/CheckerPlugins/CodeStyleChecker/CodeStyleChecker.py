@@ -7,6 +7,8 @@
 Module implementing the code style checker.
 """
 
+from __future__ import unicode_literals
+
 import sys
 import multiprocessing
 

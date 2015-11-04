@@ -494,3 +494,5 @@ def process_tokens(tokens):
                 witness = indents[-1].not_equal_witness(thisguy)
                 msg = "indent not equal e.g. " + format_witnesses(witness)
                 raise NannyNag(start[0], msg, line)
+
+# eflag: noqa = M111

@@ -252,3 +252,4 @@ def get_class_members(klass):
 
 #
 # eflag: FileType = Python2
+# eflag: noqa = M601, M702, M111

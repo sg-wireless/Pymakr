@@ -172,3 +172,6 @@ class PyProfile(profile.Profile):
         # the C function returned
         "c_return": profile.Profile.trace_dispatch_return,
     }
+
+#
+# eflag: noqa = M702

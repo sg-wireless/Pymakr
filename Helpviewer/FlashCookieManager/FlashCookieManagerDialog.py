@@ -7,6 +7,8 @@
 Module implementing a dialog to manage the flash cookies.
 """
 
+from __future__ import unicode_literals
+
 from PyQt5.QtCore import pyqtSlot, Qt, QPoint, QTimer
 from PyQt5.QtWidgets import QDialog, QTreeWidgetItem, QApplication, QMenu, \
     QInputDialog, QLineEdit

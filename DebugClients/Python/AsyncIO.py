@@ -85,3 +85,4 @@ class AsyncIO(object):
 
 #
 # eflag: FileType = Python2
+# eflag: noqa = M601, M702

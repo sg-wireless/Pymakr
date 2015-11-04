@@ -1429,7 +1429,7 @@ class DebugClientBase(object):
                     udict = dict
                 ndict = {}
                 # this has to be in line with VariablesViewer.indicators
-                if var[i][-2:] in ["[]", "()", "{}"]:
+                if var[i][-2:] in ["[]", "()", "{}"]:   # __IGNORE_WARNING__
                     if i + 1 == len(var):
                         if var[i][:-2] == '...':
                             dictkeys = [var[i - 1]]
@@ -1455,7 +1455,7 @@ class DebugClientBase(object):
                                     oaccess = ''
                                 else:
                                     access = '%s[%s]' % (access, var[i][:-2])
-                        if var[i][-2:] == "{}":
+                        if var[i][-2:] == "{}":         # __IGNORE_WARNING__
                             isDict = 1
                         break
                     else:
@@ -1567,7 +1567,7 @@ class DebugClientBase(object):
                 if access:
                     exec 'qvar = udict%s' % access
                 # this has to be in line with VariablesViewer.indicators
-                elif rvar and rvar[0][-2:] in ["[]", "()", "{}"]:
+                elif rvar and rvar[0][-2:] in ["[]", "()", "{}"]:   # __IGNORE_WARNING__
                     exec 'qvar = udict["%s"][%s]' % (rvar[0][:-2], rvar[1])
                 else:
                     qvar = udict[var[-1]]
@@ -1582,7 +1582,7 @@ class DebugClientBase(object):
                     if access:
                         exec 'qvar = udict%s' % access
                     # this has to be in line with VariablesViewer.indicators
-                    elif rvar and rvar[0][-2:] in ["[]", "()", "{}"]:
+                    elif rvar and rvar[0][-2:] in ["[]", "()", "{}"]:   # __IGNORE_WARNING__
                         exec 'qvar = udict["%s"][%s]' % (rvar[0][:-2], rvar[1])
                     else:
                         qvar = udict[var[-1]]
@@ -2219,3 +2219,4 @@ class DebugClientBase(object):
 
 #
 # eflag: FileType = Python2
+# eflag: noqa = M601, M702

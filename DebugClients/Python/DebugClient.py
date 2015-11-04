@@ -39,3 +39,4 @@ if __name__ == '__main__':
 
 #
 # eflag: FileType = Python2
+# eflag: noqa = M601, M702

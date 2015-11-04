@@ -2427,7 +2427,7 @@ class Project(QObject):
                     self.tr("Translation Pattern"),
                     self.tr(
                         "Enter the path pattern for translation files "
-                        "(use '%language%' in place of the language code):"),
+                        "(use '%language%' in place of the language code):"),   # __IGNORE_WARNING__
                     QLineEdit.Normal,
                     tslist[0])
                 if pattern:

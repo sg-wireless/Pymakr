@@ -289,9 +289,9 @@ class VariablesViewer(QTreeWidget):
         """
         super(VariablesViewer, self).__init__(parent)
         
-        self.indicators = {'list': '[]', 'tuple': '()', 'dict': '{}',
+        self.indicators = {'list': '[]', 'tuple': '()', 'dict': '{}',   # __IGNORE_WARNING__
                            # Python types
-                           'Array': '[]', 'Hash': '{}'
+                           'Array': '[]', 'Hash': '{}'                  # __IGNORE_WARNING__
                            # Ruby types
                            }
         
@@ -648,7 +648,7 @@ class VariablesViewer(QTreeWidget):
             
         vtype = itm.text(2)
         name = itm.text(0)
-        if name[-2:] in ['[]', '{}', '()']:
+        if name[-2:] in ['[]', '{}', '()']:         # __IGNORE_WARNING__
             name = name[:-2]
         
         par = itm.parent()
@@ -656,7 +656,7 @@ class VariablesViewer(QTreeWidget):
         # build up the fully qualified name
         while par is not None:
             pname = par.text(0)
-            if pname[-2:] in ['[]', '{}', '()']:
+            if pname[-2:] in ['[]', '{}', '()']:    # __IGNORE_WARNING__
                 if nlist[0].endswith("."):
                     nlist[0] = '[{0}].'.format(nlist[0][:-1])
                 else:

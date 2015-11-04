@@ -46,7 +46,7 @@ Detlev Offenbach
 Andrew Bushnell
     Multithreaded debugger
 
-Alexander Barkoff   
+Alexander Barkoff
 Alexander Darovsky
 Mikhail Terekhov
     Russian translations
