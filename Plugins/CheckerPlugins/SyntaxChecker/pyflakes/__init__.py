@@ -7,6 +7,8 @@
 Package containg pyflakes adapted for Qt.
 """
 
+from __future__ import unicode_literals
+
 """ License
 Copyright 2005-2011 Divmod, Inc.
 Copyright 2013-2014 Florent Xicluna
@@ -165,7 +167,5 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   - Add reporting for some types of import shadowing.
   - Improve reporting of unbound locals
 """
-
-from __future__ import unicode_literals
 
 __version__ = '1.0.0'
