@@ -302,6 +302,7 @@ class MiscellaneousChecker(object):
         
         imports = set()
         node = None
+        hasCode = False
         
         for node in ast.walk(self.__tree):
             if (isinstance(node, ast.ImportFrom) and
@@ -309,11 +310,13 @@ class MiscellaneousChecker(object):
                 imports |= set(name.name for name in node.names)
             elif isinstance(node, ast.Expr):
                 if not isinstance(node.value, ast.Str):
+                    hasCode = True
                     break
-            elif not isinstance(node, ast.Module):
+            elif not isinstance(node, (ast.Module, ast.Str)):
+                hasCode = True
                 break
 
-        if isinstance(node, ast.Module):
+        if isinstance(node, ast.Module) or not hasCode:
             return
 
         if not (imports >= expectedImports):
