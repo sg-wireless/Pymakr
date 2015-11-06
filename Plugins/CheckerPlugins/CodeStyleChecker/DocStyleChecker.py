@@ -42,7 +42,11 @@ class DocStyleContext(object):
         @param startLine line number the context starts in the source (integer)
         @param contextType type of the context object (string)
         """
-        if isinstance(source, str):
+        if sys.version_info[0] == 2:
+            stringTypes = (str, unicode)        # __IGNORE_WARNING__
+        else:
+            stringTypes = str
+        if isinstance(source, stringTypes):
             self.__source = source.splitlines(True)
         else:
             self.__source = source[:]
@@ -330,9 +334,15 @@ class DocStyleChecker(object):
             # don't do anything, if no codes were selected
             return
         
+        source = "".join(self.__source)
+        # Check type for py2: if not str it's unicode
+        if sys.version_info[0] == 2:
+            try:
+                source = source.encode('utf-8')
+            except UnicodeError:
+                pass
         try:
-            compile(''.join(self.__source), self.__filename, 'exec',
-                    ast.PyCF_ONLY_AST)
+            compile(source, self.__filename, 'exec', ast.PyCF_ONLY_AST)
         except (SyntaxError, TypeError):
             self.__reportInvalidSyntax()
             return
