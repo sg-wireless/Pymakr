@@ -202,9 +202,6 @@ class ConfigurationWidget(QWidget):
                 "debuggerPython3Page":
                 [self.tr("Python3"), "preferences-pyDebugger.png",
                  "DebuggerPython3Page", "0debuggerPage", None],
-                "debuggerRubyPage":
-                [self.tr("Ruby"), "preferences-rbDebugger.png",
-                 "DebuggerRubyPage", "0debuggerPage", None],
                 
                 "0editorPage":
                 [self.tr("Editor"), "preferences-editor.png",
