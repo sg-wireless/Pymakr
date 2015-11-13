@@ -27,6 +27,11 @@ import Utilities
 
 from . import pep8
 
+try:
+    basestring
+except:
+    basestring = str    # define for Python3
+
 
 class CodeStyleCheckerDialog(QDialog, Ui_CodeStyleCheckerDialog):
     """
@@ -450,7 +455,7 @@ class CodeStyleCheckerDialog(QDialog, Ui_CodeStyleCheckerDialog):
         """
         options = self.__options[:]
         flags = Utilities.extractFlags(source)
-        if "noqa" in flags and isinstance(flags["noqa"], str):
+        if "noqa" in flags and isinstance(flags["noqa"], basestring):
             excludeMessages = \
                 options[0].strip().rstrip(",")
             if excludeMessages:
