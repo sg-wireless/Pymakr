@@ -7,8 +7,6 @@
 Module implementing the code style checker.
 """
 
-from __future__ import unicode_literals
-
 import sys
 import multiprocessing
 
@@ -308,3 +306,6 @@ def __checkCodeStyle(filename, source, args):
                 result[-1] = errMsg
 
     return stats, results
+
+#
+# eflag: noqa = M702

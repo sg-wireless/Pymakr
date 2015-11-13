@@ -7,8 +7,6 @@
 Module implementing a checker for code complexity.
 """
 
-from __future__ import unicode_literals
-
 import sys
 import ast
 
@@ -124,3 +122,6 @@ class McCabeChecker(object):
             if graph.complexity() > self.__maxComplexity:
                 self.__error(graph.lineno, 0, "C101",
                              graph.entity, graph.complexity())
+
+#
+# eflag: noqa = M702

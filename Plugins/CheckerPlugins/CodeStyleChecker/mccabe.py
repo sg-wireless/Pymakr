@@ -213,3 +213,6 @@ class PathGraphingAstVisitor(ASTVisitor):
         self.dispatch_list(node.body)
     
     visitAsyncWith = visitWith
+
+#
+# eflag: noqa = M702

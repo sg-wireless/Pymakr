@@ -7,8 +7,6 @@
 Module implementing a checker for naming conventions.
 """
 
-from __future__ import unicode_literals
-
 import collections
 import ast
 import re
@@ -444,3 +442,6 @@ class NamingStyleChecker(object):
                 yield self.__error(node, "N813")
             elif self.UppercaseRegexp.match(name.asname):
                 yield self.__error(node, "N814")
+
+#
+# eflag: noqa = M702

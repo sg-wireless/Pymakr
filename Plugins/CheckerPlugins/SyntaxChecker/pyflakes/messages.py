@@ -11,8 +11,6 @@
 Module providing the class Message and its subclasses.
 """
 
-from __future__ import unicode_literals
-
 
 class Message(object):
     """
@@ -309,3 +307,6 @@ class ReturnOutsideFunction(Message):
     """
     message_id = 'F15'
     message = '\'return\' outside function'
+
+#
+# eflag: noqa = M702

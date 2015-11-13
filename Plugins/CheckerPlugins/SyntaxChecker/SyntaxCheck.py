@@ -8,8 +8,6 @@
 Module implementing the syntax check for Python 2/3.
 """
 
-from __future__ import unicode_literals
-
 import ast
 import re
 import sys
@@ -293,3 +291,6 @@ def __syntaxAndPyflakesCheck(filename, codestring, checkFlakes=True,
         results.append((filename, err.lineno, 0, "FLAKES_ERROR", msg, []))
     
     return [{'warnings': results}]
+
+#
+# eflag: noqa = M702

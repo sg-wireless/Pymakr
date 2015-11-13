@@ -4,6 +4,8 @@
 # which should be included with this package. The terms are also available at 
 # http://www.hardcoded.net/licenses/bsd_license
 
+from __future__ import unicode_literals
+
 from gi.repository import GObject, Gio
 
 def send2trash(path):

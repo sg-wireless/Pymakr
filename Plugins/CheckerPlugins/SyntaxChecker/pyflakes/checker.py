@@ -932,3 +932,6 @@ class Checker(object):
         if isinstance(node.name, str):
             self.handleNodeStore(node)
         self.handleChildren(node)
+
+#
+# eflag: noqa = M702

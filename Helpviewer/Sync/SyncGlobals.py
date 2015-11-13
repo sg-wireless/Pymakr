@@ -7,8 +7,6 @@
 Module implementing some global definitions.
 """
 
-from __future__ import unicode_literals
-
 # Page IDs for the sync wizard
 PageData = 0
 PageEncryption = 1
@@ -21,3 +19,6 @@ PageCheck = 5
 SyncTypeNone = -1
 SyncTypeFtp = 0
 SyncTypeDirectory = 1
+
+#
+# eflag: noqa = M702

@@ -7,8 +7,6 @@
 Module to check for the presence of PySide by importing it.
 """
 
-from __future__ import unicode_literals
-
 import sys
 
 if __name__ == "__main__":
@@ -21,4 +19,4 @@ if __name__ == "__main__":
     sys.exit(ret)
     
 #
-# eflag: FileType = Python2
+# eflag: noqa = M702

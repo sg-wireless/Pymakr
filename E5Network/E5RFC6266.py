@@ -39,7 +39,7 @@ try:
             """
             if key in self:
                 raise DuplicateParamError(key)
-            super().__setitem__(key, value)
+            super(UniqueNamespace, self).__setitem__(key, value)
 
     # RFC 2616
     separator_chars = "()<>@,;:\\\"/[]?={} \t"      # __IGNORE_WARNING__
@@ -88,7 +88,7 @@ try:
         grammar = re.compile(r'"({0}|{1})+"'.format(quoted_pair_re, qdtext_re))
 
         def __str__(self):
-            s = super().__str__()
+            s = super(QuotedString, self).__str__()
             s = s[1:-1]  # remove quotes
             s = re.sub(r'\\(.)', r'\1', s)  # drop backslashes
             return s
@@ -142,7 +142,7 @@ try:
         regex = re.compile(token_re + r'\*')
 
         def __str__(self):
-            return super().__str__().lower()
+            return super(ExtToken, self).__str__().lower()
 
     class NoExtToken(peg.Symbol):
         """
@@ -151,7 +151,7 @@ try:
         regex = re.compile(token_re + r'(?<!\*)')
 
         def __str__(self):
-            return super().__str__().lower()
+            return super(NoExtToken, self).__str__().lower()
 
     class DispositionParm(str):
         """

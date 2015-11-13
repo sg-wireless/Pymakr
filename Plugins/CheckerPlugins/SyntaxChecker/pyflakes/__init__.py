@@ -7,8 +7,6 @@
 Package containg pyflakes adapted for Qt.
 """
 
-from __future__ import unicode_literals
-
 """ License
 Copyright 2005-2011 Divmod, Inc.
 Copyright 2013-2014 Florent Xicluna
@@ -169,3 +167,6 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
 __version__ = '1.0.0'
+
+#
+# eflag: noqa = M702

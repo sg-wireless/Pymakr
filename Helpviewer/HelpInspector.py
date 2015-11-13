@@ -38,7 +38,7 @@ class HelpInspector(QWebInspector):
         @type QCloseEvent
         """
         Preferences.setGeometry("HelpInspectorGeometry", self.saveGeometry())
-        super().closeEvent(evt)
+        super(HelpInspector, self).closeEvent(evt)
 
     def __reloadGeometry(self):
         """

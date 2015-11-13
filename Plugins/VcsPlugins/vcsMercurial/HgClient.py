@@ -7,8 +7,6 @@
 Module implementing an interface to the Mercurial command server.
 """
 
-from __future__ import unicode_literals
-
 try:
     str = unicode
 except NameError:
@@ -391,3 +389,6 @@ class HgClient(QObject):
         @return flag indicating the execution of a command (boolean)
         """
         return self.__commandRunning
+
+#
+# eflag: noqa = M702

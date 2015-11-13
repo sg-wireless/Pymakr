@@ -7,8 +7,6 @@
 Module implementing some common configuration stuf for the XML package.
 """
 
-from __future__ import unicode_literals
-
 # version number of the multi project file
 multiProjectFileFormatVersion = "5.1"
 
@@ -38,3 +36,6 @@ pluginRepositoryFileFormatVersion = "4.2"
 
 # version number of the highlighting styles file
 highlightingStylesFileFormatVersion = "4.3"
+
+#
+# eflag: noqa = M702

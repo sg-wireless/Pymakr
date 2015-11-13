@@ -7,8 +7,6 @@
 Module implementing a checker for miscellaneous checks.
 """
 
-from __future__ import unicode_literals
-
 import sys
 import ast
 import re
@@ -618,3 +616,6 @@ class TextVisitor(ast.NodeVisitor):
                     self.__isBaseString(node.args[0])):
                 self.calls[node.args[0]] = (node, True)
         super(TextVisitor, self).generic_visit(node)
+
+#
+# eflag: noqa = M702

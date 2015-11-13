@@ -12,8 +12,6 @@ Module implementing a checker for documentation string conventions.
 # pep257.py (version 0.2.4).
 #
 
-from __future__ import unicode_literals
-
 try:
     # Python 2
     from StringIO import StringIO       # __IGNORE_EXCEPTION__
@@ -1282,3 +1280,6 @@ class DocStyleChecker(object):
                 if firstWord != 'public':
                     self.__error(docstringContext.start() + lineNumber, 0,
                                  "D232", 'public')
+
+#
+# eflag: noqa = M702
