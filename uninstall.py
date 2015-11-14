@@ -192,6 +192,8 @@ def uninstallEric():
                                ]:
                 if os.path.exists(bundlePath):
                     shutil.rmtree(bundlePath)
+        
+        print("\nUninstallation completed")
     except (IOError, OSError) as msg:
         sys.stderr.write(
             'Error: {0}\nTry uninstall with admin rights.\n'.format(msg))
