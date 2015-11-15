@@ -68,7 +68,7 @@ class MiscellaneousChecker(object):
         self.__args = args
         
         self.__blindExceptRegex = re.compile(
-            r'(except:)')                               # __IGNORE_WARNING__
+            r'(\bexcept:)')                             # __IGNORE_WARNING__
         self.__pep3101FormatRegex = re.compile(
             r'^(?:[^\'"]*[\'"][^\'"]*[\'"])*\s*%|^\s*%')
 
