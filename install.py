@@ -9,8 +9,7 @@
 Installation script for the eric6 IDE and all eric6 related tools.
 """
 
-from __future__ import unicode_literals
-from __future__ import print_function
+from __future__ import unicode_literals, print_function
 try:
     import cStringIO as io
     import sip

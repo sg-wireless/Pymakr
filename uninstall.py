@@ -4,18 +4,23 @@
 # Copyright (c) 2002 - 2015 Detlev Offenbach <detlev@die-offenbachs.de>
 #
 # This is the uninstall script for eric6.
+#
 
 """
 Uninstallation script for the eric6 IDE and all eric6 related tools.
 """
 
-from __future__ import unicode_literals
+from __future__ import unicode_literals, print_function
 
 import sys
 import os
 import shutil
 import glob
 import distutils.sysconfig
+
+if sys.version_info[0] == 2:
+    import sip
+    sip.setapi('QString', 2)
 
 # get a local eric6config.py out of the way
 if os.path.exists("eric6config.py"):
@@ -29,6 +34,8 @@ progLanguages = ["Python", "Ruby", "QSS"]
 includePythonVariant = False
 defaultMacAppBundleName = "eric6.app"
 defaultMacAppBundlePath = "/Applications"
+settingsNameOrganization = "Eric6"
+settingsNameGlobal = "eric6"
 
 # Define file name markers for Python variants
 PythonMarkers = {
@@ -193,11 +200,118 @@ def uninstallEric():
                 if os.path.exists(bundlePath):
                     shutil.rmtree(bundlePath)
         
+        # remove plug-in directories
+        removePluginDirectories()
+        
+        # remove the eric data directory
+        removeDataDirectory()
+        
+        # remove the eric configuration directory
+        removeConfigurationData()
+        
         print("\nUninstallation completed")
     except (IOError, OSError) as msg:
         sys.stderr.write(
             'Error: {0}\nTry uninstall with admin rights.\n'.format(msg))
         exit(7)
+
+
+def removePluginDirectories():
+    """
+    Remove the plug-in directories.
+    """
+    pathsToRemove = []
+    
+    globalPluginsDir = os.path.join(getConfig('mdir'), "eric6plugins")
+    if os.path.exists(globalPluginsDir):
+        pathsToRemove.append(globalPluginsDir)
+    
+    localPluginsDir = os.path.join(getConfigDir(), "eric6plugins")
+    if os.path.exists(localPluginsDir):
+        pathsToRemove.append(localPluginsDir)
+    
+    if pathsToRemove:
+        print("Found these plug-in directories")
+        for path in pathsToRemove:
+            print("  - {0}".format(path))
+        answer = "c"
+        while answer not in ["y", "Y", "n", "N", ""]:
+            if sys.version_info[0] == 2:
+                answer = raw_input(
+                    "Shall these directories be removed (y/N)? ")
+            else:
+                answer = input(
+                    "Shall these directories be removed (y/N)? ")
+        if answer in ["y", "Y"]:
+            for path in pathsToRemove:
+                shutil.rmtree(path)
+
+
+def removeDataDirectory():
+    """
+    Remove the eric data directory.
+    """
+    cfg = getConfigDir()
+    if os.path.exists(cfg):
+        print("Found the eric data directory")
+        print("  - {0}".format(cfg))
+        answer = "c"
+        while answer not in ["y", "Y", "n", "N", ""]:
+            if sys.version_info[0] == 2:
+                answer = raw_input(
+                    "Shall this directory be removed (y/N)? ")
+            else:
+                answer = input(
+                    "Shall this directory be removed (y/N)? ")
+        if answer in ["y", "Y"]:
+            shutil.rmtree(cfg)
+
+
+def removeConfigurationData():
+    """
+    Remove the eric configuration directory.
+    """
+    try:
+        from PyQt5.QtCore import QSettings
+    except ImportError:
+        try:
+            from PyQt4.QtCore import QSettings
+        except ImportError:
+            print("No PyQt variant installed. The configuration directory")
+            print("cannot be determined. You have to remove it manually.\n")
+            return
+    
+    settings = QSettings(QSettings.IniFormat, QSettings.UserScope,
+                         settingsNameOrganization, settingsNameGlobal)
+    settingsDir = os.path.dirname(settings.fileName())
+    if os.path.exists(settingsDir):
+        print("Found the eric configuration directory")
+        print("  - {0}".format(settingsDir))
+        answer = "c"
+        while answer not in ["y", "Y", "n", "N", ""]:
+            if sys.version_info[0] == 2:
+                answer = raw_input(
+                    "Shall this directory be removed (y/N)? ")
+            else:
+                answer = input(
+                    "Shall this directory be removed (y/N)? ")
+        if answer in ["y", "Y"]:
+            shutil.rmtree(settings)
+
+
+def getConfigDir():
+    """
+    Module function to get the name of the directory storing the config data.
+    
+    @return directory name of the config dir (string)
+    """
+    if sys.platform.startswith("win"):
+        cdn = "_eric6"
+        return os.path.join(os.path.expanduser("~"), cdn)
+    else:
+        cdn = ".eric6"
+        return os.path.join(
+            os.path.expanduser("~{0}".format(os.getlogin())), cdn)
 
 
 def main(argv):
@@ -246,7 +360,7 @@ if __name__ == "__main__":
         main(sys.argv)
     except SystemExit:
         raise
-    except:
+    except Exception:
         print("""An internal error occured.  Please report all the output of"""
               """ the program,\n"""
               """including the following traceback, to"""
