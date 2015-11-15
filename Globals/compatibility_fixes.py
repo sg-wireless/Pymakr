@@ -284,15 +284,6 @@ class File(file):   # __IGNORE_WARNING__
 # Inject into the __builtin__ dictionary
 __builtin__.open = open
 
-if __name__ == '__main__':
-    fp = open('compatibility_fixes.py', encoding='latin1')
-    print(fp.read())
-    fp.close()
-
-    with open('compatibility_fixes.py', encoding='UTF-8') as fp:
-        rlines = fp.readlines()
-        print(rlines[-1])
-
 #
 # eflag: FileType = Python2
 # eflag: noqa = M702

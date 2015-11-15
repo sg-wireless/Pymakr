@@ -314,24 +314,3 @@ def dataDecrypt(edata, password, keyLength=32):
     except ValueError:
         return "", False
     return plaintext, True
-    
-if __name__ == "__main__":
-    import sys
-    from PyQt5.QtWidgets import QApplication
-    
-    app = QApplication([])
-    
-    mpw = "blahblah"
-    cpw = "SomeSecret"
-    
-    cipher, ok = pwEncrypt(cpw)
-    print(ok, cipher)
-    plain, ok = pwDecrypt(cipher)
-    print(ok, plain)
-    
-    cipher, ok = pwEncrypt(cpw, mpw)
-    print(ok, cipher)
-    plain, ok = pwDecrypt(cipher, mpw)
-    print(ok, plain)
-    
-    sys.exit(0)

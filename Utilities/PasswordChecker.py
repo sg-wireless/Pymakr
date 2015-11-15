@@ -635,11 +635,3 @@ class PasswordChecker(object):
                 break
         
         return self.complexity["value"]
-
-if __name__ == "__main__":
-    while True:
-        try:
-            pwd = input("Enter password: ")
-            print(pwd, PasswordChecker().checkPassword(pwd))
-        except KeyboardInterrupt:
-            break

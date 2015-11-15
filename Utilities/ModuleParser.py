@@ -1635,13 +1635,3 @@ def resetParsedModule(module, basename=""):
     
     if modname in _modules:
         del _modules[modname]
-    
-if __name__ == "__main__":
-    # Main program for testing.
-    mod = sys.argv[1]
-    module = readModule(mod)
-    for cls in list(module.classes.values()):
-        print("--------------")
-        print(cls.name)
-        for meth in list(cls.methods.values()):
-            print(meth.name, meth.pyqtSignature)

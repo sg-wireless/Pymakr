@@ -141,13 +141,3 @@ def rehashPassword(password, hashParameters):
     salt = base64.b64decode(salt.encode("ascii"))
     password = password.encode("utf-8")
     return pbkdf2(password, salt, iterations, Hashes[digestname])
-
-
-if __name__ == "__main__":
-    import sys
-    pw = "secret_password"
-    print(len(hashPasswordTuple(pw)[-1]))
-    pwHash = hashPassword(pw)
-    print(pwHash)
-    print(verifyPassword(pw, pwHash))
-    sys.exit(0)

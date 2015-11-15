@@ -24,7 +24,6 @@ except (ImportError):
 import sys
 import os
 
-print(sys.argv)
 for arg in sys.argv[:]:
     if arg.startswith("--config="):
         import Globals
@@ -39,7 +38,6 @@ for arg in sys.argv[:]:
         QSettings.setPath(QSettings.IniFormat, QSettings.UserScope,
                           settingsDir)
         sys.argv.remove(arg)
-print(sys.argv)
 
 from Globals import AppInfo
 
