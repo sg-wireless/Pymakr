@@ -106,25 +106,6 @@ class VariableItem(QTreeWidgetItem):
         for itm in self.takeChildren():
             del itm
         
-    def key(self, column):
-        """
-        Public method generating the key for this item.
-        
-        @param column the column to sort on (integer)
-        @return text of the column (string)
-        """
-        return self.text(column)
-        
-    def __lt__(self, other):
-        """
-        Special method to check, if the item is less than the other one.
-        
-        @param other reference to item to compare against (QTreeWidgetItem)
-        @return true, if this item is less than other (boolean)
-        """
-        column = self.treeWidget().sortColumn()
-        return self.key(column) < other.key(column)
-        
     def expand(self):
         """
         Public method to expand the item.
@@ -209,20 +190,8 @@ class ArrayElementVarItem(VariableItem):
         element 2 will have a key of '000002' and appear before
         element 10 with a key of '000010'
         """
-        keyStr = self.text(0)
-        self.arrayElementKey = "{0:6d}".format(int(keyStr))
-
-    def key(self, column):
-        """
-        Public method generating the key for this item.
-        
-        @param column the column to sort on (integer)
-        @return key of the item (string)
-        """
-        if column == 0:
-            return self.arrayElementKey
-        else:
-            return VariableItem.key(self, column)
+        col0Str = self.text(0)
+        self.setText(0, "{0:6d}".format(int(col0Str)))
 
 
 class SpecialArrayElementVarItem(SpecialVarItem):
@@ -250,20 +219,9 @@ class SpecialArrayElementVarItem(SpecialVarItem):
         element 2 will have a key of '000002' and appear before
         element 10 with a key of '000010'
         """
-        keyStr = self.text(0)[:-2]  # strip off [], () or {}
-        self.arrayElementKey = "{0:6d}".format(int(keyStr))
-
-    def key(self, column):
-        """
-        Public method generating the key for this item.
-        
-        @param column the column to sort on (integer)
-        @return key of the item (string)
-        """
-        if column == 0:
-            return self.arrayElementKey
-        else:
-            return SpecialVarItem.key(self, column)
+        col0Str = self.text(0)[:-2]  # strip off [], () or {}
+        indicator = self.text(0)[-2:]
+        self.setText(0, "{0:6d}{1}".format(int(col0Str), indicator))
 
 
 class VariablesViewer(QTreeWidget):
@@ -346,6 +304,7 @@ class VariablesViewer(QTreeWidget):
             header.setSectionsClickable(True)
         else:
             header.setClickable(True)
+        header.sectionClicked.connect(self.__sectionClicked)
         header.resizeSection(0, 120)    # variable column
         header.resizeSection(1, 150)    # value column
         
@@ -437,7 +396,7 @@ class VariablesViewer(QTreeWidget):
             for (var, vtype, value) in vlist:
                 self.__addItem(None, vtype, var, value)
             
-            # reexpand tree
+            # re-expand tree
             openItems = sorted(self.openItems[:])
             self.openItems = []
             for itemPath in openItems:
@@ -484,7 +443,7 @@ class VariablesViewer(QTreeWidget):
             for var, vtype, value in vlist[1:]:
                 self.__addItem(itm, vtype, var, value)
 
-        # reexpand tree
+        # re-expand tree
         openItems = sorted(self.openItems[:])
         self.openItems = []
         for itemPath in openItems:
@@ -715,7 +674,6 @@ class VariablesViewer(QTreeWidget):
         
         try:
             parentItem.expand()
-            self.__resort()
         except AttributeError:
             super(VariablesViewer, self).expandItem(parentItem)
 
@@ -733,14 +691,27 @@ class VariablesViewer(QTreeWidget):
             parentItem.collapse()
         except AttributeError:
             super(VariablesViewer, self).collapseItem(parentItem)
-
-    def __resort(self):
+    
+    def __sectionClicked(self):
+        """
+        Private method handling a click onto a header section.
+        """
+        self.__resort()
+    
+    def __resort(self, parent=None):
         """
         Private method to resort the tree.
+        
+        @param parent reference to a parent item
+        @type QTreeWidgetItem
         """
         if self.resortEnabled:
-            self.sortItems(self.sortColumn(),
-                           self.header().sortIndicatorOrder())
+            if parent is not None:
+                parent.sortChildren(self.sortColumn(),
+                                    self.header().sortIndicatorOrder())
+            else:
+                self.sortItems(self.sortColumn(),
+                               self.header().sortIndicatorOrder())
     
     def handleResetUI(self):
         """
