@@ -1027,9 +1027,7 @@ eric6.Debugger.VariablesFilterDialog.VariablesFilterDialog.getSelection?4()
 eric6.Debugger.VariablesFilterDialog.VariablesFilterDialog.on_buttonBox_clicked?4(button)
 eric6.Debugger.VariablesFilterDialog.VariablesFilterDialog.setSelection?4(lList, gList)
 eric6.Debugger.VariablesFilterDialog.VariablesFilterDialog?1(parent=None, name=None, modal=False)
-eric6.Debugger.VariablesViewer.ArrayElementVarItem.key?4(column)
 eric6.Debugger.VariablesViewer.ArrayElementVarItem?1(parent, dvar, dvalue, dtype)
-eric6.Debugger.VariablesViewer.SpecialArrayElementVarItem.key?4(column)
 eric6.Debugger.VariablesViewer.SpecialArrayElementVarItem?1(parent, dvar, dvalue, dtype, frmnr, scope)
 eric6.Debugger.VariablesViewer.SpecialVarItem.expand?4()
 eric6.Debugger.VariablesViewer.SpecialVarItem?1(parent, dvar, dvalue, dtype, frmnr, scope)
@@ -1039,7 +1037,6 @@ eric6.Debugger.VariablesViewer.VariableItem.data?4(column, role)
 eric6.Debugger.VariablesViewer.VariableItem.deleteChildren?4()
 eric6.Debugger.VariablesViewer.VariableItem.expand?4()
 eric6.Debugger.VariablesViewer.VariableItem.getValue?4()
-eric6.Debugger.VariablesViewer.VariableItem.key?4(column)
 eric6.Debugger.VariablesViewer.VariableItem?1(parent, dvar, dvalue, dtype)
 eric6.Debugger.VariablesViewer.VariablesViewer.collapseItem?4(parentItem)
 eric6.Debugger.VariablesViewer.VariablesViewer.expandItem?4(parentItem)
@@ -1869,7 +1866,6 @@ eric6.E5XML.XMLStreamWriterBase.XMLStreamWriterBase.writeXML?4()
 eric6.E5XML.XMLStreamWriterBase.XMLStreamWriterBase?1(device)
 eric6.Globals.AppInfo.makeAppInfo?4(argv, name, arg, description, options=[])
 eric6.Globals.checkBlacklistedVersions?4()
-eric6.Globals.compatibility_fixes.File.fp?7
 eric6.Globals.compatibility_fixes.File.next?4()
 eric6.Globals.compatibility_fixes.File.read?4(n=-1)
 eric6.Globals.compatibility_fixes.File.readline?4(limit=-1)
@@ -9440,12 +9436,18 @@ eric6.uninstall.PythonMarkers?7
 eric6.uninstall.defaultMacAppBundleName?7
 eric6.uninstall.defaultMacAppBundlePath?7
 eric6.uninstall.exit?4(rcode=0)
+eric6.uninstall.getConfigDir?4()
 eric6.uninstall.includePythonVariant?7
 eric6.uninstall.initGlobals?4()
 eric6.uninstall.main?4(argv)
 eric6.uninstall.progLanguages?7
 eric6.uninstall.progName?7
 eric6.uninstall.pyModDir?7
+eric6.uninstall.removeConfigurationData?4()
+eric6.uninstall.removeDataDirectory?4()
+eric6.uninstall.removePluginDirectories?4()
+eric6.uninstall.settingsNameGlobal?7
+eric6.uninstall.settingsNameOrganization?7
 eric6.uninstall.uninstallEric?4()
 eric6.uninstall.usage?4(rcode=2)
 eric6.uninstall.wrapperName?4(dname, wfile)
