@@ -127,6 +127,8 @@ class StartDialog(QDialog):
         Private method used to open a directory selection dialog.
         """
         cwd = self.ui.workdirCombo.currentText()
+        if not cwd:
+            cwd = Preferences.getMultiProject("Workspace")
         d = E5FileDialog.getExistingDirectory(
             self,
             self.tr("Working directory"),
