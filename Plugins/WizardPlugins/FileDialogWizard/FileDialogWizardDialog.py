@@ -346,6 +346,8 @@ class FileDialogWizardDialog(QDialog, Ui_FileDialogWizardDialog):
                 filterVariable = ", selectedFilter"
             else:
                 filterVariable = ""
+        else:
+            filterVariable = ", " + filterVariable
         
         code = '{0}{1} = QFileDialog.'.format(nameVariable, filterVariable)
         if self.rOpenFile.isChecked() or self.rfOpenFile.isChecked():
