@@ -39,7 +39,7 @@ class E5ComboBox(QComboBox):
         
         @return inactive text (string)
         """
-        return self.__lineedit.inactiveText()
+        return self.lineEdit().inactiveText()
     
     def setInactiveText(self, inactiveText):
         """
@@ -47,7 +47,7 @@ class E5ComboBox(QComboBox):
         
         @param inactiveText text to be shown on inactivity (string)
         """
-        self.__lineedit.setInactiveText(inactiveText)
+        self.lineEdit().setInactiveText(inactiveText)
 
 
 class E5ClearableComboBox(E5ComboBox):
