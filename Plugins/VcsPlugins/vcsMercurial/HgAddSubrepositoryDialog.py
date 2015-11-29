@@ -41,7 +41,7 @@ class HgAddSubrepositoryDialog(QDialog, Ui_HgAddSubrepositoryDialog):
         self.__ok = self.buttonBox.button(QDialogButtonBox.Ok)
         self.__ok.setEnabled(False)
         
-        self.__projectPath = projectPath
+        self.__projectPath = Utilities.toNativeSeparators(projectPath)
         
         self.typeCombo.addItem("Mercurial", "hg")
         self.typeCombo.addItem("GIT", "git")
@@ -95,8 +95,8 @@ class HgAddSubrepositoryDialog(QDialog, Ui_HgAddSubrepositoryDialog):
         
         if path:
             path = Utilities.toNativeSeparators(path)
-            if path.startswith(self.__projectPath):
-                path = path.replace(self.__projectPath, "")[1:]
+            if path.startswith(self.__projectPath + os.sep):
+                path = path.replace(self.__projectPath + os.sep, "")
                 self.pathEdit.setText(path)
             else:
                 E5MessageBox.critical(
