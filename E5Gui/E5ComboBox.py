@@ -47,7 +47,7 @@ class E5ComboBox(QComboBox):
         
         @param inactiveText text to be shown on inactivity (string)
         """
-        self.__lineedit.setInactiveText()
+        self.__lineedit.setInactiveText(inactiveText)
 
 
 class E5ClearableComboBox(E5ComboBox):
