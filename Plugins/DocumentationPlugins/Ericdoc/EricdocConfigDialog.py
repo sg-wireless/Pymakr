@@ -516,10 +516,13 @@ class EricdocConfigDialog(QDialog, Ui_EricdocConfigDialog):
         It displays a directory selection dialog to
         select the directory the QtHelp files are written to.
         """
+        startDir = Utilities.fromNativeSeparators(self.qtHelpDirEdit.text())
+        if not startDir:
+            startDir = Utilities.fromNativeSeparators(self.ppath)
         directory = E5FileDialog.getExistingDirectory(
             self,
             self.tr("Select output directory for QtHelp files"),
-            self.qtHelpDirEdit.text(),
+            startDir,
             E5FileDialog.Options(E5FileDialog.ShowDirsOnly))
             
         if directory:
