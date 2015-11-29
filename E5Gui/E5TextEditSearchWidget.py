@@ -46,6 +46,8 @@ class E5TextEditSearchWidget(QWidget, Ui_E5TextEditSearchWidget):
             self.__findByReturnPressed)
         
         self.__setSearchButtons(False)
+        
+        self.setFocusProxy(self.findtextCombo)
     
     def attachTextEdit(self, textedit):
         """
