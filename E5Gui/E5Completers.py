@@ -40,6 +40,8 @@ class E5FileCompleter(QCompleter):
         else:
             self.__model.setFilter(QDir.Filters(
                 QDir.Dirs | QDir.Files | QDir.Drives | QDir.AllDirs))
+        self.__model.directoryLoaded.connect(self.complete)
+        self.__model.setRootPath("")
         self.setModel(self.__model)
         self.setCompletionMode(completionMode)
         if isWindowsPlatform():
@@ -72,6 +74,8 @@ class E5DirCompleter(QCompleter):
         else:
             self.__model.setFilter(
                 QDir.Filters(QDir.Drives | QDir.AllDirs))
+        self.__model.directoryLoaded.connect(self.complete)
+        self.__model.setRootPath("")
         self.setModel(self.__model)
         self.setCompletionMode(completionMode)
         if isWindowsPlatform():
