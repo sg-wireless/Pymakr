@@ -1061,10 +1061,10 @@ def doDependancyChecks():
     print("Python Version: {0:d}.{1:d}.{2:d}".format(*sys.version_info[:3]))
     if sys.version_info < (2, 7, 0):
         print('Sorry, you must have Python 2.7.0 or higher or '
-              'Python 3.1.0 or higher.')
+              'Python 3.3.0 or higher.')
         exit(5)
-    elif sys.version_info < (3, 1, 0) and sys.version_info[0] == 3:
-        print('Sorry, you must have Python 3.1.0 or higher.')
+    elif sys.version_info < (3, 3, 0) and sys.version_info[0] == 3:
+        print('Sorry, you must have Python 3.3.0 or higher.')
         exit(5)
     if sys.version_info > (3, 9, 9):
         print('Sorry, eric6 requires Python 3 or Python 2 for running.')
