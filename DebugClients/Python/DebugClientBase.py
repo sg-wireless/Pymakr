@@ -1321,6 +1321,7 @@ class DebugClientBase(object):
             self.running = None
             self.write('%s%d\n' % (DebugProtocol.ResponseExit, status))
             if exit:
+                self.writestream.close(1)
                 sys.exit(status)
         
         # reset coding
