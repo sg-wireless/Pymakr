@@ -195,12 +195,7 @@ class UMLClassDiagramBuilder(UMLDiagramBuilder):
         
         # add in some whitespace
         width = width * whiteSpaceFactor
-##        rawHeight = height
         height = height * whiteSpaceFactor - 20
-##        verticalWhiteSpace = max(
-##            (height - rawHeight) / (len(generations) - 1.0 or 2.0),
-##            40.0
-##        )
         verticalWhiteSpace = 40.0
         
         sceneRect = self.umlView.sceneRect()
