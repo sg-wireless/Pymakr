@@ -1067,6 +1067,7 @@ class HelpBrowser(QWebView):
                 self.setZoomFactor(value / 100.0)
             except AttributeError:
                 self.setTextSizeMultiplier(value / 100.0)
+            self.__currentZoom = value
             self.zoomValueChanged.emit(value)
     
     def zoomValue(self):
