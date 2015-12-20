@@ -120,14 +120,14 @@ class FlashCookieReader(object):
         lenSolName, = struct.unpack(">H", self.__data.read(2))
         # unsigned short,  big-endian
         solName = self.__data.read(lenSolName)
-        solName = solName.decode("utf-8")
+        solName = solName.decode("utf-8", "replace")
         self.__result["SolName"] = ("string", solName)
         self.__data.read(4)
         while self.__data.tell() < lenSolData:
             lenVariableName, = struct.unpack(">H", self.__data.read(2))
             # unsigned short,  big-endian
             variableName = self.__data.read(lenVariableName)
-            variableName = variableName.decode("utf-8")
+            variableName = variableName.decode("utf-8", "replace")
             variableType = self.__data.read(1)
             if len(variableType):
                 if variableType == self.Number:
@@ -211,7 +211,7 @@ class FlashCookieReader(object):
         lenStr, = struct.unpack(">H", self.__data.read(2))
         # unsigned short, big-endian
         b = self.__data.read(lenStr)
-        value = b.decode("utf-8")
+        value = b.decode("utf-8", "replace")
         parent[variableName] = ("string", value)
     
     def __parseDate(self, variableName, parent):
@@ -249,7 +249,7 @@ class FlashCookieReader(object):
         lenCData, = struct.unpack(">L", self.__data.read(4))
         # unsigned long, big-endian
         cData = self.__data.read(lenCData)
-        value = cData.decode("utf-8")
+        value = cData.decode("utf-8", "replace")
         parent[variableName] = ("xml", value)
     
     def __parseOjm(self, variableName, parent):
@@ -303,7 +303,7 @@ class FlashCookieReader(object):
         # unsigned short,  big-endian
         while lenVariableName != 0:
             variableName = self.__data.read(lenVariableName)
-            variableName = variableName.decode("utf-8")
+            variableName = variableName.decode("utf-8", "replace")
             variableType = self.__data.read(1)
             if variableType == self.Number:
                 self.__parseNumber(variableName, value)
@@ -354,7 +354,7 @@ class FlashCookieReader(object):
         # unsigned short,  big-endian
         while lenVariableName != 0:
             variableName = self.__data.read(lenVariableName)
-            variableName = variableName.decode("utf-8")
+            variableName = variableName.decode("utf-8", "replace")
             variableType = self.__data.read(1)
             if variableType == self.Number:
                 self.__parseNumber(variableName, value)
@@ -398,7 +398,7 @@ class FlashCookieReader(object):
         lenCname = struct.unpack(">H", self.__data.read(2))
         # unsigned short,  big-endian
         cname = self.__data.read(lenCname)
-        cname = cname.decode("utf-8")
+        cname = cname.decode("utf-8", "replace")
         
         value = {}
         parent[variableName] = ("c_object; cname={0}".format(cname), value)
@@ -407,7 +407,7 @@ class FlashCookieReader(object):
         # unsigned short,  big-endian
         while lenVariableName != 0:
             variableName = self.__data.read(lenVariableName)
-            variableName = variableName.decode("utf-8")
+            variableName = variableName.decode("utf-8", "replace")
             variableType = self.__data.read(1)
             if variableType == self.Number:
                 self.__parseNumber(variableName, value)
