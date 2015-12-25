@@ -10,8 +10,10 @@ documentation database.
 
 from __future__ import unicode_literals
 
-from PyQt5.QtCore import pyqtSignal, QThread, Qt, QMutex, QDateTime, QDir, \
-    QLibraryInfo, QFileInfo
+import os
+
+from PyQt5.QtCore import pyqtSignal, qVersion, QThread, Qt, QMutex, \
+    QDateTime, QDir, QLibraryInfo, QFileInfo
 from PyQt5.QtHelp import QHelpEngineCore
 
 from eric6config import getConfig
@@ -69,18 +71,20 @@ class HelpDocsInstaller(QThread):
         
         qt4Docs = ["designer", "linguist", "qt"]
         qt5Docs = [
-            "activeqt", "qtandroidextras", "qtbluetooth", "qtconcurrent",
-            "qtcore", "qtdbus", "qtdesigner", "qtdoc", "qtenginio",
-            "qtenginiooverview", "qtenginoqml", "qtgraphicaleffects", "qtgui",
-            "qthelp", "qtimageformats", "qtlinguist", "qtlocation",
-            "qtmaxextras", "qtmultimedia", "qtmultimediawidgets", "qtnetwork",
-            "qtnfc", "qtopengl", "qtpositioning", "qtprintsupport", "qtqml",
-            "qtquick", "qtquickcontrols", "qtquickdialogs", "qtquicklayouts",
-            "qtscript", "qtscripttools", "qtsensors", "qtserialport", "qtsql",
-            "qtsvg", "qttestlib", "qtuitools", "qtwebchannel", "qtwebengine",
-            "qtwebenginewidgets", "qtwebkit", "qtwebkitexamples",
-            "qtwebsockets", "qtwidgets", "qtwinextras", "qtx11extras", "qtxml",
-            "qtxmlpatterns"]
+            "activeqt", "qdoc", "qmake", "qt3d", "qt3drenderer",
+            "qtandroidextras", "qtassistant", "qtbluetooth", "qtcanvas3d",
+            "qtconcurrent", "qtcore", "qtdbus", "qtdesigner", "qtdoc",
+            "qtenginio", "qtenginiooverview", "qtenginoqml",
+            "qtgraphicaleffects", "qtgui", "qthelp", "qtimageformats",
+            "qtlinguist", "qtlocation", "qtmaxextras", "qtmultimedia",
+            "qtmultimediawidgets", "qtnetwork", "qtnfc", "qtopengl",
+            "qtplatformheaders", "qtpositioning", "qtprintsupport", "qtqml",
+            "qtquick", "qtquickcontrols", "qtquickdialogs", "qtquickextras",
+            "qtquicklayouts", "qtscript", "qtscripttools", "qtsensors",
+            "qtserialport", "qtsql", "qtsvg", "qttestlib", "qtuitools",
+            "qtwebchannel", "qtwebengine", "qtwebenginewidgets", "qtwebkit",
+            "qtwebkitexamples", "qtwebsockets", "qtwidgets", "qtwinextras",
+            "qtx11extras", "qtxml", "qtxmlpatterns"]
         for qtDocs, version in [(qt4Docs, 4), (qt5Docs, 5)]:
             for doc in qtDocs:
                 changes |= self.__installQtDoc(doc, version, engine)
@@ -122,8 +126,14 @@ class HelpDocsInstaller(QThread):
                 QLibraryInfo.location(QLibraryInfo.DocumentationPath) +
                 QDir.separator() + "qch")
         elif version == 5:
-            docsPath = QDir(
-                QLibraryInfo.location(QLibraryInfo.DocumentationPath))
+            docsPath = QLibraryInfo.location(QLibraryInfo.DocumentationPath)
+            if not os.path.isdir(docsPath):
+                # Qt installer is a bit buggy; it's missing a symbolic link
+                docsPathList = QDir.fromNativeSeparators(docsPath).split("/")
+                docsPath = os.sep.join(
+                    docsPathList[:-3] +
+                    ["Docs", "Qt-{0}".format(qVersion()[:3])])
+            docsPath = QDir(docsPath)
         else:
             # unsupported Qt version
             return False
