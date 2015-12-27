@@ -453,6 +453,7 @@ class PluginRepositoryWidget(QWidget, Ui_PluginRepositoryDialog):
                         len(self.__selectedItems()))
                     self.__downloadInstallButton.setEnabled(
                         len(self.__selectedItems()))
+            reply.deleteLater()
             return
         
         self.__downloadIODevice.open(QIODevice.WriteOnly)
@@ -463,6 +464,7 @@ class PluginRepositoryWidget(QWidget, Ui_PluginRepositoryDialog):
         self.__downloadIODevice.rename(self.__downloadFileName)
         self.__downloadIODevice = None
         self.__downloadURL = None
+        reply.deleteLater()
         
         if self.__doneMethod is not None:
             self.__doneMethod(ok, self.__downloadFileName)
