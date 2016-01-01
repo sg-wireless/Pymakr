@@ -1148,6 +1148,7 @@ class PluginManager(QObject):
                 ).format(Preferences.getUI("PluginRepositoryUrl6"),
                          reply.errorString())
             )
+            reply.deleteLater()
             return
         
         ioDevice = QFile(self.pluginRepositoryFile + ".tmp")
@@ -1157,6 +1158,7 @@ class PluginManager(QObject):
         if QFile.exists(self.pluginRepositoryFile):
             QFile.remove(self.pluginRepositoryFile)
         ioDevice.rename(self.pluginRepositoryFile)
+        reply.deleteLater()
         
         if os.path.exists(self.pluginRepositoryFile):
             f = QFile(self.pluginRepositoryFile)
