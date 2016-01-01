@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# Copyright (c) 2003 - 2015 Detlev Offenbach <detlev@die-offenbachs.de>
+# Copyright (c) 2003 - 2016 Detlev Offenbach <detlev@die-offenbachs.de>
 #
 
 """
@@ -47,7 +47,7 @@ def usage():
     """
     print("eric6_doc")
     print()
-    print("Copyright (c) 2003 - 2015 Detlev Offenbach"
+    print("Copyright (c) 2003 - 2016 Detlev Offenbach"
           " <detlev@die-offenbachs.de>.")
     print()
     print("Usage:")
@@ -136,7 +136,7 @@ def version():
         """\n"""
         """Eric6 API documentation generator.\n"""
         """\n"""
-        """Copyright (c) 2003-2015 Detlev Offenbach"""
+        """Copyright (c) 2003-2016 Detlev Offenbach"""
         """ <detlev@die-offenbachs.de>\n"""
         """This is free software; see the LICENSE.GPL3 for copying"""
         """ conditions.\n"""

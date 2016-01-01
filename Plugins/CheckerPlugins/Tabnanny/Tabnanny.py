@@ -37,7 +37,7 @@ from __future__ import unicode_literals
 #   linenumber and the error message (boolean, string, string, string). The
 #   values are only valid, if the status equals 1.
 #
-# Mofifications Copyright (c) 2003-2015 Detlev Offenbach
+# Mofifications Copyright (c) 2003-2016 Detlev Offenbach
 # <detlev@die-offenbachs.de>
 #
 

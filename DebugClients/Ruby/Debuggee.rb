@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Copyright (c) 2005 - 2015 Detlev Offenbach <detlev@die-offenbachs.de>
+# Copyright (c) 2005 - 2016 Detlev Offenbach <detlev@die-offenbachs.de>
 #
 
 # Debuggee.rb is based in parts on debug.rb from Ruby and debuggee.rb.

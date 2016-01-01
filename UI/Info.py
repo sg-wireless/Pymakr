@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Copyright (c) 2002 - 2015 Detlev Offenbach <detlev@die-offenbachs.de>
+# Copyright (c) 2002 - 2016 Detlev Offenbach <detlev@die-offenbachs.de>
 #
 
 """
@@ -11,7 +11,7 @@ from __future__ import unicode_literals
 
 Program = 'eric6'
 Version = '@@VERSION@@ (rev. @@REVISION@@)'
-Copyright = 'Copyright (c) 2002 - 2015 Detlev Offenbach' \
+Copyright = 'Copyright (c) 2002 - 2016 Detlev Offenbach' \
             ' <detlev@die-offenbachs.de>'
 BugAddress = 'eric-bugs@eric-ide.python-projects.org'
 FeatureAddress = 'eric-featurerequest@eric-ide.python-projects.org'

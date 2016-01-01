@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Copyright (c) 2009 - 2015 Detlev Offenbach <detlev@die-offenbachs.de>
+# Copyright (c) 2009 - 2016 Detlev Offenbach <detlev@die-offenbachs.de>
 
 """
 Module defining additions to the standard Python profile.py.

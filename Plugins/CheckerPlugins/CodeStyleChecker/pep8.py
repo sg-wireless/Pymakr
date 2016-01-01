@@ -56,7 +56,7 @@ from __future__ import with_statement
 # - made messages translatable via Qt
 # - added code for eric6 integration
 #
-# Copyright (c) 2011 - 2015 Detlev Offenbach <detlev@die-offenbachs.de>
+# Copyright (c) 2011 - 2016 Detlev Offenbach <detlev@die-offenbachs.de>
 #
 
 __version__ = '1.5.6'

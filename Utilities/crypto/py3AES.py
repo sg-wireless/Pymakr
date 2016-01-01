@@ -17,7 +17,7 @@
 #
 # Ported to Python3
 #
-# Copyright (c) 2011 - 2015 Detlev Offenbach <detlev@die-offenbachs.de>
+# Copyright (c) 2011 - 2016 Detlev Offenbach <detlev@die-offenbachs.de>
 #
 
 """
