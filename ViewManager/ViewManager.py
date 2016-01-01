@@ -2430,7 +2430,7 @@ class ViewManager(QObject):
             if isMacPlatform():
                 act.setShortcut(QKeySequence(
                     QCoreApplication.translate('ViewManager', 'Meta+Shift+A')))
-            self.esm.setMapping(act, QsciScintilla.SCI_HOME)
+            self.esm.setMapping(act, QsciScintilla.SCI_HOMEEXTEND)
             act.triggered.connect(self.esm.map)
             self.editActions.append(act)
         
