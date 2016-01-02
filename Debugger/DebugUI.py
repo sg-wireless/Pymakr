@@ -1102,7 +1102,6 @@ class DebugUI(QObject):
         @param stackTrace list of stack entries (list of string)
         """
         self.ui.raise_()
-        self.ui.activateWindow()
         QApplication.processEvents()
         if exceptionType is None:
             E5MessageBox.critical(
@@ -1132,6 +1131,7 @@ class DebugUI(QObject):
                     self.viewmanager.setFileLine(
                         stackTrace[0][0], stackTrace[0][1], True)
             if res != E5MessageBox.No:
+                self.ui.activateWindow()
                 if Preferences.getDebugger("BreakAlways"):
                     res = E5MessageBox.Yes
                 else:
