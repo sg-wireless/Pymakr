@@ -13,3 +13,4 @@ GenericName=IDE for Python
 GenericName[de]=IDE für Python
 Categories=Qt;Python;Development;IDE;
 StartupNotify=true
+Keywords=qt;python;development;ide;debugger;editor;unit test;mercurial;subversion;git
