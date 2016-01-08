@@ -12,6 +12,7 @@ import bdb
 import os
 import atexit
 import inspect
+import ctypes
 from inspect import CO_GENERATOR
 
 from DebugProtocol import ResponseClearWatch, ResponseClearBreak, \
@@ -67,7 +68,6 @@ class DebugBase(bdb.Bdb):
         
         # current frame we are at
         self.currentFrame = None
-        self.currentFrameLocals = None
         
         # frame that we are stepping in, can be different than currentFrame
         self.stepFrame = None
@@ -100,14 +100,27 @@ class DebugBase(bdb.Bdb):
             the current frame (int)
         @return locals dictionary of the frame
         """
-        if frmnr:
-            f = self.currentFrame
-            while f is not None and frmnr > 0:
-                f = f.f_back
-                frmnr -= 1
-            return f.f_locals
-        else:
-            return self.currentFrameLocals
+        f = self.currentFrame
+        while f is not None and frmnr > 0:
+            f = f.f_back
+            frmnr -= 1
+        return f.f_locals
+    
+    def storeFrameLocals(self, frmnr=0):
+        """
+        Public method to store the locals into the frame, so an access to
+        frame.f_locals returns the last data.
+        
+        @keyparam frmnr distance of frame to store locals dictionary to. 0 is
+            the current frame (int)
+        """
+        cf = self.currentFrame
+        while cf is not None and frmnr > 0:
+            cf = cf.f_back
+            frmnr -= 1
+        ctypes.pythonapi.PyFrame_LocalsToFast(
+            ctypes.py_object(cf),
+            ctypes.c_int(0))
     
     def step(self, traceMode):
         """
@@ -632,8 +645,6 @@ class DebugBase(bdb.Bdb):
             self._dbgClient.mainFrame = frame
 
         self.currentFrame = frame
-        self.currentFrameLocals = frame.f_locals
-        # remember the locals because it is reinitialized when accessed
         
         fr = frame
         stack = []
@@ -743,8 +754,6 @@ class DebugBase(bdb.Bdb):
             frlist.reverse()
             
             self.currentFrame = frlist[0]
-            self.currentFrameLocals = frlist[0].f_locals
-            # remember the locals because it is reinitialized when accessed
             
             for fr in frlist:
                 filename = self._dbgClient.absPath(self.fix_frame_filename(fr))
