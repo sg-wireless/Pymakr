@@ -777,6 +777,7 @@ class DebugClientBase(object):
                         self.currentThread.getCurrentFrame().f_globals,
                         self.currentThread.getFrameLocals(self.framenr))
                     self.currentThread.storeFrameLocals(self.framenr)
+                except:
                     # Report the exception and the traceback
                     try:
                         type, value, tb = sys.exc_info()
@@ -811,6 +812,7 @@ class DebugClientBase(object):
                     code = compile(arg + '\n', '<stdin>', 'single')
                     exec(code, _globals, _locals)
                     self.currentThread.storeFrameLocals(self.framenr)
+                except:
                     # Report the exception and the traceback
                     try:
                         type, value, tb = sys.exc_info()
