@@ -362,8 +362,11 @@ class UMLDialog(E5MainWindow):
             self.__showInvalidDataMessage(filename)
             return False
         
-        # everything worked fine, so remember the file name
+        # everything worked fine, so remember the file name and set the
+        # window title
+        self.setWindowTitle(self.__diagramTypeString())
         self.__fileName = filename
+        
         return True
     
     def __showInvalidDataMessage(self, filename, linenum=-1):
