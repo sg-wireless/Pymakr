@@ -610,7 +610,11 @@ class DebugBase(bdb.Bdb):
         if self._dbgClient.mainFrame is None:
             if fn != self._dbgClient.getRunning():
                 return
-            self._dbgClient.mainFrame = frame
+            fr = frame
+            while (fr is not None and
+                    fr.f_code != self._dbgClient.handleLine.func_code):
+                self._dbgClient.mainFrame = fr
+                fr = fr.f_back
 
         self.currentFrame = frame
         
