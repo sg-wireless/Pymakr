@@ -752,6 +752,7 @@ class ConfigurationWidget(QWidget):
             self.preferencesChanged.emit()
             if savedState is not None:
                 page.setState(savedState)
+            page.polishPage()
         
     @pyqtSlot()
     def on_resetButton_clicked(self):
