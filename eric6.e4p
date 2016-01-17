@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project eric6 -->
-<!-- Copyright (C) 2015 Detlev Offenbach, detlev@die-offenbachs.de -->
+<!-- Copyright (C) 2016 Detlev Offenbach, detlev@die-offenbachs.de -->
 <Project version="5.1">
   <Language>en_US</Language>
   <ProjectWordList>Dictionaries/words.dic</ProjectWordList>
@@ -1649,8 +1649,8 @@
     <Translation>i18n/eric6_ru.ts</Translation>
     <Translation>i18n/eric6_tr.qm</Translation>
     <Translation>i18n/eric6_tr.ts</Translation>
-    <Translation>i18n/eric6_zh_CN.GB2312.qm</Translation>
-    <Translation>i18n/eric6_zh_CN.GB2312.ts</Translation>
+    <Translation>i18n/eric6_zh_CN.qm</Translation>
+    <Translation>i18n/eric6_zh_CN.ts</Translation>
   </Translations>
   <Resources>
     <Resource>Helpviewer/Bookmarks/DefaultBookmarks.qrc</Resource>
