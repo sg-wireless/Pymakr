@@ -296,6 +296,8 @@ class E5ClickableLed(E5Led):
         @param rectRatio ratio width to height, if shape is rectangular (float)
         """
         super(E5ClickableLed, self).__init__(parent, color, shape, rectRatio)
+        
+        self.setCursor(Qt.PointingHandCursor)
     
     def mouseReleaseEvent(self, evt):
         """
