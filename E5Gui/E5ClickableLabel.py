@@ -32,6 +32,8 @@ class E5ClickableLabel(QLabel):
         @param parent reference to the parent widget (QWidget)
         """
         super(E5ClickableLabel, self).__init__(parent)
+        
+        self.setCursor(Qt.PointingHandCursor)
     
     def mouseReleaseEvent(self, evt):
         """
