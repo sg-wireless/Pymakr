@@ -101,6 +101,7 @@ class SnapshotFreehandGrabber(QWidget):
 
         self.grabMouse()
         self.grabKeyboard()
+        self.activateWindow()
     
     def paintEvent(self, evt):
         """
