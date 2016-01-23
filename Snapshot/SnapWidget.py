@@ -16,7 +16,7 @@ from __future__ import unicode_literals
 import os
 
 from PyQt5.QtCore import pyqtSlot, QFile, QFileInfo, QTimer, QPoint, \
-    QMimeData, Qt, QEvent, QRegExp, qVersion, PYQT_VERSION_STR
+    QMimeData, Qt, QEvent, QRegExp, QLocale, qVersion, PYQT_VERSION_STR
 from PyQt5.QtGui import QImageWriter, QPixmap, QCursor, QDrag, QKeySequence
 from PyQt5.QtWidgets import QWidget, QApplication, QShortcut
 
@@ -92,6 +92,7 @@ class SnapWidget(QWidget, Ui_SnapWidget):
         self.__snapshot = QPixmap()
         self.__savedPosition = QPoint()
         self.__modified = False
+        self.__locale = QLocale()
         
         self.__grabberWidget = QWidget(None, Qt.X11BypassWindowManagerHint)
         self.__grabberWidget.move(-10000, -10000)
@@ -449,8 +450,10 @@ class SnapWidget(QWidget, Ui_SnapWidget):
         Private slot to update the preview picture.
         """
         self.preview.setToolTip(self.tr(
-            "Preview of the snapshot image ({0:n} x {1:n})").format(
-            self.__snapshot.width(), self.__snapshot.height()))
+            "Preview of the snapshot image ({0} x {1})").format(
+            self.__locale.toString(self.__snapshot.width()),
+            self.__locale.toString(self.__snapshot.height()))
+        )
         self.preview.setPreview(self.__snapshot)
         self.preview.adjustSize()
     

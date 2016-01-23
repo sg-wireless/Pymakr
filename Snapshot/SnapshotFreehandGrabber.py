@@ -9,7 +9,8 @@ Module implementing a grabber widget for a freehand snapshot region.
 
 from __future__ import unicode_literals
 
-from PyQt5.QtCore import pyqtSignal, Qt, QRect, QPoint, QTimer, qVersion
+from PyQt5.QtCore import pyqtSignal, Qt, QRect, QPoint, QTimer, QLocale, \
+    qVersion
 from PyQt5.QtGui import QPixmap, QColor, QRegion, QPainter, QPalette, \
     QPolygon, QPen, QBrush, QPaintEngine
 from PyQt5.QtWidgets import QWidget, QApplication, QToolTip
@@ -64,6 +65,7 @@ class SnapshotFreehandGrabber(QWidget):
         self.__grabbing = False
         self.__dragStartPoint = QPoint()
         self.__selectionBeforeDrag = QPolygon()
+        self.__locale = QLocale()
         
         self.__helpTextRect = QRect()
         self.__helpText = self.tr(
@@ -162,9 +164,12 @@ class SnapshotFreehandGrabber(QWidget):
         # rectangles (border included). This means that there is no 0px
         # selection, since a 0px wide rectangle will always be drawn as a line.
         boundingRect = self.__selection.boundingRect()
-        txt = "{0:n}, {1:n} ({2:n} x {3:n})".format(
-            boundingRect.x(), boundingRect.y(),
-            boundingRect.width(), boundingRect.height())
+        txt = "{0}, {1} ({2} x {3})".format(
+            self.__locale.toString(boundingRect.x()),
+            self.__locale.toString(boundingRect.y()),
+            self.__locale.toString(boundingRect.width()),
+            self.__locale.toString(boundingRect.height())
+        )
         textRect = painter.boundingRect(self.rect(), Qt.AlignLeft, txt)
         boundingRect = textRect.adjusted(-4, 0, 0, 0)
         

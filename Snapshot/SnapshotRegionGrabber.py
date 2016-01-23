@@ -9,7 +9,8 @@ Module implementing a grabber widget for a rectangular snapshot region.
 
 from __future__ import unicode_literals
 
-from PyQt5.QtCore import pyqtSignal, Qt, QRect, QPoint, QTimer, qVersion
+from PyQt5.QtCore import pyqtSignal, Qt, QRect, QPoint, QTimer, QLocale, \
+    qVersion
 from PyQt5.QtGui import QPixmap, QColor, QRegion, QPainter, QPalette, \
     QPaintEngine, QPen, QBrush
 from PyQt5.QtWidgets import QWidget, QApplication, QToolTip
@@ -78,6 +79,7 @@ class SnapshotRegionGrabber(QWidget):
         self.__grabbing = False
         self.__dragStartPoint = QPoint()
         self.__selectionBeforeDrag = QRect()
+        self.__locale = QLocale()
         
         # naming conventions for handles
         # T top, B bottom, R Right, L left
@@ -184,9 +186,12 @@ class SnapshotRegionGrabber(QWidget):
         # The grabbed region is everything which is covered by the drawn
         # rectangles (border included). This means that there is no 0px
         # selection, since a 0px wide rectangle will always be drawn as a line.
-        txt = "{0:n}, {1:n} ({2:n} x {3:n})".format(
-            self.__selection.x(), self.__selection.y(),
-            self.__selection.width(), self.__selection.height())
+        txt = "{0}, {1} ({2} x {3})".format(
+            self.__locale.toString(self.__selection.x()),
+            self.__locale.toString(self.__selection.y()),
+            self.__locale.toString(self.__selection.width()),
+            self.__locale.toString(self.__selection.height())
+        )
         textRect = painter.boundingRect(self.rect(), Qt.AlignLeft, txt)
         boundingRect = textRect.adjusted(-4, 0, 0, 0)
         
