@@ -8,7 +8,7 @@ Module implementing some workarounds to let eric6 run under Python 2.
 """
 
 
-import __builtin__
+import __builtin__      # __IGNORE_EXCEPTION__
 import codecs
 import imp
 import locale
