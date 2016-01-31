@@ -3812,6 +3812,6 @@ class HelpWindow(E5MainWindow):
         @return flag indicating, if notifications are enabled (boolean)
         """
         if cls._fromEric:
-            return e5App().getObject("UserInterface").notificationsEnabled
+            return e5App().getObject("UserInterface").notificationsEnabled()
         else:
             return Preferences.getUI("NotificationsEnabled")
