@@ -120,7 +120,7 @@ class HelpTabWidget(E5TabWidget):
         self.__closeButton.setToolTip(
             self.tr("Close the current help window"))
         self.__closeButton.setEnabled(False)
-        self.__closeButton.clicked[bool].connect(self.closeBrowser)
+        self.__closeButton.clicked.connect(self.closeBrowser)
         self.__rightCornerWidgetLayout.addWidget(self.__closeButton)
         if Preferences.getUI("SingleCloseButton") or \
            not hasattr(self, 'setTabsClosable'):
@@ -137,7 +137,7 @@ class HelpTabWidget(E5TabWidget):
         self.__newTabButton.setToolTip(
             self.tr("Open a new help window tab"))
         self.setCornerWidget(self.__newTabButton, Qt.TopLeftCorner)
-        self.__newTabButton.clicked[bool].connect(self.newBrowser)
+        self.__newTabButton.clicked.connect(self.__newBrowser)
         
         self.__initTabContextMenu()
         
@@ -288,6 +288,13 @@ class HelpTabWidget(E5TabWidget):
         browser = self.widget(self.__tabContextMenuIndex)
         self.printPreviewBrowser(browser)
     
+    @pyqtSlot()
+    def __newBrowser(self):
+        """
+        Private slot to open a new browser tab.
+        """
+        self.newBrowser()
+    
     def newBrowser(self, link=None, requestData=None, position=-1):
         """
         Public method to create a new web browser tab.
@@ -431,6 +438,7 @@ class HelpTabWidget(E5TabWidget):
             browser = self.widget(index)
             browser and browser.reload()
     
+    @pyqtSlot()
     def closeBrowser(self):
         """
         Public slot called to handle the close action.
