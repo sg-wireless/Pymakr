@@ -382,10 +382,14 @@ class UrlBar(E5LineEdit):
         
         @param evt reference to the key press event (QKeyEvent)
         """
-        if evt.key() == Qt.Key_Escape and self.__browser is not None:
-            self.setText(
-                str(self.__browser.url().toEncoded(), encoding="utf-8"))
-            self.selectAll()
+        if evt.key() == Qt.Key_Escape:
+            if self.__browser is not None:
+                self.setText(
+                    str(self.__browser.url().toEncoded(), encoding="utf-8"))
+                self.selectAll()
+            completer = self.completer()
+            if completer:
+                completer.popup().hide()
             return
         
         currentText = self.text().strip()
