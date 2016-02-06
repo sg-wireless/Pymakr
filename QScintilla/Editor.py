@@ -4992,7 +4992,8 @@ class Editor(QsciScintillaCompat):
         self.menuActs["TypingAidsEnabled"].setChecked(
             self.completer is not None and self.completer.isEnabled())
         
-        self.menuActs["calltip"].setEnabled(self.acAPI)
+        if not self.isResourcesFile:
+            self.menuActs["calltip"].setEnabled(self.acAPI)
         
         from .SpellChecker import SpellChecker
         spellingAvailable = SpellChecker.isAvailable()
