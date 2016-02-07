@@ -2252,6 +2252,8 @@ class HelpWindow(E5MainWindow):
         
         self.syncManager().close()
         
+        self.zoomManager().close()
+        
         self.__virusTotal.close()
         
         self.flashCookieManager().shutdown()
