@@ -1698,7 +1698,11 @@ class HelpBrowser(QWebView):
         engine = OpenSearchEngine()
         engine.setName(engineName)
         engine.setDescription(engineName)
-        engine.setSearchUrlTemplate(searchUrl.toString())
+        if qVersion() >= "5.0.0":
+            engine.setSearchUrlTemplate(
+                searchUrl.toDisplayString(QUrl.FullyDecoded))
+        else:
+            engine.setSearchUrlTemplate(searchUrl.toString())
         engine.setImage(self.icon().pixmap(16, 16).toImage())
         
         self.mw.openSearchManager().addEngine(engine)
