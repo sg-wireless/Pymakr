@@ -361,12 +361,13 @@ class OpenSearchManager(QObject):
         from .OpenSearchReader import OpenSearchReader
         from .DefaultSearchEngines import DefaultSearchEngines_rc   # __IGNORE_WARNING__
         
-        defaultEngineFiles = ["YouTube.xml", "Amazoncom.xml", "Bing.xml",
-                              "DeEn_Beolingus.xml", "Facebook.xml",
-                              "Google_Im_Feeling_Lucky.xml", "Google.xml",
-                              "LEO_DeuEng.xml", "LinuxMagazin.xml",
-                              "Reddit.xml", "Wikia_en.xml", "Wikia.xml",
-                              "Wikipedia.xml", "Wiktionary.xml", "Yahoo.xml"]
+        defaultEngineFiles = ["Amazoncom.xml", "Bing.xml",
+                              "DeEn_Beolingus.xml", "DuckDuckGo.xml",
+                              "Facebook.xml", "Google.xml",
+                              "Google_Im_Feeling_Lucky.xml", "LEO_DeuEng.xml",
+                              "LinuxMagazin.xml", "Reddit.xml", "Wikia.xml",
+                              "Wikia_en.xml", "Wikipedia.xml",
+                              "Wiktionary.xml", "Yahoo.xml", "YouTube.xml", ]
         # Keep this list in sync with the contents of the resource file.
 
         reader = OpenSearchReader()
