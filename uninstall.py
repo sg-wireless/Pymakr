@@ -296,7 +296,7 @@ def removeConfigurationData():
                 answer = input(
                     "Shall this directory be removed (y/N)? ")
         if answer in ["y", "Y"]:
-            shutil.rmtree(settings)
+            shutil.rmtree(settingsDir)
 
 
 def getConfigDir():
