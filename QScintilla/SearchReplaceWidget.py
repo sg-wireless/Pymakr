@@ -351,7 +351,11 @@ and so on.</td></tr>
             if indicate:
                 aw.setSearchIndicator(tgtPos, tgtLen)
             ok = aw.findNextTarget()
-        aw.updateMarkerMap()
+        try:
+            aw.updateMarkerMap()
+        except AttributeError:
+            # MiniEditor doesn't have this, ignore it
+            pass
     
     def __findNextPrev(self, txt, backwards):
         """
