@@ -193,6 +193,7 @@ class EricdocConfigDialog(QDialog, Ui_EricdocConfigDialog):
         else:
             self.parameters['outputDirectory'] = \
                 self.defaults['outputDirectory']
+            parms['outputDirectory'] = self.parameters['outputDirectory']
         if self.parameters['ignoreDirectories'] != \
                 self.defaults['ignoreDirectories']:
             parms['ignoreDirectories'] = \
