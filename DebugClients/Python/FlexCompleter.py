@@ -162,6 +162,18 @@ class Completer(object):
         except IndexError:
             return None
 
+    def _callable_postfix(self, val, word):
+        """
+        Protected method to check for a callable.
+        
+        @param val value to check (object)
+        @param word word to ammend (string)
+        @return ammended word (string)
+        """
+        if hasattr(val, '__call__'):
+            word = word + "("
+        return word
+
     def global_matches(self, text):
         """
         Public method to compute matches when text is a simple name.
@@ -173,14 +185,13 @@ class Completer(object):
         import keyword
         matches = []
         n = len(text)
-        for list in [keyword.kwlist,
-                     __builtin__.__dict__.keys(),
-                     self.namespace.keys()]:
-            for word in list:
-                if word[:n] == text and \
-                   word != "__builtins__" and \
-                   word not in matches:
-                    matches.append(word)
+        for word in keyword.kwlist:
+            if word[:n] == text:
+                matches.append(word)
+        for nspace in [__builtin__.__dict__, self.namespace]:
+            for word, val in nspace.items():
+                if word[:n] == text and word != "__builtins__":
+                    matches.append(self._callable_postfix(val, word))
         return matches
 
     def attr_matches(self, text):
@@ -212,8 +223,16 @@ class Completer(object):
         if not m:
             return
         expr, attr = m.group(1, 3)
-        object = eval(expr, self.namespace)
-        words = dir(object)
+        try:
+            thisobject = eval(expr, self.namespace)
+        except Exception:
+            return []
+
+        # get the content of the object, except __builtins__
+        words = dir(thisobject)
+        if "__builtins__" in words:
+            words.remove("__builtins__")
+
         if hasattr(object, '__class__'):
             words.append('__class__')
             words = words + get_class_members(object.__class__)
@@ -221,11 +240,11 @@ class Completer(object):
         n = len(attr)
         for word in words:
             try:
-                if word[:n] == attr and word != "__builtins__":
-                    match = "%s.%s" % (expr, word)
-                    if match not in matches:
-                        matches.append(match)
-            except:
+                if word[:n] == attr and hasattr(thisobject, word):
+                    val = getattr(thisobject, word)
+                    word = self._callable_postfix(
+                        val, "%s.%s" % (expr, word))
+                    matches.append(word)
                 # some badly behaved objects pollute dir() with non-strings,
                 # which cause the completion to fail.  This way we skip the
                 # bad entries and can still continue processing the others.

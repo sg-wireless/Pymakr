@@ -1937,8 +1937,7 @@ class DebugClientBase(object):
         """
         completerDelims = ' \t\n`~!@#$%^&*()-=+[{]}\\|;:\'",<>/?'
         
-        completions = []
-        state = 0
+        completions = set()
         # find position of last delim character
         pos = -1
         while pos >= -len(text):
@@ -1950,20 +1949,37 @@ class DebugClientBase(object):
                 break
             pos -= 1
         
+        # Get local and global completions
         try:
-            comp = self.complete(text, state)
-        except:
-            comp = None
-        while comp is not None:
-            completions.append(comp)
-            state += 1
-            try:
-                comp = self.complete(text, state)
-            except:
-                comp = None
+            localdict = self.currentThread.getFrameLocals(self.framenr)
+            localCompleter = Completer(localdict).complete
+            self.__getCompletionList(text, localCompleter, completions)
+        except AttributeError:
+            pass
+        self.__getCompletionList(text, self.complete, completions)
         
         self.write("{0}{1}||{2}\n".format(DebugProtocol.ResponseCompletion,
-                                          str(completions), text))
+                                          str(list(completions)), text))
+
+    def __getCompletionList(self, text, completer, completions):
+        """
+        Private method to create a completions list.
+        
+        @param text text to complete (string)
+        @param completer completer methode
+        @param completions set where to add new completions strings (set)
+        """
+        state = 0
+        try:
+            comp = completer(text, state)
+            comp = None
+        while comp is not None:
+            completions.add(comp)
+            state += 1
+            try:
+                comp = completer(text, state)
+            except:
+                comp = None
 
     def startDebugger(self, filename=None, host=None, port=None,
                       enableTrace=True, exceptions=True, tracePython=False,
