@@ -213,8 +213,8 @@ class DownloadItem(QWidget, Ui_DownloadItem):
             self.__autoOpen = dlg.getAction() == "open"
             if PYQT_VERSION_STR >= "5.0.0":
                 from PyQt5.QtCore import QStandardPaths
-                tempLocation = QStandardPaths.storageLocation(
-                    QStandardPaths.TempLocation)
+                tempLocation = QStandardPaths.standardLocations(
+                    QStandardPaths.TempLocation)[0]
             else:
                 from PyQt5.QtGui import QDesktopServices
                 tempLocation = QDesktopServices.storageLocation(
