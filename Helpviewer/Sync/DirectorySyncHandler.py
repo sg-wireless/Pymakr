@@ -162,7 +162,7 @@ class DirectorySyncHandler(SyncHandler):
                     Preferences.getHelp("SyncDirectoryPath"),
                     self._remoteFiles[type_])).lastModified().toTime_t())
         else:
-            if os.path.exists(
+            if not os.path.exists(
                     os.path.join(Preferences.getHelp("SyncDirectoryPath"),
                                  self._remoteFiles[type_])):
                 self.syncStatus.emit(
