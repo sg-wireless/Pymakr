@@ -164,7 +164,7 @@ class TaskViewer(QTreeWidget):
         self.customContextMenuRequested.connect(self.__showContextMenu)
         self.itemActivated.connect(self.__taskItemActivated)
         
-        self.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+        self.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
         
         self.__generateTopLevelItems()
     

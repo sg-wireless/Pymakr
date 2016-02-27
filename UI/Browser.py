@@ -76,7 +76,7 @@ class Browser(QTreeView):
         
         self.setWindowTitle(QCoreApplication.translate('Browser',
                                                        'File-Browser'))
-        self.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+        self.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
         
         self.__embeddedBrowser = Preferences.getUI("LayoutFileBrowserEmbedded")
         

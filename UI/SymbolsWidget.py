@@ -499,7 +499,7 @@ class SymbolsWidget(QWidget, Ui_SymbolsWidget):
         super(SymbolsWidget, self).__init__(parent)
         self.setupUi(self)
         
-        self.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+        self.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
         
         self.__model = SymbolsModel(self)
         self.symbolsTable.setModel(self.__model)

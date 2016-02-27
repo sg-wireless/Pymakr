@@ -13,11 +13,11 @@ import os.path
 import logging
 
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPixmap, QColor
+from PyQt5.QtGui import QPixmap, QColor, QLabel
 from PyQt5.QtWidgets import QApplication, QSplashScreen
 
 from eric6config import getConfig
-
+import UI.Info
 
 class SplashScreen(QSplashScreen):
     """
@@ -28,10 +28,15 @@ class SplashScreen(QSplashScreen):
         Constructor
         """
         ericPic = QPixmap(
-            os.path.join(getConfig('ericPixDir'), 'ericSplash.png'))
+            os.path.join(getConfig('ericPixDir'), 'pymakrSplash.png'))
         self.labelAlignment = Qt.Alignment(
             Qt.AlignBottom | Qt.AlignRight | Qt.AlignAbsolute)
         super(SplashScreen, self).__init__(ericPic)
+        lblVersion = QLabel(self)
+        lblVersion.setText(UI.Info.Version)
+        lblVersion.setStyleSheet("QLabel { color : white; }")
+        lblVersion.setAttribute(Qt.WA_TranslucentBackground)
+        lblVersion.move(340, 195)
         self.show()
         QApplication.flush()
         

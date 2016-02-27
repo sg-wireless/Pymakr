@@ -171,7 +171,7 @@ class NumbersWidget(QWidget, Ui_NumbersWidget):
         super(NumbersWidget, self).__init__(parent)
         self.setupUi(self)
         
-        self.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+        self.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
         
         self.__badNumberSheet = "background-color: #ffa0a0;"
         

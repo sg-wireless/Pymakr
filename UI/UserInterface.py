@@ -192,8 +192,8 @@ class UserInterface(E5MainWindow):
         self.capEditor = ""
         self.captionShowsFilename = Preferences.getUI("CaptionShowsFilename")
         
-        QApplication.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
-        self.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+        QApplication.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
+        self.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
         self.__setWindowCaption()
         
         # load the view profiles

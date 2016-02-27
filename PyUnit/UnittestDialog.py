@@ -96,7 +96,7 @@ class UnittestDialog(QWidget, Ui_UnittestDialog):
         self.setWindowFlags(
             self.windowFlags() | Qt.WindowFlags(
                 Qt.WindowContextHelpButtonHint))
-        self.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+        self.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
         self.setWindowTitle(self.tr("Unittest"))
         if dbs:
             self.ui = ui

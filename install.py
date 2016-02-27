@@ -500,7 +500,7 @@ def cleanUp():
     
     # Remove the menu entry for Linux systems
     if sys.platform.startswith("linux") and os.getuid() == 0:
-        for name in ["/usr/share/pixmaps/eric.png",
+        for name in ["/usr/share/pixmaps/pymakr.png",
                      "/usr/share/pixmaps/ericWeb.png"]:
             if os.path.exists(name):
                 os.remove(name)
@@ -797,7 +797,7 @@ def installEric():
             if not os.path.exists(dst):
                 os.makedirs(dst)
             shutilCopy(
-                os.path.join(sourceDir, "icons", "default", "eric.png"),
+                os.path.join(sourceDir, "icons", "default", "pymakr.png"),
                 os.path.join(dst, "eric" + marker + ".png"))
             shutilCopy(
                 os.path.join(sourceDir, "icons", "default", "ericWeb48.png"),
@@ -823,7 +823,7 @@ def installEric():
                 marker)
         elif os.getuid() == 0:
             shutilCopy(os.path.join(
-                sourceDir, "icons", "default", "eric.png"),
+                sourceDir, "icons", "default", "pymakr.png"),
                 "/usr/share/pixmaps/eric" + marker + ".png")
             copyDesktopFile(
                 os.path.join(sourceDir, "eric6.desktop"),

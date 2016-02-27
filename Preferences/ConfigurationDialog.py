@@ -485,7 +485,7 @@ class ConfigurationWidget(QWidget):
         self.emptyPagePixmap.setAlignment(Qt.AlignCenter)
         self.emptyPagePixmap.setObjectName("emptyPagePixmap")
         self.emptyPagePixmap.setPixmap(
-            QPixmap(os.path.join(getConfig('ericPixDir'), 'eric.png')))
+            QPixmap(os.path.join(getConfig('ericPixDir'), 'pymakr_small.png')))
         self.vboxlayout.addWidget(self.emptyPagePixmap)
         self.textLabel1 = QLabel(self.emptyPage)
         self.textLabel1.setAlignment(Qt.AlignCenter)

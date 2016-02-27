@@ -751,7 +751,7 @@ class AboutDialog(QDialog, Ui_AboutDialog):
         
         self.ericLabel.setText(titleText)
         self.ericPixmap.setPixmap(
-            UI.PixmapCache.getPixmap("eric.png").scaled(48, 48))
+            UI.PixmapCache.getPixmap("pymakr.png").scaled(48, 48))
         
         ####################################################################
         ## ABOUT

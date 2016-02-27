@@ -31,7 +31,7 @@ class MultiProjectBrowser(QTreeWidget):
         super(MultiProjectBrowser, self).__init__(parent)
         self.multiProject = multiProject
         
-        self.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+        self.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
         self.setAlternatingRowColors(True)
         self.setHeaderHidden(True)
         self.setItemsExpandable(False)

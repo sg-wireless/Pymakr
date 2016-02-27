@@ -40,7 +40,7 @@ class SqlBrowser(E5MainWindow):
         self.setObjectName("SqlBrowser")
         
         self.setWindowTitle(self.tr("SQL Browser"))
-        self.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+        self.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
         
         self.setStyle(Preferences.getUI("Style"),
                       Preferences.getUI("StyleSheet"))

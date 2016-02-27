@@ -225,7 +225,7 @@ class TabWidget(E5TabWidget):
         self.customTabContextMenuRequested.connect(self.__showContextMenu)
         
         ericPic = QPixmap(
-            os.path.join(getConfig('ericPixDir'), 'eric_small.png'))
+            os.path.join(getConfig('ericPixDir'), 'pymakr_small.png'))
         self.emptyLabel = QLabel()
         self.emptyLabel.setPixmap(ericPic)
         self.emptyLabel.setAlignment(Qt.AlignVCenter | Qt.AlignHCenter)

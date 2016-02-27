@@ -9,8 +9,11 @@ Module defining some informational strings.
 
 from __future__ import unicode_literals
 
-Program = 'eric6'
-Version = '@@VERSION@@ (rev. @@REVISION@@)'
+Builder = 'Pycom'
+Program = 'Pymakr'
+Version = '1.0.0'
+OriginalProgram = 'eric6'
+OriginalVersion = '@@VERSION@@ (rev. @@REVISION@@)'
 Copyright = 'Copyright (c) 2002 - 2016 Detlev Offenbach' \
             ' <detlev@die-offenbachs.de>'
 BugAddress = 'eric-bugs@eric-ide.python-projects.org'

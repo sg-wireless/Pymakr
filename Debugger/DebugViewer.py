@@ -70,7 +70,7 @@ class DebugViewer(QWidget):
         self.debugServer = debugServer
         self.debugUI = None
         
-        self.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+        self.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
         
         self.__mainLayout = QVBoxLayout()
         self.__mainLayout.setContentsMargins(0, 0, 0, 0)

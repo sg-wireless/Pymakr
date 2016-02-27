@@ -51,7 +51,7 @@ class ProjectBrowser(E5TabWidget):
         E5TabWidget.__init__(self, parent)
         self.project = project
         
-        self.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+        self.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
         
         self.setUsesScrollButtons(True)
         

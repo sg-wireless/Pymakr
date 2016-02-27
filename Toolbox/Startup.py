@@ -231,7 +231,7 @@ def simpleAppStartup(argv, appinfo, mwFactory, quitOnLastWindowClosed=True,
     import Preferences
     
     initializeResourceSearchPath()
-    QApplication.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+    QApplication.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
     
     qt4TransDir = Preferences.getQt4TranslationsDir()
     if not qt4TransDir:

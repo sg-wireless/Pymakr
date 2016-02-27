@@ -238,7 +238,7 @@ class Shell(QsciScintillaCompat):
         self.__setAutoCompletion()
         self.__setCallTips()
         
-        self.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+        self.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
         
         self.incrementalSearchString = ""
         self.incrementalSearchActive = False

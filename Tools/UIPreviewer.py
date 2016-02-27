@@ -53,7 +53,7 @@ class UIPreviewer(E5MainWindow):
         self.resize(QSize(600, 480).expandedTo(self.minimumSizeHint()))
         self.statusBar()
         
-        self.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+        self.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
         self.setWindowTitle(self.tr("UI Previewer"))
 
         self.cw = QWidget(self)

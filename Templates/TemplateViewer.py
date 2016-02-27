@@ -433,7 +433,7 @@ class TemplateViewer(QTreeWidget):
         self.customContextMenuRequested.connect(self.__showContextMenu)
         self.itemActivated.connect(self.__templateItemActivated)
         
-        self.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+        self.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
         
     def __resort(self):
         """

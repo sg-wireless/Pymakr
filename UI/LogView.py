@@ -33,7 +33,7 @@ class LogViewer(QWidget):
         """
         super(LogViewer, self).__init__(parent)
         
-        self.setWindowIcon(UI.PixmapCache.getIcon("eric.png"))
+        self.setWindowIcon(UI.PixmapCache.getIcon("pymakr.png"))
         
         self.__ui = ui
         
