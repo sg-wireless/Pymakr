@@ -27,6 +27,7 @@ import UI.PixmapCache
 
 import Utilities
 import Preferences
+import Globals
 
 from eric6config import getConfig
 
@@ -177,9 +178,10 @@ class HelpTabWidget(E5TabWidget):
         self.__tabContextMenu.addAction(
             UI.PixmapCache.getIcon("print.png"),
             self.tr('Print'), self.__tabContextMenuPrint)
-        self.__tabContextMenu.addAction(
-            UI.PixmapCache.getIcon("printPdf.png"),
-            self.tr('Print as PDF'), self.__tabContextMenuPrintPdf)
+        if Globals.isLinuxPlatform():
+            self.__tabContextMenu.addAction(
+                UI.PixmapCache.getIcon("printPdf.png"),
+                self.tr('Print as PDF'), self.__tabContextMenuPrintPdf)
         self.__tabContextMenu.addSeparator()
         self.__tabContextMenu.addAction(
             UI.PixmapCache.getIcon("reload.png"),
