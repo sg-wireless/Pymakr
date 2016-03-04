@@ -1096,6 +1096,19 @@ def doDependancyChecks():
     
     try:
         if pyqtVariant == "PyQt4":
+            pyuic = "pyuic4"
+            from PyQt4 import uic      # __IGNORE_WARNING__
+        else:
+            pyuic = "pyuic5"
+            from PyQt5 import uic      # __IGNORE_WARNING__
+    except ImportError as msg:
+        print("Sorry, {0} is not installed.".format(pyuic))
+        print('Error: {0}'.format(msg))
+        exit(1)
+    print("Found {0}".format(pyuic))
+    
+    try:
+        if pyqtVariant == "PyQt4":
             from PyQt4 import Qsci      # __IGNORE_WARNING__
         else:
             from PyQt5 import Qsci      # __IGNORE_WARNING__
