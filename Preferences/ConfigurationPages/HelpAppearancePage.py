@@ -84,8 +84,6 @@ class HelpAppearancePage(ConfigurationPageBase, Ui_HelpAppearancePage):
         
         self.__displayMode = displayMode
         if self.__displayMode != ConfigurationWidget.HelpBrowserMode:
-            self.separatorLine.hide()
-            self.nextStartupNoteLabel.hide()
             self.tabsGroupBox.hide()
     
     def save(self):
