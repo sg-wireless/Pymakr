@@ -19,9 +19,9 @@ import os
 from PyQt5.QtCore import QDir, QLibraryInfo, QByteArray
 
 # names of the various settings objects
-settingsNameOrganization = "Eric6"
-settingsNameGlobal = "eric6"
-settingsNameRecent = "eric6recent"
+settingsNameOrganization = "Pycom"
+settingsNameGlobal = "pymakr"
+settingsNameRecent = "pymakrRecent"
 
 # key names of the various recent entries
 recentNameMultiProject = "MultiProjects"
@@ -85,7 +85,7 @@ def checkBlacklistedVersions():
             for vers in BlackLists["sip"] + PlatformBlackLists["sip"]:
                 if vers == sipVersion:
                     print(
-                        'Sorry, sip version {0} is not compatible with eric6.'
+                        'Sorry, sip version {0} is not compatible with pymakr.'
                         .format(vers))
                     print('Please install another version.')
                     return False
@@ -101,7 +101,7 @@ def checkBlacklistedVersions():
         pyqtVariant = "PyQt{0}".format(pyqtVersion[0])
         for vers in BlackLists[pyqtVariant] + PlatformBlackLists[pyqtVariant]:
             if vers == pyqtVersion:
-                print('Sorry, PyQt version {0} is not compatible with eric6.'
+                print('Sorry, PyQt version {0} is not compatible with pymakr.'
                       .format(vers))
                 print('Please install another version.')
                 return False
@@ -134,9 +134,9 @@ def getConfigDir():
         hp = configDir
     else:
         if isWindowsPlatform():
-            cdn = "_eric6"
+            cdn = "_pymakr"
         else:
-            cdn = ".eric6"
+            cdn = ".pymakr"
             
         hp = QDir.homePath()
         dn = QDir(hp)
