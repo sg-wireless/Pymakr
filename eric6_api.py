@@ -99,7 +99,7 @@ def version():
     print(
         """eric6_api  {0}\n"""
         """\n"""
-        """Eric6 API generator.\n"""
+        """Pymakr API generator.\n"""
         """\n"""
         """Copyright (c) 2004 - 2016 Detlev Offenbach"""
         """ <detlev@die-offenbachs.de>\n"""

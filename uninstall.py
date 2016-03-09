@@ -32,10 +32,10 @@ progName = None
 pyModDir = None
 progLanguages = ["Python", "Ruby", "QSS"]
 includePythonVariant = False
-defaultMacAppBundleName = "eric6.app"
+defaultMacAppBundleName = "pymakr.app"
 defaultMacAppBundlePath = "/Applications"
-settingsNameOrganization = "Eric6"
-settingsNameGlobal = "eric6"
+settingsNameOrganization = "Pycom"
+settingsNameGlobal = "pymakr"
 
 # Define file name markers for Python variants
 PythonMarkers = {
@@ -111,11 +111,11 @@ def uninstallEric():
             marker = PythonMarkers[sys.version_info.major]
         else:
             marker = ""
-        for name in ["/usr/share/applications/eric6" + marker + ".desktop",
-                     "/usr/share/appdata/eric6" + marker + ".appdata.xml",
-                     "/usr/share/applications/eric6_webbrowser" + marker +
+        for name in ["/usr/share/applications/pymakr" + marker + ".desktop",
+                     "/usr/share/appdata/pymakr" + marker + ".appdata.xml",
+                     "/usr/share/applications/pymakr_webbrowser" + marker +
                      ".desktop",
-                     "/usr/share/pixmaps/eric" + marker + ".png",
+                     "/usr/share/pixmaps/pymakr" + marker + ".png",
                      "/usr/share/pixmaps/ericWeb" + marker + ".png"]:
             if os.path.exists(name):
                 os.remove(name)
@@ -131,7 +131,7 @@ def uninstallEric():
         "eric6_tray", "eric6_editor",
         "eric6_plugininstall", "eric6_pluginuninstall",
         "eric6_pluginrepository", "eric6_sqlbrowser",
-        "eric6_webbrowser", "eric6_iconeditor",
+        "pymakr_webbrowser", "eric6_iconeditor",
         "eric6_snap",
     ]
     if includePythonVariant:
@@ -184,8 +184,8 @@ def uninstallEric():
         
         if sys.platform == "darwin":
             # delete the Mac app bundle
-            if os.path.exists("/Developer/Applications/Eric6"):
-                shutil.rmtree("/Developer/Applications/Eric6")
+            if os.path.exists("/Developer/Applications/pymakr"):
+                shutil.rmtree("/Developer/Applications/pymakr")
             try:
                 macAppBundlePath = getConfig("macAppBundlePath")
                 macAppBundleName = getConfig("macAppBundleName")
@@ -253,7 +253,7 @@ def removeDataDirectory():
     """
     cfg = getConfigDir()
     if os.path.exists(cfg):
-        print("Found the eric data directory")
+        print("Found the Pymakr data directory")
         print("  - {0}".format(cfg))
         answer = "c"
         while answer not in ["y", "Y", "n", "N", ""]:
@@ -285,7 +285,7 @@ def removeConfigurationData():
                          settingsNameOrganization, settingsNameGlobal)
     settingsDir = os.path.dirname(settings.fileName())
     if os.path.exists(settingsDir):
-        print("Found the eric configuration directory")
+        print("Found the Pymakr configuration directory")
         print("  - {0}".format(settingsDir))
         answer = "c"
         while answer not in ["y", "Y", "n", "N", ""]:
@@ -306,10 +306,10 @@ def getConfigDir():
     @return directory name of the config dir (string)
     """
     if sys.platform.startswith("win"):
-        cdn = "_eric6"
+        cdn = "_pymakr"
         return os.path.join(os.path.expanduser("~"), cdn)
     else:
-        cdn = ".eric6"
+        cdn = ".pymakr"
         return os.path.join(
             os.path.expanduser("~{0}".format(os.getlogin())), cdn)
 
@@ -364,5 +364,5 @@ if __name__ == "__main__":
         print("""An internal error occured.  Please report all the output of"""
               """ the program,\n"""
               """including the following traceback, to"""
-              """ eric-bugs@eric-ide.python-projects.org.\n""")
+              """ support@pycom.io.\n""")
         raise

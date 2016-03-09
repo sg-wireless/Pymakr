@@ -477,7 +477,7 @@ class IrcWidget(QWidget, Ui_IrcWidget):
         realName = self.__ircNetworkManager.getIdentity(
             self.__identityName).getRealName()
         if not realName:
-            realName = "eric IDE chat"
+            realName = "Pymakr chat"
         self.__send("NICK " + nick)
         self.__send("USER " + self.__userName + " 0 * :" + realName)
     
@@ -866,7 +866,7 @@ class IrcWidget(QWidget, Ui_IrcWidget):
                     vers = ""
                 else:
                     vers = " " + Version
-                msg = "Eric IRC client{0}, {1}".format(vers, Copyright)
+                msg = "Pymakr IRC client{0}, {1}".format(vers, Copyright)
                 self.networkWidget.addServerMessage(
                     self.tr("CTCP"),
                     self.tr("Received Version request from {0}.").format(

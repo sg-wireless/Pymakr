@@ -76,7 +76,7 @@ def main():
          "use the given directory to store the settings files"),
     ]
     appinfo = AppInfo.makeAppInfo(sys.argv,
-                                  "Eric6 TR Previewer",
+                                  "Pymakr TR Previewer",
                                   "file",
                                   "TR file previewer",
                                   options)

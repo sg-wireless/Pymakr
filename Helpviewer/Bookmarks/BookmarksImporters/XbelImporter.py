@@ -34,11 +34,11 @@ def getImporterInfo(id):
         bookmarksFile = BookmarksManager.getFileName()
         return (
             UI.PixmapCache.getPixmap("ericWeb48.png"),
-            "eric6 Web Browser",
+            "Pymakr Web Browser",
             os.path.basename(bookmarksFile),
             QCoreApplication.translate(
                 "XbelImporter",
-                """eric6 Web Browser stores its bookmarks in the"""
+                """Pymakr Web Browser stores its bookmarks in the"""
                 """ <b>{0}</b> XML file. This file is usually located in"""
             ).format(os.path.basename(bookmarksFile)),
             QCoreApplication.translate(
@@ -147,7 +147,7 @@ class XbelImporter(BookmarksImporter):
         from ..BookmarkNode import BookmarkNode
         importRootNode.setType(BookmarkNode.Folder)
         if self._id == "e5browser":
-            importRootNode.title = self.tr("eric6 Web Browser Import")
+            importRootNode.title = self.tr("Pymakr Web Browser Import")
         elif self._id == "konqueror":
             importRootNode.title = self.tr("Konqueror Import")
         elif self._id == "xbel":

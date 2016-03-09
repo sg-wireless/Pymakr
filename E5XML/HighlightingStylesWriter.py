@@ -47,7 +47,7 @@ class HighlightingStylesWriter(XMLStreamWriterBase):
                 highlightingStylesFileFormatVersion))
         
         # add some generation comments
-        self.writeComment(" Eric6 highlighting styles ")
+        self.writeComment(" Pymakr highlighting styles ")
         self.writeComment(
             " Saved: {0}".format(time.strftime('%Y-%m-%d, %H:%M:%S')))
         self.writeComment(" Author: {0} ".format(self.email))

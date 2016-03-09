@@ -190,8 +190,8 @@ class SpeedDial(QObject):
             self.pagesChanged.emit()
         else:
             allPages = \
-                'url:"http://eric-ide.python-projects.org/"|'\
-                'title:"Eric Web Site";'\
+                'url:"http://www.pycom.io/solutions/pymakr/"|'\
+                'title:"Pymakr Web Site";'\
                 'url:"http://www.riverbankcomputing.com/"|'\
                 'title:"PyQt Web Site";'\
                 'url:"http://www.qt.io/"|title:"Qt Web Site";'\

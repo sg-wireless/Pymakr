@@ -68,7 +68,7 @@ def main():
     ]
     appinfo = AppInfo.makeAppInfo(
         sys.argv,
-        "Eric6 QRegularExpression",
+        "Pymakr QRegularExpression",
         "",
         "Regexp editor for Qt's QRegularExpression class",
         options)

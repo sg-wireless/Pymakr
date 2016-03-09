@@ -46,9 +46,9 @@ doCompile = True
 includePythonVariant = False
 cfg = {}
 progLanguages = ["Python", "Ruby", "QSS"]
-sourceDir = "eric"
+sourceDir = "pymakr"
 configName = 'eric6config.py'
-defaultMacAppBundleName = "eric6.app"
+defaultMacAppBundleName = "pymakr.app"
 defaultMacAppBundlePath = "/Applications"
 defaultMacPythonExe = "{0}/Resources/Python.app/Contents/MacOS/Python".format(
     sys.exec_prefix)
@@ -153,7 +153,7 @@ def usage(rcode=2):
     print("    --noapis   don't install API files")
     print("    -b dir     where the binaries will be installed")
     print("               (default: {0})".format(platBinDir))
-    print("    -d dir     where eric6 python files will be installed")
+    print("    -d dir     where Pymakr python files will be installed")
     print("               (default: {0})".format(modDir))
     print("    -f file    configuration file naming the various installation"
           " paths")
@@ -188,7 +188,7 @@ def usage(rcode=2):
     print("'ericTranslationsDir', 'ericTemplatesDir', 'ericCodeTemplatesDir',")
     print("'ericOthersDir','bindir', 'mdir' and 'apidir.")
     print("These define the directories for the installation of the various"
-          " parts of eric6.")
+          " parts of Pymakr.")
 
     exit(rcode)
 
@@ -500,7 +500,7 @@ def cleanUp():
     
     # Remove the menu entry for Linux systems
     if sys.platform.startswith("linux") and os.getuid() == 0:
-        for name in ["/usr/share/pixmaps/pymakr.png",
+        for name in ["/usr/share/pixmaps/pymakr_small.png",
                      "/usr/share/pixmaps/ericWeb.png"]:
             if os.path.exists(name):
                 os.remove(name)
@@ -508,9 +508,9 @@ def cleanUp():
             marker = PythonMarkers[sys.version_info.major]
         else:
             marker = ""
-        for name in ["/usr/share/applications/eric6" + marker + ".desktop",
-                     "/usr/share/appdata/eric6" + marker + ".appdata.xml",
-                     "/usr/share/applications/eric6_webbrowser" + marker +
+        for name in ["/usr/share/applications/pymakr" + marker + ".desktop",
+                     "/usr/share/appdata/pymakr" + marker + ".appdata.xml",
+                     "/usr/share/applications/pymakr_webbrowser" + marker +
                      ".desktop"]:
             if os.path.exists(name):
                 os.remove(name)
@@ -526,7 +526,7 @@ def cleanUp():
         "eric6_tray", "eric6_editor",
         "eric6_plugininstall", "eric6_pluginuninstall",
         "eric6_pluginrepository", "eric6_sqlbrowser",
-        "eric6_webbrowser", "eric6_iconeditor",
+        "pymakr_webbrowser", "eric6_iconeditor",
         "eric6_snap",
     ]
     if includePythonVariant:
@@ -636,7 +636,7 @@ def installEric():
                  "eric6_qregexp", "eric6_qregularexpression", "eric6_re",
                  "eric6_snap", "eric6_sqlbrowser", "eric6_tray",
                  "eric6_trpreviewer", "eric6_uipreviewer", "eric6_unittest",
-                 "eric6_webbrowser", "eric6"]:
+                 "pymakr_webbrowser", "pymakr"]:
         wnames.append(createPyWrapper(cfg['ericDir'], name))
     
     # set install prefix, if not None
@@ -798,7 +798,7 @@ def installEric():
                 os.makedirs(dst)
             shutilCopy(
                 os.path.join(sourceDir, "icons", "default", "pymakr.png"),
-                os.path.join(dst, "eric" + marker + ".png"))
+                os.path.join(dst, "pymakr" + marker + ".png"))
             shutilCopy(
                 os.path.join(sourceDir, "icons", "default", "ericWeb48.png"),
                 os.path.join(dst, "ericWeb" + marker + ".png"))
@@ -806,40 +806,40 @@ def installEric():
                 os.path.join(distDir, "usr/share/applications"))
             if not os.path.exists(dst):
                 os.makedirs(dst)
-            copyDesktopFile(os.path.join(sourceDir, "eric6.desktop"),
-                            os.path.join(dst, "eric6" + marker + ".desktop"),
+            copyDesktopFile(os.path.join(sourceDir, "pymakr.desktop"),
+                            os.path.join(dst, "pymakr" + marker + ".desktop"),
                             marker)
             copyDesktopFile(
-                os.path.join(sourceDir, "eric6_webbrowser.desktop"),
-                os.path.join(dst, "eric6_webbrowser" + marker + ".desktop"),
+                os.path.join(sourceDir, "pymakr_webbrowser.desktop"),
+                os.path.join(dst, "pymakr_webbrowser" + marker + ".desktop"),
                 marker)
             dst = os.path.normpath(
                 os.path.join(distDir, "usr/share/appdata"))
             if not os.path.exists(dst):
                 os.makedirs(dst)
             copyDesktopFile(
-                os.path.join(sourceDir, "eric6.appdata.xml"),
-                os.path.join(dst, "eric6" + marker + ".appdata.xml"),
+                os.path.join(sourceDir, "pymakr.appdata.xml"),
+                os.path.join(dst, "pymakr" + marker + ".appdata.xml"),
                 marker)
         elif os.getuid() == 0:
             shutilCopy(os.path.join(
                 sourceDir, "icons", "default", "pymakr.png"),
-                "/usr/share/pixmaps/eric" + marker + ".png")
+                "/usr/share/pixmaps/pymakr" + marker + ".png")
             copyDesktopFile(
-                os.path.join(sourceDir, "eric6.desktop"),
-                "/usr/share/applications/eric6" + marker + ".desktop",
+                os.path.join(sourceDir, "pymakr.desktop"),
+                "/usr/share/applications/pymakr" + marker + ".desktop",
                 marker)
             if os.path.exists("/usr/share/appdata"):
                 copyDesktopFile(
-                    os.path.join(sourceDir, "eric6.appdata.xml"),
-                    "/usr/share/appdata/eric6" + marker + ".appdata.xml",
+                    os.path.join(sourceDir, "pymakr.appdata.xml"),
+                    "/usr/share/appdata/pymakr" + marker + ".appdata.xml",
                     marker)
             shutilCopy(os.path.join(
                 sourceDir, "icons", "default", "ericWeb48.png"),
                 "/usr/share/pixmaps/ericWeb" + marker + ".png")
             copyDesktopFile(
-                os.path.join(sourceDir, "eric6_webbrowser.desktop"),
-                "/usr/share/applications/eric6_webbrowser" + marker +
+                os.path.join(sourceDir, "pymakr_webbrowser.desktop"),
+                "/usr/share/applications/pymakr_webbrowser" + marker +
                 ".desktop",
                 marker)
     
@@ -873,12 +873,12 @@ def createMacAppBundle(pydir):
     os.makedirs(dirs["icns"])
     
     if macPythonExe == defaultMacPythonExe:
-        starter = os.path.join(dirs["exe"], "eric")
+        starter = os.path.join(dirs["exe"], "pymakr")
         os.symlink(macPythonExe, starter)
     else:
         starter = "python{0}".format(sys.version_info.major)
     
-    wname = os.path.join(dirs["exe"], "eric6")
+    wname = os.path.join(dirs["exe"], "pymakr")
     
     # determine entry for DYLD_FRAMEWORK_PATH
     dyldLine = ""
@@ -908,7 +908,7 @@ def createMacAppBundle(pydir):
                '''{0}'''
                '''{1}'''
                '''exec "{2}" "{3}/{4}.py" "$@"\n'''
-               .format(pathLine, dyldLine, starter, pydir, "eric6"))
+               .format(pathLine, dyldLine, starter, pydir, "pymakr"))
     copyToFile(wname, wrapper)
     os.chmod(wname, 0o755)
     
@@ -923,7 +923,7 @@ def createMacAppBundle(pydir):
         '''<plist version="1.0">\n'''
         '''<dict>\n'''
         '''    <key>CFBundleExecutable</key>\n'''
-        '''    <string>eric6</string>\n'''
+        '''    <string>Pymakr</string>\n'''
         '''    <key>CFBundleIconFile</key>\n'''
         '''    <string>eric.icns</string>\n'''
         '''    <key>CFBundleInfoDictionaryVersion</key>\n'''
@@ -939,7 +939,7 @@ def createMacAppBundle(pydir):
         '''    <key>CFBundleVersion</key>\n'''
         '''    <string>1.0</string>\n'''
         '''    <key>CFBundleIdentifier</key>\n'''
-        '''    <string>org.python-projects.eric-ide</string>\n'''
+        '''    <string>org.pycom.pymakr</string>\n'''
         '''</dict>\n'''
         '''</plist>\n'''.format(macAppBundleName.replace(".app", "")))
 
@@ -950,7 +950,7 @@ def createInstallConfig():
     """
     global modDir, platBinDir, cfg, apisDir, installApis
         
-    ericdir = os.path.join(modDir, "eric6")
+    ericdir = os.path.join(modDir, "pymakr")
     cfg = {
         'ericDir': ericdir,
         'ericPixDir': os.path.join(ericdir, "pixmaps"),
@@ -999,7 +999,7 @@ def createConfig():
     config = (
         """# -*- coding: utf-8 -*-\n"""
         """#\n"""
-        """# This module contains the configuration of the individual eric6"""
+        """# This module contains the configuration of the individual Pymakr"""
         """ installation\n"""
         """#\n"""
         """\n"""
@@ -1067,7 +1067,7 @@ def doDependancyChecks():
         print('Sorry, you must have Python 3.3.0 or higher.')
         exit(5)
     if sys.version_info > (3, 9, 9):
-        print('Sorry, eric6 requires Python 3 or Python 2 for running.')
+        print('Sorry, Pymakr requires Python 3 or Python 2 for running.')
         exit(5)
     
     try:
@@ -1184,7 +1184,7 @@ def doDependancyChecks():
             for vers in BlackLists["sip"] + PlatformBlackLists["sip"]:
                 if vers == sipVersion:
                     print(
-                        'Sorry, sip version {0} is not compatible with eric6.'
+                        'Sorry, sip version {0} is not compatible with Pymakr.'
                         .format(vers))
                     print('Please install another version.')
                     exit(3)
@@ -1216,7 +1216,7 @@ def doDependancyChecks():
         # check for blacklisted versions
         for vers in BlackLists[pyqtVariant] + PlatformBlackLists[pyqtVariant]:
             if vers == pyqtVersion:
-                print('Sorry, PyQt version {0} is not compatible with eric6.'
+                print('Sorry, PyQt version {0} is not compatible with Pymakr.'
                       .format(vers))
                 print('Please install another version.')
                 exit(4)
@@ -1246,7 +1246,7 @@ def doDependancyChecks():
             if vers == scintillaVersion:
                 print(
                     'Sorry, QScintilla2 version {0} is not compatible with'
-                    ' eric6.'.format(vers))
+                    ' Pymakr.'.format(vers))
                 print('Please install another version.')
                 exit(5)
     
@@ -1329,7 +1329,7 @@ def main(argv):
     global pyqtVariant, pyqtOverride, installApis
     
     if sys.version_info < (2, 7, 0) or sys.version_info > (3, 9, 9):
-        print('Sorry, eric6 requires at least Python 2.7 or '
+        print('Sorry, Pymakr requires at least Python 2.7 or '
               'Python 3 for running.')
         exit(5)
     
@@ -1482,7 +1482,7 @@ def main(argv):
             py_compile.compile(configName,
                                dfile=os.path.join(modDir, "eric6config.py"))
         sys.stdout = sys.__stdout__
-    print("\nInstalling eric6 ...")
+    print("\nInstalling Pymakr ...")
     res = installEric()
     
     # do some cleanup
@@ -1519,5 +1519,5 @@ if __name__ == "__main__":
     except:
         print("""An internal error occured.  Please report all the output"""
               """ of the program,\nincluding the following traceback, to"""
-              """ eric-bugs@eric-ide.python-projects.org.\n""")
+              """ support@pycom.io.\n""")
         raise

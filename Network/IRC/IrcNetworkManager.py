@@ -30,9 +30,9 @@ class IrcIdentity(object):
     DefaultAwayMessage = QCoreApplication.translate(
         "IrcIdentity", "Gone away for now.")
     DefaultQuitMessage = QCoreApplication.translate(
-        "IrcIdentity", "IRC for eric6 IDE")
+        "IrcIdentity", "IRC for Pymakr")
     DefaultPartMessage = QCoreApplication.translate(
-        "IrcIdentity", "IRC for eric6 IDE")
+        "IrcIdentity", "IRC for Pymakr")
     
     def __init__(self, name):
         """
@@ -274,7 +274,7 @@ class IrcIdentity(object):
         userName = Utilities.getUserName()
         realName = Utilities.getRealName()
         if not realName:
-            realName = "eric IDE chat"
+            realName = "Pymakr chat"
         identity = IrcIdentity(IrcIdentity.DefaultIdentityName)
         identity.setNickNames([userName, userName + "_", userName + "__"])
         identity.setRealName(realName)

@@ -1596,7 +1596,7 @@ class DebugUI(QObject):
                 if runProject and self.project.getProjectType() in [
                         "E6Plugin"]:
                     argv = '--plugin="{0}" {1}'.format(fn, argv)
-                    fn = os.path.join(getConfig('ericDir'), "eric6.py")
+                    fn = os.path.join(getConfig('ericDir'), "pymakr.py")
                 
                 self.debugViewer.initCallStackViewer(runProject)
                 
@@ -1715,7 +1715,7 @@ class DebugUI(QObject):
                 if runProject and self.project.getProjectType() in [
                         "E6Plugin"]:
                     argv = '--plugin="{0}" {1}'.format(fn, argv)
-                    fn = os.path.join(getConfig('ericDir'), "eric6.py")
+                    fn = os.path.join(getConfig('ericDir'), "pymakr.py")
                 
                 self.debugViewer.initCallStackViewer(runProject)
                 
@@ -1837,7 +1837,7 @@ class DebugUI(QObject):
                 if runProject and self.project.getProjectType() in [
                         "E6Plugin"]:
                     argv = '--plugin="{0}" {1}'.format(fn, argv)
-                    fn = os.path.join(getConfig('ericDir'), "eric6.py")
+                    fn = os.path.join(getConfig('ericDir'), "pymakr.py")
                 
                 self.debugViewer.initCallStackViewer(runProject)
                 
@@ -1966,7 +1966,7 @@ class DebugUI(QObject):
                 if debugProject and self.project.getProjectType() in [
                         "E6Plugin"]:
                     argv = '--plugin="{0}" {1}'.format(fn, argv)
-                    fn = os.path.join(getConfig('ericDir'), "eric6.py")
+                    fn = os.path.join(getConfig('ericDir'), "pymakr.py")
                     tracePython = True  # override flag because it must be true
                 
                 self.debugViewer.initCallStackViewer(debugProject)
@@ -2029,7 +2029,7 @@ class DebugUI(QObject):
             if forProject and self.project.getProjectType() in [
                     "E6Plugin"]:
                 argv = '--plugin="{0}" {1}'.format(fn, argv)
-                fn = os.path.join(getConfig('ericDir'), "eric6.py")
+                fn = os.path.join(getConfig('ericDir'), "pymakr.py")
             
             self.debugViewer.initCallStackViewer(forProject)
             

@@ -70,7 +70,7 @@ documents describing certain aspects of eric. To start the unit test module in
 a standalone variant simply call up eric6_unittest. This will show the same
 dialog (though with a little bit less functionality) as if started from within
 eric6. The web browser can be started as a standalone program by executing the
-eric6_webbrowser script.
+pymakr_webbrowser script.
 
 Please note, the first time you start eric6 it will recognize, that it
 hasn't been configured yet and will show the configuration dialog.
@@ -82,7 +82,7 @@ However, every configuration option has a meaningful default value.
 If you want to run eric6 from within the source tree you have to execute
 the ``compileUiFiles.py`` script once after a fresh checkout from the source
 repository or when new dialogs have been added. Thereafter just execute
-the ``eric6.py`` script.
+the ``pymakr.py`` script.
 
 5. Tray starter
 ---------------

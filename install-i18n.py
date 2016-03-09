@@ -19,7 +19,7 @@ import glob
 try:
     from eric6config import getConfig
 except ImportError:
-    print("The eric6 IDE doesn't seem to be installed. Aborting.")
+    print("Pymakr doesn't seem to be installed. Aborting.")
     sys.exit(1)
     
 
@@ -30,9 +30,9 @@ def getConfigDir():
     @return directory name of the config dir (string)
     """
     if sys.platform.startswith("win"):
-        cdn = "_eric6"
+        cdn = "_pymakr"
     else:
-        cdn = ".eric6"
+        cdn = ".pymakr"
         
     hp = os.path.expanduser("~")
     hp = os.path.join(hp, cdn)
@@ -123,5 +123,5 @@ if __name__ == "__main__":
     except:
         print("""An internal error occured.  Please report all the output of"""
               """ the program,\nincluding the following traceback, to"""
-              """ eric-bugs@eric-ide.python-projects.org.\n""")
+              """ support@pycom.io.\n""")
         raise

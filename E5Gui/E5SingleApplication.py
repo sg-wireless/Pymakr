@@ -22,7 +22,7 @@ import Utilities
 # define some module global stuff
 ###########################################################################
 
-SAFile = "eric6"
+SAFile = "pymakr"
 
 # define the protocol tokens
 SAOpenFile = '>OpenFile<'

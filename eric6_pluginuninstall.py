@@ -65,9 +65,9 @@ def main():
          "use the given directory to store the settings files"),
     ]
     appinfo = AppInfo.makeAppInfo(sys.argv,
-                                  "Eric6 Plugin Uninstaller",
+                                  "Pymakr Plugin Uninstaller",
                                   "",
-                                  "Plugin uninstallation utility for eric6",
+                                  "Plugin uninstallation utility for Pymakr",
                                   options)
     res = Startup.simpleAppStartup(sys.argv,
                                    appinfo,

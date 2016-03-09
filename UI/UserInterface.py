@@ -143,7 +143,7 @@ class UserInterface(E5MainWindow):
     BottomSide = 2
     RightSide = 3
     
-    ErrorLogFileName = "eric6_error.log"
+    ErrorLogFileName = "pymakr_error.log"
     
     def __init__(self, app, locale, splash, plugin, noOpenAtStartup,
                  restartArguments):
@@ -1227,10 +1227,10 @@ class UserInterface(E5MainWindow):
             QKeySequence(self.tr("Ctrl+Shift+N", "File|New Window")),
             0, self, 'new_window')
         self.newWindowAct.setStatusTip(self.tr(
-            'Open a new eric6 instance'))
+            'Open a new Pymakr instance'))
         self.newWindowAct.setWhatsThis(self.tr(
             """<b>New Window</b>"""
-            """<p>This opens a new instance of the eric6 IDE.</p>"""
+            """<p>This opens a new instance of the Pymakr IDE.</p>"""
         ))
         self.newWindowAct.triggered.connect(self.__newWindow)
         self.actions.append(self.newWindowAct)
@@ -1592,7 +1592,7 @@ class UserInterface(E5MainWindow):
             'Open the helpviewer window'))
         self.helpviewerAct.setWhatsThis(self.tr(
             """<b>Helpviewer</b>"""
-            """<p>Display the eric6 web browser. This window will show"""
+            """<p>Display the Pymakr web browser. This window will show"""
             """ HTML help files and help from Qt help collections. It has"""
             """ the capability to navigate to links, set bookmarks, print"""
             """ the displayed help and some more features. You may use it to"""
@@ -1626,7 +1626,7 @@ class UserInterface(E5MainWindow):
         self.checkUpdateAct.setStatusTip(self.tr('Check for Updates'))
         self.checkUpdateAct.setWhatsThis(self.tr(
             """<b>Check for Updates...</b>"""
-            """<p>Checks the internet for updates of eric6.</p>"""
+            """<p>Checks the internet for updates of Pymakr.</p>"""
         ))
         self.checkUpdateAct.triggered.connect(self.performVersionCheck)
         self.actions.append(self.checkUpdateAct)
@@ -1639,7 +1639,7 @@ class UserInterface(E5MainWindow):
             self.tr('Show the versions available for download'))
         self.showVersionsAct.setWhatsThis(self.tr(
             """<b>Show downloadable versions...</b>"""
-            """<p>Shows the eric6 versions available for download """
+            """<p>Shows the Pymakr versions available for download """
             """from the internet.</p>"""
         ))
         self.showVersionsAct.triggered.connect(
@@ -1893,15 +1893,15 @@ class UserInterface(E5MainWindow):
         self.actions.append(self.miniEditorAct)
 
         self.webBrowserAct = E5Action(
-            self.tr('eric6 Web Browser'),
+            self.tr('Pymakr Web Browser'),
             UI.PixmapCache.getIcon("ericWeb.png"),
-            self.tr('eric6 &Web Browser...'),
+            self.tr('Pymakr &Web Browser...'),
             0, 0, self, 'web_browser')
         self.webBrowserAct.setStatusTip(self.tr(
-            'Start the eric6 Web Browser'))
+            'Start the Pymakr Web Browser'))
         self.webBrowserAct.setWhatsThis(self.tr(
-            """<b>eric6 Web Browser</b>"""
-            """<p>Browse the Internet with the eric6 Web Browser.</p>"""
+            """<b>Pymakr Web Browser</b>"""
+            """<p>Browse the Internet with the Pymakr Web Browser.</p>"""
         ))
         self.webBrowserAct.triggered.connect(self.__startWebBrowser)
         self.actions.append(self.webBrowserAct)
@@ -1912,10 +1912,10 @@ class UserInterface(E5MainWindow):
             self.tr('&Icon Editor...'),
             0, 0, self, 'icon_editor')
         self.iconEditorAct.setStatusTip(self.tr(
-            'Start the eric6 Icon Editor'))
+            'Start the Pymakr Icon Editor'))
         self.iconEditorAct.setWhatsThis(self.tr(
             """<b>Icon Editor</b>"""
-            """<p>Starts the eric6 Icon Editor for editing simple icons.</p>"""
+            """<p>Starts the Pymakr Icon Editor for editing simple icons.</p>"""
         ))
         self.iconEditorAct.triggered.connect(self.__editPixmap)
         self.actions.append(self.iconEditorAct)
@@ -2002,7 +2002,7 @@ class UserInterface(E5MainWindow):
         self.showExternalToolsAct.setWhatsThis(self.tr(
             """<b>Show external tools</b>"""
             """<p>Opens a dialog to show the path and versions of all"""
-            """ extenal tools used by eric6.</p>"""
+            """ extenal tools used by Pymakr.</p>"""
         ))
         self.showExternalToolsAct.triggered.connect(
             self.__showExternalTools)
@@ -2232,7 +2232,7 @@ class UserInterface(E5MainWindow):
         self.qt4DocAct.setWhatsThis(self.tr(
             """<b>Qt4 Documentation</b>"""
             """<p>Display the Qt4 Documentation. Dependent upon your"""
-            """ settings, this will either show the help in Eric's internal"""
+            """ settings, this will either show the help in Pymakr's internal"""
             """ help viewer, or execute a web browser or Qt Assistant. </p>"""
         ))
         self.qt4DocAct.triggered.connect(self.__showQt4Doc)
@@ -2246,7 +2246,7 @@ class UserInterface(E5MainWindow):
         self.qt5DocAct.setWhatsThis(self.tr(
             """<b>Qt5 Documentation</b>"""
             """<p>Display the Qt5 Documentation. Dependent upon your"""
-            """ settings, this will either show the help in Eric's internal"""
+            """ settings, this will either show the help in Pymakr's internal"""
             """ help viewer, or execute a web browser or Qt Assistant. </p>"""
         ))
         self.qt5DocAct.triggered.connect(self.__showQt5Doc)
@@ -2262,7 +2262,7 @@ class UserInterface(E5MainWindow):
             self.pyqt4DocAct.setWhatsThis(self.tr(
                 """<b>PyQt4 Documentation</b>"""
                 """<p>Display the PyQt4 Documentation. Dependent upon your"""
-                """ settings, this will either show the help in Eric's"""
+                """ settings, this will either show the help in Pymakr's"""
                 """ internal help viewer, or execute a web browser or"""
                 """ Qt Assistant. </p>"""
             ))
@@ -2282,7 +2282,7 @@ class UserInterface(E5MainWindow):
             self.pyqt5DocAct.setWhatsThis(self.tr(
                 """<b>PyQt5 Documentation</b>"""
                 """<p>Display the PyQt5 Documentation. Dependent upon your"""
-                """ settings, this will either show the help in Eric's"""
+                """ settings, this will either show the help in Pymakr's"""
                 """ internal help viewer, or execute a web browser or"""
                 """ Qt Assistant. </p>"""
             ))
@@ -2339,16 +2339,16 @@ class UserInterface(E5MainWindow):
         Private slot to initialize the action to show the eric6 documentation.
         """
         self.ericDocAct = E5Action(
-            self.tr("Eric API Documentation"),
-            self.tr('&Eric API Documentation'),
+            self.tr("Pymakr API Documentation"),
+            self.tr('&Pymakr API Documentation'),
             0, 0, self, 'eric_documentation')
         self.ericDocAct.setStatusTip(self.tr(
-            "Open Eric API Documentation"))
+            "Open Pymakr API Documentation"))
         self.ericDocAct.setWhatsThis(self.tr(
-            """<b>Eric API Documentation</b>"""
-            """<p>Display the Eric API documentation. The location for the"""
+            """<b>Pymakr API Documentation</b>"""
+            """<p>Display the Pymakr API documentation. The location for the"""
             """ documentation is the Documentation/Source subdirectory of"""
-            """ the eric6 installation directory.</p>"""
+            """ the Pymakr installation directory.</p>"""
         ))
         self.ericDocAct.triggered.connect(self.__showEricDoc)
         self.actions.append(self.ericDocAct)
@@ -2368,7 +2368,7 @@ class UserInterface(E5MainWindow):
             self.pysideDocAct.setWhatsThis(self.tr(
                 """<b>PySide Documentation</b>"""
                 """<p>Display the PySide Documentation. Dependent upon your"""
-                """ settings, this will either show the help in Eric's"""
+                """ settings, this will either show the help in Pymakr's"""
                 """ internal help viewer, or execute a web browser or"""
                 """ Qt Assistant. </p>"""
             ))
@@ -3025,7 +3025,7 @@ class UserInterface(E5MainWindow):
             address = FeatureAddress
         else:
             address = BugAddress
-        subject = "[eric6] "
+        subject = "[pymakr] "
         if attachFile is not None:
             f = open(attachFile, "r", encoding="utf-8")
             body = f.read()
@@ -3284,7 +3284,7 @@ class UserInterface(E5MainWindow):
         if res and self.__shutdown():
             e5App().closeAllWindows()
             program = sys.executable
-            eric6 = os.path.join(getConfig("ericDir"), "eric6.py")
+            eric6 = os.path.join(getConfig("ericDir"), "pymakr.py")
             args = [eric6]
             args.append("--start-session")
             args.extend(self.__restartArgs)
@@ -3297,7 +3297,7 @@ class UserInterface(E5MainWindow):
         if not Preferences.getUI("SingleApplicationMode"):
             # start eric6 without any arguments
             program = sys.executable
-            eric6 = os.path.join(getConfig("ericDir"), "eric6.py")
+            eric6 = os.path.join(getConfig("ericDir"), "pymakr.py")
             args = [eric6]
             QProcess.startDetached(program, args)
         
@@ -4171,7 +4171,7 @@ class UserInterface(E5MainWindow):
             E5MessageBox.information(
                 self,
                 self.tr("Qt 3 support"),
-                self.tr("""Qt v.3 is not supported by eric6."""))
+                self.tr("""Qt v.3 is not supported by Pymakr."""))
             return
 
         args = []
@@ -4236,7 +4236,7 @@ class UserInterface(E5MainWindow):
             E5MessageBox.information(
                 self,
                 self.tr("Qt 3 support"),
-                self.tr("""Qt v.3 is not supported by eric6."""))
+                self.tr("""Qt v.3 is not supported by Pymakr."""))
             return
 
         args = []
@@ -4307,7 +4307,7 @@ class UserInterface(E5MainWindow):
             E5MessageBox.information(
                 self,
                 self.tr("Qt 3 support"),
-                self.tr("""Qt v.3 is not supported by eric6."""))
+                self.tr("""Qt v.3 is not supported by Pymakr."""))
             return
 
         args = []
@@ -6069,7 +6069,7 @@ class UserInterface(E5MainWindow):
                         self,
                         self.tr("Update available"),
                         self.tr(
-                            """The update to <b>{0}</b> of eric6 is"""
+                            """The update to <b>{0}</b> of Pymakr is"""
                             """ available at <b>{1}</b>. Would you like to"""
                             """ get it?""")
                         .format(versions[2], versions[3]),
@@ -6080,7 +6080,7 @@ class UserInterface(E5MainWindow):
                         self,
                         self.tr("Update available"),
                         self.tr(
-                            """The update to <b>{0}</b> of eric6 is"""
+                            """The update to <b>{0}</b> of Pymakr is"""
                             """ available at <b>{1}</b>. Would you like to"""
                             """ get it?""")
                         .format(versions[0], versions[1]),
@@ -6090,10 +6090,10 @@ class UserInterface(E5MainWindow):
                     if self.manualUpdatesCheck:
                         E5MessageBox.information(
                             self,
-                            self.tr("Eric6 is up to date"),
+                            self.tr("Pymakr is up to date"),
                             self.tr(
                                 """You are using the latest version of"""
-                                """ eric6"""))
+                                """ Pymakr"""))
             else:
                 # check release version
                 if versions[0] > Version:
@@ -6101,7 +6101,7 @@ class UserInterface(E5MainWindow):
                         self,
                         self.tr("Update available"),
                         self.tr(
-                            """The update to <b>{0}</b> of eric6 is"""
+                            """The update to <b>{0}</b> of Pymakr is"""
                             """ available at <b>{1}</b>. Would you like"""
                             """ to get it?""")
                         .format(versions[0], versions[1]),
@@ -6111,10 +6111,10 @@ class UserInterface(E5MainWindow):
                     if self.manualUpdatesCheck:
                         E5MessageBox.information(
                             self,
-                            self.tr("Eric6 is up to date"),
+                            self.tr("Pymakr is up to date"),
                             self.tr(
                                 """You are using the latest version of"""
-                                """ eric6"""))
+                                """ Pymakr"""))
         except IndexError:
             E5MessageBox.warning(
                 self,
@@ -6184,7 +6184,7 @@ class UserInterface(E5MainWindow):
             E5MessageBox.information(
                 self,
                 self.tr("First time usage"),
-                self.tr("""eric6 has not been configured yet. """
+                self.tr("""Pymakr has not been configured yet. """
                         """The configuration dialog will be started."""))
             self.showPreferences()
     

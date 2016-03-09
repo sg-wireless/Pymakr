@@ -1121,14 +1121,14 @@ class IconEditorWindow(E5MainWindow):
         file = QFile(fileName)
         if not file.exists():
             E5MessageBox.warning(
-                self, self.tr("eric6 Icon Editor"),
+                self, self.tr("Pymakr Icon Editor"),
                 self.tr("The file '{0}' does not exist.")
                 .format(fileName))
             return
         
         if not file.open(QFile.ReadOnly):
             E5MessageBox.warning(
-                self, self.tr("eric6 Icon Editor"),
+                self, self.tr("Pymakr Icon Editor"),
                 self.tr("Cannot read file '{0}:\n{1}.")
                 .format(fileName, file.errorString()))
             return
@@ -1148,7 +1148,7 @@ class IconEditorWindow(E5MainWindow):
         file = QFile(fileName)
         if not file.open(QFile.WriteOnly):
             E5MessageBox.warning(
-                self, self.tr("eric6 Icon Editor"),
+                self, self.tr("Pymakr Icon Editor"),
                 self.tr("Cannot write file '{0}:\n{1}.")
                 .format(fileName, file.errorString()))
         
@@ -1162,7 +1162,7 @@ class IconEditorWindow(E5MainWindow):
         
         if not res:
             E5MessageBox.warning(
-                self, self.tr("eric6 Icon Editor"),
+                self, self.tr("Pymakr Icon Editor"),
                 self.tr("Cannot write file '{0}:\n{1}.")
                 .format(fileName, file.errorString()))
         
@@ -1215,7 +1215,7 @@ class IconEditorWindow(E5MainWindow):
         if self.__editor.isDirty():
             ret = E5MessageBox.okToClearData(
                 self,
-                self.tr("eric6 Icon Editor"),
+                self.tr("Pymakr Icon Editor"),
                 self.tr("""The icon image has unsaved changes."""),
                 self.__saveIcon)
             if not ret:
@@ -1304,15 +1304,15 @@ class IconEditorWindow(E5MainWindow):
         Private slot to show a little About message.
         """
         E5MessageBox.about(
-            self, self.tr("About eric6 Icon Editor"),
-            self.tr("The eric6 Icon Editor is a simple editor component"
+            self, self.tr("About Pymakr Icon Editor"),
+            self.tr("The Pymakr Icon Editor is a simple editor component"
                     " to perform icon drawing tasks."))
     
     def __aboutQt(self):
         """
         Private slot to handle the About Qt dialog.
         """
-        E5MessageBox.aboutQt(self, "eric6 Icon Editor")
+        E5MessageBox.aboutQt(self, "Pymakr Icon Editor")
     
     def __whatsThis(self):
         """

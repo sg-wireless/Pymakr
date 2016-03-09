@@ -281,7 +281,7 @@ class VcsProjectHelper(QObject):
                             self.tr("New project from repository"),
                             self.tr(
                                 "The project retrieved from the repository"
-                                " does not contain an eric project file"
+                                " does not contain a Pymakr project file"
                                 " (*.e4p). Create it?"),
                             yesDefault=True)
                         if res:

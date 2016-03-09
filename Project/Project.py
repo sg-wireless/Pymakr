@@ -268,7 +268,7 @@ class Project(QObject):
         self.__projectTypes["Qt4C"] = self.tr("PyQt4 Console")
         self.__projectTypes["PyQt5"] = self.tr("PyQt5 GUI")
         self.__projectTypes["PyQt5C"] = self.tr("PyQt5 Console")
-        self.__projectTypes["E6Plugin"] = self.tr("Eric6 Plugin")
+        self.__projectTypes["E6Plugin"] = self.tr("Pymakr Plugin")
         self.__projectTypes["Console"] = self.tr("Console")
         self.__projectTypes["Other"] = self.tr("Other")
         
@@ -3804,11 +3804,11 @@ class Project(QObject):
             self.tr('Create &Package List'), 0, 0,
             self.pluginGrp, 'project_plugin_pkglist')
         self.pluginPkgListAct.setStatusTip(
-            self.tr('Create an initial PKGLIST file for an eric6 plugin.'))
+            self.tr('Create an initial PKGLIST file for a Pymakr plugin.'))
         self.pluginPkgListAct.setWhatsThis(self.tr(
             """<b>Create Package List</b>"""
-            """<p>This creates an initial list of files to include in an"""
-            """ eric6 plugin archive. The list is created from the project"""
+            """<p>This creates an initial list of files to include in a"""
+            """ Pymakr plugin archive. The list is created from the project"""
             """ file.</p>"""
         ))
         self.pluginPkgListAct.triggered.connect(self.__pluginCreatePkgList)
@@ -3820,10 +3820,10 @@ class Project(QObject):
             self.tr('Create Plugin &Archive'), 0, 0,
             self.pluginGrp, 'project_plugin_archive')
         self.pluginArchiveAct.setStatusTip(
-            self.tr('Create an eric6 plugin archive file.'))
+            self.tr('Create a Pymakr plugin archive file.'))
         self.pluginArchiveAct.setWhatsThis(self.tr(
             """<b>Create Plugin Archive</b>"""
-            """<p>This creates an eric6 plugin archive file using the list"""
+            """<p>This creates a Pymakr plugin archive file using the list"""
             """ of files given in the PKGLIST file. The archive name is"""
             """ built from the main script name.</p>"""
         ))
@@ -3836,10 +3836,10 @@ class Project(QObject):
             self.tr('Create Plugin Archive (&Snapshot)'), 0, 0,
             self.pluginGrp, 'project_plugin_sarchive')
         self.pluginSArchiveAct.setStatusTip(self.tr(
-            'Create an eric6 plugin archive file (snapshot release).'))
+            'Create a Pymakr plugin archive file (snapshot release).'))
         self.pluginSArchiveAct.setWhatsThis(self.tr(
             """<b>Create Plugin Archive (Snapshot)</b>"""
-            """<p>This creates an eric6 plugin archive file using the list"""
+            """<p>This creates a Pymakr plugin archive file using the list"""
             """ of files given in the PKGLIST file. The archive name is"""
             """ built from the main script name. The version entry of the"""
             """ main script is modified to reflect a snapshot release.</p>"""
@@ -4783,7 +4783,7 @@ class Project(QObject):
                 self.ui,
                 self.tr("Create Plugin Archive"),
                 self.tr(
-                    """<p>The eric6 plugin archive file <b>{0}</b> could """
+                    """<p>The Pymakr plugin archive file <b>{0}</b> could """
                     """not be created.</p>"""
                     """<p>Reason: {1}</p>""").format(archive, str(why)))
             return
@@ -4824,7 +4824,7 @@ class Project(QObject):
                 UI.PixmapCache.getPixmap("pluginArchive48.png"),
                 self.tr("Create Plugin Archive"),
                 self.tr(
-                    """<p>The eric6 plugin archive file <b>{0}</b> was """
+                    """<p>The Pymakr plugin archive file <b>{0}</b> was """
                     """created successfully.</p>""")
                 .format(os.path.basename(archive)))
         else:
@@ -4832,7 +4832,7 @@ class Project(QObject):
                 self.ui,
                 self.tr("Create Plugin Archive"),
                 self.tr(
-                    """<p>The eric6 plugin archive file <b>{0}</b> was """
+                    """<p>The Pymakr plugin archive file <b>{0}</b> was """
                     """created successfully.</p>""").format(archive))
     
     def __pluginCreateSnapshotArchive(self):

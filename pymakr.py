@@ -56,7 +56,7 @@ except ImportError:
         except ImportError:
             sys.exit(100)
     messagebox.showerror(
-        "eric6 Error",
+        "Pymakr Error",
         "PyQt could not be imported. Please make sure"
         " it is installed and accessible.")
     sys.exit(100)
@@ -122,7 +122,7 @@ def handleSingleApplication(ddindex):
             client.processArgs(sys.argv[1:])
         sys.exit(0)
     elif res < 0:
-        print("eric6: {0}".format(client.errstr()))
+        print("Pymakr: {0}".format(client.errstr()))
         sys.exit(res)
 
 
@@ -140,7 +140,7 @@ def excepthook(excType, excValue, tracebackobj):
     import Globals
     
     separator = '-' * 80
-    logFile = os.path.join(Globals.getConfigDir(), "eric6_error.log")
+    logFile = os.path.join(Globals.getConfigDir(), "pymakr_error.log")
     notice = \
         """An unhandled exception occurred. Please report the problem\n"""\
         """using the error reporting dialog or via email to <{0}>.\n"""\
@@ -246,7 +246,7 @@ def main():
          "(everything after that is considered arguments for this program)")
     ]
     appinfo = AppInfo.makeAppInfo(sys.argv,
-                                  "Eric6",
+                                  "Pymakr",
                                   "[project | files... [--] [debug-options]]",
                                   "A Python IDE",
                                   options)

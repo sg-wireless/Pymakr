@@ -74,9 +74,9 @@ def main():
         ("", "name of file to edit")
     ]
     appinfo = AppInfo.makeAppInfo(sys.argv,
-                                  "Eric6 Editor",
+                                  "Pymakr Editor",
                                   "",
-                                  "Simplified version of the eric6 editor",
+                                  "Simplified version of the Pymakr editor",
                                   options)
     res = Startup.simpleAppStartup(sys.argv,
                                    appinfo,

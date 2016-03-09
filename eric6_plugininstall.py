@@ -66,9 +66,9 @@ def main():
         ("", "names of plugins to install")
     ]
     appinfo = AppInfo.makeAppInfo(sys.argv,
-                                  "Eric6 Plugin Installer",
+                                  "Pymakr Plugin Installer",
                                   "",
-                                  "Plugin installation utility for eric6",
+                                  "Plugin installation utility for Pymakr",
                                   options)
     res = Startup.simpleAppStartup(sys.argv,
                                    appinfo,

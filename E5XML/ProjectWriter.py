@@ -47,7 +47,7 @@ class ProjectWriter(XMLStreamWriterBase):
         
         # add some generation comments
         self.writeComment(
-            " eric project file for project {0} ".format(self.name))
+            " Pymakr project file for project {0} ".format(self.name))
         if Preferences.getProject("XMLTimestamp"):
             self.writeComment(
                 " Saved: {0} ".format(time.strftime('%Y-%m-%d, %H:%M:%S')))

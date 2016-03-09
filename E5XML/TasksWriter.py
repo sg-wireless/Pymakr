@@ -49,12 +49,12 @@ class TasksWriter(XMLStreamWriterBase):
         # add some generation comments
         if self.forProject:
             self.writeComment(
-                " eric6 tasks file for project {0} ".format(self.name))
+                " Pymakr tasks file for project {0} ".format(self.name))
             if Preferences.getProject("XMLTimestamp"):
                 self.writeComment(" Saved: {0} ".format(
                     time.strftime('%Y-%m-%d, %H:%M:%S')))
         else:
-            self.writeComment(" eric6 tasks file ")
+            self.writeComment(" Pymakr tasks file ")
             self.writeComment(
                 " Saved: {0} ".format(time.strftime('%Y-%m-%d, %H:%M:%S')))
         

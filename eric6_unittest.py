@@ -70,7 +70,7 @@ def main():
          "use the given directory to store the settings files"),
     ]
     appinfo = AppInfo.makeAppInfo(sys.argv,
-                                  "Eric6 Unittest",
+                                  "Pymakr Unittest",
                                   "file",
                                   "Graphical unit test application",
                                   options)

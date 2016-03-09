@@ -109,7 +109,7 @@ class HelpWindow(E5MainWindow):
         """
         super(HelpWindow, self).__init__(parent)
         self.setObjectName(name)
-        self.setWindowTitle(self.tr("eric6 Web Browser"))
+        self.setWindowTitle(self.tr("Pymakr Web Browser"))
         
         self.fromEric = fromEric
         self.__class__._fromEric = fromEric
@@ -700,7 +700,7 @@ class HelpWindow(E5MainWindow):
         self.exitAct.setStatusTip(self.tr('Quit the eric6 Web Browser'))
         self.exitAct.setWhatsThis(self.tr(
             """<b>Quit</b>"""
-            """<p>Quit the eric6 Web Browser.</p>"""
+            """<p>Quit the Pymakr Web Browser.</p>"""
         ))
         if not self.initShortcutsOnly:
             if self.fromEric:
@@ -2079,11 +2079,11 @@ class HelpWindow(E5MainWindow):
         """
         E5MessageBox.about(
             self,
-            self.tr("eric6 Web Browser"),
+            self.tr("Pymakr Web Browser"),
             self.tr(
-                """<b>eric6 Web Browser - {0}</b>"""
-                """<p>The eric6 Web Browser is a combined help file and HTML"""
-                """ browser. It is part of the eric6 development"""
+                """<b>Pymakr Web Browser - {0}</b>"""
+                """<p>The Pymakr Web Browser is a combined help file and HTML"""
+                """ browser. It is part of the Pymakr development"""
                 """ toolset.</p>"""
             ).format(Version))
         
@@ -2091,7 +2091,7 @@ class HelpWindow(E5MainWindow):
         """
         Private slot to show info about Qt.
         """
-        E5MessageBox.aboutQt(self, self.tr("eric6 Web Browser"))
+        E5MessageBox.aboutQt(self, self.tr("Pymakr Web Browser"))
 
     def setBackwardAvailable(self, b):
         """
@@ -2892,7 +2892,7 @@ class HelpWindow(E5MainWindow):
         """
         E5MessageBox.warning(
             self,
-            self.tr("eric6 Web Browser"),
+            self.tr("Pymakr Web Browser"),
             message)
         
     def __docsInstalled(self, installed):

@@ -66,7 +66,7 @@ def main():
     ]
     appinfo = AppInfo.makeAppInfo(
         sys.argv,
-        "Eric6 Snap",
+        "Pymakr Snap",
         "",
         "Simple utility to do snapshots of the screen.",
         options)

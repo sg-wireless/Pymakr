@@ -98,10 +98,10 @@ class JavaScriptEricObject(QObject):
     # the start page
     translations = [
         QT_TRANSLATE_NOOP("JavaScriptEricObject",
-                          "Welcome to eric6 Web Browser!"),
-        QT_TRANSLATE_NOOP("JavaScriptEricObject", "eric6 Web Browser"),
+                          "Welcome to Pymakr Web Browser!"),
+        QT_TRANSLATE_NOOP("JavaScriptEricObject", "Pymakr Web Browser"),
         QT_TRANSLATE_NOOP("JavaScriptEricObject", "Search!"),
-        QT_TRANSLATE_NOOP("JavaScriptEricObject", "About eric6"),
+        QT_TRANSLATE_NOOP("JavaScriptEricObject", "About Pymakr"),
     ]
     
     def __init__(self, mw, parent=None):
@@ -912,7 +912,7 @@ class HelpBrowser(QWebView):
             if not QFileInfo(name.toLocalFile()).exists():
                 E5MessageBox.critical(
                     self,
-                    self.tr("eric6 Web Browser"),
+                    self.tr("Pymakr Web Browser"),
                     self.tr(
                         """<p>The file <b>{0}</b> does not exist.</p>""")
                     .format(name.toLocalFile()))
@@ -926,7 +926,7 @@ class HelpBrowser(QWebView):
                 if not started:
                     E5MessageBox.critical(
                         self,
-                        self.tr("eric6 Web Browser"),
+                        self.tr("Pymakr Web Browser"),
                         self.tr(
                             """<p>Could not start a viewer"""
                             """ for file <b>{0}</b>.</p>""")
@@ -937,7 +937,7 @@ class HelpBrowser(QWebView):
             if not started:
                 E5MessageBox.critical(
                     self,
-                    self.tr("eric6 Web Browser"),
+                    self.tr("Pymakr Web Browser"),
                     self.tr(
                         """<p>Could not start an application"""
                         """ for URL <b>{0}</b>.</p>""")
@@ -957,7 +957,7 @@ class HelpBrowser(QWebView):
                 if not started:
                     E5MessageBox.critical(
                         self,
-                        self.tr("eric6 Web Browser"),
+                        self.tr("Pymakr Web Browser"),
                         self.tr(
                             """<p>Could not start a viewer"""
                             """ for file <b>{0}</b>.</p>""")
@@ -2471,7 +2471,7 @@ class HelpBrowser(QWebView):
             except AttributeError:
                 E5MessageBox.critical(
                     self,
-                    self.tr("eric6 Web Browser"),
+                    self.tr("Pymakr Web Browser"),
                     self.tr(
                         """<p>Printing is not available due to a bug in"""
                         """ PyQt5. Please upgrade.</p>"""))
@@ -2517,7 +2517,7 @@ class HelpBrowser(QWebView):
         except AttributeError:
             E5MessageBox.critical(
                 self,
-                self.tr("eric6 Web Browser"),
+                self.tr("Pymakr Web Browser"),
                 self.tr(
                     """<p>Printing is not available due to a bug in PyQt5."""
                     """Please upgrade.</p>"""))
@@ -2549,7 +2549,7 @@ class HelpBrowser(QWebView):
             except AttributeError:
                 E5MessageBox.critical(
                     self,
-                    self.tr("eric6 Web Browser"),
+                    self.tr("Pymakr Web Browser"),
                     self.tr(
                         """<p>Printing is not available due to a bug in"""
                         """ PyQt5. Please upgrade.</p>"""))

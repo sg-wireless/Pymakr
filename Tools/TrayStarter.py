@@ -64,7 +64,7 @@ class TrayStarter(QSystemTrayIcon):
         
         self.activated.connect(self.__activated)
         
-        self.__menu = QMenu(self.tr("Eric6 tray starter"))
+        self.__menu = QMenu(self.tr("Pymakr tray starter"))
         
         self.recentProjectsMenu = QMenu(
             self.tr('Recent Projects'), self.__menu)
@@ -83,7 +83,7 @@ class TrayStarter(QSystemTrayIcon):
         self.recentFilesMenu.triggered.connect(self.__openRecent)
         
         act = self.__menu.addAction(
-            self.tr("Eric6 tray starter"), self.__about)
+            self.tr("Pymakr tray starter"), self.__about)
         font = act.font()
         font.setBold(True)
         act.setFont(font)
@@ -106,7 +106,7 @@ class TrayStarter(QSystemTrayIcon):
             self.tr("Unittest"), self.__startUnittest)
         self.__menu.addAction(
             UI.PixmapCache.getIcon("ericWeb.png"),
-            self.tr("eric6 Web Browser"), self.__startHelpViewer)
+            self.tr("Pymakr Web Browser"), self.__startHelpViewer)
         self.__menu.addSeparator()
         
         self.__menu.addAction(
@@ -146,10 +146,10 @@ class TrayStarter(QSystemTrayIcon):
             self.tr('Preferences'), self.__startPreferences)
         self.__menu.addAction(
             UI.PixmapCache.getIcon("erict.png"),
-            self.tr("eric6 IDE"), self.__startEric)
+            self.tr("Pymakr IDE"), self.__startEric)
         self.__menu.addAction(
             UI.PixmapCache.getIcon("editor.png"),
-            self.tr("eric6 Mini Editor"), self.__startMiniEditor)
+            self.tr("Pymakr Mini Editor"), self.__startMiniEditor)
         self.__menu.addSeparator()
         
         self.__menu.addAction(
@@ -271,7 +271,7 @@ class TrayStarter(QSystemTrayIcon):
         """
         Private slot to start the eric6 IDE.
         """
-        self.__startProc("eric6.py")
+        self.__startProc("pymakr.py")
 
     def __startPreferences(self):
         """
@@ -301,7 +301,7 @@ class TrayStarter(QSystemTrayIcon):
         """
         Private slot to start the eric6 web browser.
         """
-        self.__startProc("eric6_webbrowser.py")
+        self.__startProc("pymakr_webbrowser.py")
 
     def __startUIPreviewer(self):
         """
@@ -439,7 +439,7 @@ class TrayStarter(QSystemTrayIcon):
         filename = act.data()
         if filename:
             self.__startProc(
-                "eric6.py",
+                "pymakr.py",
                 filename)
     
     def __showPreferences(self):

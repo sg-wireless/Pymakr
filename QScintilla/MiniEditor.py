@@ -278,9 +278,9 @@ class MiniEditor(E5MainWindow):
         """
         E5MessageBox.about(
             self,
-            self.tr("About eric6 Mini Editor"),
+            self.tr("About Pymakr Mini Editor"),
             self.tr(
-                "The eric6 Mini Editor is an editor component"
+                "The Pymakr Mini Editor is an editor component"
                 " based on QScintilla. It may be used for simple"
                 " editing tasks, that don't need the power of"
                 " a full blown editor."))
@@ -289,7 +289,7 @@ class MiniEditor(E5MainWindow):
         """
         Private slot to handle the About Qt dialog.
         """
-        E5MessageBox.aboutQt(self, "eric6 Mini Editor")
+        E5MessageBox.aboutQt(self, "Pymakr Mini Editor")
     
     def __whatsThis(self):
         """
@@ -2220,7 +2220,7 @@ class MiniEditor(E5MainWindow):
         if self.__textEdit.isModified():
             ret = E5MessageBox.okToClearData(
                 self,
-                self.tr("eric6 Mini Editor"),
+                self.tr("Pymakr Mini Editor"),
                 self.tr("The document has unsaved changes."),
                 self.__save)
             return ret

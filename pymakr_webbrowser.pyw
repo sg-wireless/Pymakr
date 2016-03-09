@@ -9,6 +9,6 @@ Module implementing the Windows entry point.
 
 from __future__ import unicode_literals
 
-from eric6_webbrowser import main
+from pymakr_webbrowser import main
 
 main()

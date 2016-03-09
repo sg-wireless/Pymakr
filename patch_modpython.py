@@ -38,7 +38,7 @@ def usage(rcode=2):
     print()
     print("This script patches the file apache.py of the Mod_python"
           " distribution")
-    print("so that it will work with the eric6 debugger instead of pdb.")
+    print("so that it will work with the Pymakr debugger instead of pdb.")
     print("Please see mod_python.html for more details.")
     print()
 
@@ -112,7 +112,7 @@ def main(argv):
         s.write('    """\n')
         s.write('    Initialize the debugger and set the script name to be'
                 ' reported \n')
-        s.write('    by the debugger. This is a patch for eric6.\n')
+        s.write('    by the debugger. This is a patch for Pymakr.\n')
         s.write('    """\n')
         s.write('    if not pdb.initDebugger("standard"):\n')
         s.write('        raise ImportError("Could not initialize debugger")\n')
@@ -121,7 +121,7 @@ def main(argv):
     s.close()
     
     if ericFound:
-        print("Mod_python is already patched for eric6.")
+        print("Mod_python is already patched for Pymakr.")
         os.remove(sn)
     else:
         try:
@@ -161,5 +161,5 @@ if __name__ == "__main__":
     except:
         print("""An internal error occured.  Please report all the output of"""
               """ the program,\nincluding the following traceback, to"""
-              """ eric-bugs@die-offenbachs.de.\n""")
+              """ support@pycom.io\n""")
         raise

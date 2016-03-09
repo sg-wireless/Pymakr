@@ -74,7 +74,7 @@ def main():
         ("", "name of file to edit")
     ]
     appinfo = AppInfo.makeAppInfo(sys.argv,
-                                  "Eric6 Icon Editor",
+                                  "Pymakr Icon Editor",
                                   "",
                                   "Little tool to edit icon files.",
                                   options)

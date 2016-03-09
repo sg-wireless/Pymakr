@@ -67,5 +67,5 @@ if __name__ == "__main__":
         print(
             "\nAn internal error occured.  Please report all the output of the"
             " program, \nincluding the following traceback, to"
-            " eric-bugs@eric-ide.python-projects.org.\n")
+            " support@pycom.io.\n")
         raise

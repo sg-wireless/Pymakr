@@ -43,7 +43,7 @@ class ShortcutsWriter(XMLStreamWriterBase):
             shortcutsFileFormatVersion))
         
         # add some generation comments
-        self.writeComment(" Eric6 keyboard shortcuts ")
+        self.writeComment(" Pymakr keyboard shortcuts ")
         self.writeComment(
             " Saved: {0}".format(time.strftime('%Y-%m-%d, %H:%M:%S')))
         self.writeComment(" Author: {0} ".format(self.email))

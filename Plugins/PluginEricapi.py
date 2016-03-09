@@ -55,7 +55,7 @@ def exeDisplayData():
     data = {
         "programEntry": True,
         "header": QCoreApplication.translate(
-            "EricapiPlugin", "Eric6 API File Generator"),
+            "EricapiPlugin", "Pymakr API File Generator"),
         "exe": exe,
         "versionCommand": '--version',
         "versionStartsWith": 'eric6_',

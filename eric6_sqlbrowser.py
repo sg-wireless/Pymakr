@@ -72,7 +72,7 @@ def main():
          "use the given directory to store the settings files"),
     ]
     appinfo = AppInfo.makeAppInfo(sys.argv,
-                                  "Eric6 SQL Browser",
+                                  "Pymakr SQL Browser",
                                   "connection",
                                   "SQL browser",
                                   options)

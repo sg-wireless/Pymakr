@@ -6420,7 +6420,7 @@ class Editor(QsciScintillaCompat):
             else:
                 msg = self.tr(
                     """<p>The file <b>{0}</b> has been changed while it"""
-                    """ was opened in eric6. Reread it?</p>""")\
+                    """ was opened in Pymakr. Reread it?</p>""")\
                     .format(self.fileName)
                 yesDefault = True
                 if self.isModified():

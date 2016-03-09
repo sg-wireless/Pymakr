@@ -93,13 +93,13 @@ if(typeof GM_registerMenuCommand === "undefined") {
 // GM Resource not supported
 if(typeof GM_getResourceText === "undefined") {
     function GM_getResourceText(resourceName) {
-        throw ("eric6 Web Browser: GM Resource is not supported!");
+        throw ("Pymakr Web Browser: GM Resource is not supported!");
     }
 }
 
 if(typeof GM_getResourceURL === "undefined") {
     function GM_getResourceURL(resourceName) {
-        throw ("eric6 Web Browser: GM Resource is not supported!");
+        throw ("Pymakr Web Browser: GM Resource is not supported!");
     }
 }
 

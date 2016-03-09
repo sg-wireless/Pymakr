@@ -9366,8 +9366,8 @@ eric6.eric6_uipreviewer.createMainWidget?4(argv)
 eric6.eric6_uipreviewer.main?4()
 eric6.eric6_unittest.createMainWidget?4(argv)
 eric6.eric6_unittest.main?4()
-eric6.eric6_webbrowser.createMainWidget?4(argv)
-eric6.eric6_webbrowser.main?4()
+eric6.pymakr_webbrowser.createMainWidget?4(argv)
+eric6.pymakr_webbrowser.main?4()
 eric6.eric6config._pkg_config?8
 eric6.eric6config.getConfig?4(name)
 eric6.install-i18n.configDir?7

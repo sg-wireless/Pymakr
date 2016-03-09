@@ -93,7 +93,7 @@ def main():
          "use the given directory to store the settings files"),
     ]
     appinfo = AppInfo.makeAppInfo(sys.argv,
-                                  "eric6 Web Browser",
+                                  "Pymakr Web Browser",
                                   "file",
                                   "web browser",
                                   options)

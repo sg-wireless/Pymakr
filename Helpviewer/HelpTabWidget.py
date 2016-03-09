@@ -566,7 +566,7 @@ class HelpTabWidget(E5TabWidget):
             except AttributeError:
                 E5MessageBox.critical(
                     self,
-                    self.tr("eric6 Web Browser"),
+                    self.tr("Pymakr Web Browser"),
                     self.tr(
                         """<p>Printing is not available due to a bug in"""
                         """ PyQt5. Please upgrade.</p>"""))
@@ -612,7 +612,7 @@ class HelpTabWidget(E5TabWidget):
             except AttributeError:
                 E5MessageBox.critical(
                     self,
-                    self.tr("eric6 Web Browser"),
+                    self.tr("Pymakr Web Browser"),
                     self.tr(
                         """<p>Printing is not available due to a bug in"""
                         """ PyQt5. Please upgrade.</p>"""))
@@ -666,7 +666,7 @@ class HelpTabWidget(E5TabWidget):
         except AttributeError:
             E5MessageBox.critical(
                 self,
-                self.tr("eric6 Web Browser"),
+                self.tr("Pymakr Web Browser"),
                 self.tr(
                     """<p>Printing is not available due to a bug in PyQt5."""
                     """Please upgrade.</p>"""))

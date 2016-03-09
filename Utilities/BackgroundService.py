@@ -197,7 +197,7 @@ class BackgroundService(QTcpServer):
                 else:
                     fx, lng, fn, data = self.runningJob
                     self.services[(fx, lng)][3](fx, lng, fn, self.tr(
-                        'An error in Erics background client stopped the'
+                        'An error in Pymakr\'s background client stopped the'
                         ' service.')
                     )
                 if res != E5MessageBox.No:
@@ -402,7 +402,7 @@ class BackgroundService(QTcpServer):
             fx, lng, fn, data = self.runningJob
             if fx != 'INIT' and lng == lang:
                 self.services[(fx, lng)][3](fx, lng, fn, self.tr(
-                    'Erics background client disconnected because of an'
+                    'Pymakr\'s background client disconnected because of an'
                     ' unknown reason.')
                 )
             self.isWorking = None

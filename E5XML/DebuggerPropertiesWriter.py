@@ -50,7 +50,7 @@ class DebuggerPropertiesWriter(XMLStreamWriterBase):
         
         # add some generation comments
         self.writeComment(
-            " eric6 debugger properties file for project {0} ".format(
+            " Pymakr debugger properties file for project {0} ".format(
                 self.name))
         self.writeComment(
             " This file was generated automatically, do not edit. ")

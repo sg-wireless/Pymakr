@@ -66,7 +66,7 @@ def main():
          "use the given directory to store the settings files"),
     ]
     appinfo = AppInfo.makeAppInfo(sys.argv,
-                                  "Eric6 Diff",
+                                  "Pymakr Diff",
                                   "",
                                   "Simple graphical diff tool",
                                   options)

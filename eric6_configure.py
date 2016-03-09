@@ -71,9 +71,9 @@ def main():
          "use the given directory to store the settings files"),
     ]
     appinfo = AppInfo.makeAppInfo(sys.argv,
-                                  "Eric6 Configure",
+                                  "Pymakr Configure",
                                   "",
-                                  "Configuration editor for eric6",
+                                  "Configuration editor for Pymakr",
                                   options)
     res = Startup.simpleAppStartup(sys.argv,
                                    appinfo,

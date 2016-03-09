@@ -55,7 +55,7 @@ class SessionWriter(XMLStreamWriterBase):
         # add some generation comments
         if not isGlobal:
             self.writeComment(
-                " eric6 session file for project {0} ".format(self.name))
+                " Pymakr session file for project {0} ".format(self.name))
         self.writeComment(
             " This file was generated automatically, do not edit. ")
         if Preferences.getProject("XMLTimestamp") or isGlobal:

@@ -72,7 +72,7 @@ def main():
          "use the given directory to store the settings files"),
     ]
     appinfo = AppInfo.makeAppInfo(sys.argv,
-                                  "Eric6 Compare",
+                                  "Pymakr Compare",
                                   "",
                                   "Simple graphical compare tool",
                                   options)

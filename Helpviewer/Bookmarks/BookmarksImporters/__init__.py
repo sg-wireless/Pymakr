@@ -24,7 +24,7 @@ def getImporters():
     """
     importers = []
     importers.append(
-        (UI.PixmapCache.getIcon("ericWeb48.png"), "eric6 Web Browser",
+        (UI.PixmapCache.getIcon("ericWeb48.png"), "Pymakr Web Browser",
          "e5browser"))
     importers.append(
         (UI.PixmapCache.getIcon("firefox.png"), "Mozilla Firefox", "firefox"))

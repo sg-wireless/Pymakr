@@ -1242,8 +1242,8 @@
     <Source>__init__.py</Source>
     <Source>cleanupSource.py</Source>
     <Source>compileUiFiles.py</Source>
-    <Source>eric6.py</Source>
-    <Source>eric6.pyw</Source>
+    <Source>pymakr.py</Source>
+    <Source>pymakr.pyw</Source>
     <Source>eric6_api.py</Source>
     <Source>eric6_compare.py</Source>
     <Source>eric6_compare.pyw</Source>
@@ -1280,8 +1280,8 @@
     <Source>eric6_uipreviewer.pyw</Source>
     <Source>eric6_unittest.py</Source>
     <Source>eric6_unittest.pyw</Source>
-    <Source>eric6_webbrowser.py</Source>
-    <Source>eric6_webbrowser.pyw</Source>
+    <Source>pymakr_webbrowser.py</Source>
+    <Source>pymakr_webbrowser.pyw</Source>
     <Source>eric6config.py</Source>
     <Source>install-i18n.py</Source>
     <Source>install.py</Source>
@@ -1768,16 +1768,16 @@
     <Other>changelog</Other>
     <Other>default.e4k</Other>
     <Other>default_Mac.e4k</Other>
-    <Other>eric6.appdata.xml</Other>
-    <Other>eric6.desktop</Other>
+    <Other>pymakr.appdata.xml</Other>
+    <Other>pymakr.desktop</Other>
     <Other>eric6.e4p</Other>
-    <Other>eric6_webbrowser.desktop</Other>
+    <Other>pymakr_webbrowser.desktop</Other>
     <Other>eric6config.linux</Other>
     <Other>icons</Other>
     <Other>pixmaps</Other>
     <Other>pylint.rc</Other>
   </Others>
-  <MainScript>eric6.py</MainScript>
+  <MainScript>pymakr.py</MainScript>
   <Vcs>
     <VcsType>Mercurial</VcsType>
     <VcsOptions>

@@ -222,7 +222,7 @@ class UMLDialog(E5MainWindow):
                 self,
                 self.tr("Save Diagram"),
                 "",
-                self.tr("Eric Graphics File (*.e5g);;All Files (*)"),
+                self.tr("Pymakr Graphics File (*.e5g);;All Files (*)"),
                 "",
                 E5FileDialog.Options(E5FileDialog.DontConfirmOverwrite))
             if not fname:
@@ -280,7 +280,7 @@ class UMLDialog(E5MainWindow):
             self,
             self.tr("Load Diagram"),
             "",
-            self.tr("Eric Graphics File (*.e5g);;All Files (*)"))
+            self.tr("Pymakr Graphics File (*.e5g);;All Files (*)"))
         if not filename:
             # Cancelled by user
             return False

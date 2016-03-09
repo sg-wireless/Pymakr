@@ -71,9 +71,9 @@ def main():
          "use the given directory to store the settings files"),
     ]
     appinfo = AppInfo.makeAppInfo(sys.argv,
-                                  "Eric6 Tray",
+                                  "Pymakr Tray",
                                   "",
-                                  "Traystarter for eric6",
+                                  "Traystarter for Pymakr",
                                   options)
     res = Startup.simpleAppStartup(sys.argv,
                                    appinfo,
