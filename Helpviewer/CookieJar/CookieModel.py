@@ -136,11 +136,9 @@ class CookieModel(QAbstractTableModel):
             return False
         
         lastRow = row + count - 1
-        self.beginRemoveRows(parent, row, lastRow)
         lst = self.__cookieJar.cookies()
         del lst[row:lastRow + 1]
         self.__cookieJar.setCookies(lst)
-        self.endRemoveRows()
         
         return True
     
