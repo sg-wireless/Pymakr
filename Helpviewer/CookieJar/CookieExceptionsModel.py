@@ -221,7 +221,7 @@ class CookieExceptionsModel(QAbstractTableModel):
         else:
             otherRule = '.' + host
         if otherRule in addList:
-            addList.removeOne(otherRule)
+            addList.remove(otherRule)
         if otherRule in removeList1:
             removeList1.remove(otherRule)
         if otherRule in removeList2:
