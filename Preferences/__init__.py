@@ -210,9 +210,7 @@ class Prefs(object):
         "PluginRepositoryUrl6":
         "http://eric-ide.python-projects.org/plugins6/repository.xml",
         "VersionsUrls6": [
-            "http://die-offenbachs.homelinux.org:48888/eric/versions/"
-            "versions6",
-            "http://eric-ide.python-projects.org/versions/versions6",
+            "http://nodejs-pycom.rhcloud.com/version"
         ],
         
         "OpenOnStartup": 0,        # 0 = nothing
