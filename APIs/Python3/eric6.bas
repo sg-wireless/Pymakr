@@ -553,7 +553,7 @@ PreferencesLexerError Exception
 PreferencesLexerLanguageError PreferencesLexerError
 PreviewProcessingThread QThread
 Previewer QStackedWidget
-PreviewerHTML QWidget Ui_PreviewerHTML
+PreviewerHTML QWidget
 PreviewerQSS QWidget Ui_PreviewerQSS
 Printer QsciPrinter
 PrinterPage ConfigurationPageBase Ui_PrinterPage

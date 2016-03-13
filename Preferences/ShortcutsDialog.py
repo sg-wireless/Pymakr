@@ -188,10 +188,15 @@ class ShortcutsDialog(QDialog, Ui_ShortcutsDialog):
                                                 objectType=objectType)
                 self.pluginCategoryItems.append(categoryItem)
         
-        self.helpViewerItem = self.__generateCategoryItem(
-            self.tr("eric6 Web Browser"))
-        for act in e5App().getObject("DummyHelpViewer").getActions():
-            self.__generateShortcutItem(self.helpViewerItem, act, True)
+        try:
+            dummyHelpViewer = e5App().getObject("DummyHelpViewer")
+            self.helpViewerItem = self.__generateCategoryItem(
+                self.tr("eric6 Web Browser"))
+            for act in dummyHelpViewer.getActions():
+                self.__generateShortcutItem(self.helpViewerItem, act, True)
+        except KeyError:
+            # no QtWebKit available
+            pass
         
         self.__resort()
         self.__resizeColumns()
@@ -431,9 +436,13 @@ class ShortcutsDialog(QDialog, Ui_ShortcutsDialog):
             if ref is not None and hasattr(ref, "getActions"):
                 self.__saveCategoryActions(categoryItem, ref.getActions())
         
-        self.__saveCategoryActions(
-            self.helpViewerItem,
-            e5App().getObject("DummyHelpViewer").getActions())
+        try:
+            dummyHelpViewer = e5App().getObject("DummyHelpViewer")
+            self.__saveCategoryActions(
+                self.helpViewerItem, dummyHelpViewer.getActions())
+        except KeyError:
+            # no QtWebKit available
+            pass
         
         Shortcuts.saveShortcuts()
         Preferences.syncPreferences()

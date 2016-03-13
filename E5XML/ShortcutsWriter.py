@@ -93,9 +93,13 @@ class ShortcutsWriter(XMLStreamWriterBase):
             if hasattr(ref, "getActions"):
                 self.__writeActions(category, ref.getActions())
     
-        self.__writeActions(
-            "HelpViewer",
-            e5App().getObject("DummyHelpViewer").getActions())
+        try:
+            self.__writeActions(
+                "HelpViewer",
+                e5App().getObject("DummyHelpViewer").getActions())
+        except KeyError:
+            # no QtWebKit available
+            pass
     
         # add the main end tag
         self.writeEndElement()

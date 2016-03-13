@@ -8589,6 +8589,7 @@ eric6.UI.Previewers.PreviewerHTML.PreviewerHTML.on_previewView_linkClicked?4(url
 eric6.UI.Previewers.PreviewerHTML.PreviewerHTML.on_previewView_titleChanged?4(title)
 eric6.UI.Previewers.PreviewerHTML.PreviewerHTML.on_ssiCheckBox_clicked?4(checked)
 eric6.UI.Previewers.PreviewerHTML.PreviewerHTML.processEditor?4(editor=None)
+eric6.UI.Previewers.PreviewerHTML.PreviewerHTML.resultCallback?4(resDict=resultDict)
 eric6.UI.Previewers.PreviewerHTML.PreviewerHTML.shutdown?4()
 eric6.UI.Previewers.PreviewerHTML.PreviewerHTML?1(parent=None)
 eric6.UI.Previewers.PreviewerHTML._StrikeThroughExtension.DEL_RE?7

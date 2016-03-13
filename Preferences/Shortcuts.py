@@ -180,8 +180,12 @@ def saveShortcuts(prefClass=Prefs):
             for act in actions:
                 __saveShortcut(act, category, prefClass)
     
-    for act in e5App().getObject("DummyHelpViewer").getActions():
-        __saveShortcut(act, "HelpViewer", prefClass)
+    try:
+        for act in e5App().getObject("DummyHelpViewer").getActions():
+            __saveShortcut(act, "HelpViewer", prefClass)
+    except KeyError:
+        # no QtWebKit available
+        pass
 
 
 def exportShortcuts(fn):
@@ -324,6 +328,10 @@ def setActions(shortcuts):
             actions = ref.getActions()
             __setAction(actions, shortcuts[category])
     
-    if "HelpViewer" in shortcuts:
-        __setAction(e5App().getObject("DummyHelpViewer").getActions(),
-                    shortcuts["HelpViewer"])
+    try:
+        if "HelpViewer" in shortcuts:
+            __setAction(e5App().getObject("DummyHelpViewer").getActions(),
+                        shortcuts["HelpViewer"])
+    except KeyError:
+        # no QtWebKit available
+        pass

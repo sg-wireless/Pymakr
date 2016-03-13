@@ -61,6 +61,11 @@ except ImportError:
         " it is installed and accessible.")
     sys.exit(100)
 
+try:
+    from PyQt5 import QtWebEngineWidgets    # __IGNORE_WARNING__
+except ImportError:
+    pass
+
 # some global variables needed to start the application
 args = None
 mainWindow = None

@@ -1622,7 +1622,6 @@
     <Form>UI/FindFileNameDialog.ui</Form>
     <Form>UI/NotificationWidget.ui</Form>
     <Form>UI/NumbersWidget.ui</Form>
-    <Form>UI/Previewers/PreviewerHTML.ui</Form>
     <Form>UI/Previewers/PreviewerQSS.ui</Form>
     <Form>UI/SearchWidget.ui</Form>
     <Form>UI/SymbolsWidget.ui</Form>

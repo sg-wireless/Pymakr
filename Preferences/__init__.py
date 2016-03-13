@@ -33,7 +33,10 @@ from PyQt5.QtCore import QDir, QPoint, QLocale, QSettings, QFileInfo, \
 from PyQt5.QtGui import QColor, QFont, QPalette
 from PyQt5.QtWidgets import QInputDialog, QApplication
 from PyQt5.QtNetwork import QNetworkRequest
-from PyQt5.QtWebKit import QWebSettings
+try:
+    from PyQt5.QtWebKit import QWebSettings
+except ImportError:
+    QWebSettings = None
 from PyQt5.Qsci import QsciScintilla, QsciLexerPython
 
 from E5Gui import E5FileDialog
@@ -805,7 +808,6 @@ class Prefs(object):
     
     # defaults for the help settings
     helpDefaults = {
-        "HelpViewerType": 1,      # this corresponds with the radio button id
         "CustomViewer": "",
         "PythonDocDir": "",
         "Python2DocDir": "",
@@ -900,12 +902,19 @@ class Prefs(object):
         "FlashCookiesBlacklist": [],
         "FlashCookiesDataPath": flashDataPathForOS(),
     }
+    if QWebSettings:
+        helpDefaults["HelpViewerType"] = 1      # eric browser
+    else:
+        helpDefaults["HelpViewerType"] = 2      # Qt Assistant
     
     @classmethod
     def initWebSettingsDefaults(cls):
         """
         Class method to initialize the web settings related defaults.
         """
+        if QWebSettings is None:
+            return
+        
         websettings = QWebSettings.globalSettings()
         fontFamily = websettings.fontFamily(QWebSettings.StandardFont)
         fontSize = websettings.fontSize(QWebSettings.DefaultFontSize)
@@ -2395,7 +2404,15 @@ def getHelp(key, prefClass=Prefs):
         from Utilities.crypto import pwConvert
         return pwConvert(prefClass.settings.value(
             "Help/" + key, prefClass.helpDefaults[key]), encode=False)
-    elif key in ["HelpViewerType", "DiskCacheSize", "AcceptCookies",
+    elif key == "HelpViewerType":
+        # special treatment to adjust for missing QtWebKit if eric web browser
+        # was selected
+        value = int(prefClass.settings.value(
+            "Help/" + key, prefClass.helpDefaults[key]))
+        if value == 1 and QWebSettings is None:
+            value = prefClass.helpDefaults[key]
+        return value
+    elif key in ["DiskCacheSize", "AcceptCookies",
                  "KeepCookiesUntil", "StartupBehavior", "HistoryLimit",
                  "OfflineStorageDatabaseQuota",
                  "OfflineWebApplicationCacheQuota", "CachePolicy",
