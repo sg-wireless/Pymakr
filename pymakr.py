@@ -227,8 +227,10 @@ def main():
     
     # set ID so Windows Python show an icon
 
-    if platform.system() == 'Windows':
+    try:
         ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('pycom.pymakr')
+    except:
+        pass
 
     sys.excepthook = excepthook
     
