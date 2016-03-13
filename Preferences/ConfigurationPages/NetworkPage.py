@@ -66,14 +66,17 @@ class NetworkPage(ConfigurationPageBase, Ui_NetworkPage):
         self.downloadDirEdit.setText(Preferences.getUI("DownloadPath"))
         self.requestFilenameCheckBox.setChecked(
             Preferences.getUI("RequestDownloadFilename"))
-        policy = Preferences.getHelp("DownloadManagerRemovePolicy")
-        from Helpviewer.Download.DownloadManager import DownloadManager
-        if policy == DownloadManager.RemoveNever:
-            self.cleanupNeverButton.setChecked(True)
-        elif policy == DownloadManager.RemoveExit:
-            self.cleanupExitButton.setChecked(True)
-        else:
-            self.cleanupSuccessfulButton.setChecked(True)
+        try:
+            policy = Preferences.getHelp("DownloadManagerRemovePolicy")
+            from Helpviewer.Download.DownloadManager import DownloadManager
+            if policy == DownloadManager.RemoveNever:
+                self.cleanupNeverButton.setChecked(True)
+            elif policy == DownloadManager.RemoveExit:
+                self.cleanupExitButton.setChecked(True)
+            else:
+                self.cleanupSuccessfulButton.setChecked(True)
+        except ImportError:
+            self.cleanupGroup.hide()
         
         # HTTP proxy
         self.httpProxyHostEdit.setText(
