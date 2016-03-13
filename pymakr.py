@@ -13,6 +13,7 @@ of the IDE and starts the Qt event loop.
 
 from __future__ import unicode_literals
 
+import ctypes
 import sys
 
 # generate list of arguments to be remembered for a restart
@@ -220,9 +221,15 @@ def main():
     """
     from Globals import AppInfo
     import Globals
+    import platform
     
     global args, mainWindow, splash, restartArgs, inMainLoop
     
+    # set ID so Windows Python show an icon
+
+    if platform.system() == 'Windows':
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('pycom.pymakr')
+
     sys.excepthook = excepthook
     
     options = [
