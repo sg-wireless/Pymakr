@@ -127,14 +127,18 @@ class NetworkPage(ConfigurationPageBase, Ui_NetworkPage):
         Preferences.setUI(
             "RequestDownloadFilename",
             self.requestFilenameCheckBox.isChecked())
-        from Helpviewer.Download.DownloadManager import DownloadManager
-        if self.cleanupNeverButton.isChecked():
-            policy = DownloadManager.RemoveNever
-        elif self.cleanupExitButton.isChecked():
-            policy = DownloadManager.RemoveExit
-        else:
-            policy = DownloadManager.RemoveSuccessFullDownload
-        Preferences.setHelp("DownloadManagerRemovePolicy", policy)
+        try:
+            from Helpviewer.Download.DownloadManager import DownloadManager
+            if self.cleanupNeverButton.isChecked():
+                policy = DownloadManager.RemoveNever
+            elif self.cleanupExitButton.isChecked():
+                policy = DownloadManager.RemoveExit
+            else:
+                policy = DownloadManager.RemoveSuccessFullDownload
+            Preferences.setHelp("DownloadManagerRemovePolicy", policy)
+        except ImportError:
+            # ignore it
+            pass
         
         Preferences.setUI(
             "UseProxy",
