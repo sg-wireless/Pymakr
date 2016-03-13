@@ -1122,13 +1122,12 @@ def doDependancyChecks():
     if pyqtVariant == "PyQt4":
         impModulesList = [
             "PyQt4.QtGui", "PyQt4.QtNetwork", "PyQt4.QtSql",
-            "PyQt4.QtSvg", "PyQt4.QtWebKit",
+            "PyQt4.QtSvg",
         ]
     else:
         impModulesList = [
             "PyQt5.QtGui", "PyQt5.QtNetwork", "PyQt5.QtPrintSupport",
-            "PyQt5.QtSql", "PyQt5.QtSvg", "PyQt5.QtWebKit",
-            "PyQt5.QtWebKitWidgets", "PyQt5.QtWidgets",
+            "PyQt5.QtSql", "PyQt5.QtSvg", "PyQt5.QtWidgets",
         ]
     modulesOK = True
     for impModule in impModulesList:
