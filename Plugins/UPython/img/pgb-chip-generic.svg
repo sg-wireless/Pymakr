@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality" fill-rule="evenodd" xml:space="preserve" clip-rule="evenodd" viewBox="0 0 15.9763 15.9763">
+ <defs>
+  <style type="text/css">
+    .str0 {stroke:#4D4948;stroke-width:0.221746}
+    .str1 {stroke:#00923F;stroke-width:0.887173}
+    .str2 {stroke:#E77817;stroke-width:0.887173;stroke-linecap:round}
+    .fil2 {fill:none}
+    .fil0 {fill:#4D4948}
+    .fil1 {fill:#B6DDC7}
+  </style>
+ </defs>
+ <g id="Diagram">
+  <g id="_89638448">
+   <path id="_89802448" class="fil0 str0" d="m4.2159 1.701h7.5445c1.3852 0 2.5148 1.1297 2.5148 2.5148v7.5445c0 1.3852-1.1297 2.5148-2.5148 2.5148h-7.5445c-1.3852 0-2.5148-1.1297-2.5148-2.5148v-7.5445c0-1.3852 1.1297-2.5148 2.5148-2.5148z"/>
+   <path id="_90022912" class="fil1 str1" d="m5.4733 4.2159h5.0297c0.69259 0 1.2574 0.56483 1.2574 1.2574v5.0297c0 0.69259-0.56483 1.2574-1.2574 1.2574h-5.0297c-0.69259 0-1.2574-0.56483-1.2574-1.2574v-5.0297c0-0.69259 0.56483-1.2574 1.2574-1.2574z"/>
+   <line id="_88823912" y2="10.503" class="fil2 str2" y1="10.503" x2=".44362" x1="1.701"/>
+   <line id="_88736048" y2="9.2446" class="fil2 str2" y1="9.2446" x2=".44362" x1="1.701"/>
+   <line id="_88143736" y2="6.7307" class="fil2 str2" y1="6.7307" x2=".44362" x1="1.701"/>
+   <line id="_48273904" y2="7.9871" class="fil2 str2" y1="7.9871" x2=".44362" x1="1.701"/>
+   <line id="_89716888" y2="5.4723" class="fil2 str2" y1="5.4723" x2=".44362" x1="1.701"/>
+   <line id="_48937520" y2="4.2149" class="fil2 str2" y1="4.2149" x2=".44362" x1="1.701"/>
+   <line id="_89602488" y2="11.76" class="fil2 str2" y1="11.76" x2=".44362" x1="1.701"/>
+   <line id="_89828912" y2="10.503" class="fil2 str2" y1="10.503" x2="14.275" x1="15.533"/>
+   <line id="_89543800" y2="9.2446" class="fil2 str2" y1="9.2446" x2="14.275" x1="15.533"/>
+   <line id="_89561224" y2="6.7307" class="fil2 str2" y1="6.7307" x2="14.275" x1="15.533"/>
+   <line id="_89921928" y2="7.9871" class="fil2 str2" y1="7.9871" x2="14.275" x1="15.533"/>
+   <line id="_88834840" y2="5.4723" class="fil2 str2" y1="5.4723" x2="14.275" x1="15.533"/>
+   <line id="_89246736" y2="4.2149" class="fil2 str2" y1="4.2149" x2="14.275" x1="15.533"/>
+   <line id="_88756544" y2="11.76" class="fil2 str2" y1="11.76" x2="14.275" x1="15.533"/>
+   <line id="_89076960" y2="14.275" class="fil2 str2" y1="15.533" x2="5.4733" x1="5.4733"/>
+   <line id="_48963016" y2="14.275" class="fil2 str2" y1="15.533" x2="6.7317" x1="6.7317"/>
+   <line id="_48844704" y2="14.275" class="fil2 str2" y1="15.533" x2="9.2456" x1="9.2456"/>
+   <line id="_88113480" y2="14.275" class="fil2 str2" y1="15.533" x2="7.9891" x1="7.9891"/>
+   <line id="_89775784" y2="14.275" class="fil2 str2" y1="15.533" x2="10.504" x1="10.504"/>
+   <line id="_90153440" y2="14.275" class="fil2 str2" y1="15.533" x2="11.761" x1="11.761"/>
+   <line id="_89263648" y2="14.275" class="fil2 str2" y1="15.533" x2="4.2164" x1="4.2164"/>
+   <line id="_87389504" y2=".44362" class="fil2 str2" y1="1.701" x2="5.4728" x1="5.4728"/>
+   <line id="_89109736" y2=".44362" class="fil2 str2" y1="1.701" x2="6.7312" x1="6.7312"/>
+   <line id="_89134072" y2=".44362" class="fil2 str2" y1="1.701" x2="9.245" x1="9.245"/>
+   <line id="_87133032" y2=".44362" class="fil2 str2" y1="1.701" x2="7.9886" x1="7.9886"/>
+   <line id="_46320336" y2=".44362" class="fil2 str2" y1="1.701" x2="10.504" x1="10.504"/>
+   <line id="_49016112" y2=".44362" class="fil2 str2" y1="1.701" x2="11.761" x1="11.761"/>
+   <line id="_89046112" y2=".44362" class="fil2 str2" y1="1.701" x2="4.2159" x1="4.2159"/>
+  </g>
+ </g>
+<metadata><rdf:RDF><cc:Work><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/><cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/><dc:publisher><cc:Agent rdf:about="http://openclipart.org/"><dc:title>Openclipart</dc:title></cc:Agent></dc:publisher><dc:title>generic chip</dc:title><dc:date>2010-12-15T19:54:59</dc:date><dc:description>Generic Chip (stylized).</dc:description><dc:source>http://openclipart.org/detail/100867/generic-chip-by-pgbrandolin</dc:source><dc:creator><cc:Agent><dc:title>pgbrandolin</dc:title></cc:Agent></dc:creator><dc:subject><rdf:Bag><rdf:li>chip</rdf:li><rdf:li>clip art</rdf:li><rdf:li>clipart</rdf:li><rdf:li>computer</rdf:li><rdf:li>hardware</rdf:li></rdf:Bag></dc:subject></cc:Work><cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/"><cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/><cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/><cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/></cc:License></rdf:RDF></metadata></svg>

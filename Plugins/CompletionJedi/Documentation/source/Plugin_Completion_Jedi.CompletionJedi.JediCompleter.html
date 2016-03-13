@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html><head>
+<title>Plugin_Completion_Jedi.CompletionJedi.JediCompleter</title>
+<meta charset="UTF-8">
+<style>
+body {
+    background: #EDECE6;
+    margin: 0em 1em 10em 1em;
+    color: black;
+}
+
+h1 { color: white; background: #85774A; }
+h2 { color: white; background: #85774A; }
+h3 { color: white; background: #9D936E; }
+h4 { color: white; background: #9D936E; }
+    
+a { color: #BA6D36; }
+
+</style>
+</head>
+<body><a NAME="top" ID="top"></a>
+<h1>Plugin_Completion_Jedi.CompletionJedi.JediCompleter</h1>
+<p>
+Module implementing the autocompletion interface to jedi.
+</p>
+<h3>Global Attributes</h3>
+<table>
+<tr><td>None</td></tr>
+</table>
+<h3>Classes</h3>
+<table>
+<tr>
+<td><a href="#JediCompleter">JediCompleter</a></td>
+<td>Class implementing the autocompletion interface to jedi.</td>
+</tr>
+</table>
+<h3>Functions</h3>
+<table>
+<tr><td>None</td></tr>
+</table>
+<hr /><hr />
+<a NAME="JediCompleter" ID="JediCompleter"></a>
+<h2>JediCompleter</h2>
+<p>
+    Class implementing the autocompletion interface to jedi.
+</p>
+<h3>Derived from</h3>
+QObject
+<h3>Class Attributes</h3>
+<table>
+<tr><td>PictureIDs</td></tr>
+</table>
+<h3>Class Methods</h3>
+<table>
+<tr><td>None</td></tr>
+</table>
+<h3>Methods</h3>
+<table>
+<tr>
+<td><a href="#JediCompleter.__init__">JediCompleter</a></td>
+<td>Constructor</td>
+</tr><tr>
+<td><a href="#JediCompleter.getCallTips">getCallTips</a></td>
+<td>Public method to calculate calltips.</td>
+</tr><tr>
+<td><a href="#JediCompleter.getCompletions">getCompletions</a></td>
+<td>Public method to calculate the possible completions.</td>
+</tr><tr>
+<td><a href="#JediCompleter.gotoDefinition">gotoDefinition</a></td>
+<td>Public slot to find the definition for the word at the cursor position and go to it.</td>
+</tr>
+</table>
+<h3>Static Methods</h3>
+<table>
+<tr><td>None</td></tr>
+</table>
+<a NAME="JediCompleter.__init__" ID="JediCompleter.__init__"></a>
+<h4>JediCompleter (Constructor)</h4>
+<b>JediCompleter</b>(<i>plugin, parent=None</i>)
+<p>
+        Constructor
+</p><dl>
+<dt><i>plugin</i></dt>
+<dd>
+reference to the plugin object
+</dd><dt><i>parent</i></dt>
+<dd>
+parent (QObject)
+</dd>
+</dl><a NAME="JediCompleter.getCallTips" ID="JediCompleter.getCallTips"></a>
+<h4>JediCompleter.getCallTips</h4>
+<b>getCallTips</b>(<i>pos, editor</i>)
+<p>
+        Public method to calculate calltips.
+</p><dl>
+<dt><i>pos</i></dt>
+<dd>
+position in the text for the calltip (integer)
+</dd><dt><i>editor</i></dt>
+<dd>
+reference to the editor object, that called this method
+            QScintilla.Editor)
+</dd>
+</dl><dl>
+<dt>Returns:</dt>
+<dd>
+list of possible calltips (list of strings)
+</dd>
+</dl><a NAME="JediCompleter.getCompletions" ID="JediCompleter.getCompletions"></a>
+<h4>JediCompleter.getCompletions</h4>
+<b>getCompletions</b>(<i>editor</i>)
+<p>
+        Public method to calculate the possible completions.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the editor object, that called this method
+            QScintilla.Editor)
+</dd>
+</dl><dl>
+<dt>Returns:</dt>
+<dd>
+list of proposals (QStringList)
+</dd>
+</dl><a NAME="JediCompleter.gotoDefinition" ID="JediCompleter.gotoDefinition"></a>
+<h4>JediCompleter.gotoDefinition</h4>
+<b>gotoDefinition</b>(<i>editor</i>)
+<p>
+        Public slot to find the definition for the word at the cursor position
+        and go to it.
+</p><p>
+        Note: This is executed upon a mouse click sequence.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the calling editor (Editor)
+</dd>
+</dl>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+</body></html>

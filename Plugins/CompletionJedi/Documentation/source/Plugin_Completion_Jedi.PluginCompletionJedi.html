@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html><head>
+<title>Plugin_Completion_Jedi.PluginCompletionJedi</title>
+<meta charset="UTF-8">
+<style>
+body {
+    background: #EDECE6;
+    margin: 0em 1em 10em 1em;
+    color: black;
+}
+
+h1 { color: white; background: #85774A; }
+h2 { color: white; background: #85774A; }
+h3 { color: white; background: #9D936E; }
+h4 { color: white; background: #9D936E; }
+    
+a { color: #BA6D36; }
+
+</style>
+</head>
+<body><a NAME="top" ID="top"></a>
+<h1>Plugin_Completion_Jedi.PluginCompletionJedi</h1>
+<p>
+Module documentation goes here.
+</p>
+<h3>Global Attributes</h3>
+<table>
+<tr><td>author</td></tr><tr><td>autoactivate</td></tr><tr><td>className</td></tr><tr><td>completionJediPluginObject</td></tr><tr><td>deactivateable</td></tr><tr><td>error</td></tr><tr><td>longDescription</td></tr><tr><td>name</td></tr><tr><td>needsRestart</td></tr><tr><td>packageName</td></tr><tr><td>pyqtApi</td></tr><tr><td>python2Compatible</td></tr><tr><td>shortDescription</td></tr><tr><td>version</td></tr>
+</table>
+<h3>Classes</h3>
+<table>
+<tr>
+<td><a href="#CompletionJediPlugin">CompletionJediPlugin</a></td>
+<td>Class documentation goes here.</td>
+</tr>
+</table>
+<h3>Functions</h3>
+<table>
+<tr>
+<td><a href="#createAutoCompletionPage">createAutoCompletionPage</a></td>
+<td>Module function to create the autocompletion configuration page.</td>
+</tr><tr>
+<td><a href="#createCallTipsPage">createCallTipsPage</a></td>
+<td>Module function to create the calltips configuration page.</td>
+</tr><tr>
+<td><a href="#createMouseClickHandlerPage">createMouseClickHandlerPage</a></td>
+<td>Module function to create the mouse click handler configuration page.</td>
+</tr><tr>
+<td><a href="#exeDisplayData">exeDisplayData</a></td>
+<td>Module function to support the display of some executable info.</td>
+</tr><tr>
+<td><a href="#getConfigData">getConfigData</a></td>
+<td>Module function returning data as required by the configuration dialog.</td>
+</tr><tr>
+<td><a href="#prepareUninstall">prepareUninstall</a></td>
+<td>Module function to prepare for an uninstallation.</td>
+</tr>
+</table>
+<hr /><hr />
+<a NAME="CompletionJediPlugin" ID="CompletionJediPlugin"></a>
+<h2>CompletionJediPlugin</h2>
+<p>
+    Class documentation goes here.
+</p>
+<h3>Derived from</h3>
+QObject
+<h3>Class Attributes</h3>
+<table>
+<tr><td>PreferencesKey</td></tr>
+</table>
+<h3>Class Methods</h3>
+<table>
+<tr><td>None</td></tr>
+</table>
+<h3>Methods</h3>
+<table>
+<tr>
+<td><a href="#CompletionJediPlugin.__init__">CompletionJediPlugin</a></td>
+<td>Constructor</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__completionListSelected">__completionListSelected</a></td>
+<td>Private slot to handle the selection from the completion list.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__connectEditor">__connectEditor</a></td>
+<td>Private method to connect an editor.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__connectMouseClickHandler">__connectMouseClickHandler</a></td>
+<td>Private method to connect the mouse click handler to an editor.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__determineLanguage">__determineLanguage</a></td>
+<td>Private method to determine the valid language strings.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__disconnectEditor">__disconnectEditor</a></td>
+<td>Private method to disconnect an editor.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__disconnectMouseClickHandler">__disconnectMouseClickHandler</a></td>
+<td>Private method to disconnect the mouse click handler from an editor.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__editorClosed">__editorClosed</a></td>
+<td>Private slot called, when an editor was closed.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__editorLanguageChanged">__editorLanguageChanged</a></td>
+<td>Private slot to handle the language change of an editor.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__editorOpened">__editorOpened</a></td>
+<td>Private slot called, when a new editor was opened.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__initialize">__initialize</a></td>
+<td>Private slot to (re)initialize the plug-in.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__jediCompletions">__jediCompletions</a></td>
+<td>Private slot to show a list with completion proposals.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__loadTranslator">__loadTranslator</a></td>
+<td>Private method to load the translation file.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__setAutoCompletionHook">__setAutoCompletionHook</a></td>
+<td>Private method to set the autocompletion hook.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__setCalltipsHook">__setCalltipsHook</a></td>
+<td>Private method to set the calltip hook.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__unsetAutoCompletionHook">__unsetAutoCompletionHook</a></td>
+<td>Private method to unset the autocompletion hook.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.__unsetCalltipsHook">__unsetCalltipsHook</a></td>
+<td>Private method to unset the calltip hook.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.activate">activate</a></td>
+<td>Public method to activate this plug-in.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.deactivate">deactivate</a></td>
+<td>Public method to deactivate this plug-in.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.getCompletionsList">getCompletionsList</a></td>
+<td>Public method to get a list of possible completions.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.getPreferences">getPreferences</a></td>
+<td>Public method to retrieve the various refactoring settings.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.jediCallTip">jediCallTip</a></td>
+<td>Public method to return a list of calltips.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.jediCompletions">jediCompletions</a></td>
+<td>Public method to determine the autocompletion proposals.</td>
+</tr><tr>
+<td><a href="#CompletionJediPlugin.setPreferences">setPreferences</a></td>
+<td>Public method to store the various refactoring settings.</td>
+</tr>
+</table>
+<h3>Static Methods</h3>
+<table>
+<tr><td>None</td></tr>
+</table>
+<a NAME="CompletionJediPlugin.__init__" ID="CompletionJediPlugin.__init__"></a>
+<h4>CompletionJediPlugin (Constructor)</h4>
+<b>CompletionJediPlugin</b>(<i>ui</i>)
+<p>
+        Constructor
+</p><dl>
+<dt><i>ui</i></dt>
+<dd>
+reference to the user interface object (UI.UserInterface)
+</dd>
+</dl><a NAME="CompletionJediPlugin.__completionListSelected" ID="CompletionJediPlugin.__completionListSelected"></a>
+<h4>CompletionJediPlugin.__completionListSelected</h4>
+<b>__completionListSelected</b>(<i>id, txt</i>)
+<p>
+        Private slot to handle the selection from the completion list.
+</p><dl>
+<dt><i>id</i></dt>
+<dd>
+the ID of the user list (should be 1) (integer)
+</dd><dt><i>txt</i></dt>
+<dd>
+the selected text (QString)
+</dd>
+</dl><a NAME="CompletionJediPlugin.__connectEditor" ID="CompletionJediPlugin.__connectEditor"></a>
+<h4>CompletionJediPlugin.__connectEditor</h4>
+<b>__connectEditor</b>(<i>editor</i>)
+<p>
+        Private method to connect an editor.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the editor (QScintilla.Editor)
+</dd>
+</dl><a NAME="CompletionJediPlugin.__connectMouseClickHandler" ID="CompletionJediPlugin.__connectMouseClickHandler"></a>
+<h4>CompletionJediPlugin.__connectMouseClickHandler</h4>
+<b>__connectMouseClickHandler</b>(<i>editor</i>)
+<p>
+        Private method to connect the mouse click handler to an editor.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the editor (QScintilla.Editor)
+</dd>
+</dl><a NAME="CompletionJediPlugin.__determineLanguage" ID="CompletionJediPlugin.__determineLanguage"></a>
+<h4>CompletionJediPlugin.__determineLanguage</h4>
+<b>__determineLanguage</b>(<i></i>)
+<p>
+        Private method to determine the valid language strings.
+</p><dl>
+<dt>Returns:</dt>
+<dd>
+list of valid language strings (list of string)
+</dd>
+</dl><a NAME="CompletionJediPlugin.__disconnectEditor" ID="CompletionJediPlugin.__disconnectEditor"></a>
+<h4>CompletionJediPlugin.__disconnectEditor</h4>
+<b>__disconnectEditor</b>(<i>editor</i>)
+<p>
+        Private method to disconnect an editor.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the editor (QScintilla.Editor)
+</dd>
+</dl><a NAME="CompletionJediPlugin.__disconnectMouseClickHandler" ID="CompletionJediPlugin.__disconnectMouseClickHandler"></a>
+<h4>CompletionJediPlugin.__disconnectMouseClickHandler</h4>
+<b>__disconnectMouseClickHandler</b>(<i>editor</i>)
+<p>
+        Private method to disconnect the mouse click handler from an editor.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the editor (QScintilla.Editor)
+</dd>
+</dl><a NAME="CompletionJediPlugin.__editorClosed" ID="CompletionJediPlugin.__editorClosed"></a>
+<h4>CompletionJediPlugin.__editorClosed</h4>
+<b>__editorClosed</b>(<i>editor</i>)
+<p>
+        Private slot called, when an editor was closed.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the editor (QScintilla.Editor)
+</dd>
+</dl><a NAME="CompletionJediPlugin.__editorLanguageChanged" ID="CompletionJediPlugin.__editorLanguageChanged"></a>
+<h4>CompletionJediPlugin.__editorLanguageChanged</h4>
+<b>__editorLanguageChanged</b>(<i>language</i>)
+<p>
+        Private slot to handle the language change of an editor.
+</p><dl>
+<dt><i>language</i></dt>
+<dd>
+programming language of the editor (string)
+</dd>
+</dl><a NAME="CompletionJediPlugin.__editorOpened" ID="CompletionJediPlugin.__editorOpened"></a>
+<h4>CompletionJediPlugin.__editorOpened</h4>
+<b>__editorOpened</b>(<i>editor</i>)
+<p>
+        Private slot called, when a new editor was opened.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the new editor (QScintilla.Editor)
+</dd>
+</dl><a NAME="CompletionJediPlugin.__initialize" ID="CompletionJediPlugin.__initialize"></a>
+<h4>CompletionJediPlugin.__initialize</h4>
+<b>__initialize</b>(<i></i>)
+<p>
+        Private slot to (re)initialize the plug-in.
+</p><a NAME="CompletionJediPlugin.__jediCompletions" ID="CompletionJediPlugin.__jediCompletions"></a>
+<h4>CompletionJediPlugin.__jediCompletions</h4>
+<b>__jediCompletions</b>(<i></i>)
+<p>
+        Private slot to show a list with completion proposals.
+</p><a NAME="CompletionJediPlugin.__loadTranslator" ID="CompletionJediPlugin.__loadTranslator"></a>
+<h4>CompletionJediPlugin.__loadTranslator</h4>
+<b>__loadTranslator</b>(<i></i>)
+<p>
+        Private method to load the translation file.
+</p><a NAME="CompletionJediPlugin.__setAutoCompletionHook" ID="CompletionJediPlugin.__setAutoCompletionHook"></a>
+<h4>CompletionJediPlugin.__setAutoCompletionHook</h4>
+<b>__setAutoCompletionHook</b>(<i>editor</i>)
+<p>
+        Private method to set the autocompletion hook.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the editor (QScintilla.Editor)
+</dd>
+</dl><a NAME="CompletionJediPlugin.__setCalltipsHook" ID="CompletionJediPlugin.__setCalltipsHook"></a>
+<h4>CompletionJediPlugin.__setCalltipsHook</h4>
+<b>__setCalltipsHook</b>(<i>editor</i>)
+<p>
+        Private method to set the calltip hook.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the editor (QScintilla.Editor)
+</dd>
+</dl><a NAME="CompletionJediPlugin.__unsetAutoCompletionHook" ID="CompletionJediPlugin.__unsetAutoCompletionHook"></a>
+<h4>CompletionJediPlugin.__unsetAutoCompletionHook</h4>
+<b>__unsetAutoCompletionHook</b>(<i>editor</i>)
+<p>
+        Private method to unset the autocompletion hook.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the editor (QScintilla.Editor)
+</dd>
+</dl><a NAME="CompletionJediPlugin.__unsetCalltipsHook" ID="CompletionJediPlugin.__unsetCalltipsHook"></a>
+<h4>CompletionJediPlugin.__unsetCalltipsHook</h4>
+<b>__unsetCalltipsHook</b>(<i>editor</i>)
+<p>
+        Private method to unset the calltip hook.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the editor (QScintilla.Editor)
+</dd>
+</dl><a NAME="CompletionJediPlugin.activate" ID="CompletionJediPlugin.activate"></a>
+<h4>CompletionJediPlugin.activate</h4>
+<b>activate</b>(<i></i>)
+<p>
+        Public method to activate this plug-in.
+</p><dl>
+<dt>Returns:</dt>
+<dd>
+tuple of None and activation status (boolean)
+</dd>
+</dl><a NAME="CompletionJediPlugin.deactivate" ID="CompletionJediPlugin.deactivate"></a>
+<h4>CompletionJediPlugin.deactivate</h4>
+<b>deactivate</b>(<i></i>)
+<p>
+        Public method to deactivate this plug-in.
+</p><a NAME="CompletionJediPlugin.getCompletionsList" ID="CompletionJediPlugin.getCompletionsList"></a>
+<h4>CompletionJediPlugin.getCompletionsList</h4>
+<b>getCompletionsList</b>(<i>editor, context</i>)
+<p>
+        Public method to get a list of possible completions.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the editor object, that called this method
+            (QScintilla.Editor)
+</dd><dt><i>context</i></dt>
+<dd>
+flag indicating to autocomplete a context (boolean)
+</dd>
+</dl><dl>
+<dt>Returns:</dt>
+<dd>
+list of possible completions (list of strings)
+</dd>
+</dl><a NAME="CompletionJediPlugin.getPreferences" ID="CompletionJediPlugin.getPreferences"></a>
+<h4>CompletionJediPlugin.getPreferences</h4>
+<b>getPreferences</b>(<i>key</i>)
+<p>
+        Public method to retrieve the various refactoring settings.
+</p><dl>
+<dt><i>key</i></dt>
+<dd>
+the key of the value to get
+</dd>
+</dl><dl>
+<dt>Returns:</dt>
+<dd>
+the requested refactoring setting
+</dd>
+</dl><a NAME="CompletionJediPlugin.jediCallTip" ID="CompletionJediPlugin.jediCallTip"></a>
+<h4>CompletionJediPlugin.jediCallTip</h4>
+<b>jediCallTip</b>(<i>editor, pos, commas</i>)
+<p>
+        Public method to return a list of calltips.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the editor (QScintilla.Editor)
+</dd><dt><i>pos</i></dt>
+<dd>
+position in the text for the calltip (integer)
+</dd><dt><i>commas</i></dt>
+<dd>
+minimum number of commas contained in the calltip
+            (integer)
+</dd>
+</dl><dl>
+<dt>Returns:</dt>
+<dd>
+list of possible calltips (list of strings)
+</dd>
+</dl><a NAME="CompletionJediPlugin.jediCompletions" ID="CompletionJediPlugin.jediCompletions"></a>
+<h4>CompletionJediPlugin.jediCompletions</h4>
+<b>jediCompletions</b>(<i>editor, context=False</i>)
+<p>
+        Public method to determine the autocompletion proposals.
+</p><dl>
+<dt><i>editor</i></dt>
+<dd>
+reference to the editor object, that called this method
+            QScintilla.Editor)
+</dd><dt><i>context</i></dt>
+<dd>
+flag indicating to autocomplete a context (boolean)
+</dd>
+</dl><a NAME="CompletionJediPlugin.setPreferences" ID="CompletionJediPlugin.setPreferences"></a>
+<h4>CompletionJediPlugin.setPreferences</h4>
+<b>setPreferences</b>(<i>key, value</i>)
+<p>
+        Public method to store the various refactoring settings.
+</p><dl>
+<dt><i>key</i></dt>
+<dd>
+the key of the setting to be set (string)
+</dd><dt><i>value</i></dt>
+<dd>
+the value to be set
+</dd>
+</dl>
+<div align="right"><a href="#top">Up</a></div>
+<hr /><hr />
+<a NAME="createAutoCompletionPage" ID="createAutoCompletionPage"></a>
+<h2>createAutoCompletionPage</h2>
+<b>createAutoCompletionPage</b>(<i>configDlg</i>)
+<p>
+    Module function to create the autocompletion configuration page.
+</p><dl>
+<dt><i>configDlg</i></dt>
+<dd>
+reference to the configuration dialog
+</dd>
+</dl><dl>
+<dt>Returns:</dt>
+<dd>
+reference to the configuration page
+</dd>
+</dl>
+<div align="right"><a href="#top">Up</a></div>
+<hr /><hr />
+<a NAME="createCallTipsPage" ID="createCallTipsPage"></a>
+<h2>createCallTipsPage</h2>
+<b>createCallTipsPage</b>(<i>configDlg</i>)
+<p>
+    Module function to create the calltips configuration page.
+</p><dl>
+<dt><i>configDlg</i></dt>
+<dd>
+reference to the configuration dialog
+</dd>
+</dl><dl>
+<dt>Returns:</dt>
+<dd>
+reference to the configuration page
+</dd>
+</dl>
+<div align="right"><a href="#top">Up</a></div>
+<hr /><hr />
+<a NAME="createMouseClickHandlerPage" ID="createMouseClickHandlerPage"></a>
+<h2>createMouseClickHandlerPage</h2>
+<b>createMouseClickHandlerPage</b>(<i>configDlg</i>)
+<p>
+    Module function to create the mouse click handler configuration page.
+</p><dl>
+<dt><i>configDlg</i></dt>
+<dd>
+reference to the configuration dialog
+</dd>
+</dl><dl>
+<dt>Returns:</dt>
+<dd>
+reference to the configuration page
+</dd>
+</dl>
+<div align="right"><a href="#top">Up</a></div>
+<hr /><hr />
+<a NAME="exeDisplayData" ID="exeDisplayData"></a>
+<h2>exeDisplayData</h2>
+<b>exeDisplayData</b>(<i></i>)
+<p>
+    Module function to support the display of some executable info.
+</p><dl>
+<dt>Returns:</dt>
+<dd>
+dictionary containing the data to query the presence of
+        the executable
+</dd>
+</dl>
+<div align="right"><a href="#top">Up</a></div>
+<hr /><hr />
+<a NAME="getConfigData" ID="getConfigData"></a>
+<h2>getConfigData</h2>
+<b>getConfigData</b>(<i></i>)
+<p>
+    Module function returning data as required by the configuration dialog.
+</p><dl>
+<dt>Returns:</dt>
+<dd>
+dictionary containing the relevant data
+</dd>
+</dl>
+<div align="right"><a href="#top">Up</a></div>
+<hr /><hr />
+<a NAME="prepareUninstall" ID="prepareUninstall"></a>
+<h2>prepareUninstall</h2>
+<b>prepareUninstall</b>(<i></i>)
+<p>
+    Module function to prepare for an uninstallation.
+</p>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+</body></html>
