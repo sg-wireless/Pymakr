@@ -1922,13 +1922,14 @@ class DebugClientBase(object):
         state = 0
         try:
             comp = completer(text, state)
+        except Exception:
             comp = None
         while comp is not None:
             completions.add(comp)
             state += 1
             try:
                 comp = completer(text, state)
-            except:
+            except Exception:
                 comp = None
 
     def startDebugger(self, filename=None, host=None, port=None,
