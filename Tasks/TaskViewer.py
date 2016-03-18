@@ -137,7 +137,7 @@ class TaskViewer(QTreeWidget):
         self.__backMenu.addSeparator()
         self.backPasteItem = self.__backMenu.addAction(
             self.tr("&Paste"), self.__pasteTask)
-        self.backPasteMainItem = self.__menu.addAction(
+        self.backPasteMainItem = self.__backMenu.addAction(
             self.tr("Paste as &Main Task"), self.__pasteMainTask)
         self.__backMenu.addSeparator()
         self.__backMenu.addAction(
