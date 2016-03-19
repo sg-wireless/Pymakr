@@ -128,7 +128,8 @@ class HelpDocsInstaller(QThread):
                 QDir.separator() + "qch")
         elif version == 5:
             docsPath = QLibraryInfo.location(QLibraryInfo.DocumentationPath)
-            if not os.path.isdir(docsPath):
+            if not os.path.isdir(docsPath) or \
+                    len(QDir(docsPath).entryList(["*.qch"])) == 0:
                 # Qt installer is a bit buggy; it's missing a symbolic link
                 docsPathList = QDir.fromNativeSeparators(docsPath).split("/")
                 docsPath = os.sep.join(
