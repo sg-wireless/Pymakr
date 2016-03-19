@@ -122,7 +122,7 @@ class AdBlockIcon(E5ClickableLabel):
         @return reference to the menu action (QAction)
         """
         if not self.__menuAction:
-            self.__menuAction = QAction(self.tr("AdBlock"))
+            self.__menuAction = QAction(self.tr("AdBlock"), self)
             self.__menuAction.setMenu(QMenu())
             self.__menuAction.menu().aboutToShow.connect(self.__createMenu)
         

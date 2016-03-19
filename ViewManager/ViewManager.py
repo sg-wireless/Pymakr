@@ -11,7 +11,7 @@ from __future__ import unicode_literals
 
 import os
 
-from PyQt5.QtCore import pyqtSignal, QSignalMapper, QTimer, \
+from PyQt5.QtCore import pyqtSignal, pyqtSlot, QSignalMapper, QTimer, \
     QFileInfo, QRegExp, QObject, Qt, QCoreApplication
 from PyQt5.QtGui import QColor, QKeySequence, QPalette, QPixmap
 from PyQt5.QtWidgets import QLineEdit, QToolBar, QWidgetAction, QDialog, \
@@ -6562,6 +6562,7 @@ class ViewManager(QObject):
         if editor:
             self.editorRenamedEd.emit(editor)
         
+##    @pyqtSlot(str, int, int)
     def __cursorChanged(self, fn, line, pos):
         """
         Private slot to handle the cursorChanged signal.
