@@ -163,6 +163,9 @@ class AdBlockIcon(E5ClickableLabel):
         @return flag indicating an exception (boolean)
         """
         browser = self.__mw.currentBrowser()
+        if browser is None:
+            return False
+        
         urlHost = browser.page().url().host()
         
         import Helpviewer.HelpWindow

@@ -76,14 +76,15 @@ class HelpDocsInstaller(QThread):
             "qtconcurrent", "qtcore", "qtdbus", "qtdesigner", "qtdoc",
             "qtenginio", "qtenginiooverview", "qtenginoqml",
             "qtgraphicaleffects", "qtgui", "qthelp", "qtimageformats",
-            "qtlinguist", "qtlocation", "qtmaxextras", "qtmultimedia",
-            "qtmultimediawidgets", "qtnetwork", "qtnfc", "qtopengl",
-            "qtplatformheaders", "qtpositioning", "qtprintsupport", "qtqml",
-            "qtquick", "qtquickcontrols", "qtquickdialogs", "qtquickextras",
-            "qtquicklayouts", "qtscript", "qtscripttools", "qtsensors",
-            "qtserialport", "qtsql", "qtsvg", "qttestlib", "qtuitools",
-            "qtwebchannel", "qtwebengine", "qtwebenginewidgets", "qtwebkit",
-            "qtwebkitexamples", "qtwebsockets", "qtwidgets", "qtwinextras",
+            "qtlabscontrols", "qtlinguist", "qtlocation", "qtmaxextras",
+            "qtmultimedia", "qtmultimediawidgets", "qtnetwork", "qtnfc",
+            "qtopengl", "qtplatformheaders", "qtpositioning", "qtprintsupport",
+            "qtqml", "qtquick", "qtquickcontrols", "qtquickdialogs",
+            "qtquickextras", "qtquicklayouts", "qtscript", "qtscripttools",
+            "qtsensors", "qtserialbus", "qtserialport", "qtsql", "qtsvg",
+            "qttestlib", "qtuitools", "qtwebchannel", "qtwebengine",
+            "qtwebenginewidgets", "qtwebkit", "qtwebkitexamples",
+            "qtwebsockets", "qtwebview", "qtwidgets", "qtwinextras",
             "qtx11extras", "qtxml", "qtxmlpatterns"]
         for qtDocs, version in [(qt4Docs, 4), (qt5Docs, 5)]:
             for doc in qtDocs:
