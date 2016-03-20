@@ -140,7 +140,7 @@ class TaskViewer(QTreeWidget):
         self.backPasteMainItem = self.__backMenu.addAction(
             self.tr("Paste as &Main Task"), self.__pasteMainTask)
         self.__backMenu.addSeparator()
-        self.__backMenu.addAction(
+        self.backDeleteCompletedItem = self.__backMenu.addAction(
             self.tr("Delete Completed &Tasks"), self.__deleteCompleted)
         self.__backMenu.addSeparator()
         self.__backMenuFilteredAct = self.__backMenu.addAction(
@@ -273,6 +273,8 @@ class TaskViewer(QTreeWidget):
             else:
                 self.backPasteItem.setEnabled(False)
                 self.backPasteMainItem.setEnabled(False)
+            self.backDeleteCompletedItem.setEnabled(
+                bool(self.tasks))
             self.__backMenu.popup(coord)
         else:
             self.projectTasksMenuItem.setEnabled(self.projectOpen)
