@@ -4529,7 +4529,7 @@ class ViewManager(QObject):
         @param filetype type of the source file (string)
         @param fn filename of this view
         @return reference to the new editor object (Editor.Editor) and the new
-            edito assembly object (EditorAssembly.EditorAssembly)
+            editor assembly object (EditorAssembly.EditorAssembly)
         """
         from QScintilla.EditorAssembly import EditorAssembly
         assembly = EditorAssembly(self.dbs, fn, self, filetype=filetype,
@@ -4938,7 +4938,7 @@ class ViewManager(QObject):
         Public slot to generate a new empty editor.
         """
         from QScintilla.EditorAssembly import EditorAssembly
-        assembly = EditorAssembly(self.dbs, None, self,
+        assembly = EditorAssembly(self.dbs, "", self,
                                   tv=e5App().getObject("TaskViewer"))
         editor = assembly.getEditor()
         self.editors.append(editor)

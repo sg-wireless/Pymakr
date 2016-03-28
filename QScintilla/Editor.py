@@ -136,7 +136,7 @@ class Editor(QsciScintillaCompat):
     RequestSyncToken = "REQUEST_SYNC"
     SyncToken = "SYNC"
     
-    def __init__(self, dbs, fn=None, vm=None,
+    def __init__(self, dbs, fn="", vm=None,
                  filetype="", editor=None, tv=None):
         """
         Constructor
@@ -330,7 +330,7 @@ class Editor(QsciScintillaCompat):
         
         self.isResourcesFile = False
         if editor is None:
-            if self.fileName is not None:
+            if self.fileName:
                 if (QFileInfo(self.fileName).size() // 1024) > \
                    Preferences.getEditor("WarnFilesize"):
                     res = E5MessageBox.yesNo(
@@ -1675,7 +1675,7 @@ class Editor(QsciScintillaCompat):
         
         @param m modification status
         """
-        if not m and self.fileName is not None:
+        if not m and bool(self.fileName):
             self.lastModified = QFileInfo(self.fileName).lastModified()
         self.modificationStatusChanged.emit(m, self)
         self.undoAvailable.emit(self.isUndoAvailable())
@@ -1849,7 +1849,7 @@ class Editor(QsciScintillaCompat):
                 self.filetype = "Ruby"
                 return True
             
-            if self.fileName is not None and \
+            if bool(self.fileName) and \
                os.path.splitext(self.fileName)[1] in \
                     self.dbs.getExtensions('Ruby'):
                 self.filetype = "Ruby"
@@ -1867,7 +1867,7 @@ class Editor(QsciScintillaCompat):
             return True
         
         if self.filetype == "":
-            if self.fileName is not None and \
+            if self.fileName and \
                os.path.splitext(self.fileName)[1] == ".js":
                 self.filetype = "JavaScript"
                 return True
@@ -2967,13 +2967,13 @@ class Editor(QsciScintillaCompat):
         """
         # save to project, if a project is loaded
         if self.project.isOpen():
-            if self.fileName is not None and \
+            if self.fileName and \
                self.project.startswithProjectPath(self.fileName):
                 path = os.path.dirname(self.fileName)
             else:
                 path = self.project.getProjectPath()
         
-        if not path and self.fileName is not None:
+        if not path and self.fileName:
             path = os.path.dirname(self.fileName)
         if not path:
             path = Preferences.getMultiProject("Workspace") or \
@@ -3053,7 +3053,7 @@ class Editor(QsciScintillaCompat):
             return False      # do nothing if text wasn't changed
             
         newName = None
-        if saveas or self.fileName is None:
+        if saveas or self.fileName == "":
             saveas = True
             
             fn = self.__getSaveFileName(path)
@@ -5353,7 +5353,7 @@ class Editor(QsciScintillaCompat):
         
         @return flag indicating this editor should be saved (boolean)
         """
-        return self.fileName is not None and \
+        return bool (self.fileName) and \
             not self.autosaveManuallyDisabled and \
             not self.isReadOnly()
 
@@ -5382,7 +5382,7 @@ class Editor(QsciScintillaCompat):
         @type str
         """
         if fn != self.fileName and (
-                self.fileName is not None or fn != "(Unnamed)"):
+                bool(self.fileName) or fn != "(Unnamed)"):
             return
         
         self.clearSyntaxError()
@@ -5404,7 +5404,7 @@ class Editor(QsciScintillaCompat):
         """
         # Check if it's the requested file, otherwise ignore signal
         if fn != self.fileName and (
-                self.fileName is not None or fn != "(Unnamed)"):
+                bool(self.fileName) or fn != "(Unnamed)"):
             return
         
         self.clearSyntaxError()
@@ -6468,7 +6468,7 @@ class Editor(QsciScintillaCompat):
         @param evt the event, that was generated (QEvent)
         """
         if evt.type() == QEvent.WindowStateChange and \
-           self.fileName is not None:
+           bool(self.fileName):
             if self.windowState() == Qt.WindowStates(Qt.WindowMinimized):
                 cap = os.path.basename(self.fileName)
             else:
@@ -6582,12 +6582,14 @@ class Editor(QsciScintillaCompat):
         @param bForce True to force change, False to only update and emit
                 signal if there was an attribute change.
         """
-        if self.fileName is None:
+        if self.fileName == "":
             return
+        
         readOnly = not QFileInfo(self.fileName).isWritable() or \
             self.isReadOnly()
         if not bForce and (readOnly == self.isReadOnly()):
             return
+        
         cap = self.fileName
         if readOnly:
             cap = self.tr("{0} (ro)".format(cap))
@@ -7279,7 +7281,7 @@ class Editor(QsciScintillaCompat):
             and if it is inside a remotely initiated shared edit session
             (boolean, boolean, boolean, boolean)
         """
-        return self.fileName is not None and \
+        return bool(self.fileName) and \
             self.project.isOpen() and \
             self.project.isProjectFile(self.fileName), \
             self.__isShared, self.__inSharedEdit, self.__inRemoteSharedEdit

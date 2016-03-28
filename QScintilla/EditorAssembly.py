@@ -21,7 +21,7 @@ class EditorAssembly(QWidget):
     Class implementing the editor assembly widget containing the navigation
     combos and the editor widget.
     """
-    def __init__(self, dbs, fn=None, vm=None, filetype="", editor=None,
+    def __init__(self, dbs, fn="", vm=None, filetype="", editor=None,
                  tv=None):
         """
         Constructor
