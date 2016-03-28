@@ -5912,6 +5912,7 @@ eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.editorTextChanged
 eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.eventFilter?4(watched, event)
 eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.getSplitOrientation?4()
 eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.lastEditorClosed?7
+eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.mainWidget?4()
 eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.nextSplit?4()
 eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.prevSplit?4()
 eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.previewStateChanged?7
@@ -5987,6 +5988,7 @@ eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.getSplitOrientation?4()
 eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.getTabWidgetById?4(id_)
 eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.insertView?4(win, tabWidget, index, fn=None, noName="")
 eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.lastEditorClosed?7
+eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.mainWidget?4()
 eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.nextSplit?4()
 eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.preferencesChanged?4()
 eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.prevSplit?4()
@@ -9265,6 +9267,7 @@ eric6.ViewManager.ViewManager.ViewManager.insertNumber?4(txt)
 eric6.ViewManager.ViewManager.ViewManager.insertSymbol?4(txt)
 eric6.ViewManager.ViewManager.ViewManager.isConnected?4()
 eric6.ViewManager.ViewManager.ViewManager.lastEditorClosed?7
+eric6.ViewManager.ViewManager.ViewManager.mainWidget?4()
 eric6.ViewManager.ViewManager.ViewManager.newEditor?4()
 eric6.ViewManager.ViewManager.ViewManager.newEditorView?4(fn, caller, filetype="")
 eric6.ViewManager.ViewManager.ViewManager.nextSplit?4()
