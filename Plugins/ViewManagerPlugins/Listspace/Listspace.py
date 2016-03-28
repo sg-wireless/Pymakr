@@ -136,7 +136,7 @@ class StackedWidget(QStackedWidget):
         return len(self.editors) and self.editors[0] or None
 
 
-class Listspace(QSplitter, ViewManager):
+class Listspace(ViewManager):
     """
     Class implementing the listspace viewmanager class.
     
@@ -199,22 +199,22 @@ class Listspace(QSplitter, ViewManager):
         """
         self.stacks = []
         
-        QSplitter.__init__(self, parent)
+        self.__splitter = QSplitter(parent)
         ViewManager.__init__(self)
-        self.setChildrenCollapsible(False)
+        self.__splitter.setChildrenCollapsible(False)
         
         self.viewlist = QListWidget(self)
         policy = self.viewlist.sizePolicy()
         policy.setHorizontalPolicy(QSizePolicy.Ignored)
         self.viewlist.setSizePolicy(policy)
-        self.addWidget(self.viewlist)
+        self.__splitter.addWidget(self.viewlist)
         self.viewlist.setContextMenuPolicy(Qt.CustomContextMenu)
         self.viewlist.currentRowChanged.connect(self.__showSelectedView)
         self.viewlist.customContextMenuRequested.connect(self.__showMenu)
         
         self.stackArea = QSplitter(self)
         self.stackArea.setChildrenCollapsible(False)
-        self.addWidget(self.stackArea)
+        self.__splitter.addWidget(self.stackArea)
         self.stackArea.setOrientation(Qt.Vertical)
         stack = StackedWidget(self.stackArea)
         self.stackArea.addWidget(stack)
@@ -222,7 +222,8 @@ class Listspace(QSplitter, ViewManager):
         self.currentStack = stack
         stack.currentChanged.connect(self.__currentChanged)
         stack.installEventFilter(self)
-        self.setSizes([int(self.width() * 0.2), int(self.width() * 0.8)])
+        self.__splitter.setSizes(
+            [int(self.width() * 0.2), int(self.width() * 0.8)])
         # 20% for viewlist, 80% for the editors
         self.__inRemoveView = False
         
@@ -296,6 +297,16 @@ class Listspace(QSplitter, ViewManager):
                         self.viewlist.count() > 1)
                     
                     self.__menu.popup(self.viewlist.mapToGlobal(point))
+    
+    def mainWidget(self):
+        """
+        Public method to return a reference to the main Widget of a
+        specific view manager subclass.
+        
+        @return reference to the main widget
+        @rtype QWidget
+        """
+        return self.__splitter
         
     def canCascade(self):
         """
@@ -654,8 +665,10 @@ class Listspace(QSplitter, ViewManager):
             if aw:
                 aw.setFocus()
         
-        index = self.editors.index(self.currentStack.currentWidget())
-        self.viewlist.setCurrentRow(index)
+        cw = self.currentStack.currentWidget()
+        if cw:
+            index = self.editors.index(cw)
+            self.viewlist.setCurrentRow(index)
         
     def prevSplit(self):
         """
@@ -672,8 +685,11 @@ class Listspace(QSplitter, ViewManager):
             aw = self.activeWindow()
             if aw:
                 aw.setFocus()
-        index = self.editors.index(self.currentStack.currentWidget())
-        self.viewlist.setCurrentRow(index)
+        
+        cw = self.currentStack.currentWidget()
+        if cw:
+            index = self.editors.index(cw)
+            self.viewlist.setCurrentRow(index)
         
     def __contextMenuClose(self):
         """

@@ -604,10 +604,10 @@ class UserInterface(E5MainWindow):
         layout = QVBoxLayout()
         layout.setContentsMargins(1, 1, 1, 1)
         layout.setSpacing(1)
-        layout.addWidget(self.viewmanager)
+        layout.addWidget(self.viewmanager.mainWidget())
         layout.addWidget(self.viewmanager.searchWidget())
         layout.addWidget(self.viewmanager.replaceWidget())
-        self.viewmanager.setSizePolicy(
+        self.viewmanager.mainWidget().setSizePolicy(
             QSizePolicy.Preferred, QSizePolicy.Expanding)
         leftWidget.setLayout(layout)
         self.viewmanager.searchWidget().hide()

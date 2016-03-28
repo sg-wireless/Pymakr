@@ -12,10 +12,10 @@ from __future__ import unicode_literals
 import os
 
 from PyQt5.QtCore import pyqtSignal, pyqtSlot, QSignalMapper, QTimer, \
-    QFileInfo, QRegExp, QObject, Qt, QCoreApplication
+    QFileInfo, QRegExp, Qt, QCoreApplication
 from PyQt5.QtGui import QColor, QKeySequence, QPalette, QPixmap
 from PyQt5.QtWidgets import QLineEdit, QToolBar, QWidgetAction, QDialog, \
-    QApplication, QMenu, QComboBox
+    QApplication, QMenu, QComboBox, QWidget
 from PyQt5.Qsci import QsciScintilla
 
 from E5Gui.E5Application import e5App
@@ -85,7 +85,7 @@ class QuickSearchLineEdit(QLineEdit):
         super(QuickSearchLineEdit, self).focusInEvent(evt)   # pass it on
 
 
-class ViewManager(QObject):
+class ViewManager(QWidget):##QObject):
     """
     Base class inherited by all specific viewmanager classes.
     
@@ -441,6 +441,17 @@ class ViewManager(QObject):
         
         @param m flag indicating the modification status (boolean)
         @param editor editor window changed
+        @exception RuntimeError Not implemented
+        """
+        raise RuntimeError('Not implemented')
+    
+    def mainWidget(self):
+        """
+        Public method to return a reference to the main Widget of a
+        specific view manager subclass.
+        
+        @return reference to the main widget
+        @rtype QWidget
         @exception RuntimeError Not implemented
         """
         raise RuntimeError('Not implemented')

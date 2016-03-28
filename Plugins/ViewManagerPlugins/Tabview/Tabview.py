@@ -699,7 +699,7 @@ class TabWidget(E5TabWidget):
         self.vm.newEditor()
 
 
-class Tabview(QSplitter, ViewManager):
+class Tabview(ViewManager):
     """
     Class implementing a tabbed viewmanager class embedded in a splitter.
     
@@ -762,24 +762,34 @@ class Tabview(QSplitter, ViewManager):
         """
         self.tabWidgets = []
         
-        QSplitter.__init__(self, parent)
+        self.__splitter = QSplitter(parent)
         ViewManager.__init__(self)
-        self.setChildrenCollapsible(False)
+        self.__splitter.setChildrenCollapsible(False)
         
         tw = TabWidget(self)
-        self.addWidget(tw)
+        self.__splitter.addWidget(tw)
         self.tabWidgets.append(tw)
         self.currentTabWidget = tw
         self.currentTabWidget.showIndicator(True)
         tw.currentChanged.connect(self.__currentChanged)
         tw.installEventFilter(self)
         tw.tabBar().installEventFilter(self)
-        self.setOrientation(Qt.Vertical)
+        self.__splitter.setOrientation(Qt.Vertical)
         self.__inRemoveView = False
         
         self.maxFileNameChars = Preferences.getUI(
             "TabViewManagerFilenameLength")
         self.filenameOnly = Preferences.getUI("TabViewManagerFilenameOnly")
+    
+    def mainWidget(self):
+        """
+        Public method to return a reference to the main Widget of a
+        specific view manager subclass.
+        
+        @return reference to the main widget
+        @rtype QWidget
+        """
+        return self.__splitter
         
     def canCascade(self):
         """
@@ -1067,7 +1077,7 @@ class Tabview(QSplitter, ViewManager):
         """
         tw = TabWidget(self)
         tw.show()
-        self.addWidget(tw)
+        self.__splitter.addWidget(tw)
         self.tabWidgets.append(tw)
         self.currentTabWidget.showIndicator(False)
         self.currentTabWidget = self.tabWidgets[-1]
@@ -1075,11 +1085,11 @@ class Tabview(QSplitter, ViewManager):
         tw.currentChanged.connect(self.__currentChanged)
         tw.installEventFilter(self)
         tw.tabBar().installEventFilter(self)
-        if self.orientation() == Qt.Horizontal:
+        if self.__splitter.orientation() == Qt.Horizontal:
             size = self.width()
         else:
             size = self.height()
-        self.setSizes(
+        self.__splitter.setSizes(
             [int(size / len(self.tabWidgets))] * len(self.tabWidgets))
         self.splitRemoveAct.setEnabled(True)
         self.nextSplitAct.setEnabled(True)
@@ -1129,7 +1139,7 @@ class Tabview(QSplitter, ViewManager):
         
         @return orientation of the split (Qt.Horizontal or Qt.Vertical)
         """
-        return self.orientation()
+        return self.__splitter.orientation()
         
     def setSplitOrientation(self, orientation):
         """
@@ -1138,7 +1148,7 @@ class Tabview(QSplitter, ViewManager):
         @param orientation orientation of the split
                 (Qt.Horizontal or Qt.Vertical)
         """
-        self.setOrientation(orientation)
+        self.__splitter.setOrientation(orientation)
         
     def nextSplit(self):
         """
