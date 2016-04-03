@@ -899,10 +899,13 @@ def createMacAppBundle(pydir):
     if path:
         pybin = os.path.join(sys.exec_prefix, "bin")
         pathlist = path.split(os.pathsep)
-        if pybin not in pathlist:
-            pathLine = "PATH={0}{1}{2}\n".format(pybin, os.pathsep, path)
-        else:
-            pathLine = "PATH={0}\n".format(path)
+        pathlist_n = [pybin]
+        for path_ in pathlist:
+            if path_ and path_ not in pathlist_n:
+                pathlist_n.append(path_)
+        pathLine = "PATH={0}\n".format(os.pathsep.join(pathlist_n))
+    
+    # create the wrapper script
     wrapper = ('''#!/bin/sh\n'''
                '''\n'''
                '''{0}'''
