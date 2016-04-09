@@ -208,6 +208,8 @@ class PreviewerHTML(QWidget):
             self.previewView.page().loadFinished.connect(
                 self.__restoreScrollBarPositions)
         self.previewView.setHtml(html, baseUrl=QUrl.fromLocalFile(filePath))
+        if self.__previewedEditor:
+            self.__previewedEditor.setFocus()
     
     @pyqtSlot(str)
     def on_previewView_titleChanged(self, title):
