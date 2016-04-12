@@ -268,10 +268,6 @@ def main():
             qtHelpTitle == ""):
         usage()
     
-    if qtHelpCreation:
-        from PyQt5.QtCore import QCoreApplication
-        app = QCoreApplication(sys.argv)    # __IGNORE_WARNING__
-
     input = output = 0
     basename = ""
 
