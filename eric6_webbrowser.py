@@ -30,6 +30,22 @@ except AttributeError:
 import sys
 import os
 
+try:
+    from PyQt5 import QtWebKit      # __IGNORE_WARNING__
+except ImportError:
+    from PyQt5.QtCore import qVersion, QTimer
+    from PyQt5.QtWidgets import QApplication
+    from E5Gui import E5MessageBox
+    app = QApplication([])
+    QTimer.singleShot(0, lambda: E5MessageBox.critical(
+        None,
+        "eric6 Web Browser (QtWebKit based)",
+        "QtWebKit is needed to run this variant of the eric6 Web Browser."
+        " However, it seems to be missing. You are using Qt {0}, which"
+        " doesn't include this anymore.".format(qVersion())))
+    app.exec_()
+    sys.exit(100)
+
 for arg in sys.argv[:]:
     if arg.startswith("--config="):
         import Globals
