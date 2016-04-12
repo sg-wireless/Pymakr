@@ -104,6 +104,8 @@ class FlashCookieReader(object):
         self.__data.seek(0)
         self.__data.read(2)
         sLenData = self.__data.read(4)
+        if len(sLenData) != 4:
+            raise FlashCookieReaderError("Flash cookie is invalid.")
         lenData, = struct.unpack(">L", sLenData)    # unsigned long, big-endian
         if lenSolData != lenData + 6:
             raise FlashCookieReaderError(
