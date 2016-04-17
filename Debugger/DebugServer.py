@@ -1295,7 +1295,8 @@ class DebugServer(QTcpServer):
         if self.passive:
             self.__passiveShutDown()
         self.clientExit.emit(int(status))
-        if Preferences.getDebugger("AutomaticReset"):
+        if Preferences.getDebugger("AutomaticReset") or (self.running and
+                                                         not self.debugging):
             self.startClient(False)
         if self.passive:
             self.__createDebuggerInterface("None")

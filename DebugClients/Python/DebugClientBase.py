@@ -584,7 +584,7 @@ class DebugClientBase(object):
                     res = exc.code
                     atexit._run_exitfuncs()
                 self.writestream.flush()
-                self.progTerminated(res, exit=True)
+                self.progTerminated(res)
                 return
 
             if cmd == DebugProtocol.RequestCoverage:
@@ -626,7 +626,7 @@ class DebugClientBase(object):
                 self.cover.stop()
                 self.cover.save()
                 self.writestream.flush()
-                self.progTerminated(res, exit=True)
+                self.progTerminated(res)
                 return
             
             if cmd == DebugProtocol.RequestProfile:
@@ -665,7 +665,7 @@ class DebugClientBase(object):
                     atexit._run_exitfuncs()
                 self.prof.save()
                 self.writestream.flush()
-                self.progTerminated(res, exit=True)
+                self.progTerminated(res)
                 return
 
             if cmd == DebugProtocol.RequestShutdown:
@@ -1047,7 +1047,7 @@ class DebugClientBase(object):
 
     def __interact(self):
         """
-        Private method to Interact with  the debugger.
+        Private method to Interact with the debugger.
         """
         global DebugClientInstance
 
@@ -1071,6 +1071,9 @@ class DebugClientBase(object):
         while self.eventExit is None:
             wrdy = []
 
+            if self.writestream.nWriteErrors > self.writestream.maxtries:
+                break
+            
             if AsyncPendingWrite(self.writestream):
                 wrdy.append(self.writestream)
 
@@ -1304,13 +1307,12 @@ class DebugClientBase(object):
         """
         return self.running
 
-    def progTerminated(self, status, exit=False):
+    def progTerminated(self, status):
         """
         Public method to tell the debugger that the program has terminated.
         
         @param status return status
-        @param exit flag indicating to perform a sys.exit()
-        @type bool
+        @type int
         """
         if status is None:
             status = 0
@@ -1324,9 +1326,6 @@ class DebugClientBase(object):
             self.set_quit()
             self.running = None
             self.write('%s%d\n' % (DebugProtocol.ResponseExit, status))
-            if exit:
-                self.writestream.close(1)
-                sys.exit(status)
         
         # reset coding
         self.__coding = self.defaultCoding
