@@ -1050,7 +1050,7 @@ class DebugClientBase(object):
 
     def __interact(self):
         """
-        Private method to Interact with the debugger.
+        Private method to interact with the debugger.
         """
         global DebugClientInstance
 
