@@ -2120,14 +2120,6 @@
               <string>eric6</string>
             </value>
             <key>
-              <string>sourceExtensions</string>
-            </key>
-            <value>
-              <list>
-                <string></string>
-              </list>
-            </value>
-            <key>
               <string>useRecursion</string>
             </key>
             <value>
