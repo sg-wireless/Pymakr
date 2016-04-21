@@ -72,3 +72,6 @@ target/
 # pyenv
 .python-version
 *Ui_*
+
+# Mac
+.DS_Store
