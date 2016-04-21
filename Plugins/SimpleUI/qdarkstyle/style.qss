@@ -1216,3 +1216,8 @@ QSplitter::handle:horizontal {
 QSplitter::handle:vertical {
     height: 1px;
 }
+
+Tabview
+{
+    background-color: transparent;
+}
