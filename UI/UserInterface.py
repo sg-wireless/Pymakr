@@ -2397,6 +2397,8 @@ class UserInterface(E5MainWindow):
         """
         self.__menus = {}
         mb = self.menuBar()
+        if Utilities.isLinuxPlatform():
+            mb.setNativeMenuBar(False)
         
         self.__menus["file"] = self.viewmanager.initFileMenu()
         mb.addMenu(self.__menus["file"])
