@@ -97,14 +97,15 @@ class Serial_connection:
         self.connected = False
         for attempt in range(timeout + 1):
             try:
-                self.stream = serial.Serial(device, baudrate=baudrate, interCharTimeout=1)
-                self.connected = True
-                self.__expose_stream_methods()
-                if sys.version_info[0] >= 3:
-                    self.__in_waiting = lambda: self.stream.in_waiting
-                else:
+                try:
+                    self.stream = serial.Serial(device, baudrate=baudrate, interCharTimeout=1)
                     self.__in_waiting = self.stream.inWaiting
-
+                except (TypeError):
+                    # version 3 of the pyserial library changed everything
+                    self.stream = serial.Serial(device, baudrate=baudrate, inter_byte_timeout=1)
+                    self.__in_waiting = lambda: self.stream.in_waiting
+                self.__expose_stream_methods()
+                self.connected = True
                 if attempt != 0:
                     print('')   # to break the dotted line printed on retries
                 break
@@ -390,7 +391,7 @@ class Pyboard:
 
     def _wait_for_exact_text(self, remote_text):
         remote_text = remote_text.decode('ascii')
-        return remote_text in self.connection.read_until(remote_text)
+        return remote_text in self.read_until(remote_text)
 
     def reset(self):
         self.exit_raw_repl()
