@@ -9,16 +9,17 @@ Module implementing a widget to select a symbol in various formats.
 
 from __future__ import unicode_literals
 
-import sys
-import unicodedata
 try:
-    # Py3
-    import html.entities as html_entities
-except (ImportError):
     # Py2
     str = unicode                               # __IGNORE_WARNING__
     chr = unichr                                # __IGNORE_WARNING__
     import htmlentitydefs as html_entities      # __IGNORE_WARNING__
+except NameError:
+    # Py3
+    import html.entities as html_entities
+
+import sys
+import unicodedata
 
 from PyQt5.QtCore import pyqtSlot, pyqtSignal, QAbstractTableModel, \
     QModelIndex, Qt, qVersion, QItemSelectionModel, QLocale
