@@ -10,8 +10,9 @@ Module implementing a previewer widget for HTML, Markdown and ReST files.
 from __future__ import unicode_literals
 
 try:  # Only for Py2
+    basestring
     import StringIO as io   # __IGNORE_EXCEPTION__
-except ImportError:
+except (ImportError, NameError):
     import io       # __IGNORE_WARNING__
 
 import os

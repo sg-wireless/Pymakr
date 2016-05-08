@@ -24,8 +24,8 @@ restartArgs = [arg for arg in sys.argv[1:]
 import Toolbox.PyQt4ImportHook  # __IGNORE_WARNING__
 
 try:  # Only for Py2
-    import StringIO as io   # __IGNORE_EXCEPTION__
     import Globals.compatibility_fixes     # __IGNORE_WARNING__
+    import StringIO as io   # __IGNORE_EXCEPTION__
     import locale
     coverage = 'Python'
 except ImportError:

@@ -14,7 +14,7 @@ try:
     str = unicode                               # __IGNORE_WARNING__
     chr = unichr                                # __IGNORE_WARNING__
     import htmlentitydefs as html_entities      # __IGNORE_WARNING__
-except NameError:
+except (NameError, ImportError):
     # Py3
     import html.entities as html_entities
 
