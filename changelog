@@ -1,5 +1,9 @@
 Change Log
 ----------
+Version 6.1.5:
+- bug fixes
+- improved Py2/3 compatibility thanks to Parsifal Herzog
+
 Version 6.1.4:
 - bug fixes
 
