@@ -97,7 +97,10 @@ class DebugServer(QObject):
         self.clientOutput.emit(text)
 
     def send(self, text):
-        self.__connection.send(text)
+        try:
+            self.__connection.send(text)
+        except:
+            pass
 
     def restart(self):
         try:
