@@ -419,7 +419,7 @@ class Pyboard:
         self.connection.write(b'\x04')
 
         # check if we could exec command
-        data = self.connection.read_until(b'OK')
+        data = self.read_until(b'OK')
         if data != b'OK':
             raise PyboardError('could not exec command')
 
