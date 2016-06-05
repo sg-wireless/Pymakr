@@ -96,7 +96,7 @@ class E5SideBar(QWidget):
         
         self.__tabBar.currentChanged[int].connect(
             self.__stackedWidget.setCurrentIndex)
-        e5App().focusChanged[QWidget, QWidget].connect(self.__appFocusChanged)
+        e5App().focusChanged.connect(self.__appFocusChanged)
         self.__autoHideButton.toggled[bool].connect(self.__autoHideToggled)
     
     def setSplitter(self, splitter):
@@ -689,5 +689,4 @@ class E5SideBar(QWidget):
         properly. It disconnects from the focusChanged signal in order to
         avoid trouble later on.
         """
-        e5App().focusChanged[QWidget, QWidget].disconnect(
-            self.__appFocusChanged)
+        e5App().focusChanged.disconnect(self.__appFocusChanged)

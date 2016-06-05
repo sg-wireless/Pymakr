@@ -297,8 +297,7 @@ class HelpWindow(E5MainWindow):
                     QTimer.singleShot(0, self.__searchForWord)
             
             self.__lastActiveWindow = None
-            e5App().focusChanged[QWidget, QWidget].connect(
-                self.__appFocusChanged)
+            e5App().focusChanged.connect(self.__appFocusChanged)
             
             QTimer.singleShot(0, syncMgr.loadSettings)
     
