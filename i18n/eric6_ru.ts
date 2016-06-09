@@ -367,7 +367,7 @@
     <message>
         <location filename="../Helpviewer/Bookmarks/AddBookmarkDialog.py" line="198"/>
         <source>Add Bookmark</source>
-        <translation>Добавить закладку</translation>
+        <translation type="unfinished">Добавить закладку</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/AddBookmarkDialog.ui" line="42"/>
@@ -584,7 +584,7 @@
         <source>&lt;b&gt;Target Directory&lt;/b&gt;
 &lt;p&gt;Select the target directory via a directory selection dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Директория назначения&lt;/b&gt;
-&lt;p&gt;Выбор директории назначения посредством диалога выбора директории.&lt;/p&gt;</translation>
+&lt;p&gt;Выбор целевой директории посредством диалога выбора директории.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/AddFileDialog.ui" line="51"/>
@@ -1453,12 +1453,12 @@ the button to the right.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/UrlBar/BookmarkActionSelectionDialog.py" line="58"/>
         <source>Remove from Speed Dial</source>
-        <translation>Удалить из быстрого набора</translation>
+        <translation>Удалить из быстрых вкладок</translation>
     </message>
     <message>
         <location filename="../Helpviewer/UrlBar/BookmarkActionSelectionDialog.py" line="62"/>
         <source>Add to Speed Dial</source>
-        <translation>Добавить в быстрый набор</translation>
+        <translation>Добавить в быстрые вкладки</translation>
     </message>
 </context>
 <context>
@@ -1643,7 +1643,7 @@ the button to the right.&lt;/p&gt;</source>
         <location filename="../ViewManager/BookmarkedFilesDialog.ui" line="144"/>
         <source>&lt;b&gt;Change&lt;/b&gt;
 &lt;p&gt;Change the value of the selected entry.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Правка&lt;/b&gt;
+        <translation>&lt;b&gt;Изменить&lt;/b&gt;
 &lt;p&gt;Изменить значение выбранной закладки.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -1808,12 +1808,12 @@ the button to the right.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksManager.py" line="27"/>
         <source>Bookmarks Bar</source>
-        <translation>Закладки</translation>
+        <translation>Панель закладок</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksManager.py" line="28"/>
         <source>Bookmarks Menu</source>
-        <translation>Выбор закладок</translation>
+        <translation>Меню закладок</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksManager.py" line="140"/>
@@ -1926,12 +1926,12 @@ the button to the right.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksMenu.py" line="280"/>
         <source>Default Home Page</source>
-        <translation>Домашняя страница по умолчанию</translation>
+        <translation>Домашняя страничка по умолчанию</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksMenu.py" line="283"/>
         <source>Speed Dial</source>
-        <translation>Быстрый набор</translation>
+        <translation>Быстрые вкладки</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksMenu.py" line="287"/>
@@ -2156,7 +2156,7 @@ the button to the right.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/Browser.py" line="260"/>
         <source>Find&amp;&amp;Replace in this directory</source>
-        <translation>Найти и &amp;заменить в этой директории</translation>
+        <translation>Найти &amp;&amp; заменить в этой директории</translation>
     </message>
     <message>
         <location filename="../UI/Browser.py" line="556"/>
@@ -2307,7 +2307,7 @@ Line: {1}</source>
     <message>
         <location filename="../Debugger/CallTraceViewer.ui" line="22"/>
         <source>Press to start tracing calls and returns</source>
-        <translation>Старт трассировки вызовов и возврат</translation>
+        <translation>Старт трассировки вызовов и возвратов</translation>
     </message>
     <message>
         <location filename="../Debugger/CallTraceViewer.ui" line="32"/>
@@ -2400,7 +2400,7 @@ Line: {1}</source>
     <message>
         <location filename="../Cooperation/ChatWidget.ui" line="127"/>
         <source>Press to toggle the shared status of the current editor</source>
-        <translation>Переключить совмещение текущего редактора</translation>
+        <translation>Изменить статус совмещения текущего редактора</translation>
     </message>
     <message>
         <location filename="../Cooperation/ChatWidget.ui" line="140"/>
@@ -2627,17 +2627,17 @@ Line: {1}</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/ChromeImporter.py" line="44"/>
         <source>Google Chrome stores its bookmarks in the &lt;b&gt;Bookmarks&lt;/b&gt; text file. This file is usually located in</source>
-        <translation>Гугл Хром хранит эти закладки в текстовом файле &lt;b&gt;Закладки&lt;/b&gt;. Этот файл обычно находится в</translation>
+        <translation>Google Chrome хранит эти закладки в текстовом файле &lt;b&gt;Bookmarks&lt;/b&gt;. Этот файл обычно находится в</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/ChromeImporter.py" line="65"/>
         <source>Please choose the file to begin importing bookmarks.</source>
-        <translation>Пожалуйста выберите файл для импортирования закладок.</translation>
+        <translation>Пожалуйста выберите файл чтобы начать импортирование закладок.</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/ChromeImporter.py" line="65"/>
         <source>Chromium stores its bookmarks in the &lt;b&gt;Bookmarks&lt;/b&gt; text file. This file is usually located in</source>
-        <translation>Хром хранит эти закладки в текстовом файле &lt;b&gt;Закладки&lt;/b&gt;. Этот файл обычно находится в</translation>
+        <translation>Chromium хранит эти закладки в текстовом файле &lt;b&gt;Bookmarks&lt;/b&gt;. Этот файл обычно находится в</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/ChromeImporter.py" line="114"/>
@@ -2654,12 +2654,12 @@ Reason: {1}</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/ChromeImporter.py" line="142"/>
         <source>Google Chrome Import</source>
-        <translation>Импорт из Гугл Хрома</translation>
+        <translation>Импорт из Google Chrome</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/ChromeImporter.py" line="144"/>
         <source>Chromium Import</source>
-        <translation>Импорт из Хрома</translation>
+        <translation>Импорт из Chromium</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/ChromeImporter.py" line="146"/>
@@ -2946,7 +2946,7 @@ entry will open an editor window and position the cursor at the respective line 
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/CodeStyleCheckerDialog.ui" line="57"/>
         <source>Enter filename patterns of files to be excluded separated by a comma</source>
-        <translation>Задайте через запятую маски файлов для исключения</translation>
+        <translation>Задайте разделённые запятой маски файлов для исключения</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/CodeStyleCheckerDialog.ui" line="534"/>
@@ -2986,7 +2986,7 @@ entry will open an editor window and position the cursor at the respective line 
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/CodeStyleCheckerDialog.ui" line="141"/>
         <source>Press to select the message codes from a list</source>
-        <translation>Выберите коды сообщений из списка</translation>
+        <translation>Выбрать коды сообщений из списка</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/CodeStyleCheckerDialog.ui" line="85"/>
@@ -3496,18 +3496,18 @@ the respective line and position.&lt;/p&gt;</source>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="543"/>
         <source>%n blank line(s) inserted.</source>
         <translation>
-            <numerusform>%n чистая строка вставлена.</numerusform>
-            <numerusform>%n чистые строки вставлены.</numerusform>
-            <numerusform>%n чистых строк вставлено.</numerusform>
+            <numerusform>%n пустая строка вставлена.</numerusform>
+            <numerusform>%n пустые строки вставлены.</numerusform>
+            <numerusform>%n пустых строк вставлены.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="546"/>
         <source>%n superfluous lines removed</source>
         <translation>
-            <numerusform>%n пустая строка удалена</numerusform>
-            <numerusform>%n пустых строки удалены</numerusform>
-            <numerusform>%n пустых строк удалено</numerusform>
+            <numerusform>%n лишняя пустая строка удалена</numerusform>
+            <numerusform>%n лишние пустые строки удалены</numerusform>
+            <numerusform>%n лишних пустых строк удалены</numerusform>
         </translation>
     </message>
     <message>
@@ -3614,7 +3614,7 @@ the respective line and position.&lt;/p&gt;</source>
         <translation>
             <numerusform>%n проблема найдена</numerusform>
             <numerusform>%n проблемы найдены</numerusform>
-            <numerusform>%n проблем найдено</numerusform>
+            <numerusform>%n проблем найдены</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -3622,8 +3622,8 @@ the respective line and position.&lt;/p&gt;</source>
         <source>%n issue(s) fixed</source>
         <translation>
             <numerusform>%n проблема решена</numerusform>
-            <numerusform>%n проблемы решены</numerusform>
-            <numerusform>%n проблем решено</numerusform>
+            <numerusform>%n iпроблемы решены</numerusform>
+            <numerusform>%n iпроблем решены</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -3632,16 +3632,16 @@ the respective line and position.&lt;/p&gt;</source>
         <translation>
             <numerusform>%n файл проверен</numerusform>
             <numerusform>%n файла проверены</numerusform>
-            <numerusform>%n файлов проверено</numerusform>
+            <numerusform>%n файлов проверены</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/CodeStyleStatisticsDialog.py" line="69"/>
         <source>%n file(s) with issues found</source>
         <translation>
-            <numerusform>%n файл с проблемами найден</numerusform>
-            <numerusform>%n файла с проблемами найдены</numerusform>
-            <numerusform>%n файлов с проблемами найдено</numerusform>
+            <numerusform>%n файл с проблемой найден</numerusform>
+            <numerusform>%n файла с проблемой найдены</numerusform>
+            <numerusform>%n файлов с проблемой найдены</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -3650,7 +3650,7 @@ the respective line and position.&lt;/p&gt;</source>
         <translation>
             <numerusform>%n проблема проигнорирована</numerusform>
             <numerusform>%n проблемы проигнорированы</numerusform>
-            <numerusform>%n проблем проигнорировано</numerusform>
+            <numerusform>%n проблем проигнорированы</numerusform>
         </translation>
     </message>
 </context>
@@ -3974,7 +3974,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/CompareDialog.ui" line="82"/>
         <source>Press to select the file via a file selection dialog</source>
-        <translation>Выберите файл посредством диалога выбора файлов</translation>
+        <translation>Выбрать файл посредством диалога выбора файлов</translation>
     </message>
     <message>
         <location filename="../UI/CompareDialog.ui" line="65"/>
@@ -3989,32 +3989,32 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/CompareDialog.ui" line="151"/>
         <source>Press to move to the first difference</source>
-        <translation>Переход к первому различию</translation>
+        <translation>Перейти к первому различию</translation>
     </message>
     <message>
         <location filename="../UI/CompareDialog.ui" line="161"/>
         <source>Press to move to the previous difference</source>
-        <translation>Переход к предыдущему различию</translation>
+        <translation>Перейти к предыдущему различию</translation>
     </message>
     <message>
         <location filename="../UI/CompareDialog.ui" line="171"/>
         <source>Press to move to the next difference</source>
-        <translation>Переход к следующему различию</translation>
+        <translation>Перейти к следующему различию</translation>
     </message>
     <message>
         <location filename="../UI/CompareDialog.ui" line="181"/>
         <source>Press to move to the last difference</source>
-        <translation>Переход к последнему различию</translation>
+        <translation>Перейти к последнему различию</translation>
     </message>
     <message>
         <location filename="../UI/CompareDialog.ui" line="224"/>
         <source>Select, if the horizontal scrollbars should be synchronized</source>
-        <translation>Должны ли синхронизироваться позиции в файлах</translation>
+        <translation>Разрешить горизонтальную синхронизацию скроллбаров</translation>
     </message>
     <message>
         <location filename="../UI/CompareDialog.ui" line="227"/>
         <source>&amp;Synchronize horizontal scrollbars</source>
-        <translation>&amp;Синхронизировать скроллеры</translation>
+        <translation>&amp;Синхронизировать горизонтальные скроллбары</translation>
     </message>
     <message>
         <location filename="../UI/CompareDialog.ui" line="230"/>
@@ -4034,7 +4034,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/CompareDialog.py" line="360"/>
         <source>Total: {0}</source>
-        <translation>Итого: {0}</translation>
+        <translation>Всего: {0}</translation>
     </message>
     <message>
         <location filename="../UI/CompareDialog.py" line="362"/>
@@ -4064,7 +4064,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/CompareDialog.py" line="448"/>
         <source>Select file to compare</source>
-        <translation>Выберите файл для сравнения</translation>
+        <translation>Выбор файла для сравнения</translation>
     </message>
 </context>
 <context>
@@ -4293,8 +4293,8 @@ the respective line and position.&lt;/p&gt;</source>
         <location filename="../Preferences/ConfigurationDialog.py" line="531"/>
         <source>Please select an entry of the list 
 to display the configuration page.</source>
-        <translation>Выберите элемент в списке, чтобы
-показать страницу конфигурации.</translation>
+        <translation>Выберите элемент в списке слева,
+чтобы отобразить страницу настройки.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="604"/>
@@ -4855,7 +4855,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/CorbaPage.ui" line="57"/>
         <source>Press to select the IDL compiler via a file selection dialog.</source>
-        <translation>Выбрать компилятор интерфейсов с помощью файлового диалога.</translation>
+        <translation>Выбор компилятора интерфейсов с помощью файлового диалога.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/CorbaPage.ui" line="43"/>
@@ -4870,7 +4870,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/CorbaPage.py" line="55"/>
         <source>Select IDL compiler</source>
-        <translation>Выбор IDL-компилятора</translation>
+        <translation>Выбор компилятора IDL</translation>
     </message>
 </context>
 <context>
@@ -4888,7 +4888,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Project/CreateDialogCodeDialog.ui" line="48"/>
         <source>Press to generate a new forms class</source>
-        <translation>Создание нового класса для формы</translation>
+        <translation>Создать нового класса для формы</translation>
     </message>
     <message>
         <location filename="../Project/CreateDialogCodeDialog.ui" line="51"/>
@@ -4928,7 +4928,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Project/CreateDialogCodeDialog.py" line="123"/>
         <source>The file &lt;b&gt;{0}&lt;/b&gt; exists but does not contain any classes.</source>
-        <translation>Файл &lt;b&gt;&apos;{0}&apos;&lt;/b&gt; существует но не содержит ни одного класса.</translation>
+        <translation>Файл &lt;b&gt;&apos;{0}&apos;&lt;/b&gt; существует, но не содержит ни одного класса.</translation>
     </message>
     <message>
         <location filename="../Project/CreateDialogCodeDialog.py" line="355"/>
@@ -6299,7 +6299,7 @@ Not connected
     <message>
         <location filename="../Project/DebuggerPropertiesDialog.ui" line="59"/>
         <source>Press to select the interpreter via a file selection dialog</source>
-        <translation>Выберите интерпретатор посредством диалога выбора файла</translation>
+        <translation>Выбор интерпретатора посредством диалога выбора файла</translation>
     </message>
     <message>
         <location filename="../Project/DebuggerPropertiesDialog.ui" line="69"/>
@@ -6487,7 +6487,7 @@ Not connected
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPython3Page.ui" line="50"/>
         <source>Press to select the Python3 interpreter via a file selection dialog</source>
-        <translation>Выберите интерпретатор Python3 с помощью диалога</translation>
+        <translation>Выбор интерпретатора Python3 посредством диалога выбора файлов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPython3Page.ui" line="60"/>
@@ -6502,7 +6502,7 @@ Not connected
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPython3Page.ui" line="81"/>
         <source>Press to select the Debug Client via a file selection dialog</source>
-        <translation>Выбрать клиента с помощью файлового диалога</translation>
+        <translation>Выбрать клиента посредством диалога выбора файлов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPython3Page.ui" line="90"/>
@@ -6600,7 +6600,7 @@ Not connected
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPythonPage.ui" line="50"/>
         <source>Press to select the Python interpreter via a file selection dialog</source>
-        <translation>Выберите интерпретатор Python для клиента с помощью диалога</translation>
+        <translation>Выбор интерпретатора Python для клиента посредством диалога выбора файлов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPythonPage.ui" line="60"/>
@@ -6615,7 +6615,7 @@ Not connected
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPythonPage.ui" line="81"/>
         <source>Press to select the Debug Client via a file selection dialog</source>
-        <translation>Выбрать клиента с помощью файлового диалога</translation>
+        <translation>Выбор клиента посредством диалога выбора файлов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPythonPage.ui" line="90"/>
@@ -6718,7 +6718,7 @@ Not connected
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerRubyPage.ui" line="50"/>
         <source>Press to select the Ruby interpreter via a file selection dialog</source>
-        <translation>Выберите интерпретатор Ruby посредством диалога выбора файла</translation>
+        <translation>Выбор интерпретатора Ruby посредством диалога выбора файла</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerRubyPage.ui" line="63"/>
@@ -6764,7 +6764,7 @@ Not connected
     <message>
         <location filename="../UI/DiffDialog.ui" line="67"/>
         <source>Press to select the file via a file selection dialog</source>
-        <translation>Выберите файл посредством диалога выбора файлов</translation>
+        <translation>Выбор файла посредством диалога выбора файлов</translation>
     </message>
     <message>
         <location filename="../UI/DiffDialog.ui" line="50"/>
@@ -6839,12 +6839,12 @@ Not connected
     <message>
         <location filename="../UI/DiffDialog.py" line="306"/>
         <source>&lt;p&gt;The patch file &lt;b&gt;{0}&lt;/b&gt; already exists. Overwrite it?&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Файл патч &lt;b&gt;{0}&lt;/b&gt; уже существует. Переписать?&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Патч-файл&lt;b&gt;{0}&lt;/b&gt; уже существует. Переписать?&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/DiffDialog.py" line="325"/>
         <source>&lt;p&gt;The patch file &lt;b&gt;{0}&lt;/b&gt; could not be saved.&lt;br /&gt;Reason: {1}&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Невозможно сохранить файл патч.&lt;b&gt;{0}&lt;/b&gt;:&lt;br&gt;Причина: {1}.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Невозможно сохранить патч-файл.&lt;b&gt;{0}&lt;/b&gt;:&lt;br&gt;Причина: {1}.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/DiffDialog.py" line="366"/>
@@ -6864,7 +6864,7 @@ Not connected
     <message>
         <location filename="../UI/DiffDialog.py" line="467"/>
         <source>Select file to compare</source>
-        <translation>Выберите файл для сравнения</translation>
+        <translation>Выбор файла для сравнения</translation>
     </message>
 </context>
 <context>
@@ -6906,22 +6906,22 @@ Not connected
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="214"/>
         <source>public function/method is missing a docstring</source>
-        <translation>В public функции/методе отсутствует описание</translation>
+        <translation>В public function/method отсутствует описание</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="217"/>
         <source>private function/method may be missing a docstring</source>
-        <translation>В public функции/методе возможно отсутствует описание</translation>
+        <translation>в private function/method возможно отсутствует описание</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="220"/>
         <source>public class is missing a docstring</source>
-        <translation>В public классе отсутствует описание</translation>
+        <translation>В public class отсутствует описание</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="222"/>
         <source>private class may be missing a docstring</source>
-        <translation>В public классе возможно отсутствует описание</translation>
+        <translation>В private class возможно отсутствует описание</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="224"/>
@@ -6971,7 +6971,7 @@ Not connected
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="250"/>
         <source>function/method docstring is separated by a blank line</source>
-        <translation>описание функции/метода разделено пустыми строками</translation>
+        <translation>описание function/method разделено пустыми строками</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="253"/>
@@ -6996,12 +6996,12 @@ Not connected
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="266"/>
         <source>private function/method is missing a docstring</source>
-        <translation>в private функции/методе отсутствует описание</translation>
+        <translation>в private function/method отсутствует описание</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="269"/>
         <source>private class is missing a docstring</source>
-        <translation>в private классе отсутствует описание</translation>
+        <translation>в private  class отсутствует описание</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="271"/>
@@ -7056,12 +7056,12 @@ Not connected
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="305"/>
         <source>function/method docstring is preceded by a blank line</source>
-        <translation>описанию функции/метода предшествует пустая строка</translation>
+        <translation>описанию function/method предшествует пустая строка</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="308"/>
         <source>function/method docstring is followed by a blank line</source>
-        <translation>описание функции/метода завершает пустая строка</translation>
+        <translation>описание function/method завершает пустая строка</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="314"/>
@@ -7071,7 +7071,7 @@ Not connected
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="317"/>
         <source>docstring does not contain a @exception line but function/method raises an exception</source>
-        <translation>в описании функции/метода, вызывающих исключение, отсутствует строка с @exception</translation>
+        <translation>в описании function/method, вызывающих исключение, отсутствует строка с @exception</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="321"/>
@@ -7267,9 +7267,9 @@ MD5: {2}</translation>
         <location filename="../Helpviewer/Download/DownloadManager.py" line="389"/>
         <source>%n Download(s)</source>
         <translation>
-            <numerusform>%n загружен</numerusform>
+            <numerusform>Один загружен</numerusform>
             <numerusform>%n загружены</numerusform>
-            <numerusform>%n загружено</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -7278,11 +7278,11 @@ MD5: {2}</translation>
 Do you want to quit anyway?</source>
         <translation>
             <numerusform>Выполняется одна загрузка.
-Вы действительно хотите прекратить загрузку?</numerusform>
-            <numerusform>@Выполняются %n загрузки.
-Вы действительно хотите прекратить загрузку?</numerusform>
+Вы действительно хотите завершить загрузку?</numerusform>
+            <numerusform>Выполняются %n загрузки.
+Вы действительно хотите завершить загрузку?</numerusform>
             <numerusform>Выполняются %n загрузок.
-Вы действительно хотите прекратить загрузку?</numerusform>
+Вы действительно хотите завершить загрузку?</numerusform>
         </translation>
     </message>
     <message>
@@ -7334,7 +7334,7 @@ Do you want to quit anyway?</source>
         <location filename="../Helpviewer/Download/DownloadManager.py" line="397"/>
         <source>Downloading %n file(s)</source>
         <translation>
-            <numerusform>Загружается один файл</numerusform>
+            <numerusform>Загружен один файл</numerusform>
             <numerusform>Загружаются %n файла</numerusform>
             <numerusform>Загружаются %n файлов</numerusform>
         </translation>
@@ -7346,9 +7346,9 @@ Do you want to quit anyway?</source>
         <location filename="../Helpviewer/Download/DownloadUtilities.py" line="31"/>
         <source>%n seconds remaining</source>
         <translation>
-            <numerusform>Одна секунда осталась</numerusform>
-            <numerusform>%n секунды остались</numerusform>
-            <numerusform>%n секунд осталось</numerusform>
+            <numerusform>Осталась одна секунда</numerusform>
+            <numerusform>Осталось %n секунды</numerusform>
+            <numerusform>Осталось %n секунд</numerusform>
         </translation>
     </message>
     <message>
@@ -7375,9 +7375,9 @@ Do you want to quit anyway?</source>
         <location filename="../Helpviewer/Download/DownloadUtilities.py" line="25"/>
         <source>%n:{0:02} minutes remaining</source>
         <translation>
-            <numerusform>%n:{0:02} минута осталась</numerusform>
-            <numerusform>%n:{0:02} минуты остались</numerusform>
-            <numerusform>%n:{0:02} минут осталось</numerusform>
+            <numerusform>Осталась %n:{0:02} минута</numerusform>
+            <numerusform>Осталось %n:{0:02} минуты</numerusform>
+            <numerusform>Осталось %n:{0:02} минут</numerusform>
         </translation>
     </message>
 </context>
@@ -8418,7 +8418,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../E5Gui/E5StringListEditWidget.py" line="72"/>
         <source>Add Entry</source>
-        <translation>Добавление записи</translation>
+        <translation>Добавить запись</translation>
     </message>
     <message>
         <location filename="../E5Gui/E5StringListEditWidget.py" line="72"/>
@@ -8643,7 +8643,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Debugger/EditBreakpointDialog.ui" line="36"/>
         <source>Enabled</source>
-        <translation>Разрешить</translation>
+        <translation>Разрешена</translation>
     </message>
     <message>
         <location filename="../Debugger/EditBreakpointDialog.ui" line="46"/>
@@ -8736,7 +8736,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Debugger/EditWatchpointDialog.ui" line="68"/>
         <source>Enabled</source>
-        <translation>Разрешить</translation>
+        <translation>Разрешена</translation>
     </message>
     <message>
         <location filename="../Debugger/EditWatchpointDialog.ui" line="75"/>
@@ -9089,7 +9089,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../QScintilla/Editor.py" line="1158"/>
         <source>Clear all bookmarks</source>
-        <translation>Стереть все закладки</translation>
+        <translation>Очистить все закладки</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="1178"/>
@@ -9184,12 +9184,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../QScintilla/Editor.py" line="1212"/>
         <source>LMB toggles bookmarks</source>
-        <translation>Левая клавиша мыши ставит закладки</translation>
+        <translation>Левая клавиша мыши позволяет Создать/Удалить закладку</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="1216"/>
         <source>LMB toggles breakpoints</source>
-        <translation>Левая клавиша мыши ставит точки останова</translation>
+        <translation>Левая клавиша мыши позволяет Создать/Удалить точку останова</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="1252"/>
@@ -9732,7 +9732,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAPIsPage.ui" line="106"/>
         <source>Press to add the entered file to the list</source>
-        <translation>Добавить файл в список</translation>
+        <translation>Добавить введенный файл в список</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAPIsPage.ui" line="109"/>
@@ -9747,12 +9747,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAPIsPage.ui" line="173"/>
         <source>Press to select an API file via a selection dialog</source>
-        <translation>Выберите файл API с помощью диалога</translation>
+        <translation>Выбор файла API посредством диалога выбора файлов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAPIsPage.ui" line="123"/>
         <source>Press to select an API file from the list of installed API files</source>
-        <translation>Выберите API-файл  из списка установленных файлов</translation>
+        <translation>Выбор API-файла  из списка установленных файлов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAPIsPage.py" line="197"/>
@@ -9762,7 +9762,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAPIsPage.ui" line="133"/>
         <source>Press to select an API file from the list of API files installed by plugins</source>
-        <translation>Выбрать API-файл из списка файлов, установленных с помощью плагинов</translation>
+        <translation>Выбор API-файла из списка API-файлов установленных плагинов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAPIsPage.py" line="216"/>
@@ -9772,7 +9772,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAPIsPage.ui" line="150"/>
         <source>Press to compile the selected APIs definition</source>
-        <translation>Компилировать выбранные определения API</translation>
+        <translation>Компиляция выбранных определений API</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAPIsPage.py" line="249"/>
@@ -10138,12 +10138,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorExportersPage.ui" line="472"/>
         <source>Select to include only used styles</source>
-        <translation>Включать только используемые стили</translation>
+        <translation>Разрешить использовать только используемые стили</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorExportersPage.ui" line="475"/>
         <source>Include only used styles</source>
-        <translation>Разрешить только используемые стили</translation>
+        <translation>Только используемые стили</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorExportersPage.ui" line="482"/>
@@ -10987,7 +10987,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorHighlightingStylesPage.ui" line="127"/>
         <source>Press to set the current style to its default values</source>
-        <translation>Восстановить для  текущего стиля значения по умолчанию</translation>
+        <translation>Восстановить для текущего стиля значения по умолчанию</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorHighlightingStylesPage.ui" line="213"/>
@@ -11669,7 +11669,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="201"/>
         <source>Select to allow verbatim string escape sequences</source>
-        <translation>Разрешить verbatim string ескейп-последовательностей</translation>
+        <translation type="unfinished">Разрешить verbatim string ескейп-последовательностей</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="204"/>
@@ -11840,12 +11840,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorSpellCheckingPage.ui" line="237"/>
         <source>Enter the filename of the personal word list</source>
-        <translation>Задайте имя файла персонально словаря</translation>
+        <translation>Задайте имя файла персонального словаря</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorSpellCheckingPage.ui" line="272"/>
         <source>Select the personal word list file via a file selection dialog</source>
-        <translation>ВЫберите файл персонально словаря посредством диалога выбора</translation>
+        <translation>ВЫбор файла персонального словаря посредством диалога выбора файлов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorSpellCheckingPage.ui" line="244"/>
@@ -11860,7 +11860,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorSpellCheckingPage.ui" line="279"/>
         <source>Select the personal exclude list file via a file selection dialog</source>
-        <translation>Выберите файл персонального списка исключений посредством диалога выбора</translation>
+        <translation>Выбор файла персонального списка исключений посредством диалога выбора файла</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorSpellCheckingPage.ui" line="258"/>
@@ -11953,7 +11953,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="166"/>
         <source>Press to select the font to be used as the monospaced font</source>
-        <translation>Задайте шрифт, который будет использован как моноширинный</translation>
+        <translation>Задать шрифт, который будет использоваться как моноширинный</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="169"/>
@@ -13296,7 +13296,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EmailPage.ui" line="193"/>
         <source>Press to test the login data</source>
-        <translation>Тестирование регистрационных данных</translation>
+        <translation>Тест регистрационных данных</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EmailPage.ui" line="196"/>
@@ -13324,7 +13324,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Helpviewer/Network/EricAccessHandler.py" line="79"/>
         <source>Speed Dial</source>
-        <translation>Быстрый набор</translation>
+        <translation>Быстрые вкладки</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Network/EricAccessHandler.py" line="79"/>
@@ -13344,7 +13344,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Helpviewer/Network/EricAccessHandler.py" line="79"/>
         <source>New Page</source>
-        <translation>Новая страница</translation>
+        <translation>Новый сайт</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Network/EricAccessHandler.py" line="79"/>
@@ -13364,27 +13364,27 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Helpviewer/Network/EricAccessHandler.py" line="79"/>
         <source>Load title from page</source>
-        <translation>Загружать заголовок со страницы</translation>
+        <translation>Загружать заголовок сайта</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Network/EricAccessHandler.py" line="79"/>
         <source>Speed Dial Settings</source>
-        <translation>Настройки быстрого набора</translation>
+        <translation>Настройка быстрых вкладок</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Network/EricAccessHandler.py" line="79"/>
         <source>Add New Page</source>
-        <translation>Добавить новую страницу</translation>
+        <translation>Добавить новый сайт</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Network/EricAccessHandler.py" line="79"/>
         <source>Maximum pages in a row:</source>
-        <translation>Максимальное число страниц в ряду:</translation>
+        <translation>Максимальное число страничек в ряду:</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Network/EricAccessHandler.py" line="79"/>
         <source>Change size of pages:</source>
-        <translation>Изменить размер страниц:</translation>
+        <translation>Изменить размер страничек:</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Network/EricAccessHandler.py" line="79"/>
@@ -13394,7 +13394,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Helpviewer/Network/EricAccessHandler.py" line="79"/>
         <source>Are you sure to remove this speed dial?</source>
-        <translation>Удалить элемент?</translation>
+        <translation>Вы уверены в удалении этой быстрой вкладки? </translation>
     </message>
 </context>
 <context>
@@ -13823,7 +13823,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericdoc/EricdocConfigDialog.ui" line="319"/>
         <source>Press to select the body background colour.</source>
-        <translation>Задайте цвет фона для содержимого.</translation>
+        <translation>Задать цвет фона для содержимого.</translation>
     </message>
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericdoc/EricdocConfigDialog.ui" line="322"/>
@@ -13833,7 +13833,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericdoc/EricdocConfigDialog.ui" line="329"/>
         <source>Press to select the body foreground colour.</source>
-        <translation>Задайте цвет текста для содержимого.</translation>
+        <translation>Задать цвет текста для содержимого.</translation>
     </message>
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericdoc/EricdocConfigDialog.ui" line="332"/>
@@ -13843,7 +13843,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericdoc/EricdocConfigDialog.ui" line="339"/>
         <source>Press to select the foreground colour of links.</source>
-        <translation>Задайте цвет текста для ссылок.</translation>
+        <translation>Задать цвет текста для ссылок.</translation>
     </message>
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericdoc/EricdocConfigDialog.ui" line="342"/>
@@ -14166,7 +14166,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Debugger/ExceptionsFilterDialog.ui" line="42"/>
         <source>Press to add the entered exception to the list</source>
-        <translation>Добавление исключения в список</translation>
+        <translation>Добавить исключения в список</translation>
     </message>
     <message>
         <location filename="../Debugger/ExceptionsFilterDialog.ui" line="45"/>
@@ -14181,7 +14181,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Debugger/ExceptionsFilterDialog.ui" line="66"/>
         <source>Press to delete the selected exception from the list</source>
-        <translation>Удаление исключения из списка</translation>
+        <translation>Удалить исключения из списка</translation>
     </message>
     <message>
         <location filename="../Debugger/ExceptionsFilterDialog.ui" line="69"/>
@@ -14191,7 +14191,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Debugger/ExceptionsFilterDialog.ui" line="76"/>
         <source>Press to delete all exceptions from the list</source>
-        <translation>Удаление всех исключений из списка</translation>
+        <translation>Удалить все исключения из списка</translation>
     </message>
     <message>
         <location filename="../Debugger/ExceptionsFilterDialog.ui" line="79"/>
@@ -14934,7 +14934,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Helpviewer/Network/FileReply.py" line="281"/>
         <source>Listing of {0}</source>
-        <translation>Список {0}</translation>
+        <translation>Листинг {0}</translation>
     </message>
 </context>
 <context>
@@ -15357,7 +15357,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../UI/FindFileNameDialog.ui" line="86"/>
         <source>Press to select the directory, the file should be searched in</source>
-        <translation>Выберите директорию где будет производиться поиск файла</translation>
+        <translation>Выбрать директорию где будет производиться поиск файла</translation>
     </message>
     <message>
         <location filename="../UI/FindFileNameDialog.ui" line="97"/>
@@ -15430,7 +15430,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/FirefoxImporter.py" line="43"/>
         <source>Please choose the file to begin importing bookmarks.</source>
-        <translation>Пожалуйста выберите файл для импортирования закладок.</translation>
+        <translation>Пожалуйста выберите файл чтобы начать импортирование закладок.</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/FirefoxImporter.py" line="94"/>
@@ -15840,7 +15840,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/Network/FtpReply.py" line="491"/>
         <source>Listing of {0}</source>
-        <translation>Список {0}</translation>
+        <translation>Листинг {0}</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Network/FtpReply.py" line="277"/>
@@ -16017,7 +16017,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/GreaseMonkey/GreaseMonkeyAddScriptDialog.ui" line="114"/>
         <source>Press to open an editor with the script&apos;s source</source>
-        <translation>Открыть скрипт в редакторе</translation>
+        <translation>Открыть редакторе со скриптом</translation>
     </message>
     <message>
         <location filename="../Helpviewer/GreaseMonkey/GreaseMonkeyAddScriptDialog.ui" line="117"/>
@@ -16133,7 +16133,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/GreaseMonkey/GreaseMonkeyConfiguration/GreaseMonkeyConfigurationScriptInfoDialog.ui" line="183"/>
         <source>Press to open an editor with the script&apos;s source</source>
-        <translation>Открыть скрипт в редакторе</translation>
+        <translation>Открыть редактор со скриптом</translation>
     </message>
     <message>
         <location filename="../Helpviewer/GreaseMonkey/GreaseMonkeyConfiguration/GreaseMonkeyConfigurationScriptInfoDialog.ui" line="186"/>
@@ -16352,7 +16352,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="1354"/>
         <source>Bookmark this Page</source>
-        <translation>Создать закладку для этой страницы</translation>
+        <translation>Закладка для этой странички</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="1382"/>
@@ -16537,7 +16537,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="1357"/>
         <source>Send Page Link</source>
-        <translation>Отправить ссылку страницы</translation>
+        <translation>Отправить ссылку странички</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="1375"/>
@@ -16625,7 +16625,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/HelpClearPrivateDataDialog.ui" line="14"/>
         <source>Clear Private Data</source>
-        <translation>Очистить личные данные</translation>
+        <translation>Очистить приватные данные</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpClearPrivateDataDialog.ui" line="23"/>
@@ -16771,12 +16771,12 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="126"/>
         <source>Press to select the Qt4 documentation directory via a dialog</source>
-        <translation>Выберите посредством диалога директорию документации Qt4</translation>
+        <translation>Выбор директории документации Qt4 посредством диалога</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="109"/>
         <source>Enter the Qt4 documentation directory</source>
-        <translation>Задайте директорию с документацией QT4</translation>
+        <translation>Задайте директорию с документацией Qt4</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="116"/>
@@ -16791,7 +16791,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="192"/>
         <source>Press to select the PyQt4 documentation directory via a dialog</source>
-        <translation>Выберите посредством диалога директорию документации  PyQt4</translation>
+        <translation>Выбор директории документации PyQt4 посредством диалога</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="175"/>
@@ -16811,7 +16811,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="258"/>
         <source>Press to select the PySide documentation directory via a dialog</source>
-        <translation>Выберите посредством диалога директорию документации  PySide</translation>
+        <translation>Выбор директории документации PySide посредством диалога</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="241"/>
@@ -16841,7 +16841,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.py" line="201"/>
         <source>Select PySide documentation entry</source>
-        <translation>Выбор точки входа в докуменатцию PySide</translation>
+        <translation>Выбор точки входа в документацию PySide</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="37"/>
@@ -16851,7 +16851,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="60"/>
         <source>Press to select the Python 2 documentation directory via a dialog</source>
-        <translation>Выберите посредством диалога директорию документации  Python 2</translation>
+        <translation>Выбор директории документации Python 2 посредством диалога</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="43"/>
@@ -16871,7 +16871,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="93"/>
         <source>Press to select the Python 3 documentation directory via a dialog</source>
-        <translation>Выберите посредством диалога директорию документации  Python 3</translation>
+        <translation>Выбор директории документации Python 3 посредством диалога</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="76"/>
@@ -16901,7 +16901,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="159"/>
         <source>Press to select the Qt5 documentation directory via a dialog</source>
-        <translation>Выберите посредством диалога директорию документации Qt4</translation>
+        <translation>Выбор директории документации Qt5 посредством диалога</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="142"/>
@@ -16926,12 +16926,12 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="225"/>
         <source>Press to select the PyQt5 documentation directory via a dialog</source>
-        <translation>Выберите посредством диалога директорию документации  PyQt5</translation>
+        <translation>Выбор директории документации PyQt5 посредством диалога</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="208"/>
         <source>Enter the PyQt5 documentation directory</source>
-        <translation>Задайте директорию с документацией PyQt4</translation>
+        <translation>Задайте директорию с документацией PyQt5</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.ui" line="215"/>
@@ -17065,7 +17065,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpInterfacePage.ui" line="67"/>
         <source>Select the style sheet file via a file selection dialog</source>
-        <translation>Выберите файл таблицы стилей посредством диалога выбора</translation>
+        <translation>Выбор файла таблицы стилей посредством диалога выбора файлов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpInterfacePage.py" line="65"/>
@@ -17098,12 +17098,12 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/HelpLanguagesDialog.ui" line="30"/>
         <source>&amp;Up</source>
-        <translation>&amp;Выше</translation>
+        <translation>&amp;Вверх</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpLanguagesDialog.ui" line="37"/>
         <source>&amp;Down</source>
-        <translation>&amp;Ниже</translation>
+        <translation>&amp;Вниз</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpLanguagesDialog.ui" line="44"/>
@@ -17199,7 +17199,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/HelpTabWidget.py" line="200"/>
         <source>Bookmark All Tabs</source>
-        <translation>Создать закладки для всех страниц</translation>
+        <translation>Создать закладку для всех вкладок</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpTabWidget.py" line="359"/>
@@ -17232,11 +17232,11 @@ Reason: {0}</source>
 You have %n tab(s) open.</source>
         <translation>
             <numerusform>Вы уверены что хотите закрыть окно?
-У вас открыта одна вкладка.</numerusform>
+У вас одна открытая вкладка.</numerusform>
             <numerusform>Вы уверены что хотите закрыть окно?
-У вас открыты %n вкладки.</numerusform>
+У вас %n открытые вкладки.</numerusform>
             <numerusform>Вы уверены что хотите закрыть окно?
-У вас открыто %n вкладок.</numerusform>
+У вас %n открытах вкладок.</numerusform>
         </translation>
     </message>
     <message>
@@ -17358,7 +17358,7 @@ Do you really want to close this page?</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpViewersPage.ui" line="58"/>
         <source>Press to select the custom viewer via a file selection dialog</source>
-        <translation>Выберите пользовательский просмотрщик посредством диалога выбора файлов</translation>
+        <translation>Выбор пользовательского просмотрщика посредством диалога выбора файлов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpViewersPage.ui" line="67"/>
@@ -17504,12 +17504,12 @@ Do you really want to close this page?</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="49"/>
         <source>Select to enable suggestions for web searches</source>
-        <translation>Разрешить использовать подсказки для поиска</translation>
+        <translation>Разрешить использовать предложения для web-поиска</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="52"/>
         <source>Show suggestions for web searches</source>
-        <translation>Показывать автоматические предложения при поиске</translation>
+        <translation>Показывать предложения для web-поиска</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="59"/>
@@ -17559,7 +17559,7 @@ Do you really want to close this page?</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="140"/>
         <source>Press to set the current page as the home page</source>
-        <translation>Сделайте текущую страницу домашней</translation>
+        <translation>Сделать текущую страницу домашней</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="143"/>
@@ -17814,7 +17814,7 @@ Do you really want to close this page?</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="82"/>
         <source>Enable workaround for broken sites</source>
-        <translation>Включить обходной путь для битых сайтов</translation>
+        <translation>Обходной путь для битых сайтов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="369"/>
@@ -17905,7 +17905,7 @@ Do you really want to close this page?</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="113"/>
         <source>Show Speed Dial</source>
-        <translation>Показать быстрый набор</translation>
+        <translation>Показать быстрые вкладки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="118"/>
@@ -18068,1762 +18068,1762 @@ URL: {1}</source>
         <translation>Содержание</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1274"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1273"/>
         <source>Index</source>
         <translation>Индекс</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1288"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1287"/>
         <source>Search</source>
         <translation>Поиск</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="455"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="454"/>
         <source>New Tab</source>
         <translation>Новая вкладка</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="455"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="454"/>
         <source>&amp;New Tab</source>
         <translation>&amp;Новая вкладка</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="455"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="454"/>
         <source>Ctrl+T</source>
         <comment>File|New Tab</comment>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="461"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="460"/>
         <source>Open a new help window tab</source>
-        <translation>Открыть новую вкладку окна справки</translation>
+        <translation>Открыть новую вкладку с окном справки</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="462"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="461"/>
         <source>&lt;b&gt;New Tab&lt;/b&gt;&lt;p&gt;This opens a new help window tab.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Новая вкладка&lt;/b&gt;
 &lt;p&gt;Открывает новую вкладку окна справки.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="470"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="469"/>
         <source>New Window</source>
         <translation>Новое окно</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="470"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="469"/>
         <source>New &amp;Window</source>
         <translation>&amp;Новое окно</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="470"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="469"/>
         <source>Ctrl+N</source>
         <comment>File|New Window</comment>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="476"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="475"/>
         <source>Open a new help browser window</source>
         <translation>Открыть новое окно браузера</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="477"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="476"/>
         <source>&lt;b&gt;New Window&lt;/b&gt;&lt;p&gt;This opens a new help browser window.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Новое окно&lt;/b&gt;
 &lt;p&gt;Открывает новое окно браузера для отображения справки.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="2034"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="2033"/>
         <source>Open File</source>
         <translation>Открыть файл</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="485"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="484"/>
         <source>&amp;Open File</source>
         <translation>&amp;Открыть файл</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="485"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="484"/>
         <source>Ctrl+O</source>
         <comment>File|Open</comment>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="491"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="490"/>
         <source>Open a help file for display</source>
         <translation>Открыть файл справки для показа</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="492"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="491"/>
         <source>&lt;b&gt;Open File&lt;/b&gt;&lt;p&gt;This opens a new help file for display. It pops up a file selection dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Открыть файл&lt;/b&gt;&lt;p&gt;Открыть новый файл справки. Вызывает файловый диалог&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="501"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="500"/>
         <source>Open File in New Tab</source>
         <translation>Открыть файл в новой вкладке</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="501"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="500"/>
         <source>Open File in New &amp;Tab</source>
         <translation>Открыть файл в новой &amp;вкладке</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="501"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="500"/>
         <source>Shift+Ctrl+O</source>
         <comment>File|Open in new tab</comment>
         <translation>Shift+Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="507"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="506"/>
         <source>Open a help file for display in a new tab</source>
         <translation>Открыть файл справки для показа в новой вкладке</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="509"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="508"/>
         <source>&lt;b&gt;Open File in New Tab&lt;/b&gt;&lt;p&gt;This opens a new help file for display in a new tab. It pops up a file selection dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Открыть файл в новой вкладке&lt;/b&gt;
 &lt;p&gt;Открывает файл справки в новой вкладке. Запускает диалог выбора файла&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="518"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="517"/>
         <source>&amp;Save As...</source>
         <translation>Сохранить &amp;как...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="518"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="517"/>
         <source>Shift+Ctrl+S</source>
         <comment>File|Save As</comment>
         <translation>Shift+Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="524"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="523"/>
         <source>Save the current page to disk</source>
         <translation>Сохранить текущую страницу в файл</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="526"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="525"/>
         <source>&lt;b&gt;Save As...&lt;/b&gt;&lt;p&gt;Saves the current page to disk.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Сохранить как...&lt;/b&gt;&lt;p&gt;Сохранить текущую страницу в файл.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="568"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="567"/>
         <source>Import Bookmarks</source>
-        <translation>Импорт закладок</translation>
+        <translation>Импор закладок</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="568"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="567"/>
         <source>&amp;Import Bookmarks...</source>
         <translation>&amp;Импорт закладок...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="572"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="571"/>
         <source>Import bookmarks from other browsers</source>
         <translation>Импорт закладок из других браузеров</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="574"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="573"/>
         <source>&lt;b&gt;Import Bookmarks&lt;/b&gt;&lt;p&gt;Import bookmarks from other browsers.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Импорт закладок&lt;/b&gt;&lt;p&gt;Импортировать закладки из других браузеров.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="583"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="582"/>
         <source>Export Bookmarks</source>
         <translation>Экспорт закладок</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="583"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="582"/>
         <source>&amp;Export Bookmarks...</source>
         <translation>&amp;Экспорт закладок...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="587"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="586"/>
         <source>Export the bookmarks into a file</source>
         <translation>Экспорт закладок в файл</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="589"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="588"/>
         <source>&lt;b&gt;Export Bookmarks&lt;/b&gt;&lt;p&gt;Export the bookmarks into a file.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Экспорт закладок&lt;/b&gt;&lt;p&gt;Экспортировать закладки в файл.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="598"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="597"/>
         <source>Print</source>
         <translation>Печать</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="598"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="597"/>
         <source>&amp;Print</source>
         <translation>&amp;Печать</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="598"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="597"/>
         <source>Ctrl+P</source>
         <comment>File|Print</comment>
         <translation>Ctrl+P</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="604"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="603"/>
         <source>Print the displayed help</source>
         <translation>Печатать текущий раздел помощи</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="605"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="604"/>
         <source>&lt;b&gt;Print&lt;/b&gt;&lt;p&gt;Print the displayed help text.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Печать&lt;/b&gt;&lt;p&gt;Печатать текущий раздел помощи&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="614"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="613"/>
         <source>Print as PDF</source>
         <translation>Печать как PDF</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="619"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="618"/>
         <source>Print the displayed help as PDF</source>
         <translation>Печатать текущий раздел помощи как PDF</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="621"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="620"/>
         <source>&lt;b&gt;Print as PDF&lt;/b&gt;&lt;p&gt;Print the displayed help text as a PDF file.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Печать как PDF&lt;/b&gt;&lt;p&gt;Печатать текущий раздел помощи как PDF&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="632"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="631"/>
         <source>Print Preview</source>
         <translation>Предварительный просмотр печати</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="637"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="636"/>
         <source>Print preview of the displayed help</source>
         <translation>Предварительный просмотр печати помощи</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="639"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="638"/>
         <source>&lt;b&gt;Print Preview&lt;/b&gt;&lt;p&gt;Print preview of the displayed help text.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Предварительный просмотр печати&lt;/b&gt;&lt;p&gt;Предварительный просмотр печати помощи.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="648"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="647"/>
         <source>Close</source>
         <translation>Закрыть</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="648"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="647"/>
         <source>&amp;Close</source>
         <translation>&amp;Закрыть</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="648"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="647"/>
         <source>Ctrl+W</source>
         <comment>File|Close</comment>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="654"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="653"/>
         <source>Close the current help window</source>
         <translation>Закрыть это окно помощи</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="656"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="655"/>
         <source>&lt;b&gt;Close&lt;/b&gt;&lt;p&gt;Closes the current help window.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Закрыть&lt;/b&gt;
 &lt;p&gt;Закрывает текущее окно просмотрщика помощи.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="664"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="663"/>
         <source>Close All</source>
         <translation>Закрыть все</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="664"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="663"/>
         <source>Close &amp;All</source>
         <translation>Закрыть &amp;все</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="668"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="667"/>
         <source>Close all help windows</source>
         <translation>Закрыть все окна просмотрщиков помощи</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="669"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="668"/>
         <source>&lt;b&gt;Close All&lt;/b&gt;&lt;p&gt;Closes all help windows except the first one.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Закрыть все&lt;/b&gt;
 &lt;p&gt;Закрывает все окна просмотрщиков помощи, кроме первого.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="683"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="682"/>
         <source>Private Browsing</source>
-        <translation>Личный просмотр</translation>
+        <translation>Приватный просмотр</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="678"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="677"/>
         <source>Private &amp;Browsing</source>
-        <translation>Личный &amp;просмотр</translation>
+        <translation>Приватный &amp;просмотр</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="684"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="683"/>
         <source>&lt;b&gt;Private Browsing&lt;/b&gt;&lt;p&gt;Enables private browsing. In this mode no history is recorded anymore.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Личный просмотр&lt;/b&gt;&lt;p&gt;Разрешает режим личного просмотра. В этом режиме история не сохраняется.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Приватный просмотр&lt;/b&gt;&lt;p&gt;Разрешает режим приватного просмотра. В этом режиме история не сохраняется.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="695"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="694"/>
         <source>Quit</source>
         <translation>Выход</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="695"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="694"/>
         <source>&amp;Quit</source>
         <translation>&amp;Выход</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="695"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="694"/>
         <source>Ctrl+Q</source>
         <comment>File|Quit</comment>
         <translation>Ctrl+Q</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="713"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="712"/>
         <source>Backward</source>
         <translation>Назад</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="713"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="712"/>
         <source>&amp;Backward</source>
         <translation>&amp;Назад</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="713"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="712"/>
         <source>Alt+Left</source>
         <comment>Go|Backward</comment>
         <translation>Alt+Left</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="713"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="712"/>
         <source>Backspace</source>
         <comment>Go|Backward</comment>
         <translation>Backspace</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="720"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="719"/>
         <source>Move one help screen backward</source>
         <translation>Назад на один экран</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="721"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="720"/>
         <source>&lt;b&gt;Backward&lt;/b&gt;&lt;p&gt;Moves one help screen backward. If none is available, this action is disabled.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Назад&lt;/b&gt;&lt;p&gt;Сместиться на один экран назад. Если это возможно.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="730"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="729"/>
         <source>Forward</source>
         <translation>Вперёд</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="730"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="729"/>
         <source>&amp;Forward</source>
         <translation>&amp;Вперёд</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="730"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="729"/>
         <source>Alt+Right</source>
         <comment>Go|Forward</comment>
         <translation>Alt+Right</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="730"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="729"/>
         <source>Shift+Backspace</source>
         <comment>Go|Forward</comment>
         <translation>Shift+Backspace</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="737"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="736"/>
         <source>Move one help screen forward</source>
         <translation>Вперёд на один экран</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="739"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="738"/>
         <source>&lt;b&gt;Forward&lt;/b&gt;&lt;p&gt;Moves one help screen forward. If none is available, this action is disabled.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Вперёд&lt;/b&gt;&lt;p&gt;Сместиться на один экран вперёд, если это возможно.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="748"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="747"/>
         <source>Home</source>
         <translation>Домой</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="748"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="747"/>
         <source>&amp;Home</source>
         <translation>&amp;Домой</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="748"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="747"/>
         <source>Ctrl+Home</source>
         <comment>Go|Home</comment>
         <translation>Ctrl+Home</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="754"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="753"/>
         <source>Move to the initial help screen</source>
         <translation>Вернуться на первоначальную страницу</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="756"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="755"/>
         <source>&lt;b&gt;Home&lt;/b&gt;&lt;p&gt;Moves to the initial help screen.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Домой&lt;/b&gt;&lt;p&gt;Вернуться на первоначальную страницу.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="764"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="763"/>
         <source>Reload</source>
         <translation>Перезагрузить</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="764"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="763"/>
         <source>&amp;Reload</source>
         <translation>П&amp;ерезагрузить</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="764"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="763"/>
         <source>Ctrl+R</source>
         <comment>Go|Reload</comment>
         <translation>Ctrl+R</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="764"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="763"/>
         <source>F5</source>
         <comment>Go|Reload</comment>
         <translation>F5</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="771"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="770"/>
         <source>Reload the current help screen</source>
-        <translation>Переоткрыть это окно помощи</translation>
+        <translation>Перезагрузить это окно помощи</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="773"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="772"/>
         <source>&lt;b&gt;Reload&lt;/b&gt;&lt;p&gt;Reloads the current help screen.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Переоткрыть&lt;/b&gt;&lt;p&gt;Переоткрыть это окно помощи.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Перезагрузить&lt;/b&gt;&lt;p&gt;Перезагрузить это окно помощи.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="781"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="780"/>
         <source>Stop</source>
         <translation>Стоп</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="781"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="780"/>
         <source>&amp;Stop</source>
         <translation>Ст&amp;оп</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="781"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="780"/>
         <source>Ctrl+.</source>
         <comment>Go|Stop</comment>
         <translation>Ctrl+.</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="781"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="780"/>
         <source>Esc</source>
         <comment>Go|Stop</comment>
         <translation>Esc</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="788"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="787"/>
         <source>Stop loading</source>
         <translation>Остановить загрузку</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="789"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="788"/>
         <source>&lt;b&gt;Stop&lt;/b&gt;&lt;p&gt;Stops loading of the current tab.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Стоп&lt;/b&gt;&lt;p&gt;Остановить загрузку в текущей вкладке.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="797"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="796"/>
         <source>Copy</source>
         <translation>Копировать</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="797"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="796"/>
         <source>&amp;Copy</source>
         <translation>&amp;Копировать</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="797"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="796"/>
         <source>Ctrl+C</source>
         <comment>Edit|Copy</comment>
         <translation>Ctrl+C</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="803"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="802"/>
         <source>Copy the selected text</source>
         <translation>Копировать выбранный текст</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="804"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="803"/>
         <source>&lt;b&gt;Copy&lt;/b&gt;&lt;p&gt;Copy the selected text to the clipboard.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Копировать&lt;/b&gt;&lt;p&gt;Копировать выбранный текст в буфер обмена.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="812"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="811"/>
         <source>Find...</source>
         <translation>Найти...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="812"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="811"/>
         <source>&amp;Find...</source>
         <translation>&amp;Найти...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="812"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="811"/>
         <source>Ctrl+F</source>
         <comment>Edit|Find</comment>
         <translation>Ctrl+F</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="818"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="817"/>
         <source>Find text in page</source>
         <translation>Поиск текста на странице</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="819"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="818"/>
         <source>&lt;b&gt;Find&lt;/b&gt;&lt;p&gt;Find text in the current page.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Поиск&lt;/b&gt;&lt;p&gt;Поиск текста на текущей странице.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="827"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="826"/>
         <source>Find next</source>
         <translation>Найти следующее</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="827"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="826"/>
         <source>Find &amp;next</source>
         <translation>&amp;Следущее</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="827"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="826"/>
         <source>F3</source>
         <comment>Edit|Find next</comment>
         <translation>F3</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="833"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="832"/>
         <source>Find next occurrence of text in page</source>
         <translation>Поиск следующего вхождения текста на странице</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="835"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="834"/>
         <source>&lt;b&gt;Find next&lt;/b&gt;&lt;p&gt;Find the next occurrence of text in the current page.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Поиск следующего&lt;/b&gt;&lt;p&gt;Поиск следующего вхождения текста на текущей странице.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="843"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="842"/>
         <source>Find previous</source>
         <translation>Найти предыдущее</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="843"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="842"/>
         <source>Find &amp;previous</source>
         <translation>&amp;Предыдущее</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="843"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="842"/>
         <source>Shift+F3</source>
         <comment>Edit|Find previous</comment>
         <translation>Shift+F3</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="849"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="848"/>
         <source>Find previous occurrence of text in page</source>
         <translation>Поиск предыдущего вхождения текста на странице</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="851"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="850"/>
         <source>&lt;b&gt;Find previous&lt;/b&gt;&lt;p&gt;Find the previous occurrence of text in the current page.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Поиск предыдущего&lt;/b&gt;&lt;p&gt;Поиск предыдущего вхождения текста на текущей странице.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="860"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="859"/>
         <source>Manage Bookmarks</source>
         <translation>Управление закладками</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="860"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="859"/>
         <source>&amp;Manage Bookmarks...</source>
         <translation>&amp;Управление закладками...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="860"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="859"/>
         <source>Ctrl+Shift+B</source>
         <comment>Help|Manage bookmarks</comment>
         <translation>Ctrl+Shift+B</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="865"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="864"/>
         <source>Open a dialog to manage the bookmarks.</source>
         <translation>Показать диалог управления закладками.</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="867"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="866"/>
         <source>&lt;b&gt;Manage Bookmarks...&lt;/b&gt;&lt;p&gt;Open a dialog to manage the bookmarks.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Управление закладками...&lt;/b&gt;&lt;p&gt;Отображение диалога управления закладками.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="876"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="875"/>
         <source>Add Bookmark</source>
         <translation>Добавить закладку</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="876"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="875"/>
         <source>Add &amp;Bookmark...</source>
         <translation>Добавить &amp;закладку...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="876"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="875"/>
         <source>Ctrl+D</source>
         <comment>Help|Add bookmark</comment>
         <translation>Ctrl+D</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="883"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="882"/>
         <source>Open a dialog to add a bookmark.</source>
         <translation>Показать диалог добавления закладки.</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="885"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="884"/>
         <source>&lt;b&gt;Add Bookmark&lt;/b&gt;&lt;p&gt;Open a dialog to add the current URL as a bookmark.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Добавить закладку&lt;/b&gt;&lt;p&gt;Показать диалог добавления текущей страницы в закладки.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="893"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="892"/>
         <source>Add Folder</source>
         <translation>Добавление папки</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="893"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="892"/>
         <source>Add &amp;Folder...</source>
         <translation>Добавить &amp;папку...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="897"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="896"/>
         <source>Open a dialog to add a new bookmarks folder.</source>
         <translation>Показать диалог добавления новой папки закладок.</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="899"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="898"/>
         <source>&lt;b&gt;Add Folder...&lt;/b&gt;&lt;p&gt;Open a dialog to add a new bookmarks folder.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Добавить папку&lt;/b&gt;&lt;p&gt;Показать диалог добавления новой папки закладок.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="908"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="907"/>
         <source>Bookmark All Tabs</source>
-        <translation>Создать закладки для всех открытых страниц</translation>
+        <translation>Создать закладку для всех вкладок</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="908"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="907"/>
         <source>Bookmark All Tabs...</source>
-        <translation>Создать закладки для всех открытых страниц...</translation>
+        <translation>Создать закладку для всех вкладок...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="912"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="911"/>
         <source>Bookmark all open tabs.</source>
-        <translation>Создать закладки для всех открытых страниц.</translation>
+        <translation>Создать закладку для всех открытых вкладок.</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="914"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="913"/>
         <source>&lt;b&gt;Bookmark All Tabs...&lt;/b&gt;&lt;p&gt;Open a dialog to add a new bookmarks folder for all open tabs.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Создать закладки для всех открытых страниц...&lt;/b&gt;&lt;p&gt;Показать диалог добавления папки для закладок.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Создать закладку для всех вкладок...&lt;/b&gt;&lt;p&gt;Отображение диалога добавления новой папки закладок для всех открытых вкладок.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="923"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="922"/>
         <source>What&apos;s This?</source>
         <translation>Что это?</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="923"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="922"/>
         <source>&amp;What&apos;s This?</source>
         <translation>&amp;Что это?</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="923"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="922"/>
         <source>Shift+F1</source>
         <comment>Help|What&apos;s This?&apos;</comment>
         <translation>Shift+F1</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="929"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="928"/>
         <source>Context sensitive help</source>
         <translation>Контекстная помощь</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="930"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="929"/>
         <source>&lt;b&gt;Display context sensitive help&lt;/b&gt;&lt;p&gt;In What&apos;s This? mode, the mouse cursor shows an arrow with a question mark, and you can click on the interface elements to get a short description of what they do and how to use them. In dialogs, this feature can be accessed using the context help button in the titlebar.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Показать контекстную помощь&lt;/b&gt;
 &lt;p&gt;В режиме контекстной помощи курсор мыши выглядит как стрелка со знаком вопроса, и, щёлкнув по элементу интерфейса, Вы можете просмотреть краткую помощь о его роли и его использовании. В диалогах можно воспользоваться кнопкой контекстной помощи в заголовке окна.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="942"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="941"/>
         <source>About</source>
         <translation>О программе</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="942"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="941"/>
         <source>&amp;About</source>
         <translation>&amp;О программе</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="946"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="945"/>
         <source>Display information about this software</source>
         <translation>Информация о программе</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="948"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="947"/>
         <source>&lt;b&gt;About&lt;/b&gt;&lt;p&gt;Display some information about this software.&lt;/p&gt;</source>
         <translation>&lt;b&gt;О программе&lt;/b&gt;&lt;p&gt;Информация об этом программном продукте.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="956"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="955"/>
         <source>About Qt</source>
         <translation>О Qt</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="956"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="955"/>
         <source>About &amp;Qt</source>
         <translation>О &amp;Qt</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="960"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="959"/>
         <source>Display information about the Qt toolkit</source>
         <translation>Информация о библиотеке Qt</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="962"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="961"/>
         <source>&lt;b&gt;About Qt&lt;/b&gt;&lt;p&gt;Display some information about the Qt toolkit.&lt;/p&gt;</source>
         <translation>&lt;b&gt;О Qt&lt;/b&gt;&lt;p&gt;Информация о библиотеке Qt.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="970"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="969"/>
         <source>Zoom in</source>
         <translation>Увеличить масштаб</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="970"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="969"/>
         <source>Zoom &amp;in</source>
         <translation>У&amp;величить масштаб</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="970"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="969"/>
         <source>Ctrl++</source>
         <comment>View|Zoom in</comment>
         <translation>Ctrl++</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="977"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="976"/>
         <source>Zoom in on the text</source>
         <translation>Увеличить масштаб текста</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="978"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="977"/>
         <source>&lt;b&gt;Zoom in&lt;/b&gt;&lt;p&gt;Zoom in on the text. This makes the text bigger.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Увеличить масштаб&lt;/b&gt;&lt;p&gt;Увеличить масштаб. Размер букв увеличится.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="986"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="985"/>
         <source>Zoom out</source>
         <translation>Уменьшить масштаб</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="986"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="985"/>
         <source>Zoom &amp;out</source>
         <translation>У&amp;меньшить масштаб</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="986"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="985"/>
         <source>Ctrl+-</source>
         <comment>View|Zoom out</comment>
         <translation>Ctrl+-</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="993"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="992"/>
         <source>Zoom out on the text</source>
         <translation>Уменьшить масштаб текста</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="994"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="993"/>
         <source>&lt;b&gt;Zoom out&lt;/b&gt;&lt;p&gt;Zoom out on the text. This makes the text smaller.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Уменьшить масштаб&lt;/b&gt;&lt;p&gt;Уменьшить масштаб. Размер букв уменьшится.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1002"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1001"/>
         <source>Zoom reset</source>
         <translation>Сбросить масштаб</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1002"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1001"/>
         <source>Zoom &amp;reset</source>
         <translation>&amp;Сбросить масштаб</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1002"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1001"/>
         <source>Ctrl+0</source>
         <comment>View|Zoom reset</comment>
         <translation>Ctrl+0</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1008"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1007"/>
         <source>Reset the zoom of the text</source>
         <translation>Сбросить масштаб текста</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1010"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1009"/>
         <source>&lt;b&gt;Zoom reset&lt;/b&gt;&lt;p&gt;Reset the zoom of the text. This sets the zoom factor to 100%.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Сбросить масштаб&lt;/b&gt;&lt;p&gt;Сбрасывает масштаб текста. Эта настройка возвращает масштаб текста к 100%.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1020"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1019"/>
         <source>Zoom text only</source>
         <translation>Масштаб текста</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1020"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1019"/>
         <source>Zoom &amp;text only</source>
         <translation>Масштаб &amp;текста</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1025"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1024"/>
         <source>Zoom text only; pictures remain constant</source>
         <translation>Масштаб текста; Изображения остаются неизменными</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1027"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1026"/>
         <source>&lt;b&gt;Zoom text only&lt;/b&gt;&lt;p&gt;Zoom text only; pictures remain constant.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Масштаб текста&lt;/b&gt;&lt;p&gt;Масштаб текста; Изображения остаются неизменными.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1038"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1037"/>
         <source>Show page source</source>
         <translation>Показать исходный текст страницы</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1038"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1037"/>
         <source>Ctrl+U</source>
         <translation>Ctrl+U</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1043"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1042"/>
         <source>Show the page source in an editor</source>
         <translation>Показать исходный текст страницы в редакторе</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1045"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1044"/>
         <source>&lt;b&gt;Show page source&lt;/b&gt;&lt;p&gt;Show the page source in an editor.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Показать исходный текст страницы&lt;/b&gt;&lt;p&gt;Показать исходный текст страницы в редакторе.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="2383"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="2382"/>
         <source>Full Screen</source>
         <translation>Полный экран</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1054"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1053"/>
         <source>&amp;Full Screen</source>
         <translation>Полный &amp;экран</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1054"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1053"/>
         <source>F11</source>
         <translation>F11</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1065"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1064"/>
         <source>Show next tab</source>
         <translation>Показать следующую закладку</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1065"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1064"/>
         <source>Ctrl+Alt+Tab</source>
         <translation>Ctrl+Alt+Tab</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1075"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1074"/>
         <source>Show previous tab</source>
         <translation>Показать предыдущую вкладку</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1075"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1074"/>
         <source>Shift+Ctrl+Alt+Tab</source>
         <translation>Shift+Ctrl+Alt+Tab</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1085"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1084"/>
         <source>Switch between tabs</source>
         <translation>Переключение между вкладками</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1085"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1084"/>
         <source>Ctrl+1</source>
         <translation>Ctrl+1</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1095"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1094"/>
         <source>Preferences</source>
         <translation>Предпочтения</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1095"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1094"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Предпочтения...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1099"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1098"/>
         <source>Set the prefered configuration</source>
         <translation>Установите предпочтительную конфигурацию</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1101"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1100"/>
         <source>&lt;b&gt;Preferences&lt;/b&gt;&lt;p&gt;Set the configuration items of the application with your prefered values.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Предпочтения&lt;/b&gt;
 &lt;p&gt;Настройте Eric по своему вкусу.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1110"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1109"/>
         <source>Languages</source>
         <translation>Языки</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1110"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1109"/>
         <source>&amp;Languages...</source>
         <translation>&amp;Языки...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1115"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1114"/>
         <source>Configure the accepted languages for web pages</source>
         <translation>Настройка допустимых языков для WEB страниц</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1117"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1116"/>
         <source>&lt;b&gt;Languages&lt;/b&gt;&lt;p&gt;Configure the accepted languages for web pages.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Языки&lt;/b&gt;&lt;p&gt;Настроить допустимые языки для WEB страниц.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1126"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1125"/>
         <source>Cookies</source>
         <translation>Куки</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1126"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1125"/>
         <source>C&amp;ookies...</source>
         <translation>К&amp;уки...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1130"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1129"/>
         <source>Configure cookies handling</source>
         <translation>Настройка куки</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1132"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1131"/>
         <source>&lt;b&gt;Cookies&lt;/b&gt;&lt;p&gt;Configure cookies handling.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Куки&lt;/b&gt;&lt;p&gt;Настройка куки.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1156"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1155"/>
         <source>Offline Storage</source>
         <translation>Автономное хранилище</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1156"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1155"/>
         <source>Offline &amp;Storage...</source>
         <translation>Автономное &amp;хранилище...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1161"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1160"/>
         <source>Configure offline storage</source>
         <translation>Настройка автономного хранилища</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1163"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1162"/>
         <source>&lt;b&gt;Offline Storage&lt;/b&gt;&lt;p&gt;Opens a dialog to configure offline storage.&lt;/p&gt;</source>
         <translation>Offline Storage&lt;b&gt;&lt;/b&gt;&lt;p&gt;Настройка автономного хранилища.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1244"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1243"/>
         <source>Sync with Table of Contents</source>
         <translation>Синхронизировать с содержанием</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1249"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1248"/>
         <source>Synchronizes the table of contents with current page</source>
         <translation>Синхронизировать содержание с текущей страницей</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1251"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1250"/>
         <source>&lt;b&gt;Sync with Table of Contents&lt;/b&gt;&lt;p&gt;Synchronizes the table of contents with current page.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Синхронизировать с содержанием&lt;/b&gt;&lt;p&gt;Синхронизировать содержание с текущей страницей.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1260"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1259"/>
         <source>Table of Contents</source>
         <translation>Таблица содержания</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1264"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1263"/>
         <source>Shows the table of contents window</source>
         <translation>Показывает окно с содержанием</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1266"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1265"/>
         <source>&lt;b&gt;Table of Contents&lt;/b&gt;&lt;p&gt;Shows the table of contents window.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Содержание&lt;/b&gt;&lt;p&gt;Показывает окно с содержанием.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1278"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1277"/>
         <source>Shows the index window</source>
         <translation>Показать окно индексов</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1280"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1279"/>
         <source>&lt;b&gt;Index&lt;/b&gt;&lt;p&gt;Shows the index window.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Индекс&lt;/b&gt;&lt;p&gt;Показать окно индексов.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1292"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1291"/>
         <source>Shows the search window</source>
         <translation>Показать окно поиска</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1294"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1293"/>
         <source>&lt;b&gt;Search&lt;/b&gt;&lt;p&gt;Shows the search window.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Поиск&lt;/b&gt;&lt;p&gt;Показывает окно поиска.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1303"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1302"/>
         <source>Manage QtHelp Documents</source>
         <translation>Управление документацией QtHelp</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1303"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1302"/>
         <source>Manage QtHelp &amp;Documents</source>
         <translation>Управление &amp;документацией QtHelp</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1307"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1306"/>
         <source>Shows a dialog to manage the QtHelp documentation set</source>
         <translation>Показывает диалог управления документацией QtHelp</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1309"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1308"/>
         <source>&lt;b&gt;Manage QtHelp Documents&lt;/b&gt;&lt;p&gt;Shows a dialog to manage the QtHelp documentation set.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Управление документацией QtHelp&lt;/b&gt;&lt;p&gt;Показывает диалог управления документацией QtHelp.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1319"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1318"/>
         <source>Manage QtHelp Filters</source>
         <translation>Управление фильтрами документации QtHelp</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1319"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1318"/>
         <source>Manage QtHelp &amp;Filters</source>
         <translation>Управление &amp;фильтрами документации QtHelp</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1323"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1322"/>
         <source>Shows a dialog to manage the QtHelp filters</source>
         <translation>Показывает диалог управления фильтрами документации QtHelp</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1325"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1324"/>
         <source>&lt;b&gt;Manage QtHelp Filters&lt;/b&gt;&lt;p&gt;Shows a dialog to manage the QtHelp filters.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Управление фильтрами документации QtHelp&lt;/b&gt;&lt;p&gt;Показывает диалог управления фильтрами документации QtHelp.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1334"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1333"/>
         <source>Reindex Documentation</source>
         <translation>Переиндексировать документацию</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1334"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1333"/>
         <source>&amp;Reindex Documentation</source>
         <translation>&amp;Переиндексировать документацию</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1338"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1337"/>
         <source>Reindexes the documentation set</source>
         <translation>Переиндексировать документацию</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1340"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1339"/>
         <source>&lt;b&gt;Reindex Documentation&lt;/b&gt;&lt;p&gt;Reindexes the documentation set.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Переиндексировать документацию&lt;/b&gt;&lt;p&gt;Переиндексировать документацию.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1354"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1353"/>
         <source>Clear private data</source>
-        <translation>Очистить личные данные</translation>
+        <translation>Очистить приватные данные</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1349"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1348"/>
         <source>&amp;Clear private data</source>
         <translation>&amp;Очистить личные данные</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1356"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1355"/>
         <source>&lt;b&gt;Clear private data&lt;/b&gt;&lt;p&gt;Clears the private data like browsing history, search history or the favicons database.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Очистить личные данные&lt;/b&gt;&lt;p&gt;Очистить личные данные: удалить историю просмотров, историю поиска или базу данных иконок.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1366"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1365"/>
         <source>Clear icons database</source>
         <translation>Очистить базу данных иконок</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1366"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1365"/>
         <source>Clear &amp;icons database</source>
         <translation>Очистить базу данных &amp;иконок</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1371"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1370"/>
         <source>Clear the database of favicons</source>
         <translation>Очистить базу данных иконок</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1373"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1372"/>
         <source>&lt;b&gt;Clear icons database&lt;/b&gt;&lt;p&gt;Clears the database of favicons of previously visited URLs.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Очистить базу данных иконок&lt;/b&gt;&lt;p&gt;Очистить базу данных иконок ранее посещённых WEB сайтов.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1382"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1381"/>
         <source>Configure Search Engines</source>
         <translation>Настройка поисковиков</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1382"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1381"/>
         <source>Configure Search &amp;Engines...</source>
         <translation>Настройка &amp;поисковиков...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1387"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1386"/>
         <source>Configure the available search engines</source>
         <translation>Настройка поисковиков</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1389"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1388"/>
         <source>&lt;b&gt;Configure Search Engines...&lt;/b&gt;&lt;p&gt;Opens a dialog to configure the available search engines.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Настроить все поисковики...&lt;/b&gt;&lt;p&gt;Открыть диалог для настройки поисковиков.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1399"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1398"/>
         <source>Manage Saved Passwords</source>
         <translation>Менеджер сохранённых паролей</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1399"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1398"/>
         <source>Manage Saved Passwords...</source>
         <translation>Менеджер сохранённых паролей...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1405"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1404"/>
         <source>Manage the saved passwords</source>
         <translation>Управление сохранёнными паролями</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1407"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1406"/>
         <source>&lt;b&gt;Manage Saved Passwords...&lt;/b&gt;&lt;p&gt;Opens a dialog to manage the saved passwords.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Менеджер сохранения паролей...&lt;/b&gt;Открытие диалога управления сохранёнными паролями&lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1415"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1414"/>
         <source>Ad Block</source>
         <translation>Ad Block</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1415"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1414"/>
         <source>&amp;Ad Block...</source>
         <translation>&amp;Ad Block...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1421"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1420"/>
         <source>Configure AdBlock subscriptions and rules</source>
         <translation>Настройка AdBlock подписки и правил</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1423"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1422"/>
         <source>&lt;b&gt;Ad Block...&lt;/b&gt;&lt;p&gt;Opens a dialog to configure AdBlock subscriptions and rules.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Ad Block...&lt;/b&gt;&lt;p&gt;Показать диалог для настройки AdBlock подписок и правил.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1474"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1473"/>
         <source>Show the network monitor dialog</source>
         <translation>Показать диалог монитора сети</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1587"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1586"/>
         <source>&amp;File</source>
         <translation>&amp;Файл</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1610"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1609"/>
         <source>&amp;Edit</source>
         <translation>&amp;Правка</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1618"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1617"/>
         <source>&amp;View</source>
         <translation>&amp;Вид</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1629"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1628"/>
         <source>Text Encoding</source>
         <translation>Кодировка текста</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1635"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1634"/>
         <source>&amp;Go</source>
         <translation>&amp;Перейти</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1650"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1649"/>
         <source>H&amp;istory</source>
         <translation>И&amp;стория</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1658"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1657"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Закладки</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1673"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1672"/>
         <source>&amp;Settings</source>
         <translation>&amp;Настройка</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1713"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1712"/>
         <source>&amp;Tools</source>
         <translation>&amp;Инструменты</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1722"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1721"/>
         <source>&amp;Window</source>
         <translation>&amp;Окно</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1733"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1732"/>
         <source>&amp;Help</source>
         <translation>&amp;Помощь</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1744"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1743"/>
         <source>File</source>
         <translation>Файл</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1770"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1769"/>
         <source>Edit</source>
         <translation>Редактировать</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1775"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1774"/>
         <source>View</source>
         <translation>Вид</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1784"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1783"/>
         <source>Find</source>
         <translation>Найти</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1792"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1791"/>
         <source>Filter</source>
         <translation>Фильтр</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1797"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1796"/>
         <source>Filtered by: </source>
         <translation>Фильтровать по: </translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1804"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1803"/>
         <source>Settings</source>
         <translation>Настройка</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1824"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1823"/>
         <source>Help</source>
         <translation>Помощь</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1831"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1830"/>
         <source>Go</source>
         <translation>Перейти</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="2034"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="2033"/>
         <source>Help Files (*.html *.htm);;PDF Files (*.pdf);;CHM Files (*.chm);;All Files (*)</source>
         <translation>Файлы помощи (*.html *.htm);;Файлы PDF (*.pdf);;Файлы CHM (*.chm);;Все файлы (*)</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="2176"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="2175"/>
         <source>Saved Tabs</source>
         <translation>Сохраненные вкладки</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="2413"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="2412"/>
         <source>&lt;b&gt;Are you sure you want to turn on private browsing?&lt;/b&gt;&lt;p&gt;When private browsing is turned on, web pages are not added to the history, searches are not added to the list of recent searches and web site icons and cookies are not stored. HTML5 offline storage will be deactivated. Until you close the window, you can still click the Back and Forward buttons to return to the web pages you have opened.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Подтвердите включение закрытого режима.&lt;/b&gt;&lt;p&gt;В закрытом режиме посещённые WEB страницы не сохраняются в истории, поиски не сохраняются в списке последних поисков, иконки сайтов и куки так же не сохраняются. HTML5 автономное хранилище будет выключено. Пока текущее окно не закрыто, переход вперёд и назад на просмотренные уже страницы всё же будет работать.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Подтвердите включение приватного режима.&lt;/b&gt;&lt;p&gt;В приватном режиме посещённые WEB страницы не сохраняются в истории, поиски не сохраняются в списке последних поисков, иконки сайтов и куки так же не сохраняются. HTML5 автономное хранилище будет выключено. До тех пор, пока текущее окно не закрыто, переход вперёд и назад на просмотренные уже страницы всё же будет работать.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="2693"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="2692"/>
         <source>Could not find an associated content.</source>
         <translation>Невозможно найти соответствующее содержание.</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="2816"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="2815"/>
         <source>Updating search index</source>
         <translation>Обновление поискового индекса</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="2886"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="2885"/>
         <source>Looking for Documentation...</source>
         <translation>Идёт поиск помощи...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="2921"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="2920"/>
         <source>Unfiltered</source>
         <translation>Без фильтра</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="2940"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="2939"/>
         <source>Help Engine</source>
         <translation>Движок для системы помощи</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="3430"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="3429"/>
         <source>ISO</source>
         <translation>ISO</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="3431"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="3430"/>
         <source>Windows</source>
         <translation>Windows</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="3432"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="3431"/>
         <source>ISCII</source>
         <translation>ISCII</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="3433"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="3432"/>
         <source>Unicode</source>
         <translation>Юникод</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="3434"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="3433"/>
         <source>Other</source>
         <translation>Другое</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="3435"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="3434"/>
         <source>IBM</source>
         <translation>IBM</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="3457"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="3456"/>
         <source>Default Encoding</source>
         <translation>Кодировка по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1485"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1484"/>
         <source>Downloads</source>
-        <translation>Загрузка</translation>
+        <translation>Загрузки</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1489"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1488"/>
         <source>Shows the downloads window</source>
         <translation>Показать окно загрузки</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1491"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1490"/>
         <source>&lt;b&gt;Downloads&lt;/b&gt;&lt;p&gt;Shows the downloads window.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Загрузки&lt;/b&gt;&lt;p&gt;Показать окно загрузки.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1884"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1883"/>
         <source>VirusTotal</source>
         <translation>VirusTotal</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1888"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1887"/>
         <source>Scan current site</source>
         <translation>Проверить текущий сервер</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="3695"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="3694"/>
         <source>VirusTotal Scan</source>
         <translation>Проверка VirusTotal</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="3695"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="3694"/>
         <source>&lt;p&gt;The VirusTotal scan could not be scheduled.&lt;p&gt;
 &lt;p&gt;Reason: {0}&lt;/p&gt;</source>
         <translation>&lt;p&gt;Невозможно запланировать проверку VirusTotal.&lt;p&gt;
 &lt;p&gt;Причина: {0}&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1500"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1499"/>
         <source>RSS Feeds Dialog</source>
         <translation>Каналы RSS</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1500"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1499"/>
         <source>&amp;RSS Feeds Dialog...</source>
         <translation>Каналы &amp;RSS...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1500"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1499"/>
         <source>Ctrl+Shift+F</source>
         <comment>Help|RSS Feeds Dialog</comment>
         <translation>Ctrl+Shift+F</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1506"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1505"/>
         <source>Open a dialog showing the configured RSS feeds.</source>
         <translation>Показать сконфигурированные каналы RSS.</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1508"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1507"/>
         <source>&lt;b&gt;RSS Feeds Dialog...&lt;/b&gt;&lt;p&gt;Open a dialog to show the configured RSS feeds. It can be used to mange the feeds and to show their contents.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Каналы RSS...&lt;/b&gt;&lt;p&gt;Показывает сконфигурированные каналы RSS. Позволяет изменить их настройки.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1518"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1517"/>
         <source>Siteinfo Dialog</source>
         <translation>Информация о сервере</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1518"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1517"/>
         <source>&amp;Siteinfo Dialog...</source>
         <translation>&amp;Информация о сервере...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1518"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1517"/>
         <source>Ctrl+Shift+I</source>
         <comment>Help|Siteinfo Dialog</comment>
         <translation>Ctrl+Shift+I</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1524"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1523"/>
         <source>Open a dialog showing some information about the current site.</source>
         <translation>Открыть диалог с информацией о текущем сервере.</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1526"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1525"/>
         <source>&lt;b&gt;Siteinfo Dialog...&lt;/b&gt;&lt;p&gt;Opens a dialog showing some information about the current site.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Информация о сервере...&lt;/b&gt;&lt;p&gt;Открыть диалог с информацией о текущем сервере.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1816"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1815"/>
         <source>Tools</source>
         <translation>Инструменты</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="970"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="969"/>
         <source>Zoom In</source>
         <comment>View|Zoom in</comment>
         <translation>Увеличить масштаб</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="986"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="985"/>
         <source>Zoom Out</source>
         <comment>View|Zoom out</comment>
         <translation>Уменьшить масштаб</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1469"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1468"/>
         <source>Network Monitor</source>
         <translation>Монитор сети</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1469"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1468"/>
         <source>&amp;Network Monitor...</source>
         <translation>Мо&amp;нитор сети...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1476"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1475"/>
         <source>&lt;b&gt;Network Monitor...&lt;/b&gt;&lt;p&gt;Shows the network monitor dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Сетевой монитор...&lt;/b&gt;&lt;p&gt;Открыть диалог сетевого монитора.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="2390"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="2389"/>
         <source>Restore Window</source>
         <translation>Восстановить окно</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1535"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1534"/>
         <source>Manage User Agent Settings</source>
         <translation>Настройка агента пользователя</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1535"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1534"/>
         <source>Manage &amp;User Agent Settings</source>
         <translation>Настройка &amp;агента пользователя</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1539"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1538"/>
         <source>Shows a dialog to manage the User Agent settings</source>
         <translation>Показывает диалог настройки агента пользователя</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1541"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1540"/>
         <source>&lt;b&gt;Manage User Agent Settings&lt;/b&gt;&lt;p&gt;Shows a dialog to manage the User Agent settings.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Настройка агента пользователя&lt;/b&gt;&lt;p&gt;Отображение диалога настройки агента пользователя.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1700"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1699"/>
         <source>Global User Agent</source>
         <translation>Глобальный агент пользователя</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="518"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="517"/>
         <source>Save As</source>
         <translation>Сохранить как</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="534"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="533"/>
         <source>Save Page Screen</source>
         <translation>Сохранение страницы</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="534"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="533"/>
         <source>Save Page Screen...</source>
         <translation>Сохранить страницу...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="539"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="538"/>
         <source>Save the current page as a screen shot</source>
         <translation>Сохранить текущую страницу как снимок экрана</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="541"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="540"/>
         <source>&lt;b&gt;Save Page Screen...&lt;/b&gt;&lt;p&gt;Saves the current page as a screen shot.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Сохранение страницы...&lt;/b&gt;&lt;p&gt;Сохранение текущей страницы как снимок экрана.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1550"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1549"/>
         <source>Synchronize data</source>
         <translation>Синхронизация данных</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1550"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1549"/>
         <source>&amp;Synchronize Data...</source>
         <translation>&amp;Синхронизация данных...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1555"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1554"/>
         <source>Shows a dialog to synchronize data via the network</source>
         <translation>Показывает диалог синхронизации данных через сеть</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1557"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1556"/>
         <source>&lt;b&gt;Synchronize Data...&lt;/b&gt;&lt;p&gt;This shows a dialog to synchronize data via the network.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Синхронизация данных...&lt;/b&gt;&lt;p&gt;Показывает диалог синхронизации данных через сеть.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1432"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1431"/>
         <source>ClickToFlash</source>
         <translation>ClickToFlash</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1432"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1431"/>
         <source>&amp;ClickToFlash...</source>
         <translation>&amp;ClickToFlash...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1438"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1437"/>
         <source>Configure ClickToFlash whitelist</source>
         <translation>Настройка белого списка ClickToFlash</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1440"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1439"/>
         <source>&lt;b&gt;ClickToFlash...&lt;/b&gt;&lt;p&gt;Opens a dialog to configure the ClickToFlash whitelist.&lt;/p&gt;</source>
         <translation>&lt;b&gt;ClickToFlash...&lt;/b&gt;&lt;p&gt;Открыть диалог для настройки белого списка ClickToFlash.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1172"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1171"/>
         <source>Personal Information</source>
         <translation>Личная информация</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1172"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1171"/>
         <source>Personal Information...</source>
         <translation>Личная информация...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1178"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1177"/>
         <source>Configure personal information for completing form fields</source>
         <translation>Настройка Вашей личной информации, которая будет использована на веб страницах</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1180"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1179"/>
         <source>&lt;b&gt;Personal Information...&lt;/b&gt;&lt;p&gt;Opens a dialog to configure the personal information used for completing form fields.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Личная информация...&lt;/b&gt;&lt;p&gt;Настройка Вашей личной информации, которая будет использована на веб страницах.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1190"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1189"/>
         <source>GreaseMonkey Scripts</source>
         <translation>GreaseMonkey скрипты</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1190"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1189"/>
         <source>GreaseMonkey Scripts...</source>
         <translation>GreaseMonkey скрипты...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1196"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1195"/>
         <source>Configure the GreaseMonkey Scripts</source>
         <translation>Конфигурация GreaseMonkey скриптов</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1198"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1197"/>
         <source>&lt;b&gt;GreaseMonkey Scripts...&lt;/b&gt;&lt;p&gt;Opens a dialog to configure the available GreaseMonkey Scripts.&lt;/p&gt;</source>
         <translation>&lt;b&gt;GreaseMonkey скрипты...&lt;/b&gt;&lt;p&gt;Конфигурация GreaseMonkey скриптов.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1451"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1450"/>
         <source>Manage SSL Certificates</source>
         <translation>Менеджер SLL сертификатов</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1451"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1450"/>
         <source>Manage SSL Certificates...</source>
         <translation>Менеджер SLL сертификатов...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1457"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1456"/>
         <source>Manage the saved SSL certificates</source>
         <translation>Управление сохранёнными SLL сертификатами</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1459"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1458"/>
         <source>&lt;b&gt;Manage SSL Certificates...&lt;/b&gt;&lt;p&gt;Opens a dialog to manage the saved SSL certificates.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Менеджер SLL сертификатов...&lt;/b&gt;&lt;p&gt;Менеджер сохранённых SLL сертификатов.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1208"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1207"/>
         <source>Edit Message Filters</source>
         <translation>Редактировать фильтры сообщений</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1208"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1207"/>
         <source>Edit Message Filters...</source>
         <translation>Редактировать фильтры сообщений...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1213"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1212"/>
         <source>Edit the message filters used to suppress unwanted messages</source>
         <translation>Редактировать фильтры нежелательных сообщений</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1215"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1214"/>
         <source>&lt;b&gt;Edit Message Filters&lt;/b&gt;&lt;p&gt;Opens a dialog to edit the message filters used to suppress unwanted messages been shown in an error window.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Редактировать фильтры сообщений&lt;/b&gt;&lt;p&gt;Редактировать фильтры нежелательных сообщений об ошибках.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="549"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="548"/>
         <source>Save Visible Page Screen</source>
         <translation>Сохранение текущей страницы</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="549"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="548"/>
         <source>Save Visible Page Screen...</source>
         <translation>Сохранить текущую страницу...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="554"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="553"/>
         <source>Save the visible part of the current page as a screen shot</source>
         <translation>Сохранить видимую часть текущей страницы как снимок экрана</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="557"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="556"/>
         <source>&lt;b&gt;Save Visible Page Screen...&lt;/b&gt;&lt;p&gt;Saves the visible part of the current page as a screen shot.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Сохранение видимой страницы...&lt;/b&gt;&lt;p&gt;Сохранение видимой части текущей страницы как снимок экрана.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="2896"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="2895"/>
         <source>eric6 Web Browser</source>
         <translation>Eric6 Web браузер</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="701"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="700"/>
         <source>Quit the eric6 Web Browser</source>
         <translation>Выйти из Web обозревателя</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="702"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="701"/>
         <source>&lt;b&gt;Quit&lt;/b&gt;&lt;p&gt;Quit the eric6 Web Browser.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Выход&lt;/b&gt;&lt;p&gt;Выйти из Web обозревателя.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="2082"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="2081"/>
         <source>&lt;b&gt;eric6 Web Browser - {0}&lt;/b&gt;&lt;p&gt;The eric6 Web Browser is a combined help file and HTML browser. It is part of the eric6 development toolset.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Eric6 Web обозреватель - {0}&lt;/b&gt;&lt;p&gt;Eric Web обозреватель позволяет просматривать HTML файлы и файлы документации. Является частью инструментов разработчика.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="3730"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="3729"/>
         <source>IP Address Report</source>
         <translation>Отчет IP адреса</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="3740"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="3739"/>
         <source>Domain Report</source>
         <translation>Отчет домена</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="3721"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="3720"/>
         <source>Enter a valid IPv4 address in dotted quad notation:</source>
         <translation>Введите действительный адрес IPv4 в четырехкомпонентой нотации с точками:</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="3730"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="3729"/>
         <source>The given IP address is not in dotted quad notation.</source>
         <translation>Данный IP адрес приведен не в четырехкомпонентой нотации с точками.</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="3740"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="3739"/>
         <source>Enter a valid domain name:</source>
         <translation>Введите действительное имя домена:</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1226"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1225"/>
         <source>Edit HTML5 Feature Permissions</source>
         <translation>Изменение прав доступа к функциям HTML5</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1226"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1225"/>
         <source>Edit HTML5 Feature Permissions...</source>
         <translation>HTML5 Изменение прав доступа к функциям...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1231"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1230"/>
         <source>Edit the remembered HTML5 feature permissions</source>
-        <translation>Изменение запоминаемых прав доступа к функциям HTML5</translation>
+        <translation>Изменение сохраненных прав доступа к функциям HTML5</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1233"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1232"/>
         <source>&lt;b&gt;Edit HTML5 Feature Permissions&lt;/b&gt;&lt;p&gt;Opens a dialog to edit the remembered HTML5 feature permissions.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Изменение прав доступа к функциям HTML5&lt;/b&gt;&lt;p&gt;Открывает диалог изменения запомненных прав доступа к функциям HTML5.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1141"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1140"/>
         <source>Flash Cookies</source>
         <translation>Флеш-куки</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1141"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1140"/>
         <source>&amp;Flash Cookies...</source>
         <translation>&amp;Флеш-куки...</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1145"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1144"/>
         <source>Manage flash cookies</source>
         <translation>Управление флэш-куки</translation>
     </message>
     <message>
-        <location filename="../Helpviewer/HelpWindow.py" line="1147"/>
+        <location filename="../Helpviewer/HelpWindow.py" line="1146"/>
         <source>&lt;b&gt;Flash Cookies&lt;/b&gt;&lt;p&gt;Show a dialog to manage the flash cookies.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Флэш-куки&lt;/b&gt;&lt;p&gt;Отображение диалога управления флэш-куки.&lt;/p&gt;</translation>
     </message>
@@ -20665,7 +20665,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBackoutDialog.ui" line="149"/>
         <source>Bookmark:</source>
-        <translation>Закладки:</translation>
+        <translation>Закладка:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBackoutDialog.ui" line="165"/>
@@ -20708,7 +20708,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarkDialog.ui" line="60"/>
         <source>Select to specify a revision by number</source>
-        <translation>Задать ревизию порядковым номером</translation>
+        <translation>Разрешить задавать ревизию порядковым номером</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarkDialog.ui" line="63"/>
@@ -20773,7 +20773,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarkDialog.ui" line="180"/>
         <source>Bookmark:</source>
-        <translation>Закладки:</translation>
+        <translation>Закладка:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarkDialog.ui" line="196"/>
@@ -20816,7 +20816,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarkRenameDialog.ui" line="37"/>
         <source>Bookmark:</source>
-        <translation>Закладки:</translation>
+        <translation>Закладка:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarkRenameDialog.ui" line="50"/>
@@ -20910,7 +20910,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarksInOutDialog.py" line="177"/>
         <source>no bookmarks found</source>
-        <translation>Закладки не найдены</translation>
+        <translation>закладки не найдены</translation>
     </message>
 </context>
 <context>
@@ -21128,7 +21128,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBundleDialog.ui" line="104"/>
         <source>Bookmark:</source>
-        <translation>Закладки:</translation>
+        <translation>Закладка:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBundleDialog.ui" line="120"/>
@@ -21667,17 +21667,17 @@ of the Mercurial client executable (i.e. hg).&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgDiffDialog.py" line="254"/>
         <source>Save Diff</source>
-        <translation>Сохранить изменения</translation>
+        <translation>Сохранить различия</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgDiffDialog.py" line="221"/>
         <source>Patch Files (*.diff)</source>
-        <translation>Файлы изменений (*.diff)</translation>
+        <translation>Файлы патчей (*.diff)</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgDiffDialog.py" line="238"/>
         <source>&lt;p&gt;The patch file &lt;b&gt;{0}&lt;/b&gt; already exists. Overwrite it?&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Файл изменений &lt;b&gt;{0}&lt;/b&gt; уже существует. Переписать?&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Файл патч &lt;b&gt;{0}&lt;/b&gt; уже существует. Переписать?&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgDiffDialog.py" line="254"/>
@@ -21715,7 +21715,7 @@ of the Mercurial client executable (i.e. hg).&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgExportDialog.py" line="78"/>
         <source>Export Patches</source>
-        <translation>Экспортировать патчи</translation>
+        <translation>Экспорт патчей</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgExportDialog.ui" line="25"/>
@@ -21725,7 +21725,7 @@ of the Mercurial client executable (i.e. hg).&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgExportDialog.ui" line="85"/>
         <source>Press to select the export directory via a directory selection dialog</source>
-        <translation>Выбрать директорию экспорта посредством диалога выбора директории</translation>
+        <translation>Выбор директории экспорта посредством диалога выбора директории</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgExportDialog.ui" line="35"/>
@@ -21847,7 +21847,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/GpgExtension/HgGpgSignDialog.ui" line="29"/>
         <source>Select to specify a revision by number</source>
-        <translation>Задать ревизию порядковым номером</translation>
+        <translation>Разрешить задавать ревизию порядковым номером</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/GpgExtension/HgGpgSignDialog.ui" line="32"/>
@@ -21912,7 +21912,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/GpgExtension/HgGpgSignDialog.ui" line="149"/>
         <source>Bookmark:</source>
-        <translation>Закладки:</translation>
+        <translation>Закладка:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/GpgExtension/HgGpgSignDialog.ui" line="165"/>
@@ -22187,7 +22187,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgImportDialog.ui" line="14"/>
         <source>Import Patch</source>
-        <translation>Импортировать патч</translation>
+        <translation>Импорт патч</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgImportDialog.ui" line="23"/>
@@ -22257,7 +22257,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgImportDialog.ui" line="178"/>
         <source>Press to select the patch file via a file selection dialog</source>
-        <translation>Выберите файл патча посредством диалога выбора файлов</translation>
+        <translation>Выбрать файл патча посредством диалога выбора файлов</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgImportDialog.ui" line="187"/>
@@ -22375,7 +22375,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgLogBrowserDialog.ui" line="294"/>
         <source>Press to get the next bunch of log entries</source>
-        <translation>Получение следующей порции сообщений журнала</translation>
+        <translation>Получить следующую порцию сообщений журнала</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgLogBrowserDialog.ui" line="297"/>
@@ -22400,7 +22400,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgLogBrowserDialog.ui" line="346"/>
         <source>Press to generate a diff to the first parent revision</source>
-        <translation>Создание сравнения с предыдущей версией</translation>
+        <translation>Создать сравнения с предыдущей версией</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgLogBrowserDialog.ui" line="349"/>
@@ -22410,7 +22410,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgLogBrowserDialog.ui" line="356"/>
         <source>Press to generate a diff to the second parent revision</source>
-        <translation>Создание сравнения с пред-предыдущей версией</translation>
+        <translation>Создать сравнения с пред-предыдущей версией</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgLogBrowserDialog.ui" line="359"/>
@@ -22955,7 +22955,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMergeDialog.ui" line="29"/>
         <source>Select to specify a revision by number</source>
-        <translation>Задать ревизию порядковым номером</translation>
+        <translation>Разрешить задавать ревизию порядковым номером</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMergeDialog.ui" line="32"/>
@@ -23040,7 +23040,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMergeDialog.ui" line="137"/>
         <source>Bookmark:</source>
-        <translation>Закладки:</translation>
+        <translation>Закладка:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMergeDialog.ui" line="153"/>
@@ -23103,7 +23103,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMultiRevisionSelectionDialog.ui" line="116"/>
         <source>Bookmark:</source>
-        <translation>Закладки:</translation>
+        <translation>Закладка:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMultiRevisionSelectionDialog.ui" line="132"/>
@@ -24324,7 +24324,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1783"/>
         <source>Import Patch</source>
-        <translation>Импортировать патч</translation>
+        <translation>Импорт патч</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="926"/>
@@ -24354,7 +24354,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="941"/>
         <source>Export Patches</source>
-        <translation>Экспортировать патчи</translation>
+        <translation>Экспорт патчей</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="941"/>
@@ -25230,7 +25230,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/QueuesExtension/HgQueuesNewPatchDialog.ui" line="57"/>
         <source>Select to give user information</source>
-        <translation>Задать информацию о пользователе</translation>
+        <translation>Разрешить информацию о пользователе</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/QueuesExtension/HgQueuesNewPatchDialog.ui" line="60"/>
@@ -25419,7 +25419,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/RebaseExtension/HgRebaseDialog.ui" line="236"/>
         <source>Select to specify a revision by number</source>
-        <translation>Задать ревизию порядковым номером</translation>
+        <translation>Разрешить задавать ревизию порядковым номером</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/RebaseExtension/HgRebaseDialog.ui" line="239"/>
@@ -25688,7 +25688,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionSelectionDialog.ui" line="29"/>
         <source>Select to specify a revision by number</source>
-        <translation>Задать ревизию порядковым номером</translation>
+        <translation>Разрешить задавать ревизию порядковым номером</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionSelectionDialog.ui" line="32"/>
@@ -25791,7 +25791,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionsSelectionDialog.ui" line="208"/>
         <source>Select to specify a revision by number</source>
-        <translation>Задать ревизию порядковым номером</translation>
+        <translation>Разрешить задавать ревизию порядковым номером</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionsSelectionDialog.ui" line="211"/>
@@ -26080,7 +26080,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <translation>
             <numerusform>%n файл изменен</numerusform>
             <numerusform>%n файла изменены</numerusform>
-            <numerusform>%n файлов изменено</numerusform>
+            <numerusform>%n файлов изменены</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -26089,7 +26089,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <translation>
             <numerusform>%n строка вставлена</numerusform>
             <numerusform>%n строки вставлены</numerusform>
-            <numerusform>%n строк вставлено</numerusform>
+            <numerusform>%n строк вставлены</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -26098,7 +26098,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <translation>
             <numerusform>%n строка удалена</numerusform>
             <numerusform>%n строки удалены</numerusform>
-            <numerusform>%n строк удалено</numerusform>
+            <numerusform>%n строк удалены</numerusform>
         </translation>
     </message>
     <message>
@@ -26728,25 +26728,25 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="411"/>
         <source>%n new changeset(s)&lt;br/&gt;Update required</source>
         <translation>
-            <numerusform>одно новое изменение&lt;br/&gt;Требуется обновление</numerusform>
-            <numerusform>%n новых изменения&lt;br/&gt;Требуется обновление</numerusform>
-            <numerusform>%n новых изменений&lt;br/&gt;Требуется обновление</numerusform>
+            <numerusform>один новый набор изменений&lt;br/&gt;Требуется обновление</numerusform>
+            <numerusform>%n новых набора изменений&lt;br/&gt;Требуется обновление</numerusform>
+            <numerusform>%n новых наборов изменений&lt;br/&gt;Требуется обновление</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="415"/>
         <source>%n new changeset(s)</source>
         <translation>
-            <numerusform>одно новое изменение</numerusform>
-            <numerusform>%n новых изменения</numerusform>
-            <numerusform>%n новых изменений</numerusform>
+            <numerusform>один новый набор изменений</numerusform>
+            <numerusform>%n новых набора изменений</numerusform>
+            <numerusform>%n новых наборов изменений</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="417"/>
         <source>%n branch head(s)</source>
         <translation>
-            <numerusform>одна вершина ветвей</numerusform>
+            <numerusform>одна вершина ветви</numerusform>
             <numerusform>%n вершины ветвей</numerusform>
             <numerusform>%n вершин ветвей</numerusform>
         </translation>
@@ -26771,7 +26771,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <source>%n outgoing bookmark(s)</source>
         <translation>
             <numerusform>одна исходящая закладка</numerusform>
-            <numerusform>%n исходящих закладки</numerusform>
+            <numerusform>%n исходящие закладки</numerusform>
             <numerusform>%n исходящих закладок</numerusform>
         </translation>
     </message>
@@ -26784,9 +26784,9 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="467"/>
         <source>%n file(s) to upload</source>
         <translation>
-            <numerusform>%n файл для загрузки</numerusform>
-            <numerusform>%n файла для загрузки</numerusform>
-            <numerusform>%n файлов для загрузки</numerusform>
+            <numerusform>%n файл для отправки</numerusform>
+            <numerusform>%n файла для отправки</numerusform>
+            <numerusform>%n файлов для отправки</numerusform>
         </translation>
     </message>
     <message>
@@ -27346,12 +27346,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/HtmlImporter.py" line="33"/>
         <source>HTML Netscape Bookmarks</source>
-        <translation>Netscape HTML Закладки</translation>
+        <translation>Закладки Netscape HTML</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/HtmlImporter.py" line="33"/>
         <source>Please choose the file to begin importing bookmarks.</source>
-        <translation>Пожалуйста выберите файл для импортирования закладок.</translation>
+        <translation>Пожалуйста выберите файл чтобы начать импортирование закладок.</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/HtmlImporter.py" line="86"/>
@@ -27384,7 +27384,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/IExplorerImporter.py" line="40"/>
         <source>Please choose the folder to begin importing bookmarks.</source>
-        <translation>Пожалуйста выберите каталог для импортирования закладок.</translation>
+        <translation>Пожалуйста выберите папку чтобы начать импортирование закладок.</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/IExplorerImporter.py" line="90"/>
@@ -28690,7 +28690,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IconsPage.ui" line="79"/>
         <source>Press to select an icon directory via a selection dialog</source>
-        <translation>Выберите директорию иконок в диалоге выбора</translation>
+        <translation>Выбор директории иконок в диалоге выбора</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IconsPage.ui" line="91"/>
@@ -29056,7 +29056,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="191"/>
         <source>Select the style sheet file via a file selection dialog</source>
-        <translation>Выберите файл таблицы стилей посредством диалога выбора</translation>
+        <translation>Выбор файла таблицы стилей посредством диалога выбора файлов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="200"/>
@@ -29241,7 +29241,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="537"/>
         <source>Show only one close button instead of one for each tab</source>
-        <translation>Показывать только одну общую закрывающую кнопку вместо одной в каждой вкладке</translation>
+        <translation>Показывать только одну общую закрывающую кнопку</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="560"/>
@@ -29353,7 +29353,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="367"/>
         <source>Messages starting with a &apos;/&apos; are not allowed in private chats.</source>
-        <translation>В частных разговорах сообщения, начинающиеся с &apos;/&apos;, не разрешаются.</translation>
+        <translation>В приватных разговорах сообщения, начинающиеся с &apos;/&apos;, не разрешаются.</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="394"/>
@@ -29466,7 +29466,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <translation>
             <numerusform>ограничивается одним пользователем</numerusform>
             <numerusform>ограничивается %n пользователями</numerusform>
-            <numerusform>ограничивается %n пользователями</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -29543,9 +29543,9 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="893"/>
         <source>{0} sets the channel limit to %n nick(s).</source>
         <translation>
-            <numerusform>{0} задает ограничение канала в один ник.</numerusform>
-            <numerusform>{0} задает ограничение канала в %n ника.</numerusform>
-            <numerusform>{0} задает ограничение канала в %n ников.</numerusform>
+            <numerusform>{0} устанавливает ограничение канала в один ник.</numerusform>
+            <numerusform>{0} устанавливает ограничение канала в %n ника.</numerusform>
+            <numerusform>{0} устанавливает ограничение канала в %n ников.</numerusform>
         </translation>
     </message>
     <message>
@@ -29711,7 +29711,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1337"/>
         <source>Private Chat</source>
-        <translation>Приватная беседа</translation>
+        <translation>Приватный чат</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1452"/>
@@ -29841,9 +29841,9 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1652"/>
         <source>{0} has been idle for %n second(s).</source>
         <translation>
-            <numerusform>{0} бездействовал в течение 1 секунды.</numerusform>
-            <numerusform>{0} бездействовал в течение %n секунд.</numerusform>
-            <numerusform>{0} бездействовал в течение %n секунд.</numerusform>
+            <numerusform>{0} бездействует 1 секунду.</numerusform>
+            <numerusform>{0} бездействует %n секунды.</numerusform>
+            <numerusform>{0} бездействует %n секунд.</numerusform>
         </translation>
     </message>
     <message>
@@ -29854,7 +29854,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1680"/>
         <source>End of WHOIS list for {0}.</source>
-        <translation>Конец списка для {0}.</translation>
+        <translation>Конец WHOIS списка для {0}.</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1698"/>
@@ -30170,12 +30170,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcNetworkManager.py" line="27"/>
         <source>Default Identity</source>
-        <translation>Default Identity</translation>
+        <translation>Пользователь по умолчанию</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcNetworkManager.py" line="30"/>
         <source>Gone away for now.</source>
-        <translation>Gone away for now.</translation>
+        <translation>Отошел.</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcNetworkManager.py" line="34"/>
@@ -30296,7 +30296,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcNetworkListDialog.ui" line="54"/>
         <source>&amp;New...</source>
-        <translation>&amp;Новая...</translation>
+        <translation>&amp;Новый...</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcNetworkListDialog.ui" line="61"/>
@@ -30652,7 +30652,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="651"/>
         <source>Enable to show notifications</source>
-        <translation>Показывать извещения</translation>
+        <translation>Разрешить показ извещений</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="654"/>
@@ -30883,7 +30883,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcUtilities.py" line="169"/>
         <source>reop channel</source>
-        <translation>reop channel</translation>
+        <translation type="unfinished">reop channel</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcUtilities.py" line="170"/>
@@ -30911,7 +30911,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcWidget.py" line="68"/>
         <source>Press to leave the current channel</source>
-        <translation>Отключение от текущего канала</translation>
+        <translation>Отключиться от текущего канала</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcWidget.py" line="247"/>
@@ -30966,7 +30966,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcWidget.py" line="500"/>
         <source>Server disconnected.</source>
-        <translation>Сервер отключен.</translation>
+        <translation>Сервер отсоединился.</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcWidget.py" line="547"/>
@@ -31210,7 +31210,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="104"/>
         <source>Welcome to eric6 Web Browser!</source>
-        <translation>Добро пожаловать в eric6 Web браузер!</translation>
+        <translation>Добро пожаловать в Eric6 Web браузер!</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="106"/>
@@ -31655,27 +31655,27 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="187"/>
         <source>Deleted</source>
-        <translation>Удалено</translation>
+        <translation type="unfinished">Удалено</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="188"/>
         <source>Inserted</source>
-        <translation>Вставка</translation>
+        <translation type="unfinished">Вставленый</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="189"/>
         <source>Generic error</source>
-        <translation>Ошибка</translation>
+        <translation type="unfinished">Общая ошибка</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="190"/>
         <source>Emphasized text</source>
-        <translation>Выделенный текст</translation>
+        <translation type="unfinished">Отображаемый как Italic текст</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="191"/>
         <source>Strong text</source>
-        <translation>Выделенный текст</translation>
+        <translation type="unfinished">Отображаемый как Bold текст</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="192"/>
@@ -31690,7 +31690,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="194"/>
         <source>Traceback</source>
-        <translation>Стек вызовов</translation>
+        <translation type="unfinished">Обратная трассировка</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="195"/>
@@ -31700,7 +31700,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="196"/>
         <source>Comment block</source>
-        <translation>Закомментировать блок</translation>
+        <translation>Блок комментариев</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="197"/>
@@ -31733,7 +31733,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/Lexers/__init__.py" line="85"/>
         <source>Batch</source>
-        <translation>Пакетный</translation>
+        <translation>Batch</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/__init__.py" line="87"/>
@@ -31763,7 +31763,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/Lexers/__init__.py" line="97"/>
         <source>Diff</source>
-        <translation>Различия</translation>
+        <translation>Diff</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/__init__.py" line="99"/>
@@ -31888,7 +31888,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/Lexers/__init__.py" line="539"/>
         <source>Quixote Template Files (*.ptl)</source>
-        <translation>Шаблоны Quixote (*.ptl)</translation>
+        <translation>Файлы шаблонов Quixote (*.ptl)</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/__init__.py" line="542"/>
@@ -31903,7 +31903,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/Lexers/__init__.py" line="372"/>
         <source>C Files (*.h *.c)</source>
-        <translation>Исходники C (*.h *.c)</translation>
+        <translation>Файлы C (*.h *.c)</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/__init__.py" line="375"/>
@@ -31998,7 +31998,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/Lexers/__init__.py" line="429"/>
         <source>Diff Files (*.diff *.patch)</source>
-        <translation>Файлы различий (*.diff *.patch)</translation>
+        <translation>Файлы Diff (*.diff *.patch)</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/__init__.py" line="432"/>
@@ -32153,7 +32153,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/Lexers/__init__.py" line="626"/>
         <source>Diff Files (*.diff)</source>
-        <translation>Файлы различий (*.diff)</translation>
+        <translation>Файлы Diff (*.diff)</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/__init__.py" line="629"/>
@@ -32311,7 +32311,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/LargefilesExtension/LfConvertDataDialog.ui" line="40"/>
         <source>Press to select the new project directory name via a directory selection dialog</source>
-        <translation>Выберите имя новой директории проекта постредством диалога выбора директорий</translation>
+        <translation>Выбор имени новой директории проекта постредством диалога выбора директорий</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/LargefilesExtension/LfConvertDataDialog.ui" line="47"/>
@@ -32622,12 +32622,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ConfigurationPage/MercurialPage.ui" line="135"/>
         <source>Commit</source>
-        <translation>Фиксация</translation>
+        <translation>Зафиксировать</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ConfigurationPage/MercurialPage.ui" line="141"/>
         <source>No. of commit messages to remember:</source>
-        <translation>Количество запоминаемых комментариев к фиксациям:</translation>
+        <translation>Количество сохраненных комментариев к фиксациям:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ConfigurationPage/MercurialPage.ui" line="148"/>
@@ -34226,7 +34226,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/MultiProjectPage.ui" line="37"/>
         <source>Workspace</source>
-        <translation>Рабочая область</translation>
+        <translation>Рабочее пространство</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/MultiProjectPage.ui" line="43"/>
@@ -34357,7 +34357,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/NetworkPage.ui" line="59"/>
         <source>Select the download directory via a directory selection dialog</source>
-        <translation>Выберите директорию загрузки посредством диалога выбора директории</translation>
+        <translation>Выбор директории загрузки посредством диалога выбора директории</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/NetworkPage.ui" line="68"/>
@@ -34407,7 +34407,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/NetworkPage.ui" line="196"/>
         <source>Enter the name of the HTTP proxy host</source>
-        <translation>Введите имя HTTP прокси сервера</translation>
+        <translation>Введите имя HTTP прокси-сервера</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/NetworkPage.ui" line="325"/>
@@ -34427,12 +34427,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/NetworkPage.ui" line="232"/>
         <source>Use this proxy for all protocols</source>
-        <translation>Использовать этот прокси сервер для всех протоколов</translation>
+        <translation>Использовать этот прокси-сервер для всех протоколов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/NetworkPage.ui" line="255"/>
         <source>Enter the name of the HTTPS proxy host</source>
-        <translation>Введите имя HTTPS прокси сервера</translation>
+        <translation>Введите имя HTTPS прокси-сервера</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/NetworkPage.ui" line="269"/>
@@ -34442,7 +34442,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/NetworkPage.ui" line="318"/>
         <source>Enter the name of the FTP proxy host</source>
-        <translation>Введите имя FTP прокси сервера</translation>
+        <translation>Введите имя FTP прокси-сервера</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/NetworkPage.ui" line="332"/>
@@ -35227,7 +35227,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchEngineModel.py" line="139"/>
         <source>&lt;strong&gt;Provides contextual suggestions&lt;/strong&gt;</source>
-        <translation>&lt;strong&gt;Показывает контекстные подсказки&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Предоставляет контекстные описания&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchEngineModel.py" line="147"/>
@@ -35261,7 +35261,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/OperaImporter.py" line="41"/>
         <source>Please choose the file to begin importing bookmarks.</source>
-        <translation>Пожалуйста выберите файл для импортирования закладок.</translation>
+        <translation>Пожалуйста выберите файл чтобы начать импортирование закладок.</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/OperaImporter.py" line="90"/>
@@ -35349,7 +35349,7 @@ Reason: {1}</source>
     <message>
         <location filename="../Helpviewer/PageScreenDialog.py" line="70"/>
         <source>Portable Network Graphics File (*.png)</source>
-        <translation>Файл Portable Network Graphics (*.png)</translation>
+        <translation>Portable Network Graphics файл (*.png)</translation>
     </message>
     <message>
         <location filename="../Helpviewer/PageScreenDialog.py" line="80"/>
@@ -35457,7 +35457,7 @@ Reason: {1}</source>
     <message>
         <location filename="../Helpviewer/Passwords/PasswordReader.py" line="55"/>
         <source>The file is not a Passwords version 1.0 file.</source>
-        <translation>Этот не файл Password версии  1.0.</translation>
+        <translation>Это не файл Password версии  1.0.</translation>
     </message>
 </context>
 <context>
@@ -35495,7 +35495,7 @@ Reason: {1}</source>
     <message>
         <location filename="../Helpviewer/Passwords/PasswordsDialog.ui" line="126"/>
         <source>Press to toggle the display of passwords</source>
-        <translation>Показать пароли</translation>
+        <translation>Включить/Выключить режим показа паролей</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Passwords/PasswordsDialog.py" line="34"/>
@@ -35510,7 +35510,7 @@ Reason: {1}</source>
     <message>
         <location filename="../Helpviewer/Passwords/PasswordsDialog.py" line="90"/>
         <source>Do you really want to show passwords?</source>
-        <translation>Действительно показать пароли?</translation>
+        <translation>Вы действительно хотите показать пароли?</translation>
     </message>
 </context>
 <context>
@@ -36189,12 +36189,12 @@ Destination:
     <message>
         <location filename="../Preferences/ConfigurationPages/PluginManagerPage.ui" line="53"/>
         <source>Select the plugins download directory via a directory selection dialog</source>
-        <translation>Выбор директории для загрузки плагинов посредством диалога выбора директорий</translation>
+        <translation>Выбор директории загрузки плагинов посредством диалога выбора директории</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/PluginManagerPage.py" line="109"/>
         <source>Select plugins download directory</source>
-        <translation>Выбор директории для загрузки плагинов</translation>
+        <translation>Выбор директории загрузки плагинов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/PluginManagerPage.ui" line="121"/>
@@ -36688,7 +36688,7 @@ Select Update.</source>
     <message>
         <location filename="../UI/Previewers/PreviewerHTML.py" line="75"/>
         <source>Enable JavaScript</source>
-        <translation>Разрешить JavaScript</translation>
+        <translation>Использовать JavaScript</translation>
     </message>
     <message>
         <location filename="../UI/Previewers/PreviewerHTML.py" line="82"/>
@@ -37349,9 +37349,9 @@ Select Update.</source>
         <location filename="../Project/Project.py" line="3038"/>
         <source>The project contains %n file(s) with syntax errors.</source>
         <translation>
-            <numerusform>Проект содержит один файл с синтаксическими ошибками.</numerusform>
-            <numerusform>Проект содержит %n файла с синтаксическими ошибками.</numerusform>
-            <numerusform>Проект содержит %n файлов с синтаксическими ошибками.</numerusform>
+            <numerusform>Проект содержит один файл с синтаксической ошибкой.</numerusform>
+            <numerusform>Проект содержите %n файла с синтаксической ошибкой.</numerusform>
+            <numerusform>Проект содержите %n файлов с синтаксической ошибкой.</numerusform>
         </translation>
     </message>
     <message>
@@ -39057,7 +39057,7 @@ Select Update.</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/ProjectPage.ui" line="224"/>
         <source>Enter the number of recent projects to remember</source>
-        <translation>Число запоминаемых недавних проектов</translation>
+        <translation>Число сохраненных недавних проектов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ProjectPage.ui" line="192"/>
@@ -39915,7 +39915,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/PropertiesDialog.ui" line="347"/>
         <source>Press to show information about the repository</source>
-        <translation>Просмотреть информацию о репозитории</translation>
+        <translation>Просмотр информации о репозитории</translation>
     </message>
     <message>
         <location filename="../Project/PropertiesDialog.ui" line="350"/>
@@ -39957,7 +39957,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/PropertiesDialog.py" line="235"/>
         <source>Source Files ({0});;All Files (*)</source>
-        <translation>Исходные файлы ({0});;Все файлы (*)</translation>
+        <translation>Файлы с исходниками ({0});;Все файлы (*)</translation>
     </message>
     <message>
         <location filename="../Project/PropertiesDialog.py" line="237"/>
@@ -40216,9 +40216,9 @@ Select Update.</source>
         <location filename="../DataViews/PyCoverageDialog.py" line="243"/>
         <source>%n file(s) could not be parsed. Coverage info for these is not available.</source>
         <translation>
-            <numerusform>Не удалось разобрать один файл. Инфо о покрытии для него не доступна.</numerusform>
-            <numerusform>Не удалось разобрать %n файла. Инфо о покрытии для них не доступна.</numerusform>
-            <numerusform>Не удалось разобрать %n файлов. Инфо о покрытии для них не доступна.</numerusform>
+            <numerusform>Невозможно разобрать один файл. Информация о покрытии для него недоступна.</numerusform>
+            <numerusform>Невозможно разобрать %n файла. Информация о покрытии для них недоступна.</numerusform>
+            <numerusform>Невозможно разобрать %n файлов. Информация о покрытии для них недоступна.</numerusform>
         </translation>
     </message>
     <message>
@@ -42153,7 +42153,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="174"/>
         <source>Other, Private Use</source>
-        <translation>Другой, приватное использование</translation>
+        <translation>Другое, приватное использование</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="174"/>
@@ -42268,7 +42268,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="214"/>
         <source>Kannada</source>
-        <translation>Каннада</translation>
+        <translation>Канада</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="214"/>
@@ -42398,7 +42398,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="214"/>
         <source>Miscellaneous Technical</source>
-        <translation>Разное Технические</translation>
+        <translation>Разное технические</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="214"/>
@@ -42424,7 +42424,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="214"/>
         <source>Block Elements</source>
         <translation>
-Блок Элементы</translation>
+Блок элементы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="214"/>
@@ -42449,7 +42449,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="214"/>
         <source>CJK Radicals Supplement</source>
-        <translation>CJK Радикалы Дополнение</translation>
+        <translation>CJK Радикалы дополнение</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="214"/>
@@ -42534,7 +42534,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="214"/>
         <source>Private Use</source>
-        <translation>Для частного использования</translation>
+        <translation>Для приватного использования</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="214"/>
@@ -42865,7 +42865,8 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="383"/>
         <source>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;&lt;p&gt;Выбрать  одиночный символ из диапазона с помощью специального диалога.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;
+&lt;p&gt;Выбрать  одиночный символ из диапазона с помощью специального диалога.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="386"/>
@@ -42894,7 +42895,7 @@ character class is faster and more precise.&lt;/p&gt;</source>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="411"/>
         <source>&lt;b&gt;Repeat contents&lt;/b&gt;
 &lt;p&gt;Select a repetition condition via a specific dialog. This dialog will help to specify the allowed range for repetitions.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Повторять содержимое&lt;/b&gt;
+        <translation>&lt;b&gt;Повторять содержания&lt;/b&gt;
 &lt;p&gt;Задайте условия повторения с помощью специального диалога. Этот диалог поможет указать допустимые пределы для повторений.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -42911,7 +42912,7 @@ character class is faster and more precise.&lt;/p&gt;</source>
 group of characters inside the brakets. E.g. the regex &apos;Set(?:Value)?&apos; matches &apos;Set&apos; or &apos;SetValue&apos;. The &apos;?:&apos; inside the brakets
 means that the content of the match (called the backreference) is not stored for further use.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Скобки без захвата: (?:)&lt;/b&gt;
-&lt;p&gt;Разрешить вставку скобок, которые группируют, но не попадают в выражения захвата. Они могут использоваться для того, чтобы применить квантификаторы (&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей
+&lt;p&gt;Вставить скобки, которые группируют, но не попадают в выражения захвата. Они могут использоваться для того, чтобы применить квантификаторы (&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей
 группе символов внутри скобок. Например, регулярное выражение &apos;Set(?:Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.  &apos;?:&apos; внутри скобок
 означает, что содержимое скобок (называемое обратной ссылкой) не сохраняется для дальнейшего использования.&lt;/p&gt;</translation>
     </message>
@@ -42920,7 +42921,7 @@ means that the content of the match (called the backreference) is not stored for
         <source>&lt;b&gt;Group: ()&lt;/b&gt;
 &lt;p&gt;Select to insert some capturing brackets.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Группа: ()&lt;/b&gt;
-&lt;p&gt;Вставить скобки с захватом содержимого.&lt;/p&gt;</translation>
+&lt;p&gt;Разрешить вставлять скобки с захватом содержимого.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="177"/>
@@ -42931,7 +42932,7 @@ the backreference matched inside the brakets is stored for further use (i.e. &ap
 One can access the backereference with the &apos;\1&apos; expression. &lt;/p&gt;
 &lt;p&gt;E.g. &apos;([a-c])x\1x\1&apos; will match &apos;axaxa&apos;, &apos;bxbxb&apos; and &apos;cxcxc&apos;.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Группа: ()&lt;/b&gt;
-&lt;p&gt;Вставить скобки с захватом содержимого.
+&lt;p&gt;Разрешить вставлять скобки с захватом содержимого.
 Они могут использоваться для того, чтобы применить квантификаторы (&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей
 группе символов внутри скобок. Например, регулярное выражение &apos;Set(Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.
 В отличие от скобок без захвата, обратная ссылка сохраняется для дальнейшего использования  (т.е. &apos;Value&apos; из примера).
@@ -43020,7 +43021,8 @@ must begin or end at this position. E.g. &apos;\bcat\b&apos; matches exactly the
 &lt;p&gt;Select to insert the word boudary character (\B). \B is the negated version of \b. \B matches at every position where \b 
 does not. Effectively, \B matches at any position between two word characters as well as at any position between two non-word characters.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Не граница слова&lt;/b&gt;
-&lt;p&gt;Вставить символ не границы слова (\B). Это выражение, обратное выражению \b. \B совпадает с любой позицией, с которой не совпадает \b. Фактически, \B совпадает с любой позицией между символов в слове, и также с любой позицией между символов дополнения до слова&lt;/p&gt;</translation>
+&lt;p&gt;Вставить символ не границы слова (\B). Это выражение, обратное выражению \b. \B совпадает с любой позицией, с которой не совпадает \b. 
+Фактически, \B совпадает с любой позицией между символов в слове, и также с любой позицией между символов дополнения до слова&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="255"/>
@@ -43037,13 +43039,15 @@ Writting &apos;q(?=u)&apos; means that you want to match the &apos;q&apos; chara
 regexp which may be replaced by a more complex expression; q(?=[abc])&apos; will match a &apos;q&apos; if followed by either &apos;a&apos;, &apos;b&apos; or &apos;c&apos;.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Положительная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Вставить скобки положительной предварительной проверки. В основном, положительная предварительная проверка используется для совпадения с символом, за которым следует другой символ
-Выражение &apos;q(?=u)&apos; совпадает с символом &apos;q&apos;, только если за ним следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое можно заменить на более сложное: q(?=[abc])&apos; совпадает с &apos;q&apos;, если за ним следует &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
+Выражение &apos;q(?=u)&apos; совпадает с символом &apos;q&apos;, только если за ним следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое можно заменить на более 
+сложное: q(?=[abc])&apos; совпадает с &apos;q&apos;, если за ним следует &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="269"/>
         <source>&lt;b&gt;Negative lookahead: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert the negative lookhead brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;&lt;p&gt;Вставить скобки отрицательной предварительной проверки.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставить скобки отрицательной предварительной проверки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="273"/>
@@ -43051,7 +43055,10 @@ regexp which may be replaced by a more complex expression; q(?=[abc])&apos; will
 &lt;p&gt;Select to insert the negative lookhead brackets. Basically, negative lookhead is used to match a character only if it is not
 followed by a another one. Writting &apos;q(?!u)&apos; means that you want to match &apos;q&apos; only if it is not followed by &apos;u&apos;. In this statement, &apos;u&apos; is a
 trivial regexp which may be replaced by a more complex expression; &apos;q(?![abc])&apos; will match a &apos;q&apos; if it is followed by anything else than &apos;a&apos;, &apos;b&apos; or &apos;c&apos;.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;&lt;p&gt;Вставить скобки отрицательной предварительной проверки. В основном, отрицательная предварительная проверка используется для совпадения с символом, за которым не следует другой символ. Выражение &apos;q(?!u)&apos; совпадает с символом &apos;q&apos;, только если за ним не следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое можно заменить на более сложное: q(?![abc])&apos; совпадает с &apos;q&apos;, если за ним следует что угодно, кроме &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставить скобки отрицательной предварительной проверки. В основном, отрицательная предварительная проверка используется для совпадения с символом, 
+за которым не следует другой символ. Выражение &apos;q(?!u)&apos; совпадает с символом &apos;q&apos;, только если за ним не следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это 
+простейшее регулярное выражение, которое можно заменить на более сложное: q(?![abc])&apos; совпадает с &apos;q&apos;, если за ним следует что угодно, кроме &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="327"/>
@@ -43522,7 +43529,7 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.py" line="142"/>
         <source>Other, Private Use</source>
-        <translation>Другой, приватное использование</translation>
+        <translation>Другое, приватное использование</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.py" line="142"/>
@@ -43767,7 +43774,7 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.py" line="193"/>
         <source>Kannada</source>
-        <translation>Каннада</translation>
+        <translation>Канада</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.py" line="193"/>
@@ -44173,7 +44180,8 @@ The following example could clarify the regexp which match a valid date: &lt;/p&
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="66"/>
         <source>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;&lt;p&gt;Выбрать  одиночный символ из диапазона с помощью специального диалога.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;
+&lt;p&gt;Выбрать  одиночный символ из диапазона с помощью специального диалога.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="69"/>
@@ -44202,7 +44210,7 @@ character class is faster and more precise.&lt;/p&gt;</source>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="94"/>
         <source>&lt;b&gt;Repeat contents&lt;/b&gt;
 &lt;p&gt;Select a repetition condition via a specific dialog. This dialog will help to specify the allowed range for repetitions.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Повторять содержимое&lt;/b&gt;
+        <translation>&lt;b&gt;Повторять содержания&lt;/b&gt;
 &lt;p&gt;Задайте условия повторения с помощью специального диалога. Этот диалог поможет указать допустимые пределы для повторений.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -44246,7 +44254,7 @@ means that the content of the match (called the backreference) is not stored for
         <source>&lt;b&gt;Group: ()&lt;/b&gt;
 &lt;p&gt;Select to insert some capturing brackets.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Группа: ()&lt;/b&gt;
-&lt;p&gt;Вставить скобки с захватом содержимого.&lt;/p&gt;</translation>
+&lt;p&gt;Разрешить вставлять скобки с захватом содержимого.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="134"/>
@@ -44257,7 +44265,7 @@ the backreference matched inside the brakets is stored for further use (i.e. &ap
 One can access the backereference with the &apos;\1&apos; expression. &lt;/p&gt;
 &lt;p&gt;E.g. &apos;([a-c])x\1x\1&apos; will match &apos;axaxa&apos;, &apos;bxbxb&apos; and &apos;cxcxc&apos;.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Группа: ()&lt;/b&gt;
-&lt;p&gt;Вставить скобки с захватом содержимого.
+&lt;p&gt;Разрешить вставлять скобки с захватом содержимого.
 Они могут использоваться для того, чтобы применить квантификаторы (&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей
 группе символов внутри скобок. Например, регулярное выражение &apos;Set(Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.
 В отличие от скобок без захвата, обратная ссылка сохраняется для дальнейшего использования  (т.е. &apos;Value&apos; из примера).
@@ -44384,7 +44392,8 @@ must begin or end at this position. E.g. &apos;\bcat\b&apos; matches exactly the
 &lt;p&gt;Select to insert the word boudary character (\B). \B is the negated version of \b. \B matches at every position where \b 
 does not. Effectively, \B matches at any position between two word characters as well as at any position between two non-word characters.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Не граница слова&lt;/b&gt;
-&lt;p&gt;Вставить символ не границы слова (\B). Это выражение, обратное выражению \b. \B совпадает с любой позицией, с которой не совпадает \b. Фактически, \B совпадает с любой позицией между символов в слове, и также с любой позицией между символов дополнения до слова&lt;/p&gt;</translation>
+&lt;p&gt;Вставить символ не границы слова (\B). Это выражение, обратное выражению \b. \B совпадает с любой позицией, с которой не совпадает \b. 
+Фактически, \B совпадает с любой позицией между символов в слове, и также с любой позицией между символов дополнения до слова&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="241"/>
@@ -44401,13 +44410,15 @@ Writting &apos;q(?=u)&apos; means that you want to match the &apos;q&apos; chara
 regexp which may be replaced by a more complex expression; q(?=[abc])&apos; will match a &apos;q&apos; if followed by either &apos;a&apos;, &apos;b&apos; or &apos;c&apos;.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Положительная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Вставить скобки положительной предварительной проверки. В основном, положительная предварительная проверка используется для совпадения с символом, за которым следует другой символ
-Выражение &apos;q(?=u)&apos; совпадает с символом &apos;q&apos;, только если за ним следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое можно заменить на более сложное: q(?=[abc])&apos; совпадает с &apos;q&apos;, если за ним следует &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
+Выражение &apos;q(?=u)&apos; совпадает с символом &apos;q&apos;, только если за ним следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое можно заменить на более 
+сложное: q(?=[abc])&apos; совпадает с &apos;q&apos;, если за ним следует &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="255"/>
         <source>&lt;b&gt;Negative lookahead: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert the negative lookhead brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;&lt;p&gt;Вставить скобки отрицательной предварительной проверки.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставить скобки отрицательной предварительной проверки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="259"/>
@@ -44415,13 +44426,17 @@ regexp which may be replaced by a more complex expression; q(?=[abc])&apos; will
 &lt;p&gt;Select to insert the negative lookhead brackets. Basically, negative lookhead is used to match a character only if it is not
 followed by a another one. Writting &apos;q(?!u)&apos; means that you want to match &apos;q&apos; only if it is not followed by &apos;u&apos;. In this statement, &apos;u&apos; is a
 trivial regexp which may be replaced by a more complex expression; &apos;q(?![abc])&apos; will match a &apos;q&apos; if it is followed by anything else than &apos;a&apos;, &apos;b&apos; or &apos;c&apos;.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;&lt;p&gt;Вставить скобки отрицательной предварительной проверки. В основном, отрицательная предварительная проверка используется для совпадения с символом, за которым не следует другой символ. Выражение &apos;q(?!u)&apos; совпадает с символом &apos;q&apos;, только если за ним не следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое можно заменить на более сложное: q(?![abc])&apos; совпадает с &apos;q&apos;, если за ним следует что угодно, кроме &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставить скобки отрицательной предварительной проверки. В основном, отрицательная предварительная проверка используется для совпадения с символом, 
+за которым не следует другой символ. Выражение &apos;q(?!u)&apos; совпадает с символом &apos;q&apos;, только если за ним не следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это 
+простейшее регулярное выражение, которое можно заменить на более сложное: q(?![abc])&apos; совпадает с &apos;q&apos;, если за ним следует что угодно, кроме &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="269"/>
         <source>&lt;b&gt;Positive lookbehind: (?&amp;lt;=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert the positive lookbehind brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Положительная ретроспективная проверка: (?&amp;lt;=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;&lt;p&gt;Вставить скобки положительной ретроспективной проверки.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Положительная ретроспективная проверка: (?&amp;lt;=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставить скобки положительной ретроспективной проверки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="273"/>
@@ -44429,7 +44444,11 @@ trivial regexp which may be replaced by a more complex expression; &apos;q(?![ab
 &lt;p&gt;Select to insert the positive lookbehind brackets. Lookbehind has the same effect as lookahead, but works backwards. 
 It is used to match a character only if preceded by another one. Writting &apos;(?&amp;lt;=u)q&apos; means that you want to match the &apos;q&apos; character 
 only if it is preceded by &apos;u&apos;. As with lookhead, &apos;u&apos; may be replaced by a more complex expression; &apos;(?&amp;lt;=[abc])q&apos; will match a &apos;q&apos; if preceded by either &apos;a&apos;, &apos;b&apos; or &apos;c&apos;.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Положительная ретроспективная проверка: (?&amp;lt;=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;&lt;p&gt;Вставить скобки положительной ретроспективной проверки.&lt;/p&gt;. Ретроспективная проверка работает аналогично предварительной, но в обратную сторону. Она используется, чтобы выразить совпадение с символом, если перед ним находится ещё один. Выражение &apos;(?&amp;lt;=u)q&apos; совпадает с символом &apos;q&apos;, только если перед ним находится символ &apos;u&apos;. Как и при предварительной проверке, &apos;u&apos; можно заменить на более сложное регулярное выражение; &apos;(?&amp;lt;=[abc])q&apos; совпадёт с &apos;q&apos;, если перед ней находится &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Положительная ретроспективная проверка: (?&amp;lt;=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставить скобки положительной ретроспективной проверки.&lt;/p&gt;. Ретроспективная проверка работает аналогично предварительной, но в обратную сторону. 
+Она используется, чтобы выразить совпадение с символом, если перед ним находится ещё один. Выражение &apos;(?&amp;lt;=u)q&apos; совпадает с символом &apos;q&apos;, 
+только если перед ним находится символ &apos;u&apos;. Как и при предварительной проверке, &apos;u&apos; можно заменить на более сложное регулярное выражение; 
+&apos;(?&amp;lt;=[abc])q&apos; совпадёт с &apos;q&apos;, если перед ней находится &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="283"/>
@@ -44446,7 +44465,10 @@ but works backwards. It is used to match a character only if not preceded by ano
 character only if it is not preceded by &apos;u&apos;. As other lookaround, &apos;u&apos; may be replaced by a more complex 
 expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if not preceded by either &apos;a&apos;, &apos;b&apos; nor &apos;c&apos;.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Отрицательная ретроспективная проверка: (?&amp;lt;!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки отрицательной ретроспективной проверки.&lt;/p&gt;. Ретроспективная проверка работает аналогично предварительной, но в обратную сторону. Она используется, чтобы выразить совпадение с символом, если перед ним не находится ещё один. Выражение &apos;(?&amp;lt;!u)q&apos; совпадает с символом &apos;q&apos;, только если перед ним не находится символ &apos;u&apos;. Как и при предварительной проверке, &apos;u&apos; можно заменить на более сложное регулярное выражение; &apos;(?&amp;lt;![abc])q&apos; совпадёт с &apos;q&apos;, если перед ней находится всё, кроме &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
+&lt;p&gt;Вставить скобки отрицательной ретроспективной проверки.&lt;/p&gt;. Ретроспективная проверка работает аналогично предварительной, 
+но в обратную сторону. Она используется, чтобы выразить совпадение с символом, если перед ним не находится ещё один. Выражение &apos;(?&amp;lt;!u)q&apos; 
+совпадает с символом &apos;q&apos;, только если перед ним не находится символ &apos;u&apos;. Как и при предварительной проверке, &apos;u&apos; можно заменить на более 
+сложное регулярное выражение; &apos;(?&amp;lt;![abc])q&apos; совпадёт с &apos;q&apos;, если перед ней находится всё, кроме &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="314"/>
@@ -44979,7 +45001,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.py" line="66"/>
         <source>Select Qt4 Translations Directory</source>
-        <translation>Выбор директории Qt4 переводов</translation>
+        <translation>Выбор директории переводов QT4</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="37"/>
@@ -44989,7 +45011,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="67"/>
         <source>Press to select the Qt translations directory via a directory selection dialog</source>
-        <translation>Выберите директорию Qt переводов посредством диалога выбора директорий</translation>
+        <translation>Выбор директории переводов QT посредством диалога выбора директории</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="43"/>
@@ -46087,7 +46109,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/SafariImporter.py" line="44"/>
         <source>Please choose the file to begin importing bookmarks.</source>
-        <translation>Пожалуйста выберите файл для импортирования закладок.</translation>
+        <translation>Пожалуйста выберите файл чтобы начать импортирование закладок.</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/SafariImporter.py" line="94"/>
@@ -46744,7 +46766,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/ShellPage.ui" line="153"/>
         <source>Press to select the font to be used as the monospaced font</source>
-        <translation>Задайте шрифт, который будет использован как моноширинный</translation>
+        <translation>Задать шрифт, который будет использован как моноширинный</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ShellPage.ui" line="156"/>
@@ -47465,7 +47487,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Snapshot/SnapWidget.py" line="130"/>
         <source>Portable Network Graphics File (*.png)</source>
-        <translation>Файл Portable Network Graphics (*.png)</translation>
+        <translation>Portable Network Graphics файл (*.png)</translation>
     </message>
     <message>
         <location filename="../Snapshot/SnapWidget.py" line="131"/>
@@ -47617,9 +47639,9 @@ Function: {3}({4})</source>
         <location filename="../Snapshot/SnapshotTimer.py" line="103"/>
         <source>Snapshot will be taken in %n seconds</source>
         <translation>
-            <numerusform>Снимок будет сделан через %n секунду</numerusform>
-            <numerusform>Снимок будет сделан через %n секунды</numerusform>
             <numerusform>Снимок будет сделан через %n секунд</numerusform>
+            <numerusform>Снимок будет сделан через %n секунды</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
 </context>
@@ -47716,12 +47738,12 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Helpviewer/SpeedDial/SpeedDial.py" line="217"/>
         <source>Saving Speed Dial data</source>
-        <translation>Сохранение данных набора</translation>
+        <translation>Сохранение данных быстрых вкладок</translation>
     </message>
     <message>
         <location filename="../Helpviewer/SpeedDial/SpeedDial.py" line="217"/>
         <source>&lt;p&gt;Speed Dial data could not be saved to &lt;b&gt;{0}&lt;/b&gt;&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Данные набора не могут быть сохранены в &lt;b&gt;{0}&lt;/b&gt;&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Данные быстрых вкладок не могут быть сохранены в &lt;b&gt;{0}&lt;/b&gt;&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -47734,7 +47756,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Helpviewer/SpeedDial/SpeedDialReader.py" line="47"/>
         <source>The file {0} could not be opened. Error: {1}</source>
-        <translation>Невозможно прочитать файл {0}. Ошибка: {1}</translation>
+        <translation>Не удалось открыть файл {0}. Ошибка: {1}</translation>
     </message>
 </context>
 <context>
@@ -48505,17 +48527,17 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Debugger/StartDebugDialog.ui" line="161"/>
         <source>Select to clear the display of the interpreter window</source>
-        <translation>Разрешить очистку окна интерпретатора</translation>
+        <translation>Разрешить очистку в окне интерпретатора</translation>
     </message>
     <message>
         <location filename="../Debugger/StartDebugDialog.ui" line="164"/>
         <source>&lt;b&gt;Clear interpreter window&lt;/b&gt;&lt;p&gt;This clears the display of the interpreter window before starting the debug client.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Очистить окно интерпретатора&lt;/b&gt;&lt;p&gt;Перед началом отладки окно интерпретатора очищается.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Очищать окно интерпретатора&lt;/b&gt;&lt;p&gt;Очистка окна интерпретатора перед запуском  клиента отладки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/StartDebugDialog.ui" line="167"/>
         <source>Clear &amp;interpreter window</source>
-        <translation>Очистить окно &amp;интерпретатора</translation>
+        <translation>Очистка окна &amp;интерпретатора</translation>
     </message>
     <message>
         <location filename="../Debugger/StartDebugDialog.ui" line="177"/>
@@ -48527,7 +48549,7 @@ Function: {3}({4})</source>
         <source>&lt;b&gt;Start in console&lt;/b&gt;
 &lt;p&gt;Select to start the debugger in a console window. The console command has to be configured on the Debugger-&amp;gt;General page&lt;/p&gt;</source>
         <translation>&lt;b&gt;Запустить в окне консоли&lt;/b&gt;
-&lt;p&gt;Запуск отладчика в окне консоли. Консоль для отладчика должна быть настроена на странице &apos;Отладка&apos; &amp;gt;Основного меню&lt;/p&gt;</translation>
+&lt;p&gt;Разрешить запуск отладчика в окне консоли. Консоль для отладчика должна быть настроена на странице &apos;Отладка&apos; &amp;gt;Основного меню&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/StartDebugDialog.ui" line="184"/>
@@ -48655,7 +48677,7 @@ Function: {3}({4})</source>
         <location filename="../Debugger/StartProfileDialog.ui" line="81"/>
         <source>&lt;b&gt;Working directory&lt;/b&gt;
 &lt;p&gt;Enter the working directory of the application to be debugged. Leave it empty to set the working directory to the executable directory.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Рабочая Директория&lt;/b&gt;
+        <translation>&lt;b&gt;Рабочая директория&lt;/b&gt;
 &lt;p&gt;Введите имя директории, в которой будет отлаживаться приложение. Оставьте пустым, чтобы использовать директорию, в которой находится исполняемый файл.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -48714,17 +48736,17 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Debugger/StartProfileDialog.ui" line="161"/>
         <source>Select to clear the display of the interpreter window</source>
-        <translation>Разрешить очистку окна интерпретатора</translation>
+        <translation>Разрешить очистку в окне интерпретатора</translation>
     </message>
     <message>
         <location filename="../Debugger/StartProfileDialog.ui" line="164"/>
         <source>&lt;b&gt;Clear interpreter window&lt;/b&gt;&lt;p&gt;This clears the display of the interpreter window before starting the debug client.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Очистить окно интерпретатора&lt;/b&gt;&lt;p&gt;Перед началом отладки окно интерпретатора очищается.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Очищать окно интерпретатора&lt;/b&gt;&lt;p&gt;Очистка окна интерпретатора перед запуском  клиента отладки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/StartProfileDialog.ui" line="167"/>
         <source>Clear &amp;interpreter window</source>
-        <translation>Очистить окно &amp;интерпретатора</translation>
+        <translation>Очистка окна &amp;интерпретатора</translation>
     </message>
     <message>
         <location filename="../Debugger/StartProfileDialog.ui" line="177"/>
@@ -48736,7 +48758,7 @@ Function: {3}({4})</source>
         <source>&lt;b&gt;Start in console&lt;/b&gt;
 &lt;p&gt;Select to start the debugger in a console window. The console command has to be configured on the Debugger-&amp;gt;General page&lt;/p&gt;</source>
         <translation>&lt;b&gt;Запустить в окне консоли&lt;/b&gt;
-&lt;p&gt;Запуск отладчика в окне консоли. Консоль для отладчика должна быть настроена на странице &apos;Отладка&apos; &amp;gt;Основного меню&lt;/p&gt;</translation>
+&lt;p&gt;Разрешить запуск отладчика в окне консоли. Консоль для отладчика должна быть настроена на странице &apos;Отладка&apos; &amp;gt;Основного меню&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/StartProfileDialog.ui" line="184"/>
@@ -48804,7 +48826,7 @@ Function: {3}({4})</source>
         <location filename="../Debugger/StartRunDialog.ui" line="81"/>
         <source>&lt;b&gt;Working directory&lt;/b&gt;
 &lt;p&gt;Enter the working directory of the application to be debugged. Leave it empty to set the working directory to the executable directory.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Рабочая Директория&lt;/b&gt;
+        <translation>&lt;b&gt;Рабочая директория&lt;/b&gt;
 &lt;p&gt;Введите имя директории, в которой будет отлаживаться приложение. Оставьте пустым, чтобы использовать директорию, в которой находится исполняемый файл.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -48841,7 +48863,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Debugger/StartRunDialog.ui" line="141"/>
         <source>Uncheck to disable exception reporting</source>
-        <translation>Снимите пометку, чтобы запретить перехват исключений</translation>
+        <translation>Разрешить перехват исключений</translation>
     </message>
     <message>
         <location filename="../Debugger/StartRunDialog.ui" line="144"/>
@@ -48863,17 +48885,17 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Debugger/StartRunDialog.ui" line="161"/>
         <source>Select to clear the display of the interpreter window</source>
-        <translation>Очистить окно интерпретатора</translation>
+        <translation>Разрешить очистку в окне интерпретатора</translation>
     </message>
     <message>
         <location filename="../Debugger/StartRunDialog.ui" line="164"/>
         <source>&lt;b&gt;Clear interpreter window&lt;/b&gt;&lt;p&gt;This clears the display of the interpreter window before starting the debug client.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Очистить окно интерпретатора&lt;/b&gt;&lt;p&gt;Перед началом отладки окно интерпретатора очищается.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Очищать окно интерпретатора&lt;/b&gt;&lt;p&gt;Очистка окна интерпретатора перед запуском  клиента отладки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/StartRunDialog.ui" line="167"/>
         <source>Clear &amp;interpreter window</source>
-        <translation>Очистить окно &amp;интерпретатора</translation>
+        <translation>Очистка окна &amp;интерпретатора</translation>
     </message>
     <message>
         <location filename="../Debugger/StartRunDialog.ui" line="177"/>
@@ -48885,7 +48907,7 @@ Function: {3}({4})</source>
         <source>&lt;b&gt;Start in console&lt;/b&gt;
 &lt;p&gt;Select to start the debugger in a console window. The console command has to be configured on the Debugger-&amp;gt;General page&lt;/p&gt;</source>
         <translation>&lt;b&gt;Запустить в окне консоли&lt;/b&gt;
-&lt;p&gt;Запуск отладчика в окне консоли. Консоль для отладчика должна быть настроена на странице &apos;Отладка&apos; &amp;gt;Основного меню&lt;/p&gt;</translation>
+&lt;p&gt;Разрешить запуск отладчика в окне консоли. Консоль для отладчика должна быть настроена на странице &apos;Отладка&apos; &amp;gt;Основного меню&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/StartRunDialog.ui" line="184"/>
@@ -49427,7 +49449,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/subversion.py" line="1062"/>
         <source>Do you really want to revert all changes to these files or directories?</source>
-        <translation>Вы действительно хотите оттянуть все изменения в этих файлах и каталогах?</translation>
+        <translation>Вы действительно хотите оттянуть все изменения в этих файлах и директориях?</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/subversion.py" line="1070"/>
@@ -49485,7 +49507,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ConfigurationPage/SubversionPage.ui" line="84"/>
         <source>No. of commit messages to remember:</source>
-        <translation>Количество запоминаемых комментариев к фиксациям:</translation>
+        <translation>Количество сохраненных комментариев к фиксациям:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ConfigurationPage/SubversionPage.ui" line="91"/>
@@ -49796,7 +49818,7 @@ directory selection dialog.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnCommandDialog.ui" line="118"/>
         <source>project directory</source>
-        <translation>директория проекта</translation>
+        <translation>project directory</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnCommandDialog.py" line="78"/>
@@ -49876,12 +49898,12 @@ directory selection dialog.&lt;/p&gt;</source>
         <source>&lt;b&gt;Target directory&lt;/b&gt;
 &lt;p&gt;Select the target name for the operation via a selection dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Директория назначения&lt;/b&gt;
-&lt;p&gt;Выбор целевого имени для операций посредством диалога выбора.&lt;/p&gt;</translation>
+&lt;p&gt;Select the target name for the operation via a selection dialog.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnCopyDialog.ui" line="25"/>
         <source>Source:</source>
-        <translation>Источник:</translation>
+        <translation>Откуда:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnCopyDialog.ui" line="32"/>
@@ -49892,7 +49914,7 @@ directory selection dialog.&lt;/p&gt;</source>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnCopyDialog.ui" line="35"/>
         <source>&lt;b&gt;Source name&lt;/b&gt;
 &lt;p&gt;This field shows the name of the source.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Имя источника&lt;/b&gt;
+        <translation>&lt;b&gt;Откуда&lt;/b&gt;
 &lt;p&gt;Это поле показывает имя источника.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -50134,7 +50156,7 @@ directory selection dialog.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnDiffDialog.py" line="405"/>
         <source>Save Diff</source>
-        <translation>Сохранить изменения</translation>
+        <translation>Сохранить различия</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnDiffDialog.py" line="372"/>
@@ -50149,7 +50171,7 @@ directory selection dialog.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnDiffDialog.py" line="405"/>
         <source>&lt;p&gt;The patch file &lt;b&gt;{0}&lt;/b&gt; could not be saved.&lt;br&gt;Reason: {1}&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Невозможно сохранить патч файл &lt;b&gt;{0}&lt;/b&gt;:&lt;br&gt;Причина: {1}.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Невозможно сохранить патч в файл &lt;b&gt;{0}&lt;/b&gt;:&lt;br&gt;Причина: {1}.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/SvnDiffDialog.py" line="171"/>
@@ -50337,7 +50359,7 @@ directory selection dialog.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnLogBrowserDialog.ui" line="22"/>
         <source>From:</source>
-        <translation>От:</translation>
+        <translation>Из:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnLogBrowserDialog.ui" line="29"/>
@@ -50407,7 +50429,7 @@ directory selection dialog.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnLogBrowserDialog.ui" line="195"/>
         <source>Press to get the next bunch of log entries</source>
-        <translation>Получение следующей порции сообщений журнала</translation>
+        <translation>Получить следующую порцию сообщений журнала</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnLogBrowserDialog.ui" line="198"/>
@@ -50432,7 +50454,7 @@ directory selection dialog.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnLogBrowserDialog.ui" line="241"/>
         <source>Press to generate a diff to the previous revision</source>
-        <translation>Создание сравнения с предыдущей версией</translation>
+        <translation>Создать сравнения с предыдущей версией</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnLogBrowserDialog.ui" line="244"/>
@@ -51712,7 +51734,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="479"/>
         <source>&lt;b&gt;Upgrade&lt;/b&gt;&lt;p&gt;Upgrades the working copy to the current format.&lt;/p&gt;</source>
-        <translation>Обновить рабочую копию в текущем формате</translation>
+        <translation>&lt;b&gt;Обновить&lt;/b&gt;&lt;p&gt;Обновить рабочий каталог в текущем формате.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="131"/>
@@ -51892,7 +51914,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnPropSetDialog.ui" line="93"/>
         <source>Press to select the file via a file selection dialog</source>
-        <translation>Выберите файл посредством диалога выбора файлов</translation>
+        <translation>Выбор файла посредством диалога выбора файлов</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnPropSetDialog.ui" line="83"/>
@@ -52076,7 +52098,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnRevisionSelectionDialog.ui" line="14"/>
         <source>Subversion Diff</source>
-        <translation>Subversion - изменения</translation>
+        <translation>Subversion - различия</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnRevisionSelectionDialog.ui" line="23"/>
@@ -52156,7 +52178,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnRevisionSelectionDialog.ui" line="298"/>
         <source>Select to specify a revision by number</source>
-        <translation>Задать ревизию порядковым номером</translation>
+        <translation>Разрешить задавать ревизию порядковым номером</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnRevisionSelectionDialog.ui" line="301"/>
@@ -52963,7 +52985,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnUrlSelectionDialog.ui" line="13"/>
         <source>Subversion Diff</source>
-        <translation>Subversion - изменения</translation>
+        <translation>Subversion - различия</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnUrlSelectionDialog.ui" line="22"/>
@@ -53086,7 +53108,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="69"/>
         <source>Cyrillic Supplement</source>
-        <translation>Cyrillic Supplement</translation>
+        <translation>Дополнение кирилицы</translation>
     </message>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="70"/>
@@ -53151,7 +53173,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="86"/>
         <source>Kannada</source>
-        <translation>Каннада</translation>
+        <translation>Канада</translation>
     </message>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="87"/>
@@ -53331,7 +53353,8 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="141"/>
         <source>Block Elements</source>
-        <translation>Элементы блока</translation>
+        <translation>
+Блок элементы</translation>
     </message>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="144"/>
@@ -53361,7 +53384,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="164"/>
         <source>CJK Radicals Supplement</source>
-        <translation>CJK радикалы Дополнение</translation>
+        <translation>CJK Радикалы дополнение</translation>
     </message>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="165"/>
@@ -53506,7 +53529,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="136"/>
         <source>Miscellaneous Technical</source>
-        <translation>Разное Технические</translation>
+        <translation>Разное технические</translation>
     </message>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="142"/>
@@ -53536,22 +53559,22 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="206"/>
         <source>High Surrogates</source>
-        <translation>Высокие Суррогаты</translation>
+        <translation>Высокие суррогаты</translation>
     </message>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="207"/>
         <source>High Private Use Surrogates</source>
-        <translation>Высокие Суррогаты Приватные</translation>
+        <translation>Высокие суррогаты приватные</translation>
     </message>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="208"/>
         <source>Low Surrogates</source>
-        <translation>Нижние Суррогаты</translation>
+        <translation>Нижние суррогаты</translation>
     </message>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="209"/>
         <source>Private Use</source>
-        <translation>Для частного использования</translation>
+        <translation>Для приватного использования</translation>
     </message>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="223"/>
@@ -54234,7 +54257,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Sync/SyncCheckPage.ui" line="170"/>
         <source>Speed Dial Settings:</source>
-        <translation>Настройки быстрого набора:</translation>
+        <translation>Настройка быстрых вкладок:</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Sync/SyncCheckPage.py" line="61"/>
@@ -54272,7 +54295,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Sync/SyncDataPage.ui" line="42"/>
         <source>Select to synchronize bookmarks</source>
-        <translation>Синхронизовать закладки</translation>
+        <translation>Разрешить синхронизацию закладок</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Sync/SyncDataPage.ui" line="45"/>
@@ -54312,12 +54335,12 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Sync/SyncDataPage.ui" line="82"/>
         <source>Select to synchronize the speed dial data</source>
-        <translation>Синхронизовать настройки быстрого набора</translation>
+        <translation>Синхронизовать настройки быстрых вкладок</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Sync/SyncDataPage.ui" line="85"/>
         <source>Speed Dial Settings</source>
-        <translation>Настройки быстрого набора</translation>
+        <translation>Настройка быстрых вкладок</translation>
     </message>
 </context>
 <context>
@@ -54664,7 +54687,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Sync/SyncHandler.py" line="116"/>
         <source>Remote speed dial settings file exists! Syncing local copy...</source>
-        <translation>Удалённый файл настроек быстрого набора уже существует! Синхронизируем локальную копию...</translation>
+        <translation>Удалённый файл настроек быстрых вкладок существует! Синхронизация локальной копии...</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Sync/SyncHandler.py" line="119"/>
@@ -54674,17 +54697,17 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Sync/SyncHandler.py" line="122"/>
         <source>Local speed dial settings file is NEWER. Exporting local copy...</source>
-        <translation>Локальный файл настроек быстрого набора новее. Экспортируем локальную копию...</translation>
+        <translation>Локальный файл настроек быстрых вкладок НОВЕЕ. Экспорт локальной копии...</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Sync/SyncHandler.py" line="125"/>
         <source>Local speed dial settings file does NOT exist. Skipping synchronization!</source>
-        <translation>Локальный файл настроек быстрого набора не существует. Пропускаем синхронизацию!</translation>
+        <translation>Локальный файл настроек быстрых вкладок НЕ существует. Пропуск синхронизации!</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Sync/SyncHandler.py" line="128"/>
         <source>Uploading local speed dial settings file...</source>
-        <translation>Выгружаем локальный файл настроек агента...</translation>
+        <translation>Выгрузка локального файла настроек быстрых вкладок...</translation>
     </message>
 </context>
 <context>
@@ -54858,7 +54881,7 @@ the respective line.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/SyntaxChecker/SyntaxCheckerDialog.py" line="292"/>
         <source>Transferring data...</source>
-        <translation>Transferring data...</translation>
+        <translation>Передача данных...</translation>
     </message>
 </context>
 <context>
@@ -55134,7 +55157,7 @@ the respective line.&lt;/p&gt;</source>
     <message>
         <location filename="../Tools/TRPreviewer.py" line="391"/>
         <source>Select translation files</source>
-        <translation>Выбрать файлы переводов</translation>
+        <translation>Выбор файлов перевода</translation>
     </message>
     <message>
         <location filename="../Tools/TRPreviewer.py" line="391"/>
@@ -55254,7 +55277,7 @@ entry will open an editor window and position the cursor at the respective line.
     <message>
         <location filename="../Plugins/CheckerPlugins/Tabnanny/TabnannyDialog.ui" line="64"/>
         <source>Press to start the tabnanny run</source>
-        <translation>Запустить выполнение tabnny (проверку табуляции и пробелов)</translation>
+        <translation>Выполнить  tabnanny (проверка табуляции и пробелов)</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/Tabnanny/TabnannyDialog.ui" line="67"/>
@@ -55314,7 +55337,7 @@ the respective line.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/Tabnanny/TabnannyDialog.py" line="259"/>
         <source>Transferring data...</source>
-        <translation>Transferring data...</translation>
+        <translation>Передача данных...</translation>
     </message>
 </context>
 <context>
@@ -55355,7 +55378,7 @@ the respective line.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/ViewManagerPlugins/Tabview/Tabview.py" line="936"/>
         <source>Untitled {0}</source>
-        <translation>Без названия {0}</translation>
+        <translation>Untitled {0}</translation>
     </message>
     <message>
         <location filename="../Plugins/ViewManagerPlugins/Tabview/Tabview.py" line="1286"/>
@@ -55398,7 +55421,7 @@ the respective line.&lt;/p&gt;</source>
     <message>
         <location filename="../Tasks/TaskFilterConfigDialog.ui" line="92"/>
         <source>Type</source>
-        <translation>Тип задач</translation>
+        <translation>Тип</translation>
     </message>
     <message>
         <location filename="../Tasks/TaskFilterConfigDialog.ui" line="114"/>
@@ -55533,7 +55556,7 @@ the respective line.&lt;/p&gt;</source>
     <message>
         <location filename="../Tasks/TaskFilterConfigDialog.ui" line="42"/>
         <source>Summary</source>
-        <translation>Резюме</translation>
+        <translation>Итого</translation>
     </message>
     <message>
         <location filename="../Tasks/TaskFilterConfigDialog.ui" line="51"/>
@@ -56093,7 +56116,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Templates/TemplateViewer.py" line="614"/>
         <source>Template Help</source>
-        <translation>Помощь по шаблону</translation>
+        <translation>Шаблон справки</translation>
     </message>
     <message>
         <location filename="../Templates/TemplateViewer.py" line="859"/>
@@ -56326,7 +56349,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Preferences/ToolConfigurationDialog.ui" line="89"/>
         <source>&amp;Up</source>
-        <translation>&amp;Выше</translation>
+        <translation>&amp;Вверх</translation>
     </message>
     <message>
         <location filename="../Preferences/ToolConfigurationDialog.ui" line="92"/>
@@ -56707,7 +56730,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Preferences/ToolGroupConfigurationDialog.ui" line="134"/>
         <source>&amp;Up</source>
-        <translation>&amp;Выше</translation>
+        <translation>&amp;Вверх</translation>
     </message>
     <message>
         <location filename="../Preferences/ToolGroupConfigurationDialog.ui" line="137"/>
@@ -56830,7 +56853,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Project/TranslationPropertiesDialog.ui" line="101"/>
         <source>Press to select a directory via a selection dialog</source>
-        <translation>Задайте директорию посредством диалога выбора</translation>
+        <translation>Выбор директории посредством диалога выбора</translation>
     </message>
     <message>
         <location filename="../Project/TranslationPropertiesDialog.ui" line="104"/>
@@ -56840,7 +56863,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Project/TranslationPropertiesDialog.ui" line="111"/>
         <source>Press to select a file via a selection dialog</source>
-        <translation>Задайте файл с помощью диалога выбора</translation>
+        <translation>Выбор файла с помощью диалога выбора</translation>
     </message>
     <message>
         <location filename="../Project/TranslationPropertiesDialog.ui" line="114"/>
@@ -56860,7 +56883,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Project/TranslationPropertiesDialog.ui" line="137"/>
         <source>Press to delete the selected entry from the list</source>
-        <translation>Удаление элемента из списка</translation>
+        <translation>Удалить элемент из списка</translation>
     </message>
     <message>
         <location filename="../Project/TranslationPropertiesDialog.ui" line="140"/>
@@ -59135,7 +59158,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="2168"/>
         <source>Switch between tabs</source>
-        <translation>Переключиться между закладками</translation>
+        <translation>Переключение между вкладками</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2168"/>
@@ -60556,7 +60579,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Debugger/Config.py" line="46"/>
         <source>Traceback</source>
-        <translation>Стек вызовов</translation>
+        <translation>Обратная трассировка</translation>
     </message>
     <message>
         <location filename="../Debugger/Config.py" line="47"/>
@@ -61046,7 +61069,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Preferences/ConfigurationPages/VcsPage.ui" line="193"/>
         <source>VCS status &quot;modified&quot;:</source>
-        <translation>Статус VCS &quot;Изменён&quot;:</translation>
+        <translation>Статус VCS &quot;изменён&quot;:</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/VcsPage.ui" line="206"/>
@@ -64824,7 +64847,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Helpviewer/VirusTotal/VirusTotalIpReportDialog.ui" line="14"/>
         <source>IP Address Report</source>
-        <translation>Отчет IP-адреса</translation>
+        <translation>Отчет IP адреса</translation>
     </message>
     <message>
         <location filename="../Helpviewer/VirusTotal/VirusTotalIpReportDialog.ui" line="55"/>
@@ -65148,7 +65171,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/XbelImporter.py" line="72"/>
         <source>Please choose the file to begin importing bookmarks.</source>
-        <translation>Пожалуйста выберите файл для импортирования закладок.</translation>
+        <translation>Пожалуйста выберите файл чтобы начать импортирование закладок.</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/XbelImporter.py" line="72"/>
@@ -65364,7 +65387,7 @@ added to the size of the fonts used in the editor windows.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="23"/>
         <source>expected an indented block</source>
-        <translation>ожидался блок с отступом</translation>
+        <translation type="unfinished">ожидался блок с отступом</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="26"/>
@@ -65662,7 +65685,7 @@ added to the size of the fonts used in the editor windows.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/SyntaxChecker/pyflakes/translations.py" line="17"/>
         <source>{0!r} imported but unused.</source>
-        <translation>Модуль {0!r} импортирован но не используется.</translation>
+        <translation>Модуль {0!r} импортирован, но не используется.</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/SyntaxChecker/pyflakes/translations.py" line="20"/>
