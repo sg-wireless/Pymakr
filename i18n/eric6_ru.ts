@@ -367,7 +367,7 @@
     <message>
         <location filename="../Helpviewer/Bookmarks/AddBookmarkDialog.py" line="198"/>
         <source>Add Bookmark</source>
-        <translation type="unfinished">Добавить закладку</translation>
+        <translation>Добавить закладку</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/AddBookmarkDialog.ui" line="42"/>
@@ -464,7 +464,7 @@
  the right.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Исходная директория&lt;/b&gt;
 &lt;p&gt;Введите имя директории для добавления в текущий проект.
- Вы так же можете выбрать ее в процессе диалога, нажав 
+ Вы так же можете выбрать ее в процессе диалога, нажав
  кнопку справа.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -1637,14 +1637,14 @@ the button to the right.&lt;/p&gt;</source>
     <message>
         <location filename="../ViewManager/BookmarkedFilesDialog.ui" line="141"/>
         <source>Change the value of the selected entry</source>
-        <translation>Изменить значение выбранной закладки</translation>
+        <translation>Изменить значение выбранного элемента</translation>
     </message>
     <message>
         <location filename="../ViewManager/BookmarkedFilesDialog.ui" line="144"/>
         <source>&lt;b&gt;Change&lt;/b&gt;
 &lt;p&gt;Change the value of the selected entry.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Изменить&lt;/b&gt;
-&lt;p&gt;Изменить значение выбранной закладки.&lt;/p&gt;</translation>
+&lt;p&gt;Изменить значение выбранного элемента.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/BookmarkedFilesDialog.ui" line="148"/>
@@ -1709,7 +1709,7 @@ the button to the right.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksDialog.py" line="148"/>
         <source>Open in New &amp;Tab</source>
-        <translation>Открыть в новой &amp;закладке</translation>
+        <translation>Открыть в новой &amp;вкладке</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksDialog.py" line="151"/>
@@ -1898,7 +1898,7 @@ the button to the right.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksMenu.py" line="98"/>
         <source>Open all in Tabs</source>
-        <translation>Открыть всё в закладках</translation>
+        <translation>Открыть всё во вкладки</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksMenu.py" line="142"/>
@@ -1908,7 +1908,7 @@ the button to the right.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksMenu.py" line="145"/>
         <source>Open in New &amp;Tab<byte value="x9"/>Ctrl+LMB</source>
-        <translation>Открыть файл в новой &amp;закладке<byte value="x9"/>Ctrl+LMB</translation>
+        <translation>Открыть файл в новой &amp;вкладке<byte value="x9"/>Ctrl+LMB</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksMenu.py" line="151"/>
@@ -1936,7 +1936,7 @@ the button to the right.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksMenu.py" line="287"/>
         <source>Open all in Tabs</source>
-        <translation>Открыть всё в закладках</translation>
+        <translation>Открыть всё во вкладки</translation>
     </message>
 </context>
 <context>
@@ -1967,7 +1967,7 @@ the button to the right.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksToolBar.py" line="93"/>
         <source>Open in New &amp;Tab<byte value="x9"/>Ctrl+LMB</source>
-        <translation>Открыть файл в новой &amp;закладке<byte value="x9"/>Ctrl+LMB</translation>
+        <translation>Открыть файл в новой &amp;вкладке<byte value="x9"/>Ctrl+LMB</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksToolBar.py" line="99"/>
@@ -2370,7 +2370,7 @@ Line: {1}</source>
     <message>
         <location filename="../Cooperation/ChatWidget.ui" line="63"/>
         <source>Chat</source>
-        <translation>Болтовня</translation>
+        <translation>Чат</translation>
     </message>
     <message>
         <location filename="../Cooperation/ChatWidget.ui" line="38"/>
@@ -2440,7 +2440,7 @@ Line: {1}</source>
     <message>
         <location filename="../Cooperation/ChatWidget.ui" line="256"/>
         <source>Shows the connection status</source>
-        <translation>Показывает статус соединения</translation>
+        <translation>Отображение статуса соединения</translation>
     </message>
     <message>
         <location filename="../Cooperation/ChatWidget.ui" line="268"/>
@@ -2460,7 +2460,7 @@ Line: {1}</source>
     <message>
         <location filename="../Cooperation/ChatWidget.ui" line="316"/>
         <source>Shows the status of the server</source>
-        <translation>Показывает статус сервера</translation>
+        <translation>Отображение статуса сервера</translation>
     </message>
     <message>
         <location filename="../Cooperation/ChatWidget.py" line="307"/>
@@ -2869,7 +2869,7 @@ Reason: {1}</source>
     <message>
         <location filename="../DataViews/CodeMetricsDialog.ui" line="149"/>
         <source>Shows the progress of the code metrics action</source>
-        <translation>Отображает прогресс сбора статистики кода</translation>
+        <translation>Отображение прогресса сбора статистики кода</translation>
     </message>
     <message>
         <location filename="../DataViews/CodeMetricsDialog.py" line="52"/>
@@ -3251,7 +3251,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/CodeStyleCheckerDialog.ui" line="434"/>
         <source>Future Imports</source>
-        <translation type="unfinished">Future Imports</translation>
+        <translation>Future импорт</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/CodeStyleCheckerDialog.ui" line="440"/>
@@ -4309,7 +4309,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="394"/>
         <source>Tray Starter</source>
-        <translation>Запуск Eric из лотка</translation>
+        <translation>Tray Starter</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="367"/>
@@ -4554,7 +4554,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Helpviewer/CookieJar/CookiesConfigurationDialog.ui" line="109"/>
         <source>Select the keep policy</source>
-        <translation>Правило хранения</translation>
+        <translation>Выберите правило хранения</translation>
     </message>
     <message>
         <location filename="../Helpviewer/CookieJar/CookiesConfigurationDialog.ui" line="113"/>
@@ -4584,7 +4584,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Helpviewer/CookieJar/CookiesConfigurationDialog.ui" line="141"/>
         <source>Select to filter tracking cookies</source>
-        <translation>Разрешить отфильтровать куки</translation>
+        <translation>Разрешить фильтровать куки</translation>
     </message>
     <message>
         <location filename="../Helpviewer/CookieJar/CookiesConfigurationDialog.ui" line="144"/>
@@ -6502,7 +6502,7 @@ Not connected
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPython3Page.ui" line="81"/>
         <source>Press to select the Debug Client via a file selection dialog</source>
-        <translation>Выбрать клиента посредством диалога выбора файлов</translation>
+        <translation>Выбрать клиента с помощью файлового диалога</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPython3Page.ui" line="90"/>
@@ -6615,7 +6615,7 @@ Not connected
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPythonPage.ui" line="81"/>
         <source>Press to select the Debug Client via a file selection dialog</source>
-        <translation>Выбор клиента посредством диалога выбора файлов</translation>
+        <translation>Выбрать клиента с помощью файлового диалога</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPythonPage.ui" line="90"/>
@@ -6839,7 +6839,7 @@ Not connected
     <message>
         <location filename="../UI/DiffDialog.py" line="306"/>
         <source>&lt;p&gt;The patch file &lt;b&gt;{0}&lt;/b&gt; already exists. Overwrite it?&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Патч-файл&lt;b&gt;{0}&lt;/b&gt; уже существует. Переписать?&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Патч-файл &lt;b&gt;{0}&lt;/b&gt; уже существует. Переписать?&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/DiffDialog.py" line="325"/>
@@ -6893,7 +6893,7 @@ Not connected
     <message>
         <location filename="../Helpviewer/Sync/DirectorySyncHandler.py" line="219"/>
         <source>Synchronization finished</source>
-        <translation>Синхронизация окончена</translation>
+        <translation>Синхронизация завершена</translation>
     </message>
 </context>
 <context>
@@ -7267,9 +7267,9 @@ MD5: {2}</translation>
         <location filename="../Helpviewer/Download/DownloadManager.py" line="389"/>
         <source>%n Download(s)</source>
         <translation>
-            <numerusform>Один загружен</numerusform>
+            <numerusform>%n загружен</numerusform>
             <numerusform>%n загружены</numerusform>
-            <numerusform></numerusform>
+            <numerusform>%n загружено</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -7277,7 +7277,7 @@ MD5: {2}</translation>
         <source>There are %n downloads in progress.
 Do you want to quit anyway?</source>
         <translation>
-            <numerusform>Выполняется одна загрузка.
+            <numerusform>Выполняется %n загрузка.
 Вы действительно хотите завершить загрузку?</numerusform>
             <numerusform>Выполняются %n загрузки.
 Вы действительно хотите завершить загрузку?</numerusform>
@@ -7334,7 +7334,7 @@ Do you want to quit anyway?</source>
         <location filename="../Helpviewer/Download/DownloadManager.py" line="397"/>
         <source>Downloading %n file(s)</source>
         <translation>
-            <numerusform>Загружен один файл</numerusform>
+            <numerusform>Загружается %n файл</numerusform>
             <numerusform>Загружаются %n файла</numerusform>
             <numerusform>Загружаются %n файлов</numerusform>
         </translation>
@@ -7346,9 +7346,9 @@ Do you want to quit anyway?</source>
         <location filename="../Helpviewer/Download/DownloadUtilities.py" line="31"/>
         <source>%n seconds remaining</source>
         <translation>
-            <numerusform>Осталась одна секунда</numerusform>
-            <numerusform>Осталось %n секунды</numerusform>
-            <numerusform>Осталось %n секунд</numerusform>
+            <numerusform>Осталась %n секунда@Осталось %n секунды@Осталось %n секунд</numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -8125,7 +8125,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../E5Network/E5SslCertificatesDialog.py" line="500"/>
         <source>Import Certificate</source>
-        <translation>Импортировать сертификат</translation>
+        <translation>Импорт сертификата</translation>
     </message>
     <message>
         <location filename="../E5Network/E5SslCertificatesDialog.py" line="412"/>
@@ -8140,12 +8140,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../E5Network/E5SslCertificatesDialog.py" line="363"/>
         <source>&lt;p&gt;Shall the CA certificate really be deleted?&lt;/p&gt;&lt;p&gt;{0}&lt;/p&gt;&lt;p&gt;If the CA certificate is deleted, the browser will not trust any certificate issued by this CA.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Удалить CA сертификат?&lt;/p&gt;&lt;p&gt;{0}&lt;/p&gt;&lt;p&gt;Если CA сертификат будет удалён, то обозреватель не будет доверять ни одному сертификату выданному этим CA.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Удалить CA сертификат?&lt;/p&gt;&lt;p&gt;{0}&lt;/p&gt;&lt;p&gt;Если CA сертификат будет удалён, то обозреватель не будет доверять ни одному сертификату, выданному этим CA.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../E5Network/E5SslCertificatesDialog.py" line="510"/>
         <source>Export Certificate</source>
-        <translation>Экспортировать сертификат</translation>
+        <translation>Экспорт сертификата</translation>
     </message>
     <message>
         <location filename="../E5Network/E5SslCertificatesDialog.py" line="451"/>
@@ -9074,7 +9074,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../QScintilla/Editor.py" line="1152"/>
         <source>Toggle bookmark</source>
-        <translation>Поставить/убрать закладку</translation>
+        <translation>Создать/Удалить закладку</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="1154"/>
@@ -9880,7 +9880,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="137"/>
         <source>Qscintilla provided completions are shown, if this option is enabled and completions shall be provided by plug-ins (see completions sub-page of the plug-in) and the plugin-ins don&apos;t deliver any completions.</source>
-        <translation type="unfinished">Отображать предоставленные завершения Qscintilla, если эта опция включена и завершения предоставлены плагинами (см. соответствующие страницы настройки плагинов с завершениями) и плагины don&apos;t deliver any completions.</translation>
+        <translation>Отображать предоставленные завершения Qscintilla, если эта опция включена и завершения предоставлены плагинами (см. соответствующие страницы настройки плагинов с завершениями) и плагины не содержат каких-либо доработок.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="140"/>
@@ -10037,7 +10037,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorCalltipsPage.ui" line="176"/>
         <source>Qscintilla provided calltips are shown, if this option is enabled and calltips shall be provided by plug-ins (see calltips sub-page of the plug-in) and the plugin-ins don&apos;t deliver any calltips.</source>
-        <translation type="unfinished">Отображать предоставленные подсказки Qscintilla, если эта опция влючена и подсказки предоставлены плагинами (см. соответствующие страницы настройки плагинов с подсказками) и плагины don&apos;t deliver any calltips.</translation>
+        <translation>Отображать предоставленные подсказки Qscintilla, если эта опция влючена и подсказки предоставлены плагинами (см. соответствующие страницы настройки плагинов с подсказками) и плагины не содержат каких-либо подсказок.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorCalltipsPage.ui" line="179"/>
@@ -10802,7 +10802,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorHighlightingStylesPage.ui" line="80"/>
         <source>Select the foreground colour.</source>
-        <translation>Задайте цвет шрифта.</translation>
+        <translation>Выберите цвет шрифта.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorHighlightingStylesPage.ui" line="83"/>
@@ -10812,7 +10812,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorHighlightingStylesPage.ui" line="90"/>
         <source>Select the background colour.</source>
-        <translation>Задайте цвет фона.</translation>
+        <translation>Выберите цвет фона.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorHighlightingStylesPage.ui" line="93"/>
@@ -10847,7 +10847,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorHighlightingStylesPage.ui" line="150"/>
         <source>Select the background colour for all styles</source>
-        <translation>Задайте цвет фона для всех стилей</translation>
+        <translation>Выберите цвет фона для всех стилей</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorHighlightingStylesPage.ui" line="153"/>
@@ -11279,7 +11279,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="593"/>
         <source>PostScript Level:</source>
-        <translation>PostScript Level:</translation>
+        <translation>Уровень PostScript:</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="600"/>
@@ -11459,7 +11459,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="714"/>
         <source>Fold triple quoted strings</source>
-        <translation>Сворачивать строки с тройными кавычками</translation>
+        <translation>Сворачивать строки в тройных кавычках</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="731"/>
@@ -11549,7 +11549,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="164"/>
         <source>Highlight triple quoted strings</source>
-        <translation>Выделять строки с тройными кавычками</translation>
+        <translation>Выделять строки в тройных кавычках</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="774"/>
@@ -11559,7 +11559,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="161"/>
         <source>Select to highlight triple quoted strings</source>
-        <translation>Разрешить выделение строк с тройными кавычками</translation>
+        <translation>Разрешить выделение строк в тройных кавычках</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="771"/>
@@ -11629,7 +11629,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.py" line="207"/>
         <source>Inconsistent</source>
-        <translation>Несоответствующее</translation>
+        <translation>Несогласованные</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.py" line="207"/>
@@ -11649,32 +11649,32 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="181"/>
         <source>Select to highlight back quoted strings</source>
-        <translation>Разрешить highlight back quoted strings</translation>
+        <translation>Разрешить выделение строк в обратных кавычках</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="184"/>
         <source>Highlight back quoted strings</source>
-        <translation>Highlight back quoted strings</translation>
+        <translation>Выделять строки в обратных кавычках</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="191"/>
         <source>Select to highlight escape sequences</source>
-        <translation>Разрешить подсветку ескапе-последовательностей</translation>
+        <translation>Разрешить подсветку escape-последовательностей</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="194"/>
         <source>Highlight escape sequences</source>
-        <translation>Подсветка ескейп-последовательностей</translation>
+        <translation>Выделять escape-последовательности</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="201"/>
         <source>Select to allow verbatim string escape sequences</source>
-        <translation type="unfinished">Разрешить verbatim string ескейп-последовательностей</translation>
+        <translation>Разрешить дословную передачу строки escape-последовательности</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="204"/>
         <source>Allow verbatim string escape sequences</source>
-        <translation type="unfinished">Разрешить verbatim string ескейп-последовательности</translation>
+        <translation>Точное соответствие строки escape-последовательности</translation>
     </message>
 </context>
 <context>
@@ -12108,7 +12108,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="391"/>
         <source>Select the foreground colour of the foldmarkers</source>
-        <translation>Задайте цвет маркеров папок</translation>
+        <translation>Выберите цвет маркеров папок</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="401"/>
@@ -12184,7 +12184,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="536"/>
         <source>Select the foreground colour for the selection.</source>
-        <translation>Задайте цвет выделения.</translation>
+        <translation>Выберите цвет выделения.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="546"/>
@@ -12229,7 +12229,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="672"/>
         <source>Select the colour for the caret.</source>
-        <translation>Задайте цвет курсора.</translation>
+        <translation>Выберите цвет курсора.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="682"/>
@@ -12299,7 +12299,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="817"/>
         <source>Select the background colour for highlighting matching braces.</source>
-        <translation>Задайте цвет фона для подсветки закрытых скобок.</translation>
+        <translation>Выберите цвет фона для подсветки закрытых скобок.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="833"/>
@@ -12319,7 +12319,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="863"/>
         <source>Select the background colour for  highlighting nonmatching braces.</source>
-        <translation>Задайте цвет фона для подсветки незакрытых скобок.</translation>
+        <translation>Выберите цвет фона для подсветки незакрытых скобок.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="876"/>
@@ -12349,7 +12349,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="992"/>
         <source>Select the colour for the edge marker.</source>
-        <translation>Задайте цвет для отображения правой границы.</translation>
+        <translation>Выберите цвет для отображения правой границы.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1002"/>
@@ -12539,7 +12539,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="82"/>
         <source>Select the foreground colour for the edit area.</source>
-        <translation>Выбрать приоритетный цвет для редактирования области.</translation>
+        <translation>Выбрать цвет для области редактирования.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="95"/>
@@ -12754,7 +12754,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1768"/>
         <source>Select the colour for coverage markers</source>
-        <translation>Задайте цвет для отображения покрытия</translation>
+        <translation>Выберите цвет для отображения покрытия</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1778"/>
@@ -12774,7 +12774,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1837"/>
         <source>Select the background colour for the marker map</source>
-        <translation>Задайте цвет фона маркеров</translation>
+        <translation>Выберите цвет фона маркеров</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1542"/>
@@ -12799,7 +12799,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1573"/>
         <source>Select the foreground colour for indentation guides</source>
-        <translation>Задайте цвет линий отступа</translation>
+        <translation>Выберите цвет линий отступа</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1583"/>
@@ -12809,7 +12809,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1596"/>
         <source>Select the background colour for indentation guides</source>
-        <translation>Задайте цвет фона для линий отступа</translation>
+        <translation>Выберите цвет фона для линий отступа</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1801"/>
@@ -12819,7 +12819,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1814"/>
         <source>Select the colour for the search marker</source>
-        <translation>Задайте цвет маркеров поиска</translation>
+        <translation>Выберите цвет маркеров поиска</translation>
     </message>
 </context>
 <context>
@@ -14386,7 +14386,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Helpviewer/FeaturePermissions/FeaturePermissionsDialog.ui" line="14"/>
         <source>HTML5 Feature Permissions</source>
-        <translation type="unfinished">HTML5 Feature Permissions</translation>
+        <translation>HTML5 Feature Permissions</translation>
     </message>
     <message>
         <location filename="../Helpviewer/FeaturePermissions/FeaturePermissionsDialog.ui" line="27"/>
@@ -14580,7 +14580,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Helpviewer/Feeds/FeedsManager.py" line="351"/>
         <source>Open in New &amp;Tab</source>
-        <translation>Открыть в новой &amp;закладке</translation>
+        <translation>Открыть в новой &amp;вкладке</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Feeds/FeedsManager.py" line="354"/>
@@ -15865,7 +15865,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/Sync/FtpSyncHandler.py" line="343"/>
         <source>Synchronization finished.</source>
-        <translation>Синхронизация окончена.</translation>
+        <translation>Синхронизация завершена.</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Sync/FtpSyncHandler.py" line="265"/>
@@ -16133,7 +16133,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/GreaseMonkey/GreaseMonkeyConfiguration/GreaseMonkeyConfigurationScriptInfoDialog.ui" line="183"/>
         <source>Press to open an editor with the script&apos;s source</source>
-        <translation>Открыть редактор со скриптом</translation>
+        <translation>Открыть редакторе со скриптом</translation>
     </message>
     <message>
         <location filename="../Helpviewer/GreaseMonkey/GreaseMonkeyConfiguration/GreaseMonkeyConfigurationScriptInfoDialog.ui" line="186"/>
@@ -16352,7 +16352,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="1354"/>
         <source>Bookmark this Page</source>
-        <translation>Закладка для этой странички</translation>
+        <translation>Создать закладку для этой странички</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="1382"/>
@@ -16989,7 +16989,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpFlashCookieManagerPage.ui" line="130"/>
         <source>User will be notified for every new flash cookie that is not in blacklist and whitelist.</source>
-        <translation>Пользователь будет получать уведомление о каждой новой флэш-куки, не входящей в белый и черный списки</translation>
+        <translation>Пользователь будет получать уведомление о каждой новой флэш-куки, не входящей в белый и черный списки.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpFlashCookieManagerPage.ui" line="143"/>
@@ -17032,7 +17032,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/HelpIndexWidget.py" line="147"/>
         <source>Open Link in New Tab</source>
-        <translation>Открыть ссылку в новой закладке</translation>
+        <translation>Открыть ссылку в новой вкладке</translation>
     </message>
 </context>
 <context>
@@ -17126,7 +17126,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/HelpSearchWidget.py" line="133"/>
         <source>Open Link in New Tab</source>
-        <translation>Открыть ссылку в новой закладке</translation>
+        <translation>Открыть ссылку в новой вкладке</translation>
     </message>
 </context>
 <context>
@@ -17232,7 +17232,7 @@ Reason: {0}</source>
 You have %n tab(s) open.</source>
         <translation>
             <numerusform>Вы уверены что хотите закрыть окно?
-У вас одна открытая вкладка.</numerusform>
+У вас  %n открытая вкладка.</numerusform>
             <numerusform>Вы уверены что хотите закрыть окно?
 У вас %n открытые вкладки.</numerusform>
             <numerusform>Вы уверены что хотите закрыть окно?
@@ -17317,7 +17317,7 @@ Do you really want to close this page?</source>
     <message>
         <location filename="../Helpviewer/HelpTocWidget.py" line="151"/>
         <source>Open Link in New Tab</source>
-        <translation>Открыть ссылку в новой закладке</translation>
+        <translation>Открыть ссылку в новой вкладке</translation>
     </message>
 </context>
 <context>
@@ -17524,7 +17524,7 @@ Do you really want to close this page?</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="69"/>
         <source>Select to show a page preview when the mouse hovers over the tab</source>
-        <translation>Разрешить показ содержимого страницы когда мышь находиться на закладке</translation>
+        <translation>Разрешить показ содержимого страницы когда мышь находиться на вкладке</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="72"/>
@@ -18688,7 +18688,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="884"/>
         <source>&lt;b&gt;Add Bookmark&lt;/b&gt;&lt;p&gt;Open a dialog to add the current URL as a bookmark.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Добавить закладку&lt;/b&gt;&lt;p&gt;Показать диалог добавления текущей страницы в закладки.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Добавить закладку&lt;/b&gt;&lt;p&gt;Показать диалог добавления текущей URL в качестве закладки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="892"/>
@@ -18728,7 +18728,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="913"/>
         <source>&lt;b&gt;Bookmark All Tabs...&lt;/b&gt;&lt;p&gt;Open a dialog to add a new bookmarks folder for all open tabs.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Создать закладку для всех вкладок...&lt;/b&gt;&lt;p&gt;Отображение диалога добавления новой папки закладок для всех открытых вкладок.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Создать закладку для всех вкладок...&lt;/b&gt;&lt;p&gt;Показать диалог добавления новой папки закладок для всех открытых вкладок.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="922"/>
@@ -18933,7 +18933,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1064"/>
         <source>Show next tab</source>
-        <translation>Показать следующую закладку</translation>
+        <translation>Показать следующую вкладку</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1064"/>
@@ -19044,17 +19044,17 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1243"/>
         <source>Sync with Table of Contents</source>
-        <translation>Синхронизировать с содержанием</translation>
+        <translation>Синхронизация с таблицей содержания</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1248"/>
         <source>Synchronizes the table of contents with current page</source>
-        <translation>Синхронизировать содержание с текущей страницей</translation>
+        <translation>Синхронизация таблицы содержания с текущей страницей</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1250"/>
         <source>&lt;b&gt;Sync with Table of Contents&lt;/b&gt;&lt;p&gt;Synchronizes the table of contents with current page.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Синхронизировать с содержанием&lt;/b&gt;&lt;p&gt;Синхронизировать содержание с текущей страницей.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Синхронизация с таблицей содержания&lt;/b&gt;&lt;p&gt;Синхронизация таблицы содержания с текущей страницей.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1259"/>
@@ -19064,12 +19064,12 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1263"/>
         <source>Shows the table of contents window</source>
-        <translation>Показывает окно с содержанием</translation>
+        <translation>Отображение окна с таблицей содержания</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1265"/>
         <source>&lt;b&gt;Table of Contents&lt;/b&gt;&lt;p&gt;Shows the table of contents window.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Содержание&lt;/b&gt;&lt;p&gt;Показывает окно с содержанием.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Таблица содержания&lt;/b&gt;&lt;p&gt;Отображение окна с таблицей содержаниея.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1277"/>
@@ -20660,7 +20660,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBackoutDialog.ui" line="146"/>
         <source>Select to specify a revision by a bookmark</source>
-        <translation>Задать ревизию с помощью закладки</translation>
+        <translation>Разрешить задание ревизии с помощью закладки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBackoutDialog.ui" line="149"/>
@@ -20768,7 +20768,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarkDialog.ui" line="177"/>
         <source>Select to specify a revision by a bookmark</source>
-        <translation>Задать ревизию с помощью закладки</translation>
+        <translation>Разрешить задание ревизии с помощью закладки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarkDialog.ui" line="180"/>
@@ -20890,12 +20890,12 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarksInOutDialog.py" line="55"/>
         <source>Mercurial Incoming Bookmarks</source>
-        <translation>Входящие закладки</translation>
+        <translation>Входящие Mercurial закладки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarksInOutDialog.py" line="57"/>
         <source>Mercurial Outgoing Bookmarks</source>
-        <translation>Исходящие закладки</translation>
+        <translation>Исходящие Mercurial закладки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarksInOutDialog.py" line="144"/>
@@ -20910,7 +20910,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarksInOutDialog.py" line="177"/>
         <source>no bookmarks found</source>
-        <translation>закладки не найдены</translation>
+        <translation>Закладки не найдены</translation>
     </message>
 </context>
 <context>
@@ -21123,7 +21123,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBundleDialog.ui" line="101"/>
         <source>Select to specify a revision by a bookmark</source>
-        <translation>Задать ревизию с помощью закладки</translation>
+        <translation>Разрешить задание ревизии с помощью закладки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBundleDialog.ui" line="104"/>
@@ -21677,7 +21677,7 @@ of the Mercurial client executable (i.e. hg).&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgDiffDialog.py" line="238"/>
         <source>&lt;p&gt;The patch file &lt;b&gt;{0}&lt;/b&gt; already exists. Overwrite it?&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Файл патч &lt;b&gt;{0}&lt;/b&gt; уже существует. Переписать?&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Патч-файл &lt;b&gt;{0}&lt;/b&gt; уже существует. Переписать?&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgDiffDialog.py" line="254"/>
@@ -21907,7 +21907,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/GpgExtension/HgGpgSignDialog.ui" line="146"/>
         <source>Select to specify a revision by a bookmark</source>
-        <translation>Задать ревизию с помощью закладки</translation>
+        <translation>Разрешить задание ревизии с помощью закладки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/GpgExtension/HgGpgSignDialog.ui" line="149"/>
@@ -23035,7 +23035,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMergeDialog.ui" line="134"/>
         <source>Select to specify a revision by a bookmark</source>
-        <translation>Задать ревизию с помощью закладки</translation>
+        <translation>Разрешить задание ревизии с помощью закладки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMergeDialog.ui" line="137"/>
@@ -23098,7 +23098,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMultiRevisionSelectionDialog.ui" line="113"/>
         <source>Select to specify a revision by a bookmark</source>
-        <translation>Задать ревизию с помощью закладки</translation>
+        <translation>Разрешить задание ревизии с помощью закладки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMultiRevisionSelectionDialog.ui" line="116"/>
@@ -23426,7 +23426,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectBrowserHelper.py" line="661"/>
         <source>Conflicts resolved</source>
-        <translation>Конфликты разрешены</translation>
+        <translation>Решенные конфликты</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectBrowserHelper.py" line="664"/>
@@ -24434,7 +24434,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="462"/>
         <source>Conflicts resolved</source>
-        <translation>Конфликты разрешены</translation>
+        <translation>Решенные конфликты</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="462"/>
@@ -24624,7 +24624,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1071"/>
         <source>&lt;b&gt;Define bookmark&lt;/b&gt;&lt;p&gt;This defines a bookmark for the project.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Определить закладку&lt;/b&gt;&lt;p&gt;Определяет закладку текущего проекта.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Определить закладку&lt;/b&gt;&lt;p&gt;Определение закладки текущего проекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1078"/>
@@ -24644,7 +24644,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1086"/>
         <source>&lt;b&gt;Delete bookmark&lt;/b&gt;&lt;p&gt;This deletes a bookmark of the project.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Удалить закладку&lt;/b&gt;&lt;p&gt;Удалить закладку из текущего проекта.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Удалить закладку&lt;/b&gt;&lt;p&gt;Удаление закладки текущего проекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1093"/>
@@ -24664,7 +24664,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1101"/>
         <source>&lt;b&gt;Rename bookmark&lt;/b&gt;&lt;p&gt;This renames a bookmark of the project.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Переименовать закладку&lt;/b&gt;&lt;p&gt;Переименовать закладку текущего проекта.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Переименовать закладку&lt;/b&gt;&lt;p&gt;Переименование закладки текущего проекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1108"/>
@@ -24684,22 +24684,22 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1116"/>
         <source>&lt;b&gt;Move bookmark&lt;/b&gt;&lt;p&gt;This moves a bookmark of the project to another changeset.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Переместить закладку&lt;/b&gt;&lt;p&gt;Переместить закладку из текущего проекта в другую ревизию.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Переместить закладку&lt;/b&gt;&lt;p&gt;Перемещение закладки текущего проекта в другую ревизию.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1124"/>
         <source>Show incoming bookmarks</source>
-        <translation>Показать измененные закладки</translation>
+        <translation>Показать входящие закладки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1129"/>
         <source>Show a list of incoming bookmarks</source>
-        <translation>Показать список измененных закладок</translation>
+        <translation>Показать список входящих закладок</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1132"/>
         <source>&lt;b&gt;Show incoming bookmarks&lt;/b&gt;&lt;p&gt;This shows a list of new bookmarks available at the remote repository.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать измененные закладки&lt;/b&gt;&lt;p&gt;Показать новые закладки в удаленном репозитории.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать входящие закладки&lt;/b&gt;&lt;p&gt;Показать список новых закладок в удаленном репозитории.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1141"/>
@@ -24719,17 +24719,17 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1157"/>
         <source>Show outgoing bookmarks</source>
-        <translation>Показать выходящие закладки</translation>
+        <translation>Показать исходящие закладки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1162"/>
         <source>Show a list of outgoing bookmarks</source>
-        <translation>Показать список выходящих изменений</translation>
+        <translation>Показать список исходящих закладок</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1165"/>
         <source>&lt;b&gt;Show outgoing bookmarks&lt;/b&gt;&lt;p&gt;This shows a list of new bookmarks available at the local repository.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать исходящие закладки&lt;/b&gt;&lt;p&gt;Показать список новых закладок в локальном репозитории.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать исходящие закладки&lt;/b&gt;&lt;p&gt;Отображение списка новых закладок, доступных в локальном репозитории.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1174"/>
@@ -24784,12 +24784,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="451"/>
         <source>Show a dialog listing all files with conflicts</source>
-        <translation>Показать все файлы содержащие конфликты</translation>
+        <translation>Показ диалога перечисления всех файлов, содержащих конфликты</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="454"/>
         <source>&lt;b&gt;Show conflicts&lt;/b&gt;&lt;p&gt;This shows a dialog listing all files which had or still have conflicts.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать конфликты&lt;/b&gt;&lt;p&gt;Показать все файлы содержащие конфликты.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать конфликты&lt;/b&gt;&lt;p&gt;Показ диалога перечисления все файлов, содержащих конфликты.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="477"/>
@@ -24799,22 +24799,22 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="481"/>
         <source>Mark all conflicts of the local project as unresolved</source>
-        <translation>Пометить все конфликты как неразрешённые</translation>
+        <translation>Пометить все конфликты локального проекта как неразрешённые</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="484"/>
         <source>&lt;b&gt;Conflicts unresolved&lt;/b&gt;&lt;p&gt;This marks all conflicts of the local project as unresolved.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Конфликты не разрешёны&lt;/b&gt;&lt;p&gt;Пометить все конфликты как неразрешённые.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Неразрешенные конфликты&lt;/b&gt;&lt;p&gt;Пометка  все конфликтов локального проекта как неразрешённых.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1327"/>
         <source>Manage Changes</source>
-        <translation>Менеджировать изменения</translation>
+        <translation>Управление изменениями</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="439"/>
         <source>&lt;b&gt;Re-Merge&lt;/b&gt;&lt;p&gt;This re-merges all conflicting, unresolved files of the project discarding any previous merge attempt.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Повторное слияние&lt;/b&gt;&lt;p&gt;Повторить слияние всех конфликтующих файлов с самого начала.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Повторное слияние&lt;/b&gt;&lt;p&gt;Повторное слияние всех конфликтующих, неразрешенных файлов проекта, без учета всех предыдущих попыток слияния.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1412"/>
@@ -25479,12 +25479,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/RebaseExtension/HgRebaseDialog.ui" line="341"/>
         <source>Select to specify a revision by a bookmark</source>
-        <translation>Задать ревизию с помощью закладки</translation>
+        <translation>Разрешить задание ревизии с помощью закладки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/RebaseExtension/HgRebaseDialog.ui" line="344"/>
         <source>Bookmark:</source>
-        <translation>Закладки:</translation>
+        <translation>Закладка:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/RebaseExtension/HgRebaseDialog.ui" line="360"/>
@@ -25763,12 +25763,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionSelectionDialog.ui" line="146"/>
         <source>Select to specify a revision by a bookmark</source>
-        <translation>Задать ревизию с помощью закладки</translation>
+        <translation>Разрешить задание ревизии с помощью закладки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionSelectionDialog.ui" line="149"/>
         <source>Bookmark:</source>
-        <translation>Закладки:</translation>
+        <translation>Закладка:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionSelectionDialog.ui" line="165"/>
@@ -25876,12 +25876,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionsSelectionDialog.ui" line="313"/>
         <source>Select to specify a revision by a bookmark</source>
-        <translation>Задать ревизию с помощью закладки</translation>
+        <translation>Разрешить задание ревизии с помощью закладки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionsSelectionDialog.ui" line="316"/>
         <source>Bookmark:</source>
-        <translation>Закладки:</translation>
+        <translation>Закладка:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionsSelectionDialog.ui" line="332"/>
@@ -26728,7 +26728,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="411"/>
         <source>%n new changeset(s)&lt;br/&gt;Update required</source>
         <translation>
-            <numerusform>один новый набор изменений&lt;br/&gt;Требуется обновление</numerusform>
+            <numerusform>%n новый набор изменений&lt;br/&gt;Требуется обновление</numerusform>
             <numerusform>%n новых набора изменений&lt;br/&gt;Требуется обновление</numerusform>
             <numerusform>%n новых наборов изменений&lt;br/&gt;Требуется обновление</numerusform>
         </translation>
@@ -26737,7 +26737,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="415"/>
         <source>%n new changeset(s)</source>
         <translation>
-            <numerusform>один новый набор изменений</numerusform>
+            <numerusform>%n новый набор изменений</numerusform>
             <numerusform>%n новых набора изменений</numerusform>
             <numerusform>%n новых наборов изменений</numerusform>
         </translation>
@@ -26746,7 +26746,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="417"/>
         <source>%n branch head(s)</source>
         <translation>
-            <numerusform>одна вершина ветви</numerusform>
+            <numerusform>%n вершина ветви</numerusform>
             <numerusform>%n вершины ветвей</numerusform>
             <numerusform>%n вершин ветвей</numerusform>
         </translation>
@@ -26761,7 +26761,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="439"/>
         <source>%n incoming bookmark(s)</source>
         <translation>
-            <numerusform>одна входящая закладка</numerusform>
+            <numerusform>%n входящая закладка</numerusform>
             <numerusform>%n входящие закладки</numerusform>
             <numerusform>%n входящих закладок</numerusform>
         </translation>
@@ -26770,7 +26770,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="442"/>
         <source>%n outgoing bookmark(s)</source>
         <translation>
-            <numerusform>одна исходящая закладка</numerusform>
+            <numerusform>%n исходящая закладка</numerusform>
             <numerusform>%n исходящие закладки</numerusform>
             <numerusform>%n исходящих закладок</numerusform>
         </translation>
@@ -27232,7 +27232,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/History/HistoryDialog.py" line="92"/>
         <source>Open in New &amp;Tab</source>
-        <translation>Открыть в новой &amp;закладке</translation>
+        <translation>Открыть в новой &amp;вкладке</translation>
     </message>
     <message>
         <location filename="../Helpviewer/History/HistoryDialog.py" line="95"/>
@@ -27335,7 +27335,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Helpviewer/History/HistoryTreeModel.py" line="69"/>
         <source>%n item(s)</source>
         <translation>
-            <numerusform>один элемент</numerusform>
+            <numerusform>%n элемент</numerusform>
             <numerusform>%n элемента</numerusform>
             <numerusform>%n элементов</numerusform>
         </translation>
@@ -27346,7 +27346,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/HtmlImporter.py" line="33"/>
         <source>HTML Netscape Bookmarks</source>
-        <translation>Закладки Netscape HTML</translation>
+        <translation>Netscape HTML Закладки</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/HtmlImporter.py" line="33"/>
@@ -29333,12 +29333,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.ui" line="60"/>
         <source>Shows the list of users</source>
-        <translation>Показывает список пользователей</translation>
+        <translation>Отображение списка пользователей</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.ui" line="80"/>
         <source>Shows the channel messages</source>
-        <translation>Показывает сообщения в канале</translation>
+        <translation>Отображение сообщений в канале</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.ui" line="97"/>
@@ -29363,7 +29363,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="394"/>
         <source>Do you really want to leave the IRC channel &lt;b&gt;{0}&lt;/b&gt;?</source>
-        <translation>Вы действительно хотите уйти с канала&lt;b&gt;{0}&lt;/b&gt;?</translation>
+        <translation>Вы действительно хотите уйти с канала &lt;b&gt;{0}&lt;/b&gt;?</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="535"/>
@@ -29373,7 +29373,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="540"/>
         <source>Nick mentioned</source>
-        <translation>Пользователь упомянул</translation>
+        <translation>Упомянутый ник</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="565"/>
@@ -29464,9 +29464,9 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="782"/>
         <source>limited to %n user(s)</source>
         <translation>
-            <numerusform>ограничивается одним пользователем</numerusform>
+            <numerusform>ограничивается %n пользователем</numerusform>
             <numerusform>ограничивается %n пользователями</numerusform>
-            <numerusform></numerusform>
+            <numerusform>ограничивается %n пользователями</numerusform>
         </translation>
     </message>
     <message>
@@ -29543,7 +29543,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="893"/>
         <source>{0} sets the channel limit to %n nick(s).</source>
         <translation>
-            <numerusform>{0} устанавливает ограничение канала в один ник.</numerusform>
+            <numerusform>{0} устанавливает ограничение канала в %n ник.</numerusform>
             <numerusform>{0} устанавливает ограничение канала в %n ника.</numerusform>
             <numerusform>{0} устанавливает ограничение канала в %n ников.</numerusform>
         </translation>
@@ -29641,7 +29641,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1143"/>
         <source>--- New From Here ---</source>
-        <translation>--- Новые начинаются здесь ---</translation>
+        <translation>--- Новые сообщения здесь ---</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1226"/>
@@ -29736,7 +29736,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1790"/>
         <source>Whois</source>
-        <translation>Кто это</translation>
+        <translation>Whois</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1474"/>
@@ -29787,7 +29787,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1616"/>
         <source>%n day(s)</source>
         <translation>
-            <numerusform>1 день</numerusform>
+            <numerusform>%n день</numerusform>
             <numerusform>%n дня</numerusform>
             <numerusform>%n дней</numerusform>
         </translation>
@@ -29796,7 +29796,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1630"/>
         <source>%n hour(s)</source>
         <translation>
-            <numerusform>1 час</numerusform>
+            <numerusform>%n час</numerusform>
             <numerusform>%n часа</numerusform>
             <numerusform>%n часов</numerusform>
         </translation>
@@ -29805,7 +29805,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1642"/>
         <source>%n minute(s)</source>
         <translation>
-            <numerusform>1 минута</numerusform>
+            <numerusform>%n минуту</numerusform>
             <numerusform>%n минуты</numerusform>
             <numerusform>%n минут</numerusform>
         </translation>
@@ -29814,7 +29814,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1643"/>
         <source>%n second(s)</source>
         <translation>
-            <numerusform>1 секунда</numerusform>
+            <numerusform>%n секунду</numerusform>
             <numerusform>%n секунды</numerusform>
             <numerusform>%n секунд</numerusform>
         </translation>
@@ -29841,7 +29841,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1652"/>
         <source>{0} has been idle for %n second(s).</source>
         <translation>
-            <numerusform>{0} бездействует 1 секунду.</numerusform>
+            <numerusform>{0} бездействует %n секунду.</numerusform>
             <numerusform>{0} бездействует %n секунды.</numerusform>
             <numerusform>{0} бездействует %n секунд.</numerusform>
         </translation>
@@ -29947,7 +29947,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="38"/>
         <source>Select the identity to work on</source>
-        <translation>Выберите пользователя для редактирования</translation>
+        <translation>Выберите пользователя для работы</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="45"/>
@@ -29992,12 +29992,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="105"/>
         <source>Enter a nick name to add</source>
-        <translation>Введите псевдоним</translation>
+        <translation>Введите псевдоним для добавления</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="119"/>
         <source>Press to add the entered nick name</source>
-        <translation>Добавить псевдоним</translation>
+        <translation>Добавить введенный псевдоним</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="126"/>
@@ -30007,12 +30007,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="136"/>
         <source>Press to move the selected nick name up</source>
-        <translation>Переместить выделенный псевдоним вверх</translation>
+        <translation>Выбранный псевдоним вверх</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="143"/>
         <source>Press to move the selected nick name down</source>
-        <translation>Переместить выделенный псевдоним вниз</translation>
+        <translation>Выбранный псевдоним вниз</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="166"/>
@@ -30052,7 +30052,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="222"/>
         <source>Mark the current position in chat windows when going away</source>
-        <translation>Пометьте в окне текущую позицию когда уходите</translation>
+        <translation>Отмечать текущую позицию в окне чата когда уходите</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="229"/>
@@ -30062,12 +30062,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="236"/>
         <source>Enter the message to be sent when going away</source>
-        <translation>Задайте сообщение о вашем отсутствии</translation>
+        <translation>Создайте сообщение о вашем отсутствии</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="257"/>
         <source>Advanced</source>
-        <translation>Расширенный</translation>
+        <translation>Расширенные</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="263"/>
@@ -30087,7 +30087,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="284"/>
         <source>Enter a message to be sent when quitting</source>
-        <translation>Введите сообщение о выходе</translation>
+        <translation>Создайте сообщение которое будет отправлено при выходе</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="291"/>
@@ -30097,7 +30097,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="298"/>
         <source>Enter message to be sent when leaving a channel</source>
-        <translation>Задайте сообщение о расставании</translation>
+        <translation>Создайте сообщение, которое будет отправлено при выходе из канала</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.py" line="188"/>
@@ -30162,7 +30162,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcIdentitiesEditDialog.ui" line="216"/>
         <source>Select to mark the current position in the chat, when you send an AWAY command.</source>
-        <translation>Пометить текущую позицию в болтовне при посылке команды AWAY.</translation>
+        <translation>Разрешить отмечать текущую позицию в чате при посылке команды AWAY.</translation>
     </message>
 </context>
 <context>
@@ -30537,7 +30537,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="121"/>
         <source>Select the colour for network messages</source>
-        <translation>Задайте цвет для отображения сетевых сообщений</translation>
+        <translation>Выберите цвет для отображения сетевых сообщений</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="131"/>
@@ -30547,7 +30547,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="144"/>
         <source>Select the colour for nick names</source>
-        <translation>Задайте цвет для отображения псевдонима</translation>
+        <translation>Выберите цвет для отображения псевдонима</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="154"/>
@@ -30557,7 +30557,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="167"/>
         <source>Select the colour for server messages</source>
-        <translation>Задайте цвет для отображения серверных сообщений</translation>
+        <translation>Выберите цвет для отображения серверных сообщений</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="177"/>
@@ -30567,7 +30567,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="190"/>
         <source>Select the colour for own nick name</source>
-        <translation>Задайте цвет для отображения своего псевдонима</translation>
+        <translation>Выберите цвет для отображения своего псевдонима</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="200"/>
@@ -30597,7 +30597,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="259"/>
         <source>Select the colour for error messages</source>
-        <translation>Задайте цвет для отображения сообщений об ошибке</translation>
+        <translation>Выберите цвет для отображения сообщений об ошибке</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="269"/>
@@ -30617,7 +30617,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="305"/>
         <source>Select the colour for timestamps</source>
-        <translation>Задайте цвет для отображения времени</translation>
+        <translation>Выберите цвет для временных меток</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="315"/>
@@ -30637,7 +30637,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="351"/>
         <source>Select the colour for hyperlinks</source>
-        <translation>Задайте цвет для отображения гиперссылок</translation>
+        <translation>Выберите цвет для отображения гиперссылок</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="364"/>
@@ -30652,22 +30652,22 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="651"/>
         <source>Enable to show notifications</source>
-        <translation>Разрешить показ извещений</translation>
+        <translation>Разрешить показ уведомлений</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="654"/>
         <source>Show Notifications</source>
-        <translation>Показывать извещения</translation>
+        <translation>Показывать уведомления</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="663"/>
         <source>&lt;b&gt;Note:&lt;/b&gt; Notifications will only be shown, if the global usage of notifications is enabled on the notifications configuration page.</source>
-        <translation>&lt;b&gt;Примечание:&lt;/b&gt; Извещения будут показываться только если они разрешены на странице настроек.</translation>
+        <translation>&lt;b&gt;Примечание:&lt;/b&gt; Уведомления будут показываться только если они разрешены на странице настроек.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="680"/>
         <source>Select to show a notification for join and leave events</source>
-        <translation>Показывать извещения о подсоединении или отсоединении пользователей</translation>
+        <translation>Показывать уведомления о подсоединении или отсоединении пользователей</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="683"/>
@@ -30677,7 +30677,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="690"/>
         <source>Select to show a notification for every mentioning of your nick</source>
-        <translation>Показывать извещения о каждом использовании вашего псевдонима</translation>
+        <translation>Показывать уведомления о каждом упоминании вашего псевдонима</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="693"/>
@@ -30687,7 +30687,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="700"/>
         <source>Select to show a notification for every message</source>
-        <translation>Показывать извещения о каждом сообщении</translation>
+        <translation>Показывать уведомления о каждом сообщении</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="703"/>
@@ -30752,7 +30752,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="824"/>
         <source>Select the foreground colour for the marker</source>
-        <translation>Задайте цвет метки</translation>
+        <translation>Выберите цвет маркера</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="834"/>
@@ -30883,7 +30883,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcUtilities.py" line="169"/>
         <source>reop channel</source>
-        <translation type="unfinished">reop channel</translation>
+        <translation>reop channel</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcUtilities.py" line="170"/>
@@ -30981,7 +30981,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcWidget.py" line="573"/>
         <source>Notice</source>
-        <translation>Извещение</translation>
+        <translation>Уведомление</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcWidget.py" line="591"/>
@@ -31071,12 +31071,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcWidget.py" line="704"/>
         <source>You are no longer marked as being away.</source>
-        <translation>Вы больше не помечены как отсутствующий.</translation>
+        <translation>Вы больше не отмечены как отсутствующий.</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcWidget.py" line="706"/>
         <source>You have been marked as being away.</source>
-        <translation>Вы помечены как отсутствующий.</translation>
+        <translation>Вы отмечены как отсутствующий.</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcWidget.py" line="825"/>
@@ -31122,7 +31122,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcWidget.py" line="939"/>
         <source>No nickname acceptable to the server configured for &lt;b&gt;{0}&lt;/b&gt;. Disconnecting...</source>
-        <translation>Псевдонимы не принимаются на сервере для &lt;b&gt;{0}&lt;/b&gt;. Отключение...</translation>
+        <translation>Нет приемлимых псевдонимов на сервере, сконфигурированном для &lt;b&gt;{0}&lt;/b&gt;. Отключение...</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcWidget.py" line="959"/>
@@ -31655,27 +31655,27 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="187"/>
         <source>Deleted</source>
-        <translation type="unfinished">Удалено</translation>
+        <translation>Удалено</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="188"/>
         <source>Inserted</source>
-        <translation type="unfinished">Вставленый</translation>
+        <translation>Вставлено</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="189"/>
         <source>Generic error</source>
-        <translation type="unfinished">Общая ошибка</translation>
+        <translation>Общая ошибка</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="190"/>
         <source>Emphasized text</source>
-        <translation type="unfinished">Отображаемый как Italic текст</translation>
+        <translation>Emphasized текст</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="191"/>
         <source>Strong text</source>
-        <translation type="unfinished">Отображаемый как Bold текст</translation>
+        <translation>Strong текст</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="192"/>
@@ -31690,7 +31690,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="194"/>
         <source>Traceback</source>
-        <translation type="unfinished">Обратная трассировка</translation>
+        <translation>Обратная трассировка</translation>
     </message>
     <message>
         <location filename="../QScintilla/Lexers/LexerPygments.py" line="195"/>
@@ -32556,7 +32556,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/MasterPasswordEntryDialog.ui" line="101"/>
         <source>Shows an indication for the password strength</source>
-        <translation>Показывает индикацию надежности пароля</translation>
+        <translation>Отображение степени надежности пароля</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/MasterPasswordEntryDialog.py" line="36"/>
@@ -33746,12 +33746,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="381"/>
         <source>coding magic comment not found</source>
-        <translation type="unfinished">coding magic comment not found</translation>
+        <translation>coding magic comment not found</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="384"/>
         <source>unknown encoding ({0}) found in coding magic comment</source>
-        <translation type="unfinished">unknown encoding ({0}) found in coding magic comment</translation>
+        <translation>неизвестный код ({0}) обнаружен в коде магических комронентов</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="387"/>
@@ -33766,7 +33766,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="393"/>
         <source>blind except: statement</source>
-        <translation type="unfinished">blind except: statement</translation>
+        <translation>слепой except: оператор</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="396"/>
@@ -33826,12 +33826,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="429"/>
         <source>expected these __future__ imports: {0}; but only got: {1}</source>
-        <translation>ожидались __future__ imports: {0}; получены только: {1}</translation>
+        <translation>ожидался __future__ импорт: {0}; получены только: {1}</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="432"/>
         <source>expected these __future__ imports: {0}; but got none</source>
-        <translation>ожидались __future__ imports: {0}; не получено ничего</translation>
+        <translation>ожидался __future__ импорт: {0}; не получено ничего</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="435"/>
@@ -34757,17 +34757,17 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/NotificationsPage.ui" line="20"/>
         <source>&lt;b&gt;Configure notification settings&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Настройка параметров извещений&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Настройка параметров уведомлений&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/NotificationsPage.ui" line="40"/>
         <source>Select to enable notifications</source>
-        <translation>Разрешить извещения</translation>
+        <translation>Разрешить уведомления</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/NotificationsPage.ui" line="43"/>
         <source>Enable Notifications</source>
-        <translation>Разрешить извещения</translation>
+        <translation>Разрешить уведомления</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/NotificationsPage.ui" line="52"/>
@@ -34777,7 +34777,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/NotificationsPage.ui" line="59"/>
         <source>Enter the timeout for closing the notification</source>
-        <translation>Ввести задержку для автоматического скрытия извещений</translation>
+        <translation>Ввести задержку для автоматического скрытия уведомлений</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/NotificationsPage.ui" line="65"/>
@@ -34787,12 +34787,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/NotificationsPage.ui" line="104"/>
         <source>Enter the X-position the notification should be shown at</source>
-        <translation>Задайте X-координату для показа извещения</translation>
+        <translation>Задайте X-координату для показа уведомления</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/NotificationsPage.ui" line="127"/>
         <source>Enter the Y-position the notification should be shown at</source>
-        <translation>Задайте Y-координату для показа извещения</translation>
+        <translation>Задайте Y-координату для показа уведомления</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/NotificationsPage.ui" line="91"/>
@@ -34822,7 +34822,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/NotificationsPage.py" line="82"/>
         <source>Drag the notification window to the desired place and release the button.</source>
-        <translation>Подтащите окно извещения на желаемое место и отпустите кнопку.</translation>
+        <translation>Перетащите окно уведомления на желаемое место и отпустите кнопку.</translation>
     </message>
 </context>
 <context>
@@ -35256,7 +35256,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/OperaImporter.py" line="41"/>
         <source>Opera stores its bookmarks in the &lt;b&gt;bookmarks.adr&lt;/b&gt; text file. This file is usually located in</source>
-        <translation>Опера хранит закладки в текстовом файле &lt;b&gt;bookmarks.adr&lt;/b&gt;. Этот файл обычно находится в</translation>
+        <translation>Закладки Оперы хранятся в текстовом файле &lt;b&gt;bookmarks.adr&lt;/b&gt;. Этот файл обычно находится в</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/OperaImporter.py" line="41"/>
@@ -35457,7 +35457,7 @@ Reason: {1}</source>
     <message>
         <location filename="../Helpviewer/Passwords/PasswordReader.py" line="55"/>
         <source>The file is not a Passwords version 1.0 file.</source>
-        <translation>Это не файл Password версии  1.0.</translation>
+        <translation>Это не файл Passwords версии  1.0.</translation>
     </message>
 </context>
 <context>
@@ -37349,9 +37349,9 @@ Select Update.</source>
         <location filename="../Project/Project.py" line="3038"/>
         <source>The project contains %n file(s) with syntax errors.</source>
         <translation>
-            <numerusform>Проект содержит один файл с синтаксической ошибкой.</numerusform>
-            <numerusform>Проект содержите %n файла с синтаксической ошибкой.</numerusform>
-            <numerusform>Проект содержите %n файлов с синтаксической ошибкой.</numerusform>
+            <numerusform>Проект содержит %n файл с синтаксической ошибкой.</numerusform>
+            <numerusform>Проект содержит %n файла с синтаксической ошибкой.</numerusform>
+            <numerusform>Проект содержит %n файлов с синтаксической ошибкой.</numerusform>
         </translation>
     </message>
     <message>
@@ -40216,7 +40216,7 @@ Select Update.</source>
         <location filename="../DataViews/PyCoverageDialog.py" line="243"/>
         <source>%n file(s) could not be parsed. Coverage info for these is not available.</source>
         <translation>
-            <numerusform>Невозможно разобрать один файл. Информация о покрытии для него недоступна.</numerusform>
+            <numerusform>Невозможно разобрать %n файл. Информация о покрытии для него недоступна.</numerusform>
             <numerusform>Невозможно разобрать %n файла. Информация о покрытии для них недоступна.</numerusform>
             <numerusform>Невозможно разобрать %n файлов. Информация о покрытии для них недоступна.</numerusform>
         </translation>
@@ -40306,7 +40306,7 @@ Select Update.</source>
     <message>
         <location filename="../DataViews/PyProfileDialog.ui" line="132"/>
         <source>Shows the progress of the profile data calculation</source>
-        <translation>Отображает прогресс сбора информации профайлера</translation>
+        <translation>Отображение прогресса сбора информации профайлера</translation>
     </message>
     <message>
         <location filename="../DataViews/PyProfileDialog.py" line="337"/>
@@ -41467,7 +41467,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="315"/>
         <source>Conflicts resolved</source>
-        <translation>Конфликты разрешены</translation>
+        <translation>Решенные конфликты</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="315"/>
@@ -43106,9 +43106,8 @@ characters inside the brakets. E.g. the regex &apos;Set(Value)?&apos; matches &a
 &lt;p&gt;Select to insert the alternation symbol &apos;|&apos;. The alternation is used to match a single regular expression out of 
 several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matches words containing the word &apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; or &apos;fish&apos;.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Альтернативы: &apos;|&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку символа альтернативы &apos;|&apos;.  Альтернативы используются для совпадения с одним из нескольких 
-возможных регулярных выражений. Например, &apos;cat|dog|mouse|fish&apos; совпадает со словами, содержащими слово 
-&apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; или &apos;fish&apos;.</translation>
+&lt;p&gt;Разрешить вставку символа альтернативы &apos;|&apos;. Альтернативы используются для совпадения с одним из нескольких 
+возможных регулярных выражений. Например, &apos;cat|dog|mouse|fish&apos; совпадает со словами, содержащими слово &apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; или &apos;fish&apos;.</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="463"/>
@@ -46104,7 +46103,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/SafariImporter.py" line="44"/>
         <source>Apple Safari stores its bookmarks in the &lt;b&gt;Bookmarks.plist&lt;/b&gt; file. This file is usually located in</source>
-        <translation>Apple Safari хранит эти закладки в &lt;b&gt;Bookmarks.plist&lt;/b&gt;файле. Этот файл обычно находится в</translation>
+        <translation>Закладки Apple Safari хранятся файле &lt;b&gt;Bookmarks.plist&lt;/b&gt;. Этот файл обычно находится в</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/SafariImporter.py" line="44"/>
@@ -46766,7 +46765,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/ShellPage.ui" line="153"/>
         <source>Press to select the font to be used as the monospaced font</source>
-        <translation>Задать шрифт, который будет использован как моноширинный</translation>
+        <translation>Задать шрифт, который будет использоваться как моноширинный</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ShellPage.ui" line="156"/>
@@ -47609,7 +47608,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Snapshot/SnapWidget.py" line="531"/>
         <source>eric6 Snapshot</source>
-        <translation>снимки eric6</translation>
+        <translation>Снимки eric6</translation>
     </message>
     <message>
         <location filename="../Snapshot/SnapWidget.py" line="452"/>
@@ -47639,8 +47638,8 @@ Function: {3}({4})</source>
         <location filename="../Snapshot/SnapshotTimer.py" line="103"/>
         <source>Snapshot will be taken in %n seconds</source>
         <translation>
-            <numerusform>Снимок будет сделан через %n секунд</numerusform>
-            <numerusform>Снимок будет сделан через %n секунды</numerusform>
+            <numerusform>Снимок будет сделан через %n секунду@Снимок будет сделан через %n секунды@Снимок будет сделан через %n секунд</numerusform>
+            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -50166,7 +50165,7 @@ directory selection dialog.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnDiffDialog.py" line="389"/>
         <source>&lt;p&gt;The patch file &lt;b&gt;{0}&lt;/b&gt; already exists. Overwrite it?&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Файл патч &lt;b&gt;{0}&lt;/b&gt; уже существует. Переписать?&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Патч-файл &lt;b&gt;{0}&lt;/b&gt; уже существует. Переписать?&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnDiffDialog.py" line="405"/>
@@ -51200,7 +51199,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectBrowserHelper.py" line="712"/>
         <source>Conflicts resolved</source>
-        <translation>Конфликты разрешены</translation>
+        <translation>Решенные конфликты</translation>
     </message>
 </context>
 <context>
@@ -51684,7 +51683,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="299"/>
         <source>Conflicts resolved</source>
-        <translation>Конфликты разрешены</translation>
+        <translation>Решенные конфликты</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="299"/>
@@ -53323,7 +53322,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="134"/>
         <source>Arcolumns</source>
-        <translation type="unfinished">Arcolumns</translation>
+        <translation>Arcolumns</translation>
     </message>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="135"/>
@@ -53364,7 +53363,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="147"/>
         <source>Supplement Arcolumns-A</source>
-        <translation type="unfinished">Supplement Arcolumns-A</translation>
+        <translation>Supplement Arcolumns-A</translation>
     </message>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="148"/>
@@ -53374,7 +53373,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="149"/>
         <source>Supplement Arcolumns-B</source>
-        <translation type="unfinished">Supplement Arcolumns-B</translation>
+        <translation>Supplement Arcolumns-B</translation>
     </message>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="152"/>
@@ -54305,7 +54304,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Sync/SyncDataPage.ui" line="52"/>
         <source>Select to synchronize history</source>
-        <translation>Синхронизовать историю</translation>
+        <translation>Разрешить синхронизацию истории</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Sync/SyncDataPage.ui" line="55"/>
@@ -54335,7 +54334,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Sync/SyncDataPage.ui" line="82"/>
         <source>Select to synchronize the speed dial data</source>
-        <translation>Синхронизовать настройки быстрых вкладок</translation>
+        <translation>Разрешить синхронизацию данных быстрых вкладок</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Sync/SyncDataPage.ui" line="85"/>
@@ -54396,7 +54395,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Sync/SyncEncryptionPage.ui" line="23"/>
         <source>Select to encrypt the synchronzed data</source>
-        <translation>Шифровать синхронизацию данных</translation>
+        <translation>Разрешить шифровать синхронизированние данных</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Sync/SyncEncryptionPage.ui" line="26"/>
@@ -54564,7 +54563,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Sync/SyncFtpSettingsPage.ui" line="134"/>
         <source>Enter the idle timeout interval to prevent a server disconnect</source>
-        <translation>Задайте тайм-аут интервал чтобы предотвратить рассоединение</translation>
+        <translation>Задайте тайм-аут ожидания простоя чтобы предотвратить отключение сервера</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Sync/SyncFtpSettingsPage.ui" line="140"/>
@@ -54841,7 +54840,7 @@ the respective line.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/SyntaxChecker/SyntaxCheckerDialog.ui" line="121"/>
         <source>Shows the progress of the syntax check action</source>
-        <translation>Отображает прогресс проверки синтаксиса</translation>
+        <translation>Отображение прогресса проверки синтаксиса</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/SyntaxChecker/SyntaxCheckerDialog.py" line="47"/>
@@ -55312,7 +55311,7 @@ the respective line.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/Tabnanny/TabnannyDialog.ui" line="127"/>
         <source>Shows the progress of the tabnanny action</source>
-        <translation>Отображает прогресс работы команды tabnanny</translation>
+        <translation>Отображение выполнения команды tabnanny</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/Tabnanny/TabnannyDialog.py" line="331"/>
@@ -55872,7 +55871,7 @@ the respective line.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/TasksPage.ui" line="206"/>
         <source>Select the background colour for these tasks.</source>
-        <translation>Задайте цвет фона при выполнении этих задач.</translation>
+        <translation>Выберите цвет фона для этих задач.</translation>
     </message>
 </context>
 <context>
@@ -56819,7 +56818,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Project/TranslationPropertiesDialog.ui" line="25"/>
         <source>Enter the path for the binary translation files (*.qm)</source>
-        <translation>Задайте путь для каталога двоичных переводов (*.qm)</translation>
+        <translation>Задайте путь для каталога бинарных файлов перевода (*.qm)</translation>
     </message>
     <message>
         <location filename="../Project/TranslationPropertiesDialog.ui" line="28"/>
@@ -57227,12 +57226,12 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Tools/TrayStarter.py" line="155"/>
         <source>Configure Tray Starter</source>
-        <translation>Настройка запуска из системного лотка</translation>
+        <translation>Настройка запуска из панели задач</translation>
     </message>
     <message>
         <location filename="../Tools/TrayStarter.py" line="85"/>
         <source>Eric6 tray starter</source>
-        <translation>Запуск Eric6 в системном лотке</translation>
+        <translation>Запуск Eric6 из панели задач</translation>
     </message>
     <message>
         <location filename="../Tools/TrayStarter.py" line="107"/>
@@ -57255,7 +57254,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/TrayStarterPage.ui" line="17"/>
         <source>&lt;b&gt;Configure Tray Starter&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Настройка запуска из системного лотка&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Настройка запуска из панели задач&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/TrayStarterPage.ui" line="37"/>
@@ -60349,7 +60348,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="539"/>
         <source>Generating Plugins Toolbars...</source>
-        <translation>Генерация панели инструментов</translation>
+        <translation>Генерация панели инструментов...</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="3356"/>
@@ -63401,7 +63400,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3804"/>
         <source>Toggle Bookmark</source>
-        <translation>Поставить/убрать закладку</translation>
+        <translation>Создать/Удалить закладку</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3796"/>
@@ -64798,7 +64797,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Helpviewer/VirusTotal/VirusTotalDomainReportDialog.ui" line="170"/>
         <source>Resolved Date</source>
-        <translation type="unfinished">Resolved Date</translation>
+        <translation>Resolved Date</translation>
     </message>
     <message>
         <location filename="../Helpviewer/VirusTotal/VirusTotalDomainReportDialog.ui" line="187"/>
@@ -64839,7 +64838,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Helpviewer/VirusTotal/VirusTotalDomainReportDialog.ui" line="129"/>
         <source>Whois</source>
-        <translation>Кто это</translation>
+        <translation>Whois</translation>
     </message>
 </context>
 <context>
@@ -64867,7 +64866,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Helpviewer/VirusTotal/VirusTotalIpReportDialog.ui" line="107"/>
         <source>Resolved Date</source>
-        <translation type="unfinished">Resolved Date</translation>
+        <translation>Resolved Date</translation>
     </message>
     <message>
         <location filename="../Helpviewer/VirusTotal/VirusTotalIpReportDialog.ui" line="124"/>
@@ -65201,7 +65200,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/XbelImporter.py" line="57"/>
         <source>Konqueror stores its bookmarks in the &lt;b&gt;bookmarks.xml&lt;/b&gt; XML file. This file is usually located in</source>
-        <translation>Konqueror хранит закладки в XML файле &lt;b&gt;bookmarks.xml&lt;/b&gt;. Этот файл обычно находится в</translation>
+        <translation>Закладки Konqueror хранятся в XML файле &lt;b&gt;bookmarks.xml&lt;/b&gt;. Этот файл обычно находится в</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/XbelImporter.py" line="141"/>
@@ -65218,7 +65217,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/XbelImporter.py" line="35"/>
         <source>eric6 Web Browser stores its bookmarks in the &lt;b&gt;{0}&lt;/b&gt; XML file. This file is usually located in</source>
-        <translation>Eric хранит закладки в XML файле &lt;b&gt;{0}&lt;/b&gt;. Этот файл обычно находится в</translation>
+        <translation>Закладки Eric хранятся в XML файле &lt;b&gt;{0}&lt;/b&gt;. Этот файл обычно находится в</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/XbelImporter.py" line="152"/>
@@ -65387,7 +65386,7 @@ added to the size of the fonts used in the editor windows.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="23"/>
         <source>expected an indented block</source>
-        <translation type="unfinished">ожидался блок с отступом</translation>
+        <translation>ожидался блок с отступом</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="26"/>
@@ -65730,7 +65729,7 @@ added to the size of the fonts used in the editor windows.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/SyntaxChecker/pyflakes/translations.py" line="45"/>
         <source>Future import(s) {0!r} after other statements.</source>
-        <translation>Импорт {0!r} внутри кода.</translation>
+        <translation>Future импорт {0!r} внутри кода.</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/SyntaxChecker/pyflakes/translations.py" line="48"/>
