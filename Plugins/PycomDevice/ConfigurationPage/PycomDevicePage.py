@@ -4,17 +4,17 @@
 #
 
 """
-Module implementing the MicroPython configuration page.
+Module implementing the PycomDevice configuration page.
 """
 
 from Preferences.ConfigurationPages.ConfigurationPageBase import \
     ConfigurationPageBase
-from .Ui_MicroPythonPage import Ui_MicroPythonPage
+from .Ui_PycomDevicePage import Ui_PycomDevicePage
 
 
-class MicroPythonPage(ConfigurationPageBase, Ui_MicroPythonPage):
+class PycomDevicePage(ConfigurationPageBase, Ui_PycomDevicePage):
     """
-    Class implementing the MicroPython configuration page.
+    Class implementing the PycomDevice configuration page.
     """
     def __init__(self, plugin):
         """
@@ -24,7 +24,7 @@ class MicroPythonPage(ConfigurationPageBase, Ui_MicroPythonPage):
         """
         ConfigurationPageBase.__init__(self)
         self.setupUi(self)
-        self.setObjectName("MicroPythonPage")
+        self.setObjectName("PycomDevicePage")
         
         self.__plugin = plugin
         
@@ -38,7 +38,7 @@ class MicroPythonPage(ConfigurationPageBase, Ui_MicroPythonPage):
         
     def save(self):
         """
-        Public slot to save the MicroPython configuration.
+        Public slot to save the PycomDevice configuration.
         """
         self.__plugin.setPreferences("address",
             self.txt_device.text())

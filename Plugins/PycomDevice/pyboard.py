@@ -172,6 +172,11 @@ class Serial_connection:
         return name[:3] == 'COM' or (os.path.exists(name) == True and \
             stat.S_ISCHR(os.stat(name).st_mode) == True)
 
+    def enable_binary(self):
+        pass
+
+    def disable_binary(self):
+        pass
 
 class Telnet_connection:
     import telnetlib
@@ -255,6 +260,18 @@ class Telnet_connection:
             port = int(match.group(3))
 
         return address, port
+    
+    def __set_mode(self, mode_char):
+        self.__socket.sendall(Telnet_connection.telnetlib.IAC +
+        mode_char + Telnet_connection.telnetlib.BINARY)
+    
+    def enable_binary(self):
+        self.__set_mode(Telnet_connection.telnetlib.WILL)
+        self.__set_mode(Telnet_connection.telnetlib.DO)
+        
+    def disable_binary(self):
+        self.__set_mode(Telnet_connection.telnetlib.WONT)
+        self.__set_mode(Telnet_connection.telnetlib.DONT)
 
 class Pyboard:
     def __init__(self, device, baudrate=115200, user='micro', password='python', wait=0, keep_alive=0):

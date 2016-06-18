@@ -4,8 +4,6 @@ from PyQt5.QtCore import QObject, QCoreApplication
 import UI
 from E5Gui.E5Application import e5App
 import Preferences
-from UPython.Shell import ShellAssembly
-from UPython.DebugServer import DebugServer
 
 # Start-Of-Header
 name = "About Pymakr"
