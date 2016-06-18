@@ -129,6 +129,7 @@ class PycomDeviceServer(QObject):
     __device = None
     __user = None
     __password = None
+    __keepTrying = False
 
     def __init__(self):
         super(PycomDeviceServer, self).__init__()
@@ -203,33 +204,36 @@ class PycomDeviceServer(QObject):
         except:
             return False
 
+    def emitStatusChange(self, status):
+        PycomDeviceServer.statusChanged.emit(status)
+
     def __recvBackground(self):
         PycomDeviceServer.__shutdown = False
         while PycomDeviceServer.__shutdown == False:
             try:
-                PycomDeviceServer.statusChanged.emit("connecting")
+                self.emitStatusChange("connecting")
                 PycomDeviceServer.channel = pyboard.Pyboard(device=PycomDeviceServer.__device,
                     user=PycomDeviceServer.__user, password=PycomDeviceServer.__password, keep_alive=3)
                 PycomDeviceServer.channel.reset()
-                PycomDeviceServer.statusChanged.emit("connected")
+                self.emitStatusChange("connected")
                 PycomDeviceServer.channel.recv(self.signalClientOutput)
-                PycomDeviceServer.statusChanged.emit("disconnected")
+                self.emitStatusChange("disconnected")
             except pyboard.PyboardError as er:
                 if str(er) == "Invalid credentials":
-                    PycomDeviceServer.statusChanged.emit("invcredentials")
+                    self.emitStatusChange("invcredentials")
                     break
                 elif str(er) == "\nInvalid address":
-                    PycomDeviceServer.statusChanged.emit("invaddress")
+                    self.emitStatusChange("invaddress")
                     break
                 else:
-                    PycomDeviceServer.statusChanged.emit("error")
+                    self.emitStatusChange("error")
             except Exception as e:
-                PycomDeviceServer.statusChanged.emit("error")
+                self.emitStatusChange("error")
 
-            if self.__keepTrying == False or PycomDeviceServer.__shutdown == True:
+            if PycomDeviceServer.__keepTrying == False or PycomDeviceServer.__shutdown == True:
                 break
             else:
-                PycomDeviceServer.statusChanged.emit("reattempt")
+                self.emitStatusChange("reattempt")
                 for t in xrange(0, 15 * 4):
                     time.sleep(1.0 / 4)
                     if PycomDeviceServer.__shutdown == True:
@@ -238,7 +242,7 @@ class PycomDeviceServer(QObject):
 
 
     def signalClientOutput(self, text):
-        self.clientOutput.emit(text)
+        PycomDeviceServer.clientOutput.emit(text)
 
     def send(self, text):
         try:
@@ -250,7 +254,7 @@ class PycomDeviceServer(QObject):
         try:
             if self.getStatus() == True:
                 self.disconnect()
-            if self.__keepTrying == True:
+            if PycomDeviceServer.__keepTrying == True:
                 time.sleep(0.25)
                 self.connect()
         except:
@@ -259,4 +263,4 @@ class PycomDeviceServer(QObject):
     @pyqtSlot(bool)
     def tryConnecting(self, state):
         self.connect()
-        self.__keepTrying = state
+        PycomDeviceServer.__keepTrying = state
