@@ -221,14 +221,13 @@ class Telnet_connection:
         if self._wait_and_respond('Login as:', user) == True and \
         self._wait_and_respond('Password:', password, 0.2) == True:
             status = self._wait_for_multiple_exact_text([
-                'Type "help()" for more information.',
+                'Type "help\(\)" for more information.',
                 'Invalid credentials, try again.'])
             if status == 0:
                 return True
             elif status == 1:
                 raise PyboardError('Invalid credentials')
-        else:
-            return False
+        return False
 
     def close(self):
         self.__socket.shutdown(Telnet_connection.socket.SHUT_RDWR)
