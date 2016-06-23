@@ -329,6 +329,8 @@ class EmailDialog(QDialog, Ui_EmailDialog):
             QApplication.restoreOverrideCursor()
             if isinstance(e, smtplib.SMTPResponseException):
                 errorStr = e.smtp_error.decode()
+            elif isinstance(e, smtplib.SMTPException):
+                errorStr = str(e)
             elif isinstance(e, socket.error):
                 errorStr = e[1]
             else:
