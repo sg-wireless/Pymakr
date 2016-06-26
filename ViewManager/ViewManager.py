@@ -4578,8 +4578,9 @@ class ViewManager(QWidget):##QObject):
         @param fn filename of editor to update (string)
         @param line line number to highlight (int)
         """
-        self.openSourceFile(fn, line)
-        self.setFileLine(fn, line)
+        if not fn.startswith('<'):
+            self.openSourceFile(fn, line)
+            self.setFileLine(fn, line)
         
     def setFileLine(self, fn, line, error=False, syntaxError=False):
         """
