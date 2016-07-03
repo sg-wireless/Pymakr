@@ -6,7 +6,7 @@
         <bookmark href="http://eric-ide.python-projects.org/">
             <title>Eric Web Site</title>
         </bookmark>
-        <bookmark href="http://www.riverbankcomputing.com/">
+        <bookmark href="https://www.riverbankcomputing.com/">
             <title>PyQt Web Site</title>
         </bookmark>
         <folder folded="no">
@@ -32,16 +32,16 @@
             <bookmark href="http://qtcentre.org/">
                 <title>Qt Centre</title>
             </bookmark>
-            <bookmark href="http://qt-apps.org/">
-                <title>Qt-Apps.org</title>
+            <bookmark href="https://www.linux-apps.com/browse/ord/latest/">
+                <title>Qt Applications</title>
             </bookmark>
         </folder>
         <folder folded="no">
             <title>Python Web Sites</title>
-            <bookmark href="http://www.python.org/">
+            <bookmark href="https://www.python.org/">
                 <title>Python Language Website</title>
             </bookmark>
-            <bookmark href="http://pypi.python.org/pypi">
+            <bookmark href="https://pypi.python.org/pypi">
                 <title>Python Package Index: PyPI</title>
             </bookmark>
         </folder>
@@ -51,7 +51,7 @@
         <bookmark href="http://eric-ide.python-projects.org/">
             <title>Eric Web Site</title>
         </bookmark>
-        <bookmark href="http://www.riverbankcomputing.com/">
+        <bookmark href="https://www.riverbankcomputing.com/">
             <title>PyQt4 Web Site</title>
         </bookmark>
         <bookmark href="javascript:location.href='mailto:?SUBJECT=' + document.title + '&amp;BODY=' + escape(location.href);">
