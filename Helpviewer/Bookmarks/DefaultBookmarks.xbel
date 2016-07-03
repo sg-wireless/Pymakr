@@ -6,7 +6,7 @@
         <bookmark href="http://eric-ide.python-projects.org/">
             <title>Eric Web Site</title>
         </bookmark>
-        <bookmark href="https://www.riverbankcomputing.com/">
+        <bookmark href="https://www.riverbankcomputing.com/news">
             <title>PyQt Web Site</title>
         </bookmark>
         <folder folded="no">
@@ -51,7 +51,7 @@
         <bookmark href="http://eric-ide.python-projects.org/">
             <title>Eric Web Site</title>
         </bookmark>
-        <bookmark href="https://www.riverbankcomputing.com/">
+        <bookmark href="https://www.riverbankcomputing.com/news">
             <title>PyQt4 Web Site</title>
         </bookmark>
         <bookmark href="javascript:location.href='mailto:?SUBJECT=' + document.title + '&amp;BODY=' + escape(location.href);">
