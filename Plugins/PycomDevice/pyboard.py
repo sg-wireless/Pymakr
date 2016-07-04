@@ -127,6 +127,12 @@ class Serial_connection:
     def keep_alive(self):
         pass
 
+    def settimeout(self, value):
+        self.stream.timeout = value
+
+    def gettimeout(self):
+        return self.stream.timeout
+
     def __expose_stream_methods(self):
         self.close = self.stream.close
         self.write = self.stream.write
@@ -196,6 +202,12 @@ class Telnet_connection:
 
         except Telnet_connection.socket.error:
             pass
+
+    def settimeout(self, value):
+        self.__socket.settimeout(value)
+
+    def gettimeout(self):
+        self.__socket.gettimeout()
 
     def _wait_for_exact_text(self, remote_text):
         remote_text = remote_text.encode('ascii')
@@ -340,16 +352,8 @@ class Pyboard:
         return data
 
     def enter_raw_repl(self):
-        self.connection.write(b'\r\x03\x03') # ctrl-C twice: interrupt any running program
-
+        self.enter_raw_repl_no_reset()
         self.flush()
-
-        self.connection.write(b'\r\x01') # ctrl-A: enter raw REPL
-        data = self.read_until(b'raw REPL; CTRL-B to exit\r\n>')
-        if not data.endswith(b'raw REPL; CTRL-B to exit\r\n>'):
-            print(data)
-            raise PyboardError('could not enter raw repl')
-
         self.connection.write(b'\x04') # ctrl-D: soft reset
         data = self.read_until(b'soft reboot\r\n')
         if not data.endswith(b'soft reboot\r\n'):
@@ -361,6 +365,19 @@ class Pyboard:
         if not data.endswith(b'raw REPL; CTRL-B to exit\r\n'):
             print(data)
             raise PyboardError('could not enter raw repl')
+
+
+    def enter_raw_repl_no_reset(self):
+        self.connection.write(b'\r\x03\x03') # ctrl-C twice: interrupt any running program
+
+        self.flush()
+
+        self.connection.write(b'\r\x01') # ctrl-A: enter raw REPL
+        data = self.read_until(b'raw REPL; CTRL-B to exit\r\n')
+        if not data.endswith(b'raw REPL; CTRL-B to exit\r\n'):
+            print(data)
+            raise PyboardError('could not enter raw repl')
+
 
     def exit_raw_repl(self):
         self.connection.write(b'\r\x02') # ctrl-B: enter friendly REPL
@@ -391,7 +408,9 @@ class Pyboard:
     def recv(self, callback):
         import socket
 
-        while True:
+        self.want_exit_recv = False
+
+        while self.want_exit_recv == False:
             try:
                 data = self.connection.read_some()
                 if data:
@@ -402,8 +421,12 @@ class Pyboard:
                 continue
             except:
                 break
+        if self.want_exit_recv == False:
+            self.close()
 
-        self.close()
+    def exit_recv(self):
+        self.want_exit_recv = True
+        self.send("\x03") # Ctrl-C
 
     def _wait_for_exact_text(self, remote_text):
         remote_text = remote_text.decode('ascii')

@@ -115,7 +115,7 @@ class UPythonShell(QsciScintillaCompat):
 
         self.linesChanged.connect(self.__resizeLinenoMargin)
 
-        dbs.clientOutput.connect(self.__write)
+        dbs.dataReceptionEvent.connect(self.__write)
         self.dbs = dbs
         
         # Initialize instance variables.

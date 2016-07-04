@@ -4,8 +4,7 @@ from PyQt5.QtCore import QObject, QCoreApplication
 import UI
 from E5Gui.E5Application import e5App
 import Preferences
-from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot
-from threading import Thread
+from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot, QThread
 from PycomDevice import pyboard
 import time
 
@@ -121,18 +120,19 @@ class PluginPycomDevice(QObject):
         self.loadSettings()
         self.__pds.restart()
 
-class PycomDeviceServer(QObject):
-    clientOutput = pyqtSignal(str)
+class PycomDeviceServer(QThread):
+    dataReceptionEvent = pyqtSignal(str)
     statusChanged = pyqtSignal(str)
     channel = None
-    __rx_thread = None
     __device = None
     __user = None
     __password = None
     __keepTrying = False
+    __overrideCallback = None
 
     def __init__(self):
-        super(PycomDeviceServer, self).__init__()
+        QThread.__init__(self)
+
         # A single set of signals is desired for all the instances of this Class
 
         # PyQt imposes the following limitation (in the documentation):
@@ -142,14 +142,14 @@ class PycomDeviceServer(QObject):
 
         # By behavior, PyQt creates unbounded signals, and they'll become bounded
         # when an actual object exists
-        # On the first run, clientOutput and statusChanged will be unbounded, hence
+        # On the first run, dataReceptionEvent and statusChanged will be unbounded, hence
         # they won't have the emit member. If that's the case, the bounded versions
         # of the first instance (the one created on plugin init) will be copied in
         # their place 
 
-        if not getattr(PycomDeviceServer.clientOutput, 'emit', None):
+        if not getattr(PycomDeviceServer.dataReceptionEvent, 'emit', None):
             # assume first time the init runs, won't test for both
-            PycomDeviceServer.clientOutput = self.clientOutput
+            PycomDeviceServer.dataReceptionEvent = self.dataReceptionEvent
             PycomDeviceServer.statusChanged = self.statusChanged
 
         pluginManager = e5App().getObject("PluginManager")
@@ -164,7 +164,7 @@ class PycomDeviceServer(QObject):
             pass
 
         try:
-            if PycomDeviceServer.__rx_thread:
+            if self.isRunning():
                 return True
         except:
             pass
@@ -172,8 +172,7 @@ class PycomDeviceServer(QObject):
         try:
             if not PycomDeviceServer.__device:
                 return False
-            PycomDeviceServer.__rx_thread = Thread(target=self.__recvBackground, args=())
-            PycomDeviceServer.__rx_thread.start()
+            self.start()
         except:
             return False
 
@@ -207,28 +206,50 @@ class PycomDeviceServer(QObject):
     def emitStatusChange(self, status):
         PycomDeviceServer.statusChanged.emit(status)
 
-    def __recvBackground(self):
+    def __handleChannelExceptions(self, err):
+        if type(err) == pyboard.PyboardError:
+            e = str(err)
+            if e == "Invalid credentials":
+                self.emitStatusChange("invcredentials")
+                PycomDeviceServer.__shutdown = True
+            elif e == "\nInvalid address":
+                self.emitStatusChange("invaddress")
+                PycomDeviceServer.__shutdown = True
+            else:
+                self.emitStatusChange("error")
+        else:
+            self.emitStatusChange("error")
+
+    def __getConnected(self):
+        self.emitStatusChange("connecting")
+        PycomDeviceServer.channel = pyboard.Pyboard(device=PycomDeviceServer.__device,
+            user=PycomDeviceServer.__user, password=PycomDeviceServer.__password, keep_alive=3)
+        PycomDeviceServer.channel.reset()
+        self.emitStatusChange("connected")
+
+    def run(self):
         PycomDeviceServer.__shutdown = False
+        continuing = False
         while PycomDeviceServer.__shutdown == False:
             try:
-                self.emitStatusChange("connecting")
-                PycomDeviceServer.channel = pyboard.Pyboard(device=PycomDeviceServer.__device,
-                    user=PycomDeviceServer.__user, password=PycomDeviceServer.__password, keep_alive=3)
-                PycomDeviceServer.channel.reset()
-                self.emitStatusChange("connected")
-                PycomDeviceServer.channel.recv(self.signalClientOutput)
+                if continuing == False:
+                    self.emitStatusChange("connecting")
+                    PycomDeviceServer.channel = pyboard.Pyboard(device=PycomDeviceServer.__device,
+                        user=PycomDeviceServer.__user, password=PycomDeviceServer.__password, keep_alive=3)
+                    PycomDeviceServer.channel.reset()
+                    self.emitStatusChange("connected")
+                continuing = False
+                PycomDeviceServer.channel.recv(self.signalDataReception)
+                if PycomDeviceServer.__overrideCallback:
+                    cb = PycomDeviceServer.__overrideCallback
+                    PycomDeviceServer.__overrideCallback = None
+                    cb()
+                    continuing = True
+                    continue
+
                 self.emitStatusChange("disconnected")
-            except pyboard.PyboardError as er:
-                if str(er) == "Invalid credentials":
-                    self.emitStatusChange("invcredentials")
-                    break
-                elif str(er) == "\nInvalid address":
-                    self.emitStatusChange("invaddress")
-                    break
-                else:
-                    self.emitStatusChange("error")
-            except Exception as e:
-                self.emitStatusChange("error")
+            except (Exception, BaseException) as err:
+                self.__handleChannelExceptions(err)
 
             if PycomDeviceServer.__keepTrying == False or PycomDeviceServer.__shutdown == True:
                 break
@@ -238,11 +259,13 @@ class PycomDeviceServer(QObject):
                     time.sleep(1.0 / 4)
                     if PycomDeviceServer.__shutdown == True:
                         break
-        PycomDeviceServer.__rx_thread = None
 
+    def signalDataReception(self, text):
+        PycomDeviceServer.dataReceptionEvent.emit(text)
 
-    def signalClientOutput(self, text):
-        PycomDeviceServer.clientOutput.emit(text)
+    def overrideControl(self, callback):
+        PycomDeviceServer.__overrideCallback = callback
+        PycomDeviceServer.channel.exit_recv()
 
     def send(self, text):
         try:
