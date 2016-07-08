@@ -30,7 +30,7 @@
     <message>
         <location filename="../Plugins/AboutPlugin/AboutDialog.py" line="25"/>
         <source>&lt;p&gt;{0} is an Integrated Development Environment for the Python programming language. It is written using the PyQt Python bindings for the Qt GUI toolkit and the QScintilla editor widget.&lt;/p&gt;&lt;p&gt;For more information see &lt;a href=&quot;{1}&quot;&gt;{1}&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Please send bug reports to &lt;a href=&quot;mailto:{2}&quot;&gt;{2}&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;To request a new feature please send an email to &lt;a href=&quot;mailto:{3}&quot;&gt;{3}&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;{0} uses third party software which is copyrighted by its respective copyright holder. For details see the copyright notice of the individual package.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;{0} - это интегрированная среда разработки программ на языке Питон. Написана с использованием питоновского интерфейса к графической библиотеке Qt и библиотеке редактора текстов QScintilla.&lt;/p&gt;&lt;p&gt;Дополнительная информация имеется здесь: &lt;a href=&quot;{1}&quot;&gt;{1}&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Сообщения об ошибках посылать сюда: &lt;a href=&quot;mailto:{2}&quot;&gt;{2}&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Предложения и просьбы о новой функциональности посылать по адресу &lt;a href=&quot;mailto:{3}&quot;&gt;{3}&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;{0} использует дополнительное программное обеспечение со своими собственными лицензионными правилами. Более детальную лицензионную информацию можно найти внутри соответствующего програмного пакета.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;{0} - это интегрированная среда разработки для языка программирования Питон. Она написана с использованием связок  PyQt Python для графической библиотеки Qt и виджета редактора QScintilla.&lt;/p&gt;&lt;p&gt;Дополнительную информацию смотрите здесь: &lt;a href=&quot;{1}&quot;&gt;{1}&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Сообщения об ошибках отсылайте сюда: &lt;a href=&quot;mailto:{2}&quot;&gt;{2}&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Предложения и просьбы о новой функциональности отсылайте по адресу &lt;a href=&quot;mailto:{3}&quot;&gt;{3}&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;{0} использует программное обеспечение сторонних производителей, которое охраняется авторскими правами соответствующих владельцев. Для дополнительной информации смотрите уведомление об авторских правах отдельных пакетов.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -470,7 +470,7 @@
     <message>
         <location filename="../Project/AddDirectoryDialog.ui" line="58"/>
         <source>Select, whether a recursive add should be performed</source>
-        <translation>Разрешить просматривать вложенные каталоги</translation>
+        <translation>Разрешить просматривать вложенные директории</translation>
     </message>
     <message>
         <location filename="../Project/AddDirectoryDialog.ui" line="61"/>
@@ -1189,7 +1189,7 @@ the button to the right.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/ApplicationPage.ui" line="17"/>
         <source>&lt;b&gt;Configure the application&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Настройка приложения&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Настройка работы приложений&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ApplicationPage.ui" line="37"/>
@@ -2101,7 +2101,7 @@ the button to the right.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/Browser.py" line="77"/>
         <source>File-Browser</source>
-        <translation>Обозреватель файлов</translation>
+        <translation>Браузер файлов</translation>
     </message>
     <message>
         <location filename="../UI/Browser.py" line="233"/>
@@ -2176,8 +2176,8 @@ the button to the right.&lt;/p&gt;</source>
     <message>
         <location filename="../UI/Browser.py" line="98"/>
         <source>&lt;b&gt;The Browser Window&lt;/b&gt;&lt;p&gt;This allows you to easily navigate the hierarchy of directories and files on your system, identify the Python programs and open them up in a Source Viewer window. The window displays several separate hierarchies.&lt;/p&gt;&lt;p&gt;The first hierarchy is only shown if you have opened a program for debugging and its root is the directory containing that program. Usually all of the separate files that make up a Python application are held in the same directory, so this hierarchy gives you easy access to most of what you will need.&lt;/p&gt;&lt;p&gt;The next hierarchy is used to easily navigate the directories that are specified in the Python &lt;tt&gt;sys.path&lt;/tt&gt; variable.&lt;/p&gt;&lt;p&gt;The remaining hierarchies allow you navigate your system as a whole. On a UNIX system there will be a hierarchy with &lt;tt&gt;/&lt;/tt&gt; at its root and another with the user home directory. On a Windows system there will be a hierarchy for each drive on the system.&lt;/p&gt;&lt;p&gt;Python programs (i.e. those with a &lt;tt&gt;.py&lt;/tt&gt; file name suffix) are identified in the hierarchies with a Python icon. The right mouse button will popup a menu which lets you open the file in a Source Viewer window, open the file for debugging or use it for a unittest run.&lt;/p&gt;&lt;p&gt;The context menu of a class, function or method allows you to open the file defining this class, function or method and will ensure, that the correct source line is visible.&lt;/p&gt;&lt;p&gt;Qt-Designer files (i.e. those with a &lt;tt&gt;.ui&lt;/tt&gt; file name suffix) are shown with a Designer icon. The context menu of these files allows you to start Qt-Designer with that file.&lt;/p&gt;&lt;p&gt;Qt-Linguist files (i.e. those with a &lt;tt&gt;.ts&lt;/tt&gt; file name suffix) are shown with a Linguist icon. The context menu of these files allows you to start Qt-Linguist with that file.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Окно обозревателя&lt;/b&gt;&lt;p&gt;Помогает легко перемещаться по по иерархии директорий и файлов вашей системы, находить программы на Python и открывать их в окне исходных текстов. Окно показывает несколько разных деревьев&lt;/p&gt;
-&lt;p&gt;Первое дерево показывается только тогда, когда вы отлаживаете программу и корневой каталог дерева является каталогом, содержащим программу. Обычно все файлы, составляющие приложение на Python, находятся в одном каталоге, так что это дерево даёт почти всю необходимую информацию.&lt;/p&gt;&lt;p&gt;Следующее дерево используется для лёгкого перемещения по каталогам, перечисленным в переменной Python &lt;tt&gt;sys.path&lt;/tt&gt;&lt;p&gt;Оставшиеся деревья позволяют перемещаться по системе в целом. В системах UNIX будут показаны 2 дерева: дерево с вершиной в корневом каталоге (&lt;tt&gt;/&lt;/tt&gt;) и домашний каталог пользователя. В Windows для каждого диска будет показано своё дерево.&lt;/p&gt;&lt;p&gt;Программы на Python (с расширением &lt;tt&gt;.py&lt;/tt&gt;) показываются с пиктограммой Python. Доступно контекстное меню, позволяющее открыть программу в редакторе, запустить её на отладку или протестировать с помощью unittest.&lt;/p&gt;&lt;p&gt;Контекстное меню на классе, функции или методе откроет файл и перейдёт на нужное место&lt;/p&gt;&lt;p&gt;Файлы описания интерфейса ( &lt;tt&gt;.ui&lt;/tt&gt;, отмеченные пиктограммой Designer) могут быть открыты Designer&apos;ом через контекстное меню или по двойному щелчку&lt;/p&gt;&lt;p&gt;Файлы перевода (&lt;tt&gt;.ts&lt;/tt&gt;, отмеченные пиктограммой Linguist) могут быть отредактированы с помощью Linguist&apos;а&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Окно браузера&lt;/b&gt;&lt;p&gt;Помогает легко перемещаться по по иерархии директорий и файлов вашей системы, находить программы на Python и открывать их в окне исходных текстов. Окно показывает несколько разных деревьев&lt;/p&gt;
+&lt;p&gt;Первое дерево показывается только тогда, когда вы отлаживаете программу и root директория дерева является директорией, содержащей программу. Обычно все файлы, составляющие приложение на Python, находятся в одной директории, так что это дерево даёт почти всю необходимую информацию.&lt;/p&gt;&lt;p&gt;Следующее дерево используется для лёгкого перемещения по директориям, перечисленным в переменной Python &lt;tt&gt;sys.path&lt;/tt&gt;&lt;p&gt;Оставшиеся деревья позволяют перемещаться по системе в целом. В системах UNIX будут показаны 2 дерева: дерево с вершиной в root директории (&lt;tt&gt;/&lt;/tt&gt;) и домашней директории пользователя. В Windows для каждого диска будет показано своё дерево.&lt;/p&gt;&lt;p&gt;Программы на Python (с расширением &lt;tt&gt;.py&lt;/tt&gt;) показываются с пиктограммой Python. Доступно контекстное меню, позволяющее открыть программу в редакторе, запустить её на отладку или протестировать с помощью unittest.&lt;/p&gt;&lt;p&gt;Контекстное меню на классе, функции или методе откроет файл и перейдёт на нужное место&lt;/p&gt;&lt;p&gt;Файлы описания интерфейса ( &lt;tt&gt;.ui&lt;/tt&gt;, отмеченные пиктограммой Designer) могут быть открыты Designer&apos;ом через контекстное меню или по двойному щелчку&lt;/p&gt;&lt;p&gt;Файлы перевода (&lt;tt&gt;.ts&lt;/tt&gt;, отмеченные пиктограммой Linguist) могут быть отредактированы с помощью Linguist&apos;а&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/Browser.py" line="499"/>
@@ -2935,7 +2935,7 @@ Reason: {1}</source>
 &lt;p&gt;This dialog shows the results of the code style check. Double clicking an
 entry will open an editor window and position the cursor at the respective line and position.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Результаты проверки стиля&lt;/b&gt;
-&lt;p&gt;Диалог отображает результаты проверки стиля. Двойной щелчок по
+&lt;p&gt;Отображение результатов проверки стиля. Двойной щелчок по
 записи откроет окно редактора и поместит курсор на соответствующую строку.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -3031,12 +3031,12 @@ entry will open an editor window and position the cursor at the respective line 
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/CodeStyleCheckerDialog.ui" line="325"/>
         <source>Docstring Type:</source>
-        <translation>Тип строки описания:</translation>
+        <translation>Тип строки документации (docstring):</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/CodeStyleCheckerDialog.ui" line="332"/>
         <source>Select the rule set for docstrings</source>
-        <translation>Задайте набор правил для строк описания</translation>
+        <translation>Задайте набор правил для строк документации (docstring)</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/CodeStyleCheckerDialog.ui" line="306"/>
@@ -3075,7 +3075,7 @@ entry will open an editor window and position the cursor at the respective line 
 an entry will open this entry in an editor window and position the cursor at
 the respective line and position.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Список результатов&lt;/p&gt;
-&lt;p&gt;Список отображает результаты проверки стиля. Двойной щелчок
+&lt;p&gt;Отображение списка результатов проверки стиля. Двойной щелчок
 по элементу откроет редактор с курсором на соответствующей строке и колонке.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -3304,12 +3304,12 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/PluginCodeStyleChecker.py" line="255"/>
         <source>Check code style.</source>
-        <translation>Проверка стиля кода.</translation>
+        <translation>Проверить стиль кода.</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginCodeStyleChecker.py" line="351"/>
         <source>&lt;b&gt;Check Code Style...&lt;/b&gt;&lt;p&gt;This checks Python files for compliance to the code style conventions given in various PEPs.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Проверка стиля кода...&lt;/b&gt;&lt;p&gt;Проверка файлов Python на соответствие стилю, рекомендованному в различных PEP.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Проверить стиль кода...&lt;/b&gt;&lt;p&gt;Проверка файлов Python на соответствие стилю, рекомендованному в различных PEP.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginCodeStyleChecker.py" line="110"/>
@@ -3365,37 +3365,37 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="452"/>
         <source>Single line docstring put on one line.</source>
-        <translation>Одиночная строка описания размещена на одной строке.</translation>
+        <translation>Одиночная docstring распологается в одной строке.</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="455"/>
         <source>Period added to summary line.</source>
-        <translation>Добавлена точка в строке резюме.</translation>
+        <translation>Добавлена точка в строке summary.</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="482"/>
         <source>Blank line before function/method docstring removed.</source>
-        <translation>Удалена пустая строка перед описанием функции или метода.</translation>
+        <translation>Удалена пустая строка перед docstring для function/method.</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="461"/>
         <source>Blank line inserted before class docstring.</source>
-        <translation>Добавлена пустая строка перед описанием класса.</translation>
+        <translation>Добавлена пустая строка перед docstring для class.</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="464"/>
         <source>Blank line inserted after class docstring.</source>
-        <translation>Добавлена пустая строка после документации класса.</translation>
+        <translation>Добавлена пустая строка после docstring для class.</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="467"/>
         <source>Blank line inserted after docstring summary.</source>
-        <translation>Добавлена пустая строка после строки резюме.</translation>
+        <translation>Добавлена пустая строка после docstring для summary.</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="470"/>
         <source>Blank line inserted after last paragraph of docstring.</source>
-        <translation>Добавлена пустая строка после последнего абзаца.</translation>
+        <translation>Добавлена пустая строка после последнего абзаца docstring.</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="473"/>
@@ -3410,17 +3410,17 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="479"/>
         <source>Blank line before class docstring removed.</source>
-        <translation>Удалена пустая строка перед документацией класса.</translation>
+        <translation>Удалена пустая строка перед docstring для class.</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="485"/>
         <source>Blank line after class docstring removed.</source>
-        <translation>Удалена пустая строка после документации класса.</translation>
+        <translation>Удалена пустая строка после docstring для class.</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="488"/>
         <source>Blank line after function/method docstring removed.</source>
-        <translation>Удалена пустая строка после описания функции или метода.</translation>
+        <translation>Удалена пустая строка после docstring для function/method.</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="491"/>
@@ -3578,7 +3578,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="593"/>
         <source>Could not save the file! Skipping it. Reason: {0}</source>
-        <translation>Невозможно сохранить файл! Игнорирую. Причина: {0}</translation>
+        <translation>Не удалось сохранить файл! Пропускаем. Причина: {0}</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="658"/>
@@ -3706,7 +3706,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/ColorDialogWizard/ColorDialogWizardDialog.ui" line="29"/>
         <source>Select to generate a QColorDialog.getColor dialog</source>
-        <translation>Разрешить создание диалога QColorDialog.getColor</translation>
+        <translation>Создать диалог QColorDialog.getColor</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/ColorDialogWizard/ColorDialogWizardDialog.ui" line="143"/>
@@ -4072,7 +4072,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="127"/>
         <source>Application</source>
-        <translation>Приложение</translation>
+        <translation>Приложения</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="130"/>
@@ -4112,7 +4112,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="351"/>
         <source>Printer</source>
-        <translation>Принтер</translation>
+        <translation>Печать</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="200"/>
@@ -4147,7 +4147,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="194"/>
         <source>Debugger</source>
-        <translation>Отладчик</translation>
+        <translation>Отладка</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="227"/>
@@ -4172,7 +4172,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="213"/>
         <source>Autocompletion</source>
-        <translation>Автозавершение</translation>
+        <translation>Автодополнение</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="224"/>
@@ -4187,7 +4187,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="230"/>
         <source>Filehandling</source>
-        <translation>Режим работы с файлами</translation>
+        <translation>Работа с файлами</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="234"/>
@@ -4242,7 +4242,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="358"/>
         <source>Help</source>
-        <translation>Помощь</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="367"/>
@@ -4252,7 +4252,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="361"/>
         <source>Help Documentation</source>
-        <translation>Справка</translation>
+        <translation>Справочная документация</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="285"/>
@@ -4267,7 +4267,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="293"/>
         <source>Project Viewer</source>
-        <translation>Обозреватель проекта</translation>
+        <translation>Просмотр проектов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="299"/>
@@ -4282,7 +4282,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="310"/>
         <source>Viewmanager</source>
-        <translation>Управление видом</translation>
+        <translation>Менеджер видов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="526"/>
@@ -4344,7 +4344,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="148"/>
         <source>Log-Viewer</source>
-        <translation>Просмотрщик журналов</translation>
+        <translation>Просмотр журнала</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="151"/>
@@ -4359,7 +4359,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="273"/>
         <source>Mouse Click Handlers</source>
-        <translation>Обработчики кликов мышки</translation>
+        <translation>Обработка кликов мышки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationDialog.py" line="367"/>
@@ -4564,7 +4564,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Helpviewer/CookieJar/CookiesConfigurationDialog.ui" line="118"/>
         <source>I exit the application</source>
-        <translation>Выход из приложения</translation>
+        <translation>Выхода из приложения</translation>
     </message>
     <message>
         <location filename="../Helpviewer/CookieJar/CookiesConfigurationDialog.ui" line="123"/>
@@ -4589,7 +4589,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Helpviewer/CookieJar/CookiesConfigurationDialog.ui" line="144"/>
         <source>&amp;Filter Tracking Cookies</source>
-        <translation>&amp;Отфильтровать куки</translation>
+        <translation>&amp;Фильтровать отслеживаемые куки</translation>
     </message>
 </context>
 <context>
@@ -4855,7 +4855,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/CorbaPage.ui" line="57"/>
         <source>Press to select the IDL compiler via a file selection dialog.</source>
-        <translation>Выбор компилятора интерфейсов с помощью файлового диалога.</translation>
+        <translation>Выбор компилятора интерфейсов посредством файлового диалога.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/CorbaPage.ui" line="43"/>
@@ -5052,7 +5052,7 @@ Not connected
         <location filename="../Debugger/DebugUI.py" line="182"/>
         <source>&lt;b&gt;Run Script&lt;/b&gt;&lt;p&gt;Set the command line arguments and run the script outside the debugger. If the file has unsaved changes it may be saved first.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Выполнить сценарий&lt;/b&gt;
-&lt;p&gt;Задайте аргументы и выполните сценарий без отладки. Если файл не был сохранён, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
+&lt;p&gt;Задание аргументов и запуск сценария без отладки. Если файл не был сохранён, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/DebugUI.py" line="1780"/>
@@ -5073,7 +5073,7 @@ Not connected
         <location filename="../Debugger/DebugUI.py" line="197"/>
         <source>&lt;b&gt;Run Project&lt;/b&gt;&lt;p&gt;Set the command line arguments and run the current project outside the debugger. If files of the current project have unsaved changes they may be saved first.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Выполнить проект&lt;/b&gt;
-&lt;p&gt;Задайте аргументы командной строки и выполните проект без отладки. Если файлы проекта не были сохранёны, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
+&lt;p&gt;Задание аргументов командной строки и запуск проекта без отладки. Если файлы проекта не были сохранены, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/DebugUI.py" line="207"/>
@@ -5094,7 +5094,7 @@ Not connected
         <location filename="../Debugger/DebugUI.py" line="214"/>
         <source>&lt;b&gt;Coverage run of Script&lt;/b&gt;&lt;p&gt;Set the command line arguments and run the script under the control of a coverage analysis tool. If the file has unsaved changes it may be saved first.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Охватывающее выполнение сценария&lt;/b&gt;
-&lt;p&gt;Задайте аргументы командной строки и запустите сценарий под управлением программы охватывающего анализа. Если файл не был сохранён, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
+&lt;p&gt;Задание аргументов командной строки и запуск сценария под управлением программы охватывающего анализа. Если файл не был сохранён, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/DebugUI.py" line="223"/>
@@ -5115,7 +5115,7 @@ Not connected
         <location filename="../Debugger/DebugUI.py" line="230"/>
         <source>&lt;b&gt;Coverage run of Project&lt;/b&gt;&lt;p&gt;Set the command line arguments and run the current project under the control of a coverage analysis tool. If files of the current project have unsaved changes they may be saved first.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Охватывающее выполнение проекта&lt;/b&gt;
-&lt;p&gt;Задайте аргументы командной строки и запустите проект под управлением программы охватывающего анализа. Если файлы проекта не были сохранёны, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
+&lt;p&gt;Задание аргументов командной строки и запуск проекта под управлением программы охватывающего анализа. Если файлы проекта не были сохранены, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/DebugUI.py" line="240"/>
@@ -5136,7 +5136,7 @@ Not connected
         <location filename="../Debugger/DebugUI.py" line="245"/>
         <source>&lt;b&gt;Profile Script&lt;/b&gt;&lt;p&gt;Set the command line arguments and profile the script. If the file has unsaved changes it may be saved first.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Профилирование сценария&lt;/b&gt;
-&lt;p&gt;Задайте аргументы и запустите сценарий на профилирование. Если файл не был сохранён, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
+&lt;p&gt;Задание аргументов и запуск сценария на профилирование. Если файл не был сохранён, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/DebugUI.py" line="253"/>
@@ -5157,7 +5157,7 @@ Not connected
         <location filename="../Debugger/DebugUI.py" line="260"/>
         <source>&lt;b&gt;Profile Project&lt;/b&gt;&lt;p&gt;Set the command line arguments and profile the current project. If files of the current project have unsaved changes they may be saved first.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Профилировать проект&lt;/b&gt;
-&lt;p&gt;Задайте аргументы и запустите проект на профилирование. Если файлы проекта не были сохранёны, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
+&lt;p&gt;Задание аргументов и запуск проекта на профилирование. Если файлы проекта не были сохранены, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/DebugUI.py" line="1887"/>
@@ -5178,7 +5178,7 @@ Not connected
         <location filename="../Debugger/DebugUI.py" line="275"/>
         <source>&lt;b&gt;Debug Script&lt;/b&gt;&lt;p&gt;Set the command line arguments and set the current line to be the first executable Python statement of the current editor window. If the file has unsaved changes it may be saved first.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Отладка сценария&lt;/b&gt;
-&lt;p&gt;Задайте аргументы командной строки и запустите сценарий на отладку. Если файл не был сохранён, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
+&lt;p&gt;Задание аргументов командной строки и запуск сценария на отладку. Если файл не был сохранён, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/DebugUI.py" line="1902"/>
@@ -5199,7 +5199,7 @@ Not connected
         <location filename="../Debugger/DebugUI.py" line="292"/>
         <source>&lt;b&gt;Debug Project&lt;/b&gt;&lt;p&gt;Set the command line arguments and set the current line to be the first executable Python statement of the main script of the current project. If files of the current project have unsaved changes they may be saved first.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Отладка проекта&lt;/b&gt;
-&lt;p&gt;Задайте аргументы командной строки и запустите проект на отладку. Текущей станет строка, содержащая первый исполняемый оператор Python. Если файлы проекта не были сохранёны, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
+&lt;p&gt;Задание аргументов командной строки и запуск проекта на отладку. Текущей станет строка, содержащая первый исполняемый оператор Python. Если файлы проекта не были сохранены, изменения можно предварительно сохранить.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/DebugUI.py" line="306"/>
@@ -5415,7 +5415,7 @@ Not connected
         <location filename="../Debugger/DebugUI.py" line="484"/>
         <source>&lt;b&gt;Exceptions Filter&lt;/b&gt;&lt;p&gt;Configure the exceptions filter. Only exception types that are listed are highlighted during a debugging session.&lt;/p&gt;&lt;p&gt;Please note, that all unhandled exceptions are highlighted indepent from the filter list.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Фильтр исключений&lt;/b&gt;
-&lt;p&gt;Настроить фильтр исключений. В течение отладочной сессии перехватываются только исключения, помеченные в списке.&lt;/p&gt;
+&lt;p&gt;Настроить фильтр исключений. В течение отладочной сессии перехватываются только исключения, выделенные в списке.&lt;/p&gt;
 &lt;p&gt;Стоит заметить, что все необработанные исключения перехватываются независимо от настроек фильтра.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -5436,7 +5436,7 @@ Not connected
     <message>
         <location filename="../Debugger/DebugUI.py" line="501"/>
         <source>&lt;b&gt;Ignored Exceptions&lt;/b&gt;&lt;p&gt;Configure the ignored exceptions. Only exception types that are not listed are highlighted during a debugging session.&lt;/p&gt;&lt;p&gt;Please note, that unhandled exceptions cannot be ignored.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Игнорированные исключения&lt;/b&gt;&lt;p&gt;Настроить игнорированные исключения. Только исключения не попавшие в данный список будут перехватываться при отладке.&lt;/p&gt;&lt;p&gt;Обратите внимание, что исключения, у которых нет соответствующего обработчика в тексте программы, невозможно игнорировать.&lt;/p&gt;</translation>
+        <translation>,&lt;b&gt;Игнорированные исключения&lt;/b&gt;&lt;p&gt;Настроить игнорированные исключения. Только исключения, не попавшие в данный список, будут перехватываться при отладке.&lt;/p&gt;&lt;p&gt;Обратите внимание, что исключения, у которых нет соответствующего обработчика в тексте программы, невозможно игнорировать.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/DebugUI.py" line="520"/>
@@ -5492,7 +5492,7 @@ Not connected
         <location filename="../Debugger/DebugUI.py" line="552"/>
         <source>&lt;b&gt;Next Breakpoint&lt;/b&gt;&lt;p&gt;Go to next breakpoint of the current editor.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Следующая точка останова&lt;/b&gt;
-&lt;p&gt;Перейти к следующей точке останова в текущем редакторе.&lt;/p&gt;</translation>
+&lt;p&gt;Переход к следующей точке останова в текущем редакторе.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/DebugUI.py" line="566"/>
@@ -5509,7 +5509,7 @@ Not connected
         <location filename="../Debugger/DebugUI.py" line="567"/>
         <source>&lt;b&gt;Previous Breakpoint&lt;/b&gt;&lt;p&gt;Go to previous breakpoint of the current editor.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Предыдущая точка останова&lt;/b&gt;
-&lt;p&gt;Перейти к предыдущей точка останова в текущем редакторе.&lt;/p&gt;</translation>
+&lt;p&gt;Переход к предыдущей точке останова в текущем редакторе.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/DebugUI.py" line="580"/>
@@ -5705,7 +5705,7 @@ Not connected
     <message>
         <location filename="../Debugger/DebugUI.py" line="308"/>
         <source>&lt;b&gt;Restart&lt;/b&gt;&lt;p&gt;Set the command line arguments and set the current line to be the first executable Python statement of the script that was debugged last. If there are unsaved changes, they may be saved first.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Перезапуск&lt;/b&gt;&lt;p&gt;Задать аргументы командной строки и установить текущую строку первой исполняемой строкой программы для отладки. При необходимости сначала сохранить текст программы.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Перезапуск&lt;/b&gt;&lt;p&gt;Задание аргументов командной строки и установка текущей строки первой исполняемой строкой программы для отладки. При необходимости сначала сохранить текст программы.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Debugger/DebugUI.py" line="324"/>
@@ -5723,7 +5723,7 @@ Not connected
     <message>
         <location filename="../Debugger/DebugViewer.py" line="174"/>
         <source>Enter regular expression patterns separated by &apos;;&apos; to define variable filters. </source>
-        <translation>Задайте для фильтров переменных регулярные выражения, разделённые &apos;;&apos;.</translation>
+        <translation>Задайте для фильтров переменных маски регулярных выражений, разделённые &apos;;&apos;.</translation>
     </message>
     <message>
         <location filename="../Debugger/DebugViewer.py" line="178"/>
@@ -5776,7 +5776,7 @@ Not connected
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerGeneralPage.ui" line="17"/>
         <source>&lt;b&gt;Configure general debugger settings&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Настройка основных параметров отладчика&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Настройка основных параметров отладки&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerGeneralPage.ui" line="37"/>
@@ -6152,7 +6152,7 @@ Not connected
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerGeneralPage.ui" line="577"/>
         <source>Automatically view source code when user changes the callstack frame in the callstack viewer.</source>
-        <translation>Автоматический просмотр исходного кода когда пользователь меняет стек вызовов в просмотрщике стека вызовов.</translation>
+        <translation>Автоматический просмотр исходного кода когда пользователь меняет стек вызовов в окне стека вызовов.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerGeneralPage.ui" line="580"/>
@@ -6284,7 +6284,7 @@ Not connected
     <message>
         <location filename="../Project/DebuggerPropertiesDialog.ui" line="36"/>
         <source>Press to select the Debug Client via a file selection dialog</source>
-        <translation>Выбрать клиента с помощью файлового диалога</translation>
+        <translation>Выбрать клиента посредством файлового диалога</translation>
     </message>
     <message>
         <location filename="../Project/DebuggerPropertiesDialog.ui" line="46"/>
@@ -6502,12 +6502,12 @@ Not connected
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPython3Page.ui" line="81"/>
         <source>Press to select the Debug Client via a file selection dialog</source>
-        <translation>Выбрать клиента с помощью файлового диалога</translation>
+        <translation>Выбрать клиента посредством файлового диалога</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPython3Page.ui" line="90"/>
         <source>Select the standard debug client</source>
-        <translation>Выберите для отладки стандартного клиента</translation>
+        <translation>Выберите стандартный клиент отладки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPython3Page.ui" line="93"/>
@@ -6517,17 +6517,17 @@ Not connected
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPython3Page.ui" line="100"/>
         <source>Select the custom selected debug client</source>
-        <translation>Выберите своего клиента для отладки</translation>
+        <translation>Выберите пользовательский клиент отладки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPython3Page.ui" line="103"/>
         <source>Custom</source>
-        <translation>Свой</translation>
+        <translation>Пользовательский</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPython3Page.ui" line="110"/>
         <source>Select the multi threaded debug client</source>
-        <translation>Выберите клиента для отладки многопоточных приложений</translation>
+        <translation>Выберите клиент отладки многопоточных приложений</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPython3Page.ui" line="113"/>
@@ -6615,12 +6615,12 @@ Not connected
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPythonPage.ui" line="81"/>
         <source>Press to select the Debug Client via a file selection dialog</source>
-        <translation>Выбрать клиента с помощью файлового диалога</translation>
+        <translation>Выбрать клиента посредством файлового диалога</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPythonPage.ui" line="90"/>
         <source>Select the standard debug client</source>
-        <translation>Выберите для отладки стандартного клиента</translation>
+        <translation>Выберите стандартный клиент отладки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPythonPage.ui" line="93"/>
@@ -6630,17 +6630,17 @@ Not connected
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPythonPage.ui" line="100"/>
         <source>Select the custom selected debug client</source>
-        <translation>Выберите своего клиента для отладки</translation>
+        <translation>Выберите пользовательский клиент отладки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPythonPage.ui" line="103"/>
         <source>Custom</source>
-        <translation>Свой</translation>
+        <translation>Пользовательский</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPythonPage.ui" line="110"/>
         <source>Select the multi threaded debug client</source>
-        <translation>Выберите клиента для отладки многопоточных приложений</translation>
+        <translation>Выберите клиент отладки многопоточных приложений</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/DebuggerPythonPage.ui" line="113"/>
@@ -6901,137 +6901,137 @@ Not connected
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="212"/>
         <source>module is missing a docstring</source>
-        <translation>В модуле отсутствует описание</translation>
+        <translation>в модуле отсутствует docstring</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="214"/>
         <source>public function/method is missing a docstring</source>
-        <translation>В public function/method отсутствует описание</translation>
+        <translation>для public function/method отсутствует docstring</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="217"/>
         <source>private function/method may be missing a docstring</source>
-        <translation>в private function/method возможно отсутствует описание</translation>
+        <translation>для private function/method возможно отсутствует docstring</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="220"/>
         <source>public class is missing a docstring</source>
-        <translation>В public class отсутствует описание</translation>
+        <translation>для public class отсутствует docstring</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="222"/>
         <source>private class may be missing a docstring</source>
-        <translation>В private class возможно отсутствует описание</translation>
+        <translation>для private class возможно отсутствует docstring</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="224"/>
         <source>docstring not surrounded by &quot;&quot;&quot;</source>
-        <translation>Описание не заключено в &quot;&quot;&quot;</translation>
+        <translation>docstring не заключена в &quot;&quot;&quot;</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="226"/>
         <source>docstring containing \ not surrounded by r&quot;&quot;&quot;</source>
-        <translation>Описание содержащее \ не заключено в r&quot;&quot;&quot;</translation>
+        <translation>docstring содержит \ не заключеный в r&quot;&quot;&quot;</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="229"/>
         <source>docstring containing unicode character not surrounded by u&quot;&quot;&quot;</source>
-        <translation>Описание содержащее unicode не заключено в u&quot;&quot;&quot;</translation>
+        <translation>docstring содержит unicode-символ не заключенный в u&quot;&quot;&quot;</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="232"/>
         <source>one-liner docstring on multiple lines</source>
-        <translation> однострочное описание размещается на нескольких строках</translation>
+        <translation>однострочная docstring размещается на нескольких строках</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="234"/>
         <source>docstring has wrong indentation</source>
-        <translation>у описания неправильный отступ</translation>
+        <translation>docstring с неправильным отступом</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="277"/>
         <source>docstring summary does not end with a period</source>
-        <translation>резюме в документации не заканчивается точкой</translation>
+        <translation>docstring для summary не заканчивается точкой</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="240"/>
         <source>docstring summary is not in imperative mood (Does instead of Do)</source>
-        <translation>описание выполнено не в повелительном наклонении</translation>
+        <translation>docstring для summary не в повелительном наклонении</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="244"/>
         <source>docstring summary looks like a function&apos;s/method&apos;s signature</source>
-        <translation>резюме в документации выглядит как описание функции</translation>
+        <translation>docstring для summary выглядит как описание функции</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="247"/>
         <source>docstring does not mention the return value type</source>
-        <translation>документация не описывает тип результата</translation>
+        <translation>docstring не описывает тип возвращаемого значения</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="250"/>
         <source>function/method docstring is separated by a blank line</source>
-        <translation>описание function/method разделено пустыми строками</translation>
+        <translation>docstring для function/method разделена пустыми строками</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="253"/>
         <source>class docstring is not preceded by a blank line</source>
-        <translation>отсутствует пустая строка перед документацией класса</translation>
+        <translation>docstring для class не предваряется пустой строкой</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="256"/>
         <source>class docstring is not followed by a blank line</source>
-        <translation>отсутствует пустая строка после документации класса</translation>
+        <translation>отсутствует пустая строка после docstring для class</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="311"/>
         <source>docstring summary is not followed by a blank line</source>
-        <translation>отсутствует пустая строка после строки резюме</translation>
+        <translation>отсутствует пустая строка после docstring для summary</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="262"/>
         <source>last paragraph of docstring is not followed by a blank line</source>
-        <translation>отсутствует пустая строка после последнего абзаца</translation>
+        <translation>отсутствует пустая строка после последнего абзаца docstring</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="266"/>
         <source>private function/method is missing a docstring</source>
-        <translation>в private function/method отсутствует описание</translation>
+        <translation>для private function/method отсутствует docstring</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="269"/>
         <source>private class is missing a docstring</source>
-        <translation>в private  class отсутствует описание</translation>
+        <translation>для private  class отсутствует docstring</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="271"/>
         <source>leading quotes of docstring not on separate line</source>
-        <translation>открывающие кавычки размещены не на отдельной строке</translation>
+        <translation>открывающие кавычки docstring размещены не на отдельной строке</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="274"/>
         <source>trailing quotes of docstring not on separate line</source>
-        <translation>закрывающие кавычки размещены не на отдельной строке</translation>
+        <translation>закрывающие кавычки docstring размещены не на отдельной строке</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="281"/>
         <source>docstring does not contain a @return line but function/method returns something</source>
-        <translation>в документации функции возвращающей что либо отсутствует строка с @return</translation>
+        <translation>docstring не содержит строчки @return, но function/method что-то возвращает</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="285"/>
         <source>docstring contains a @return line but function/method doesn&apos;t return anything</source>
-        <translation>в документации функции не возвращающей ничего присутствует строка с @return</translation>
+        <translation>docstring содержит строчку @return, но function/method ничего не возвращает</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="289"/>
         <source>docstring does not contain enough @param/@keyparam lines</source>
-        <translation>в документации недостаточно строк с @param/@keyparam</translation>
+        <translation>в docstring недостаточно строк с @param/@keyparam</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="292"/>
         <source>docstring contains too many @param/@keyparam lines</source>
-        <translation>в документации слишком много строк с @param/@keyparam</translation>
+        <translation>в docstring слишком много строк с @param/@keyparam</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="295"/>
@@ -7046,37 +7046,37 @@ Not connected
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="301"/>
         <source>class docstring is preceded by a blank line</source>
-        <translation>пустая строка перед документацией класса</translation>
+        <translation>пустая строка предшествует docstring для class</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="303"/>
         <source>class docstring is followed by a blank line</source>
-        <translation>пустая строка после документации класса</translation>
+        <translation>пустая строка после docstring для class</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="305"/>
         <source>function/method docstring is preceded by a blank line</source>
-        <translation>описанию function/method предшествует пустая строка</translation>
+        <translation>docstring для function/method предшествует пустая строка</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="308"/>
         <source>function/method docstring is followed by a blank line</source>
-        <translation>описание function/method завершает пустая строка</translation>
+        <translation>за docstring для function/method следует пустая строка</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="314"/>
         <source>last paragraph of docstring is followed by a blank line</source>
-        <translation>пустая строка после последнего абзаца</translation>
+        <translation>за последним абзацем docstring следует пустая строка</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="317"/>
         <source>docstring does not contain a @exception line but function/method raises an exception</source>
-        <translation>в описании function/method, вызывающих исключение, отсутствует строка с @exception</translation>
+        <translation>docstring не содержит @exception, но function/method вызывает исключение</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="321"/>
         <source>docstring contains a @exception line but function/method doesn&apos;t raise an exception</source>
-        <translation>в описании функции/метода, не вызывающих исключение, присутствует строка с @exception</translation>
+        <translation>docstring содержит @exception, но function/method не вызывает исключение</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="326"/>
@@ -7086,12 +7086,12 @@ Not connected
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="236"/>
         <source>docstring does not contain a summary</source>
-        <translation>документация не содержит резюме</translation>
+        <translation>docstring не содержит summary</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="279"/>
         <source>docstring summary does not start with &apos;{0}&apos;</source>
-        <translation>резюме не начинается с &apos;{0}&apos;</translation>
+        <translation>docstring для summary не начинается с &apos;{0}&apos;</translation>
     </message>
 </context>
 <context>
@@ -7346,9 +7346,9 @@ Do you want to quit anyway?</source>
         <location filename="../Helpviewer/Download/DownloadUtilities.py" line="31"/>
         <source>%n seconds remaining</source>
         <translation>
-            <numerusform>Осталась %n секунда@Осталось %n секунды@Осталось %n секунд</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+            <numerusform>Осталась %n секунда</numerusform>
+            <numerusform>Осталось %n секунды</numerusform>
+            <numerusform>Осталось %n секунд</numerusform>
         </translation>
     </message>
     <message>
@@ -7727,7 +7727,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.py" line="46"/>
         <source>Help</source>
-        <translation>Помощь</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.py" line="47"/>
@@ -8140,7 +8140,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../E5Network/E5SslCertificatesDialog.py" line="363"/>
         <source>&lt;p&gt;Shall the CA certificate really be deleted?&lt;/p&gt;&lt;p&gt;{0}&lt;/p&gt;&lt;p&gt;If the CA certificate is deleted, the browser will not trust any certificate issued by this CA.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Удалить CA сертификат?&lt;/p&gt;&lt;p&gt;{0}&lt;/p&gt;&lt;p&gt;Если CA сертификат будет удалён, то обозреватель не будет доверять ни одному сертификату, выданному этим CA.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Удалить CA сертификат?&lt;/p&gt;&lt;p&gt;{0}&lt;/p&gt;&lt;p&gt;Если CA сертификат будет удалён, то браузер не будет доверять ни одному сертификату, выданному этим CA.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../E5Network/E5SslCertificatesDialog.py" line="510"/>
@@ -8534,7 +8534,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../E5Gui/E5ToolBarDialog.ui" line="137"/>
         <source>&lt;b&gt;Current Toolbar Actions&lt;/b&gt;&lt;p&gt;This list shows the actions of the selected toolbar. Select an action and use the up or down button to change the order of actions or the left button to delete it. To add an action to the toolbar, select it in the list of available actions and press the right button.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Функции текущей панели инструментов&lt;/b&gt;&lt;p&gt;Это список функций текущей панели инструментов. Выбрав нужную функцию вы можете изменить её положение с помощью клавиш со стрелкой вверх или вниз или удалить с помощью клавиши со стрелкой влево. Чтобы добавить функцию на текущую панель, выделите её в списке имеющихся функций и нажмите на клавишу со стрелкой вправо.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Акциии текущей панели инструментов&lt;/b&gt;&lt;p&gt;В этом список отображаются действия текущей панели инструментов. Выберите нужное действие. Используя кнопки вверх и вниз вы можете изменять порядок действий,  или удалить с помощью кнопки влево. Чтобы добавить действие на текущую панель инструментов, выделите его в списке доступных действий и нажмите на кнопку вправо.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../E5Gui/E5ToolBarDialog.ui" line="149"/>
@@ -8638,7 +8638,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Debugger/EditBreakpointDialog.ui" line="33"/>
         <source>Select, whether the breakpoint is enabled</source>
-        <translation>Разрешить точки останова</translation>
+        <translation>Разрешены точки останова</translation>
     </message>
     <message>
         <location filename="../Debugger/EditBreakpointDialog.ui" line="36"/>
@@ -8648,7 +8648,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Debugger/EditBreakpointDialog.ui" line="46"/>
         <source>Select whether this is a temporary breakpoint</source>
-        <translation>Разрешить временные точки останова</translation>
+        <translation>Разрешить временныея точки останова</translation>
     </message>
     <message>
         <location filename="../Debugger/EditBreakpointDialog.ui" line="49"/>
@@ -8658,12 +8658,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Debugger/EditBreakpointDialog.ui" line="56"/>
         <source>Enter the filename of the breakpoint</source>
-        <translation>Выберите имя файла точки останова</translation>
+        <translation>Введите имя файла точки останова</translation>
     </message>
     <message>
         <location filename="../Debugger/EditBreakpointDialog.ui" line="72"/>
         <source>Enter or select a condition for the breakpoint</source>
-        <translation>Задайте условие точки останова</translation>
+        <translation>Введите или выберите условие точки останова</translation>
     </message>
     <message>
         <location filename="../Debugger/EditBreakpointDialog.ui" line="82"/>
@@ -8731,7 +8731,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Debugger/EditWatchpointDialog.ui" line="65"/>
         <source>Select, whether the watch expression is enabled</source>
-        <translation>Разрешить выражение для отслеживания</translation>
+        <translation>Разрешить выражения для отслеживания</translation>
     </message>
     <message>
         <location filename="../Debugger/EditWatchpointDialog.ui" line="68"/>
@@ -8799,7 +8799,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../QScintilla/Editor.py" line="400"/>
         <source>&lt;b&gt;A Source Editor Window&lt;/b&gt;&lt;p&gt;This window is used to display and edit a source file.  You can open as many of these as you like. The name of the file is displayed in the window&apos;s titlebar.&lt;/p&gt;&lt;p&gt;In order to set breakpoints just click in the space between the line numbers and the fold markers. Via the context menu of the margins they may be edited.&lt;/p&gt;&lt;p&gt;In order to set bookmarks just Shift click in the space between the line numbers and the fold markers.&lt;/p&gt;&lt;p&gt;These actions can be reversed via the context menu.&lt;/p&gt;&lt;p&gt;Ctrl clicking on a syntax error marker shows some info about this error.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Окно редактора&lt;/b&gt;&lt;p&gt;Это окно используется для просмотра и редактирования исходных текстов приложений. Вы можете открыть несколько окон одновременно. Имя редактируемого файла отображается в заголовке окна.&lt;/p&gt;&lt;p&gt;Чтобы установить точку останова -  кликните в пространство между номером строки и меткой свёртки на нужной строке. Появившийся маркер точки останова можно настроить через контекстное меню.&lt;/p&gt;&lt;p&gt;Чтобы установить закладку кликните в пространство между номером строки и меткой свёртки на нужной строке при нажатой клавише Shift.&lt;/p&gt;&lt;p&gt;Эти действия можно отменить через контекстное меню.&lt;/p&gt;&lt;p&gt;Если при нажатой клавише Ctrl кликнуть на маркер синтаксической ошибки, то будет показана дополнительная информация об ошибке.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Окно редактора&lt;/b&gt;&lt;p&gt;Это окно используется для просмотра и редактирования исходных текстов приложений. Вы можете открыть несколько окон одновременно. Имя редактируемого файла отображается в заголовке окна.&lt;/p&gt;&lt;p&gt;Чтобы установить точку останова -  кликните в пространство между номером строки и маркером свёртки на нужной строке. Появившийся маркер точки останова можно настроить через контекстное меню.&lt;/p&gt;&lt;p&gt;Чтобы установить закладку кликните в пространство между номером строки и меткой свёртки на нужной строке при нажатой клавише Shift.&lt;/p&gt;&lt;p&gt;Эти действия можно отменить через контекстное меню.&lt;/p&gt;&lt;p&gt;Если при нажатой клавише Ctrl кликнуть на маркер синтаксической ошибки, то будет показана дополнительная информация об ошибке.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="658"/>
@@ -9034,7 +9034,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../QScintilla/Editor.py" line="932"/>
         <source>Guessed</source>
-        <translation>Догадки</translation>
+        <translation>Предположения</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="1267"/>
@@ -9284,12 +9284,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../QScintilla/Editor.py" line="4412"/>
         <source>Autocompletion</source>
-        <translation>Автозавершение</translation>
+        <translation>Автодополнение</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="4412"/>
         <source>Autocompletion is not available because there is no autocompletion source set.</source>
-        <translation>Автозавершение недоступно, так как не задан источник автозавершения.</translation>
+        <translation>Автодополнение недоступно, так как не задан источник автодополнения.</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="5142"/>
@@ -9404,7 +9404,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../QScintilla/Editor.py" line="6286"/>
         <source>Start Macro Recording</source>
-        <translation>Начало записи макроса</translation>
+        <translation>Начать запись макроса</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="6286"/>
@@ -9549,12 +9549,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../QScintilla/Editor.py" line="4517"/>
         <source>Activating Auto-Completion Provider</source>
-        <translation>Активация автозавершения</translation>
+        <translation>Активация источника автодополнения</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="4517"/>
         <source>Auto-completion provider cannot be connected because there is already another one active. Please check your configuration.</source>
-        <translation>Автозавершение не может быть подключено, потому что уже активно. Пожалуйста, проверьте конфигурацию.</translation>
+        <translation>Автодополнение не может быть подключено, потому что оно уже активно. Пожалуйста, проверьте конфигурацию.</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="4837"/>
@@ -9639,32 +9639,32 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../QScintilla/Editor.py" line="738"/>
         <source>Automatic Completion enabled</source>
-        <translation>Автоматическое завершение</translation>
+        <translation>Автоматическое дополнение</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="814"/>
         <source>Complete</source>
-        <translation>Завершить</translation>
+        <translation>Дополнить</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="4566"/>
         <source>Auto-Completion Provider</source>
-        <translation>Провайдер автозавершений</translation>
+        <translation>Источник автодополнений</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="4566"/>
         <source>The completion list provider &apos;{0}&apos; was already registered. Ignoring duplicate request.</source>
-        <translation>Список завершений провайдера &apos;{0}&apos; уже зарегистрирован. Повторный запрос проигнорирован.</translation>
+        <translation>Список дополнений источника &apos;{0}&apos; уже зарегистрирован. Повторный запрос проигнорирован.</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="4880"/>
         <source>Call-Tips Provider</source>
-        <translation>Провайдер подсказок (Call-Tips)</translation>
+        <translation>Источник всплывающих подсказок </translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="4880"/>
         <source>The call-tips provider &apos;{0}&apos; was already registered. Ignoring duplicate request.</source>
-        <translation>Список подсказок провайдера &apos;{0}&apos; уже зарегистрирован. Повторный запрос проигнорирован.</translation>
+        <translation>Источник всплывающих подсказок &apos;{0}&apos; уже зарегистрирован. Повторный запрос проигнорирован.</translation>
     </message>
     <message>
         <location filename="../QScintilla/Editor.py" line="7731"/>
@@ -9815,12 +9815,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="37"/>
         <source>Select this to enable autocompletion</source>
-        <translation>Разрешить автозавершение</translation>
+        <translation>Разрешить автодополнение</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="40"/>
         <source>&lt;b&gt;Autocompletion Enabled&lt;/b&gt;&lt;p&gt;Select to enable autocompletion. In order to get autocompletion from alternative autocompletion providers (if installed), these have to be enabled on their respective configuration page. Only one alternative provider might be enabled.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Разрешить автозавершение&lt;/b&gt;&lt;p&gt;Разрешить автозавершение. Чтобы разрешить автозавершение из альтернативного плагина (если он установлен) нужно разрешить его на соответствуещей странице настройки этого плагина. Допустимо использование только одного источника автозавершения.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Разрешить автодополнение&lt;/b&gt;&lt;p&gt;Разрешить автодополнение. Чтобы разрешить автодополнение из альтернативного плагина (если он установлен) нужно разрешить его на соответствуещей странице настройки этого плагина. Допустимо использование только одного альтернативного источника автодополнения.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="53"/>
@@ -9830,7 +9830,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="59"/>
         <source>Select this to have case sensitive auto-completion lists</source>
-        <translation>Разрешить учитывать регистр в списках автозавершения</translation>
+        <translation>Разрешить учитывать регистр в списках автодополнения</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="62"/>
@@ -9855,22 +9855,22 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="88"/>
         <source>Move to set the threshold for display of an autocompletion list</source>
-        <translation>Задать допуск для отображения списка автозавершения</translation>
+        <translation>Задать допуск для отображения списка автодополнения</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="107"/>
         <source>Displays the selected autocompletion threshold</source>
-        <translation>Выбранный порог автозавершения</translation>
+        <translation>Выбранный порог автодополнения</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="17"/>
         <source>&lt;b&gt;Configure Completion Support&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Настройка поддержки завершения&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Настройка поддержки автодополнения&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="43"/>
         <source>Automatic Completion Enabled</source>
-        <translation>Автоматическое завершение</translation>
+        <translation>Автоматическое дополнение</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="128"/>
@@ -9880,17 +9880,17 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="137"/>
         <source>Qscintilla provided completions are shown, if this option is enabled and completions shall be provided by plug-ins (see completions sub-page of the plug-in) and the plugin-ins don&apos;t deliver any completions.</source>
-        <translation>Отображать предоставленные завершения Qscintilla, если эта опция включена и завершения предоставлены плагинами (см. соответствующие страницы настройки плагинов с завершениями) и плагины не содержат каких-либо доработок.</translation>
+        <translation>Отображать предоставленные дополнения Qscintilla, если эта опция включена и дополнения предоставлены плагинами (см. соответствующие страницы настройки плагинов с дополнениями) и плагины не содержат каких-либо доработок.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="140"/>
         <source>Show QScintilla completions, if plug-ins fail</source>
-        <translation>Отображать завершения QScintilla, если плагины не срабатывают</translation>
+        <translation>Отображать дополнения QScintilla, если плагины не срабатывают</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="134"/>
         <source>Select to show QScintilla provided completions, if the selected plug-ins fail</source>
-        <translation>Разрешить отображение предоставленных завершений QScintilla, если выбранные плагины не срабатывают</translation>
+        <translation>Разрешить отображение предоставленных дополнений QScintilla, если выбранные плагины не срабатывают</translation>
     </message>
 </context>
 <context>
@@ -9898,7 +9898,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionQScintillaPage.ui" line="37"/>
         <source>Select this, if single entries shall be inserted automatically</source>
-        <translation>Разрешить вставлять одиночные записи автоматически</translation>
+        <translation>Разрешить автоматически вставлять одиночные записи</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionQScintillaPage.ui" line="40"/>
@@ -9908,13 +9908,13 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionQScintillaPage.ui" line="47"/>
         <source>Select to enable the use of fill-up characters to autocomplete the current word</source>
-        <translation>Разрешить использовать заполняющие символы для автозавершения текущего слова</translation>
+        <translation>Разрешить использовать заполняющие символы для автодополнения текущего слова</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionQScintillaPage.ui" line="50"/>
         <source>&lt;b&gt;Use fill-up characters&lt;/b&gt;&lt;p&gt;Select to enable the use of fill-up characters to autocomplete the current word. A fill-up character is one that, when entered while an auto-completion list is being displayed, causes the currently selected item from the list to be added to the text followed by the fill-up character.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Использовать заполняющие символы&lt;/b&gt;
-&lt;p&gt;Следует ли использовать заполняющие символы для автозавершения текущего слова. Заполняющий символ — это такой символ, при вводе которого выделенный элемент из выпадающего списка добавляется к тексту, следующему за заполняющим символом.&lt;/p&gt;</translation>
+&lt;p&gt;Следует ли использовать заполняющие символы для автодополнения текущего слова. Заполняющий символ — это такой символ, при вводе которого выделенный элемент из выпадающего списка добавляется к тексту, следующему за заполняющим символом.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionQScintillaPage.ui" line="53"/>
@@ -9929,7 +9929,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionQScintillaPage.ui" line="66"/>
         <source>Select this to get autocompletion from current document</source>
-        <translation>Искать автозавершение в текущем документе</translation>
+        <translation>Искать автодополнения в текущем документе</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionQScintillaPage.ui" line="69"/>
@@ -9939,7 +9939,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionQScintillaPage.ui" line="76"/>
         <source>Select this to get autocompletion from installed APIs</source>
-        <translation>Искать автозавершение в файлах API</translation>
+        <translation>Искать автодополнения в файлах установленного API</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionQScintillaPage.ui" line="79"/>
@@ -9949,7 +9949,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionQScintillaPage.ui" line="86"/>
         <source>Select this to get autocompletion from current document and installed APIs</source>
-        <translation>Искать автозавершение в текущем документе и файлах API</translation>
+        <translation>Искать автодополнения в текущем документе и файлах установленного API</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionQScintillaPage.ui" line="89"/>
@@ -9959,7 +9959,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionQScintillaPage.ui" line="17"/>
         <source>&lt;b&gt;Configure QScintilla Completion&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Настройка завершений QScintilla&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Настройка дополнения QScintilla&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -10007,7 +10007,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorCalltipsPage.ui" line="68"/>
         <source>Visible Calltips</source>
-        <translation>Видимые подсказки</translation>
+        <translation>Видимость подсказок</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorCalltipsPage.ui" line="106"/>
@@ -10080,7 +10080,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorCalltipsQScintillaPage.ui" line="55"/>
         <source>Show context information, if no prior autocompletion</source>
-        <translation>Показывать контекстную информацию если не было предварительного автозавершения</translation>
+        <translation>Показывать контекстную информацию если не было предварительного автодополнения</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorCalltipsQScintillaPage.ui" line="62"/>
@@ -10581,7 +10581,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorGeneralPage.ui" line="37"/>
         <source>Tabs &amp;&amp; Indentation</source>
-        <translation>Табуляция &amp;&amp; Отступы</translation>
+        <translation>Табуляция и отступы</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorGeneralPage.ui" line="45"/>
@@ -11028,7 +11028,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../QScintilla/EditorMarkerMap.py" line="29"/>
         <source>&lt;b&gt;Editor Map&lt;/b&gt;&lt;p&gt;This shows a &apos;map&apos; of the editor. The visible area is highlighted by the box and all markers like bookmarks, breakpoints, errors or changed lines are indicated by differently colored lines configurable via the Editoru279dStyle page of the configuration dialog.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Маркеры редактора&lt;/b&gt;&lt;p&gt;Отображаются маркеры редактора. Все выделения в видимой области, и все маркеры, такие как закладки, точки останова, ошибки или маркеры измененных линий, обозначенные различными цветами, настраиваемыми с помощью страницы стилей редактора в диалоге конфигурации.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Маркеры редактора&lt;/b&gt;&lt;p&gt;Отображаются маркеры редактора. Это все выделения в видимой области, и все маркеры, такие как закладки, точки останова, ошибки или маркеры измененных линий, обозначенные различными цветами, настраиваемыми с помощью страницы стилей редактора в диалоге конфигурации.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -11036,17 +11036,17 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorMouseClickHandlerPage.ui" line="17"/>
         <source>&lt;b&gt;Configure Mouse Click Handler Support&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Настройка поддержки обработчика кликов мышки&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Настройка поддержки обработчиков кликов мышки&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorMouseClickHandlerPage.ui" line="37"/>
         <source>Select this to enable support for mouse click handlers</source>
-        <translation>Разрешить включение поддержки обработчика кликов мышки</translation>
+        <translation>Разрешить поддержку обработчиков кликов мышки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorMouseClickHandlerPage.ui" line="40"/>
         <source>&lt;b&gt;Mouse Click Handlers Enabled&lt;/b&gt;&lt;p&gt;Select to enable support for mouse click handlers. Individual mouse click handlers may be configured on subordinate pages, if such have been installed and registered. This is usually done by plug-ins.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Разрешение обработчиков кликов мышки&lt;/b&gt;&lt;p&gt;Разрешение поддержки обработчиков кликов мышки. Индивидуально обработчики кликов мышки могут быть настроены на соответствующих страницах, если, конечно, были установлены и зарегистрированы. Обычно это делается с помощью плагинов.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Разрешение обработчиков кликов мышки&lt;/b&gt;&lt;p&gt;Включение поддержки обработчиков кликов мышки. Индивидуально обработчики кликов мышки могут быть настроены на соответствующих страницах, если, конечно, были установлены и зарегистрированы. Обычно это делается с помощью плагинов.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorMouseClickHandlerPage.ui" line="43"/>
@@ -11229,12 +11229,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="503"/>
         <source>Select to enable smart highlighting of keywords</source>
-        <translation>Разрешить подсветку ключевых слов</translation>
+        <translation>Разрешить интеллектуальную подсветку ключевых слов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="506"/>
         <source>Smart Highlighting</source>
-        <translation>Подсветка ключевых слов</translation>
+        <translation>Интеллектуальная подсветка</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="516"/>
@@ -11464,12 +11464,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="731"/>
         <source>Select to allow strings to span newline characters</source>
-        <translation>Разрешить завершение строки символом новой строки</translation>
+        <translation>Разрешить дополнение строки символом новой строки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="734"/>
         <source>Strings may span newline characters</source>
-        <translation>Завершение строки символом новой строки</translation>
+        <translation>Дополнение строки символом новой строки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="808"/>
@@ -11539,12 +11539,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="951"/>
         <source>Select to treat \if&lt;unknown&gt; as a command</source>
-        <translation>Разрешить считать \if&lt;unknown&gt;командой</translation>
+        <translation>Разрешить считать \if&lt;unknown&gt; командой</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="954"/>
         <source>Treat \if&lt;unknown&gt; as command</source>
-        <translation>Считать \if&lt;unknown&gt;командой</translation>
+        <translation>Считать \if&lt;unknown&gt; командой</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="164"/>
@@ -11554,7 +11554,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="774"/>
         <source>Highlight sub-identifiers</source>
-        <translation>Выделять субидентификаторы</translation>
+        <translation>Подсвечивать субидентификаторы</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="161"/>
@@ -11564,7 +11564,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="771"/>
         <source>Select to highlight sub-identifiers defined in keyword set 2</source>
-        <translation>Разрешить выделять субидентификаторы определенные в ключе set 2</translation>
+        <translation>Разрешить подсвечивать субидентификаторы, определенные в ключе set 2</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="171"/>
@@ -11619,7 +11619,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="783"/>
         <source>Highlight bad indentation:</source>
-        <translation>Подсветить неправильный отступ:</translation>
+        <translation>Подсвечивать неправильный отступ:</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.py" line="207"/>
@@ -11664,7 +11664,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="194"/>
         <source>Highlight escape sequences</source>
-        <translation>Выделять escape-последовательности</translation>
+        <translation>Подсвечивать escape-последовательности</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="201"/>
@@ -11722,12 +11722,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorSearchPage.ui" line="74"/>
         <source>Timeout for current word highlighting:</source>
-        <translation>Задержка для выделения текущего слова:</translation>
+        <translation>Задержка подсветки текущего слова:</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorSearchPage.ui" line="81"/>
         <source>Enter the time in milliseconds after which occurrences of the current word shall be highlighted</source>
-        <translation>Задержка в мсек для выделения текущего слова</translation>
+        <translation>Задержка в мсек для подсветки текущего слова</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorSearchPage.ui" line="93"/>
@@ -11845,7 +11845,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorSpellCheckingPage.ui" line="272"/>
         <source>Select the personal word list file via a file selection dialog</source>
-        <translation>ВЫбор файла персонального словаря посредством диалога выбора файлов</translation>
+        <translation>Выбор файла персонального словаря посредством диалога выбора файлов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorSpellCheckingPage.ui" line="244"/>
@@ -12149,7 +12149,7 @@ whole selection.&lt;/li&gt;
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="489"/>
         <source>&lt;b&gt;Use custom selection colours&lt;/b&gt;&lt;p&gt;Select this entry in order to use custom selection colours in the editor and shell windows. The colours for the selection foreground and background are defined on the colours page.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Собственные цвета выделения&lt;/b&gt;
-&lt;p&gt;Выберите эту пометку, чтобы использовать собственные цвета для выделения в окнах редактора и оболочки. Цвета выделения устанавливаются на странице настройки цветов.&lt;/p&gt;</translation>
+&lt;p&gt;Выберите эту запись, чтобы использовать собственные цвета для выделения в окнах редактора и оболочки. Цвета выделения устанавливаются на странице настройки цветов.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="492"/>
@@ -12244,27 +12244,27 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="710"/>
         <source>Debugging Line Markers</source>
-        <translation>Пометка текущей строки отладчика</translation>
+        <translation>Маркер текущей строки отладчика</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="716"/>
         <source>Current line marker:</source>
-        <translation>Пометка текущей строки:</translation>
+        <translation>Маркер текущей строки:</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="729"/>
         <source>Select the colour for the current line marker.</source>
-        <translation>Выберите цвет для пометки текущей строки.</translation>
+        <translation>Выберите цвет для маркировки текущей строки.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="739"/>
         <source>Error line marker:</source>
-        <translation>Пометка ошибочной строки:</translation>
+        <translation>Маркер ошибочной строки:</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="752"/>
         <source>Select the colour for the error line marker.</source>
-        <translation>Выберите цвет для пометки ошибочной строки.</translation>
+        <translation>Выберите цвет для маркировки ошибочной строки.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="765"/>
@@ -12439,7 +12439,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="37"/>
         <source>&lt;b&gt;Note:&lt;/b&gt; Fonts and colors of the syntax highlighters have to be configured on the syntax highlighter styles page.</source>
-        <translation>Внимание: Шрифты и цвета для подсветки синтаксиса можно выбрать на странице стилей для подсветки синтаксиса.</translation>
+        <translation>Примечание: Шрифты и цвета подсветки синтаксиса можно выбрать на странице стилей для подсветки синтаксиса.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1158"/>
@@ -12574,12 +12574,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1330"/>
         <source>Timeout for marking changed lines:</source>
-        <translation>Задержка для пометки измененных строк:</translation>
+        <translation>Задержка для маркировки измененных строк:</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1337"/>
         <source>Enter the time in milliseconds after which changed lines will be marked</source>
-        <translation>Задержка в мсек для пометки измененной строки</translation>
+        <translation>Задайте задержку маркировки измененной строки, мсек</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1349"/>
@@ -12694,7 +12694,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1630"/>
         <source>Select the colour for error markers</source>
-        <translation>Выберите цвет для пометки ошибок</translation>
+        <translation>Выберите цвет для маркировки ошибок</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1640"/>
@@ -12704,7 +12704,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1653"/>
         <source>Select the colour for warning markers</source>
-        <translation>Выберите цвет для пометки предупреждений</translation>
+        <translation>Выберите цвет для маркировки предупреждений</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1663"/>
@@ -12714,7 +12714,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1676"/>
         <source>Select the colour for bookmark markers</source>
-        <translation>Выберите цвет для пометки закладок</translation>
+        <translation>Выберите цвет для маркировки закладок</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1686"/>
@@ -12724,7 +12724,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1699"/>
         <source>Select the colour for breakpoint markers</source>
-        <translation>Выберите цвет для пометки точек останова</translation>
+        <translation>Выберите цвет для маркировки точек останова</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1709"/>
@@ -12734,7 +12734,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1722"/>
         <source>Select the colour for task markers</source>
-        <translation>Выберите цвет для пометки задач</translation>
+        <translation>Выберите цвет для маркировки задач</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1732"/>
@@ -12744,17 +12744,17 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1745"/>
         <source>Select the colour for change markers</source>
-        <translation>Выберите цвет для пометки изменений</translation>
+        <translation>Выберите цвет для маркировки изменений</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1755"/>
         <source>Coverage:</source>
-        <translation>Покрытие:</translation>
+        <translation>Охват:</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1768"/>
         <source>Select the colour for coverage markers</source>
-        <translation>Выберите цвет для отображения покрытия</translation>
+        <translation>Выберите цвет для отображения охвата</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1778"/>
@@ -12764,7 +12764,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1791"/>
         <source>Select the colour for the current line marker</source>
-        <translation>Выберите цвет для пометки текущей строки</translation>
+        <translation>Выберите цвет для маркировки текущей строки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorStylesPage.ui" line="1824"/>
@@ -13065,12 +13065,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorTypingPage.ui" line="382"/>
         <source>Select to automatically complete a here document</source>
-        <translation>Разрешить автоматическое завершение встроенного документа</translation>
+        <translation>Разрешить автоматическое завершение документа в этом месте</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorTypingPage.ui" line="385"/>
         <source>Automatic completion of here document</source>
-        <translation>Автоматически завершать документ здесь</translation>
+        <translation>Автоматическое завершение документа здесь</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorTypingPage.ui" line="392"/>
@@ -13086,7 +13086,7 @@ whole selection.&lt;/li&gt;
 <context>
     <name>EmailDialog</name>
     <message>
-        <location filename="../UI/EmailDialog.py" line="337"/>
+        <location filename="../UI/EmailDialog.py" line="339"/>
         <source>Send bug report</source>
         <translation>Отправить сообщение об ошибке</translation>
     </message>
@@ -13196,12 +13196,12 @@ whole selection.&lt;/li&gt;
         <translation>&lt;p&gt;Аутентификация не удалась по причине: {0}&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../UI/EmailDialog.py" line="337"/>
+        <location filename="../UI/EmailDialog.py" line="339"/>
         <source>&lt;p&gt;Message could not be sent.&lt;br&gt;Reason: {0}&lt;/p&gt;</source>
         <translation>&lt;p&gt;Сообщение не может быть отправлено по причине: {0}&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../UI/EmailDialog.py" line="355"/>
+        <location filename="../UI/EmailDialog.py" line="357"/>
         <source>Attach file</source>
         <translation>Прицепить файл</translation>
     </message>
@@ -13412,7 +13412,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericapi/EricapiConfigDialog.ui" line="28"/>
         <source>&lt;b&gt;Output Filename&lt;/b&gt;&lt;p&gt;Enter the filename of the output file. A &apos;%L&apos; placeholder is replaced by the language of the API file.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Имя выходного файла&lt;/b&gt;&lt;p&gt;Введите имя файла для вывода. &apos;%L&apos; будет замещено меткой языка.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Имя файла вывода&lt;/b&gt;&lt;p&gt;Введите имя файла вывода. &apos;%L&apos; будет заменен на язык файла API.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericapi/EricapiConfigDialog.ui" line="45"/>
@@ -13447,7 +13447,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericapi/EricapiConfigDialog.ui" line="115"/>
         <source>Select to recurse into subdirectories</source>
-        <translation>Разрешить обрабатывать вложенные каталоги</translation>
+        <translation>Разрешить рекурсии во вложенные директории</translation>
     </message>
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericapi/EricapiConfigDialog.ui" line="118"/>
@@ -13487,7 +13487,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericapi/EricapiConfigDialog.ui" line="179"/>
         <source>Exclude Directories</source>
-        <translation>Исключить каталоги</translation>
+        <translation>Исключить директории</translation>
     </message>
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericapi/EricapiConfigDialog.ui" line="185"/>
@@ -13663,7 +13663,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericdoc/EricdocConfigDialog.ui" line="81"/>
         <source>Select to recurse into subdirectories</source>
-        <translation>Разрешить обрабатывать вложенные каталоги</translation>
+        <translation>Разрешить рекурсии во вложенные директории</translation>
     </message>
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericdoc/EricdocConfigDialog.ui" line="84"/>
@@ -13703,7 +13703,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericdoc/EricdocConfigDialog.ui" line="167"/>
         <source>Exclude Directories</source>
-        <translation>Исключить каталоги</translation>
+        <translation>Исключить директории</translation>
     </message>
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericdoc/EricdocConfigDialog.ui" line="173"/>
@@ -13918,12 +13918,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericdoc/EricdocConfigDialog.ui" line="479"/>
         <source>Select to generate the QtHelp collection files</source>
-        <translation>Генерировать файлы коллекций Qt помощи</translation>
+        <translation>Генерировать файлы коллекций Qt справки</translation>
     </message>
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericdoc/EricdocConfigDialog.ui" line="482"/>
         <source>Generate QtHelp collection files</source>
-        <translation>Генерировать файлы коллекций Qt помощи</translation>
+        <translation>Генерировать файлы коллекций Qt справки</translation>
     </message>
     <message>
         <location filename="../Plugins/DocumentationPlugins/Ericdoc/EricdocConfigDialog.py" line="56"/>
@@ -14016,7 +14016,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/PluginEricdoc.py" line="90"/>
         <source>Qt Help Tools</source>
-        <translation>Утилиты помощи Qt</translation>
+        <translation>Утилиты  Qt справки</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginEricdoc.py" line="58"/>
@@ -14036,12 +14036,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/PluginEricdoc.py" line="138"/>
         <source>Generate API documentation using eric6_doc</source>
-        <translation>Создать документацию на API с помощью eric6_doc</translation>
+        <translation>Создать документацию API с помощью eric6_doc</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginEricdoc.py" line="140"/>
         <source>&lt;b&gt;Generate documentation&lt;/b&gt;&lt;p&gt;Generate API documentation using eric6_doc.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Создать документацию&lt;/b&gt;&lt;p&gt;Создать документацию на API с помощью eric6_doc&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Создать документацию&lt;/b&gt;&lt;p&gt;Создать документацию API с помощью eric6_doc&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -14386,7 +14386,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Helpviewer/FeaturePermissions/FeaturePermissionsDialog.ui" line="14"/>
         <source>HTML5 Feature Permissions</source>
-        <translation>HTML5 Feature Permissions</translation>
+        <translation>HTML5 Изменение прав доступа</translation>
     </message>
     <message>
         <location filename="../Helpviewer/FeaturePermissions/FeaturePermissionsDialog.ui" line="27"/>
@@ -14650,7 +14650,7 @@ whole selection.&lt;/li&gt;
         <location filename="../Plugins/PluginWizardQFileDialog.py" line="83"/>
         <source>&lt;b&gt;QFileDialog Wizard&lt;/b&gt;&lt;p&gt;This wizard opens a dialog for entering all the parameters needed to create a QFileDialog. The generated code is inserted at the current cursor position.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Мастер QFileDialog&lt;/b&gt;
- &lt;p&gt;Мастер открывает диалог для ввода всех необходимых параметров для вызова QFileDialog. Сгенерированный код вставляется в текущую позицию курсора.&lt;/p&gt;</translation>
+&lt;p&gt;Мастер открывает диалог для ввода всех необходимых параметров для вызова QFileDialog. Сгенерированный код вставляется в текущую позицию курсора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardQFileDialog.py" line="135"/>
@@ -14823,7 +14823,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="381"/>
         <source>Show Directories Only</source>
-        <translation>Показывать только каталоги</translation>
+        <translation>Показывать только директории</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.py" line="74"/>
@@ -15734,7 +15734,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Plugins/WizardPlugins/FontDialogWizard/FontDialogWizardDialog.ui" line="125"/>
         <source>Press to select a font via a dialog</source>
-        <translation>Выбрать шрифт с помощью диалога</translation>
+        <translation>Выбрать шрифт посредством диалога</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FontDialogWizard/FontDialogWizardDialog.ui" line="128"/>
@@ -16254,7 +16254,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpAppearancePage.ui" line="182"/>
         <source>Select the user style sheet via a file selection dialog</source>
-        <translation>ВЫберите пользовательскую таблицу стилей посредством диалога выбора</translation>
+        <translation>Выбор пользовательской таблицы стилей посредством диалога выбора</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpAppearancePage.py" line="135"/>
@@ -16269,7 +16269,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpAppearancePage.ui" line="198"/>
         <source>Show only one close button instead of one for each tab</source>
-        <translation>Показывать только одну общую закрывающую кнопку</translation>
+        <translation>Показывать только одну общую закрывающую кнопку вместо кнопки для каждой вкладки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpAppearancePage.ui" line="208"/>
@@ -16382,22 +16382,22 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="1670"/>
         <source>Search engine</source>
-        <translation>Поисковик</translation>
+        <translation>Поисковая система</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="1670"/>
         <source>Choose the desired search engine</source>
-        <translation>Выберите поисковик</translation>
+        <translation>Выберите нужную поисковую систему</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="1692"/>
         <source>Engine name</source>
-        <translation>Имя поисковика</translation>
+        <translation>Имя движка</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="1692"/>
         <source>Enter a name for the engine</source>
-        <translation>Введите имя поисковика</translation>
+        <translation>Введите имя движка</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="2083"/>
@@ -16826,7 +16826,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.py" line="128"/>
         <source>HTML Files (*.html *.htm);;Compressed Help Files (*.chm);;All Files (*)</source>
-        <translation>HTML файлы (*.html *.htm);;Сжатые файлы помощи (*.chm);;Все файлы (*)</translation>
+        <translation>HTML файлы (*.html *.htm);;Сжатые файлы справки (*.chm);;Все файлы (*)</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.py" line="145"/>
@@ -17004,7 +17004,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpFlashCookieManagerPage.ui" line="158"/>
         <source>Delete all flash cookies on exit/start (except those are in whitelist)</source>
-        <translation>Удалить все флэш-куки при старте/выходе (за исключением тех, которые в белом списке)</translation>
+        <translation>Удалять все флэш-куки при старте/выходе (за исключением тех, которые в белом списке)</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpFlashCookieManagerPage.ui" line="171"/>
@@ -17139,7 +17139,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/HelpTabWidget.py" line="121"/>
         <source>Close the current help window</source>
-        <translation>Закрыть это окно помощи</translation>
+        <translation>Закрыть это окно справки</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpTabWidget.py" line="138"/>
@@ -17325,7 +17325,7 @@ Do you really want to close this page?</source>
     <message>
         <location filename="../Helpviewer/HelpTopicDialog.ui" line="13"/>
         <source>Select Help Topic</source>
-        <translation>Выберите тему помощи</translation>
+        <translation>Выберите тему справки</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpTopicDialog.ui" line="19"/>
@@ -17335,7 +17335,7 @@ Do you really want to close this page?</source>
     <message>
         <location filename="../Helpviewer/HelpTopicDialog.py" line="34"/>
         <source>Choose a &amp;topic for &lt;b&gt;{0}&lt;/b&gt;:</source>
-        <translation>Выберите &amp;тему помощи для &lt;b&gt;{0}&lt;/b&gt;:</translation>
+        <translation>Выберите &amp;тему справки для &lt;b&gt;{0}&lt;/b&gt;:</translation>
     </message>
 </context>
 <context>
@@ -17413,12 +17413,12 @@ Do you really want to close this page?</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpViewersPage.ui" line="100"/>
         <source>Select to use the configured web browser of the system</source>
-        <translation>Разрешить использовать выбранный системный обозреватель Web</translation>
+        <translation>Разрешить использовать выбранный системный Web браузер</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpViewersPage.ui" line="103"/>
         <source>System Web Browser</source>
-        <translation>Системный WEB обозреватель</translation>
+        <translation>Системный WEB браузер</translation>
     </message>
 </context>
 <context>
@@ -17489,17 +17489,17 @@ Do you really want to close this page?</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="17"/>
         <source>&lt;b&gt;Configure web browser&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Настройка WEB обозревателя&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Настройка WEB браузера&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="39"/>
         <source>Select to use a single help browser window only</source>
-        <translation>Разрешить использовать только одно окно обозревателя</translation>
+        <translation>Разрешить использовать только одно окно браузера</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="42"/>
         <source>Use single web browser window</source>
-        <translation>Использовать одно окно обозревателя</translation>
+        <translation>Использовать одно окно браузера</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="49"/>
@@ -17524,12 +17524,12 @@ Do you really want to close this page?</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="69"/>
         <source>Select to show a page preview when the mouse hovers over the tab</source>
-        <translation>Разрешить показ содержимого страницы когда мышь находиться на вкладке</translation>
+        <translation>Разрешить показ содержимого страницы когда мышь находится на вкладке</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="72"/>
         <source>Show preview when hovering tab</source>
-        <translation>Показывать содержание страницы когда мышь находиться на вкладке</translation>
+        <translation>Показывать содержание страницы когда мышь находится на вкладке</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="91"/>
@@ -17629,7 +17629,7 @@ Do you really want to close this page?</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="245"/>
         <source>JavaScript can open windows</source>
-        <translation>JavaScript  может открывать окна</translation>
+        <translation>JavaScript может открывать окна</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="262"/>
@@ -17699,7 +17699,7 @@ Do you really want to close this page?</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="456"/>
         <source>Browser Cache</source>
-        <translation>Кэш обозревателя</translation>
+        <translation>Кэш браузера</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpWebBrowserPage.ui" line="464"/>
@@ -18102,7 +18102,7 @@ URL: {1}</source>
         <location filename="../Helpviewer/HelpWindow.py" line="461"/>
         <source>&lt;b&gt;New Tab&lt;/b&gt;&lt;p&gt;This opens a new help window tab.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Новая вкладка&lt;/b&gt;
-&lt;p&gt;Открывает новую вкладку окна справки.&lt;/p&gt;</translation>
+&lt;p&gt;Открытие новой вкладки окна справки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="469"/>
@@ -18155,7 +18155,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="491"/>
         <source>&lt;b&gt;Open File&lt;/b&gt;&lt;p&gt;This opens a new help file for display. It pops up a file selection dialog.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Открыть файл&lt;/b&gt;&lt;p&gt;Открыть новый файл справки. Вызывает файловый диалог&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Открыть файл&lt;/b&gt;&lt;p&gt;Открытие нового файла справки. Вызывает файловый диалог&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="500"/>
@@ -18182,7 +18182,7 @@ URL: {1}</source>
         <location filename="../Helpviewer/HelpWindow.py" line="508"/>
         <source>&lt;b&gt;Open File in New Tab&lt;/b&gt;&lt;p&gt;This opens a new help file for display in a new tab. It pops up a file selection dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Открыть файл в новой вкладке&lt;/b&gt;
-&lt;p&gt;Открывает файл справки в новой вкладке. Запускает диалог выбора файла&lt;/p&gt;</translation>
+&lt;p&gt;Открытие файла справки в новой вкладке. Запуск диалога выбора файла&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="517"/>
@@ -18264,12 +18264,12 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="603"/>
         <source>Print the displayed help</source>
-        <translation>Печатать текущий раздел помощи</translation>
+        <translation>Печать текущего раздела справки</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="604"/>
         <source>&lt;b&gt;Print&lt;/b&gt;&lt;p&gt;Print the displayed help text.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Печать&lt;/b&gt;&lt;p&gt;Печатать текущий раздел помощи&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Печать&lt;/b&gt;&lt;p&gt;Печать текущего раздела справки&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="613"/>
@@ -18279,12 +18279,12 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="618"/>
         <source>Print the displayed help as PDF</source>
-        <translation>Печатать текущий раздел помощи как PDF</translation>
+        <translation>Печать текущего раздела справки как PDF</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="620"/>
         <source>&lt;b&gt;Print as PDF&lt;/b&gt;&lt;p&gt;Print the displayed help text as a PDF file.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Печать как PDF&lt;/b&gt;&lt;p&gt;Печатать текущий раздел помощи как PDF&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Печать как PDF&lt;/b&gt;&lt;p&gt;Печать текущего раздела справки как PDF&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="631"/>
@@ -18294,12 +18294,12 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="636"/>
         <source>Print preview of the displayed help</source>
-        <translation>Предварительный просмотр печати помощи</translation>
+        <translation>Предварительный просмотр печати справки</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="638"/>
         <source>&lt;b&gt;Print Preview&lt;/b&gt;&lt;p&gt;Print preview of the displayed help text.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Предварительный просмотр печати&lt;/b&gt;&lt;p&gt;Предварительный просмотр печати помощи.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Предварительный просмотр печати&lt;/b&gt;&lt;p&gt;Предварительный просмотр печати справки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="647"/>
@@ -18320,13 +18320,13 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="653"/>
         <source>Close the current help window</source>
-        <translation>Закрыть это окно помощи</translation>
+        <translation>Закрыть это окно справки</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="655"/>
         <source>&lt;b&gt;Close&lt;/b&gt;&lt;p&gt;Closes the current help window.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Закрыть&lt;/b&gt;
-&lt;p&gt;Закрывает текущее окно просмотрщика помощи.&lt;/p&gt;</translation>
+&lt;p&gt;Закрытие текущего окна справки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="663"/>
@@ -18341,13 +18341,13 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="667"/>
         <source>Close all help windows</source>
-        <translation>Закрыть все окна просмотрщиков помощи</translation>
+        <translation>Закрыть все окна справки</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="668"/>
         <source>&lt;b&gt;Close All&lt;/b&gt;&lt;p&gt;Closes all help windows except the first one.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Закрыть все&lt;/b&gt;
-&lt;p&gt;Закрывает все окна просмотрщиков помощи, кроме первого.&lt;/p&gt;</translation>
+&lt;p&gt;Закрывает все окна справки, кроме первого.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="682"/>
@@ -18495,12 +18495,12 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="770"/>
         <source>Reload the current help screen</source>
-        <translation>Перезагрузить это окно помощи</translation>
+        <translation>Перезагрузить текущие окно справки</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="772"/>
         <source>&lt;b&gt;Reload&lt;/b&gt;&lt;p&gt;Reloads the current help screen.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Перезагрузить&lt;/b&gt;&lt;p&gt;Перезагрузить это окно помощи.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Перезагрузить&lt;/b&gt;&lt;p&gt;Перезагрузить текущее окно справки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="780"/>
@@ -18755,7 +18755,7 @@ URL: {1}</source>
         <location filename="../Helpviewer/HelpWindow.py" line="929"/>
         <source>&lt;b&gt;Display context sensitive help&lt;/b&gt;&lt;p&gt;In What&apos;s This? mode, the mouse cursor shows an arrow with a question mark, and you can click on the interface elements to get a short description of what they do and how to use them. In dialogs, this feature can be accessed using the context help button in the titlebar.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Показать контекстную помощь&lt;/b&gt;
-&lt;p&gt;В режиме контекстной помощи курсор мыши выглядит как стрелка со знаком вопроса, и, щёлкнув по элементу интерфейса, Вы можете просмотреть краткую помощь о его роли и его использовании. В диалогах можно воспользоваться кнопкой контекстной помощи в заголовке окна.&lt;/p&gt;</translation>
+&lt;p&gt;В режиме контекстной помощи курсор мыши выглядит как стрелка со знаком вопроса, и, щёлкнув по элементу интерфейса, Вы можете просмотреть краткую справку о его роли и его использовании. В диалогах можно воспользоваться кнопкой контекстной помощи в заголовке окна.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="941"/>
@@ -18873,7 +18873,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1009"/>
         <source>&lt;b&gt;Zoom reset&lt;/b&gt;&lt;p&gt;Reset the zoom of the text. This sets the zoom factor to 100%.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Сбросить масштаб&lt;/b&gt;&lt;p&gt;Сбрасывает масштаб текста. Эта настройка возвращает масштаб текста к 100%.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Сбросить масштаб&lt;/b&gt;&lt;p&gt;Сброс масштаба текста. Эта настройка возвращает масштаб текста к 100%.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1019"/>
@@ -18979,7 +18979,7 @@ URL: {1}</source>
         <location filename="../Helpviewer/HelpWindow.py" line="1100"/>
         <source>&lt;b&gt;Preferences&lt;/b&gt;&lt;p&gt;Set the configuration items of the application with your prefered values.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Предпочтения&lt;/b&gt;
-&lt;p&gt;Настройте Eric по своему вкусу.&lt;/p&gt;</translation>
+&lt;p&gt;Настройка Eric по своему вкусу.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1109"/>
@@ -18999,7 +18999,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1116"/>
         <source>&lt;b&gt;Languages&lt;/b&gt;&lt;p&gt;Configure the accepted languages for web pages.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Языки&lt;/b&gt;&lt;p&gt;Настроить допустимые языки для WEB страниц.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Языки&lt;/b&gt;&lt;p&gt;Настройка допустимых языков WEB страниц.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1125"/>
@@ -19189,22 +19189,22 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1381"/>
         <source>Configure Search Engines</source>
-        <translation>Настройка поисковиков</translation>
+        <translation>Настройка поисковых систем</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1381"/>
         <source>Configure Search &amp;Engines...</source>
-        <translation>Настройка &amp;поисковиков...</translation>
+        <translation>Настройка &amp;поисковых систем...</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1386"/>
         <source>Configure the available search engines</source>
-        <translation>Настройка поисковиков</translation>
+        <translation>Настройка доступных поисковых систем</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1388"/>
         <source>&lt;b&gt;Configure Search Engines...&lt;/b&gt;&lt;p&gt;Opens a dialog to configure the available search engines.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Настроить все поисковики...&lt;/b&gt;&lt;p&gt;Открыть диалог для настройки поисковиков.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Настройка поисковых систем...&lt;/b&gt;&lt;p&gt;Открытие диалога настройки доступных поисковых систем.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1398"/>
@@ -19304,7 +19304,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1732"/>
         <source>&amp;Help</source>
-        <translation>&amp;Помощь</translation>
+        <translation>&amp;Справка</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1743"/>
@@ -19344,7 +19344,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1823"/>
         <source>Help</source>
-        <translation>Помощь</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1830"/>
@@ -19354,7 +19354,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="2033"/>
         <source>Help Files (*.html *.htm);;PDF Files (*.pdf);;CHM Files (*.chm);;All Files (*)</source>
-        <translation>Файлы помощи (*.html *.htm);;Файлы PDF (*.pdf);;Файлы CHM (*.chm);;Все файлы (*)</translation>
+        <translation>Файлы справки (*.html *.htm);;Файлы PDF (*.pdf);;Файлы CHM (*.chm);;Все файлы (*)</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="2175"/>
@@ -19384,12 +19384,12 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="2920"/>
         <source>Unfiltered</source>
-        <translation>Без фильтра</translation>
+        <translation>Unfiltered</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="2939"/>
         <source>Help Engine</source>
-        <translation>Движок для системы помощи</translation>
+        <translation>Движок для системы справки</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="3429"/>
@@ -19508,12 +19508,12 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1523"/>
         <source>Open a dialog showing some information about the current site.</source>
-        <translation>Открыть диалог с информацией о текущем сервере.</translation>
+        <translation>Отображение диалога с информацией о текущем сервере.</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1525"/>
         <source>&lt;b&gt;Siteinfo Dialog...&lt;/b&gt;&lt;p&gt;Opens a dialog showing some information about the current site.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Информация о сервере...&lt;/b&gt;&lt;p&gt;Открыть диалог с информацией о текущем сервере.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Информация о сервере...&lt;/b&gt;&lt;p&gt;Отображение диалога с информацией о текущем сервере.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1815"/>
@@ -19600,7 +19600,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="540"/>
         <source>&lt;b&gt;Save Page Screen...&lt;/b&gt;&lt;p&gt;Saves the current page as a screen shot.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Сохранение страницы...&lt;/b&gt;&lt;p&gt;Сохранение текущей страницы как снимок экрана.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Сохранение страницы...&lt;/b&gt;&lt;p&gt;Сохранение текущей страницы как снимка экрана.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1549"/>
@@ -19640,7 +19640,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1439"/>
         <source>&lt;b&gt;ClickToFlash...&lt;/b&gt;&lt;p&gt;Opens a dialog to configure the ClickToFlash whitelist.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;ClickToFlash...&lt;/b&gt;&lt;p&gt;Открыть диалог для настройки белого списка ClickToFlash.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;ClickToFlash...&lt;/b&gt;&lt;p&gt;Открытие диалога настройки белого списка ClickToFlash.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1171"/>
@@ -19740,7 +19740,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="556"/>
         <source>&lt;b&gt;Save Visible Page Screen...&lt;/b&gt;&lt;p&gt;Saves the visible part of the current page as a screen shot.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Сохранение видимой страницы...&lt;/b&gt;&lt;p&gt;Сохранение видимой части текущей страницы как снимок экрана.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Сохранение видимой страницы...&lt;/b&gt;&lt;p&gt;Сохранение видимой части текущей страницы как снимка экрана.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="2895"/>
@@ -19750,17 +19750,17 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="700"/>
         <source>Quit the eric6 Web Browser</source>
-        <translation>Выйти из Web обозревателя</translation>
+        <translation>Выйти из eric6 Web браузера</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="701"/>
         <source>&lt;b&gt;Quit&lt;/b&gt;&lt;p&gt;Quit the eric6 Web Browser.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Выход&lt;/b&gt;&lt;p&gt;Выйти из Web обозревателя.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Выход&lt;/b&gt;&lt;p&gt;Выйти из eric6 Web браузера.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="2081"/>
         <source>&lt;b&gt;eric6 Web Browser - {0}&lt;/b&gt;&lt;p&gt;The eric6 Web Browser is a combined help file and HTML browser. It is part of the eric6 development toolset.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Eric6 Web обозреватель - {0}&lt;/b&gt;&lt;p&gt;Eric Web обозреватель позволяет просматривать HTML файлы и файлы документации. Является частью инструментов разработчика.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Eric6 Web браузер - {0}&lt;/b&gt;&lt;p&gt;Eric Web браузер позволяет просматривать HTML файлы и файлы документации. Является частью инструментов разработчика.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="3729"/>
@@ -19805,7 +19805,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1232"/>
         <source>&lt;b&gt;Edit HTML5 Feature Permissions&lt;/b&gt;&lt;p&gt;Opens a dialog to edit the remembered HTML5 feature permissions.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Изменение прав доступа к функциям HTML5&lt;/b&gt;&lt;p&gt;Открывает диалог изменения запомненных прав доступа к функциям HTML5.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Изменение прав доступа к функциям HTML5&lt;/b&gt;&lt;p&gt;Открытие диалога изменения запомненных прав доступа к функциям HTML5.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="1140"/>
@@ -20575,7 +20575,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBackoutDialog.ui" line="88"/>
         <source>Select to specify a revision by a tag</source>
-        <translation>Задать ревизию с помощью метки</translation>
+        <translation>Задать ревизию с помощью тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBackoutDialog.ui" line="91"/>
@@ -20585,7 +20585,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBackoutDialog.ui" line="107"/>
         <source>Enter a tag name</source>
-        <translation>Введите имя метки</translation>
+        <translation>Введите имя тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBackoutDialog.ui" line="117"/>
@@ -20738,7 +20738,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarkDialog.ui" line="119"/>
         <source>Select to specify a revision by a tag</source>
-        <translation>Задать ревизию с помощью метки</translation>
+        <translation>Задать ревизию с помощью тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarkDialog.ui" line="122"/>
@@ -20748,7 +20748,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarkDialog.ui" line="138"/>
         <source>Enter a tag name</source>
-        <translation>Введите имя метки</translation>
+        <translation>Введите имя тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarkDialog.ui" line="148"/>
@@ -21068,7 +21068,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBundleDialog.ui" line="55"/>
         <source>Select to specify a revision by a tag</source>
-        <translation>Задать ревизию с помощью метки</translation>
+        <translation>Задать ревизию с помощью тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBundleDialog.ui" line="58"/>
@@ -21078,7 +21078,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBundleDialog.ui" line="68"/>
         <source>Enter a tag name</source>
-        <translation>Введите имя метки</translation>
+        <translation>Введите имя тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBundleDialog.ui" line="78"/>
@@ -21143,7 +21143,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBundleDialog.ui" line="155"/>
         <source>Enter changesets by number, id, range or revset expression one per line</source>
-        <translation>Задайте именения с помощью номера, id, диапазона или выражения revset (по одному в строке)</translation>
+        <translation>Задайте именения с помощью номера, id, диапазона или revset-выражения (по одному в строке)</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBundleDialog.ui" line="148"/>
@@ -21163,7 +21163,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBundleDialog.ui" line="42"/>
         <source>Enter revisions by number, id, range or revset expression one per line</source>
-        <translation>Задайте ревизии с помощью номера, id, диапазона или выражения revset (по одному в строке)</translation>
+        <translation>Задайте ревизии с помощью номера, id, диапазона или revset-выражения (по одному в строке)</translation>
     </message>
 </context>
 <context>
@@ -21776,7 +21776,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgExportDialog.ui" line="72"/>
         <source>Enter changesets by number, id, range or revset expression one per line</source>
-        <translation>Задайте именения с помощью номера, id, диапазона или выражения revset (по одному в строке)</translation>
+        <translation>Задайте именения с помощью номера, id, диапазона или revset-выражения (по одному в строке)</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgExportDialog.ui" line="97"/>
@@ -21877,7 +21877,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/GpgExtension/HgGpgSignDialog.ui" line="88"/>
         <source>Select to specify a revision by a tag</source>
-        <translation>Задать ревизию с помощью метки</translation>
+        <translation>Задать ревизию с помощью тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/GpgExtension/HgGpgSignDialog.ui" line="91"/>
@@ -21887,7 +21887,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/GpgExtension/HgGpgSignDialog.ui" line="107"/>
         <source>Enter a tag name</source>
-        <translation>Введите имя метки</translation>
+        <translation>Введите имя тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/GpgExtension/HgGpgSignDialog.ui" line="117"/>
@@ -22099,7 +22099,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgGraftDialog.ui" line="29"/>
         <source>Enter changesets by number, id, range or revset expression one per line</source>
-        <translation>Задайте именения с помощью номера, id, диапазона или выражения revset (по одному в строке)</translation>
+        <translation>Задайте именения с помощью номера, id, диапазона или revset-выражения (по одному в строке)</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgGraftDialog.ui" line="45"/>
@@ -22672,7 +22672,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgLogBrowserDialog.py" line="120"/>
         <source>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Tags&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</source>
-        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Метки&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Теги&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgLogBrowserDialog.py" line="123"/>
@@ -22985,7 +22985,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMergeDialog.ui" line="88"/>
         <source>Select to specify a revision by a tag</source>
-        <translation>Задать ревизию с помощью метки</translation>
+        <translation>Задать ревизию с помощью тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMergeDialog.ui" line="91"/>
@@ -22995,7 +22995,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMergeDialog.ui" line="101"/>
         <source>Enter a tag name</source>
-        <translation>Введите имя метки</translation>
+        <translation>Введите имя тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMergeDialog.ui" line="111"/>
@@ -23068,7 +23068,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMultiRevisionSelectionDialog.ui" line="55"/>
         <source>Select to specify a revision by a tag</source>
-        <translation>Задать ревизию с помощью метки</translation>
+        <translation>Задать ревизию с помощью тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMultiRevisionSelectionDialog.ui" line="58"/>
@@ -23078,7 +23078,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMultiRevisionSelectionDialog.ui" line="74"/>
         <source>Enter a tag name</source>
-        <translation>Введите имя метки</translation>
+        <translation>Введите имя тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMultiRevisionSelectionDialog.ui" line="84"/>
@@ -23128,7 +23128,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgMultiRevisionSelectionDialog.ui" line="42"/>
         <source>Enter revisions by number, id, range or revset expression one per line</source>
-        <translation>Задайте ревизии с помощью номера, id, диапазона или выражения revset (по одному в строке)</translation>
+        <translation>Задайте ревизии с помощью номера, id, диапазона или revset-выражения (по одному в строке)</translation>
     </message>
 </context>
 <context>
@@ -23144,7 +23144,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
 &lt;p&gt;Enter the various repository infos into the entry fields. These values are used, when the new project is retrieved from the repository. If the checkbox is selected, the URL must end in the project name. A repository layout with project/tags, project/branches and project/trunk will be assumed. In this case, you may enter a tag or branch, which must look like tags/tagname or branches/branchname. If the checkbox is not selected, the URL must contain the complete path in the repository.&lt;/p&gt;
 &lt;p&gt;For remote repositories the URL must contain the hostname.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Новый проект из репозитория&lt;/b&gt;
-&lt;p&gt;Задайте информацию о репозитории в полях ввода. Эти значения будут использованы при загрузке проекта из репозитория. Если установлена пометка, URL должен завершиться именем проекта. Будет использовано стандартное расположение репозитория (&lt;code&gt;проект/tags&lt;/code&gt;, &lt;code&gt;проект/branches&lt;/code&gt; and &lt;code&gt;проект/trunk&lt;/code&gt;). В этом случае, Вы можете ввести тег или ветвь в виде (&lt;code&gt;tags/тег&lt;/code&gt;, или &lt;code&gt;branches/ветвь&lt;/code&gt;. Если пометка снята, необходимо ввести полный путь в репозитории.&lt;/p&gt;
+&lt;p&gt;Задайте информацию о репозитории в полях ввода. Эти значения будут использованы при загрузке проекта из репозитория. Если чекбокс отмечен, URL должен завершиться именем проекта. Будет использовано стандартное расположение репозитория &lt;code&gt;project/tags&lt;/code&gt;, &lt;code&gt;project/branches&lt;/code&gt; and &lt;code&gt;project/trunk&lt;/code&gt;). В этом случае, Вы можете ввести тег или ветвь в виде (&lt;code&gt;tags/tagname&lt;/code&gt;, или &lt;code&gt;branches/branchname&lt;/code&gt;. Если чекбокс не гтмечен, необходимо ввести полный путь в репозиторий.&lt;/p&gt;
 &lt;p&gt;Для удалённых репозиториев URL должен содержать имя сервера.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -23308,7 +23308,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgPhaseDialog.ui" line="33"/>
         <source>Enter revisions by number, id, range or revset expression one per line</source>
-        <translation>Задайте ревизии с помощью номера, id, диапазона или выражения revset (по одному в строке)</translation>
+        <translation>Задайте ревизии с помощью номера, id, диапазона или revset-выражения (по одному в строке)</translation>
     </message>
 </context>
 <context>
@@ -23346,7 +23346,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectBrowserHelper.py" line="552"/>
         <source>Show log browser</source>
-        <translation>Показать проводник журналов</translation>
+        <translation>Показать браузер журналов</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectBrowserHelper.py" line="642"/>
@@ -23599,7 +23599,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="241"/>
         <source>&lt;b&gt;Export from repository&lt;/b&gt;&lt;p&gt;This exports a project from the repository.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Экспорт из репозитория&lt;/b&gt;&lt;p&gt;Экспортировать проект из репозитория.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Экспорт из репозитория&lt;/b&gt;&lt;p&gt;Экспорт проекта из репозитория.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="248"/>
@@ -23624,7 +23624,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="263"/>
         <source>Show log browser</source>
-        <translation>Показать проводник журналов</translation>
+        <translation>Показать браузер журналов</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="268"/>
@@ -23634,7 +23634,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="271"/>
         <source>&lt;b&gt;Show log browser&lt;/b&gt;&lt;p&gt;This shows a dialog to browse the log of the local project. A limited number of entries is shown first. More can be retrieved later on.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать проводник журнала&lt;/b&gt;&lt;p&gt;Показывает диалог для навигации по файлу журнала локального проекта. Изначально показывается ограниченное количество записей. Дальнейшие записи могут быть получены позже.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать браузер журналов&lt;/b&gt;&lt;p&gt;Отображение диалога навигации по файлу журнала локального проекта. Изначально показывается ограниченное количество записей. Дальнейшие записи могут быть получены позже.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="280"/>
@@ -23664,7 +23664,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="320"/>
         <source>&lt;b&gt;Show status&lt;/b&gt;&lt;p&gt;This shows the status of the local project.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать статус&lt;/b&gt;&lt;p&gt;Показать статус локального проекта.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать статус&lt;/b&gt;&lt;p&gt;Отображение статуса локального проекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="343"/>
@@ -23919,7 +23919,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="632"/>
         <source>&lt;b&gt;Execute command&lt;/b&gt;&lt;p&gt;This opens a dialog to enter an arbitrary Mercurial command.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Выполнить команду&lt;/b&gt;&lt;p&gt;Открыть диалог для ввода произвольной команды Mercurial.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Выполнить команду&lt;/b&gt;&lt;p&gt;Открытие диалога ввода произвольной команды Mercurial.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="640"/>
@@ -24564,7 +24564,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="288"/>
         <source>&lt;b&gt;Show differences&lt;/b&gt;&lt;p&gt;This shows differences of the local project to the repository.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать различия&lt;/b&gt;&lt;p&gt;Показать отличия локального проекта относительно репозитория.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать различия&lt;/b&gt;&lt;p&gt;Показ различий локального проекта относительно репозитория.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="304"/>
@@ -24804,7 +24804,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="484"/>
         <source>&lt;b&gt;Conflicts unresolved&lt;/b&gt;&lt;p&gt;This marks all conflicts of the local project as unresolved.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Неразрешенные конфликты&lt;/b&gt;&lt;p&gt;Пометка  все конфликтов локального проекта как неразрешённых.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Неразрешенные конфликты&lt;/b&gt;&lt;p&gt;Маркировка  всех конфликтов локального проекта как неразрешённых.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1327"/>
@@ -25449,7 +25449,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/RebaseExtension/HgRebaseDialog.ui" line="295"/>
         <source>Select to specify a revision by a tag</source>
-        <translation>Задать ревизию с помощью метки</translation>
+        <translation>Задать ревизию с помощью тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/RebaseExtension/HgRebaseDialog.ui" line="298"/>
@@ -25459,7 +25459,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/RebaseExtension/HgRebaseDialog.ui" line="308"/>
         <source>Enter a tag name</source>
-        <translation>Введите имя метки</translation>
+        <translation>Введите имя тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/RebaseExtension/HgRebaseDialog.ui" line="318"/>
@@ -25718,7 +25718,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionSelectionDialog.ui" line="88"/>
         <source>Select to specify a revision by a tag</source>
-        <translation>Задать ревизию с помощью метки</translation>
+        <translation>Задать ревизию с помощью тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionSelectionDialog.ui" line="91"/>
@@ -25728,7 +25728,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionSelectionDialog.ui" line="107"/>
         <source>Enter a tag name</source>
-        <translation>Введите имя метки</translation>
+        <translation>Введите имя тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionSelectionDialog.ui" line="117"/>
@@ -25821,7 +25821,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionsSelectionDialog.ui" line="267"/>
         <source>Select to specify a revision by a tag</source>
-        <translation>Задать ревизию с помощью метки</translation>
+        <translation>Задать ревизию с помощью тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionsSelectionDialog.ui" line="270"/>
@@ -25831,7 +25831,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionsSelectionDialog.ui" line="280"/>
         <source>Enter a tag name</source>
-        <translation>Введите имя метки</translation>
+        <translation>Введите имя тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgRevisionsSelectionDialog.ui" line="290"/>
@@ -25914,7 +25914,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgServeDialog.py" line="65"/>
         <source>Start Browser</source>
-        <translation>Запустить обозреватель</translation>
+        <translation>Запустить браузер</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgServeDialog.py" line="73"/>
@@ -25934,7 +25934,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgServeDialog.py" line="90"/>
         <source>Browser</source>
-        <translation>Обозреватель</translation>
+        <translation>Браузер</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgServeDialog.py" line="144"/>
@@ -25952,7 +25952,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ShelveExtension/HgShelveBrowserDialog.ui" line="14"/>
         <source>Mercurial Shelve Browser</source>
-        <translation>Обозреватель полок Mercurial</translation>
+        <translation>Браузер полок Mercurial</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ShelveExtension/HgShelveBrowserDialog.ui" line="45"/>
@@ -26527,7 +26527,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="46"/>
         <source>Press to refresh the summary display</source>
-        <translation>Обновить</translation>
+        <translation>Освежить</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="115"/>
@@ -26547,7 +26547,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="341"/>
         <source>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Tags&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</source>
-        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Метки&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Теги&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="345"/>
@@ -26746,7 +26746,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="417"/>
         <source>%n branch head(s)</source>
         <translation>
-            <numerusform>%n вершина ветви</numerusform>
+            <numerusform>%n вершина ветви@</numerusform>
             <numerusform>%n вершины ветвей</numerusform>
             <numerusform>%n вершин ветвей</numerusform>
         </translation>
@@ -26944,7 +26944,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgTagDialog.ui" line="90"/>
         <source>Select to delete a tag</source>
-        <translation>Выберите для удаления метки</translation>
+        <translation>Выберите для удаления тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgTagDialog.ui" line="93"/>
@@ -26966,19 +26966,19 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgTagDialog.ui" line="60"/>
         <source>Enter a revision to set a tag for</source>
-        <translation>Задать ревизию для метки</translation>
+        <translation>Задайте ревизию для тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgTagDialog.ui" line="73"/>
         <source>Select to create a tag</source>
-        <translation>Выберите для создания метки</translation>
+        <translation>Выберите для создания тега</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgTagDialog.ui" line="76"/>
         <source>&lt;b&gt;Create Tag&lt;/b&gt;
 &lt;p&gt;Select this entry in order to create a tag.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Создать метку&lt;/b&gt;
-&lt;p&gt;Создать метку.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Создать тег&lt;/b&gt;
+&lt;p&gt;Выберите зту запись для создания тега.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgTagDialog.ui" line="80"/>
@@ -26993,7 +26993,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgTagDialog.ui" line="113"/>
         <source>Select to create/delete a global tag</source>
-        <translation>Отметьте, чтобы создать глобальную метку</translation>
+        <translation>Отметьте, чтобы создать глобальный тег</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgTagDialog.ui" line="116"/>
@@ -27003,7 +27003,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgTagDialog.ui" line="126"/>
         <source>Select to create/delete a local tag</source>
-        <translation>Отметьте, чтобы создать/удалить глобальную метку</translation>
+        <translation>Отметьте, чтобы создать/удалить глобальный тег</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgTagDialog.ui" line="129"/>
@@ -27371,7 +27371,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/HtmlImporter.py" line="33"/>
         <source>You can import bookmarks from any browser that supports HTML exporting. This file has usually the extension .htm or .html.</source>
-        <translation>Вы можете импортировать закладки из любого обозревателя, поддерживающего экспорт в HTML. Такой файл обычно имеет расширение htm или html.</translation>
+        <translation>Вы можете импортировать закладки из любого браузера, поддерживающего экспорт в HTML. Такой файл обычно имеет расширение htm или html.</translation>
     </message>
 </context>
 <context>
@@ -27535,7 +27535,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../IconEditor/IconEditorPalette.py" line="75"/>
         <source>&lt;b&gt;Select Color&lt;/b&gt;&lt;p&gt;Select the current drawing color via a color selection dialog.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Выбрать цвет&lt;/b&gt;&lt;p&gt;Выбрать текущий цвет с помощью диалога выбора цвета.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Выбрать цвет&lt;/b&gt;&lt;p&gt;Выбрать текущий цвет посредством диалога выбора цвета.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../IconEditor/IconEditorPalette.py" line="85"/>
@@ -27881,7 +27881,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../IconEditor/IconEditorWindow.py" line="317"/>
         <source>&lt;b&gt;Undo&lt;/b&gt;&lt;p&gt;Undo the last change done.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отменить&lt;/b&gt;&lt;p&gt;Отменить последнее изменение.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Отмена&lt;/b&gt;&lt;p&gt;Отменить последнее изменение.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../IconEditor/IconEditorWindow.py" line="324"/>
@@ -27907,7 +27907,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../IconEditor/IconEditorWindow.py" line="331"/>
         <source>&lt;b&gt;Redo&lt;/b&gt;&lt;p&gt;Redo the last change done.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Восстановить&lt;/b&gt;&lt;p&gt;Восстановить последнее отменённое изменение.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Повтор&lt;/b&gt;&lt;p&gt;Восстановление последнего отменённого изменения.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../IconEditor/IconEditorWindow.py" line="338"/>
@@ -28465,7 +28465,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../IconEditor/IconEditorWindow.py" line="792"/>
         <source>&lt;b&gt;Display context sensitive help&lt;/b&gt;&lt;p&gt;In What&apos;s This? mode, the mouse cursor shows an arrow with a question mark, and you can click on the interface elements to get a short description of what they do and how to use them. In dialogs, this feature can be accessed using the context help button in the titlebar.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Показать контекстную помощь&lt;/b&gt;
-&lt;p&gt;В режиме контекстной помощи курсор мыши выглядит как стрелка со знаком вопроса, и, щёлкнув по элементу интерфейса, Вы можете просмотреть краткую помощь о его роли и его использовании. В диалогах можно воспользоваться кнопкой контекстной помощи в заголовке окна.&lt;/p&gt;</translation>
+&lt;p&gt;В режиме контекстной помощи курсор мыши выглядит как стрелка со знаком вопроса, и, щёлкнув по элементу интерфейса, Вы можете просмотреть краткую справку о его роли и его использовании. В диалогах можно воспользоваться кнопкой контекстной помощи в заголовке окна.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../IconEditor/IconEditorWindow.py" line="809"/>
@@ -28490,7 +28490,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../IconEditor/IconEditorWindow.py" line="868"/>
         <source>&amp;Help</source>
-        <translation>&amp;Помощь</translation>
+        <translation>&amp;Справка</translation>
     </message>
     <message>
         <location filename="../IconEditor/IconEditorWindow.py" line="878"/>
@@ -28515,17 +28515,17 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../IconEditor/IconEditorWindow.py" line="928"/>
         <source>Help</source>
-        <translation>Помощь</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../IconEditor/IconEditorWindow.py" line="942"/>
         <source>&lt;p&gt;This part of the status bar displays the icon size.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Эта часть строки статуса показывает размер иконки.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;В этой части строки статуса отображается размер иконки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../IconEditor/IconEditorWindow.py" line="949"/>
         <source>&lt;p&gt;This part of the status bar displays the cursor position.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Эта часть строки статуса показывает текущую позицию курсора в редакторе.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;В этой части строки статуса отображается текущуая позиция курсора в редакторе.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../IconEditor/IconEditorWindow.py" line="1045"/>
@@ -28971,12 +28971,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="37"/>
         <source>Browsers</source>
-        <translation>Обозреватели</translation>
+        <translation>Браузеры</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="43"/>
         <source>Select, if folders should be listed first in the various browsers</source>
-        <translation>Разрешить во всех обозревателях сначала показывать папки, затем остальные документы</translation>
+        <translation>Разрешить во всех браузерах сначала показывать папки, затем остальные документы</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="46"/>
@@ -28986,7 +28986,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="53"/>
         <source>Select to hide non public classes, methods and attributes in the browsers.</source>
-        <translation>Разрешить показывать только публичные классы, методы и атрибуты.</translation>
+        <translation>Разрешить скрывать не публичные классы, методы и атрибуты.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="56"/>
@@ -28996,7 +28996,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="63"/>
         <source>Select to sort file contents by occurrence</source>
-        <translation>Разрешить сортировку файлов</translation>
+        <translation>Разрешить сортировку содержания файлов по встречаемости</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="66"/>
@@ -29006,7 +29006,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="73"/>
         <source>Select to show hidden files in the various browsers</source>
-        <translation>Разрешить показывать скрытые файлы в различных обозревателях</translation>
+        <translation>Разрешить показывать скрытые файлы в различных браузерах</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="76"/>
@@ -29031,7 +29031,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="126"/>
         <source>Enter the number of characters to be shown in the main window title.</source>
-        <translation>Длина заголовка главного окна.</translation>
+        <translation>Введите длину отображаемого заголовка главного окна.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="163"/>
@@ -29201,37 +29201,37 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="477"/>
         <source>Select to embed the shell in the Debug-Viewer</source>
-        <translation>Встроить командную строку в просмотрщик отладки</translation>
+        <translation>Встроить командную строку в окно отладки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="509"/>
         <source>embed in Debug-Viewer</source>
-        <translation>встроить в просмотрщик отладки</translation>
+        <translation>встроить в окно отладки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="490"/>
         <source>File-Browser</source>
-        <translation>Обозреватель файлов</translation>
+        <translation>Браузер файлов</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="496"/>
         <source>Select to get a separate file browser window</source>
-        <translation>Отделить окно обозревателя файлов</translation>
+        <translation>Браузер файлов в отдельном окне</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="506"/>
         <source>Select to embed the file browser in the Debug-Viewer</source>
-        <translation>Встроить обозреватель файлов в просмотрщик отладки</translation>
+        <translation>Встроить браузер файлов в окно отладки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="516"/>
         <source>Select to embed the file browser in the Project-Viewer</source>
-        <translation>Встроить обозреватель файлов в просмотрщик проекта</translation>
+        <translation>Встроить браузер файлов в окно проекта</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="519"/>
         <source>embed in Project-Viewer</source>
-        <translation>встроить в просмотрщик проекта</translation>
+        <translation>встроить в окно проекта</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="531"/>
@@ -29241,7 +29241,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="537"/>
         <source>Show only one close button instead of one for each tab</source>
-        <translation>Показывать только одну общую закрывающую кнопку</translation>
+        <translation>Показывать только одну общую закрывающую кнопку вместо кнопки для каждой вкладки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="560"/>
@@ -29277,7 +29277,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="92"/>
         <source>Enter wildcard file patterns separated by semicolon. Files matching these patterns will not be shown by the file browsers.</source>
-        <translation>Шаблоны имен файлов которые не нужно показывать в обозревателях.</translation>
+        <translation>Шаблоны имен файлов, которые не нужно показывать в браузерах.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="331"/>
@@ -29636,12 +29636,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1009"/>
         <source>Help</source>
-        <translation>Помощь</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1143"/>
         <source>--- New From Here ---</source>
-        <translation>--- Новые сообщения здесь ---</translation>
+        <translation>--- Здесь новые сообщения ---</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1226"/>
@@ -29701,7 +29701,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1284"/>
         <source>Remove Position Marker</source>
-        <translation>Удалить пометку позиции</translation>
+        <translation>Удалить маркер позиции</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1334"/>
@@ -30732,7 +30732,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="793"/>
         <source>Marker</source>
-        <translation>Метка</translation>
+        <translation>Маркер</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="799"/>
@@ -30747,7 +30747,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="811"/>
         <source>Marker Foreground:</source>
-        <translation>Цвет метки:</translation>
+        <translation>Цвет маркера:</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="824"/>
@@ -30757,12 +30757,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="834"/>
         <source>Marker Background:</source>
-        <translation>Фоновый цвет метки:</translation>
+        <translation>Фоновый цвет маркера:</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="847"/>
         <source>Select the background colour for the marker</source>
-        <translation>Задайте фоновый цвет метки</translation>
+        <translation>Задайте фоновый цвет маркера</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/IrcPage.ui" line="862"/>
@@ -31205,7 +31205,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="146"/>
         <source>Search results provided by {0}</source>
-        <translation>Результаты поиска ({0})</translation>
+        <translation>Результаты поиска, предоставляемые ({0})</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="104"/>
@@ -32359,7 +32359,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/LargefilesExtension/LfRevisionsInputDialog.ui" line="33"/>
         <source>Enter changesets by number, id, range or revset expression one per line</source>
-        <translation>Задайте именения с помощью номера, id, диапазона или выражения revset (по одному в строке)</translation>
+        <translation>Задайте именения с помощью номера, id, диапазона или revset-выражения (по одному в строке)</translation>
     </message>
 </context>
 <context>
@@ -32453,12 +32453,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/LogViewerPage.ui" line="17"/>
         <source>&lt;b&gt;Configure Log Viewer&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Настройка просмотрщика журнала&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Настройка просмотра журналов&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/LogViewerPage.ui" line="37"/>
         <source>Select to show the log-viewer upon new output</source>
-        <translation>Открывать просмотрщик журнала при появлении новых записей</translation>
+        <translation>Открывать браузер журнала при появлении новых записей</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/LogViewerPage.ui" line="40"/>
@@ -32736,7 +32736,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <source>&lt;b&gt;Internal Merge Tool&lt;/b&gt;
 &lt;p&gt;Select to enforce usage of the Mercural internal merge tool,which leaves conflict markers in the file in case of conflicting changes.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Внутренний инструмент слияния&lt;/b&gt;
-&lt;p&gt;Использовать внутренний инструмент слияния Mercural, который вставляет метки конфликтов в файл.&lt;/p&gt;</translation>
+&lt;p&gt;Использовать внутренний инструмент слияния Mercural, который оставляет маркеры конфликтов в файле в случае конфликтующих изменений.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ConfigurationPage/MercurialPage.ui" line="245"/>
@@ -32998,7 +32998,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.py" line="44"/>
         <source>Help</source>
-        <translation>Помощь</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.py" line="47"/>
@@ -33131,7 +33131,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../QScintilla/MiniEditor.py" line="407"/>
         <source>&lt;b&gt;New&lt;/b&gt;&lt;p&gt;An empty editor window will be created.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Новый документ&lt;/b&gt;
-&lt;p&gt;Будет создано пустое окно редактора.&lt;/p&gt;</translation>
+&lt;p&gt;Создание пустого окна редактора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="414"/>
@@ -33157,7 +33157,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="421"/>
         <source>&lt;b&gt;Open a file&lt;/b&gt;&lt;p&gt;You will be asked for the name of a file to be opened.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Открыть файл&lt;/b&gt;&lt;p&gt;У вас запросят имя файла, который нужно открыть.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Открыть файл&lt;/b&gt;&lt;p&gt;Вам будет предложено задать имя файла, который нужно открыть.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="428"/>
@@ -33184,7 +33184,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../QScintilla/MiniEditor.py" line="435"/>
         <source>&lt;b&gt;Save File&lt;/b&gt;&lt;p&gt;Save the contents of current editor window.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Сохранить файл&lt;/b&gt;
-&lt;p&gt;Сохранить содержание текущего окна редактора.&lt;/p&gt;</translation>
+&lt;p&gt;Сохранение содержания текущего окна редактора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="442"/>
@@ -33211,7 +33211,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../QScintilla/MiniEditor.py" line="450"/>
         <source>&lt;b&gt;Save File as&lt;/b&gt;&lt;p&gt;Save the contents of current editor window to a new file. The file can be entered in a file selection dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Сохранить файл  как&lt;/b&gt;
-&lt;p&gt;Сохранить содержание текущего окна редактора в новый файл.
+&lt;p&gt;Сохранение содержания текущего окна редактора в новый файл.
 Имя файла будет запрошено с помощью файлового диалога.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -33239,7 +33239,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../QScintilla/MiniEditor.py" line="480"/>
         <source>&lt;b&gt;Close Window&lt;/b&gt;&lt;p&gt;Close the current window.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Закрыть окно&lt;/b&gt;
-&lt;p&gt;Закрыть текущее окно.&lt;/p&gt;</translation>
+&lt;p&gt;Закрытие текущего окна.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="487"/>
@@ -33313,7 +33313,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../QScintilla/MiniEditor.py" line="527"/>
         <source>&lt;b&gt;Undo&lt;/b&gt;&lt;p&gt;Undo the last change done in the current editor.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Отмена&lt;/b&gt;
-&lt;p&gt;Отменить последнее изменение в текущем сеансе редактирования.&lt;/p&gt;</translation>
+&lt;p&gt;Отмена последнего изменения в текущем сеансе редактирования.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="534"/>
@@ -33340,7 +33340,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../QScintilla/MiniEditor.py" line="541"/>
         <source>&lt;b&gt;Redo&lt;/b&gt;&lt;p&gt;Redo the last change done in the current editor.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Повтор&lt;/b&gt;
-&lt;p&gt;Восстановить последнее отменённое изменение.&lt;/p&gt;</translation>
+&lt;p&gt;Восстановление последнего отменённого изменения.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="548"/>
@@ -33466,7 +33466,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../QScintilla/MiniEditor.py" line="605"/>
         <source>&lt;b&gt;Clear&lt;/b&gt;&lt;p&gt;Delete all text of the current editor.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Очистить&lt;/b&gt;
-&lt;p&gt;Удалить весь текст из текущего редактора.&lt;/p&gt;</translation>
+&lt;p&gt;Удаление всего текста из текущего редактора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="2048"/>
@@ -33533,7 +33533,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../QScintilla/MiniEditor.py" line="2080"/>
         <source>&lt;b&gt;Display context sensitive help&lt;/b&gt;&lt;p&gt;In What&apos;s This? mode, the mouse cursor shows an arrow with a question mark, and you can click on the interface elements to get a short description of what they do and how to use them. In dialogs, this feature can be accessed using the context help button in the titlebar.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Показать контекстную помощь&lt;/b&gt;
-&lt;p&gt;В режиме контекстной помощи курсор мыши выглядит как стрелка со знаком вопроса, и, щёлкнув по элементу интерфейса, Вы можете просмотреть краткую помощь о его роли и его использовании. В диалогах можно воспользоваться кнопкой контекстной помощи в заголовке окна.&lt;/p&gt;</translation>
+&lt;p&gt;В режиме контекстной помощи курсор мыши выглядит как стрелка со знаком вопроса, и, щёлкнув по элементу интерфейса, Вы можете просмотреть краткую справку о его роли и его использовании. В диалогах можно воспользоваться кнопкой контекстной помощи в заголовке окна.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="2096"/>
@@ -33548,7 +33548,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="2125"/>
         <source>&amp;Help</source>
-        <translation>&amp;Помощь</translation>
+        <translation>&amp;Справка</translation>
     </message>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="2137"/>
@@ -33568,22 +33568,22 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="2167"/>
         <source>Help</source>
-        <translation>Помощь</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="2180"/>
         <source>&lt;p&gt;This part of the status bar displays an indication of the editors files writability.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Эта часть строки статуса указывает на возможность записи файла, открытого в редакторе.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;В этой части строки статуса отображается режим ro/rw файла, открытого в редакторе.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="2187"/>
         <source>&lt;p&gt;This part of the status bar displays the line number of the editor.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Эта часть строки статуса показывает номер текущей строки редактора.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;В этой части строки статуса отображается номер текущей строки редактора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="2194"/>
         <source>&lt;p&gt;This part of the status bar displays the cursor position of the editor.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Эта часть строки статуса показывает текущую позицию курсора в редакторе.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;В этой части строки статуса отображается текущая позиция курсора в редакторе.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="2199"/>
@@ -33683,7 +33683,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="2700"/>
         <source>Guessed</source>
-        <translation>Догадки</translation>
+        <translation>Предположения</translation>
     </message>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="2721"/>
@@ -33738,7 +33738,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../QScintilla/MiniEditor.py" line="465"/>
         <source>&lt;b&gt;Save Copy&lt;/b&gt;&lt;p&gt;Save a copy of the contents of current editor window. The file can be entered in a file selection dialog.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Сохранить копию&lt;/b&gt;&lt;p&gt;Сохранение контента текущего окна редактора. Файл может быть введен в диалоге выбора файла.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Сохранить копию&lt;/b&gt;&lt;p&gt;Сохранение контента текущего окна редактора. Имя файла может быть введено в диалоге выбора файла.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -33781,7 +33781,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="402"/>
         <source>docstring does contain unindexed parameters</source>
-        <translation>строка документации действительно содержит неиндексированные параметры</translation>
+        <translation>docstring действительно содержит неиндексированные параметры</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="405"/>
@@ -33995,7 +33995,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../MultiProject/MultiProject.py" line="622"/>
         <source>&lt;b&gt;New...&lt;/b&gt;&lt;p&gt;This opens a dialog for entering the info for a new multiproject.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Новый...&lt;/b&gt;&lt;p&gt;Открыть диалог для ввода информации о новом мультипроекте.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Новый...&lt;/b&gt;&lt;p&gt;Открытие диалога ввода информации о новом мультипроекте.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../MultiProject/MultiProject.py" line="630"/>
@@ -34030,7 +34030,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../MultiProject/MultiProject.py" line="649"/>
         <source>&lt;b&gt;Close&lt;/b&gt;&lt;p&gt;This closes the current multiproject.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Закрыть&lt;/b&gt;&lt;p&gt;Закрыть текущий мультипроект.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Закрыть&lt;/b&gt;&lt;p&gt;Закрытие текущего мультипроекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../MultiProject/MultiProject.py" line="656"/>
@@ -34050,7 +34050,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../MultiProject/MultiProject.py" line="661"/>
         <source>&lt;b&gt;Save&lt;/b&gt;&lt;p&gt;This saves the current multiproject.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Закрыть&lt;/b&gt;&lt;p&gt;Закрыть текущий мультипроект.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Закрыть&lt;/b&gt;&lt;p&gt;Закрытие текущего мультипроекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../MultiProject/MultiProject.py" line="668"/>
@@ -34065,7 +34065,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../MultiProject/MultiProject.py" line="675"/>
         <source>&lt;b&gt;Save as&lt;/b&gt;&lt;p&gt;This saves the current multiproject to a new file.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Сохранить как&lt;/b&gt;&lt;p&gt; Сохранить текущий мультипроект в новый файл.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Сохранить как&lt;/b&gt;&lt;p&gt; Сохранение текущего мультипроекта в новый файл.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../MultiProject/MultiProject.py" line="682"/>
@@ -34085,7 +34085,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../MultiProject/MultiProject.py" line="689"/>
         <source>&lt;b&gt;Add project...&lt;/b&gt;&lt;p&gt;This opens a dialog for adding a project to the current multiproject.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Добавить проект...&lt;/b&gt;&lt;p&gt;Открыть диалог для добавления проекта в текущий мультипроект.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Добавить проект...&lt;/b&gt;&lt;p&gt;Открытие диалога добавления проекта в текущий мультипроект.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../MultiProject/MultiProject.py" line="697"/>
@@ -34237,18 +34237,18 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Preferences/ConfigurationPages/MultiProjectPage.ui" line="46"/>
         <source>&lt;b&gt;Workspace Directory&lt;/b&gt;
 &lt;p&gt;Enter the directory of the workspace. This directory is used as the default for opening or saving new files or projects.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Workspace Directory&lt;/b&gt;
-&lt;p&gt;Enter the directory of the workspace. This directory is used as the default for opening or saving new files or projects.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Директория рабочего пространстваy&lt;/b&gt;
+&lt;p&gt;Задайте директорию рабочего пространства. Эта директория используется по умолчанию для открытия или сохранения новых файлов или проектов.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/MultiProjectPage.ui" line="54"/>
         <source>Select the workspace directory via a directory selection button</source>
-        <translation>Select the workspace directory via a directory selection button</translation>
+        <translation>Выбор директории рабочего пространства посредством диалога выбора директории</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/MultiProjectPage.py" line="75"/>
         <source>Select Workspace Directory</source>
-        <translation>Выбор рабочей директории</translation>
+        <translation>Выбор директории рабочего пространства</translation>
     </message>
 </context>
 <context>
@@ -35081,12 +35081,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchDialog.ui" line="14"/>
         <source>Open Search Engines Configuration</source>
-        <translation>Настройка поисковиков</translation>
+        <translation>Открыть настройку поисковых систем</translation>
     </message>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchDialog.ui" line="38"/>
         <source>Press to add a new search engine from file</source>
-        <translation>Добавить новый поисковик из файла</translation>
+        <translation>Добавить новую поисковую систему из файла</translation>
     </message>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchDialog.ui" line="41"/>
@@ -35096,7 +35096,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchDialog.ui" line="51"/>
         <source>Press to delete the selected engines</source>
-        <translation>Удалить выбранные поисковики</translation>
+        <translation>Удалить выбранные поисковые системы</translation>
     </message>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchDialog.ui" line="54"/>
@@ -35116,7 +35116,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchDialog.ui" line="77"/>
         <source>Press to restore the default engines</source>
-        <translation>Восстановить поисковики по умолчанию</translation>
+        <translation>Восстановить поисковые системы по умолчанию</translation>
     </message>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchDialog.ui" line="80"/>
@@ -35126,7 +35126,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchDialog.py" line="66"/>
         <source>Add search engine</source>
-        <translation>Добавить новый поисковик</translation>
+        <translation>Добавить поисковую систему</translation>
     </message>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchDialog.py" line="57"/>
@@ -35141,12 +35141,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchDialog.py" line="79"/>
         <source>Delete selected engines</source>
-        <translation>Удалить выбранные поисковики</translation>
+        <translation>Удалить выбранные поисковые системы</translation>
     </message>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchDialog.py" line="79"/>
         <source>You must have at least one search engine.</source>
-        <translation>Необходимо выбрать хотя бы один поисковик.</translation>
+        <translation>Должна быть по крайней мере одна поисковая система.</translation>
     </message>
 </context>
 <context>
@@ -35154,7 +35154,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchEditDialog.ui" line="14"/>
         <source>Edit search engine data</source>
-        <translation>Настройка поисковика</translation>
+        <translation>Изменить данные поисковой системы</translation>
     </message>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchEditDialog.ui" line="25"/>
@@ -35164,7 +35164,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchEditDialog.ui" line="38"/>
         <source>Shows the name of the search engine</source>
-        <translation>Имя поисковика</translation>
+        <translation>Показ имени поисковой системы</translation>
     </message>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchEditDialog.ui" line="48"/>
@@ -35189,22 +35189,22 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchEditDialog.ui" line="84"/>
         <source>&amp;Search URL Template:</source>
-        <translation>&amp;Шаблон URL поиска:</translation>
+        <translation>&amp;Шаблон поиска URL:</translation>
     </message>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchEditDialog.ui" line="94"/>
         <source>Enter the template of the search URL</source>
-        <translation>Задайте шаблон URL поиска</translation>
+        <translation>Задайте шаблон поиска URL</translation>
     </message>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchEditDialog.ui" line="101"/>
         <source>Su&amp;ggestions URL Template:</source>
-        <translation>Шаблон URL &amp;подсказок:</translation>
+        <translation>Шаблон &amp;подсказок URL:</translation>
     </message>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchEditDialog.ui" line="111"/>
         <source>Enter the template of the suggestions URL</source>
-        <translation>Задайте шаблон URL подсказок</translation>
+        <translation>Задайте шаблон подсказок URL</translation>
     </message>
 </context>
 <context>
@@ -35240,7 +35240,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchManager.py" line="405"/>
         <source>&lt;p&gt;Do you want to add the following engine to your list of search engines?&lt;br/&gt;&lt;br/&gt;Name: {0}&lt;br/&gt;Searches on: {1}&lt;/p&gt;</source>
-        <translation>Добавить поисковик? &lt;br/&gt;&lt;br/&gt; {0}&lt;br/&gt;Ищет на: {1}</translation>
+        <translation>&lt;p&gt;Вы хотите добавить данный движок в ваш список поисковых систем?&lt;br/&gt;&lt;br/&gt;Имя: {0}&lt;br/&gt;Искать на: {1}&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -35714,7 +35714,7 @@ Reason: {1}</source>
     <message>
         <location filename="../Graphics/PixmapDiagram.py" line="155"/>
         <source>Pixmap-Viewer</source>
-        <translation>Pixmap-вьюер</translation>
+        <translation>Просмотр Pixmap</translation>
     </message>
     <message>
         <location filename="../Graphics/PixmapDiagram.py" line="95"/>
@@ -36136,7 +36136,7 @@ Destination:
     <message>
         <location filename="../PluginManager/PluginManager.py" line="1080"/>
         <source>&lt;p&gt;The plugin download directory &lt;b&gt;{0}&lt;/b&gt; could not be created. Please configure it via the configuration dialog.&lt;/p&gt;&lt;p&gt;Reason: {1}&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Директория для загрузки плагинов &lt;b&gt;{0}&lt;/b&gt; не может быть создана. Выберите её с помощью диалога.&lt;/p&gt;&lt;p&gt;Причина:{1}&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Директория для загрузки плагинов &lt;b&gt;{0}&lt;/b&gt; не может быть создана. Задайте её посредством диалога конфигурации.&lt;/p&gt;&lt;p&gt;Причина:{1}&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../PluginManager/PluginManager.py" line="1146"/>
@@ -36767,7 +36767,7 @@ Select Update.</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/PrinterPage.ui" line="16"/>
         <source>&lt;b&gt;Configure printer settings&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Настройка принтера&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Настройка печати&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/PrinterPage.ui" line="47"/>
@@ -37158,7 +37158,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/Project.py" line="1262"/>
         <source>You have to specify a translation pattern first.</source>
-        <translation>Необходимо задать образец перевода.</translation>
+        <translation>Необходимо сначала задать шаблон перевода.</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="1386"/>
@@ -37303,12 +37303,12 @@ Select Update.</source>
     <message>
         <location filename="../Project/Project.py" line="2435"/>
         <source>Translation Pattern</source>
-        <translation>Образец перевода</translation>
+        <translation>Шаблон перевода</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="2435"/>
         <source>Enter the path pattern for translation files (use &apos;%language%&apos; in place of the language code):</source>
-        <translation>Введите образец имени файла для переводов (используйте &apos;%language%&apos; вместо кода языка):</translation>
+        <translation>Введите шаблон пути для файлов переводов (используйте &apos;%language%&apos; вместо language code):</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="3455"/>
@@ -37367,7 +37367,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/Project.py" line="3447"/>
         <source>&lt;b&gt;New...&lt;/b&gt;&lt;p&gt;This opens a dialog for entering the info for a new project.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Новый...&lt;/b&gt;&lt;p&gt;Открыть диалог для ввода информации о новом проекте.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Новый...&lt;/b&gt;&lt;p&gt;Открытие диалога ввода информации о новом проекте.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="3455"/>
@@ -37382,7 +37382,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/Project.py" line="3461"/>
         <source>&lt;b&gt;Open...&lt;/b&gt;&lt;p&gt;This opens an existing project.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Открыть...&lt;/b&gt;&lt;p&gt;Открыть существующий проект.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Открыть...&lt;/b&gt;&lt;p&gt;Открытие существующего проекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="3468"/>
@@ -37402,7 +37402,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/Project.py" line="3473"/>
         <source>&lt;b&gt;Close&lt;/b&gt;&lt;p&gt;This closes the current project.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Закрыть&lt;/b&gt;&lt;p&gt;Закрыть текущий проект.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Закрыть&lt;/b&gt;&lt;p&gt;Закрытие текущего проекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="3480"/>
@@ -37422,7 +37422,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/Project.py" line="3485"/>
         <source>&lt;b&gt;Save&lt;/b&gt;&lt;p&gt;This saves the current project.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Сохранить&lt;/b&gt;&lt;p&gt;Сохранить текущий проект.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Сохранить&lt;/b&gt;&lt;p&gt;Сохранение текущего проекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="3492"/>
@@ -37437,7 +37437,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/Project.py" line="3498"/>
         <source>&lt;b&gt;Save as&lt;/b&gt;&lt;p&gt;This saves the current project to a new file.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Сохранить как&lt;/b&gt;&lt;p&gt; Сохранить текущий проект в новый файл.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Сохранить как&lt;/b&gt;&lt;p&gt; Сохранение текущего проекта в новый файл.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="3507"/>
@@ -37458,7 +37458,7 @@ Select Update.</source>
         <location filename="../Project/Project.py" line="3514"/>
         <source>&lt;b&gt;Add files...&lt;/b&gt;&lt;p&gt;This opens a dialog for adding files to the current project. The place to add is determined by the file extension.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Добавить файлы&lt;/b&gt;
-&lt;p&gt;Открывает диалог для добавления файлов в текущий проект. Место добавления определяется расширением файла.&lt;/p&gt;</translation>
+&lt;p&gt;Открытие диалога добавления файлов в текущий проект. Место добавления определяется расширением файла.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="3523"/>
@@ -37479,7 +37479,7 @@ Select Update.</source>
         <location filename="../Project/Project.py" line="3530"/>
         <source>&lt;b&gt;Add directory...&lt;/b&gt;&lt;p&gt;This opens a dialog for adding a directory to the current project.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Добавить директорию...&lt;/b&gt;
-&lt;p&gt;Открыть диалог для добавления директории к текущему проекту.&lt;/p&gt;</translation>
+&lt;p&gt;Открытие диалога добавления директории к текущему проекту.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="3538"/>
@@ -37499,7 +37499,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/Project.py" line="3545"/>
         <source>&lt;b&gt;Add translation...&lt;/b&gt;&lt;p&gt;This opens a dialog for add a translation to the current project.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Добавить перевод...&lt;/b&gt;&lt;p&gt;Открыть диалог для добавления перевода в текущий проект.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Добавить перевод...&lt;/b&gt;&lt;p&gt;Открытие диалога добавления перевода в текущий проект.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="3553"/>
@@ -37581,7 +37581,7 @@ Select Update.</source>
         <location filename="../Project/Project.py" line="3601"/>
         <source>&lt;b&gt;Filetype Associations...&lt;/b&gt;&lt;p&gt;This shows a dialog to edit the filetype associations of the project. These associations determine the type (source, form, interface or others) with a filename pattern. They are used when adding a file to the project and when performing a search for new files.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Ассоциации типов файлов...&lt;/b&gt;
-&lt;p&gt;Показать диалог для редактирования ассоциаций типов файлов для проекта. Эти ассоциации связывают тип файла (исходник, форма, интерфейс и т.д.) с шаблоном имени. Они используются при добавлении файлов в проект и при поиске новых файлов.&lt;/p&gt;</translation>
+&lt;p&gt;Отображение диалога для редактирования ассоциаций типов файлов проекта. Эти ассоциации связывают тип файла (исходник, форма, интерфейс и т.д.) с шаблоном имени файла. Они используются при добавлении файлов в проект и при поиске новых файлов.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="3613"/>
@@ -37772,12 +37772,12 @@ Select Update.</source>
     <message>
         <location filename="../Project/Project.py" line="3749"/>
         <source>Show some code metrics for the project.</source>
-        <translation>Отображает статистику кода для проекта.</translation>
+        <translation>Отображение статистики кода проекта.</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="3751"/>
         <source>&lt;b&gt;Code Metrics...&lt;/b&gt;&lt;p&gt;This shows some code metrics for all Python files in the project.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Статистика кода...&lt;/b&gt;&lt;p&gt;Отображает статистику кода для проекта.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Статистика кода...&lt;/b&gt;&lt;p&gt;Отображение статистики кода проекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="3759"/>
@@ -37812,12 +37812,12 @@ Select Update.</source>
     <message>
         <location filename="../Project/Project.py" line="3777"/>
         <source>Show profiling data for the project.</source>
-        <translation>Отображает результаты профилирования проекта.</translation>
+        <translation>Отображение результатов профилирования проекта.</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="3779"/>
         <source>&lt;b&gt;Profile Data...&lt;/b&gt;&lt;p&gt;This shows the profiling data for the project.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Данные профайлера...&lt;/b&gt;&lt;p&gt;Отображает результаты профилирования проекта.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Данные профайлера...&lt;/b&gt;&lt;p&gt;Отображение результатов профилирования проекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="4585"/>
@@ -37912,7 +37912,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/Project.py" line="3898"/>
         <source>Debugger</source>
-        <translation>Отладчик</translation>
+        <translation>Отладка</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="3899"/>
@@ -38175,12 +38175,12 @@ Select Update.</source>
     <message>
         <location filename="../Project/ProjectBaseBrowser.py" line="297"/>
         <source>Delete directories</source>
-        <translation>Удалить каталоги</translation>
+        <translation>Удалить директории</translation>
     </message>
     <message>
         <location filename="../Project/ProjectBaseBrowser.py" line="297"/>
         <source>Do you really want to delete these directories from the project?</source>
-        <translation>Вы действительно хотите удалить эти каталоги?</translation>
+        <translation>Вы действительно хотите удалить эти директории из проекта?</translation>
     </message>
 </context>
 <context>
@@ -38269,7 +38269,7 @@ Select Update.</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/ProjectBrowserPage.ui" line="82"/>
         <source>Visible Project Browsers</source>
-        <translation>Обозреватели проекта в зависимости от его типа</translation>
+        <translation>Браузеры проекта в зависимости от его типа</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ProjectBrowserPage.ui" line="90"/>
@@ -38374,7 +38374,7 @@ Select Update.</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/ProjectBrowserPage.ui" line="199"/>
         <source>Select to populate entries automatically when following the cursor line of the current editor</source>
-        <translation>Заполнять элементы автоматически при следовании текущей строке в текущем редакторе</translation>
+        <translation>Заполнять элементы автоматически при следовании текущей строке текущего редактора</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ProjectBrowserPage.ui" line="202"/>
@@ -38392,7 +38392,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/ProjectFormsBrowser.py" line="79"/>
         <source>&lt;b&gt;Project Forms Browser&lt;/b&gt;&lt;p&gt;This allows to easily see all forms contained in the current project. Several actions can be executed via the context menu.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Обозреватель форм&lt;/b&gt;&lt;p&gt;Позволяет легко обозревать формы, содержащиеся в текущем проекте. Некоторые действия над ними доступны посредством контекстного меню.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Браузер форм&lt;/b&gt;&lt;p&gt;Позволяет легко обозревать формы, содержащиеся в текущем проекте. Некоторые действия над ними доступны посредством контекстного меню.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/ProjectFormsBrowser.py" line="98"/>
@@ -38512,12 +38512,12 @@ Select Update.</source>
     <message>
         <location filename="../Project/ProjectFormsBrowser.py" line="343"/>
         <source>Expand all directories</source>
-        <translation>Открыть все подкаталоги</translation>
+        <translation>Открыть все директории</translation>
     </message>
     <message>
         <location filename="../Project/ProjectFormsBrowser.py" line="345"/>
         <source>Collapse all directories</source>
-        <translation>Закрыть все подкаталоги</translation>
+        <translation>Закрыть все директории</translation>
     </message>
     <message>
         <location filename="../Project/ProjectFormsBrowser.py" line="348"/>
@@ -38680,7 +38680,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/ProjectInterfacesBrowser.py" line="80"/>
         <source>&lt;b&gt;Project Interfaces Browser&lt;/b&gt;&lt;p&gt;This allows to easily see all interfaces (CORBA IDL files) contained in the current project. Several actions can be executed via the context menu.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Обозреватель интерфейсов проекта&lt;/b&gt;
+        <translation>&lt;b&gt;Браузер интерфейсов проекта&lt;/b&gt;
 &lt;p&gt;Позволяет легко просматривать файлы описания интерфейсов (CORBA IDL), которые содержатся в текущем проекте. Некоторые действия доступны из контекстного меню.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -38731,12 +38731,12 @@ Select Update.</source>
     <message>
         <location filename="../Project/ProjectInterfacesBrowser.py" line="247"/>
         <source>Expand all directories</source>
-        <translation>Открыть все подкаталоги</translation>
+        <translation>Открыть все директории</translation>
     </message>
     <message>
         <location filename="../Project/ProjectInterfacesBrowser.py" line="249"/>
         <source>Collapse all directories</source>
-        <translation>Закрыть все подкаталоги</translation>
+        <translation>Закрыть все директории</translation>
     </message>
     <message>
         <location filename="../Project/ProjectInterfacesBrowser.py" line="252"/>
@@ -38819,7 +38819,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/ProjectOthersBrowser.py" line="60"/>
         <source>&lt;b&gt;Project Others Browser&lt;/b&gt;&lt;p&gt;This allows to easily see all other files and directories contained in the current project. Several actions can be executed via the context menu. The entry which is registered in the project is shown in a different colour.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Просмотр всего остального&lt;/b&gt;&lt;p&gt;Позволяет увидеть все файлы и каталоги, содержащиеся в данном проекте. Из контекстного меню доступны некоторые действия над ними. Элементы, являющиеся частью проекта, выделены цветом.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Просмотр всего остального&lt;/b&gt;&lt;p&gt;Позволяет увидеть все файлы и директории, содержащиеся в данном проекте. Из контекстного меню доступны некоторые действия над ними. Элементы, являющиеся частью проекта, выделены цветом.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/ProjectOthersBrowser.py" line="77"/>
@@ -38864,12 +38864,12 @@ Select Update.</source>
     <message>
         <location filename="../Project/ProjectOthersBrowser.py" line="131"/>
         <source>Expand all directories</source>
-        <translation>Открыть все подкаталоги</translation>
+        <translation>Открыть все директории</translation>
     </message>
     <message>
         <location filename="../Project/ProjectOthersBrowser.py" line="133"/>
         <source>Collapse all directories</source>
-        <translation>Закрыть все подкаталоги</translation>
+        <translation>Закрыть все директории</translation>
     </message>
     <message>
         <location filename="../Project/ProjectOthersBrowser.py" line="136"/>
@@ -39100,7 +39100,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/ProjectResourcesBrowser.py" line="69"/>
         <source>&lt;b&gt;Project Resources Browser&lt;/b&gt;&lt;p&gt;This allows to easily see all resources contained in the current project. Several actions can be executed via the context menu.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Обозреватель ресурсов&lt;/b&gt;&lt;p&gt;Позволяет легко обозревать ресурсы, содержащиеся в текущем проекте. Некоторые действия над ними доступны посредством контекстного меню.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Браузер ресурсов проекта&lt;/b&gt;&lt;p&gt;Позволяет легко просматривать ресурсы, содержащиеся в текущем проекте. Некоторые действия над ними доступны посредством контекстного меню.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/ProjectResourcesBrowser.py" line="100"/>
@@ -39155,12 +39155,12 @@ Select Update.</source>
     <message>
         <location filename="../Project/ProjectResourcesBrowser.py" line="285"/>
         <source>Expand all directories</source>
-        <translation>Открыть все подкаталоги</translation>
+        <translation>Открыть все директории</translation>
     </message>
     <message>
         <location filename="../Project/ProjectResourcesBrowser.py" line="287"/>
         <source>Collapse all directories</source>
-        <translation>Закрыть все подкаталоги</translation>
+        <translation>Закрыть все директории</translation>
     </message>
     <message>
         <location filename="../Project/ProjectResourcesBrowser.py" line="290"/>
@@ -39268,7 +39268,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/ProjectSourcesBrowser.py" line="64"/>
         <source>&lt;b&gt;Project Sources Browser&lt;/b&gt;&lt;p&gt;This allows to easily see all sources contained in the current project. Several actions can be executed via the context menu.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Обозреватель исходников&lt;/b&gt;&lt;p&gt;Позволяет легко обозревать исходники, содержащиеся в текущем проекте. Некоторые действия над ними доступны посредством контекстного меню.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Браузер исходников проекта&lt;/b&gt;&lt;p&gt;Позволяет легко просматривать исходники, содержащиеся в текущем проекте. Некоторые действия над ними доступны посредством контекстного меню.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/ProjectSourcesBrowser.py" line="445"/>
@@ -39363,12 +39363,12 @@ Select Update.</source>
     <message>
         <location filename="../Project/ProjectSourcesBrowser.py" line="567"/>
         <source>Expand all directories</source>
-        <translation>Открыть все подкаталоги</translation>
+        <translation>Открыть все директории</translation>
     </message>
     <message>
         <location filename="../Project/ProjectSourcesBrowser.py" line="569"/>
         <source>Collapse all directories</source>
-        <translation>Закрыть все подкаталоги</translation>
+        <translation>Закрыть все директории</translation>
     </message>
     <message>
         <location filename="../Project/ProjectSourcesBrowser.py" line="572"/>
@@ -39476,7 +39476,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/ProjectTranslationsBrowser.py" line="76"/>
         <source>&lt;b&gt;Project Translations Browser&lt;/b&gt;&lt;p&gt;This allows to easily see all translations contained in the current project. Several actions can be executed via the context menu.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Обозреватель переводов проекта&lt;/b&gt;&lt;p&gt;Позволяет легко просматривать файлы переводов, содержащиеся в текущем проекте. Посредством контекстного меню над ними могут быть выполнены различные действия.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Браузер переводов проекта&lt;/b&gt;&lt;p&gt;Позволяет легко просматривать файлы переводов, содержащиеся в текущем проекте. Посредством контекстного меню над ними могут быть выполнены различные действия.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/ProjectTranslationsBrowser.py" line="166"/>
@@ -40008,12 +40008,12 @@ Select Update.</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/PurgeExtension/ProjectHelper.py" line="40"/>
         <source>Delete files and directories not known to Mercurial</source>
-        <translation>Удалить файлы и каталоги не находящиеся под управлением Mercurial</translation>
+        <translation>Удалить файлы и директории, не находящиеся под управлением Mercurial</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/PurgeExtension/ProjectHelper.py" line="43"/>
         <source>&lt;b&gt;Purge Files&lt;/b&gt;&lt;p&gt;This deletes files and directories not known to Mercurial. That means that purge will delete:&lt;ul&gt;&lt;li&gt;unknown files (marked with &quot;not tracked&quot; in the status dialog)&lt;/li&gt;&lt;li&gt;empty directories&lt;/li&gt;&lt;/ul&gt;Note that ignored files will be left untouched.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Очистить файлы&lt;/b&gt;&lt;p&gt;Удалить файлы и каталоги не находящиеся под управлением Mercurial. Это означает что будут удалены:&lt;ul&gt;&lt;li&gt;неизвестные для Mercurial файлы (помеченные как &quot;не отслеживаются&quot; в статус диалоге)&lt;/li&gt;&lt;li&gt;пустые каталоги&lt;/li&gt;&lt;/ul&gt;Примечание: игнорируемые файлы не будут удалены.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Очистить файлы&lt;/b&gt;&lt;p&gt;Удаление файлов и директорий, не находящихся под управлением Mercurial. Это означает что будут удалены:&lt;ul&gt;&lt;li&gt;неизвестные для Mercurial файлы (помеченные как &quot;не отслеживаются&quot; в статус диалоге)&lt;/li&gt;&lt;li&gt;пустые директории&lt;/li&gt;&lt;/ul&gt;Примечание: игнорируемые файлы не будут удалены.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/PurgeExtension/ProjectHelper.py" line="55"/>
@@ -40023,12 +40023,12 @@ Select Update.</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/PurgeExtension/ProjectHelper.py" line="59"/>
         <source>Delete files and directories not known to Mercurial including ignored ones</source>
-        <translation>Удалить файлы и каталоги не находящиеся под управлением Mercurial включая игнорируемые</translation>
+        <translation>Удалить файлы и директории, не находящиеся под управлением Mercurial, включая игнорируемые</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/PurgeExtension/ProjectHelper.py" line="63"/>
         <source>&lt;b&gt;Purge All Files&lt;/b&gt;&lt;p&gt;This deletes files and directories not known to Mercurial. That means that purge will delete:&lt;ul&gt;&lt;li&gt;unknown files (marked with &quot;not tracked&quot; in the status dialog)&lt;/li&gt;&lt;li&gt;empty directories&lt;/li&gt;&lt;li&gt;ignored files and directories&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Очистить все файлы&lt;/b&gt;&lt;p&gt;Удалить файлы и каталоги не находящиеся под управлением Mercurial. Это означает что будут удалены:&lt;ul&gt;&lt;li&gt;неизвестные для Mercurial файлы (помеченные как &quot;не отслеживаются&quot; в статус диалоге)&lt;/li&gt;&lt;li&gt;пустые каталоги&lt;/li&gt;&lt;li&gt;игнорируемые файлы&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Очистить все файлы&lt;/b&gt;&lt;p&gt;Удаление файлов и директорий, не находящихся под управлением Mercurial. Это означает что будут удалены:&lt;ul&gt;&lt;li&gt;неизвестные для Mercurial файлы (помеченные как &quot;не отслеживаются&quot; в статус диалоге)&lt;/li&gt;&lt;li&gt;пустые директории&lt;/li&gt;&lt;li&gt;игнорируемые файлы&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/PurgeExtension/ProjectHelper.py" line="76"/>
@@ -40068,12 +40068,12 @@ Select Update.</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/PurgeExtension/ProjectHelper.py" line="84"/>
         <source>&lt;b&gt;List Files to be Purged&lt;/b&gt;&lt;p&gt;This lists files and directories not known to Mercurial. These would be deleted by the &quot;Purge Files&quot; menu entry.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Список файлов для очистки&lt;/b&gt;&lt;p&gt;Показывает файлы и каталоги не находящиеся под управлением Mercurial. Они будут удалены при выборе &quot;Очистить файлы&quot; из меню.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Список файлов для очистки&lt;/b&gt;&lt;p&gt;Показывает файлы и директории не находящиеся под управлением Mercurial. Они будут удалены при выборе &quot;Очистить файлы&quot; из меню.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/PurgeExtension/ProjectHelper.py" line="100"/>
         <source>&lt;b&gt;List All Files to be Purged&lt;/b&gt;&lt;p&gt;This lists files and directories not known to Mercurial including ignored ones. These would be deleted by the &quot;Purge All Files&quot; menu entry.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Список всех файлов для очистки&lt;/b&gt;&lt;p&gt;Показывает файлы и каталоги не находящиеся под управлением Mercurial, включая игнорируемые. Они будут удалены при выборе &quot;Очистить все файлы&quot; из меню.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Список всех файлов для очистки&lt;/b&gt;&lt;p&gt;Показывает файлы и директории, не находящиеся под управлением Mercurial, включая игнорируемые. Они будут удалены при выборе &quot;Очистить все файлы&quot; из меню.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -40088,24 +40088,24 @@ Select Update.</source>
         <source>&lt;b&gt;Python Code Coverage&lt;/b&gt;
 &lt;p&gt;This dialog shows the collected code coverage data.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Охват кода Python&lt;/b&gt;
-&lt;p&gt;Этот диалог отображает результаты охватывающего выполнения проекта.&lt;/p&gt;</translation>
+&lt;p&gt;Отображение диалога с результатами  охватывающего выполнения проекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../DataViews/PyCoverageDialog.ui" line="35"/>
         <source>E&amp;xclude pattern:</source>
-        <translation>Образец &amp;исключения:</translation>
+        <translation>Шаблон &amp;исключения:</translation>
     </message>
     <message>
         <location filename="../DataViews/PyCoverageDialog.ui" line="51"/>
         <source>Enter a regexp pattern marking lines to exclude from coverage</source>
-        <translation>Задайте рекулярное выражение, описывающее, какие строки должны быть исключены из охвата</translation>
+        <translation>Задайте шаблон регулярного выражения, описывающего, какие строки должны быть исключены из охвата</translation>
     </message>
     <message>
         <location filename="../DataViews/PyCoverageDialog.ui" line="54"/>
         <source>&lt;b&gt;Exclude pattern&lt;/b&gt;
 &lt;p&gt;Enter a regular expression pattern. Lines matching this pattern are excluded from the coverage analysis. The default pattern is &apos;#pragma[: ]+[nN][oO] [cC][oO][vV][eE][rR]&apos;. If the pattern is found on a line containing the colon that introduces a suite of statements, the entire suite is excluded.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Образец исключения&lt;/b&gt;
-&lt;p&gt;Задайте образец с помощью регулярного выражения. Строки, удовлетворяющие этому выражению, будут исключены из анализа охвата. Образец по-умолчанию - &apos;#pragma[: ]+[nN][oO] [cC][oO][vV][eE][rR]&apos;. Если образец найден на строке, содержащей несколько операторов, то будет выполнена вся строка.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Шаблон исключения&lt;/b&gt;
+&lt;p&gt;Задайте шаблон регулярного выражения. Строки, удовлетворяющие этому выражению, будут исключены из анализа охвата. Шаблон по умолчанию - &apos;#pragma[: ]+[nN][oO] [cC][oO][vV][eE][rR]&apos;. Если шаблон находится в строке, содержащей несколько операторов, то будет выполнена вся строка.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../DataViews/PyCoverageDialog.ui" line="71"/>
@@ -40122,7 +40122,7 @@ Select Update.</source>
         <source>&lt;b&gt;Python Code Coverage&lt;/b&gt;
 &lt;p&gt;This list shows the collected code coverage data. There are several actions available via the context menu.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Охват кода Python&lt;/b&gt;
-&lt;p&gt;Этот диалог отображает результаты охватывающего выполнения проекта.
+&lt;p&gt;Отображение диалога с результатами охватывающего выполнения проекта.
 Некоторые действия доступны из контекстного меню&lt;/p&gt;</translation>
     </message>
     <message>
@@ -40216,9 +40216,9 @@ Select Update.</source>
         <location filename="../DataViews/PyCoverageDialog.py" line="243"/>
         <source>%n file(s) could not be parsed. Coverage info for these is not available.</source>
         <translation>
-            <numerusform>Невозможно разобрать %n файл. Информация о покрытии для него недоступна.</numerusform>
-            <numerusform>Невозможно разобрать %n файла. Информация о покрытии для них недоступна.</numerusform>
-            <numerusform>Невозможно разобрать %n файлов. Информация о покрытии для них недоступна.</numerusform>
+            <numerusform>Невозможно разобрать %n файл. Информация охвата для него недоступна.</numerusform>
+            <numerusform>Невозможно разобрать %n файла. Информация охвата для них недоступна.</numerusform>
+            <numerusform>Невозможно разобрать %n файлов. Информация охвата для них недоступна.</numerusform>
         </translation>
     </message>
     <message>
@@ -40238,13 +40238,13 @@ Select Update.</source>
         <location filename="../DataViews/PyProfileDialog.ui" line="23"/>
         <source>&lt;b&gt;Profile Results&lt;/b&gt;
 &lt;p&gt;This dialog shows the profile results.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Данные профайлера...&lt;/b&gt;&lt;p&gt;Отображает результаты профилирования проекта.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Данные профайлера...&lt;/b&gt;&lt;p&gt;Отображение результатов профилирования проекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../DataViews/PyProfileDialog.ui" line="39"/>
         <source>&lt;b&gt;Profile Results&lt;/b&gt;
 &lt;p&gt;This list shows the profile results. There are several actions available via the context menu.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Данные профайлера...&lt;/b&gt;&lt;p&gt;Отображает результаты профилирования проекта. Некоторые действия доступны из контекстного меню.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Данные профайлера...&lt;/b&gt;&lt;p&gt;Отображение результатов профилирования проекта. Некоторые действия доступны из контекстного меню.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../DataViews/PyProfileDialog.ui" line="56"/>
@@ -40574,13 +40574,13 @@ The following example could clarify the regexp which match a valid date: &lt;/p&
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="118"/>
         <source>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;
-&lt;p&gt;Выбрать  одиночный символ из диапазона с помощью специального диалога.&lt;/p&gt;</translation>
+&lt;p&gt;Выбрать  одиночный символ из диапазона посредством специального диалога.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="121"/>
         <source>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog. This dialog will help to edit the range of characters and add some specific conditions.&lt;/p&gt;s</source>
         <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;
-&lt;p&gt;Выбрать  одиночный символ из диапазона с помощью специального диалога. Этот диалог поможет изменить диапазон символов и добавить некоторые специфические условия.&lt;/p&gt;</translation>
+&lt;p&gt;Выбрать  одиночный символ из диапазона посредством специального диалога. Этот диалог поможет изменить диапазон символов и добавить некоторые специфические условия.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="128"/>
@@ -40603,8 +40603,8 @@ character class is faster and more precise.&lt;/p&gt;</source>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="146"/>
         <source>&lt;b&gt;Repeat contents&lt;/b&gt;
 &lt;p&gt;Select a repetition condition via a specific dialog. This dialog will help to specify the allowed range for repetitions.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Повторять содержания&lt;/b&gt;
-&lt;p&gt;Задайте условия повторения с помощью специального диалога. Этот диалог поможет указать допустимые пределы для повторений.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Повтор содержания&lt;/b&gt;
+&lt;p&gt;Задайте условия повторения посредством специального диалога. Этот диалог поможет указать допустимые пределы для повторений.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="154"/>
@@ -40853,7 +40853,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="359"/>
         <source>&lt;b&gt;Redo last edit&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Восстановить последнее отменённое изменение&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Восстановление последнего отменённого изменения&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="386"/>
@@ -41167,7 +41167,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="59"/>
         <source>&lt;b&gt;New from repository&lt;/b&gt;&lt;p&gt;This creates a new local project from the VCS repository.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Новый из репозитория&lt;/b&gt;&lt;p&gt;Создать новый проект из репозитория VCS.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Новый из репозитория&lt;/b&gt;&lt;p&gt;Создание нового проекта из репозитория VCS.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="67"/>
@@ -41232,7 +41232,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="114"/>
         <source>Show log browser</source>
-        <translation>Показать проводник журналов</translation>
+        <translation>Показать браузер журналов</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="119"/>
@@ -41242,7 +41242,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="122"/>
         <source>&lt;b&gt;Show log browser&lt;/b&gt;&lt;p&gt;This shows a dialog to browse the log of the local project. A limited number of entries is shown first. More can be retrieved later on.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать проводник журнала&lt;/b&gt;&lt;p&gt;Показывает диалог для навигации по файлу журнала локального проекта. Изначально показывается ограниченное количество записей. Дальнейшие записи могут быть получены позже.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать браузер журналов&lt;/b&gt;&lt;p&gt;Отображение диалога навигации по файлу журнала локального проекта. Изначально показывается ограниченное количество записей. Дальнейшие записи могут быть получены позже.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="131"/>
@@ -41262,7 +41262,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="139"/>
         <source>&lt;b&gt;Show differences&lt;/b&gt;&lt;p&gt;This shows differences of the local project to the repository.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать различия&lt;/b&gt;&lt;p&gt;Показать отличия локального проекта относительно репозитория.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать различия&lt;/b&gt;&lt;p&gt;Показ различий локального проекта относительно репозитория.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="147"/>
@@ -41312,7 +41312,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="187"/>
         <source>&lt;b&gt;Show status&lt;/b&gt;&lt;p&gt;This shows the status of the local project.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать статус&lt;/b&gt;&lt;p&gt;Показать статус локального проекта.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать статус&lt;/b&gt;&lt;p&gt;Отображение статуса локального проекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="194"/>
@@ -41382,7 +41382,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="249"/>
         <source>&lt;b&gt;Export from repository&lt;/b&gt;&lt;p&gt;This exports a project from the repository.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Экспорт из репозитория&lt;/b&gt;&lt;p&gt;Экспортировать проект из репозитория.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Экспорт из репозитория&lt;/b&gt;&lt;p&gt;Экспорт проекта из репозитория.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="256"/>
@@ -41522,7 +41522,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="351"/>
         <source>&lt;b&gt;Execute command&lt;/b&gt;&lt;p&gt;This opens a dialog to enter an arbitrary VCS command.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Выполнить команду&lt;/b&gt;&lt;p&gt;Открыть диалог для ввода произвольной команды VCS.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Выполнить команду&lt;/b&gt;&lt;p&gt;Открытие диалога ввода произвольной команды VCS.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/ProjectHelper.py" line="358"/>
@@ -42860,19 +42860,19 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="86"/>
         <source>&lt;b&gt;Redo last edit&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Восстановить последнее отменённое изменение&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Восстановление последнего отменённого изменения&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="383"/>
         <source>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;
-&lt;p&gt;Выбрать  одиночный символ из диапазона с помощью специального диалога.&lt;/p&gt;</translation>
+&lt;p&gt;Выбрать  одиночный символ из диапазона посредством специального диалога.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="386"/>
         <source>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog. This dialog will help to edit the range of characters and add some specific conditions.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;
-&lt;p&gt;Выбрать одиночный символ с помощью специального диалога. Этот диалог помогает редактировать диапазон символов и добавлять некоторые специфические условия.&lt;/p&gt;</translation>
+&lt;p&gt;Выбрать одиночный символ посредством специального диалога. Этот диалог помогает редактировать диапазон символов и добавлять некоторые специфические условия.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="393"/>
@@ -42895,8 +42895,8 @@ character class is faster and more precise.&lt;/p&gt;</source>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="411"/>
         <source>&lt;b&gt;Repeat contents&lt;/b&gt;
 &lt;p&gt;Select a repetition condition via a specific dialog. This dialog will help to specify the allowed range for repetitions.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Повторять содержания&lt;/b&gt;
-&lt;p&gt;Задайте условия повторения с помощью специального диалога. Этот диалог поможет указать допустимые пределы для повторений.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Повтор содержания&lt;/b&gt;
+&lt;p&gt;Задайте условия повторения посредством специального диалога. Этот диалог поможет указать допустимые пределы для повторений.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="159"/>
@@ -43106,8 +43106,9 @@ characters inside the brakets. E.g. the regex &apos;Set(Value)?&apos; matches &a
 &lt;p&gt;Select to insert the alternation symbol &apos;|&apos;. The alternation is used to match a single regular expression out of 
 several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matches words containing the word &apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; or &apos;fish&apos;.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Альтернативы: &apos;|&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку символа альтернативы &apos;|&apos;. Альтернативы используются для совпадения с одним из нескольких 
-возможных регулярных выражений. Например, &apos;cat|dog|mouse|fish&apos; совпадает со словами, содержащими слово &apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; или &apos;fish&apos;.</translation>
+&lt;p&gt;Разрешить вставку символа альтернативы &apos;|&apos;.  Альтернативы используются для совпадения с одним из нескольких 
+возможных регулярных выражений. Например, &apos;cat|dog|mouse|fish&apos; совпадает со словами, содержащими слово 
+&apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; или &apos;fish&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="463"/>
@@ -44180,13 +44181,13 @@ The following example could clarify the regexp which match a valid date: &lt;/p&
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="66"/>
         <source>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;
-&lt;p&gt;Выбрать  одиночный символ из диапазона с помощью специального диалога.&lt;/p&gt;</translation>
+&lt;p&gt;Выбрать  одиночный символ из диапазона посредством специального диалога.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="69"/>
         <source>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog. This dialog will help to edit the range of characters and add some specific conditions.&lt;/p&gt;s</source>
         <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;
-&lt;p&gt;Выбрать  одиночный символ из диапазона с помощью специального диалога. Этот диалог поможет изменить диапазон символов и добавить некоторые специфические условия.&lt;/p&gt;</translation>
+&lt;p&gt;Выбрать  одиночный символ из диапазона посредством специального диалога. Этот диалог поможет изменить диапазон символов и добавить некоторые специфические условия.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="76"/>
@@ -44209,8 +44210,8 @@ character class is faster and more precise.&lt;/p&gt;</source>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="94"/>
         <source>&lt;b&gt;Repeat contents&lt;/b&gt;
 &lt;p&gt;Select a repetition condition via a specific dialog. This dialog will help to specify the allowed range for repetitions.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Повторять содержания&lt;/b&gt;
-&lt;p&gt;Задайте условия повторения с помощью специального диалога. Этот диалог поможет указать допустимые пределы для повторений.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Повтор содержания&lt;/b&gt;
+&lt;p&gt;Задайте условия повторения посредством специального диалога. Этот диалог поможет указать допустимые пределы для повторений.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="102"/>
@@ -44477,7 +44478,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="321"/>
         <source>&lt;b&gt;Redo last edit&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Восстановить последнее отменённое изменение&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Восстановление последнего отменённого изменения&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="348"/>
@@ -44854,12 +44855,12 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Helpviewer/QtHelpDocumentationDialog.py" line="60"/>
         <source>Qt Compressed Help Files (*.qch)</source>
-        <translation>Сжатые файлы помощи (*.qch)</translation>
+        <translation>Сжатые файлы Qt справки (*.qch)</translation>
     </message>
     <message>
         <location filename="../Helpviewer/QtHelpDocumentationDialog.py" line="71"/>
         <source>The file &lt;b&gt;{0}&lt;/b&gt; is not a valid Qt Help File.</source>
-        <translation>Некорректный файл помощи Qt: &lt;b&gt;{0}&lt;/b&gt;.</translation>
+        <translation>Некорректный файл Qt справки: &lt;b&gt;{0}&lt;/b&gt;.</translation>
     </message>
     <message>
         <location filename="../Helpviewer/QtHelpDocumentationDialog.py" line="81"/>
@@ -45366,7 +45367,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/QueuesExtension/ProjectHelper.py" line="161"/>
         <source>&lt;b&gt;Finish Applied Patches&lt;/b&gt;&lt;p&gt;This finishes the applied patches by moving them out of mq control into regular repository history.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Завершить применённые патчи&lt;/b&gt;&lt;p&gt;Завершить применённые патчи переместив их в репозиторий.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Завершить применённые патчи&lt;/b&gt;&lt;p&gt;Завершить применённые патчи, переместив их в репозиторий.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/QueuesExtension/ProjectHelper.py" line="170"/>
@@ -46461,10 +46462,10 @@ and so on.&lt;/td&gt;&lt;/tr&gt;
     <message>
         <location filename="../QScintilla/Shell.py" line="119"/>
         <source>&lt;b&gt;The Shell Window&lt;/b&gt;&lt;p&gt;This is simply an interpreter running in a window. The interpreter is the one that is used to run the program being debugged. This means that you can execute any command while the program being debugged is running.&lt;/p&gt;&lt;p&gt;You can use the cursor keys while entering commands. There is also a history of commands that can be recalled using the up and down cursor keys. Pressing the up or down key after some text has been entered will start an incremental search.&lt;/p&gt;&lt;p&gt;The shell has some special commands. &apos;reset&apos; kills the shell and starts a new one. &apos;clear&apos; clears the display of the shell window. &apos;start&apos; is used to switch the shell language and must be followed by a supported language. Supported languages are listed by the &apos;languages&apos; command. These commands (except &apos;languages&apos;) are available through the context menu as well.&lt;/p&gt;&lt;p&gt;Pressing the Tab key after some text has been entered will show a list of possible commandline completions. The relevant entry may be selected from this list. If only one entry is available, this will inserted automatically.&lt;/p&gt;&lt;p&gt;In passive debugging mode the shell is only available after the program to be debugged has connected to the IDE until it has finished. This is indicated by a different prompt and by an indication in the window caption.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Окно оболочки&lt;/b&gt;&lt;p&gt;Это просто интерпретатор, запущенный в оболочке. Тот же, что используется для отладки программы. Это означает, что Вы можете выполнять любые команды, пока работает отлаживаемая программа.&lt;/p&gt;
-&lt;p&gt;Вы можете использовать курсорные клавиши во время ввода команд. Также есть история, которая может прокручиваться с помощью курсора &quot;вверх&quot; и &quot;вниз&quot;. Нажатие &quot;вверх&quot; или &quot;вниз&quot; после того, как набрана часть слова, начнёт инкрементальный поиск.&lt;/p&gt;
-&lt;p&gt;Оболочка дополнена несколькими дополнительными командами. &apos;reset&apos; убивает сессию и создаёт новую. &apos;reset&apos; убивает оболочку и запускает новую. &apos;start&apos; используется для переключения языка программирования и должна быть продолжена либо словом &apos;Python&apos;, либо &apos;Ruby&apos;. Эти команды также доступны через контекстное меню.&lt;/p&gt;
-&lt;p&gt;Нажатием клавиши Tab после введённого фрагмента текста можно просмотреть список возможных дополнений. Из этого списка можно выбрать подходящее дополнение. Если доступно только одно дополнение, оно будет вставлено автоматически.&lt;/p&gt;
+        <translation>&lt;b&gt;Shell Window&lt;/b&gt;&lt;p&gt;Это просто интерпретатор, запущенный в окне. Тот же, что используется для отладки программы. Это означает, что Вы можете выполнять любые команды, пока работает отлаживаемая программа.&lt;/p&gt;
+&lt;p&gt;Вы можете использовать клавиши управления курсором при вводе команд. Также существует история команд, которые можно вызывать с помощью клавиш управления курсором &quot;вверх&quot; и &quot;вниз&quot;. Нажатие &quot;вверх&quot; или &quot;вниз&quot; после того, как набрана часть слова, начнёт инкрементный поиск.&lt;/p&gt;
+&lt;p&gt;Оболочка дополнена несколькими дополнительными командами. &apos;reset&apos; убивает сессию и создаёт новую. &apos;clear&apos; очищает окно оболочки. &apos;start&apos; используется для переключения языка программирования и должна быть продолжена либо словом &apos;Python&apos;, либо &apos;Ruby&apos;. Эти команды также доступны через контекстное меню.&lt;/p&gt;
+&lt;p&gt;Нажатие клавиши Tab после введённого фрагмента текста можно просмотреть список возможных вариантов командной строки. Из этого списка можно выбрать подходящее дополнение. Если доступно только одно дополнение, оно будет вставлено автоматически.&lt;/p&gt;
 &lt;p&gt;В режиме пассивной отладки оболочка доступна только после того, как отлаживаемая программа подключится к IDE и до её завершения. Это отображается иным приглашением и другим заголовком окна.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -46720,12 +46721,12 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/ShellPage.ui" line="69"/>
         <source>Select this to enable autocompletion</source>
-        <translation>Разрешить автозавершение</translation>
+        <translation>Разрешить автодополнение</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ShellPage.ui" line="72"/>
         <source>Autocompletion Enabled</source>
-        <translation>Автоматическое завершение</translation>
+        <translation>Автоматическое дополнение</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ShellPage.ui" line="79"/>
@@ -46894,12 +46895,12 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ShelveExtension/ProjectHelper.py" line="48"/>
         <source>Show shelve browser</source>
-        <translation>Показать обозреватель полок</translation>
+        <translation>Показать браузер полок</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ShelveExtension/ProjectHelper.py" line="48"/>
         <source>Show shelve browser...</source>
-        <translation>Показать обозреватель полок...</translation>
+        <translation>Показать браузер полок...</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ShelveExtension/ProjectHelper.py" line="52"/>
@@ -46909,7 +46910,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ShelveExtension/ProjectHelper.py" line="55"/>
         <source>&lt;b&gt;Show shelve browser...&lt;/b&gt;&lt;p&gt;This shows a dialog listing all available shelves. Actions on these shelves may be executed via the context menu.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать обозреватель полок...&lt;/b&gt;&lt;p&gt;Показать диалог со списком всех полок. С помощью контекстного меню можно манипулировать со всеми показанными полками.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать браузер полок...&lt;/b&gt;&lt;p&gt;Показать диалог со списком всех полок. С помощью контекстного меню можно манипулировать со всеми показанными полками.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ShelveExtension/ProjectHelper.py" line="65"/>
@@ -47273,7 +47274,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Helpviewer/SiteInfo/SiteInfoNoSslDialog.ui" line="98"/>
         <source>Meta tags of site:</source>
-        <translation>Метки:</translation>
+        <translation>Мета-теги сайта:</translation>
     </message>
     <message>
         <location filename="../Helpviewer/SiteInfo/SiteInfoNoSslDialog.ui" line="118"/>
@@ -47638,9 +47639,9 @@ Function: {3}({4})</source>
         <location filename="../Snapshot/SnapshotTimer.py" line="103"/>
         <source>Snapshot will be taken in %n seconds</source>
         <translation>
-            <numerusform>Снимок будет сделан через %n секунду@Снимок будет сделан через %n секунды@Снимок будет сделан через %n секунд</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+            <numerusform>Снимок будет сделан через %n секунду</numerusform>
+            <numerusform>Снимок будет сделан через %n секунды</numerusform>
+            <numerusform>Снимок будет сделан через %n секунд</numerusform>
         </translation>
     </message>
 </context>
@@ -47962,7 +47963,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../SqlBrowser/SqlBrowser.py" line="204"/>
         <source>SQL Browser</source>
-        <translation>Обозреватель SQL</translation>
+        <translation>SQL браузер</translation>
     </message>
     <message>
         <location filename="../SqlBrowser/SqlBrowser.py" line="65"/>
@@ -47972,12 +47973,12 @@ Function: {3}({4})</source>
     <message>
         <location filename="../SqlBrowser/SqlBrowser.py" line="73"/>
         <source>Unable to open connection: {0}</source>
-        <translation>Не могу соединиться: {0}</translation>
+        <translation>Невозможно соединиться: {0}</translation>
     </message>
     <message>
         <location filename="../SqlBrowser/SqlBrowser.py" line="85"/>
         <source>SQL Browser startup problem</source>
-        <translation>Невозможно запустить обозреватель SQL</translation>
+        <translation>Невозможно запустить SQL браузер</translation>
     </message>
     <message>
         <location filename="../SqlBrowser/SqlBrowser.py" line="100"/>
@@ -48073,7 +48074,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../SqlBrowser/SqlBrowser.py" line="169"/>
         <source>&amp;Help</source>
-        <translation>&amp;Помощь</translation>
+        <translation>&amp;Справка</translation>
     </message>
     <message>
         <location filename="../SqlBrowser/SqlBrowser.py" line="178"/>
@@ -48083,7 +48084,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../SqlBrowser/SqlBrowser.py" line="189"/>
         <source>&lt;h3&gt;About SQL Browser&lt;/h3&gt;&lt;p&gt;The SQL browser window is a little tool to examine the data and the schema of a database and to execute queries on a database.&lt;/p&gt;</source>
-        <translation>&lt;h3&gt;О обозревателе SQL&lt;/h3&gt;&lt;p&gt;SQL-браузер это утилита для выполнения SQL запросов, просмотра схемы базы данных и анализа данных.&lt;/p&gt;</translation>
+        <translation>&lt;h3&gt;О SQL браузере&lt;/h3&gt;&lt;p&gt;SQL-браузер это утилита для выполнения SQL запросов, просмотра схемы базы данных и анализа данных.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -48409,7 +48410,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Debugger/StartCoverageDialog.ui" line="191"/>
         <source>Select this to erase the collected coverage information</source>
-        <translation>Разрешить удаление собранной информации покрытия</translation>
+        <translation>Разрешить удаление собранной информации охвата</translation>
     </message>
     <message>
         <location filename="../Debugger/StartCoverageDialog.ui" line="194"/>
@@ -49076,7 +49077,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/subversion.py" line="686"/>
         <source>Adding files/directories to the Subversion repository</source>
-        <translation>Добавляю файлы/каталоги в репозиторий Subversion</translation>
+        <translation>Добавление файлов/директорий в репозиторий Subversion</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/subversion.py" line="776"/>
@@ -49539,7 +49540,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Graphics/SvgDiagram.py" line="52"/>
         <source>SVG-Viewer</source>
-        <translation>Просмотрщик SVG</translation>
+        <translation>Просмотр SVG</translation>
     </message>
     <message>
         <location filename="../Graphics/SvgDiagram.py" line="94"/>
@@ -49796,8 +49797,8 @@ This is an optional entry. The button to the right will open a
 directory selection dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Рабочая директория&lt;/b&gt;
 &lt;p&gt;Задайте имя рабочей директории для программы Subversion.
-Это опционально. Вы можете выбрать
-его с помощью диалога, нажав кнопку справа.&lt;/p&gt;</translation>
+И как опция. Вы можете выбрать директорию
+с помощью диалога, нажав кнопку справа.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnCommandDialog.ui" line="89"/>
@@ -50826,7 +50827,7 @@ the working copy.&lt;/p&gt;</source>
 &lt;p&gt;Enter the various repository infos into the entry fields. These values are used, when the new project is retrieved from the repository. If the checkbox is selected, the URL must end in the project name. A repository layout with project/tags, project/branches and project/trunk will be assumed. In this case, you may enter a tag or branch, which must look like tags/tagname or branches/branchname. If the checkbox is not selected, the URL must contain the complete path in the repository.&lt;/p&gt;
 &lt;p&gt;For remote repositories the URL must contain the hostname.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Новый проект из репозитория&lt;/b&gt;
-&lt;p&gt;Задайте информацию о репозитории в полях ввода. Эти значения будут использованы при загрузке проекта из репозитория. Если установлена пометка, URL должен завершиться именем проекта. Будет использовано стандартное расположение репозитория (&lt;code&gt;проект/tags&lt;/code&gt;, &lt;code&gt;проект/branches&lt;/code&gt; and &lt;code&gt;проект/trunk&lt;/code&gt;). В этом случае, Вы можете ввести тег или ветвь в виде (&lt;code&gt;tags/тег&lt;/code&gt;, или &lt;code&gt;branches/ветвь&lt;/code&gt;. Если пометка снята, необходимо ввести полный путь в репозитории.&lt;/p&gt;
+&lt;p&gt;Задайте информацию о репозитории в полях ввода. Эти значения будут использованы при загрузке проекта из репозитория. Если чекбокс отмечен, URL должен завершиться именем проекта. Будет использовано стандартное расположение репозитория &lt;code&gt;project/tags&lt;/code&gt;, &lt;code&gt;project/branches&lt;/code&gt; and &lt;code&gt;project/trunk&lt;/code&gt;). В этом случае, Вы можете ввести тег или ветвь в виде (&lt;code&gt;tags/tagname&lt;/code&gt;, или &lt;code&gt;branches/branchname&lt;/code&gt;. Если чекбокс не гтмечен, необходимо ввести полный путь в репозиторий.&lt;/p&gt;
 &lt;p&gt;Для удалённых репозиториев URL должен содержать имя сервера.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -50943,7 +50944,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
 &lt;p&gt;Enter the various infos into the entry fields. These values are used to generate a new project in the repository. If the checkbox is selected, the URL must end in the project name. A directory tree with project/tags, project/branches and project/trunk will be generated in the repository. If the checkbox is not selected, the URL must contain the complete path in the repository.&lt;/p&gt;
 &lt;p&gt;For remote repositories the URL must contain the hostname.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Информация о репозитории&lt;/b&gt;
-&lt;p&gt;Задайте информацию о репозитории в полях ввода. Эти значения будут использованы для создания проекта в репозитории. Если установлена пометка, URL должен завершиться именем проекта. Будет использовано стандартное расположение репозитория (&lt;code&gt;project/tags&lt;/code&gt;, &lt;code&gt;project/branches&lt;/code&gt; и &lt;code&gt;project/trunk&lt;/code&gt;). В этом случае, Вы можете ввести тег или ветвь в виде (&lt;code&gt;tags/тег&lt;/code&gt;, или &lt;code&gt;branches/branches&lt;/code&gt;. Если пометка снята, необходимо ввести полный путь в репозитории.&lt;/p&gt;
+&lt;p&gt;Задайте информацию о репозитории в полях ввода. Эти значения будут использованы для создания проекта в репозитории. Если чекбокс отмечен, URL должен завершиться именем проекта. Будет использовано стандартное расположение репозитория (&lt;code&gt;project/tags&lt;/code&gt;, &lt;code&gt;project/branches&lt;/code&gt; и &lt;code&gt;project/trunk&lt;/code&gt;). Если пометка снята, необходимо ввести полный путь в репозитории.&lt;/p&gt;
 &lt;p&gt;Для удалённых репозиториев URL должен содержать имя сервера.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -51074,7 +51075,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectBrowserHelper.py" line="570"/>
         <source>Show log browser</source>
-        <translation>Показать проводник журналов</translation>
+        <translation>Показать браузер журналов</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectBrowserHelper.py" line="684"/>
@@ -51222,7 +51223,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="59"/>
         <source>&lt;b&gt;New from repository&lt;/b&gt;&lt;p&gt;This creates a new local project from the VCS repository.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Новый из репозитория&lt;/b&gt;&lt;p&gt;Создать новый проект из репозитория VCS.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Новый из репозитория&lt;/b&gt;&lt;p&gt;Создание нового проекта из репозитория VCS.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="67"/>
@@ -51287,7 +51288,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="114"/>
         <source>Show log browser</source>
-        <translation>Показать проводник журналов</translation>
+        <translation>Показать браузер журналов</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="119"/>
@@ -51297,7 +51298,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="122"/>
         <source>&lt;b&gt;Show log browser&lt;/b&gt;&lt;p&gt;This shows a dialog to browse the log of the local project. A limited number of entries is shown first. More can be retrieved later on.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать проводник журнала&lt;/b&gt;&lt;p&gt;Показывает диалог для навигации по файлу журнала локального проекта. Изначально показывается ограниченное количество записей. Дальнейшие записи могут быть получены позже.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать браузер журналов&lt;/b&gt;&lt;p&gt;Отображение диалога навигации по файлу журнала локального проекта. Изначально показывается ограниченное количество записей. Дальнейшие записи могут быть получены позже.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="131"/>
@@ -51337,7 +51338,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="187"/>
         <source>&lt;b&gt;Show status&lt;/b&gt;&lt;p&gt;This shows the status of the local project.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать статус&lt;/b&gt;&lt;p&gt;Показать статус локального проекта.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать статус&lt;/b&gt;&lt;p&gt;Отображение статуса локального проекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="210"/>
@@ -51377,7 +51378,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="233"/>
         <source>&lt;b&gt;Export from repository&lt;/b&gt;&lt;p&gt;This exports a project from the repository.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Экспорт из репозитория&lt;/b&gt;&lt;p&gt;Экспортировать проект из репозитория.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Экспорт из репозитория&lt;/b&gt;&lt;p&gt;Экспорт проекта из репозитория.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="240"/>
@@ -51497,7 +51498,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="335"/>
         <source>&lt;b&gt;Execute command&lt;/b&gt;&lt;p&gt;This opens a dialog to enter an arbitrary VCS command.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Выполнить команду&lt;/b&gt;&lt;p&gt;Открыть диалог для ввода произвольной команды VCS.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Выполнить команду&lt;/b&gt;&lt;p&gt;Открытие диалога ввода произвольной команды VCS.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="342"/>
@@ -51753,7 +51754,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="139"/>
         <source>&lt;b&gt;Show differences&lt;/b&gt;&lt;p&gt;This shows differences of the local project to the repository.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать различия&lt;/b&gt;&lt;p&gt;Показать отличия локального проекта относительно репозитория.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать различия&lt;/b&gt;&lt;p&gt;Показ различий локального проекта относительно репозитория.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/ProjectHelper.py" line="155"/>
@@ -52999,7 +53000,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnUrlSelectionDialog.ui" line="79"/>
         <source>Enter the label name or path</source>
-        <translation>Задайте имя метки или путь</translation>
+        <translation>Задайте имя или путь метки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnUrlSelectionDialog.ui" line="57"/>
@@ -54788,9 +54789,9 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
 &lt;p&gt;This dialog shows the results of the syntax check. Double clicking an
 entry will open an editor window and position the cursor at the respective line.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Результаты проверки синтаксиса&lt;/b&gt;
-&lt;p&gt;Диалог отображает результаты проверки синтаксиса.
+&lt;p&gt;Отображение диалога с результатами проверки синтаксиса.
 Двойной щелчок по записи откроет окно редактора и поместит курсор
-на сообветствующую строку.&lt;/p&gt;</translation>
+на соответствующую строку.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/SyntaxChecker/SyntaxCheckerDialog.ui" line="40"/>
@@ -54819,7 +54820,7 @@ entry will open an editor window and position the cursor at the respective line.
 an entry will open this entry in an editor window and position the cursor at
 the respective line.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Список результатов&lt;/p&gt;
-&lt;p&gt;Список отображает результаты проверки синтаксиса. Двойной щелчок
+&lt;p&gt;Отображение списка результатов проверки синтаксиса. Двойной щелчок
 по элементу откроет редактор с курсором на соответствующей строке и колонке.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -55008,7 +55009,7 @@ the respective line.&lt;/p&gt;</source>
         <location filename="../Tools/TRPreviewer.py" line="211"/>
         <source>&lt;b&gt;Display context sensitive help&lt;/b&gt;&lt;p&gt;In What&apos;s This? mode, the mouse cursor shows an arrow with a question mark, and you can click on the interface elements to get a short description of what they do and how to use them. In dialogs, this feature can be accessed using the context help button in the titlebar.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Показать контекстную помощь&lt;/b&gt;
-&lt;p&gt;В режиме контекстной помощи курсор мыши выглядит как стрелка со знаком вопроса, и, щёлкнув по элементу интерфейса, Вы можете просмотреть краткую помощь о его роли и его использовании. В диалогах можно воспользоваться кнопкой контекстной помощи в заголовке окна.&lt;/p&gt;</translation>
+&lt;p&gt;В режиме контекстной помощи курсор мыши выглядит как стрелка со знаком вопроса, и, щёлкнув по элементу интерфейса, Вы можете просмотреть краткую справку о его роли и его использовании. В диалогах можно воспользоваться кнопкой контекстной помощи в заголовке окна.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Tools/TRPreviewer.py" line="221"/>
@@ -55090,7 +55091,7 @@ the respective line.&lt;/p&gt;</source>
         <location filename="../Tools/TRPreviewer.py" line="262"/>
         <source>&lt;b&gt;Close Window&lt;/b&gt;&lt;p&gt;Close the current window.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Закрыть окно&lt;/b&gt;
-&lt;p&gt;Закрыть текущее окно.&lt;/p&gt;</translation>
+&lt;p&gt;Закрытие текущего окна.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Tools/TRPreviewer.py" line="268"/>
@@ -55121,7 +55122,7 @@ the respective line.&lt;/p&gt;</source>
     <message>
         <location filename="../Tools/TRPreviewer.py" line="300"/>
         <source>&amp;Help</source>
-        <translation>&amp;Помощь</translation>
+        <translation>&amp;Справка</translation>
     </message>
     <message>
         <location filename="../Tools/TRPreviewer.py" line="311"/>
@@ -55131,7 +55132,7 @@ the respective line.&lt;/p&gt;</source>
     <message>
         <location filename="../Tools/TRPreviewer.py" line="321"/>
         <source>Help</source>
-        <translation>Помощь</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../Tools/TRPreviewer.py" line="370"/>
@@ -55260,7 +55261,7 @@ the respective line.&lt;/p&gt;</source>
 &lt;p&gt;This dialog shows the results of the tabnanny command. Double clicking an
 entry will open an editor window and position the cursor at the respective line.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Результаты tabnanny&lt;/b&gt;
-&lt;p&gt;Диалог отображает результаты работы программы tabnanny. Двойной щелчок
+&lt;p&gt;Отображение диалога с результатами работы программы tabnanny. Двойной щелчок
 по элементу откроет редактор с курсором в соответствующей строке и колонке.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -55290,7 +55291,7 @@ entry will open an editor window and position the cursor at the respective line.
 an entry will open this entry in an editor window and position the cursor at
 the respective line.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Результаты tabnanny&lt;/b&gt;
-&lt;p&gt;Диалог отображает результаты работы программы tabnanny. Двойной щелчок
+&lt;p&gt;Отображение результатов работы программы tabnanny. Двойной щелчок
 по элементу откроет редактор с курсором на соответствующей строке и колонке.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -55938,7 +55939,7 @@ the respective line.&lt;/p&gt;</source>
     <message>
         <location filename="../Templates/TemplatePropertiesDialog.ui" line="32"/>
         <source>Enter the name of the template/group. Templates are autocompleted upon this name.</source>
-        <translation>Введите имя шаблона/группы. Шаблоны автозавершаются этим именем.</translation>
+        <translation>Введите имя шаблона/группы. Шаблоны автодополняются этим именем.</translation>
     </message>
     <message>
         <location filename="../Templates/TemplatePropertiesDialog.ui" line="39"/>
@@ -55974,12 +55975,12 @@ be changed via the preferences dialog.&lt;/p&gt;
 &lt;p&gt;Press the help button for more information.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Текст шаблона&lt;/b&gt;
 &lt;p&gt;Введите текст шаблона. $VAR$ будет замещено на соответствующий текст. Возможно использование предопределённых переменных. Символ сепаратора можно изменить в настройках.&lt;/p&gt;
-&lt;p&gt;Нажмите кнопку помощи для дополнительной информации.&lt;/p&gt;</translation>
+&lt;p&gt;Нажмите кнопку справки для дополнительной информации.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Templates/TemplatePropertiesDialog.ui" line="103"/>
         <source>&amp;Help</source>
-        <translation>&amp;Помощь</translation>
+        <translation>&amp;Справка</translation>
     </message>
     <message>
         <location filename="../Templates/TemplatePropertiesDialog.ui" line="106"/>
@@ -55989,7 +55990,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Templates/TemplatePropertiesDialog.py" line="42"/>
         <source>&lt;b&gt;Template name&lt;b&gt;&lt;p&gt;Enter the name of the template. Templates may be autocompleted upon this name. In order to support autocompletion. the template name must only consist of letters (a-z and A-Z), digits (0-9) and underscores (_).&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Имя шаблона&lt;b&gt;&lt;p&gt;Введите имя шаблона. Если имя состоит из букв, цифр и символов подчеркивания (a-z, A-Z, 0-9 и _), то будет возможно автозаполнение.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Имя шаблона&lt;b&gt;&lt;p&gt;Введите имя шаблона. Если имя состоит из букв, цифр и символов подчеркивания (a-z, A-Z, 0-9 и _), то будет возможно автодополнение.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Templates/TemplatePropertiesDialog.py" line="54"/>
@@ -56080,7 +56081,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Templates/TemplateViewer.py" line="424"/>
         <source>Help about Templates...</source>
-        <translation>Помощь по шаблонам...</translation>
+        <translation>Справка по шаблонам...</translation>
     </message>
     <message>
         <location filename="../Templates/TemplateViewer.py" line="427"/>
@@ -56165,7 +56166,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Templates/TemplateViewer.py" line="595"/>
         <source>The templates contain unsaved changes. Shall these changes be discarded?</source>
-        <translation>Шаблоны содержат несохраненные изменения. Отбросить их?</translation>
+        <translation>Шаблоны содержат несохраненные изменения. Отказаться от них?</translation>
     </message>
 </context>
 <context>
@@ -56319,7 +56320,7 @@ be changed via the preferences dialog.&lt;/p&gt;
         <location filename="../Preferences/ToolConfigurationDialog.ui" line="61"/>
         <source>&lt;b&gt;Redirect output&lt;b&gt;&lt;p&gt;Select the output redirection mode. The standard error channel is either not redirected or shown in the log viewer.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Перенаправить вывод&lt;b&gt;
-&lt;p&gt;Выберите режим перенаправления вывода. Поток стандартного вывода ошибок либо не перенаправляется, либо отображается в просмотрщике журнала.&lt;/p&gt;</translation>
+&lt;p&gt;Выберите режим перенаправления вывода. Поток стандартного вывода ошибок либо не перенаправляется, либо отображается в браузере журнала.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ToolConfigurationDialog.ui" line="68"/>
@@ -56862,7 +56863,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Project/TranslationPropertiesDialog.ui" line="111"/>
         <source>Press to select a file via a selection dialog</source>
-        <translation>Выбор файла с помощью диалога выбора</translation>
+        <translation>Выбор файла посредством диалога выбора</translation>
     </message>
     <message>
         <location filename="../Project/TranslationPropertiesDialog.ui" line="114"/>
@@ -57060,7 +57061,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/TransplantExtension/TransplantDialog.ui" line="112"/>
         <source>Enter changesets by number, id, range or revset expression one per line</source>
-        <translation>Задайте именения с помощью номера, id, диапазона или выражения revset (по одному в строке)</translation>
+        <translation>Задайте именения с помощью номера, id, диапазона или revset-выражения (по одному в строке)</translation>
     </message>
 </context>
 <context>
@@ -57171,7 +57172,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Tools/TrayStarter.py" line="120"/>
         <source>SQL Browser</source>
-        <translation>Обозреватель SQL</translation>
+        <translation>SQL браузер</translation>
     </message>
     <message>
         <location filename="../Tools/TrayStarter.py" line="133"/>
@@ -57458,7 +57459,7 @@ be changed via the preferences dialog.&lt;/p&gt;
         <location filename="../Tools/UIPreviewer.py" line="205"/>
         <source>&lt;b&gt;Display context sensitive help&lt;/b&gt;&lt;p&gt;In What&apos;s This? mode, the mouse cursor shows an arrow with a question mark, and you can click on the interface elements to get a short description of what they do and how to use them. In dialogs, this feature can be accessed using the context help button in the titlebar.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Показать контекстную помощь&lt;/b&gt;
-&lt;p&gt;В режиме контекстной помощи курсор мыши выглядит как стрелка со знаком вопроса, и, щёлкнув по элементу интерфейса, Вы можете просмотреть краткую помощь о его роли и его использовании. В диалогах можно воспользоваться кнопкой контекстной помощи в заголовке окна.&lt;/p&gt;</translation>
+&lt;p&gt;В режиме контекстной помощи курсор мыши выглядит как стрелка со знаком вопроса, и, щёлкнув по элементу интерфейса, Вы можете просмотреть краткую справку о его роли и его использовании. В диалогах можно воспользоваться кнопкой контекстной помощи в заголовке окна.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Tools/UIPreviewer.py" line="215"/>
@@ -57503,7 +57504,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Tools/UIPreviewer.py" line="255"/>
         <source>&amp;Help</source>
-        <translation>&amp;Помощь</translation>
+        <translation>&amp;Справка</translation>
     </message>
     <message>
         <location filename="../Tools/UIPreviewer.py" line="266"/>
@@ -57518,7 +57519,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Tools/UIPreviewer.py" line="280"/>
         <source>Help</source>
-        <translation>Помощь</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../Tools/UIPreviewer.py" line="303"/>
@@ -58280,7 +58281,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="225"/>
         <source>Initializing Plugin Manager...</source>
-        <translation>Инициализируется менеджер плагинов...</translation>
+        <translation>Инициализация менеджера плагинов...</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="231"/>
@@ -58325,7 +58326,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="528"/>
         <source>Initializing Single Application Server...</source>
-        <translation>Инициализируется сервер уникального приложения...</translation>
+        <translation>Инициализация сервера уникального приложения...</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="537"/>
@@ -58340,17 +58341,17 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="1289"/>
         <source>Project-Viewer</source>
-        <translation>Просмотрщик проекта</translation>
+        <translation>Просмотр проекта</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1306"/>
         <source>Multiproject-Viewer</source>
-        <translation>Просмотрщик мультипроекта</translation>
+        <translation>Просмотр мультипроекта</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1324"/>
         <source>Debug-Viewer</source>
-        <translation>Просмотрщик отладки</translation>
+        <translation>Просмотр отладки</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="837"/>
@@ -58365,17 +58366,17 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="1375"/>
         <source>Log-Viewer</source>
-        <translation>Просмотрщик журналов</translation>
+        <translation>Просмотр журнала</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1393"/>
         <source>Task-Viewer</source>
-        <translation>Просмотрщик задач</translation>
+        <translation>Просмотр задач</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1411"/>
         <source>Template-Viewer</source>
-        <translation>Просмотрщик шаблонов</translation>
+        <translation>Просмотр шаблонов</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="902"/>
@@ -58385,7 +58386,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="1358"/>
         <source>File-Browser</source>
-        <translation>Обозреватель файлов</translation>
+        <translation>Браузер файлов</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1342"/>
@@ -58472,7 +58473,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="1289"/>
         <source>&amp;Project-Viewer</source>
-        <translation>&amp;Просмотрщик проекта</translation>
+        <translation>Просмотр &amp;проекта</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1289"/>
@@ -58482,7 +58483,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="1306"/>
         <source>&amp;Multiproject-Viewer</source>
-        <translation>Просмотрщик &amp;мультипроекта</translation>
+        <translation>Просмотр &amp;мультипроекта</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1306"/>
@@ -58492,7 +58493,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="1324"/>
         <source>&amp;Debug-Viewer</source>
-        <translation>&amp;Просмотрщик отладки</translation>
+        <translation>Просмотр &amp;отладки</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1324"/>
@@ -58625,17 +58626,17 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../UI/UserInterface.py" line="1587"/>
         <source>&lt;b&gt;Display context sensitive help&lt;/b&gt;&lt;p&gt;In What&apos;s This? mode, the mouse cursor shows an arrow with a question mark, and you can click on the interface elements to get a short description of what they do and how to use them. In dialogs, this feature can be accessed using the context help button in the titlebar.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Показать контекстную помощь&lt;/b&gt;
-&lt;p&gt;В режиме контекстной помощи курсор мыши выглядит как стрелка со знаком вопроса, и, щёлкнув по элементу интерфейса, Вы можете просмотреть краткую помощь о его роли и его использовании. В диалогах можно воспользоваться кнопкой контекстной помощи в заголовке окна.&lt;/p&gt;</translation>
+&lt;p&gt;В режиме контекстной помощи курсор мыши выглядит как стрелка со знаком вопроса, и, щёлкнув по элементу интерфейса, Вы можете просмотреть краткую справку о его роли и его использовании. В диалогах можно воспользоваться кнопкой контекстной помощи в заголовке окна.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1599"/>
         <source>Helpviewer</source>
-        <translation>Просмотрщик помощи</translation>
+        <translation>Просмотр справки</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1599"/>
         <source>&amp;Helpviewer...</source>
-        <translation>Просмотрщик помо&amp;щи...</translation>
+        <translation>Просмотр спр&amp;авки...</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1599"/>
@@ -58645,7 +58646,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="1605"/>
         <source>Open the helpviewer window</source>
-        <translation>Открыть просмотрщик помощи</translation>
+        <translation>Открыть окно просмотра справки</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1627"/>
@@ -58710,7 +58711,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="1683"/>
         <source>&lt;b&gt;Report Bug...&lt;/b&gt;&lt;p&gt;Opens a dialog to report a bug.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Сообщить об ошибке...&lt;/b&gt;&lt;p&gt;Открывает диалог для сообщения об ошибке.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Сообщить об ошибке...&lt;/b&gt;&lt;p&gt;Открытие диалога для сообщения об ошибке.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1690"/>
@@ -58751,7 +58752,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../UI/UserInterface.py" line="1711"/>
         <source>&lt;b&gt;Unittest&lt;/b&gt;&lt;p&gt;Perform unit tests. The dialog gives you the ability to select and run a unittest suite.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Unittest&lt;/b&gt;
-&lt;p&gt;Провести тесты. Диалог даёт возможность выбрать и провести набор тестов с помощью Unittest.&lt;/p&gt;</translation>
+&lt;p&gt;Выполнение тестов. Диалог даёт возможность выбрать и выполнить набор тестов с помощью Unittest.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1719"/>
@@ -58873,7 +58874,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../UI/UserInterface.py" line="1865"/>
         <source>&lt;b&gt;Compare Files&lt;/b&gt;&lt;p&gt;Open a dialog to compare two files.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Сравнение файлов&lt;/b&gt;
-&lt;p&gt;Открыть диалог для сравнения двух файлов.&lt;/p&gt;</translation>
+&lt;p&gt;Открытие диалога сравнения двух файлов.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1872"/>
@@ -58889,12 +58890,12 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="1886"/>
         <source>SQL Browser</source>
-        <translation>Обозреватель SQL</translation>
+        <translation>SQL браузер</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1886"/>
         <source>SQL &amp;Browser...</source>
-        <translation>&amp;Обозреватель SQL...</translation>
+        <translation>&amp;SQL браузер...</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1891"/>
@@ -58904,7 +58905,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="1892"/>
         <source>&lt;b&gt;SQL Browser&lt;/b&gt;&lt;p&gt;Browse a SQL database.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Обозреватель SQL&lt;/b&gt;&lt;p&gt;Просмотреть SQL базу данных.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;SQL браузер&lt;/b&gt;&lt;p&gt;Просмотреть SQL базу данных.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1904"/>
@@ -58950,7 +58951,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../UI/UserInterface.py" line="1965"/>
         <source>&lt;b&gt;Preferences&lt;/b&gt;&lt;p&gt;Set the configuration items of the application with your prefered values.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Предпочтения&lt;/b&gt;
-&lt;p&gt;Настройте Eric по своему вкусу.&lt;/p&gt;</translation>
+&lt;p&gt;Настройка Eric по своему вкусу.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1974"/>
@@ -59020,7 +59021,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="2015"/>
         <source>Show external &amp;tools</source>
-        <translation>&amp;Внешние инструменты</translation>
+        <translation>Показать &amp;внешние инструменты</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2031"/>
@@ -59055,7 +59056,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="2053"/>
         <source>Configure toolbars</source>
-        <translation>Настройка панели инструментов</translation>
+        <translation>Настройка панелей инструментов</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2054"/>
@@ -59177,13 +59178,13 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="2181"/>
         <source>Show Plugin Infos</source>
-        <translation>Показать информацию о плагинах</translation>
+        <translation>Отображение информации о плагинах</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2182"/>
         <source>&lt;b&gt;Plugin Infos...&lt;/b&gt;&lt;p&gt;This opens a dialog, that show some information about loaded plugins.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Информация о плагинах...&lt;/b&gt;
-&lt;p&gt;Открывает диалог, отображающий информацию о загруженных плагинах.&lt;/p&gt;</translation>
+&lt;p&gt;Открытие диалога, отображающего информацию о загруженных плагинах.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2195"/>
@@ -59198,7 +59199,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="2196"/>
         <source>&lt;b&gt;Install Plugins...&lt;/b&gt;&lt;p&gt;This opens a dialog to install or update plugins.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Установить плагины...&lt;/b&gt;&lt;p&gt;Открывает диалог для установки или обновления плагинов.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Установить плагины...&lt;/b&gt;&lt;p&gt;Открытие диалога установки или обновления плагинов.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2208"/>
@@ -59213,7 +59214,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="2209"/>
         <source>&lt;b&gt;Uninstall Plugin...&lt;/b&gt;&lt;p&gt;This opens a dialog to uninstall a plugin.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Деинсталлировать плагин...&lt;/b&gt;&lt;p&gt;Открывает диалог деинсталляции плагина.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Деинсталлировать плагин...&lt;/b&gt;&lt;p&gt;Открытие диалога деинсталляции плагина.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2216"/>
@@ -59233,7 +59234,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="2223"/>
         <source>&lt;b&gt;Plugin Repository...&lt;/b&gt;&lt;p&gt;This opens a dialog, that shows a list of plugins available on the Internet.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Репозиторий плагинов...&lt;/b&gt;&lt;p&gt;Открывает диалог, который показывает список плагинов, доступных для скачивания с интернета.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Репозиторий плагинов...&lt;/b&gt;&lt;p&gt;Открытие диалога, отображающего список плагинов, доступных для скачивания с интернета.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2247"/>
@@ -59338,7 +59339,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="2540"/>
         <source>&amp;Help</source>
-        <translation>&amp;Помощь</translation>
+        <translation>&amp;Справка</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2613"/>
@@ -59353,7 +59354,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="4387"/>
         <source>Help</source>
-        <translation>Помощь</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2617"/>
@@ -59368,32 +59369,32 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="2770"/>
         <source>&lt;p&gt;This part of the status bar displays the current editors language.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Эта часть строки статуса показывает язык текущего окна редактора.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;В этой части строки статуса отображается язык текущего окна редактора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2777"/>
         <source>&lt;p&gt;This part of the status bar displays the current editors encoding.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Эта часть строки статуса показывает текущую кодировку редактора.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;В этой части строки статуса отображается текущая кодировка редактора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2784"/>
         <source>&lt;p&gt;This part of the status bar displays the current editors eol setting.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Эта часть строки статуса показывает режим конца строки текущего редактора.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;В этой части строки статуса отображается режим конца строки текущего редактора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2791"/>
         <source>&lt;p&gt;This part of the status bar displays an indication of the current editors files writability.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Эта часть строки статуса указывает на возможность записи открытого в редакторе файла.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;В этой части строки статуса отображается режим ro/rw файла, открытого в редакторе.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2798"/>
         <source>&lt;p&gt;This part of the status bar displays the line number of the current editor.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Эта часть строки статуса показывает номер текущей строки редактора.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;В этой части строки статуса отображается номер текущей строки редактора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2805"/>
         <source>&lt;p&gt;This part of the status bar displays the cursor position of the current editor.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Эта часть строки статуса показывает текущую позицию курсора в редакторе.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;В этой части строки статуса отображается текущая позиция курсора в редакторе.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2875"/>
@@ -59413,7 +59414,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="3023"/>
         <source>Email address or mail server address is empty. Please configure your Email settings in the Preferences Dialog.</source>
-        <translation>Почтовый адрес или адрес почтового сервера пуст. &lt;p&gt;Настройте параметры электронную почту в диалоге предпочтений.</translation>
+        <translation>Почтовый адрес или адрес почтового сервера пуст. &lt;p&gt;Настройте параметры вашей электронной почты в диалоге предпочтений.</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="3303"/>
@@ -59443,7 +59444,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="3353"/>
         <source>&amp;Plugin Tools</source>
-        <translation>Инструменты для &amp;плагинов</translation>
+        <translation>Инструменты-&amp;плагины</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="3504"/>
@@ -59503,27 +59504,27 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="4401"/>
         <source>&lt;p&gt;Could not start custom viewer.&lt;br&gt;Ensure that it is available as &lt;b&gt;{0}&lt;/b&gt;.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Невозможно запустить специальный просмотрщик.&lt;br&gt;Убедитесь, что он находится в &lt;b&gt;{0}&lt;/b&gt;.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Невозможно запустить пользовательский просмотрщик.&lt;br&gt;Убедитесь, что он находится в &lt;b&gt;{0}&lt;/b&gt;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="4421"/>
         <source>&lt;p&gt;Could not start the help viewer.&lt;br&gt;Ensure that it is available as &lt;b&gt;hh&lt;/b&gt;.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Невозможно запустить просмотрщик помощи.&lt;br&gt;Убедитесь, что он доступен под именем &lt;b&gt;hh&lt;/b&gt;.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Невозможно запустить обозреватель справки.&lt;br&gt;Убедитесь, что он доступен под именем &lt;b&gt;hh&lt;/b&gt;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="4469"/>
         <source>&lt;p&gt;Could not start UI Previewer.&lt;br&gt;Ensure that it is available as &lt;b&gt;{0}&lt;/b&gt;.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Невозможно запустить UI Previewer.&lt;br&gt;Убедитесь, что он находится в &lt;b&gt;{0}&lt;/b&gt;.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Невозможно запустить UI Previewer (предпросмотр интерфейсов).&lt;br&gt;Убедитесь, что он находится в &lt;b&gt;{0}&lt;/b&gt;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="4524"/>
         <source>&lt;p&gt;Could not start Translation Previewer.&lt;br&gt;Ensure that it is available as &lt;b&gt;{0}&lt;/b&gt;.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Невозможно запустить предпросмотр переводов.&lt;br&gt;Убедитесь, что он находится в &lt;b&gt;{0}&lt;/b&gt;.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Невозможно запустить Translation Previewer (предпросмотр переводов).&lt;br&gt;Убедитесь, что он находится в &lt;b&gt;{0}&lt;/b&gt;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="4545"/>
         <source>&lt;p&gt;Could not start SQL Browser.&lt;br&gt;Ensure that it is available as &lt;b&gt;{0}&lt;/b&gt;.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Невозможно запустить обозреватель SQL.&lt;br&gt;Убедитесь, что он доступен как &lt;b&gt;{0}&lt;/b&gt;.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Невозможно запустить SQL браузер.&lt;br&gt;Убедитесь, что он доступен как &lt;b&gt;{0}&lt;/b&gt;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="4633"/>
@@ -59533,12 +59534,12 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="4624"/>
         <source>No tool entry found for external tool &apos;{0}&apos; in tool group &apos;{1}&apos;.</source>
-        <translation>Запись для внешней программы &apos;{0}&apos; не найдена в группе &apos;{1}&apos;.</translation>
+        <translation>Запись для внешнего инструмента &apos;{0}&apos; не найдена в группе инструментов &apos;{1}&apos;.</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="4633"/>
         <source>No toolgroup entry &apos;{0}&apos; found.</source>
-        <translation>Запись для группы &apos;{0}&apos; не найдена.</translation>
+        <translation>Запись для группы инструментов &apos;{0}&apos; не найдена.</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="4672"/>
@@ -59707,7 +59708,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="2343"/>
         <source>&lt;b&gt;Python 2 Documentation&lt;/b&gt;&lt;p&gt;Display the Python 2 documentation. If no documentation directory is configured, the location of the Python 2 documentation is assumed to be the doc directory underneath the location of the configured Python 2 executable on Windows and &lt;i&gt;/usr/share/doc/packages/python/html/python-docs-html&lt;/i&gt; on Unix. Set PYTHON2DOCDIR in your environment to override this. &lt;/p&gt;</source>
-        <translation>&lt;b&gt;Документация Python 2&lt;/b&gt;&lt;p&gt;Показать Python 2 документацию. Если местонахождение документации не было настроено, то искать в подкаталоге &lt;i&gt;doc&lt;/i&gt; каталога где находится исполняемый файл Python 2 под Windows и в подкаталоге &lt;i&gt;/usr/share/doc/packages/python/html/python-docs-html&lt;/i&gt; под UNIX. Местонахождение документации можно задать с помощью переменной окружения PYTHON2DOCDIR.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Документация Python 2&lt;/b&gt;&lt;p&gt;Показать Python 2 документацию. Если местонахождение документации не было настроено, то искать в директории &lt;i&gt;doc&lt;/i&gt; каталога где находится исполняемый файл Python 2 под Windows и в директории &lt;i&gt;/usr/share/doc/packages/python/html/python-docs-html&lt;/i&gt; под UNIX. Местонахождение документации можно задать с помощью переменной окружения PYTHON2DOCDIR.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="6050"/>
@@ -59722,12 +59723,12 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="5228"/>
         <source>Open Browser</source>
-        <translation>Запустить обозреватель</translation>
+        <translation>Открыть браузер</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="5228"/>
         <source>Could not start a web browser</source>
-        <translation>Невозможно запустить web обозреватель</translation>
+        <translation>Невозможно запустить web браузер</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="6050"/>
@@ -59838,32 +59839,32 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="1295"/>
         <source>Switch the input focus to the Project-Viewer window.</source>
-        <translation>Переключить фокус ввода на окно просмотрщика проекта.</translation>
+        <translation>Переключить фокус ввода на окно просмотра проекта.</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1297"/>
         <source>&lt;b&gt;Activate Project-Viewer&lt;/b&gt;&lt;p&gt;This switches the input focus to the Project-Viewer window.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Активировать просмотрщик проекта&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотрщика проекта.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Активировать просмотрщик проекта&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотра проекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1312"/>
         <source>Switch the input focus to the Multiproject-Viewer window.</source>
-        <translation>Переключить фокус ввода на окно просмотрщика мультипроекта.</translation>
+        <translation>Переключить фокус ввода на окно просмотра мультипроекта.</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1314"/>
         <source>&lt;b&gt;Activate Multiproject-Viewer&lt;/b&gt;&lt;p&gt;This switches the input focus to the Multiproject-Viewer window.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Активировать просмотрщик проектов&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотрщика мультипроекта.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Активировать просмотрщик проектов&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотра мультипроекта.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1330"/>
         <source>Switch the input focus to the Debug-Viewer window.</source>
-        <translation>Переключить фокус ввода на окно просмотрщика отладочной иформации.</translation>
+        <translation>Переключить фокус ввода на окно просмотра отладки.</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1332"/>
         <source>&lt;b&gt;Activate Debug-Viewer&lt;/b&gt;&lt;p&gt;This switches the input focus to the Debug-Viewer window.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Активировать окно отладки&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотрщика отладочной иформации.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Активировать окно отладки&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотра отладки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1348"/>
@@ -59878,167 +59879,167 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="1358"/>
         <source>&amp;File-Browser</source>
-        <translation>&amp;Обозреватель файлов</translation>
+        <translation>&amp;Браузер файлов</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1364"/>
         <source>Switch the input focus to the File-Browser window.</source>
-        <translation>Переключить фокус ввода на окно обозревателя файлов.</translation>
+        <translation>Переключить фокус ввода на окно браузера файлов.</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1366"/>
         <source>&lt;b&gt;Activate File-Browser&lt;/b&gt;&lt;p&gt;This switches the input focus to the File-Browser window.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Активировать окно обозревателя файлов&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно обозревателя файлов.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Активировать окно браузера файлов&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно браузера файлов.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1375"/>
         <source>Lo&amp;g-Viewer</source>
-        <translation>Просмотрщик &amp;журнала</translation>
+        <translation>Просмотр &amp;журнала</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1381"/>
         <source>Switch the input focus to the Log-Viewer window.</source>
-        <translation>Переключить фокус ввода на окно просмотрщика журнала.</translation>
+        <translation>Переключить фокус ввода на окно просмотра журналов.</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1383"/>
         <source>&lt;b&gt;Activate Log-Viewer&lt;/b&gt;&lt;p&gt;This switches the input focus to the Log-Viewer window.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Активировать окно просмотрщика журнала&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотрщика журнала.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Активировать окно просмотра журнала&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотра журнала.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1393"/>
         <source>&amp;Task-Viewer</source>
-        <translation>Просмотрщик &amp;задач</translation>
+        <translation>Просмотр &amp;задач</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1399"/>
         <source>Switch the input focus to the Task-Viewer window.</source>
-        <translation>Переключить фокус ввода на окно просмотрщика задач.</translation>
+        <translation>Переключить фокус ввода на окно просмотра задач.</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1411"/>
         <source>Templ&amp;ate-Viewer</source>
-        <translation>Просмотрщик &amp;шаблонов</translation>
+        <translation>Просмотр &amp;шаблонов</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1417"/>
         <source>Switch the input focus to the Template-Viewer window.</source>
-        <translation>Переключить фокус ввода на окно просмотрщика шаблонов.</translation>
+        <translation>Переключить фокус ввода на окно просмотра шаблонов.</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1419"/>
         <source>&lt;b&gt;Activate Template-Viewer&lt;/b&gt;&lt;p&gt;This switches the input focus to the Template-Viewer window.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Активировать окно просмотрщика шаблонов&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотрщика шаблонов.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Активировать просмотрщик шаблонов&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотра шаблонов.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1429"/>
         <source>&amp;Left Toolbox</source>
-        <translation>&amp;Левое окно инструментов</translation>
+        <translation>&amp;Левая панель инструментов</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1432"/>
         <source>Toggle the Left Toolbox window</source>
-        <translation>Показать/скрыть левое окно инструментов</translation>
+        <translation>Показать/скрыть левую панель инструментов</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1433"/>
         <source>&lt;b&gt;Toggle the Left Toolbox window&lt;/b&gt;&lt;p&gt;If the Left Toolbox window is hidden then display it. If it is displayed then close it.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать/скрыть левое окно инструментов&lt;/b&gt;&lt;p&gt;Если левое окно инструментов видно, то скрыть его, если скрыто то показать.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать/скрыть левую панель инструментов&lt;/b&gt;&lt;p&gt;Если левая панель инструментов скрыта, то показать ее, если отображается, то скрыть.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1441"/>
         <source>&amp;Right Toolbox</source>
-        <translation>&amp;Правое окно инструментов</translation>
+        <translation>&amp;Правая панель инструментов</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1445"/>
         <source>Toggle the Right Toolbox window</source>
-        <translation>Показать/скрыть правое окно инструментов</translation>
+        <translation>Показать/скрыть правую панель инструментов</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1446"/>
         <source>&lt;b&gt;Toggle the Right Toolbox window&lt;/b&gt;&lt;p&gt;If the Right Toolbox window is hidden then display it. If it is displayed then close it.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать/скрыть правое окно инструментов&lt;/b&gt;&lt;p&gt;Если правое окно инструментов видно, то скрыть его, если скрыто то показать.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать/скрыть правую панель инструментов&lt;/b&gt;&lt;p&gt;Если аравая панель инструментов скрыта, то показать ее, если отображается, то скрыть.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1481"/>
         <source>Right Sidebar</source>
-        <translation>Правая панель</translation>
+        <translation>Правая боковая панель</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1481"/>
         <source>&amp;Right Sidebar</source>
-        <translation>&amp;Правая панель</translation>
+        <translation>&amp;Правая боковая панель</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1485"/>
         <source>Toggle the right sidebar window</source>
-        <translation>Показать/скрыть правую панель</translation>
+        <translation>Показать/скрыть окно правой боковой панели</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1487"/>
         <source>&lt;b&gt;Toggle the right sidebar window&lt;/b&gt;&lt;p&gt;If the right sidebar window is hidden then display it. If it is displayed then close it.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать/скрыть правую панель&lt;/b&gt;&lt;p&gt;Если правая панель скрыта, показать её. Иначе - закрыть.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать/скрыть окно правой боковой панели&lt;/b&gt;&lt;p&gt;Если окно правой боковой панели скрыто, то показать его. Если отображается, то закрыть.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1509"/>
         <source>Cooperation-Viewer</source>
-        <translation>Просмотрщик кооперации</translation>
+        <translation>Просмотр кооперации</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1509"/>
         <source>Co&amp;operation-Viewer</source>
-        <translation>Просмотрщик ко&amp;операции</translation>
+        <translation>Просмотр ко&amp;операции</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1515"/>
         <source>Switch the input focus to the Cooperation-Viewer window.</source>
-        <translation>Переключить фокус ввода на окно просмотрщика кооперации.</translation>
+        <translation>Переключить фокус ввода на окно просмотра кооперации.</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1517"/>
         <source>&lt;b&gt;Activate Cooperation-Viewer&lt;/b&gt;&lt;p&gt;This switches the input focus to the Cooperation-Viewer window.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Активировать просмотрщик кооперации&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотрщика кооперации.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Активировать просмотрщик кооперации&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотра кооперации.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1544"/>
         <source>Symbols-Viewer</source>
-        <translation>Просмотрщик символов</translation>
+        <translation>Просмотр символов</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1544"/>
         <source>S&amp;ymbols-Viewer</source>
-        <translation>Просмотрщик с&amp;имволов</translation>
+        <translation>Просмотр с&amp;имволов</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1550"/>
         <source>Switch the input focus to the Symbols-Viewer window.</source>
-        <translation>Переключить фокус ввода на окно просмотрщика символов.</translation>
+        <translation>Переключить фокус ввода на окно просмотра символов.</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1552"/>
         <source>&lt;b&gt;Activate Symbols-Viewer&lt;/b&gt;&lt;p&gt;This switches the input focus to the Symbols-Viewer window.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Активировать просмотрщик символов&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотрщика символов.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Активировать просмотрщик символов&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотра символов.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1562"/>
         <source>Numbers-Viewer</source>
-        <translation>Просмотрщик чисел</translation>
+        <translation>Просмотр чисел</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1562"/>
         <source>Num&amp;bers-Viewer</source>
-        <translation>Просмотрщик &amp;чисел</translation>
+        <translation>Просмотр &amp;чисел</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1568"/>
         <source>Switch the input focus to the Numbers-Viewer window.</source>
-        <translation>Переключить фокус ввода на окно просмотрщика чисел.</translation>
+        <translation>Переключить фокус ввода на окно просмотра чисел.</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1570"/>
         <source>&lt;b&gt;Activate Numbers-Viewer&lt;/b&gt;&lt;p&gt;This switches the input focus to the Numbers-Viewer window.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Активировать просмотрщик чисел&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотрщика чисел.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Активировать просмотрщик чисел&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотра чисел.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2495"/>
@@ -60048,7 +60049,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="1401"/>
         <source>&lt;b&gt;Activate Task-Viewer&lt;/b&gt;&lt;p&gt;This switches the input focus to the Task-Viewer window.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Активировать окно просмотрщика задач&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотрщика задач.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Активировать окно просмотрщика задач&lt;/b&gt;&lt;p&gt;Переключить фокус ввода на окно просмотра задач.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1527"/>
@@ -60133,7 +60134,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="2816"/>
         <source>&lt;p&gt;This part of the status bar allows zooming the current editor, shell or terminal.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Эта часть строки статуса позволяет масштабировать текущее окно.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;В этой части строки статуса можно масштабировать текущее окно, оболочку или терминал.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2107"/>
@@ -60203,32 +60204,32 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="2252"/>
         <source>&lt;b&gt;Qt4 Documentation&lt;/b&gt;&lt;p&gt;Display the Qt4 Documentation. Dependent upon your settings, this will either show the help in Eric&apos;s internal help viewer, or execute a web browser or Qt Assistant. &lt;/p&gt;</source>
-        <translation>&lt;b&gt;Документация Qt4&lt;/b&gt;&lt;p&gt;Показать документацию Qt4. В зависимости от выбранных настроек документация будет показана во внутреннем просмотрщике, внешнем web обозревателе или в Qt Помощнике.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Документация Qt4&lt;/b&gt;&lt;p&gt;Показать документацию Qt4. В зависимости от выбранных настроек документация будет показана во внутреннем обозревателе, внешнем web браузере или в Qt Assistant.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2266"/>
         <source>&lt;b&gt;Qt5 Documentation&lt;/b&gt;&lt;p&gt;Display the Qt5 Documentation. Dependent upon your settings, this will either show the help in Eric&apos;s internal help viewer, or execute a web browser or Qt Assistant. &lt;/p&gt;</source>
-        <translation>&lt;b&gt;Документация Qt5&lt;/b&gt;&lt;p&gt;Показать документацию Qt5. В зависимости от выбранных настроек документация будет показана во внутреннем просмотрщике, внешнем web обозревателе или в Qt Помощнике.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Документация Qt5&lt;/b&gt;&lt;p&gt;Показать документацию Qt5. В зависимости от выбранных настроек документация будет показана во внутреннем обозревателе, внешнем web браузере или в Qt Assistant.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2282"/>
         <source>&lt;b&gt;PyQt4 Documentation&lt;/b&gt;&lt;p&gt;Display the PyQt4 Documentation. Dependent upon your settings, this will either show the help in Eric&apos;s internal help viewer, or execute a web browser or Qt Assistant. &lt;/p&gt;</source>
-        <translation>&lt;b&gt;Документация PyQt4&lt;/b&gt;&lt;p&gt;Показать документацию PyQt4. В зависимости от выбранных настроек документация будет показана во внутреннем просмотрщике, внешнем web обозревателе или в Qt Помощнике.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Документация PyQt4&lt;/b&gt;&lt;p&gt;Показать документацию PyQt4. В зависимости от выбранных настроек документация будет показана во внутреннем обозревателе, внешнем web браузере или в Qt Assistant.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2302"/>
         <source>&lt;b&gt;PyQt5 Documentation&lt;/b&gt;&lt;p&gt;Display the PyQt5 Documentation. Dependent upon your settings, this will either show the help in Eric&apos;s internal help viewer, or execute a web browser or Qt Assistant. &lt;/p&gt;</source>
-        <translation>&lt;b&gt;Документация PyQt5&lt;/b&gt;&lt;p&gt;Показать документацию PyQt5. В зависимости от выбранных настроек документация будет показана во внутреннем просмотрщике, внешнем web обозревателе или в Qt Помощнике.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Документация PyQt5&lt;/b&gt;&lt;p&gt;Показать документацию PyQt5. В зависимости от выбранных настроек документация будет показана во внутреннем обозревателе, внешнем web браузере или в Qt Assistant.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2325"/>
         <source>&lt;b&gt;Python 3 Documentation&lt;/b&gt;&lt;p&gt;Display the Python 3 documentation. If no documentation directory is configured, the location of the Python 3 documentation is assumed to be the doc directory underneath the location of the Python 3 executable on Windows and &lt;i&gt;/usr/share/doc/packages/python/html&lt;/i&gt; on Unix. Set PYTHON3DOCDIR in your environment to override this.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Документация Python 3&lt;/b&gt;&lt;p&gt;Показать Python 3 документацию. Если местонахождение документации не было настроено, то искать в подкаталоге &lt;i&gt;doc&lt;/i&gt; каталога где находится исполняемый файл Python 3 под Windows и в подкаталоге &lt;i&gt;/usr/share/doc/packages/python/html/python-docs-html&lt;/i&gt; под UNIX. Местонахождение документации можно задать с помощью переменной окружения PYTHON3DOCDIR.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Документация Python 3&lt;/b&gt;&lt;p&gt;Показать Python 3 документацию. Если местонахождение документации не было настроено, то искать в директории &lt;i&gt;doc&lt;/i&gt; каталога где находится исполняемый файл Python 3 под Windows и в директории &lt;i&gt;/usr/share/doc/packages/python/html/python-docs-html&lt;/i&gt; под UNIX. Местонахождение документации можно задать с помощью переменной окружения PYTHON3DOCDIR.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2388"/>
         <source>&lt;b&gt;PySide Documentation&lt;/b&gt;&lt;p&gt;Display the PySide Documentation. Dependent upon your settings, this will either show the help in Eric&apos;s internal help viewer, or execute a web browser or Qt Assistant. &lt;/p&gt;</source>
-        <translation>&lt;b&gt;Документация PySide&lt;/b&gt;&lt;p&gt;Показать документацию PySide. В зависимости от выбранных настроек документация будет показана во внутреннем просмотрщике, внешнем web обозревателе или в Qt Помощнике.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Документация PySide&lt;/b&gt;&lt;p&gt;Показать документацию PySide. В зависимости от выбранных настроек документация будет показана во внутреннем обозревателе, внешнем web браузере или в Qt Assistant.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="5980"/>
@@ -60263,12 +60264,12 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="1244"/>
         <source>&lt;b&gt;New Window&lt;/b&gt;&lt;p&gt;This opens a new instance of the eric6 IDE.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Новое окно&lt;/b&gt;Запустить ещё одну копию Eric6.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Новое окно&lt;/b&gt;&lt;p&gt;Запустить ещё одну копию Eric6.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1607"/>
         <source>&lt;b&gt;Helpviewer&lt;/b&gt;&lt;p&gt;Display the eric6 web browser. This window will show HTML help files and help from Qt help collections. It has the capability to navigate to links, set bookmarks, print the displayed help and some more features. You may use it to browse the internet as well&lt;/p&gt;&lt;p&gt;If called with a word selected, this word is search in the Qt help collection.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Просмотрщик помощи&lt;/b&gt;&lt;p&gt;Открыть Eric6 Web обозреватель. Это окно будет показывать HTML файлы помощи. Оно поддерживает навигацию по ссылкам, закладки, печать и некоторые другие функции. Его можно использовать для просмотра интернета.&lt;/p&gt;&lt;p&gt;Если перед открытием просмотрщика помощи был подсвечен какой-либо текст, то будет произведён поиск этого текста в коллекции помощи Qt.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Просмотр справки&lt;/b&gt;&lt;p&gt;Открытие Eric6 Web браузера. В его окне будут показываться HTML файлы справки. Оно поддерживает навигацию по ссылкам, закладки, печать и некоторые другие функции. Его можно использовать для просмотра интернета.&lt;/p&gt;&lt;p&gt;Если перед вызовом окна отображения справки был подсвечен какой-либо текст, то будет произведён поиск этого текста в коллекции справки Qt.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="1644"/>
@@ -60313,7 +60314,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="2022"/>
         <source>&lt;b&gt;Show external tools&lt;/b&gt;&lt;p&gt;Opens a dialog to show the path and versions of all extenal tools used by eric6.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать внешние инструменты&lt;/b&gt;&lt;p&gt;Открывает диалог для отображения пути и версий внешних инструментов, используемых Eric6.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать внешние инструменты&lt;/b&gt;&lt;p&gt;Открытие диалога отображения пути и версий внешних инструментов, используемых Eric6.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="2367"/>
@@ -60343,7 +60344,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="6225"/>
         <source>eric6 has not been configured yet. The configuration dialog will be started.</source>
-        <translation>Конфигурация Eric6 ещё не выполнена. Сейчас будет запущен диалог конфигурации.</translation>
+        <translation>Настройка  Eric6 ещё не выполнена. Сейчас будет запущен диалог конфигурации.</translation>
     </message>
     <message>
         <location filename="../UI/UserInterface.py" line="539"/>
@@ -60358,7 +60359,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../UI/UserInterface.py" line="3428"/>
         <source>No User Tools Configured</source>
-        <translation>Нет конфигураций инструментов пользователя</translation>
+        <translation>Инструменты пользователя не сконфигурированы</translation>
     </message>
 </context>
 <context>
@@ -61121,7 +61122,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../VCS/ProjectBrowserHelper.py" line="292"/>
         <source>Do you really want to remove these files/directories from the repository (and disk)?</source>
-        <translation>Вы действительно хотите удалить эти файлы/каталоги и из репозитория, и с диска?</translation>
+        <translation>Вы действительно хотите удалить эти файлы/директории и из репозитория (и диска)?</translation>
     </message>
 </context>
 <context>
@@ -61144,7 +61145,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../VCS/ProjectHelper.py" line="76"/>
         <source>&lt;b&gt;New from repository&lt;/b&gt;&lt;p&gt;This creates a new local project from the VCS repository.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Новый из репозитория&lt;/b&gt;&lt;p&gt;Создать новый проект из репозитория VCS.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Новый из репозитория&lt;/b&gt;&lt;p&gt;Создание нового проекта из репозитория VCS.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../VCS/ProjectHelper.py" line="84"/>
@@ -61164,7 +61165,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../VCS/ProjectHelper.py" line="92"/>
         <source>&lt;b&gt;Export from repository&lt;/b&gt;&lt;p&gt;This exports a project from the repository.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Экспорт из репозитория&lt;/b&gt;&lt;p&gt;Экспортировать проект из репозитория.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Экспорт из репозитория&lt;/b&gt;&lt;p&gt;Экспорт проекта из репозитория.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../VCS/ProjectHelper.py" line="99"/>
@@ -61184,7 +61185,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../VCS/ProjectHelper.py" line="107"/>
         <source>&lt;b&gt;Add to repository&lt;/b&gt;&lt;p&gt;This adds (imports) the local project to the VCS repository.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Добавить в репозиторий&lt;/b&gt;&lt;p&gt;Добавляет (импортирует) локальный проект в репозиторий VCS.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Добавить в репозиторий&lt;/b&gt;&lt;p&gt;Добавление (импорт) локального проекта в репозиторий VCS.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../VCS/ProjectHelper.py" line="216"/>
@@ -61384,7 +61385,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="596"/>
         <source>&lt;b&gt;New&lt;/b&gt;&lt;p&gt;An empty editor window will be created.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Новый документ&lt;/b&gt;
-&lt;p&gt;Будет создано пустое окно редактора.&lt;/p&gt;</translation>
+&lt;p&gt;Создание пустого окна редактора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="604"/>
@@ -61438,7 +61439,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="636"/>
         <source>&lt;b&gt;Close Window&lt;/b&gt;&lt;p&gt;Close the current window.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Закрыть окно&lt;/b&gt;
-&lt;p&gt;Закрыть текущее окно.&lt;/p&gt;</translation>
+&lt;p&gt;Закрытие текущего окна.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="644"/>
@@ -61486,7 +61487,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="672"/>
         <source>&lt;b&gt;Save File&lt;/b&gt;&lt;p&gt;Save the contents of current editor window.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Сохранить файл&lt;/b&gt;
-&lt;p&gt;Сохранить содержание текущего окна редактора.&lt;/p&gt;</translation>
+&lt;p&gt;Сохранение содержания текущего окна редактора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="680"/>
@@ -61513,7 +61514,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="689"/>
         <source>&lt;b&gt;Save File as&lt;/b&gt;&lt;p&gt;Save the contents of current editor window to a new file. The file can be entered in a file selection dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Сохранить файл  как&lt;/b&gt;
-&lt;p&gt;Сохранить содержание текущего окна редактора в новый файл.
+&lt;p&gt;Сохранение содержания текущего окна редактора в новый файл.
 Имя файла будет запрошено с помощью файлового диалога.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -61530,7 +61531,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="721"/>
         <source>&lt;b&gt;Save All Files&lt;/b&gt;&lt;p&gt;Save the contents of all editor windows.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Сохранить все файлы&lt;/b&gt;
-&lt;p&gt;Сохранить содержание всех окон редактора.&lt;/p&gt;</translation>
+&lt;p&gt;Сохранение содержания всех окон редактора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="731"/>
@@ -61656,7 +61657,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="899"/>
         <source>&lt;b&gt;Undo&lt;/b&gt;&lt;p&gt;Undo the last change done in the current editor.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Отмена&lt;/b&gt;
-&lt;p&gt;Отменить последнее изменение в текущем сеансе редактирования.&lt;/p&gt;</translation>
+&lt;p&gt;Отмена последнего изменения в текущем сеансе редактирования.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="907"/>
@@ -61683,7 +61684,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="917"/>
         <source>&lt;b&gt;Redo&lt;/b&gt;&lt;p&gt;Redo the last change done in the current editor.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Повтор&lt;/b&gt;
-&lt;p&gt;Восстановить последнее отменённое изменение.&lt;/p&gt;</translation>
+&lt;p&gt;Восстановление последнего отменённого изменения.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="934"/>
@@ -61826,7 +61827,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="1017"/>
         <source>&lt;b&gt;Clear&lt;/b&gt;&lt;p&gt;Delete all text of the current editor.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Очистить&lt;/b&gt;
-&lt;p&gt;Удалить весь текст из текущего редактора.&lt;/p&gt;</translation>
+&lt;p&gt;Удаление всего текста из текущего редактора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1032"/>
@@ -61901,7 +61902,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1080"/>
         <source>Smart indent</source>
-        <translation>Умные отступы</translation>
+        <translation>Интелектуальные отступы</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1080"/>
@@ -61917,7 +61918,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1090"/>
         <source>&lt;b&gt;Smart indent&lt;/b&gt;&lt;p&gt;Indents the current line or the lines of the current selection smartly.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Умные отступы&lt;/b&gt;&lt;p&gt;Расставить отступы для выбранной строки (строк) с помощью умного алгоритма.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Интелектуальные отступы&lt;/b&gt;&lt;p&gt;Расставить отступы для выбранной строки (строк) с помощью умного алгоритма.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1099"/>
@@ -62777,7 +62778,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="2850"/>
         <source>&lt;b&gt;Search next&lt;/b&gt;&lt;p&gt;Search the next occurrence of some text in the current editor. The previously entered searchtext and options are reused.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Искать следующее&lt;/b&gt;&lt;p&gt;Поиск следующего вхождения заданного текста в текущем редакторе.Используется предыдущий шаблон поиска и настройки.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Искать следующее&lt;/b&gt;&lt;p&gt;Поиск следующего вхождения заданного текста в текущем редакторе. Используется предыдущий шаблон поиска и настройки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="2860"/>
@@ -62803,7 +62804,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="2870"/>
         <source>&lt;b&gt;Search previous&lt;/b&gt;&lt;p&gt;Search the previous occurrence of some text in the current editor. The previously entered searchtext and options are reused.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Искать предыдущее&lt;/b&gt;&lt;p&gt;Поиск предыдущего вхождения заданного текста в текущем редакторе.Используется предыдущий шаблон поиска и настройки.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Искать предыдущее&lt;/b&gt;&lt;p&gt;Поиск предыдущего вхождения заданного текста в текущем редакторе. Используется предыдущий шаблон поиска и настройки.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="2880"/>
@@ -62824,7 +62825,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="2890"/>
         <source>&lt;b&gt;Clear search markers&lt;/b&gt;&lt;p&gt;Clear all displayed search markers.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Убрать подсветку поиска&lt;/b&gt;&lt;p&gt;Убрать подсветку всех результатов поиска.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Убрать подсветку поиска&lt;/b&gt;&lt;p&gt;Удаление подсветки всех результатов поиска.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="2945"/>
@@ -62851,7 +62852,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="2954"/>
         <source>&lt;b&gt;Replace&lt;/b&gt;&lt;p&gt;Search for some text in the current editor and replace it. A dialog is shown to enter the searchtext, the replacement text and options for the search and replace.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Заменить&lt;/b&gt;
-&lt;p&gt;Поиск в текущем редакторе заданного текст и его замена. Будет показан диалог с такстом для поиска, заменой и опциями&lt;/p&gt;</translation>
+&lt;p&gt;Поиск в текущем редакторе заданного текста и его замена. Будет показан диалог с текстом для поиска, заменой и опциями&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3233"/>
@@ -62877,7 +62878,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="2974"/>
         <source>&lt;b&gt;Quicksearch&lt;/b&gt;&lt;p&gt;This activates the quicksearch function of the IDE by giving focus to the quicksearch entry field. If this field is already active and contains text, it searches for the next occurrence of this text.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Быстрый поиск&lt;/b&gt;&lt;p&gt;Активизация быстрого поиска путем перемещения фокус на поле ввода быстрого поиска. Если это поле уже активно и содержит какой-нибудь текст, то выполняется  поиск следующего вхождения этого текста.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Быстрый поиск&lt;/b&gt;&lt;p&gt;Активизация быстрого поиска путем перемещения фокуса на поле ввода быстрого поиска. Если это поле уже активно и содержит какой-нибудь текст, то выполняется  поиск следующего вхождения этого текста.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="2985"/>
@@ -62974,7 +62975,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="3057"/>
         <source>&lt;b&gt;Goto Brace&lt;/b&gt;&lt;p&gt;Go to the matching brace in the current editor.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Перейти к скобке&lt;/b&gt;
-&lt;p&gt;Перейти к соответствующей скобке.&lt;/p&gt;</translation>
+&lt;p&gt;Переход к соответствующей скобке.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3135"/>
@@ -63116,7 +63117,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="3397"/>
         <source>&lt;b&gt;Zoom&lt;/b&gt;&lt;p&gt;Zoom the text. This opens a dialog where the desired size can be entered.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Масштаб&lt;/b&gt;
-&lt;p&gt;Масштаб текста. Открыть диалог для выбора желаемого масштаба текста.&lt;/p&gt;</translation>
+&lt;p&gt;Масштаб текста. Открытие диалога для выбора желаемого масштаба текста.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3410"/>
@@ -63178,73 +63179,73 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3507"/>
         <source>Split view</source>
-        <translation>Разделить вид</translation>
+        <translation>Разделить окно</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3507"/>
         <source>&amp;Split view</source>
-        <translation>&amp;Разделить вид</translation>
+        <translation>&amp;Разделить окно</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3512"/>
         <source>Add a split to the view</source>
-        <translation>Добавить разделитель к виду</translation>
+        <translation>Разделить текущее окно</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3514"/>
         <source>&lt;b&gt;Split view&lt;/b&gt;&lt;p&gt;Add a split to the view.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Разделить вид&lt;/b&gt;&lt;p&gt;Добавить разделитель к виду.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Разделить окно&lt;/b&gt;&lt;p&gt;Разделение текущего окна.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3522"/>
         <source>Arrange horizontally</source>
-        <translation>Расположить горизонтально</translation>
+        <translation>Расположить окна горизонтально</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3522"/>
         <source>Arrange &amp;horizontally</source>
-        <translation>Расположить &amp;горизонтально</translation>
+        <translation>Расположить окна &amp;горизонтально</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3526"/>
         <source>Arrange the splitted views horizontally</source>
-        <translation>Расположить разделённые виды горизонтально</translation>
+        <translation>Расположить разделённые окна горизонтально</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3528"/>
         <source>&lt;b&gt;Arrange horizontally&lt;/b&gt;&lt;p&gt;Arrange the splitted views horizontally.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Расположить горизонтально&lt;/b&gt;
-&lt;p&gt;Расположить разделённые виды горизонтально.&lt;/p&gt;</translation>
+&lt;p&gt;Расположить разделённые окна горизонтально.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3537"/>
         <source>Remove split</source>
-        <translation>Удалить разделитель</translation>
+        <translation>Отменить разделение</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3537"/>
         <source>&amp;Remove split</source>
-        <translation>&amp;Удалить разделитель</translation>
+        <translation>&amp;Отменить разделение</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3542"/>
         <source>Remove the current split</source>
-        <translation>Удалить текущий разделитель</translation>
+        <translation>Отменить текущее разделение</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3544"/>
         <source>&lt;b&gt;Remove split&lt;/b&gt;&lt;p&gt;Remove the current split.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Удалить разделитель&lt;/b&gt;&lt;p&gt;Удалить текущий разделитель.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Отменить разделение&lt;/b&gt;&lt;p&gt;Отмена текущего разделения.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3552"/>
         <source>Next split</source>
-        <translation>Следующий разделитель</translation>
+        <translation>Следующее разделение</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3552"/>
         <source>&amp;Next split</source>
-        <translation>&amp;Следующий разделитель</translation>
+        <translation>&amp;Следующее разделение</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3552"/>
@@ -63255,22 +63256,22 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3559"/>
         <source>Move to the next split</source>
-        <translation>Перейти на следующий разделитель</translation>
+        <translation>Перейти в следующее разделение</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3561"/>
         <source>&lt;b&gt;Next split&lt;/b&gt;&lt;p&gt;Move to the next split.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Следующий разделитель&lt;/b&gt;&lt;p&gt;Перейти на следующий разделитель.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Следующее разделение&lt;/b&gt;&lt;p&gt;Перейти в следующее разделение.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3569"/>
         <source>Previous split</source>
-        <translation>Предыдущий разделитель</translation>
+        <translation>Предыдущее разделение</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3569"/>
         <source>&amp;Previous split</source>
-        <translation>&amp;Предыдущий разделитель</translation>
+        <translation>&amp;Предыдущее разделение</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3569"/>
@@ -63281,12 +63282,12 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3575"/>
         <source>Move to the previous split</source>
-        <translation>Перейти на предыдущий разделитель</translation>
+        <translation>Перейти в предыдущее разделение</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3577"/>
         <source>&lt;b&gt;Previous split&lt;/b&gt;&lt;p&gt;Move to the previous split.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Предыдущий разделитель&lt;/b&gt;&lt;p&gt;Перейти на предыдущий разделитель.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Предыдущее разделение&lt;/b&gt;&lt;p&gt;Перейти в предыдущее разделение.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3621"/>
@@ -63301,7 +63302,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3690"/>
         <source>Start Macro Recording</source>
-        <translation>Начало записи макроса</translation>
+        <translation>Начать запись макроса</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3684"/>
@@ -63439,7 +63440,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="3825"/>
         <source>&lt;b&gt;Next Bookmark&lt;/b&gt;&lt;p&gt;Go to next bookmark of the current editor.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Следующая закладка&lt;/b&gt;
-&lt;p&gt;Перейти к следующей закладке в текущем редакторе.&lt;/p&gt;</translation>
+&lt;p&gt;Переход к следующей закладке в текущем редакторе.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3841"/>
@@ -63461,7 +63462,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="3843"/>
         <source>&lt;b&gt;Previous Bookmark&lt;/b&gt;&lt;p&gt;Go to previous bookmark of the current editor.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Предыдущая закладка&lt;/b&gt;
-&lt;p&gt;Перейти к предыдущей закладке в текущем редакторе.&lt;/p&gt;</translation>
+&lt;p&gt;Переход к предыдущей закладке в текущем редакторе.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3858"/>
@@ -63498,7 +63499,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="3876"/>
         <source>&lt;b&gt;Goto Syntax Error&lt;/b&gt;&lt;p&gt;Go to next syntax error of the current editor.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Перейти к синтаксической ошибке&lt;/b&gt;
-&lt;p&gt;Перейти к следующей синтаксической ошибке в текущем редакторе.&lt;/p&gt;</translation>
+&lt;p&gt;Переход к следующей синтаксической ошибке в текущем редакторе.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3889"/>
@@ -63558,7 +63559,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3961"/>
         <source>&lt;b&gt;Next uncovered line&lt;/b&gt;&lt;p&gt;Go to next line of the current editor marked as not covered.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Следующая неохваченная строка&lt;/b&gt;&lt;p&gt;Перейти к строке в текущем редакторе, помеченной как неохваченная.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Следующая неохваченная строка&lt;/b&gt;&lt;p&gt;Переход к строке текущего редактора, помеченной как неохваченная.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3978"/>
@@ -63589,7 +63590,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <location filename="../ViewManager/ViewManager.py" line="3998"/>
         <source>&lt;b&gt;Next Task&lt;/b&gt;&lt;p&gt;Go to next line of the current editor having a task.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Следующая задача&lt;/b&gt;
-&lt;p&gt;Перейти к следующей строке редактора, где определена задача.&lt;/p&gt;</translation>
+&lt;p&gt;Переход к следующей строке редактора, где определена задача.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="4013"/>
@@ -63604,7 +63605,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="4015"/>
         <source>&lt;b&gt;Previous Task&lt;/b&gt;&lt;p&gt;Go to previous line of the current editor having a task.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Предыдущая задача&lt;/b&gt;&lt;p&gt;Перейти к предыдущей строке редактора, где определена задача.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Предыдущая задача&lt;/b&gt;&lt;p&gt;Переход к предыдущей строке редактора, где определена задача.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="4069"/>
@@ -63640,7 +63641,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="4175"/>
         <source>(De-)Activate automatic spell checking</source>
-        <translation>Запрет/Разрешение автоматической проверки орфографии</translation>
+        <translation>Разрешить/Запретить автоматическую проверку орфографии</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="4177"/>
@@ -63668,27 +63669,27 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <translation>&lt;p&gt;В файле &lt;b&gt;{0}&lt;/b&gt; есть несохранённые изменения.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../ViewManager/ViewManager.py" line="4641"/>
+        <location filename="../ViewManager/ViewManager.py" line="4642"/>
         <source>Line: {0:5}</source>
         <translation>Строка: {0:5}</translation>
     </message>
     <message>
-        <location filename="../ViewManager/ViewManager.py" line="4648"/>
+        <location filename="../ViewManager/ViewManager.py" line="4649"/>
         <source>Pos: {0:5}</source>
         <translation>Позиция: {0:5}</translation>
     </message>
     <message>
-        <location filename="../ViewManager/ViewManager.py" line="5065"/>
+        <location filename="../ViewManager/ViewManager.py" line="5066"/>
         <source>&amp;Clear</source>
         <translation>&amp;Очистить</translation>
     </message>
     <message>
-        <location filename="../ViewManager/ViewManager.py" line="5059"/>
+        <location filename="../ViewManager/ViewManager.py" line="5060"/>
         <source>&amp;Add</source>
         <translation>&amp;Добавить</translation>
     </message>
     <message>
-        <location filename="../ViewManager/ViewManager.py" line="5062"/>
+        <location filename="../ViewManager/ViewManager.py" line="5063"/>
         <source>&amp;Edit...</source>
         <translation>&amp;Правка...</translation>
     </message>
@@ -63711,7 +63712,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3079"/>
         <source>&lt;b&gt;Goto Last Edit Location&lt;/b&gt;&lt;p&gt;Go to the location of the last edit in the current editor.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Перейти к месту последнего редактирования&lt;/b&gt;&lt;p&gt;Перейти к месту последнего редактирования в текущем редакторе.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Перейти к месту последнего редактирования&lt;/b&gt;&lt;p&gt;Переход к месту последнего редактирования в текущем редакторе.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3088"/>
@@ -63732,7 +63733,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3102"/>
         <source>&lt;b&gt;Goto Previous Method or Class&lt;/b&gt;&lt;p&gt;Goes to the line of the previous method or class definition and highlights the name.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Перейти к предыдущему методу или классу&lt;/b&gt;&lt;p&gt;Перейти к предыдущему объявлению метода или класса и подсветить его имя.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Перейти к предыдущему методу или классу&lt;/b&gt;&lt;p&gt;Переход к предыдущему объявлению метода или класса и подсветка его имени.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3112"/>
@@ -63753,7 +63754,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3124"/>
         <source>&lt;b&gt;Goto Next Method or Class&lt;/b&gt;&lt;p&gt;Goes to the line of the next method or class definition and highlights the name.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Перейти к следующему методу или классу&lt;/b&gt;&lt;p&gt;Перейти к следующему объявлению метода или класса и подсветить его имя.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Перейти к следующему методу или классу&lt;/b&gt;&lt;p&gt;Переход к следующему объявлению метода или класса и подсветка его имени.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3585"/>
@@ -63763,12 +63764,12 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3590"/>
         <source>Preview the current file in the web browser</source>
-        <translation>Предварительный просмотр текущего файла в web обозревателе</translation>
+        <translation>Предварительный просмотр текущего файла в web браузере</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3592"/>
         <source>&lt;b&gt;Preview&lt;/b&gt;&lt;p&gt;This opens the web browser with a preview of the current file.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Предварительный просмотр&lt;/b&gt;&lt;p&gt;Предварительный просмотр текущего файла в web обозревателе.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Предварительный просмотр&lt;/b&gt;&lt;p&gt;Предварительный просмотр текущего файла в web браузере.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1424"/>
@@ -64160,7 +64161,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3378"/>
         <source>&lt;b&gt;Zoom reset&lt;/b&gt;&lt;p&gt;Reset the zoom of the text. This sets the zoom factor to 100%.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Сбросить масштаб&lt;/b&gt;&lt;p&gt;Сбрасывает масштаб текста. Эта настройка возвращает масштаб текста к 100%.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Сбросить масштаб&lt;/b&gt;&lt;p&gt;Сброс масштаба текста. Эта настройка возвращает масштаб текста к 100%.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3330"/>
@@ -64192,7 +64193,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="4032"/>
         <source>&lt;b&gt;Next Change&lt;/b&gt;&lt;p&gt;Go to next line of the current editor having a change marker.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Следующее изменение&lt;/b&gt;&lt;p&gt;Перейти к следующей строке в текущем редакторе на которой есть отметка об изменении.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Следующее изменение&lt;/b&gt;&lt;p&gt;Переход к следующей строке текущего редактора, на которой есть маркер об изменении.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="4048"/>
@@ -64207,7 +64208,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="4050"/>
         <source>&lt;b&gt;Previous Change&lt;/b&gt;&lt;p&gt;Go to previous line of the current editor having a change marker.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Предыдущее изменение&lt;/b&gt;&lt;p&gt;Перейти к предыдущей строке в текущем редакторе на которой есть отметка об изменении.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Предыдущее изменение&lt;/b&gt;&lt;p&gt;Переход к предыдущей строке текущего редактора, на которой есть маркер об изменении.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="4148"/>
@@ -64222,7 +64223,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="4159"/>
         <source>&lt;b&gt;Check spelling&lt;/b&gt;&lt;p&gt;Perform a spell check of the current editor.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Проверка орфографии&lt;/b&gt;&lt;p&gt;Проверить орфографию в текущем редакторе.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Проверка орфографии&lt;/b&gt;&lt;p&gt;Проверка орфографии в текущем редакторе.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="4208"/>
@@ -64250,27 +64251,27 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <translation>Список исключений пользователя</translation>
     </message>
     <message>
-        <location filename="../ViewManager/ViewManager.py" line="6267"/>
+        <location filename="../ViewManager/ViewManager.py" line="6268"/>
         <source>Edit Spelling Dictionary</source>
         <translation>Редактировать орфографический словарь</translation>
     </message>
     <message>
-        <location filename="../ViewManager/ViewManager.py" line="6242"/>
+        <location filename="../ViewManager/ViewManager.py" line="6243"/>
         <source>Editing {0}</source>
         <translation>Редактирование {0}</translation>
     </message>
     <message>
-        <location filename="../ViewManager/ViewManager.py" line="6227"/>
+        <location filename="../ViewManager/ViewManager.py" line="6228"/>
         <source>&lt;p&gt;The spelling dictionary file &lt;b&gt;{0}&lt;/b&gt; could not be read.&lt;/p&gt;&lt;p&gt;Reason: {1}&lt;/p&gt;</source>
         <translation>&lt;p&gt;Невозможно прочитать файл словаря&lt;b&gt;{0}&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Причина: {1}&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../ViewManager/ViewManager.py" line="6254"/>
+        <location filename="../ViewManager/ViewManager.py" line="6255"/>
         <source>&lt;p&gt;The spelling dictionary file &lt;b&gt;{0}&lt;/b&gt; could not be written.&lt;/p&gt;&lt;p&gt;Reason: {1}&lt;/p&gt;</source>
         <translation>&lt;p&gt;Невозможно записать файл словаря&lt;b&gt;{0}&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Причина: {1}&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../ViewManager/ViewManager.py" line="6267"/>
+        <location filename="../ViewManager/ViewManager.py" line="6268"/>
         <source>The spelling dictionary was saved successfully.</source>
         <translation>Файл словаря успешно сохранён.</translation>
     </message>
@@ -64390,12 +64391,12 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
         <translation>&lt;b&gt;Сортировка&lt;/b&gt;&lt;p&gt;Сортировать строки в прямоугольной выборке, принимая во внимание только выделенную часть и игнорируя пробелы.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../ViewManager/ViewManager.py" line="4668"/>
+        <location filename="../ViewManager/ViewManager.py" line="4669"/>
         <source>Language: {0}</source>
         <translation>Язык: {0}</translation>
     </message>
     <message>
-        <location filename="../ViewManager/ViewManager.py" line="4676"/>
+        <location filename="../ViewManager/ViewManager.py" line="4677"/>
         <source>EOL Mode: {0}</source>
         <translation>Режим конца строк: {0}</translation>
     </message>
@@ -64417,7 +64418,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3476"/>
         <source>&lt;b&gt;New Document View&lt;/b&gt;&lt;p&gt;Opens a new view of the current document. Both views show the same document. However, the cursors may be positioned independently.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Новое окно для документа&lt;/b&gt;&lt;p&gt;Открыть новое окно для текущего документа. Оба окна будут показывать один и тот же документ. Текущие позиции могут быть разными.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Новое окно для документа&lt;/b&gt;&lt;p&gt;Открытие нового окна для текущего документа. Оба окна будут показывать один и тот же документ. Текущие позиции могут быть разными.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3486"/>
@@ -64432,17 +64433,17 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3496"/>
         <source>&lt;b&gt;New Document View&lt;/b&gt;&lt;p&gt;Opens a new view of the current document in a new split. Both views show the same document. However, the cursors may be positioned independently.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Новое окно для документа&lt;/b&gt;&lt;p&gt;Открыть новое окно для текущего документа в новом разделе. Оба окна будут показывать один и тот же документ. Текущие позиции могут быть разными.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Новое окно для документа&lt;/b&gt;&lt;p&gt;Открытие нового окна для текущего документа в новом разделе. Оба окна будут показывать один и тот же документ. Текущие позиции могут быть разными.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3908"/>
         <source>&lt;b&gt;Next warning message&lt;/b&gt;&lt;p&gt;Go to next line of the current editor having a pyflakes warning.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Следующее предупреждение&lt;/b&gt;&lt;p&gt;Перейти к следующей строке в текущем редакторе на которой есть отметка о предупреждени от pyflakes.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Следующее предупреждение&lt;/b&gt;&lt;p&gt;Переход к следующей строке текущего редактора, имеющей предупреждение pyflakes.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3927"/>
         <source>&lt;b&gt;Previous warning message&lt;/b&gt;&lt;p&gt;Go to previous line of the current editor having a pyflakes warning.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Предыдущее предупреждение&lt;/b&gt;&lt;p&gt;Перейти к предыдущей строке в текущем редакторе на которой есть отметка о предупреждени от pyflakes.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Предыдущее предупреждение&lt;/b&gt;&lt;p&gt;Переход к предыдущей строке текущего редактора, имеющей предупреждение pyflakes.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="3945"/>
@@ -64452,12 +64453,12 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="2699"/>
         <source>Complete</source>
-        <translation>Завершить</translation>
+        <translation>Дополнить</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1279"/>
         <source>&amp;Complete</source>
-        <translation>&amp;Завершить</translation>
+        <translation>&amp;Дополнить</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1279"/>
@@ -64468,17 +64469,17 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1286"/>
         <source>Complete current word</source>
-        <translation>Завершить текущее слово</translation>
+        <translation>Дополнить текущее слово</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1288"/>
         <source>&lt;b&gt;Complete&lt;/b&gt;&lt;p&gt;Performs a completion of the word containing the cursor.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Завершить&lt;/b&gt;&lt;p&gt;Выполняется завершение слова, содержащего курсор.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Дополнить&lt;/b&gt;&lt;p&gt;Выполняется дополнение слова, содержащего курсор.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1297"/>
         <source>Complete from Document</source>
-        <translation>Завершение из документа</translation>
+        <translation>Дополнение из документа</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1297"/>
@@ -64489,17 +64490,17 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1307"/>
         <source>Complete current word from Document</source>
-        <translation>Завершение текущего слова из документа</translation>
+        <translation>Дополнить текущее слово из документа</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1310"/>
         <source>&lt;b&gt;Complete from Document&lt;/b&gt;&lt;p&gt;Performs a completion from document of the word containing the cursor.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Завершение из документа&lt;/b&gt;&lt;p&gt;Выполняется завершение слова, содержащего курсор, из документа.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Дополнить из документа&lt;/b&gt;&lt;p&gt;Выполняется дополнение слова, содержащего курсор, из документа.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1320"/>
         <source>Complete from APIs</source>
-        <translation>Завершение из API</translation>
+        <translation>Дополнение из API</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1320"/>
@@ -64510,17 +64511,17 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1330"/>
         <source>Complete current word from APIs</source>
-        <translation>Завершение текущего слова из API</translation>
+        <translation>Дополнить текущее слово из API</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1333"/>
         <source>&lt;b&gt;Complete from APIs&lt;/b&gt;&lt;p&gt;Performs a completion from APIs of the word containing the cursor.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Завершение из APIs&lt;/b&gt;&lt;p&gt;Выполняется завершение слова, содержащего курсор, из APIs.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Дополнить из APIs&lt;/b&gt;&lt;p&gt;Выполняется дополнение слова, содержащего курсор, из APIs.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1343"/>
         <source>Complete from Document and APIs</source>
-        <translation>Завершение из документа и API</translation>
+        <translation>Дополнение из документа и API</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1343"/>
@@ -64531,12 +64532,12 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1353"/>
         <source>Complete current word from Document and APIs</source>
-        <translation>Завершение текущего слова из документа и API</translation>
+        <translation>Дополнить текущее слово из документа и API</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1356"/>
         <source>&lt;b&gt;Complete from Document and APIs&lt;/b&gt;&lt;p&gt;Performs a completion from document and APIs of the word containing the cursor.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Завершение из документа и API&lt;/b&gt;&lt;p&gt;Выполняется завершение слова, содержащего курсор, из документа и API.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Дополнить из документа и API&lt;/b&gt;&lt;p&gt;Выполняется дополнение слова, содержащего курсор, из документа и API.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../ViewManager/ViewManager.py" line="1366"/>
@@ -64562,7 +64563,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../ViewManager/ViewManager.py" line="705"/>
         <source>&lt;b&gt;Save Copy&lt;/b&gt;&lt;p&gt;Save a copy of the contents of current editor window. The file can be entered in a file selection dialog.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Сохранить копию&lt;/b&gt;&lt;p&gt;Сохранение контента текущего окна редактора. Файл может быть введен в диалоге выбора файла.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Сохранить копию&lt;/b&gt;&lt;p&gt;Сохранение контента текущего окна редактора. Имя файла может быть введено в диалоге выбора файла.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -64600,7 +64601,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Preferences/ViewProfileSidebarsDialog.ui" line="85"/>
         <source>Right Sidebar</source>
-        <translation>Правая панель</translation>
+        <translation>Правая боковая панель</translation>
     </message>
 </context>
 <context>
@@ -64646,7 +64647,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Preferences/ConfigurationPages/ViewmanagerPage.ui" line="16"/>
         <source>&lt;b&gt;Configure viewmanager&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Настройка управления видом&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Настройка менеджера видов&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ViewmanagerPage.ui" line="36"/>
@@ -64656,7 +64657,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Preferences/ConfigurationPages/ViewmanagerPage.ui" line="45"/>
         <source>Window view:</source>
-        <translation>Вид окон:</translation>
+        <translation>Расположение окон:</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ViewmanagerPage.ui" line="61"/>
@@ -64666,7 +64667,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Preferences/ConfigurationPages/ViewmanagerPage.ui" line="64"/>
         <source>The kind of window view can be selected from this list. The picture below gives an example of the selected view type.</source>
-        <translation>Тип расположения можно выбрать из списка. Доступен предварительный просмотр.</translation>
+        <translation>Тип расположения окон можно выбрать из списка. Ниже приведен пример выбранного вида.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ViewmanagerPage.ui" line="73"/>
@@ -64676,17 +64677,17 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Preferences/ConfigurationPages/ViewmanagerPage.ui" line="76"/>
         <source>This displays a small preview of the selected window view. This is the way the source windows are displayed in the application.</source>
-        <translation>Отображает небольшой предварительный просмотр выбранного вида окон. Это возможный вид отображения окон с исходными текстами, отображаемых приложением.</translation>
+        <translation>Небольшой предварительный просмотр выбранного расположения окон. Это возможный вид расположения окон с исходными текстами, отображаемых приложением.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ViewmanagerPage.ui" line="102"/>
         <source>Tabbed View</source>
-        <translation>Tabbed View</translation>
+        <translation>Tabbed View (многодокументный интерфейс с вкладками)</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ViewmanagerPage.ui" line="110"/>
         <source>Filename Length of Tab:</source>
-        <translation>Длина имени файла во вкладке:</translation>
+        <translation>Длина имени файла вкладки:</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ViewmanagerPage.ui" line="117"/>
@@ -64926,7 +64927,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Plugins/PluginVmTabview.py" line="25"/>
         <source>Tabbed View</source>
-        <translation>Tabbed View</translation>
+        <translation>Tabbed View (многодокументный интерфейс с вкладками)</translation>
     </message>
 </context>
 <context>
@@ -65195,7 +65196,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/XbelImporter.py" line="72"/>
         <source>You can import bookmarks from any browser that supports XBEL exporting. This file has usually the extension .xbel or .xml.</source>
-        <translation>Вы можете импортировать закладки из любого обозревателя, поддерживающего экспорт в XBEL. Такой файл обычно имеет расширение xbel или xml.</translation>
+        <translation>Вы можете импортировать закладки из любого браузера, поддерживающего экспорт в XBEL. Такой файл обычно имеет расширение xbel или xml.</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksImporters/XbelImporter.py" line="57"/>
@@ -65291,7 +65292,7 @@ added to the size of the fonts used in the editor windows.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/hg.py" line="2161"/>
         <source>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Tags&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</source>
-        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Метки&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Теги&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/hg.py" line="2171"/>
