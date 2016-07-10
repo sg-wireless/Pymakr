@@ -425,7 +425,11 @@ class CookieJar(QNetworkCookieJar):
         
         @param filterTrackingCookies filter tracking cookies flag (boolean)
         """
+        if filterTrackingCookies == self.__filterTrackingCookies:
+            return
+        
         self.__filterTrackingCookies = filterTrackingCookies
+        self.__saveTimer.changeOccurred()
     
     def __isOnDomainList(self, rules, domain):
         """

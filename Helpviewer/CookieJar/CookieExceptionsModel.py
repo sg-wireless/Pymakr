@@ -227,5 +227,9 @@ class CookieExceptionsModel(QAbstractTableModel):
         if otherRule in removeList2:
             removeList2.remove(otherRule)
         
+        self.__cookieJar.setAllowedCookies(self.__allowedCookies)
+        self.__cookieJar.setBlockedCookies(self.__blockedCookies)
+        self.__cookieJar.setAllowForSessionCookies(self.__sessionCookies)
+        
         self.beginResetModel()
         self.endResetModel()
