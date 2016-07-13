@@ -33,7 +33,7 @@ class InbandCommunication():
         self.tmp_buffer = ""
 
     def read_field(self):
-        buf = ""
+        buf = bytearray()
         is_command = False
 
         while True:
@@ -42,9 +42,9 @@ class InbandCommunication():
                 break
             if data == '\x1B':
                 is_command = True
-                buf = ""
+                buf.clear()
             else:
-                buf += data
+                buf.extend(data)
         return buf, is_command
 
 class Monitor():
