@@ -143,13 +143,13 @@ class Serial_connection:
         self.stream.timeout = 0.1
 
         timeout_count = 0
-        data = ''
+        data = bytearray()
         while True:
             if data.endswith(ending):
                 break
 
             new_data = self.stream.read(1)
-            data = data + new_data
+            data.extend(new_data)
             if new_data == '':
                 timeout_count += 1
                 if timeout_count >= 10 * timeout:
@@ -214,7 +214,7 @@ class Telnet_connection:
         return remote_text in self.stream.read_until(remote_text, self.__read_timeout)
 
     def _wait_for_multiple_exact_text(self, remote_options):
-        for i in xrange(0, len(remote_options)):
+        for i in range(0, len(remote_options)):
             remote_options[i] = remote_options[i].encode('ascii')
         return self.stream.expect(remote_options, self.__read_timeout)[0]
 
@@ -341,11 +341,11 @@ class Pyboard:
         if data_consumer == None:
             data = self.connection.read_until(ending, timeout)
         else:
-            data = ""
+            data = bytearray()
             cycles = int(timeout / 0.1)
-            for i in xrange(1, cycles):
+            for i in range(1, cycles):
                 new_data = self.connection.read_until(ending, 0.1)
-                data = data + new_data
+                data.extend(new_data)
                 data_consumer(new_data)
                 if new_data.endswith(ending):
                     break
