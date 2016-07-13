@@ -18,7 +18,7 @@ try:
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     def spy(x):
         try:
-            s.sendto(str(x) + '\n', ("192.168.1.2", 3000))
+            s.sendto(str(x) + '\n', ("192.168.192.11", 3000))
             return x
         except:
             pass
@@ -42,23 +42,23 @@ class InbandCommunication():
                 break
             if data == '\x1B':
                 is_command = True
-                buf.clear()
+                buf = bytearray()
             else:
                 buf.extend(data)
-        return buf, is_command
+        return bytes(buf), is_command
 
 class Monitor():
     def __init__(self):
         self.stream = InbandCommunication(sys.stdin)
         self.inside_command = False
         self.commands = {
-            "monitor.exit": self.exit_monitor,
-            "file.write": self.write_to_file,
-            "file.read": self.read_from_file,
-            "file.remove": self.remove_file,
-            "dir.create": self.create_dir,
-            "dir.remove": self.remove_dir,
-            "dir.list": self.list_dir,
+            b"monitor.exit": self.exit_monitor,
+            b"file.write": self.write_to_file,
+            b"file.read": self.read_from_file,
+            b"file.remove": self.remove_file,
+            b"dir.create": self.create_dir,
+            b"dir.remove": self.remove_dir,
+            b"dir.list": self.list_dir,
         }
 
     def read_data_or_commands(self):
