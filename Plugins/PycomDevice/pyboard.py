@@ -197,6 +197,8 @@ class Telnet_connection:
             self.__socket = self.stream.get_socket()
             self.__socket.setsockopt(Telnet_connection.socket.SOL_SOCKET,
                 Telnet_connection.socket.SO_KEEPALIVE, 1)
+            self.__socket.setsockopt(Telnet_connection.socket.SOL_SOCKET,
+                Telnet_connection.socket.TCP_NODELAY, 1)
             self.connected = True
             self.__expose_stream_methods()
 
