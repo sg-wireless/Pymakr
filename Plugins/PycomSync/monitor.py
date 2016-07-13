@@ -30,7 +30,6 @@ except:
 class InbandCommunication():
     def __init__(self, stream):
         self.stream = stream
-        self.tmp_buffer = ""
 
     def read_field(self):
         buf = bytearray()
