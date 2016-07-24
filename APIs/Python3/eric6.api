@@ -9377,6 +9377,24 @@ eric6.eric6_webbrowser.createMainWidget?4(argv)
 eric6.eric6_webbrowser.main?4()
 eric6.eric6config._pkg_config?8
 eric6.eric6config.getConfig?4(name)
+eric6.install-debugclients.cleanUp?4()
+eric6.install-debugclients.cleanupSource?4(dirName)
+eric6.install-debugclients.copyTree?4(src, dst, filters, excludeDirs=[], excludePatterns=[])
+eric6.install-debugclients.currDir?7
+eric6.install-debugclients.distDir?7
+eric6.install-debugclients.doCleanup?7
+eric6.install-debugclients.doCompile?7
+eric6.install-debugclients.exit?4(rcode=0)
+eric6.install-debugclients.initGlobals?4()
+eric6.install-debugclients.installEricDebugClients?4()
+eric6.install-debugclients.installPackage?7
+eric6.install-debugclients.main?4(argv)
+eric6.install-debugclients.modDir?7
+eric6.install-debugclients.progName?7
+eric6.install-debugclients.pyModDir?7
+eric6.install-debugclients.shutilCopy?4(src, dst, perm=0o644)
+eric6.install-debugclients.sourceDir?7
+eric6.install-debugclients.usage?4(rcode=2)
 eric6.install-i18n.configDir?7
 eric6.install-i18n.getConfigDir?4()
 eric6.install-i18n.installTranslations?4()
@@ -9439,6 +9457,16 @@ eric6.patch_modpython.main?4(argv)
 eric6.patch_modpython.modDir?7
 eric6.patch_modpython.progName?7
 eric6.patch_modpython.usage?4(rcode=2)
+eric6.uninstall-debugclients.currDir?7
+eric6.uninstall-debugclients.exit?4(rcode=0)
+eric6.uninstall-debugclients.initGlobals?4()
+eric6.uninstall-debugclients.installPackage?7
+eric6.uninstall-debugclients.main?4(argv)
+eric6.uninstall-debugclients.modDir?7
+eric6.uninstall-debugclients.progName?7
+eric6.uninstall-debugclients.pyModDir?7
+eric6.uninstall-debugclients.uninstallEricDebugClients?4()
+eric6.uninstall-debugclients.usage?4(rcode=2)
 eric6.uninstall.PythonMarkers?7
 eric6.uninstall.defaultMacAppBundleName?7
 eric6.uninstall.defaultMacAppBundlePath?7
