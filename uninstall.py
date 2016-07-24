@@ -50,11 +50,24 @@ def exit(rcode=0):
     
     @param rcode result code to report back (integer)
     """
+    global currDir
+    
     # restore the local eric6config.py
     if os.path.exists("eric6config.py.orig"):
         if os.path.exists("eric6config.py"):
             os.remove("eric6config.py")
         os.rename("eric6config.py.orig", "eric6config.py")
+    
+    if sys.platform.startswith("win"):
+        # different meaning of input between Py2 and Py3
+        try:
+            input("Press enter to continue...")
+        except (EOFError, SyntaxError):
+            pass
+    
+    os.chdir(currDir)
+    
+    sys.exit(rcode)
 
 
 def usage(rcode=2):
@@ -343,14 +356,10 @@ def main(argv):
         if opt == "-y":
             includePythonVariant = True
     
-    try:
-        uninstallEric()
-    except IOError as msg:
-        sys.stderr.write(
-            'IOError: {0}\nTry uninstall with admin rights.\n'.format(msg))
-    except OSError as msg:
-        sys.stderr.write(
-            'OSError: {0}\nTry uninstall with admin rights.\n'.format(msg))
+    print("\nUninstalling eric6 ...")
+    uninstallEric()
+    print("\nUninstallation complete.")
+    print()
     
     exit(0)
 

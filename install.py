@@ -1465,13 +1465,17 @@ def main(argv):
     
     if doCompile:
         print("\nCompiling source files ...")
+        if sys.version_info[0] == 3:
+            skipRe = re.compile(r"DebugClients[\\/]Python[\\/]")
+        else:
+            skipRe = re.compile(r"DebugClients[\\/]Python3[\\/]")
         # Hide compile errors (mainly because of Py2/Py3 differences)
         sys.stdout = io.StringIO()
         if distDir:
             compileall.compile_dir(
                 sourceDir,
                 ddir=os.path.join(distDir, modDir, cfg['ericDir']),
-                rx=re.compile(r"DebugClients[\\/]Python[\\/]"),
+                rx=skipRe,
                 quiet=True)
             py_compile.compile(
                 configName,
@@ -1480,7 +1484,7 @@ def main(argv):
             compileall.compile_dir(
                 sourceDir,
                 ddir=os.path.join(modDir, cfg['ericDir']),
-                rx=re.compile(r"DebugClients[\\/]Python[\\/]"),
+                rx=skipRe,
                 quiet=True)
             py_compile.compile(configName,
                                dfile=os.path.join(modDir, "eric6config.py"))
