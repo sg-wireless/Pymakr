@@ -1283,9 +1283,11 @@
     <Source>eric6_webbrowser.py</Source>
     <Source>eric6_webbrowser.pyw</Source>
     <Source>eric6config.py</Source>
+    <Source>install-debugclients.py</Source>
     <Source>install-i18n.py</Source>
     <Source>install.py</Source>
     <Source>patch_modpython.py</Source>
+    <Source>uninstall-debugclients.py</Source>
     <Source>uninstall.py</Source>
   </Sources>
   <Forms>
