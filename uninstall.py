@@ -21,6 +21,8 @@ import distutils.sysconfig
 if sys.version_info[0] == 2:
     import sip
     sip.setapi('QString', 2)
+else:
+    raw_input = input
 
 # get a local eric6config.py out of the way
 if os.path.exists("eric6config.py"):
@@ -249,12 +251,8 @@ def removePluginDirectories():
             print("  - {0}".format(path))
         answer = "c"
         while answer not in ["y", "Y", "n", "N", ""]:
-            if sys.version_info[0] == 2:
-                answer = raw_input(
-                    "Shall these directories be removed (y/N)? ")
-            else:
-                answer = input(
-                    "Shall these directories be removed (y/N)? ")
+            answer = raw_input(
+                "Shall these directories be removed (y/N)? ")
         if answer in ["y", "Y"]:
             for path in pathsToRemove:
                 shutil.rmtree(path)
@@ -270,12 +268,8 @@ def removeDataDirectory():
         print("  - {0}".format(cfg))
         answer = "c"
         while answer not in ["y", "Y", "n", "N", ""]:
-            if sys.version_info[0] == 2:
-                answer = raw_input(
-                    "Shall this directory be removed (y/N)? ")
-            else:
-                answer = input(
-                    "Shall this directory be removed (y/N)? ")
+            answer = raw_input(
+                "Shall this directory be removed (y/N)? ")
         if answer in ["y", "Y"]:
             shutil.rmtree(cfg)
 
@@ -302,12 +296,8 @@ def removeConfigurationData():
         print("  - {0}".format(settingsDir))
         answer = "c"
         while answer not in ["y", "Y", "n", "N", ""]:
-            if sys.version_info[0] == 2:
-                answer = raw_input(
-                    "Shall this directory be removed (y/N)? ")
-            else:
-                answer = input(
-                    "Shall this directory be removed (y/N)? ")
+            answer = raw_input(
+                "Shall this directory be removed (y/N)? ")
         if answer in ["y", "Y"]:
             shutil.rmtree(settingsDir)
 
