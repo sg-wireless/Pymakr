@@ -16,3 +16,4 @@ glob:tmp
 glob:__pycache__
 glob:**.DS_Store
 glob:**.coverage
+glob:**Thumbs.db

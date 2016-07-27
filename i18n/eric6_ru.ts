@@ -36617,27 +36617,27 @@ Select Update.</source>
 <context>
     <name>Preferences</name>
     <message>
-        <location filename="../Preferences/__init__.py" line="1316"/>
+        <location filename="../Preferences/__init__.py" line="1317"/>
         <source>Export Preferences</source>
         <translation>Экспорт предпочтений</translation>
     </message>
     <message>
-        <location filename="../Preferences/__init__.py" line="1344"/>
+        <location filename="../Preferences/__init__.py" line="1345"/>
         <source>Import Preferences</source>
         <translation>Импорт предпочтений</translation>
     </message>
     <message>
-        <location filename="../Preferences/__init__.py" line="1344"/>
+        <location filename="../Preferences/__init__.py" line="1345"/>
         <source>Properties File (*.ini);;All Files (*)</source>
         <translation>Файлы свойств (*.ini);;Все файлы (*)</translation>
     </message>
     <message>
-        <location filename="../Preferences/__init__.py" line="1446"/>
+        <location filename="../Preferences/__init__.py" line="1447"/>
         <source>Select Python{0} Interpreter</source>
         <translation>Задайте интерпретатор Python{0}</translation>
     </message>
     <message>
-        <location filename="../Preferences/__init__.py" line="1446"/>
+        <location filename="../Preferences/__init__.py" line="1447"/>
         <source>Select the Python{0} interpreter to be used:</source>
         <translation>Задайте интерпретатор Python{0}:</translation>
     </message>
@@ -44984,22 +44984,22 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
         <translation>Утилиты Qt</translation>
     </message>
     <message>
-        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="83"/>
+        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="108"/>
         <source>The tool executable is composed of the prefix, the tool name and the postfix. For win, the extension is added automatically.</source>
         <translation>Имя исполняемого файла утилиты состоит из префикса, имени утилиты и постфикса. В win32 автоматически добавляется расширение.</translation>
     </message>
     <message>
-        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="127"/>
+        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="154"/>
         <source>This gives an example of the complete tool name</source>
         <translation>Предпросмотр полного имени утилиты</translation>
     </message>
     <message>
-        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="130"/>
+        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="157"/>
         <source>designer</source>
         <translation>designer</translation>
     </message>
     <message>
-        <location filename="../Preferences/ConfigurationPages/QtPage.py" line="66"/>
+        <location filename="../Preferences/ConfigurationPages/QtPage.py" line="84"/>
         <source>Select Qt4 Translations Directory</source>
         <translation>Выбор директории переводов QT4</translation>
     </message>
@@ -45024,44 +45024,64 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
         <translation>&lt;b&gt;Примечание:&lt;/b&gt; Оставьте это поле пустым чтобы использовалось значение переменной окружения QT4TRANSLATIONSDIR или значение, сохранённое в Qt библиотеке при компиляции.</translation>
     </message>
     <message>
-        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="93"/>
+        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="120"/>
         <source>Qt-Prefix:</source>
         <translation>Qt-префикс:</translation>
     </message>
     <message>
-        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="100"/>
+        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="127"/>
         <source>Enter the prefix for the Qt tools name</source>
         <translation>Задайте префикс для инструментов Qt</translation>
     </message>
     <message>
-        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="107"/>
+        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="134"/>
         <source>Qt-Postfix:</source>
         <translation>Qt-постфикс:</translation>
     </message>
     <message>
-        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="114"/>
+        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="141"/>
         <source>Enter the postfix for the Qt tools name</source>
         <translation>Задайте постфикс для инструментов Qt</translation>
     </message>
     <message>
-        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="140"/>
+        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="169"/>
         <source>pyuic / pyside-uic Options</source>
         <translation>Параметры утилиты pyuic / pyside-uic</translation>
     </message>
     <message>
-        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="146"/>
+        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="175"/>
         <source>Indent Width:</source>
         <translation>Ширина отступа:</translation>
     </message>
     <message>
-        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="153"/>
+        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="182"/>
         <source>Select the indent width (default: 4)</source>
         <translation>Задайте ширину отступа (по умолчанию: 4)</translation>
     </message>
     <message>
-        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="185"/>
+        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="214"/>
         <source>Generate imports relative to &apos;.&apos;</source>
         <translation>Генерировать импорт относительно &apos;.&apos;</translation>
+    </message>
+    <message>
+        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="85"/>
+        <source>Tools Directory:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="92"/>
+        <source>Enter the path of the Qt tools directory, if they are not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="99"/>
+        <source>Press to select the Qt tools directory via a directory selection dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Preferences/ConfigurationPages/QtPage.py" line="70"/>
+        <source>Select Qt Tools Directory</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

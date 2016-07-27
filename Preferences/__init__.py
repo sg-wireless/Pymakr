@@ -1014,6 +1014,7 @@ class Prefs(object):
     # defaults for Qt related stuff
     qtDefaults = {
         "Qt4TranslationsDir": "",
+        "QtToolsDir": "",
         "QtToolsPrefix4": "",
         "QtToolsPostfix4": "",
         "PyuicIndent": 4,

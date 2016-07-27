@@ -186,9 +186,15 @@ def getQtBinariesPath():
     
     @return path of the Qt binaries (string)
     """
+    import Preferences
+    
     path = ""
-    if isWindowsPlatform():
-        # check for PyQt5 installer first (designer is test object)
+    
+    # step 1: check, if the user has configured a tools path
+    path = Preferences.getQt("QtToolsDir")
+    
+    if not path and isWindowsPlatform():
+        # step 2.1: check for PyQt5 Windows installer (designer is test object)
         modDir = getPyQt5ModulesDirectory()
         if os.path.exists(os.path.join(modDir, "bin", "designer.exe")):
             path = os.path.join(modDir, "bin")
@@ -196,6 +202,8 @@ def getQtBinariesPath():
             path = modDir
     
     if not path:
+        # step 2.2: get the path from Qt
+        # Note: no Qt tools are to found there for PyQt 5.7.0
         path = QLibraryInfo.location(QLibraryInfo.BinariesPath)
         if not os.path.exists(path):
             path = ""
