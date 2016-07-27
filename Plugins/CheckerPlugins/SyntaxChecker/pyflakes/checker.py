@@ -702,8 +702,8 @@ class Checker(object):
                 # Remove UndefinedName messages already reported for this name.
                 self.messages = [
                     m for m in self.messages if not
-                    isinstance(m, messages.UndefinedName) and not
-                    m.message_args[0] == node_name]
+                    isinstance(m, messages.UndefinedName) or
+                    m.message_args[0] != node_name]
 
                 # Bind name to global scope if it doesn't exist already.
                 global_scope.setdefault(node_name, node_value)
