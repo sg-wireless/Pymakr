@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="es" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.1" language="es">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -1905,8 +1906,8 @@ el botón de la derecha.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksMenu.py" line="145"/>
-        <source>Open in New &amp;Tab<byte value="x9"/>Ctrl+LMB</source>
-        <translation>Abrir en Nueva &amp;Pestaña<byte value="x9"/>Ctrl+LMB (botón izquierdo del ratón)</translation>
+        <source>Open in New &amp;Tab	Ctrl+LMB</source>
+        <translation>Abrir en Nueva &amp;Pestaña	Ctrl+LMB (botón izquierdo del ratón)</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksMenu.py" line="151"/>
@@ -1979,8 +1980,8 @@ el botón de la derecha.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksToolBar.py" line="93"/>
-        <source>Open in New &amp;Tab<byte value="x9"/>Ctrl+LMB</source>
-        <translation>Abrir en Nueva &amp;Pestaña<byte value="x9"/>Ctrl+LMB (botón izquierdo del ratón)</translation>
+        <source>Open in New &amp;Tab	Ctrl+LMB</source>
+        <translation>Abrir en Nueva &amp;Pestaña	Ctrl+LMB (botón izquierdo del ratón)</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Bookmarks/BookmarksToolBar.py" line="104"/>
@@ -16241,7 +16242,7 @@ Razón: {0}</translation>
     <name>HelpBrowser</name>
     <message>
         <location filename="../Helpviewer/HelpBrowserWV.py" line="1176"/>
-        <source>Open Link in New Tab<byte value="x9"/>Ctrl+LMB</source>
+        <source>Open Link in New Tab	Ctrl+LMB</source>
         <translation>Abrir enlace en Nueva Pestaña Ctrl+LMB (botón izquierdo del ratón)</translation>
     </message>
     <message>
@@ -44900,22 +44901,22 @@ compleja;  &apos;(?&amp;lt;![abc])q&apos; coincidirá con una &apos;q&apos; sola
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="85"/>
         <source>Tools Directory:</source>
-        <translation type="unfinished"></translation>
+        <translation>Directorio de las Herramientas:</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="92"/>
         <source>Enter the path of the Qt tools directory, if they are not found.</source>
-        <translation type="unfinished"></translation>
+        <translation>Introducir la ruta del directorio de herramientas Qt, si no han sido encontradas.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="99"/>
         <source>Press to select the Qt tools directory via a directory selection dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Pulsar para seleccionar el directorio de herramientas de Qt a través de un diálogo de selección de directorios</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.py" line="70"/>
         <source>Select Qt Tools Directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccionar Directorio Herramientas de Qt</translation>
     </message>
 </context>
 <context>
@@ -47463,7 +47464,7 @@ Función: {3}({4})</translation>
     <message>
         <location filename="../Snapshot/SnapWidget.py" line="452"/>
         <source>Preview of the snapshot image ({0} x {1})</source>
-        <translation type="unfinished"></translation>
+        <translation>Vista preliminar de la imagen de captura de pantalla ({0} x {1})</translation>
     </message>
 </context>
 <context>
