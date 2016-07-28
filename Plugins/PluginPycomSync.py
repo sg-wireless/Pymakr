@@ -137,7 +137,7 @@ class PluginPycomSync(QObject):
         return e5App().getObject("Project").getProjectPath()
 
     def __syncAct(self):
-        if e5App().getObject("Project").isOpen():
+        if e5App().getObject("Project").isOpen() and self.__deviceServer == None and PycomDeviceServer.getStatus() == True:
             self.__deviceServer = PycomDeviceServer()
             self.__deviceServer.emitStatusChange("uploadinit")
             self.__deviceServer.overrideControl(self.__continueSync)
@@ -155,7 +155,7 @@ class PluginPycomSync(QObject):
 
     def __runThisAct(self):
         editor = e5App().getObject("ViewManager").activeWindow()
-        if editor != None and self.__deviceServer == None:
+        if editor != None and self.__deviceServer == None and PycomDeviceServer.getStatus() == True:
             self.__deviceServer = PycomDeviceServer()
             self.__deviceServer.overrideControl(self.__continueRun)
 

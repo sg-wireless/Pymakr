@@ -162,7 +162,7 @@ class PycomDeviceServer(QThread):
 
     def connect(self):
         try:
-            if self.getStatus() == True:
+            if PycomDeviceServer.getStatus() == True:
                 return True
         except:
             pass
@@ -206,7 +206,8 @@ class PycomDeviceServer(QThread):
         # return False on empty or None
         return not not PycomDeviceServer.__device
 
-    def getStatus(self):
+    @staticmethod
+    def getStatus():
         try:
             return PycomDeviceServer.channel.check_connection()
         except:
@@ -289,7 +290,7 @@ class PycomDeviceServer(QThread):
 
     def restart(self):
         try:
-            if self.getStatus() == True:
+            if PycomDeviceServer.getStatus() == True:
                 self.disconnect()
             if PycomDeviceServer.__keepTrying == True:
                 time.sleep(0.25)
