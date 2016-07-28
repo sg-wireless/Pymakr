@@ -1,9 +1,10 @@
 import time
-
+import struct
 import os
 import struct
 import binascii
 import json
+import serial
 
 class Sync():
     def __init__(self, local, remote):
@@ -20,7 +21,12 @@ class Sync():
         return list(self.remote - self.local)
 
     def filter_by_type(self, l, by):
-        return [i[0] for i in l if i[1] == by]
+        return [i[0].encode('utf-8') for i in l if i[1] == by] # encode is done here because somehow the & operator over two frozensets convert bytes to unicode without being asked
+
+    def filter_by_type_order_by_depth(self, l, by, orderby, reverse=False):
+        # yeah... I know...
+        # encode is done here because somehow the & operator over two frozensets convert bytes to unicode without being asked
+        return [j[0] for j in sorted([(i[0].encode('utf-8'), i[2]) for i in l if i[1] == by], key=lambda tup: tup[1], reverse=reverse)]
 
 
 class Monitor_PC():
@@ -30,15 +36,40 @@ class Monitor_PC():
         f.close()
 
         self.pyb = pyb
-        self.pyb.connection.enable_binary()
+        monitor_code = self.__get_script_parameters(pyb.get_connection_type()) + monitor_code
         self.pyb.enter_raw_repl_no_reset()
         self.pyb.exec_raw_no_follow(monitor_code)
-        time.sleep(0.2)
+        time.sleep(0.5)
+        self.__setup_channel()
 
-    def __del__(self):
+    def destroy(self):
+        self.exit_monitor()
+
+    def __get_script_parameters(self, connection_type):
+        if connection_type == 'serial':
+            return "connection_type = 'u'\n"
+        else:
+            info = self.pyb.get_username_password()
+            return "connection_type = 's'\ntelnet_login = ('{}', '{}')\n".format(info[0], info[1])
+
+    def __setup_channel(self):
+        connection_type = self.pyb.get_connection_type()
+
+        if connection_type == 'serial':
+            self.connection = self.pyb.connection
+            self.connection.stream.reset_input_buffer()
+        else:
+            self.pyb._connect(device="", raw=True) # device was stored in the previous call to _connect
+            self.connection = self.pyb.connection
+
+    def __restore_channel(self):
         try:
-            self.pyb.connection.disable_binary()
-            self.exit_monitor()
+            time.sleep(0.25)
+            if self.pyb.get_connection_type() != 'serial':
+                time.sleep(0.1)
+                self.pyb._connect(device="", raw=False) # device was stored in the previous call to _connect
+            self.pyb.exit_raw_repl()
+            self.pyb.flush()
         except:
             pass
 
@@ -46,104 +77,101 @@ class Monitor_PC():
     def get_string_block(string, block, block_size):
         return string[block * block_size: (block + 1) * block_size]
 
-    def get_record(self):
-        return self.pyb.read_until('\x1F')[:-1]
-        
-    def send_command_mark(self):
-        self.pyb.send('\x1B')
+    def __read_exactly(self, n):
+        return self.connection.read(n)
 
-    def send_record(self, content):
-        self.pyb.send(content)
-        self.pyb.send('\x1F')
-        time.sleep(0.1)
+    def __send(self, data):
+        self.connection.write(data.replace(b'\x1b', b'\x1b\x1b'))
+
+    def __send_command(self, cmd):
+        self.connection.write(b'\x1b' + cmd)
+
+    def read_int16(self):
+        return struct.unpack('>H', self.__read_exactly(2))[0]
+
+    def __send_int_16(self, i):
+        self.connection.write(struct.pack('>H', i))
+
+    def __send_int_32(self, i):
+        self.connection.write(struct.pack('>L', i))
 
     def exit_monitor(self):
-        self.send_command_mark()
-        self.send_record("monitor.exit")
-        self.pyb.exit_raw_repl()
-        self.pyb.flush()
-        
-    def keep_alive(self, c):
-        self.send_command_mark()
-        self.send_record("monitor.keepalive")
-        self.send_record(str(c))
+        self.__send_command(b'\x00\xff')
+        self.__restore_channel()
+
+    def request_ack(self):
+        self.__send_command(b'\x00\x00')
+        if self.__read_exactly(3) != b'\x1b\x00\x00':
+            raise Exception() #todo: add a real exception
+
+    def reset_board(self):
+        self.__send_command(b'\x00\xfe')
+        time.sleep(1)
+        self.__restore_channel()
 
     def write_file_contents(self, name, content):
         data_len = len(content)
-
-        self.send_command_mark()
-        self.send_record("file.write")
-        self.send_record(name)
-        self.send_record(str(data_len))
-        
-        for i in xrange(1 + data_len // 2048):
-            # remove trailing char (\n) to deal with micropython bug in a2b
-            self.send_record(binascii.b2a_base64(Monitor_PC.get_string_block(content, i, 2048))[:-1]) 
+        self.__send_command(b'\x01\x00')
+        self.__send_int_16(len(name))
+        self.__send(name)
+        self.__send_int_32(len(content))
+        for i in range(1 + data_len // 256):
+            self.__send(Monitor_PC.get_string_block(content, i, 256))
+            self.request_ack()
 
     def write_file(self, local_name, remote_name=None):
         with open(local_name, 'r') as content_file:
             content = content_file.read()
 
         if remote_name == None:
-            remote_name = '/flash/' + local_name
+            remote_name = b'/flash/' + local_name
         self.write_file_contents(remote_name, content)
 
     def read_file(self, name):
-        self.send_command_mark()
-        self.send_record("file.read")
-        self.send_record(name)
-        data_len = int(self.get_record())
-        if data_len == -1:
+        self.__send_command(b'\x01\x01')
+        self.__send_int_16(len(name))
+        self.__send(name)
+        file_len = struct.unpack('>L', self.pyb.connection.read(4))[0]
+        if file_len == 0xFFFFFFFF:
             return None
-
-        buf = ""
-        
-        for i in xrange(1 + data_len // 2048):
-            buf += binascii.a2b_base64(self.get_record())
-        return buf
+        return self.__read_exactly(file_len)
 
     def remove_file(self, name):
-        self.send_command_mark()
-        self.send_record("file.remove")
-        self.send_record(name)
+        self.__send_command(b'\x01\x02')
+        self.__send_int_16(len(name))
+        self.__send(name)
+
+    def req_last_file_hash(self):
+        self.__send_command(b'\x01\x03')
+        return self.__read_exactly(self.read_int16())
 
     def create_dir(self, name):
-        self.send_command_mark()
-        self.send_record("dir.create")
-        self.send_record(name)
+        self.__send_command(b'\x01\x04')
+        self.__send_int_16(len(name))
+        self.__send(name)
 
     def remove_dir(self, name):
-        self.send_command_mark()
-        self.send_record("dir.remove")
-        self.send_record(name)
-        
-    def list_dir(self, name):
-        self.send_command_mark()
-        self.send_record("dir.list")
-        self.send_record(name)
-        items = int(self.get_record())
-        result = [''] * items
-        for i in range(items):
-            result[i] = self.get_record()
-        return result
+        self.__send_command(b'\x01\x05')
+        self.__send_int_16(len(name))
+        self.__send(name)
 
     def sync(self, local, remote):
         s = Sync(local, remote)
 
         # delete unused files
-        map(self.remove_file, s.filter_by_type(s.to_delete(), 'f'))
+        map(self.remove_file, s.filter_by_type(s.to_delete(), b'f'))
 
         # then delete unused directories
-        map(self.remove_dir, s.filter_by_type(s.to_delete(), 'd'))
+        map(self.remove_dir, s.filter_by_type_order_by_depth(s.to_delete(), b'd', True))
 
         # now create new directories
-        map(self.create_dir, s.filter_by_type(s.to_create(), 'd'))
+        map(self.create_dir, s.filter_by_type_order_by_depth(s.to_create(), b'd', False))
 
         # upload the new files
-        map(self.write_file, s.filter_by_type(s.to_create(), 'f'))
+        map(self.write_file, s.filter_by_type(s.to_create(), b'f'))
 
         # and update the ones that changed
-        map(self.write_file, s.filter_by_type(s.to_update(), 'f'))
+        map(self.write_file, s.filter_by_type(s.to_update(), b'f'))
 
 
     def sync_pyboard(self, local):

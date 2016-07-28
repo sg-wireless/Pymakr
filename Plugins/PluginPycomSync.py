@@ -55,7 +55,7 @@ class PluginPycomSync(QObject):
     def createActions(self):
         self.syncAct = E5Action(
             self.tr('Sync project'),
-            UI.PixmapCache.getIcon("chip.png"),
+            UI.PixmapCache.getIcon("sync.png"),
             self.tr('Sync project'),
             0, 0, self, 'project_sync')
         self.syncAct.setStatusTip(self.tr(
@@ -83,20 +83,45 @@ class PluginPycomSync(QObject):
         ui.registerToolbar("sync", title, self.__toolbar)
         ui.addToolBar(self.__toolbar)
 
+
+    def __splitSubdirectories(self, path):
+        directories = []
+        level = max(path.count('/'), path.count('\\')) #todo: detect when in Windows instead
+
+        while 1:
+            path = os.path.split(path)[0]
+            if path == '' or path == '/':
+                break
+            directories.append((path, b'd', level))
+            level -= 1
+        return directories[::-1]
+
     def __getProjectFiles(self):
-        resources = e5App().getObject("Project").getSources()
+        directories = set()
+        split_directories = set()
+        resources = list(e5App().getObject("Project").getSources())
+
         for i in range(len(resources)):
-            typeOfItem = 'f' if os.path.isfile(resources[i]) else 'd'
-            resources[i] = (resources[i], typeOfItem)
+            item = resources[i]
+            directories.add(os.path.split(item)[0] + '/')
+            resources[i] = (item, b'f')
+
+        for el in directories:
+            subdirs = self.__splitSubdirectories(el)
+            split_directories.update(subdirs)
+
+        resources.extend(split_directories)
+
         return resources
 
     def __getProjectPath(self):
         return e5App().getObject("Project").getProjectPath()
 
     def __syncAct(self):
-        self.__deviceServer = PycomDeviceServer()
-        self.__deviceServer.overrideControl(self.__continueSync)
-
+        if e5App().getObject("Project").isOpen():
+            self.__deviceServer = PycomDeviceServer()
+            self.__deviceServer.emitStatusChange("uploadinit")
+            self.__deviceServer.overrideControl(self.__continueSync)
 
     def __continueSync(self):
         pwd = os.getcwd()
@@ -104,5 +129,7 @@ class PluginPycomSync(QObject):
         localFiles = self.__getProjectFiles()
         monitor = Monitor_PC(self.__deviceServer.channel)
         monitor.sync_pyboard(localFiles)
+        monitor.destroy()
         os.chdir(pwd)
+        self.__deviceServer.emitStatusChange("uploadend")
 

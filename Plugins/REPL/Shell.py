@@ -599,3 +599,7 @@ class UPythonShell(QsciScintillaCompat):
             self.__write(self.tr("Invalid credentials, please check device username and password\r"))
         elif status == "invaddress":
             self.__write(self.tr("Invalid device address, please check the settings\r"))
+        elif status == "uploadinit":
+            self.__write(self.tr("\r\rUploading file(s). Please wait...\r"))
+        elif status == "uploadend":
+            self.__write(self.tr("Uploaded successfully!\r\r"))

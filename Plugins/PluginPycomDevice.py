@@ -129,9 +129,13 @@ class PycomDeviceServer(QThread):
     __password = None
     __keepTrying = False
     __overrideCallback = None
+    __main_thread = None
 
     def __init__(self):
         QThread.__init__(self)
+
+        if PycomDeviceServer.__main_thread == None or (not PycomDeviceServer.__main_thread.isRunning()):
+            PycomDeviceServer.__main_thread = self
 
         # A single set of signals is desired for all the instances of this Class
 
@@ -172,7 +176,8 @@ class PycomDeviceServer(QThread):
         try:
             if not PycomDeviceServer.__device:
                 return False
-            self.start()
+            if PycomDeviceServer.__main_thread == self:
+                self.start()
         except:
             return False
 
@@ -181,12 +186,16 @@ class PycomDeviceServer(QThread):
     def disconnect(self):
         try:
             PycomDeviceServer.__shutdown = True
+            PycomDeviceServer.channel.exit_recv()
+            time.sleep(0.25)
             PycomDeviceServer.channel.close()
         except:
             pass
 
     def shutdown(self):
         PycomDeviceServer.__shutdown = True
+        if PycomDeviceServer.__main_thread == self:
+            PycomDeviceServer.__main_thread = None
 
     def setConnectionParameters(self, device, user, password):
         PycomDeviceServer.__device = device

@@ -68,9 +68,29 @@ def stdout_write_bytes(b):
     stdout.write(b)
     stdout.flush()
 
+def separate_address_port(string):
+    import re
+    match = re.match(r'([\w.]+)$|([\w.]+):(\d+)$', string)
+    if match is None:
+        raise PyboardError('\nInvalid address')
+    address = match.group(1)
+    port = 23
+    if address == None:
+        address = match.group(2)
+        port = int(match.group(3))
+
+    return address, port
+
 class PyboardError(BaseException):
     pass
 
+def to_bytes(s):
+    if type(s) == bytes:
+        return s
+    try:
+        return bytes(s)
+    except:
+        return bytes(s, 'utf8')
 
 class Periodic:
     def __init__(self, period, callback):
@@ -136,6 +156,8 @@ class Serial_connection:
     def __expose_stream_methods(self):
         self.close = self.stream.close
         self.write = self.stream.write
+        self.flush = self.stream.flush
+        self.read = self.stream.read
 
     def read_until(self, ending, timeout):
         ''' implement a telnetlib-like read_until '''
@@ -192,7 +214,7 @@ class Telnet_connection:
         self.__read_timeout = read_timeout
         self.connected = False
         try:
-            address, port = self.__separateAdressPort(uri)
+            address, port = separate_address_port(uri)
             self.stream = Telnet_connection.telnetlib.Telnet(address, port, timeout=15)
             self.__socket = self.stream.get_socket()
             self.__socket.setsockopt(Telnet_connection.socket.SOL_SOCKET,
@@ -212,17 +234,16 @@ class Telnet_connection:
         self.__socket.gettimeout()
 
     def _wait_for_exact_text(self, remote_text):
-        remote_text = remote_text.encode('ascii')
+        remote_text = to_bytes(remote_text)
         return remote_text in self.stream.read_until(remote_text, self.__read_timeout)
 
     def _wait_for_multiple_exact_text(self, remote_options):
         for i in range(0, len(remote_options)):
-            remote_options[i] = remote_options[i].encode('ascii')
+            remote_options[i] = to_bytes(remote_options[i])
         return self.stream.expect(remote_options, self.__read_timeout)[0]
 
-
     def _wait_and_respond(self, remote_text, response, delay_before=0):
-        response = response.encode('ascii')
+        response = to_bytes(response)
         if self._wait_for_exact_text(remote_text) == True:
             if delay_before != 0:
                 time.sleep(delay_before)
@@ -232,8 +253,8 @@ class Telnet_connection:
             return False
 
     def authenticate(self, user, password):
-        if self._wait_and_respond('Login as:', user) == True and \
-        self._wait_and_respond('Password:', password, 0.2) == True:
+        if self._wait_and_respond(b'Login as:', user) == True and \
+        self._wait_and_respond(b'Password:', password, 0.2) == True:
             status = self._wait_for_multiple_exact_text([
                 'Type "help\(\)" for more information.',
                 'Invalid credentials, try again.'])
@@ -261,19 +282,6 @@ class Telnet_connection:
         self.read_eager = self.stream.read_eager
         self.read_some = self.stream.read_some
 
-    def __separateAdressPort(self, string):
-        import re
-        match = re.match(r'([\w.]+)$|([\w.]+):(\d+)$', string)
-        if match is None:
-            raise PyboardError('\nInvalid address')
-        address = match.group(1)
-        port = 23
-        if address == None:
-            address = match.group(2)
-            port = int(match.group(3))
-
-        return address, port
-    
     def __set_mode(self, mode_char):
         self.__socket.sendall(Telnet_connection.telnetlib.IAC +
         mode_char + Telnet_connection.telnetlib.BINARY)
@@ -286,23 +294,41 @@ class Telnet_connection:
         self.__set_mode(Telnet_connection.telnetlib.WONT)
         self.__set_mode(Telnet_connection.telnetlib.DONT)
 
+    def flush(self):
+        pass
+
+class Socket_connection:
+    import socket
+
+    def __init__(self, host):
+        self.connected = False
+        try:
+            self.stream = Socket_connection.socket.socket(Socket_connection.socket.AF_INET, Socket_connection.socket.SOCK_STREAM)
+            self.stream.connect(separate_address_port(host))
+            self.__expose_stream_methods()
+            self.connected = True
+        except Socket_connection.socket.error:
+            pass
+
+    def __expose_stream_methods(self):
+        self.write = self.stream.send
+
+    def authenticate(self, user, password):
+        # needs no authentication
+        return True
+
+    def read(self, length):
+        buf = b''
+        while length > 0:
+            new_data = self.stream.recv(length % 4096) #todo: properly manage disconnections
+            buf += new_data
+            length -= len(new_data)
+        return buf
+
 class Pyboard:
     def __init__(self, device, baudrate=115200, user='micro', password='python', wait=0, keep_alive=0):
-        self.connected = False
-        if Serial_connection.is_serial_port(device) == True:
-            self.connection = Serial_connection(device, baudrate=baudrate, timeout=wait)
-        else:
-            self.connection = Telnet_connection(device)
-        if self.connection.connected == False:
-            raise PyboardError('\nFailed to establish a connection with the board at: ' + device)
-
-        if self.connection.authenticate(user, password) == False:
-            raise PyboardError('\nFailed to authenticate with the board at: ' + device)
-
-        if keep_alive != 0:
-            self.keep_alive_interval = Periodic(keep_alive, self._keep_alive)
-
-        self.connected = True
+        self.__device = None
+        self._connect(device, baudrate, user, password, wait, keep_alive, False)
 
     def close(self):
         if self.connected == False:
@@ -319,6 +345,12 @@ class Pyboard:
             # the connection might not exist, so ignore this one
             pass
 
+    def get_connection_type(self):
+        return self.__connectionType
+
+    def get_username_password(self):
+        return (self.__username, self.__password)
+
     def set_disconnected_callback(self, callback):
         self.__disconnected_callback = callback
 
@@ -326,6 +358,35 @@ class Pyboard:
         # flush input (without relying on serial.flushInput())
         while self.connection.read_eager():
             pass
+
+    def _connect(self, device, baudrate=115200, user='micro', password='python', wait=0, keep_alive=0, raw=False):
+        self.connected = False
+        if self.__device == None:
+            self.__device = device
+            self.__baudrate = baudrate
+            self.__username = user
+            self.__password = password
+
+        if Serial_connection.is_serial_port(self.__device) == True:
+            self.__connectionType = 'serial'
+            self.connection = Serial_connection(self.__device, baudrate=self.__baudrate, timeout=wait)
+        else:
+            if raw == False:
+                self.__connectionType = 'telnet'
+                self.connection = Telnet_connection(self.__device)
+            else:
+                self.__connectionType = 'socket'
+                self.connection = Socket_connection(self.__device)
+        if self.connection.connected == False:
+            raise PyboardError('\nFailed to establish a connection with the board at: ' + self.__device)
+
+        if self.connection.authenticate(self.__username, self.__password) == False:
+            raise PyboardError('\nFailed to authenticate with the board at: ' + self.__device)
+
+        if keep_alive != 0:
+            self.keep_alive_interval = Periodic(keep_alive, self._keep_alive)
+
+        self.connected = True
 
     def _keep_alive(self):
         if self.connected == False:
@@ -401,7 +462,7 @@ class Pyboard:
         return data, data_err
 
     def send(self, data):
-        data = data.encode('ascii')
+        data = to_bytes(data)
         try:
             self.connection.write(data)
         except:
@@ -431,7 +492,7 @@ class Pyboard:
         self.send("\x03") # Ctrl-C
 
     def _wait_for_exact_text(self, remote_text):
-        remote_text = remote_text.decode('ascii')
+        remote_text = to_bytes(remote_text)
         return remote_text in self.read_until(remote_text)
 
     def reset(self):
@@ -443,10 +504,7 @@ class Pyboard:
             raise PyboardError('could not enter reset')
 
     def exec_raw_no_follow(self, command):
-        if isinstance(command, bytes):
-            command_bytes = command
-        else:
-            command_bytes = command.encode('utf8')
+        command_bytes = to_bytes(command)
 
         # check we have a prompt
         data = self.read_until(b'>')
@@ -456,7 +514,7 @@ class Pyboard:
         # write command
         for i in range(0, len(command_bytes), 256):
             self.connection.write(command_bytes[i:min(i + 256, len(command_bytes))])
-            time.sleep(0.01)
+            self.connection.flush()
         self.connection.write(b'\x04')
 
         # check if we could exec command
@@ -530,7 +588,7 @@ def main():
             sys.exit(1)
 
     if args.command is not None:
-        execbuffer(args.command.encode('utf-8'))
+        execbuffer(to_bytes(args.command))
 
     for filename in args.files:
         with open(filename, 'rb') as f:
