@@ -33,6 +33,13 @@ class PluginPycomSync(QObject):
         super(PluginPycomSync, self).__init__(ui)
         self.__deviceServer = None
         self.__ui = ui
+        self.__project = e5App().getObject("Project")
+        self.__viewManager = e5App().getObject("ViewManager")
+        self.__project.projectOpened.connect(self.__projectOpened)
+        self.__project.newProject.connect(self.__projectOpened)
+        self.__project.projectClosed.connect(self.__projectClosed)
+        self.__viewManager.editorOpened.connect(self.__editorOpened)
+        self.__viewManager.lastEditorClosed.connect(self.__lastEditorClosed)
 
     def activate(self):
         """
@@ -68,7 +75,7 @@ class PluginPycomSync(QObject):
             """Pycom device.</p>"""
         ))
         self.syncAct.triggered.connect(self.__syncAct)
-
+        self.syncAct.setEnabled(False)
 
         self.runThisAct = E5Action(
             self.tr('Run this code'),
@@ -84,6 +91,7 @@ class PluginPycomSync(QObject):
             """Pycom device.</p>"""
         ))
         self.runThisAct.triggered.connect(self.__runThisAct)
+        self.runThisAct.setEnabled(False)
 
     def createToolbar(self,ui, toolbarManager):
         self.__toolbar = QToolBar(self.tr("Pycom Sync"), ui)
@@ -118,7 +126,7 @@ class PluginPycomSync(QObject):
     def __getProjectFiles(self):
         directories = set()
         split_directories = set()
-        resources = list(e5App().getObject("Project").getSources())
+        resources = list(self.__project.getSources())
 
         for i in range(len(resources)):
             item = resources[i]
@@ -134,10 +142,10 @@ class PluginPycomSync(QObject):
         return resources
 
     def __getProjectPath(self):
-        return e5App().getObject("Project").getProjectPath()
+        return self.__project.getProjectPath()
 
     def __syncAct(self):
-        if e5App().getObject("Project").isOpen() and self.__deviceServer == None and PycomDeviceServer.getStatus() == True:
+        if self.__project.isOpen() and self.__deviceServer == None and PycomDeviceServer.getStatus() == True:
             self.__deviceServer = PycomDeviceServer()
             self.__deviceServer.emitStatusChange("uploadinit")
             self.__deviceServer.overrideControl(self.__continueSync)
@@ -154,14 +162,27 @@ class PluginPycomSync(QObject):
         self.__deviceServer = None
 
     def __runThisAct(self):
-        editor = e5App().getObject("ViewManager").activeWindow()
+        editor = this.__viewManager.activeWindow()
         if editor != None and self.__deviceServer == None and PycomDeviceServer.getStatus() == True:
             self.__deviceServer = PycomDeviceServer()
             self.__deviceServer.overrideControl(self.__continueRun)
 
     def __continueRun(self):
-        editor = e5App().getObject("ViewManager").activeWindow()
+        editor = this.__viewManager.activeWindow()
         if editor != None:
             code = editor.text()
             self.__deviceServer.exec_code(code)
         self.__deviceServer = None
+
+    def __projectOpened(self):
+        self.syncAct.setEnabled(True)
+
+    def __projectClosed(self):
+        self.syncAct.setEnabled(False)
+
+    def __editorOpened(self):
+        self.runThisAct.setEnabled(True)
+
+    def __lastEditorClosed(self):
+        self.runThisAct.setEnabled(False)
+        
