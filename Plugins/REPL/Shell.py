@@ -496,6 +496,7 @@ class UPythonShell(QsciScintillaCompat):
     def __overwrite(self, text):
         line, col = self.getCursorPosition()
         self.setSelection(line, col, line, col + len(text))
+        text = text.replace('\x04', '')
         self.replaceSelectedText(text)
 
     def __simulateVT100(self, s):

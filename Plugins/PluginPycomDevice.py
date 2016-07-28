@@ -277,7 +277,6 @@ class PycomDeviceServer(QThread):
         PycomDeviceServer.channel.exit_recv()
 
     def exec_code(self, code):
-        import time
         self.channel.enter_raw_repl_no_reset()
         self.channel.exec_raw_no_follow(code)
         self.channel.exit_raw_repl()
