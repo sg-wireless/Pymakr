@@ -441,7 +441,6 @@ class Pyboard:
             print(data)
             raise PyboardError('could not enter raw repl')
 
-
     def exit_raw_repl(self):
         self.connection.write(b'\r\x02') # ctrl-B: enter friendly REPL
 

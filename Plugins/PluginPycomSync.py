@@ -31,6 +31,7 @@ python2Compatible = True
 class PluginPycomSync(QObject):
     def __init__(self,  ui):
         super(PluginPycomSync, self).__init__(ui)
+        self.__deviceServer = None
         self.__ui = ui
 
     def activate(self):
@@ -68,6 +69,22 @@ class PluginPycomSync(QObject):
         ))
         self.syncAct.triggered.connect(self.__syncAct)
 
+
+        self.runThisAct = E5Action(
+            self.tr('Run this code'),
+            UI.PixmapCache.getIcon("1rightarrow.png"),
+            self.tr('Run this code'),
+            0, 0, self, 'run_this')
+        self.runThisAct.setStatusTip(self.tr(
+            'Run current code within a Pycom Device'
+        ))
+        self.runThisAct.setWhatsThis(self.tr(
+            """<b>Run this code</b>"""
+            """<p>This makes the current code run into a """
+            """Pycom device.</p>"""
+        ))
+        self.runThisAct.triggered.connect(self.__runThisAct)
+
     def createToolbar(self,ui, toolbarManager):
         self.__toolbar = QToolBar(self.tr("Pycom Sync"), ui)
         self.__toolbar.setIconSize(UI.Config.ToolBarIconSize)
@@ -75,10 +92,12 @@ class PluginPycomSync(QObject):
         self.__toolbar.setToolTip(self.tr('Pycom Sync'))
 
         self.__toolbar.addAction(self.syncAct)
+        self.__toolbar.addAction(self.runThisAct)
 
         title = self.__toolbar.windowTitle()
         toolbarManager.addToolBar(self.__toolbar, title)
         toolbarManager.addAction(self.syncAct, title)
+        toolbarManager.addAction(self.runThisAct, title)
 
         ui.registerToolbar("sync", title, self.__toolbar)
         ui.addToolBar(self.__toolbar)
@@ -132,4 +151,17 @@ class PluginPycomSync(QObject):
         monitor.destroy()
         os.chdir(pwd)
         self.__deviceServer.emitStatusChange("uploadend")
+        self.__deviceServer = None
 
+    def __runThisAct(self):
+        editor = e5App().getObject("ViewManager").activeWindow()
+        if editor != None and self.__deviceServer == None:
+            self.__deviceServer = PycomDeviceServer()
+            self.__deviceServer.overrideControl(self.__continueRun)
+
+    def __continueRun(self):
+        editor = e5App().getObject("ViewManager").activeWindow()
+        if editor != None:
+            code = editor.text()
+            self.__deviceServer.exec_code(code)
+        self.__deviceServer = None
