@@ -5,6 +5,7 @@ from PyQt5.QtCore import QObject
 from PyQt5.QtCore import QSize
 from PyQt5.QtCore import Qt
 from PyQt5.QtCore import QCoreApplication
+from PyQt5.QtCore import QDir
 
 from Project.Project import Project
 
@@ -92,6 +93,8 @@ class PluginSimpleUI(QObject):
 
         self.__ui.setStyle(Preferences.getUI("Style"),
                       Preferences.getUI("StyleSheet"))
+
+        self.__hideToolbars()
 
         Preferences.Prefs.settings.setValue("General/Configured", True)
 
@@ -257,7 +260,6 @@ class PluginSimpleUI(QObject):
             self.__ui.getToolbar(toolbar)[1].hide()
             self.__ui.unregisterToolbar(toolbar)
 
-
         toRemove = {
             "file": ["New &Window", "&Close", "Save &Copy...", "&Quit"],
             "edit": ["Clear", "C&omment", "Unco&mment"]
@@ -286,20 +288,32 @@ class PluginSimpleUI(QObject):
         for toolbar in toResize:
             self.__ui.getToolbar(toolbar)[1].setIconSize(QSize(32, 32))
 
+    def __hideToolbars(self):
+        for toolbar in ["bookmarks"]:
+            self.__ui.getToolbar(toolbar)[1].hide()
+
     def __setupSidebars(self):
         """
         Private method that hides the pro-level sidebars
         """
-        toHide = [self.tr("Multiproject-Viewer"),
-                  self.tr("Template-Viewer"),
-                  self.tr("Symbols")]
+        toHideLeft = [self.tr("Multiproject-Viewer"),
+                        self.tr("Template-Viewer"),
+                        self.tr("Symbols")]
+        toHideBottom = [self.tr("Task-Viewer"),
+                        self.tr("Numbers")]
         self.__ui.rightSidebar.hide()
         self.__ui.rightSidebar.clear()
+
         for i in xrange(self.__ui.leftSidebar.count() - 1, 0, -1):
-            if self.__ui.leftSidebar.tabText(i) in toHide:
+            if self.__ui.leftSidebar.tabText(i) in toHideLeft:
                 self.__ui.leftSidebar.removeTab(i)
+        
         self.__ui.leftSidebar.setMaximumWidth(300)
         self.__ui.bottomSidebar.setMaximumHeight(200)
+
+        for i in xrange(self.__ui.bottomSidebar.count() - 1, 0, -1):
+            if self.__ui.bottomSidebar.tabText(i) in toHideBottom:
+                self.__ui.bottomSidebar.removeTab(i)
 
     def __setupProjectBrowser(self):
         """
@@ -387,6 +401,11 @@ class PluginSimpleUI(QObject):
                 "HelpViewerType": 3,
                 }
 
+
+        # fill the workspace with a right Value
+        multiProjectDefaults={}
+        multiProjectDefaults["Workspace"] = QDir.tempPath() 
+
         for name, value in uiDefaults.iteritems():
             Preferences.setUI(name, value)
 
@@ -404,6 +423,9 @@ class PluginSimpleUI(QObject):
 
         for name, value in helpDefaults.iteritems():
             Preferences.setHelp(name, value)
+
+        for name, value in multiProjectDefaults.iteritems():
+            Preferences.setMultiProject(name, value)
 
         Preferences.setUI("StyleSheet",
             self.__path + "/SimpleUI/qdarkstyle/style.qss")
