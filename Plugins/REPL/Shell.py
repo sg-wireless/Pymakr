@@ -14,6 +14,7 @@ from PyQt5.QtCore import pyqtSignal, Qt, pyqtSlot
 from PyQt5.QtWidgets import QWidget, QApplication, QHBoxLayout, \
     QVBoxLayout, QMenu, QShortcut
 from PyQt5.Qsci import QsciScintilla
+from PyQt5 import QtGui
 
 from QScintilla.QsciScintillaCompat import QsciScintillaCompat
 import Preferences
@@ -574,9 +575,13 @@ class UPythonShell(QsciScintillaCompat):
         e5App().getObject("UserInterface").showPreferences("MicroPython")
 
     def __printWelcome(self):
+        if not hasattr(QtGui, "qt_mac_set_native_menubar"):
+            notConfiguredMsg = "First proceed to configure one in: Settings > Preferences > MicroPython\r"
+        else:
+            notConfiguredMsg = "First proceed to configure one in: Pymakr > Preferences > MicroPython\r"
         self.__write(self.tr("Remember, you can always click on this window to connect to a MicroPython device!\r"))
         if not self.dbs.isConfigured():
-            self.__write(self.tr("First proceed to configure one in: Settings > Preferences > MicroPython\r"))
+            self.__write(self.tr(notConfiguredMsg))
 
     @pyqtSlot(str)
     def notifyStatus(self, status):
