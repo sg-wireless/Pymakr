@@ -373,7 +373,7 @@ class PluginSimpleUI(QObject):
                 "SelectionForeground": QColor(Qt.white),
                 "SearchMarkers": QColor("#FFE792"),
                 "CaretForeground": QColor(Qt.white),
-                "CaretLineBackground": QColor("#3E3D32"),
+                "CaretLineBackground": QColor("#202020"),
                 "WhitespaceForeground": QColor(Qt.black),
                 "WhitespaceBackground": QColor(Qt.black),
                 "IndentationGuidesBackground": QColor(Qt.black),
