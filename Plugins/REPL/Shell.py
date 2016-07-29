@@ -595,7 +595,7 @@ class UPythonShell(QsciScintillaCompat):
         elif status == "error":
             self.__write(self.tr("Error while communicating with the MicroPython device!\r"))
         elif status == "reattempt":
-            self.__write(self.tr("Reattempting in 15 seconds...\r"))
+            self.__write(self.tr("Reattempting in a few seconds...\r"))
         elif status == "invcredentials":
             self.__write(self.tr("Invalid credentials, please check device username and password\r"))
         elif status == "invaddress":

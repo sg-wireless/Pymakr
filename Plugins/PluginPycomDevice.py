@@ -230,21 +230,19 @@ class PycomDeviceServer(QThread):
     def __getConnected(self):
         self.emitStatusChange("connecting")
         PycomDeviceServer.channel = pyboard.Pyboard(device=PycomDeviceServer.__device,
-            user=PycomDeviceServer.__user, password=PycomDeviceServer.__password, keep_alive=3)
+            user=PycomDeviceServer.__user, password=PycomDeviceServer.__password, keep_alive=3, connection_timeout=10)
         PycomDeviceServer.channel.reset()
         self.emitStatusChange("connected")
 
     def run(self):
+        attempt = 0
         PycomDeviceServer.__shutdown = False
         continuing = False
         while PycomDeviceServer.__shutdown == False:
             try:
                 if continuing == False:
-                    self.emitStatusChange("connecting")
-                    PycomDeviceServer.channel = pyboard.Pyboard(device=PycomDeviceServer.__device,
-                        user=PycomDeviceServer.__user, password=PycomDeviceServer.__password, keep_alive=3)
-                    PycomDeviceServer.channel.reset()
-                    self.emitStatusChange("connected")
+                    self.__getConnected()
+                    attempt = 0
                 continuing = False
                 PycomDeviceServer.channel.recv(self.signalDataReception)
                 if PycomDeviceServer.__overrideCallback:
@@ -261,8 +259,13 @@ class PycomDeviceServer(QThread):
             if PycomDeviceServer.__keepTrying == False or PycomDeviceServer.__shutdown == True:
                 break
             else:
+                if attempt < 5:
+                    wait_period = 3
+                else:
+                    wait_period = 10
+                attempt += 1
                 self.emitStatusChange("reattempt")
-                for t in xrange(0, 15 * 4):
+                for t in xrange(0, wait_period * 4):
                     time.sleep(1.0 / 4)
                     if PycomDeviceServer.__shutdown == True:
                         break

@@ -111,11 +111,11 @@ class Periodic:
 
 
 class Serial_connection:
-    def __init__(self, device, baudrate=115200, timeout=0):
+    def __init__(self, device, baudrate=115200, connection_timeout=10):
         import serial
         delayed = False
         self.connected = False
-        for attempt in range(timeout + 1):
+        for attempt in range(connection_timeout + 1):
             try:
                 try:
                     self.stream = serial.Serial(device, baudrate=baudrate, interCharTimeout=1)
@@ -130,11 +130,11 @@ class Serial_connection:
                     print('')   # to break the dotted line printed on retries
                 break
             except (OSError, IOError): # Py2 and Py3 have different errors
-                if timeout == 0:
+                if connection_timeout == 0:
                     continue
 
-                if attempt == 0 and timeout != 0:
-                    sys.stdout.write('Waiting {} seconds for pyboard '.format(timeout))
+                if attempt == 0 and connection_timeout != 0:
+                    sys.stdout.write('Waiting {} seconds for pyboard '.format(connection_timeout))
 
                 time.sleep(1)
                 sys.stdout.write('.')
@@ -210,12 +210,12 @@ class Telnet_connection:
     import telnetlib
     import socket
 
-    def __init__(self, uri, timeout=15, read_timeout=10):
+    def __init__(self, uri, connection_timeout=15, read_timeout=10):
         self.__read_timeout = read_timeout
         self.connected = False
         try:
             address, port = separate_address_port(uri)
-            self.stream = Telnet_connection.telnetlib.Telnet(address, port, timeout=15)
+            self.stream = Telnet_connection.telnetlib.Telnet(address, port, timeout=connection_timeout)
             self.__socket = self.stream.get_socket()
             self.__socket.setsockopt(Telnet_connection.socket.SOL_SOCKET,
                 Telnet_connection.socket.SO_KEEPALIVE, 1)
@@ -326,9 +326,9 @@ class Socket_connection:
         return buf
 
 class Pyboard:
-    def __init__(self, device, baudrate=115200, user='micro', password='python', wait=0, keep_alive=0):
+    def __init__(self, device, baudrate=115200, user='micro', password='python', connection_timeout=0, keep_alive=0):
         self.__device = None
-        self._connect(device, baudrate, user, password, wait, keep_alive, False)
+        self._connect(device, baudrate, user, password, connection_timeout, keep_alive, False)
 
     def close(self):
         if self.connected == False:
@@ -359,7 +359,7 @@ class Pyboard:
         while self.connection.read_eager():
             pass
 
-    def _connect(self, device, baudrate=115200, user='micro', password='python', wait=0, keep_alive=0, raw=False):
+    def _connect(self, device, baudrate=115200, user='micro', password='python', connection_timeout=0, keep_alive=0, raw=False):
         self.connected = False
         if self.__device == None:
             self.__device = device
@@ -369,11 +369,11 @@ class Pyboard:
 
         if Serial_connection.is_serial_port(self.__device) == True:
             self.__connectionType = 'serial'
-            self.connection = Serial_connection(self.__device, baudrate=self.__baudrate, timeout=wait)
+            self.connection = Serial_connection(self.__device, baudrate=self.__baudrate, connection_timeout=connection_timeout)
         else:
             if raw == False:
                 self.__connectionType = 'telnet'
-                self.connection = Telnet_connection(self.__device)
+                self.connection = Telnet_connection(self.__device, connection_timeout=connection_timeout)
             else:
                 self.__connectionType = 'socket'
                 self.connection = Socket_connection(self.__device)
