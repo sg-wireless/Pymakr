@@ -14,7 +14,7 @@ from PycomSync.monitor_pc import Monitor_PC
 # Start-Of-Header
 name = "Pycom Sync"
 author = "Pycom"
-autoactivate = False
+autoactivate = True
 deactivateable = False
 version = "1.0.0"
 className = "PluginPycomSync"

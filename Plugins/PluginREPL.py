@@ -17,7 +17,7 @@ className = "PluginREPL"
 packageName = "PluginREPL"
 shortDescription = "Implement the MicroPython console"
 longDescription = "Allow users to use the MicroPython console from within Pymakr"
-# pluginType = "viewmanager"
+
 
 pyqtApi = 2
 python2Compatible = True
