@@ -187,15 +187,12 @@ class PycomDeviceServer(QThread):
         try:
             PycomDeviceServer.__shutdown = True
             PycomDeviceServer.channel.exit_recv()
-            time.sleep(0.25)
+            time.sleep(0.2)
             PycomDeviceServer.channel.close()
+            if PycomDeviceServer.__main_thread == self:
+                PycomDeviceServer.__main_thread = None
         except:
             pass
-
-    def shutdown(self):
-        PycomDeviceServer.__shutdown = True
-        if PycomDeviceServer.__main_thread == self:
-            PycomDeviceServer.__main_thread = None
 
     def setConnectionParameters(self, device, user, password):
         PycomDeviceServer.__device = device
