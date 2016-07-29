@@ -72,8 +72,13 @@ class PluginFeedback(QObject):
     def __init__(self,  ui):
         super(PluginFeedback, self).__init__(ui)
         self.__ui = ui
+        self.__ui.showEmailDialog = self.__showEmailDialog
 
-
+    def __showEmailDialog(self, mode, attachFile=None, deleteAttachFile=False):
+        self.__ui.dlg = HTTPFeedbackDialog(mode=mode)
+        if attachFile is not None:
+            self.__ui.dlg.attachFile(attachFile, deleteAttachFile)
+        self.__ui.dlg.show()
 
     def activate(self):
         """
