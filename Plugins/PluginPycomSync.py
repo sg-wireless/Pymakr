@@ -162,13 +162,13 @@ class PluginPycomSync(QObject):
         self.__deviceServer = None
 
     def __runThisAct(self):
-        editor = this.__viewManager.activeWindow()
+        editor = self.__viewManager.activeWindow()
         if editor != None and self.__deviceServer == None and PycomDeviceServer.getStatus() == True:
             self.__deviceServer = PycomDeviceServer()
             self.__deviceServer.overrideControl(self.__continueRun)
 
     def __continueRun(self):
-        editor = this.__viewManager.activeWindow()
+        editor = self.__viewManager.activeWindow()
         if editor != None:
             code = editor.text()
             self.__deviceServer.exec_code(code)
