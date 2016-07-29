@@ -1,3 +1,7 @@
+# to enable some parts of the interface that are being disabled here, you can write into the settings:
+# UI/AdvancedBottomSidebar
+# UI/AdvancedLanguages
+
 import os
 
 from PyQt5.QtCore import QResource
@@ -300,7 +304,8 @@ class PluginSimpleUI(QObject):
                         self.tr("Template-Viewer"),
                         self.tr("Symbols")]
         toHideBottom = [self.tr("Task-Viewer"),
-                        self.tr("Numbers")]
+                        self.tr("Numbers"),
+                        self.tr("Log-Viewer")]
         self.__ui.rightSidebar.hide()
         self.__ui.rightSidebar.clear()
 
@@ -311,9 +316,10 @@ class PluginSimpleUI(QObject):
         self.__ui.leftSidebar.setMaximumWidth(300)
         self.__ui.bottomSidebar.setMaximumHeight(200)
 
-        for i in xrange(self.__ui.bottomSidebar.count() - 1, 0, -1):
-            if self.__ui.bottomSidebar.tabText(i) in toHideBottom:
-                self.__ui.bottomSidebar.removeTab(i)
+        if Preferences.Prefs.settings.value("UI/AdvancedBottomSidebar", False) != "true":
+            for i in xrange(self.__ui.bottomSidebar.count() - 1, 0, -1):
+                if self.__ui.bottomSidebar.tabText(i) in toHideBottom:
+                    self.__ui.bottomSidebar.removeTab(i)
 
     def __setupProjectBrowser(self):
         """
@@ -484,6 +490,7 @@ class PluginSimpleUI(QObject):
         lexer.writeSettings(Preferences.Prefs.settings, "Scintilla")
 
     def __loadPythonColors(self):
+        self.__applyMonokaiPython("C++")
         self.__applyMonokaiPython("Python2")
         self.__applyMonokaiPython("Python3")
 
@@ -518,6 +525,14 @@ class PluginSimpleUI(QObject):
             "Python3": [QCoreApplication.translate('Lexers', "Python3"),
                         'dummy.py', "lexerPython3.png"]
         }
+
+        advancedLanguages = {
+            "C++": [QCoreApplication.translate('Lexers', "C/C++"), 'dummy.cpp',
+                "lexerCPP.png"]
+        }
+
+        if Preferences.Prefs.settings.value("UI/AdvancedLanguages", False) == "true":
+            supportedLanguages.update(advancedLanguages)
 
         return supportedLanguages
 
@@ -555,7 +570,12 @@ class PluginSimpleUI(QObject):
         project.registerProjectType("Python", "Python Project")
 
     def __getProgrammingLanguages(self):
-        return ["Python2", "Python3"]
+        languages = ["Python2", "Python3"]
+
+        if Preferences.Prefs.settings.value("UI/AdvancedLanguages", False) == "true":
+            languages.append("C++")
+
+        return languages
 
 
     def __showPreferences(self, pageName=None):
