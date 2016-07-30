@@ -1224,7 +1224,7 @@ the button to the right.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/ApplicationPage.ui" line="125"/>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>Никогда</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/ApplicationPage.ui" line="73"/>
@@ -3563,7 +3563,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="583"/>
         <source>newline added to end of file.</source>
-        <translation>Перевод строки добавлен в конец файла.</translation>
+        <translation>Символ новой строки добавлен в конец файла.</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="586"/>
@@ -3667,18 +3667,18 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/PluginWizardQColorDialog.py" line="78"/>
         <source>QColorDialog Wizard</source>
-        <translation>Мастер QColorDialog (выбор цвета)</translation>
+        <translation>Мастер QColorDialog</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardQColorDialog.py" line="74"/>
         <source>Q&amp;ColorDialog Wizard...</source>
-        <translation>Мастер Q&amp;ColorDialog (выбор цвета)...</translation>
+        <translation>Мастер Q&amp;ColorDialog...</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardQColorDialog.py" line="79"/>
         <source>&lt;b&gt;QColorDialog Wizard&lt;/b&gt;&lt;p&gt;This wizard opens a dialog for entering all the parameters needed to create a QColorDialog. The generated code is inserted at the current cursor position.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Мастер QColorDialog&lt;/b&gt;
-&lt;p&gt;Мастер открывает диалог ввода всех необходимых параметров для вызова QColorDialog. Сгенерированный код ставляется в текущую позицию курсора.&lt;/p&gt;</translation>
+&lt;p&gt;Мастер открывает диалог ввода всех параметров, необходимых для создания QColorDialog. Сгенерированный код ставляется в текущую позицию курсора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardQColorDialog.py" line="125"/>
@@ -3696,12 +3696,12 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/ColorDialogWizard/ColorDialogWizardDialog.ui" line="14"/>
         <source>QColorDialog Wizard</source>
-        <translation>Мастер QColorDialog (выбор цвета)</translation>
+        <translation>Мастер QColorDialog</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/ColorDialogWizard/ColorDialogWizardDialog.ui" line="23"/>
         <source>Type</source>
-        <translation>Тип</translation>
+        <translation>Тип диалога</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/ColorDialogWizard/ColorDialogWizardDialog.ui" line="29"/>
@@ -3911,7 +3911,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/ColorDialogWizard/ColorDialogWizardDialog.ui" line="292"/>
         <source>Colour Variable</source>
-        <translation>Имя переменной содержащей цвет</translation>
+        <translation>Имя переменной, содержащей цвет</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/ColorDialogWizard/ColorDialogWizardDialog.ui" line="87"/>
@@ -3936,7 +3936,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/ColorDialogWizard/ColorDialogWizardDialog.ui" line="109"/>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>None</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/ColorDialogWizard/ColorDialogWizardDialog.ui" line="118"/>
@@ -3951,7 +3951,7 @@ the respective line and position.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/ColorDialogWizard/ColorDialogWizardDialog.ui" line="131"/>
         <source>Enter the parent expression</source>
-        <translation>Ввести выражение для предка</translation>
+        <translation>Введите выражение для предка</translation>
     </message>
 </context>
 <context>
@@ -4425,7 +4425,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Helpviewer/CookieJar/CookieDetailsDialog.ui" line="67"/>
         <source>Secure:</source>
-        <translation>Безопасно:</translation>
+        <translation>Безопасность:</translation>
     </message>
     <message>
         <location filename="../Helpviewer/CookieJar/CookieDetailsDialog.ui" line="84"/>
@@ -4458,7 +4458,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Helpviewer/CookieJar/CookieExceptionsModel.py" line="89"/>
         <source>Block</source>
-        <translation>Блок</translation>
+        <translation>Блокировать</translation>
     </message>
     <message>
         <location filename="../Helpviewer/CookieJar/CookieExceptionsModel.py" line="98"/>
@@ -4486,12 +4486,12 @@ to display the configuration page.</source>
     <message>
         <location filename="../Helpviewer/CookieJar/CookieModel.py" line="33"/>
         <source>Secure</source>
-        <translation>Безопасно</translation>
+        <translation>Безопасность</translation>
     </message>
     <message>
         <location filename="../Helpviewer/CookieJar/CookieModel.py" line="34"/>
         <source>Expires</source>
-        <translation>Истекают</translation>
+        <translation>Завершаются</translation>
     </message>
     <message>
         <location filename="../Helpviewer/CookieJar/CookieModel.py" line="35"/>
@@ -4665,7 +4665,7 @@ to display the configuration page.</source>
     <message>
         <location filename="../Helpviewer/CookieJar/CookiesExceptionsDialog.ui" line="71"/>
         <source>&amp;Block</source>
-        <translation>&amp;Блок</translation>
+        <translation>&amp;Блокировать</translation>
     </message>
     <message>
         <location filename="../Helpviewer/CookieJar/CookiesExceptionsDialog.ui" line="84"/>
@@ -7509,7 +7509,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/PluginWizardE5MessageBox.py" line="79"/>
         <source>&lt;b&gt;E5MessageBox Wizard&lt;/b&gt;&lt;p&gt;This wizard opens a dialog for entering all the parameters needed to create an E5MessageBox. The generated code is inserted at the current cursor position.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Мастер QMessageBox&lt;/b&gt;&lt;p&gt;Мастер открывает диалог для ввода всех необходимых параметров для вызова QMessageBox. Сгенерированный код ставляется в текущую позицию курсора.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Мастер QMessageBox&lt;/b&gt;&lt;p&gt;Мастер открывает диалог для ввода всех параметров, необходимых для создания QMessageBox. Сгенерированный код ставляется в текущую позицию курсора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardE5MessageBox.py" line="125"/>
@@ -7537,7 +7537,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="29"/>
         <source>Generate an Information message box</source>
-        <translation>Создать QMessageBox для информации (information)</translation>
+        <translation>Создать MessageBox для информации</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="417"/>
@@ -7547,7 +7547,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="45"/>
         <source>Generate a Question message box</source>
-        <translation>Создать QMessageBox c вопросом</translation>
+        <translation>Создать MessageBox c запросом</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="433"/>
@@ -7557,7 +7557,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="58"/>
         <source>Generate a Warning message box</source>
-        <translation>Создать QMessageBox с предупреждением</translation>
+        <translation>Создать MessageBox с предупреждением</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="449"/>
@@ -7567,7 +7567,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="71"/>
         <source>Generate a Critical message box</source>
-        <translation>Создать QMessageBox c ошибкой</translation>
+        <translation>Создать MessageBox c критической ошибкой</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="462"/>
@@ -7577,7 +7577,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="81"/>
         <source>Generate a Yes/No message box</source>
-        <translation>Создать QMessageBox c кнопками Да/Нет</translation>
+        <translation>Создать MessageBox c кнопками Да/Нет</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="84"/>
@@ -7587,7 +7587,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="91"/>
         <source>Generate a retry/abort message box</source>
-        <translation>Создать QMessageBox c кнопками Повторить/Прервать</translation>
+        <translation>Создать MessageBox c кнопками Повторить/Прервать</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="94"/>
@@ -7597,7 +7597,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="101"/>
         <source>Generate an &quot;ok to clear data&quot; message box</source>
-        <translation>Создать QMessageBox для очистки данных</translation>
+        <translation>Создать MessageBox для очистки данных</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="104"/>
@@ -7607,7 +7607,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="114"/>
         <source>Generate an About message box</source>
-        <translation>Создать QMessageBox с информацией о программе</translation>
+        <translation>Создать MessageBox для простого сообщения (О...)</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="117"/>
@@ -7617,7 +7617,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="127"/>
         <source>Generate an AboutQt message box</source>
-        <translation>Создать QMessageBox для стандартной информации о Qt</translation>
+        <translation>Создать MessageBox со стандартной информацией о Qt</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="130"/>
@@ -7627,12 +7627,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="137"/>
         <source>Generate a standard message box</source>
-        <translation>Создать стандартный QMessageBox</translation>
+        <translation>Создать стандартный MessageBox</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="140"/>
         <source>Standard message box</source>
-        <translation>Стандартный</translation>
+        <translation>Стандартный MessageBox</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="164"/>
@@ -7642,7 +7642,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="171"/>
         <source>Enter the title for the message box</source>
-        <translation>Задайте заголовок QMessageBox</translation>
+        <translation>Задайте заголовок для MessageBox</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="178"/>
@@ -7652,7 +7652,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="185"/>
         <source>Enter the message to be shown in the message box</source>
-        <translation>Задайте сообщение для QMessageBox</translation>
+        <translation>Задайте сообщение для отображения в MessageBox</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="195"/>
@@ -7677,7 +7677,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="217"/>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>None</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="226"/>
@@ -7692,7 +7692,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="239"/>
         <source>Enter the parent expression</source>
-        <translation>Ввести выражение для предка</translation>
+        <translation>Введите выражение для предка</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="251"/>
@@ -7812,12 +7812,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="430"/>
         <source>Show a Question icon</source>
-        <translation>Показывать иконку &quot;?&quot;</translation>
+        <translation>Показывать иконку запроса</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="446"/>
         <source>Show a Warning icon</source>
-        <translation>Показывать иконку &quot;!&quot;</translation>
+        <translation>Показывать иконку предупреждения</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="459"/>
@@ -7827,12 +7827,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="477"/>
         <source>Select to generate a modal message box</source>
-        <translation>Создать модальный QMessageBox</translation>
+        <translation>Разрешить модальные MessageBox</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="480"/>
         <source>Modal Message Box</source>
-        <translation>Модальный QMessageBox</translation>
+        <translation>Модальный MessageBox</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/E5MessageBoxWizard/E5MessageBoxWizardDialog.ui" line="490"/>
@@ -8201,7 +8201,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../E5Network/E5SslCertificatesInfoWidget.ui" line="61"/>
         <source>&lt;b&gt;Issued for:&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Выдан для&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Выдан для:&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../E5Network/E5SslCertificatesInfoWidget.ui" line="168"/>
@@ -9830,7 +9830,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="59"/>
         <source>Select this to have case sensitive auto-completion lists</source>
-        <translation>Разрешить учитывать регистр в списках автодополнения</translation>
+        <translation>Разрешить учитывать регистр в списках автодополнений</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorAutocompletionPage.ui" line="62"/>
@@ -11644,7 +11644,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.py" line="207"/>
         <source>Tabs</source>
-        <translation>Символы табуляции</translation>
+        <translation>Вкладки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EditorPropertiesPage.ui" line="181"/>
@@ -13241,7 +13241,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Preferences/ConfigurationPages/EmailPage.ui" line="99"/>
         <source>Enter your email address</source>
-        <translation>Задайте Ваш адрес электронной почты</translation>
+        <translation>Задайте адрес вашей электронной почты</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/EmailPage.ui" line="106"/>
@@ -14631,7 +14631,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/FetchExtension/ProjectHelper.py" line="93"/>
         <source>The project should be reread. Do this now?</source>
-        <translation>Необходимо перезагрузить проект. Перезагрузить сейчас?</translation>
+        <translation>Проект должен быть перепрочитан. Сделать это сейчас?</translation>
     </message>
 </context>
 <context>
@@ -14650,7 +14650,7 @@ whole selection.&lt;/li&gt;
         <location filename="../Plugins/PluginWizardQFileDialog.py" line="83"/>
         <source>&lt;b&gt;QFileDialog Wizard&lt;/b&gt;&lt;p&gt;This wizard opens a dialog for entering all the parameters needed to create a QFileDialog. The generated code is inserted at the current cursor position.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Мастер QFileDialog&lt;/b&gt;
-&lt;p&gt;Мастер открывает диалог для ввода всех необходимых параметров для вызова QFileDialog. Сгенерированный код вставляется в текущую позицию курсора.&lt;/p&gt;</translation>
+&lt;p&gt;Мастер открывает диалог для ввода всех параметров, необходимых для создания QFileDialog. Сгенерированный код вставляется в текущую позицию курсора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardQFileDialog.py" line="135"/>
@@ -14673,7 +14673,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="50"/>
         <source>Type</source>
-        <translation>Тип</translation>
+        <translation>Тип диалога</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="56"/>
@@ -14688,7 +14688,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="69"/>
         <source>Select to create an &apos;Open Files&apos; dialog</source>
-        <translation>Создать диалог открытия нескольких файлов &apos;Open Files&apos;</translation>
+        <translation>Создать диалог открытия файлов &apos;Open Files&apos;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="72"/>
@@ -14713,47 +14713,47 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="92"/>
         <source>Select Directory</source>
-        <translation>Выбор директории</translation>
+        <translation>Выбрать директорию</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="99"/>
         <source>Select to create an &apos;Open File&apos; dialog capturing the selected filter</source>
-        <translation>Создать диалог открытия файла &apos;Open File&apos; с учетом выбранного фальтра</translation>
+        <translation>Создать диалог открытия файла &apos;Open File&apos; с учетом выбранного шаблона</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="102"/>
         <source>Open File and Filter</source>
-        <translation>Открыть файл и шаблон</translation>
+        <translation>Открыть файл (по шаблону)</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="112"/>
         <source>Select to create an &apos;Open Files&apos; dialog capturing the selected filter</source>
-        <translation>Создать диалог открытия файлов &apos;Open Files&apos; с учетом выбранного фильтра</translation>
+        <translation>Создать диалог открытия файлов &apos;Open Files&apos; с учетом выбранного шаблона</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="115"/>
         <source>Open Files and Filter</source>
-        <translation>Открыть файлы и шаблон</translation>
+        <translation>Открыть файлы (по шаблону)</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="122"/>
         <source>Select to create a &apos;Save File&apos; dialog capturing the selected filter</source>
-        <translation>Создать диалог сохранения файла &apos;Save File&apos; с учетом выбранного фильтра</translation>
+        <translation>Создать диалог сохранения файла &apos;Save File&apos; с учетом выбранного шаблона</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="125"/>
         <source>Save File and Filter</source>
-        <translation>Сохранить файл и шаблон</translation>
+        <translation>Сохранить файл (по шаблону)</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="182"/>
         <source>Check to resolve symbolic links</source>
-        <translation>Раскрывать символические ссылки</translation>
+        <translation>Проверять разрешенные символические ссылки</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="185"/>
         <source>Resolve Symlinks</source>
-        <translation>Раскрывать символические ссылки</translation>
+        <translation>Разрешенные символические ссылки</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="251"/>
@@ -14763,7 +14763,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="368"/>
         <source>Check this if the contents of the edit names a variable or variable function</source>
-        <translation>Содержание редактора - переменная или функция</translation>
+        <translation>Проверять, если редактируемые имена - переменная или переменная функции</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="371"/>
@@ -14773,7 +14773,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="288"/>
         <source>Enter the filter specifications separated by &apos;;;&apos;</source>
-        <translation>Введите описания фильтров, разделённые &apos;&lt;b&gt;;;&lt;/b&gt;&apos;</translation>
+        <translation>Задайте описания шаблонов, разделённые &apos;&lt;b&gt;;;&lt;/b&gt;&apos;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="264"/>
@@ -14783,12 +14783,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="281"/>
         <source>Filters</source>
-        <translation>Фильтры</translation>
+        <translation>Шаблоны файлов</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="332"/>
         <source>Select to show an overwrite confirmation dialog</source>
-        <translation>Разрешить диалог с подтверждением на перезапись</translation>
+        <translation>Разрешить отображение диалог подтверждениея на перезапись</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="335"/>
@@ -14863,12 +14863,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="217"/>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>None</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="226"/>
         <source>Select to enter a parent expression</source>
-        <translation>Ввести выражение для предка</translation>
+        <translation>Разрешить задание выражения для предка</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="229"/>
@@ -14883,12 +14883,12 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="305"/>
         <source>Initial Filter</source>
-        <translation>Первичный фильтр</translation>
+        <translation>Первичный шаблон</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="312"/>
         <source>Enter the initial filter</source>
-        <translation>Введите первичный фильтр</translation>
+        <translation>Введите первичный шаблон</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="135"/>
@@ -14903,7 +14903,7 @@ whole selection.&lt;/li&gt;
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="151"/>
         <source>Filter Variable:</source>
-        <translation>Фильтр переменной:</translation>
+        <translation>Шаблон переменной:</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FileDialogWizard/FileDialogWizardDialog.ui" line="166"/>
@@ -15583,12 +15583,12 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/FlashCookieManager/FlashCookieManagerDialog.ui" line="268"/>
         <source>Flash cookies from these origins will not be deleted automatically. (Also detection of them will not be notified to user.)</source>
-        <translation>Флэш-куки из этих источников не будут удалены автоматически. (Так же пользователю не будет сообщено об их обнаружении.)</translation>
+        <translation>Флэш-куки из этих источников не будут удаляться автоматически. (Так же пользователю не будет сообщено об их обнаружении.)</translation>
     </message>
     <message>
         <location filename="../Helpviewer/FlashCookieManager/FlashCookieManagerDialog.ui" line="278"/>
         <source>Flash cookies from these origins will be deleted without any notification.</source>
-        <translation>Флеш-куки из этих источников будут удалены без какого-либо уведомления.</translation>
+        <translation>Флеш-куки из этих источников будут удаляться без какого-либо уведомления.</translation>
     </message>
     <message>
         <location filename="../Helpviewer/FlashCookieManager/FlashCookieManagerDialog.ui" line="329"/>
@@ -15700,7 +15700,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Plugins/PluginWizardQFontDialog.py" line="78"/>
         <source>QFontDialog Wizard</source>
-        <translation>Мастер QFontDialog (выбор шрифта)</translation>
+        <translation>Мастер QFontDialog</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardQFontDialog.py" line="74"/>
@@ -15739,7 +15739,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Plugins/WizardPlugins/FontDialogWizard/FontDialogWizardDialog.ui" line="128"/>
         <source>Select Font ...</source>
-        <translation>Выберите шрифт...</translation>
+        <translation>Выбор шрифта...</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FontDialogWizard/FontDialogWizardDialog.ui" line="160"/>
@@ -15774,7 +15774,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Plugins/WizardPlugins/FontDialogWizard/FontDialogWizardDialog.ui" line="44"/>
         <source>Enter the title for the message box</source>
-        <translation>Задайте заголовок QMessageBox</translation>
+        <translation>Задайте заголовок MessageBox</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FontDialogWizard/FontDialogWizardDialog.ui" line="51"/>
@@ -15799,7 +15799,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Plugins/WizardPlugins/FontDialogWizard/FontDialogWizardDialog.ui" line="73"/>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>None</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/FontDialogWizard/FontDialogWizardDialog.ui" line="82"/>
@@ -15814,7 +15814,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Plugins/WizardPlugins/FontDialogWizard/FontDialogWizardDialog.ui" line="95"/>
         <source>Enter the parent expression</source>
-        <translation>Ввести выражение для предка</translation>
+        <translation>Введите выражение для предка</translation>
     </message>
 </context>
 <context>
@@ -16264,7 +16264,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpAppearancePage.ui" line="192"/>
         <source>Tabs</source>
-        <translation>Символы табуляции</translation>
+        <translation>Вкладки</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpAppearancePage.ui" line="198"/>
@@ -16826,7 +16826,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.py" line="128"/>
         <source>HTML Files (*.html *.htm);;Compressed Help Files (*.chm);;All Files (*)</source>
-        <translation>HTML файлы (*.html *.htm);;Сжатые файлы справки (*.chm);;Все файлы (*)</translation>
+        <translation>Файлы HTML (*.html *.htm);;Сжатые файлы справки (*.chm);;Все файлы (*)</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpDocumentationPage.py" line="145"/>
@@ -16984,7 +16984,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpFlashCookieManagerPage.ui" line="109"/>
         <source>Notifications enabled</source>
-        <translation>Уведомление разрешены</translation>
+        <translation>Разрешить уведомления</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/HelpFlashCookieManagerPage.ui" line="130"/>
@@ -17224,7 +17224,7 @@ Reason: {0}</source>
     <message>
         <location filename="../Helpviewer/HelpTabWidget.py" line="832"/>
         <source>Are you sure you want to close the window?</source>
-        <translation>Вы действительно хотите закрыть это окно?</translation>
+        <translation>Вы действительно хотите закрыть окно?</translation>
     </message>
     <message numerus="yes">
         <location filename="../Helpviewer/HelpTabWidget.py" line="832"/>
@@ -18410,7 +18410,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="720"/>
         <source>&lt;b&gt;Backward&lt;/b&gt;&lt;p&gt;Moves one help screen backward. If none is available, this action is disabled.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Назад&lt;/b&gt;&lt;p&gt;Сместиться на один экран назад. Если это возможно.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Назад&lt;/b&gt;&lt;p&gt;Сместиться на один экран назад. Если ни один не доступен, действие отменяется.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="729"/>
@@ -18442,7 +18442,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="738"/>
         <source>&lt;b&gt;Forward&lt;/b&gt;&lt;p&gt;Moves one help screen forward. If none is available, this action is disabled.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Вперёд&lt;/b&gt;&lt;p&gt;Сместиться на один экран вперёд, если это возможно.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Вперёд&lt;/b&gt;&lt;p&gt;Сместиться на один экран вперёд. Если ни один не доступен, действие отменяется.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="747"/>
@@ -19409,7 +19409,7 @@ URL: {1}</source>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="3432"/>
         <source>Unicode</source>
-        <translation>Юникод</translation>
+        <translation>Unicode</translation>
     </message>
     <message>
         <location filename="../Helpviewer/HelpWindow.py" line="3433"/>
@@ -19988,7 +19988,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/hg.py" line="2735"/>
         <source>Mercurial Changegroup Files (*.hg);;All Files (*)</source>
-        <translation>Mercurial файлы изменений (*.hg);;Все файлы (*)</translation>
+        <translation>Файлы изменений Mercurial (*.hg);;Все файлы (*)</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/hg.py" line="2755"/>
@@ -21017,12 +21017,12 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarksListDialog.py" line="42"/>
         <source>Refresh</source>
-        <translation>Обновить</translation>
+        <translation>Освежить</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBookmarksListDialog.py" line="44"/>
         <source>Press to refresh the bookmarks display</source>
-        <translation>Обновить закладки экрана</translation>
+        <translation>Освежить закладки экрана</translation>
     </message>
 </context>
 <context>
@@ -21143,7 +21143,7 @@ URL: {1}</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBundleDialog.ui" line="155"/>
         <source>Enter changesets by number, id, range or revset expression one per line</source>
-        <translation>Задайте именения с помощью номера, id, диапазона или revset-выражения (по одному в строке)</translation>
+        <translation>Задайте набор именений с помощью номера, id, выражения для диапазона или набора ревизий (по одному в строке)</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgBundleDialog.ui" line="148"/>
@@ -21467,7 +21467,7 @@ of the Mercurial client executable (i.e. hg).&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgConflictsListDialog.py" line="57"/>
         <source>Press to refresh the list of conflicts</source>
-        <translation>Обновить список конфликтов</translation>
+        <translation>Освежить список конфликтов</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgConflictsListDialog.py" line="158"/>
@@ -21702,12 +21702,12 @@ of the Mercurial client executable (i.e. hg).&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgDiffDialog.py" line="46"/>
         <source>Refresh</source>
-        <translation>Обновить</translation>
+        <translation>Освежить</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgDiffDialog.py" line="48"/>
         <source>Press to refresh the display</source>
-        <translation>Обновить экран</translation>
+        <translation>Освежить экран</translation>
     </message>
 </context>
 <context>
@@ -21776,7 +21776,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgExportDialog.ui" line="72"/>
         <source>Enter changesets by number, id, range or revset expression one per line</source>
-        <translation>Задайте именения с помощью номера, id, диапазона или revset-выражения (по одному в строке)</translation>
+        <translation>Задайте набор именений с помощью номера, id, выражения для диапазона или набора ревизий (по одному в строке)</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgExportDialog.ui" line="97"/>
@@ -22099,7 +22099,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgGraftDialog.ui" line="29"/>
         <source>Enter changesets by number, id, range or revset expression one per line</source>
-        <translation>Задайте именения с помощью номера, id, диапазона или revset-выражения (по одному в строке)</translation>
+        <translation>Задайте набор именений с помощью номера, id, выражения для диапазона или набора ревизий (по одному в строке)</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgGraftDialog.ui" line="45"/>
@@ -22540,7 +22540,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgLogBrowserDialog.py" line="85"/>
         <source>Press to refresh the list of changesets</source>
-        <translation>Обновить список изменений</translation>
+        <translation>Освежить список изменений</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgLogBrowserDialog.py" line="83"/>
@@ -22577,7 +22577,7 @@ here. Valid recognized patterns are:&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgLogBrowserDialog.py" line="1730"/>
         <source>The project should be reread. Do this now?</source>
-        <translation>Необходимо перезагрузить проект. Перезагрузить сейчас?</translation>
+        <translation>Проект должен быть перепрочитан. Сделать это сейчас?</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgLogBrowserDialog.ui" line="402"/>
@@ -24214,7 +24214,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="1838"/>
         <source>The project should be reread. Do this now?</source>
-        <translation>Необходимо перезагрузить проект. Перезагрузить сейчас?</translation>
+        <translation>Проект должен быть перепрочитан. Сделать это сейчас?</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ProjectHelper.py" line="551"/>
@@ -25313,12 +25313,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/QueuesExtension/HgQueuesQueueManagementDialog.py" line="73"/>
         <source>Refresh</source>
-        <translation>Обновить</translation>
+        <translation>Освежить</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/QueuesExtension/HgQueuesQueueManagementDialog.py" line="75"/>
         <source>Press to refresh the queues list</source>
-        <translation>Обновить список очередей</translation>
+        <translation>Освежить список очередей</translation>
     </message>
 </context>
 <context>
@@ -26047,7 +26047,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ShelveExtension/HgShelveBrowserDialog.py" line="58"/>
         <source>Press to refresh the list of shelves</source>
-        <translation>Обновить список полок</translation>
+        <translation>Освежить список полок</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ShelveExtension/HgShelveBrowserDialog.py" line="75"/>
@@ -26236,12 +26236,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgStatusDialog.py" line="56"/>
         <source>Refresh</source>
-        <translation>Обновить</translation>
+        <translation>Освежить</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgStatusDialog.py" line="58"/>
         <source>Press to refresh the status display</source>
-        <translation>Обновить отображение статуса</translation>
+        <translation>Освежить отображение статуса</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgStatusDialog.py" line="110"/>
@@ -26522,7 +26522,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="44"/>
         <source>Refresh</source>
-        <translation>Обновить</translation>
+        <translation>Освежить</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgSummaryDialog.py" line="46"/>
@@ -27079,7 +27079,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgUserConfigDataDialog.ui" line="64"/>
         <source>Enter the email address</source>
-        <translation>Задайте Ваш адрес электронной почты</translation>
+        <translation>Задайте адрес электронной почты</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/HgUserConfigDataDialog.ui" line="74"/>
@@ -27298,7 +27298,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/History/HistoryMenu.py" line="280"/>
         <source>Closed Tabs</source>
-        <translation>Закрыть вкладки</translation>
+        <translation>Закрытые вкладки</translation>
     </message>
     <message>
         <location filename="../Helpviewer/History/HistoryMenu.py" line="403"/>
@@ -28619,7 +28619,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../IconEditor/IconEditorWindow.py" line="1308"/>
         <source>The eric6 Icon Editor is a simple editor component to perform icon drawing tasks.</source>
-        <translation>Редакторе иконок Eric это простой редактор для рисования иконок.</translation>
+        <translation>Редактор иконок Eric - это простой редактор для рисования иконок.</translation>
     </message>
 </context>
 <context>
@@ -28764,18 +28764,18 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/PluginWizardQInputDialog.py" line="78"/>
         <source>QInputDialog Wizard</source>
-        <translation>Мастер QInputDialog (ввод данных)</translation>
+        <translation>Мастер QInputDialog</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardQInputDialog.py" line="74"/>
         <source>Q&amp;InputDialog Wizard...</source>
-        <translation>Мастер Q&amp;InputDialog (ввод данных)...</translation>
+        <translation>Мастер Q&amp;InputDialog...</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardQInputDialog.py" line="79"/>
         <source>&lt;b&gt;QInputDialog Wizard&lt;/b&gt;&lt;p&gt;This wizard opens a dialog for entering all the parameters needed to create a QInputDialog. The generated code is inserted at the current cursor position.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Мастер QInputDialog&lt;/b&gt;
-&lt;p&gt;Мастер открывает диалог ввода всех необходимых параметров для вызова QInputDialog. Сгенерированный код будет вставлен в текущую позицию курсора.&lt;/p&gt;</translation>
+&lt;p&gt;Мастер открывает диалог ввода всех параметров, необходимых для создания QInputDialog. Сгенерированный код будет вставлен в текущую позицию курсора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardQInputDialog.py" line="125"/>
@@ -28793,7 +28793,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/InputDialogWizard/InputDialogWizardDialog.ui" line="14"/>
         <source>QInputDialog Wizard</source>
-        <translation>Мастер QInputDialog (ввод данных)</translation>
+        <translation>Мастер QInputDialog</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/InputDialogWizard/InputDialogWizardDialog.ui" line="23"/>
@@ -28813,7 +28813,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/InputDialogWizard/InputDialogWizardDialog.ui" line="297"/>
         <source>Double</source>
-        <translation>Двойной точности (double)</translation>
+        <translation>Двойной точности</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/InputDialogWizard/InputDialogWizardDialog.ui" line="371"/>
@@ -28828,7 +28828,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/InputDialogWizard/InputDialogWizardDialog.ui" line="159"/>
         <source>Echo Mode</source>
-        <translation>Режим отображения</translation>
+        <translation>Режим отображения эха</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/InputDialogWizard/InputDialogWizardDialog.ui" line="165"/>
@@ -28943,7 +28943,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/InputDialogWizard/InputDialogWizardDialog.ui" line="119"/>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>None</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/InputDialogWizard/InputDialogWizardDialog.ui" line="128"/>
@@ -28958,7 +28958,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/InputDialogWizard/InputDialogWizardDialog.ui" line="141"/>
         <source>Enter the parent expression</source>
-        <translation>Ввести выражение для предка</translation>
+        <translation>Введите выражение для предка</translation>
     </message>
 </context>
 <context>
@@ -29161,7 +29161,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="420"/>
         <source>The interface language can be selected from this list. If &quot;system&quot; is selected, the interface language is determined by the system. The selection of &quot;none&quot; means, that the default language will be used.</source>
-        <translation>Из этого списка можно выбрать язык интерфейса. Если выбран &quot;Системный&quot; язык, то он автоматически определяется системой. &quot;Никакой&quot; означает что будет использован язык по умолчанию.</translation>
+        <translation>Из этого списка можно выбрать язык интерфейса. Если выбран &quot;Системный&quot; язык, то он автоматически определяется системой. &quot;none&quot; означает что будет использован язык по умолчанию.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/InterfacePage.ui" line="427"/>
@@ -29651,7 +29651,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1209"/>
         <source>HTML Files (*.{0});;Text Files (*.txt);;All Files (*)</source>
-        <translation>HTML файлы (*.{0});;Текстовые файлы (*.txt);;Все файлы (*)</translation>
+        <translation>Файлы HTML (*.{0});;Текстовые файлы (*.txt);;Все файлы (*)</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1226"/>
@@ -29919,7 +29919,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1340"/>
         <source>Refresh</source>
-        <translation>Обновить</translation>
+        <translation>Освежить</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcChannelWidget.py" line="1811"/>
@@ -30429,7 +30429,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Network/IRC/IrcNetworkWidget.py" line="374"/>
         <source>HTML Files (*.{0});;Text Files (*.txt);;All Files (*)</source>
-        <translation>HTML файлы (*.{0});;Текстовые файлы (*.txt);;Все файлы (*)</translation>
+        <translation>Файлы HTML (*.{0});;Текстовые файлы (*.txt);;Все файлы (*)</translation>
     </message>
     <message>
         <location filename="../Network/IRC/IrcNetworkWidget.py" line="391"/>
@@ -32359,7 +32359,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/LargefilesExtension/LfRevisionsInputDialog.ui" line="33"/>
         <source>Enter changesets by number, id, range or revset expression one per line</source>
-        <translation>Задайте именения с помощью номера, id, диапазона или revset-выражения (по одному в строке)</translation>
+        <translation>Задайте набор именений с помощью номера, id, выражения для диапазона или набора ревизий (по одному в строке)</translation>
     </message>
 </context>
 <context>
@@ -32622,17 +32622,17 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ConfigurationPage/MercurialPage.ui" line="135"/>
         <source>Commit</source>
-        <translation>Зафиксировать</translation>
+        <translation>Фиксации</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ConfigurationPage/MercurialPage.ui" line="141"/>
         <source>No. of commit messages to remember:</source>
-        <translation>Количество сохраненных комментариев к фиксациям:</translation>
+        <translation>Количество сохраненных сообщений фиксаций:</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ConfigurationPage/MercurialPage.ui" line="148"/>
         <source>Enter the number of commit messages to remember</source>
-        <translation>Задайте количество комментариев к фиксациям, которое необходимо запомнить</translation>
+        <translation>Задайте количество сообщений фиксаций для запоминания</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ConfigurationPage/MercurialPage.ui" line="180"/>
@@ -32652,7 +32652,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ConfigurationPage/MercurialPage.ui" line="199"/>
         <source>Pull</source>
-        <translation>Загрузить</translation>
+        <translation>Загрузки</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ConfigurationPage/MercurialPage.ui" line="205"/>
@@ -32756,7 +32756,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ConfigurationPage/MercurialPage.ui" line="56"/>
         <source>Select the encoding to be used by Mercurial</source>
-        <translation>Выберите используемую кодировку</translation>
+        <translation>Выберите кодировку для использования в Mercurial</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ConfigurationPage/MercurialPage.ui" line="63"/>
@@ -32790,7 +32790,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
         <location filename="../Plugins/PluginWizardQMessageBox.py" line="79"/>
         <source>&lt;b&gt;QMessageBox Wizard&lt;/b&gt;&lt;p&gt;This wizard opens a dialog for entering all the parameters needed to create a QMessageBox. The generated code is inserted at the current cursor position.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Мастер QMessageBox&lt;/b&gt;
-&lt;p&gt;Мастер открывает диалог ввода всех необходимых параметров для вызова QMessageBox. Сгенерированный код будет вставлен в текущую позицию курсора.&lt;/p&gt;</translation>
+&lt;p&gt;Мастер открывает диалог ввода всех параметров, необходимых для создания QMessageBox. Сгенерированный код будет вставлен в текущую позицию курсора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardQMessageBox.py" line="125"/>
@@ -32818,7 +32818,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="29"/>
         <source>Generate an Information QMessageBox</source>
-        <translation>Создать QMessageBox для оповещения (information)</translation>
+        <translation>Создать QMessageBox для информации</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="32"/>
@@ -32828,7 +32828,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="45"/>
         <source>Generate a Question QMessageBox</source>
-        <translation>Создать вопрос в QMessageBox</translation>
+        <translation>Создать QMessageBox с запросом</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="48"/>
@@ -32838,7 +32838,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="58"/>
         <source>Generate a Warning QMessageBox</source>
-        <translation>Создать предупреждение в QMessageBox</translation>
+        <translation>Создать QMessageBox с предупреждением</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="61"/>
@@ -32848,7 +32848,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="71"/>
         <source>Generate a Critical QMessageBox</source>
-        <translation>Создать ошибку в QMessageBox</translation>
+        <translation>Создать QMessageBox с критической ошибкой</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="74"/>
@@ -32858,7 +32858,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="84"/>
         <source>Generate an About QMessageBox</source>
-        <translation>Создать QMessageBox для простого сообщения (о...)</translation>
+        <translation>Создать QMessageBox для простого сообщения (О...)</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="87"/>
@@ -32868,7 +32868,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="97"/>
         <source>Generate an AboutQt QMessageBox</source>
-        <translation>Создать QMessageBox для стандартной информации о Qt</translation>
+        <translation>Создать QMessageBox со стандартной информацией о Qt</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="100"/>
@@ -32888,7 +32888,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="145"/>
         <source>Enter the message to be shown in the QMessageBox</source>
-        <translation>Задайте сообщение для QMessageBox</translation>
+        <translation>Задайте сообщение для отображения в QMessageBox</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="155"/>
@@ -32913,7 +32913,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="177"/>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>None</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="186"/>
@@ -32928,7 +32928,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="199"/>
         <source>Enter the parent expression</source>
-        <translation>Ввести выражение для предка</translation>
+        <translation>Введите выражение для предка</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="211"/>
@@ -33033,7 +33033,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="362"/>
         <source>Select the default button</source>
-        <translation>Задайте кнопку по-умолчанию</translation>
+        <translation>Задайте кнопку по умолчанию</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.py" line="38"/>
@@ -33048,7 +33048,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="131"/>
         <source>Enter the title for the QMessageBox</source>
-        <translation>Задайте заголовок QMessageBox</translation>
+        <translation>Введите заголовок QMessageBox</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/MessageBoxWizard/MessageBoxWizardDialog.ui" line="110"/>
@@ -35131,7 +35131,7 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchDialog.py" line="57"/>
         <source>OpenSearch (*.xml);;All Files (*)</source>
-        <translation>OpenSearch (*.xml);;Все файлы (*)</translation>
+        <translation>Файлы OpenSearch (*.xml);;Все файлы (*)</translation>
     </message>
     <message>
         <location filename="../Helpviewer/OpenSearch/OpenSearchDialog.py" line="66"/>
@@ -36772,7 +36772,7 @@ Select Update.</source>
     <message>
         <location filename="../Preferences/ConfigurationPages/PrinterPage.ui" line="47"/>
         <source>Colour</source>
-        <translation>Цвет</translation>
+        <translation>Цветной</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/PrinterPage.ui" line="54"/>
@@ -37293,12 +37293,12 @@ Select Update.</source>
     <message>
         <location filename="../Project/Project.py" line="2336"/>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>None</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="2329"/>
         <source>Select version control system for the project</source>
-        <translation>Выберите систему контроля версий (VCS) для проекта</translation>
+        <translation>Выберите систему контроля версий для проекта</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="2435"/>
@@ -38077,7 +38077,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/Project.py" line="4329"/>
         <source>&lt;p&gt;The selected VCS &lt;b&gt;{0}&lt;/b&gt; could not be found. &lt;br/&gt;Reverting override.&lt;/p&gt;&lt;p&gt;{1}&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Выбранная VCS &lt;b&gt;{0}&lt;/b&gt; не найдена.&lt;br/&gt;Контроль версий не используется.&lt;/p&gt;&lt;p&gt;{1}&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Выбранная VCS &lt;b&gt;{0}&lt;/b&gt; не найдена.&lt;br/&gt;Откат отвергнут.&lt;/p&gt;&lt;p&gt;{1}&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Project/Project.py" line="4936"/>
@@ -38854,7 +38854,7 @@ Select Update.</source>
     <message>
         <location filename="../Project/ProjectOthersBrowser.py" line="97"/>
         <source>Refresh</source>
-        <translation>Обновить</translation>
+        <translation>Освежить</translation>
     </message>
     <message>
         <location filename="../Project/ProjectOthersBrowser.py" line="99"/>
@@ -39985,7 +39985,7 @@ Select Update.</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/PurgeExtension/purge.py" line="98"/>
         <source>Do really want to delete all files not tracked by Mercurial (including ignored ones)?</source>
-        <translation>Вы действительно хотите удалить все файлы, не учитываемые Mercurial (включая игнорируемые)?</translation>
+        <translation>Вы действительно хотите удалить все файлы, не отслеживаемые Mercurial (включая игнорируемые)?</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/PurgeExtension/purge.py" line="102"/>
@@ -39995,7 +39995,7 @@ Select Update.</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/PurgeExtension/purge.py" line="103"/>
         <source>Do really want to delete files not tracked by Mercurial?</source>
-        <translation>Вы действительно хотите удалить все файлы не учитываемые Mercurial?</translation>
+        <translation>Вы действительно хотите удалить все файлы не отслеживаемые Mercurial?</translation>
     </message>
 </context>
 <context>
@@ -40058,12 +40058,12 @@ Select Update.</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/PurgeExtension/ProjectHelper.py" line="96"/>
         <source>List files and directories not known to Mercurial including ignored ones</source>
-        <translation>Список файлов и каталогов не находящихся под управлением Mercurial включая игнорируемые</translation>
+        <translation>Список файлов и каталогов не отслеживаемых Mercurial, включая игнорируемые</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/PurgeExtension/ProjectHelper.py" line="134"/>
         <source>Purge</source>
-        <translation>Чистка</translation>
+        <translation>Purge (очистка)</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/PurgeExtension/ProjectHelper.py" line="84"/>
@@ -40374,17 +40374,17 @@ Select Update.</source>
     <message>
         <location filename="../Plugins/PluginWizardPyRegExp.py" line="78"/>
         <source>Python re Wizard</source>
-        <translation>Мастер модуля re Python</translation>
+        <translation>Мастер re Python</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardPyRegExp.py" line="74"/>
         <source>&amp;Python re Wizard...</source>
-        <translation>Мастер re модуля &amp;Python...</translation>
+        <translation>Мастер re &amp;Python...</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardPyRegExp.py" line="79"/>
         <source>&lt;b&gt;Python re Wizard&lt;/b&gt;&lt;p&gt;This wizard opens a dialog for entering all the parameters needed to create a Python re string. The generated code is inserted at the current cursor position.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Мастер модуля Python re&lt;/b&gt;&lt;p&gt;Этот мастер запускает диалог для ввода параметров, необходимых для создания строки Python re. Сгенерированный код ставляется в текущую позицию курсора.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Мастер re Python&lt;/b&gt;&lt;p&gt;Этот мастер запускает диалог для ввода параметров, необходимых для создания строки re Python. Сгенерированный код ставляется в текущую позицию курсора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardPyRegExp.py" line="125"/>
@@ -40402,17 +40402,17 @@ Select Update.</source>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardCharactersDialog.ui" line="13"/>
         <source>Editor for character sets</source>
-        <translation>Редактор символьных наборов</translation>
+        <translation>Редактор наборов символов</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardCharactersDialog.ui" line="22"/>
         <source>The defined characters should not match</source>
-        <translation>Кроме заданных символов</translation>
+        <translation>Определенные символы не должны совпадать</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardCharactersDialog.ui" line="29"/>
         <source>Predefined character ranges</source>
-        <translation>Предварительно заданные множества</translation>
+        <translation>Предварительно определенные диапазоны символов</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardCharactersDialog.ui" line="35"/>
@@ -40422,27 +40422,27 @@ Select Update.</source>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardCharactersDialog.ui" line="42"/>
         <source>Non-digits</source>
-        <translation>Не цифры</translation>
+        <translation>Нецифровые символы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardCharactersDialog.ui" line="49"/>
         <source>Whitespace characters</source>
-        <translation>Символы пропуска</translation>
+        <translation>Пробельные символы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardCharactersDialog.ui" line="56"/>
         <source>Digits</source>
-        <translation>Цифры</translation>
+        <translation>Цифровые символы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardCharactersDialog.ui" line="63"/>
         <source>Non-word characters</source>
-        <translation>Символы, не входящие в слова</translation>
+        <translation>Несловообразующие символы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardCharactersDialog.ui" line="70"/>
         <source>Word character</source>
-        <translation>Символы, входящие в слова</translation>
+        <translation>Словообразующие символы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardCharactersDialog.ui" line="86"/>
@@ -40452,7 +40452,7 @@ Select Update.</source>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardCharactersDialog.ui" line="99"/>
         <source>Character ranges</source>
-        <translation>Символьные промежутки</translation>
+        <translation>Диапазоны символов</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardCharactersDialog.py" line="49"/>
@@ -40487,7 +40487,7 @@ Select Update.</source>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardCharactersDialog.py" line="57"/>
         <source>Line feed (\n)</source>
-        <translation>Перевод каретки (\n)</translation>
+        <translation>Перевод строки (\n)</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardCharactersDialog.py" line="58"/>
@@ -40525,7 +40525,7 @@ Select Update.</source>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="14"/>
         <source>Python re Wizard</source>
-        <translation>Мастер модуля re Python</translation>
+        <translation>Мастер re Python</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="23"/>
@@ -40550,14 +40550,14 @@ Select Update.</source>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="82"/>
         <source>Include import statement</source>
-        <translation>Включить оператор import</translation>
+        <translation>Включать оператор import</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="104"/>
         <source>&lt;b&gt;Comment: (?#)&lt;/b&gt;
 &lt;p&gt;Insert some comment inside your regexp.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Комментарий: (?#)&lt;/b&gt;
-&lt;p&gt;Вставить комментарий внутрь регулярного выражения.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка комментария внутрь регулярного выражения.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="108"/>
@@ -40566,7 +40566,7 @@ Select Update.</source>
 The following example could clarify the regexp which match a valid date: &lt;/p&gt;
 &lt;p&gt;(?#year)(19|20)\d\d[- /.](?#month)(0[1-9]|1[012])[- /.](?#day)(0[1-9]|[12][0-9]|3[01])&lt;/p&gt;</source>
         <translation>&lt;b&gt;Комментарий: (?#)&lt;/b&gt;
-&lt;p&gt;Вставить комментарий в регулярное выражение. Текст после (?# и до первой закрывающей круглой скобки игнорируется.
+&lt;p&gt;Вставка комментария внутрь  регулярного выражения. Текст после (?# и до первой закрывающей круглой скобки игнорируется.
 Следующий пример может пояснить регулярное выражение, описывающее корректную дату: &lt;/p&gt;
 &lt;p&gt;(?#year)(19|20)\d\d[- /.](?#month)(0[1-9]|1[012])[- /.](?#day)(0[1-9]|[12][0-9]|3[01])&lt;/p&gt;</translation>
     </message>
@@ -40574,20 +40574,20 @@ The following example could clarify the regexp which match a valid date: &lt;/p&
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="118"/>
         <source>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;
-&lt;p&gt;Выбрать  одиночный символ из диапазона посредством специального диалога.&lt;/p&gt;</translation>
+&lt;p&gt;Выбор одиночного символа из диапазона посредством специального диалога.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="121"/>
         <source>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog. This dialog will help to edit the range of characters and add some specific conditions.&lt;/p&gt;s</source>
         <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;
-&lt;p&gt;Выбрать  одиночный символ из диапазона посредством специального диалога. Этот диалог поможет изменить диапазон символов и добавить некоторые специфические условия.&lt;/p&gt;</translation>
+&lt;p&gt;Выбор одиночного символа из диапазона посредством специального диалога. Этот диалог помогает изменять диапазон символов и добавлять некоторые специфические условия.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="128"/>
         <source>&lt;b&gt;Any character: &apos;.&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert a dot (.) in your regexp.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Любой символ: &apos;.&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку точки (.) в ваше регулярное выражение.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка точки (.) в ваше регулярное выражение.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="132"/>
@@ -40596,22 +40596,23 @@ The following example could clarify the regexp which match a valid date: &lt;/p&
 E.g. &apos;gr.y&apos; matches &apos;gray&apos;, &apos;grey&apos;, &apos;gr%y&apos;, etc. Use the dot sparingly. Often, a character class or negated
 character class is faster and more precise.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Любой символ: &apos;.&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку точки (.) в ваше регулярное выражение. Точка совпадает с любым символом, кроме символа окончания строки (по умолчанию).
-Например, &apos;gr.y&apos; совпадает с &apos;gray&apos;, &apos;grey&apos;, &apos;gr%y&apos;, и т.д. Используйте точку без фанатизма. Часто использование класса символов или дополнения до класса символов быстрее и более точно.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка точки (.) в ваше регулярное выражение. Точка соответствует любому символу, кроме символа окончания строки (по умолчанию).
+Например, &apos;gr.y&apos; совпадает с &apos;gray&apos;, &apos;grey&apos;, &apos;gr%y&apos;, и т.д. Используйте точку без фанатизма. Зачастую, символьный класс или 
+обратный символьный класс является более быстрым и точным.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="146"/>
         <source>&lt;b&gt;Repeat contents&lt;/b&gt;
 &lt;p&gt;Select a repetition condition via a specific dialog. This dialog will help to specify the allowed range for repetitions.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Повтор содержания&lt;/b&gt;
-&lt;p&gt;Задайте условия повторения посредством специального диалога. Этот диалог поможет указать допустимые пределы для повторений.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Повтор содержимого&lt;/b&gt;
+&lt;p&gt;Выбор условий повтора посредством специального диалога. Этот диалог помогает определять допустимый диапазон повторов.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="154"/>
         <source>&lt;b&gt;Non capturing parentheses: (?:)&lt;/b&gt;
 &lt;p&gt;Select to insert some non capturing brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Скобки без захвата: (?:)&lt;/b&gt;
-&lt;p&gt;Вставить скобки, которые группируют, но не попадают в выражения захвата.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Группа без захвата: (?:)&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу, но без захвата.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="158"/>
@@ -40619,17 +40620,17 @@ character class is faster and more precise.&lt;/p&gt;</source>
 &lt;p&gt;Select to insert some non capturing brackets. It can be used to apply a regexp quantifier (eg. &apos;?&apos; or &apos;+&apos;) to the entire
 group of characters inside the brakets. E.g. the regex &apos;Set(?:Value)?&apos; matches &apos;Set&apos; or &apos;SetValue&apos;. The &apos;?:&apos; inside the brakets
 means that the content of the match (called the backreference) is not stored for further use.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Скобки без захвата: (?:)&lt;/b&gt;
-&lt;p&gt;Вставить скобки, которые группируют, но не попадают в выражения захвата. Они могут использоваться для того, чтобы применить квантификаторы (&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей
-группе символов внутри скобок. Например, регулярное выражение &apos;Set(?:Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.  &apos;?:&apos; внутри скобок
-означает, что содержимое скобок (называемое обратной ссылкой) не сохраняется для дальнейшего использования.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Группа без захвата: (?:)&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу, но без захвата. Они могут использоваться для примения квантификаторов
+(&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей группе символов внутри скобок. Например, регулярное выражение &apos;Set(?:Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.
+&apos;?:&apos; внутри скобок означает, что соответствие (называемое обратной ссылкой) не сохраняется для дальнейшего использования.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="168"/>
         <source>&lt;b&gt;Group: ()&lt;/b&gt;
 &lt;p&gt;Select to insert some capturing brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Группа: ()&lt;/b&gt;
-&lt;p&gt;Разрешить вставлять скобки с захватом содержимого.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Группа с захватом: ()&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу с захватом.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="172"/>
@@ -40639,20 +40640,19 @@ characters inside the brakets. E.g. the regex &apos;Set(Value)?&apos; matches &a
 the backreference matched inside the brakets is stored for further use (i.e. &apos;Value&apos; in the second example above). 
 One can access the backereference with the &apos;\1&apos; expression. &lt;/p&gt;
 &lt;p&gt;E.g. &apos;([a-c])x\1x\1&apos; will match &apos;axaxa&apos;, &apos;bxbxb&apos; and &apos;cxcxc&apos;.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Группа: ()&lt;/b&gt;
-&lt;p&gt;Разрешить вставлять скобки с захватом содержимого.
-Они могут использоваться для того, чтобы применить квантификаторы (&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей
-группе символов внутри скобок. Например, регулярное выражение &apos;Set(Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.
-В отличие от скобок без захвата, обратная ссылка сохраняется для дальнейшего использования  (т.е. &apos;Value&apos; из примера).
-Значение обратной ссылки можно получить с помощью выражения &apos;\1&apos;. &lt;/p&gt;
-&lt;p&gt;Например, &apos;([a-c])x\1x\1&apos; совпадёт с &apos;axaxa&apos;, &apos;bxbxb&apos; и &apos;cxcxc&apos;.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Группа с захватом: ()&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу с захватом. Они могут использоваться для применения квантификаторов 
+(&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей группе символов внутри скобок. Например, регулярное выражение &apos;Set(Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.
+В отличие от скобок без захвата, обратная ссылка, соответствующая выражению скобок, сохраняется для дальнейшего использования
+(т.е. &apos;Value&apos; из второго примера выше). Значение обратной ссылки можно получить с помощью выражения &apos;\1&apos;. &lt;/p&gt;
+&lt;p&gt;Например, &apos;([a-c])x\1x\1&apos; совпадет с &apos;axaxa&apos;, &apos;bxbxb&apos; и &apos;cxcxc&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="184"/>
         <source>&lt;b&gt;Named group: (?P&amp;lt;&lt;i&gt;groupname&lt;/i&gt;&amp;gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert some named group brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Именованная группа: (?P&amp;lt;&lt;i&gt;имя&lt;/i&gt;&amp;gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки именованной группы.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Именованная группа: (?P&amp;lt;&lt;i&gt;groupname&lt;/i&gt;&amp;gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок для выделения именованной группы.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="188"/>
@@ -40661,18 +40661,19 @@ One can access the backereference with the &apos;\1&apos; expression. &lt;/p&gt;
 backreference is also stored for further usage. The difference is that a name is given to the match. This is useful when 
 the work to do on the match becomes a bit complicated. One can access the backreference via the group name (i.e (?P=&lt;i&gt;groupname&lt;/i&gt;)).
 E.g. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x matches &apos;axaxax&apos;,&apos;bxbxbx&apos; or &apos;cxcxcx&apos; (&apos;foo&apos; is the group name)&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Именованная группа: (?P&amp;lt;&lt;i&gt;имя&lt;/i&gt;&amp;gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки именованной группы. Использование этой группы аналогично использованию стандартной группы. 
-Отличие состоит в том, что обратной ссылке присваивается имя. Это полезно, когда работа с группами становится 
-достаточно сложной. Доступ к обратной ссылке можно получить по имени (т.е. (?P=&lt;i&gt;groupname&lt;/i&gt;)).
-Напр. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x совпадает с &apos;axaxax&apos;,&apos;bxbxbx&apos; или &apos;cxcxcx&apos; (&apos;foo&apos; — это имя группы)&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Именованная группа: (?P&amp;lt;&lt;i&gt;groupname&lt;/i&gt;&amp;gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок для выделения именованной группы. Используется аналогично скобкам стандартной группы,
+соответствующая обратная ссылка также сохраняется для дальнейшего использования. Отличие состоит в том,
+что соответствию присваивается имя. Это полезно, когда работа с группами становится достаточно сложной. 
+Доступ к обратной ссылке можно получить по имени группы (т.е. (?P=&lt;i&gt;groupname&lt;/i&gt;)).
+Напр. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x совпадает с &apos;axaxax&apos;,&apos;bxbxbx&apos; или &apos;cxcxcx&apos; (&apos;foo&apos; — это groupname)&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="199"/>
         <source>&lt;b&gt;Reference named group: (?P=&lt;i&gt;groupname&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert a reference to named group previously declared.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Ссылка на именованную группу: (?P=&lt;i&gt;имя&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Сослаться на предварительно объявленную именованную группу.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Ссылка на именованную группу: (?P=&lt;i&gt;groupname&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка ссылки на предварительно объявленную именованную группу.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="203"/>
@@ -40680,9 +40681,10 @@ E.g. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x matches &apos;axaxax&apos;,&apos;bx
 &lt;p&gt;Select to insert a reference to named group previously declared. Each reference group refers to the match
  found by the corresponding named group. In the following example, (?P=foo) may refer to the charaters &apos;a&apos;,&apos;b&apos; or &apos;c&apos;.&lt;/p&gt;
 &lt;p&gt;E.g. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x matches &apos;axaxax&apos;,&apos;bxbxbx&apos; or &apos;cxcxcx&apos;.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Ссылка на именованную группу: (?P=&lt;i&gt;имя&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Сослаться на предварительно объявленную именованную группу.&lt;/p&gt;
-&lt;p&gt;Вставить ссылку на предварительно объявленную именованную группу. Каждая ссылка ссылается на совпадение, найденное соответствующей именованной группой. В следующем примере (?P=foo) может ссылаться на символ &apos;a&apos;,&apos;b&apos; или &apos;c&apos;.&lt;/p&gt;
+        <translation>&lt;b&gt;Ссылка на именованную группу: (?P=&lt;i&gt;groupname&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка ссылки на предварительно объявленную именованную группу.
+Каждая ссылка ссылается на совпадение, найденное соответствующей именованной группой. 
+В следующем примере (?P=foo) может ссылаться на символ &apos;a&apos;,&apos;b&apos; или &apos;c&apos;.&lt;/p&gt;
 &lt;p&gt;Напр. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x совпадает с &apos;axaxax&apos;,&apos;bxbxbx&apos; или &apos;cxcxcx&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -40690,7 +40692,7 @@ E.g. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x matches &apos;axaxax&apos;,&apos;bx
         <source>&lt;b&gt;Alternatives: &apos;|&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert the alternation symbol &apos;|&apos;. &lt;/p&gt;</source>
         <translation>&lt;b&gt;Альтернативы: &apos;|&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку символа альтернативы &apos;|&apos;. &lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа альтернативы &apos;|&apos;. &lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="217"/>
@@ -40700,19 +40702,18 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
 Be aware that in the above example, the alternatives refer to whole or part of words. If you want to match exactly the
  words &apos;cat&apos;, &apos;dog&apos;, ... you should express the fact that you only want to match complete words: &apos;\b(cat|dog|mouse|fish)\b&apos;&lt;/p&gt;</source>
         <translation>&lt;b&gt;Альтернативы: &apos;|&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку символа альтернативы &apos;|&apos; в регулярное выражение. Альтернативы используются для совпадения с 
-одним из нескольких возможных регулярных выражений. Например, &apos;cat|dog|mouse|fish&apos; совпадает со словами, 
-содержащими слово &apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; или &apos;fish&apos;.
-Обратите внимание, что в приведённом примере альтернативы ссылаются как на целые слова, так и на части слов. 
-Если необходимо совпадение с целыми словами &apos;cat&apos;, &apos;dog&apos;, ... необходимо выразить это следующим 
-образом: &apos;\b(cat|dog|mouse|fish)\b&apos;&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа альтернативы &apos;|&apos;. Альтернативы используются для установления соответствия с одним из
+нескольких возможных регулярных выражений. Например, &apos;cat|dog|mouse|fish&apos; совпадает со словами, 
+содержащими слово &apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; или &apos;fish&apos;. Обратите внимание, что в приведённом примере альтернативы 
+ссылаются как на целые слова, так и на части слов. Если необходимо совпадение с целыми словами &apos;cat&apos;, &apos;dog&apos;,
+... необходимо выразить это следующим образом: &apos;\b(cat|dog|mouse|fish)\b&apos;&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="228"/>
         <source>&lt;b&gt;Begin of line: &apos;^&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert the start line character (^).&lt;/p&gt;</source>
         <translation>&lt;b&gt;Начало строки: &apos;^&apos;&lt;/b&gt;
-&lt;p&gt;Вставить символ начала строки (^).&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа начала строки (^).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="232"/>
@@ -40720,29 +40721,29 @@ Be aware that in the above example, the alternatives refer to whole or part of w
 &lt;p&gt;Select to insert the start line character (^). It is used to find some expressions at the begining of lines.
 E.g. &apos;^[A-Z]&apos; match lines starting with a capitalized character. &lt;/p&gt;</source>
         <translation>&lt;b&gt;Начало строки: &apos;^&apos;&lt;/b&gt;
-&lt;p&gt;Вставить символ начала строки (^). Он используется, чтобы найти выражения с начала строк.
-Например, &apos;^[A-Z]&apos; совпадает заглавной латинской буквой, стоящей в начале строки. &lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа начала строки (^). Он используется для поиска выражений с начала строк.
+Например, &apos;^[A-Z]&apos; совпадает с заглавной латинской буквой, стоящей в начале строки. &lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="241"/>
         <source>&lt;b&gt;End of line: &apos;$&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert the end of line character ($).&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Окончание строки: &apos;$&apos;&lt;/b&gt;
-&lt;p&gt;Вставить символ окончания строки ($).&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Конец строки: &apos;$&apos;&lt;/b&gt;
+&lt;p&gt;Вставка символа конца строки ($).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="245"/>
         <source>&lt;b&gt;End of line: &apos;$&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert the end of line character ($). It is used to find some expressions at the end of lines.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Конец строки: &apos;$&apos;&lt;/b&gt;
-&lt;p&gt;Вставить символ конца строки ($). Используется для поиска выражений в конце строк.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа конца строки ($). Он используется для поиска выражений в конце строк.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="253"/>
         <source>&lt;b&gt;Word boundary&lt;/b&gt;
 &lt;p&gt;Select to insert the word boudary character (\b).&lt;/p&gt;</source>
         <translation>&lt;b&gt;Граница слова&lt;/b&gt;
-&lt;p&gt;Вставить символ границы слова (\b).&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа границы слова (\b).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="257"/>
@@ -40750,16 +40751,16 @@ E.g. &apos;^[A-Z]&apos; match lines starting with a capitalized character. &lt;/
 &lt;p&gt;Select to insert the word boudary character (\b). This character is used to express the fact that word 
 must begin or end at this position. E.g. &apos;\bcat\b&apos; matches exactly the word &apos;cat&apos; while &apos;concatenation&apos; is ignored.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Граница слова&lt;/b&gt;
-&lt;p&gt;Вставить символ границы слова (\b). Этот символ используется для обозначения того, что на 
-данной позиции должно начинаться или заканчиваться слово.
-Например, &apos;\bcat\b&apos; совпадает исключительно со словом &apos;cat&apos;, в то время как слово &apos;concatenation&apos; будет пропущено.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа границы слова (\b). Этот символ используется для обозначения того, что в 
+данной позиции слово должно начинаться или заканчиваться. Например, &apos;\bcat\b&apos; совпадает
+исключительно со словом &apos;cat&apos;, в то время как слово &apos;concatenation&apos; будет пропущено.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="266"/>
         <source>&lt;b&gt;Non word boundary&lt;/b&gt;
 &lt;p&gt;Select to insert the word boudary character (\B). \B is the negated version of \b.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Не граница слова&lt;/b&gt;
-&lt;p&gt;Вставить символ не границы слова (\B). Это выражение, обратное выражению \b.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа не границы слова (\B). Это выражение, обратное выражению \b.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="270"/>
@@ -40767,15 +40768,16 @@ must begin or end at this position. E.g. &apos;\bcat\b&apos; matches exactly the
 &lt;p&gt;Select to insert the word boudary character (\B). \B is the negated version of \b. \B matches at every position where \b 
 does not. Effectively, \B matches at any position between two word characters as well as at any position between two non-word characters.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Не граница слова&lt;/b&gt;
-&lt;p&gt;Вставить символ не границы слова (\B). Это выражение, обратное выражению \b. \B совпадает с любой позицией, с которой не совпадает \b. 
-Фактически, \B совпадает с любой позицией между символов в слове, и также с любой позицией между символов дополнения до слова&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа не границы слова (\B). Это выражение, обратное выражению \b.
+\B совпадает с любой позицией, с которой не совпадает \b. Фактически, \B соответствует любой
+позиции символов в слове, и также любой позиции символов вне слова&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="279"/>
         <source>&lt;b&gt;Positive lookahead: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert the positive lookhead brackets.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Положительная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки положительной предварительной проверки.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка скобок для выделения группы с положительной предварительной проверкой.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="283"/>
@@ -40784,16 +40786,17 @@ does not. Effectively, \B matches at any position between two word characters as
 Writting &apos;q(?=u)&apos; means that you want to match the &apos;q&apos; character only if it is followed by &apos;u&apos;. In this statement &apos;u&apos; is a trivial 
 regexp which may be replaced by a more complex expression; q(?=[abc])&apos; will match a &apos;q&apos; if followed by either &apos;a&apos;, &apos;b&apos; or &apos;c&apos;.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Положительная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки положительной предварительной проверки. В основном, положительная предварительная проверка используется для совпадения с символом, за которым следует другой символ
-Выражение &apos;q(?=u)&apos; совпадает с символом &apos;q&apos;, только если за ним следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое можно заменить на более 
-сложное: q(?=[abc])&apos; совпадает с &apos;q&apos;, если за ним следует &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка скобок для выделения группы с положительной предварительной проверкой. В основном, положительная предварительная 
+проверка используется для сопоставления символа если только за ним следует другой символ. Выражение &apos;q(?=u)&apos; совпадает с символом
+&apos;q&apos;, только если за ним следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое может быть заменено
+на более сложное: q(?=[abc])&apos; совпадает с &apos;q&apos;, если за ним следует &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="293"/>
         <source>&lt;b&gt;Negative lookahead: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert the negative lookhead brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки отрицательной предварительной проверки.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Негативная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок для выделения группы с негативной предварительной проверкой.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="297"/>
@@ -40801,17 +40804,18 @@ regexp which may be replaced by a more complex expression; q(?=[abc])&apos; will
 &lt;p&gt;Select to insert the negative lookhead brackets. Basically, negative lookhead is used to match a character only if it is not
 followed by a another one. Writting &apos;q(?!u)&apos; means that you want to match &apos;q&apos; only if it is not followed by &apos;u&apos;. In this statement, &apos;u&apos; is a
 trivial regexp which may be replaced by a more complex expression; &apos;q(?![abc])&apos; will match a &apos;q&apos; if it is followed by anything else than &apos;a&apos;, &apos;b&apos; or &apos;c&apos;.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки отрицательной предварительной проверки. В основном, отрицательная предварительная проверка используется для совпадения с символом, 
-за которым не следует другой символ. Выражение &apos;q(?!u)&apos; совпадает с символом &apos;q&apos;, только если за ним не следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это 
-простейшее регулярное выражение, которое можно заменить на более сложное: q(?![abc])&apos; совпадает с &apos;q&apos;, если за ним следует что угодно, кроме &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Негативная предварительная проверка: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок для выделения группы с негативной предварительной проверкой. В основном, негативная предварительная 
+проверка используется для сопоставления символа если только за ним следует другой символ. Выражение &apos;q(?!u)&apos; совпадает с 
+символом &apos;q&apos;, только если за ним не следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое может 
+быть заменено на более сложное: q(?![abc])&apos; совпадает с &apos;q&apos;, если за ним следует что угодно, кроме &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="307"/>
         <source>&lt;b&gt;Positive lookbehind: (?&amp;lt;=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert the positive lookbehind brackets.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Положительная ретроспективная проверка: (?&amp;lt;=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки положительной ретроспективной проверки.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка скобок для выделения группы с положительной ретроспективной проверкой.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="311"/>
@@ -40820,17 +40824,17 @@ trivial regexp which may be replaced by a more complex expression; &apos;q(?![ab
 It is used to match a character only if preceded by another one. Writting &apos;(?&amp;lt;=u)q&apos; means that you want to match the &apos;q&apos; character 
 only if it is preceded by &apos;u&apos;. As with lookhead, &apos;u&apos; may be replaced by a more complex expression; &apos;(?&amp;lt;=[abc])q&apos; will match a &apos;q&apos; if preceded by either &apos;a&apos;, &apos;b&apos; or &apos;c&apos;.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Положительная ретроспективная проверка: (?&amp;lt;=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки положительной ретроспективной проверки.&lt;/p&gt;. Ретроспективная проверка работает аналогично предварительной, но в обратную сторону. 
-Она используется, чтобы выразить совпадение с символом, если перед ним находится ещё один. Выражение &apos;(?&amp;lt;=u)q&apos; совпадает с символом &apos;q&apos;, 
-только если перед ним находится символ &apos;u&apos;. Как и при предварительной проверке, &apos;u&apos; можно заменить на более сложное регулярное выражение; 
-&apos;(?&amp;lt;=[abc])q&apos; совпадёт с &apos;q&apos;, если перед ней находится &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка скобок для выделения группы с положительной ретроспективной проверкой.&lt;/p&gt;. Ретроспективная проверка аналогична предварительной, 
+но работает в обратном направлении. Она используется для сопоставления символа если только перед ним находится ещё один. Выражение &apos;(?&amp;lt;=u)q&apos; 
+совпадает с символом &apos;q&apos;, только если перед ним находится символ &apos;u&apos;. Как и при предварительной проверке, &apos;u&apos; можно заменить на более сложное 
+регулярное выражение; &apos;(?&amp;lt;=[abc])q&apos; совпадёт с &apos;q&apos;, если перед ней находится &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="321"/>
         <source>&lt;b&gt;Negative lookbehind (?&amp;lt;!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert the negative lookbehind brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?&amp;lt;!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки отрицательной предварительной проверки.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Негативная предварительная проверка: (?&amp;lt;!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок для выделения группы с негативной предварительной проверкой.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="325"/>
@@ -40839,16 +40843,16 @@ only if it is preceded by &apos;u&apos;. As with lookhead, &apos;u&apos; may be 
 but works backwards. It is used to match a character only if not preceded by another one. Writting &apos;(?&amp;lt;!u)q&apos; means that you want to match the &apos;q&apos; 
 character only if it is not preceded by &apos;u&apos;. As other lookaround, &apos;u&apos; may be replaced by a more complex 
 expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if not preceded by either &apos;a&apos;, &apos;b&apos; nor &apos;c&apos;.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отрицательная ретроспективная проверка: (?&amp;lt;!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки отрицательной ретроспективной проверки.&lt;/p&gt;. Ретроспективная проверка работает аналогично предварительной, 
-но в обратную сторону. Она используется, чтобы выразить совпадение с символом, если перед ним не находится ещё один. Выражение &apos;(?&amp;lt;!u)q&apos; 
+        <translation>&lt;b&gt;Негативная ретроспективная проверка: (?&amp;lt;!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок для выделения группы с негативной предварительной проверкой.&lt;/p&gt;. Ретроспективная проверка аналогична предварительной, 
+но работает в обратном направлении. Она используется для сопоставления символа если только перед ним находится ещё один. Выражение &apos;(?&amp;lt;!u)q&apos; 
 совпадает с символом &apos;q&apos;, только если перед ним не находится символ &apos;u&apos;. Как и при предварительной проверке, &apos;u&apos; можно заменить на более 
 сложное регулярное выражение; &apos;(?&amp;lt;![abc])q&apos; совпадёт с &apos;q&apos;, если перед ней находится всё, кроме &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="352"/>
         <source>&lt;b&gt;Undo last edit&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Отменить последнее изменение&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Отмена последнего изменения&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="359"/>
@@ -40863,12 +40867,12 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="424"/>
         <source>&quot;^&quot; matches beginning of line, &quot;$&quot; matches end of line</source>
-        <translation>&quot;^&quot; - начало строки, &quot;$&quot; - конец строки</translation>
+        <translation>&quot;^&quot; - соответствует началу строки, &quot;$&quot; - соответствует концу строки</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="427"/>
         <source>Match Linebreaks</source>
-        <translation>Включать переносы строк</translation>
+        <translation>Соответствие переносу строки</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="434"/>
@@ -40893,12 +40897,12 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="468"/>
         <source>&quot;.&quot; matches linebreaks as well</source>
-        <translation>&quot;.&quot; включает также переносы строк</translation>
+        <translation>&quot;.&quot; так же соответствует переносу строки</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="471"/>
         <source>Dot matches Linebreak</source>
-        <translation>Не включать переносы строк</translation>
+        <translation>Несоответствие переносу строки</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.ui" line="480"/>
@@ -41004,7 +41008,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="93"/>
         <source>Show the next match of the regular expression</source>
-        <translation>Показать следующее совпадение для регулярного выражения</translation>
+        <translation>Показать следующее совпадение регулярного выражения</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="102"/>
@@ -41029,7 +41033,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="188"/>
         <source>Select group name:</source>
-        <translation>Задайте имя группы:</translation>
+        <translation>Выберите имя группы:</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="373"/>
@@ -41064,7 +41068,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="421"/>
         <source>The regular expression is valid.</source>
-        <translation>Регулярное выражение верно.</translation>
+        <translation>Правильное регулярное выражение.</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="591"/>
@@ -41074,12 +41078,12 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="577"/>
         <source>Invalid regular expression: {0}</source>
-        <translation>Неверное регулярное выражение: {0}</translation>
+        <translation>Неправильное регулярное выражение: {0}</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="584"/>
         <source>Invalid regular expression: missing group name</source>
-        <translation>Неверное регулярное выражение: отсутствует имя группы</translation>
+        <translation>Неправильное регулярное выражение: отсутствует имя группы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="440"/>
@@ -41099,7 +41103,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="509"/>
         <source>Captures</source>
-        <translation>Группы</translation>
+        <translation>Захваты</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="516"/>
@@ -41119,7 +41123,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="539"/>
         <source>Capture #{0}</source>
-        <translation>Группа #{0}</translation>
+        <translation>Захват #{0}</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="559"/>
@@ -41139,7 +41143,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="621"/>
         <source>Unicode</source>
-        <translation>Юникод</translation>
+        <translation>Unicode</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/PyRegExpWizard/PyRegExpWizardDialog.py" line="623"/>
@@ -41810,7 +41814,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
         <location filename="../Plugins/PluginWizardQRegExp.py" line="79"/>
         <source>&lt;b&gt;QRegExp Wizard&lt;/b&gt;&lt;p&gt;This wizard opens a dialog for entering all the parameters needed to create a QRegExp. The generated code is inserted at the current cursor position.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Мастер QRegExp&lt;/b&gt;
-&lt;p&gt;Мастер открывает диалог для задания всех необходимых параметров для создания регулярного выражения QRegExp. Созданный код вставляется в текущую позицию курсора.&lt;/p&gt;</translation>
+&lt;p&gt;Мастер открывает диалог для задания всех параметров, необходимых для создания QRegExp. Созданный код вставляется в текущую позицию курсора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardQRegExp.py" line="125"/>
@@ -41828,17 +41832,17 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.ui" line="14"/>
         <source>Editor for character sets</source>
-        <translation>Редактор символьных наборов</translation>
+        <translation>Редактор наборов символов</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.ui" line="23"/>
         <source>The defined characters should not match</source>
-        <translation>Кроме заданных символов</translation>
+        <translation>Определенные символы не должны совпадать</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.ui" line="30"/>
         <source>Predefined character ranges</source>
-        <translation>Предварительно заданные множества</translation>
+        <translation>Предварительно определенные диапазоны символов</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.ui" line="71"/>
@@ -41848,27 +41852,27 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.ui" line="64"/>
         <source>Non-digits</source>
-        <translation>Не цифры</translation>
+        <translation>Нецифровые символы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.ui" line="50"/>
         <source>Whitespace characters</source>
-        <translation>Символы пропуска</translation>
+        <translation>Пробельные символы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.ui" line="43"/>
         <source>Digits</source>
-        <translation>Цифры</translation>
+        <translation>Цифровые символы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.ui" line="57"/>
         <source>Non-word characters</source>
-        <translation>Символы, не входящие в слова</translation>
+        <translation>Несловообразующие символы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.ui" line="36"/>
         <source>Word character</source>
-        <translation>Символы, входящие в слова</translation>
+        <translation>Словообразующие символы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.ui" line="115"/>
@@ -41878,7 +41882,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.ui" line="128"/>
         <source>Character ranges</source>
-        <translation>Символьные промежутки</translation>
+        <translation>Диапазоны символов</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="55"/>
@@ -41903,7 +41907,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="80"/>
         <source>Line feed (\n)</source>
-        <translation>Перевод каретки (\n)</translation>
+        <translation>Перевод строки (\n)</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="82"/>
@@ -42423,8 +42427,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="214"/>
         <source>Block Elements</source>
-        <translation>
-Блок элементы</translation>
+        <translation>Блок элементов</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardCharactersDialog.py" line="214"/>
@@ -42720,7 +42723,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.py" line="105"/>
         <source>Show the next match of the regular expression</source>
-        <translation>Показать следующее совпадение для регулярного выражения</translation>
+        <translation>Показать следующее совпадение регулярного выражения</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.py" line="114"/>
@@ -42765,7 +42768,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.py" line="440"/>
         <source>The regular expression is valid.</source>
-        <translation>Регулярное выражение верно.</translation>
+        <translation>Правильное регулярное выражение.</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.py" line="576"/>
@@ -42775,7 +42778,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.py" line="480"/>
         <source>Invalid regular expression: {0}</source>
-        <translation>Неверное регулярное выражение: {0}</translation>
+        <translation>Неправильное регулярное выражение: {0}</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.py" line="452"/>
@@ -42795,7 +42798,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.py" line="510"/>
         <source>Captures</source>
-        <translation>Группы</translation>
+        <translation>Захваты</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.py" line="515"/>
@@ -42815,7 +42818,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.py" line="534"/>
         <source>Capture #{0}</source>
-        <translation>Группа #{0}</translation>
+        <translation>Захват #{0}</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.py" line="558"/>
@@ -42855,7 +42858,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="79"/>
         <source>&lt;b&gt;Undo last edit&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Отменить последнее изменение&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Отмена последнего изменения&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="86"/>
@@ -42866,7 +42869,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="383"/>
         <source>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;
-&lt;p&gt;Выбрать  одиночный символ из диапазона посредством специального диалога.&lt;/p&gt;</translation>
+&lt;p&gt;Выбор одиночного символа из диапазона посредством специального диалога.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="386"/>
@@ -42879,7 +42882,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
         <source>&lt;b&gt;Any character: &apos;.&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert a dot (.) in your regexp.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Любой символ: &apos;.&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку точки (.) в ваше регулярное выражение.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка точки (.) в ваше регулярное выражение.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="397"/>
@@ -42888,22 +42891,23 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
 E.g. &apos;gr.y&apos; matches &apos;gray&apos;, &apos;grey&apos;, &apos;gr%y&apos;, etc. Use the dot sparingly. Often, a character class or negated
 character class is faster and more precise.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Любой символ: &apos;.&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку точки (.) в ваше регулярное выражение. Точка совпадает с любым символом, кроме символа окончания строки (по умолчанию).
-Например, &apos;gr.y&apos; совпадает с &apos;gray&apos;, &apos;grey&apos;, &apos;gr%y&apos;, и т.д. Используйте точку без фанатизма. Часто использование класса символов или дополнения до класса символов быстрее и более точно.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка точки (.) в ваше регулярное выражение. Точка соответствует любому символу, кроме символа окончания строки (по умолчанию).
+Например, &apos;gr.y&apos; совпадает с &apos;gray&apos;, &apos;grey&apos;, &apos;gr%y&apos;, и т.д. Используйте точку без фанатизма. Зачастую, символьный класс или 
+обратный символьный класс является более быстрым и точным.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="411"/>
         <source>&lt;b&gt;Repeat contents&lt;/b&gt;
 &lt;p&gt;Select a repetition condition via a specific dialog. This dialog will help to specify the allowed range for repetitions.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Повтор содержания&lt;/b&gt;
-&lt;p&gt;Задайте условия повторения посредством специального диалога. Этот диалог поможет указать допустимые пределы для повторений.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Повтор содержимого&lt;/b&gt;
+&lt;p&gt;Выбор условий повтора посредством специального диалога. Этот диалог помогает определять допустимый диапазон повторов.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="159"/>
         <source>&lt;b&gt;Non capturing parentheses: (?:)&lt;/b&gt;
 &lt;p&gt;Select to insert some non capturing brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Скобки без захвата: (?:)&lt;/b&gt;
-&lt;p&gt;Вставить скобки, которые группируют, но не попадают в выражения захвата.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Группа без захвата: (?:)&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу, но без захвата.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="163"/>
@@ -42911,17 +42915,17 @@ character class is faster and more precise.&lt;/p&gt;</source>
 &lt;p&gt;Select to insert some non capturing brackets. It can be used to apply a regexp quantifier (eg. &apos;?&apos; or &apos;+&apos;) to the entire
 group of characters inside the brakets. E.g. the regex &apos;Set(?:Value)?&apos; matches &apos;Set&apos; or &apos;SetValue&apos;. The &apos;?:&apos; inside the brakets
 means that the content of the match (called the backreference) is not stored for further use.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Скобки без захвата: (?:)&lt;/b&gt;
-&lt;p&gt;Вставить скобки, которые группируют, но не попадают в выражения захвата. Они могут использоваться для того, чтобы применить квантификаторы (&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей
-группе символов внутри скобок. Например, регулярное выражение &apos;Set(?:Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.  &apos;?:&apos; внутри скобок
-означает, что содержимое скобок (называемое обратной ссылкой) не сохраняется для дальнейшего использования.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Группа без захвата: (?:)&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу, но без захвата. Они могут использоваться для примения квантификаторов
+(&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей группе символов внутри скобок. Например, регулярное выражение &apos;Set(?:Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.
+&apos;?:&apos; внутри скобок означает, что соответствие (называемое обратной ссылкой) не сохраняется для дальнейшего использования.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="419"/>
         <source>&lt;b&gt;Group: ()&lt;/b&gt;
 &lt;p&gt;Select to insert some capturing brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Группа: ()&lt;/b&gt;
-&lt;p&gt;Разрешить вставлять скобки с захватом содержимого.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Группа с захватом: ()&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу с захватом.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="177"/>
@@ -42931,20 +42935,19 @@ characters inside the brakets. E.g. the regex &apos;Set(Value)?&apos; matches &a
 the backreference matched inside the brakets is stored for further use (i.e. &apos;Value&apos; in the second example above). 
 One can access the backereference with the &apos;\1&apos; expression. &lt;/p&gt;
 &lt;p&gt;E.g. &apos;([a-c])x\1x\1&apos; will match &apos;axaxa&apos;, &apos;bxbxb&apos; and &apos;cxcxc&apos;.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Группа: ()&lt;/b&gt;
-&lt;p&gt;Разрешить вставлять скобки с захватом содержимого.
-Они могут использоваться для того, чтобы применить квантификаторы (&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей
-группе символов внутри скобок. Например, регулярное выражение &apos;Set(Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.
-В отличие от скобок без захвата, обратная ссылка сохраняется для дальнейшего использования  (т.е. &apos;Value&apos; из примера).
-Значение обратной ссылки можно получить с помощью выражения &apos;\1&apos;. &lt;/p&gt;
-&lt;p&gt;Например, &apos;([a-c])x\1x\1&apos; совпадёт с &apos;axaxa&apos;, &apos;bxbxb&apos; и &apos;cxcxc&apos;.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Группа с захватом: ()&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу с захватом. Они могут использоваться для применения квантификаторов 
+(&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей группе символов внутри скобок. Например, регулярное выражение &apos;Set(Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.
+В отличие от скобок без захвата, обратная ссылка, соответствующая выражению скобок, сохраняется для дальнейшего использования
+(т.е. &apos;Value&apos; из второго примера выше). Значение обратной ссылки можно получить с помощью выражения &apos;\1&apos;. &lt;/p&gt;
+&lt;p&gt;Например, &apos;([a-c])x\1x\1&apos; совпадет с &apos;axaxa&apos;, &apos;bxbxb&apos; и &apos;cxcxc&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="432"/>
         <source>&lt;b&gt;Alternatives: &apos;|&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert the alternation symbol &apos;|&apos;. &lt;/p&gt;</source>
         <translation>&lt;b&gt;Альтернативы: &apos;|&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку символа альтернативы &apos;|&apos;. &lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа альтернативы &apos;|&apos;. &lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="193"/>
@@ -42954,19 +42957,18 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
 Be aware that in the above example, the alternatives refer to whole or part of words. If you want to match exactly the
  words &apos;cat&apos;, &apos;dog&apos;, ... you should express the fact that you only want to match complete words: &apos;\b(cat|dog|mouse|fish)\b&apos;&lt;/p&gt;</source>
         <translation>&lt;b&gt;Альтернативы: &apos;|&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку символа альтернативы &apos;|&apos; в регулярное выражение. Альтернативы используются для совпадения с 
-одним из нескольких возможных регулярных выражений. Например, &apos;cat|dog|mouse|fish&apos; совпадает со словами, 
-содержащими слово &apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; или &apos;fish&apos;.
-Обратите внимание, что в приведённом примере альтернативы ссылаются как на целые слова, так и на части слов. 
-Если необходимо совпадение с целыми словами &apos;cat&apos;, &apos;dog&apos;, ... необходимо выразить это следующим 
-образом: &apos;\b(cat|dog|mouse|fish)\b&apos;&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа альтернативы &apos;|&apos;. Альтернативы используются для установления соответствия с одним из
+нескольких возможных регулярных выражений. Например, &apos;cat|dog|mouse|fish&apos; совпадает со словами, 
+содержащими слово &apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; или &apos;fish&apos;. Обратите внимание, что в приведённом примере альтернативы 
+ссылаются как на целые слова, так и на части слов. Если необходимо совпадение с целыми словами &apos;cat&apos;, &apos;dog&apos;,
+... необходимо выразить это следующим образом: &apos;\b(cat|dog|mouse|fish)\b&apos;&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="204"/>
         <source>&lt;b&gt;Begin of line: &apos;^&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert the start line character (^).&lt;/p&gt;</source>
         <translation>&lt;b&gt;Начало строки: &apos;^&apos;&lt;/b&gt;
-&lt;p&gt;Вставить символ начала строки (^).&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа начала строки (^).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="208"/>
@@ -42974,29 +42976,29 @@ Be aware that in the above example, the alternatives refer to whole or part of w
 &lt;p&gt;Select to insert the start line character (^). It is used to find some expressions at the begining of lines.
 E.g. &apos;^[A-Z]&apos; match lines starting with a capitalized character. &lt;/p&gt;</source>
         <translation>&lt;b&gt;Начало строки: &apos;^&apos;&lt;/b&gt;
-&lt;p&gt;Вставить символ начала строки (^). Он используется, чтобы найти выражения с начала строк.
-Например, &apos;^[A-Z]&apos; совпадает заглавной латинской буквой, стоящей в начале строки. &lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа начала строки (^). Он используется для поиска выражений с начала строк.
+Например, &apos;^[A-Z]&apos; совпадает с заглавной латинской буквой, стоящей в начале строки. &lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="217"/>
         <source>&lt;b&gt;End of line: &apos;$&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert the end of line character ($).&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Окончание строки: &apos;$&apos;&lt;/b&gt;
-&lt;p&gt;Вставить символ окончания строки ($).&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Конец строки: &apos;$&apos;&lt;/b&gt;
+&lt;p&gt;Вставка символа конца строки ($).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="221"/>
         <source>&lt;b&gt;End of line: &apos;$&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert the end of line character ($). It is used to find some expressions at the end of lines.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Конец строки: &apos;$&apos;&lt;/b&gt;
-&lt;p&gt;Вставить символ конца строки ($). Используется для поиска выражений в конце строк.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа конца строки ($). Он используется для поиска выражений в конце строк.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="229"/>
         <source>&lt;b&gt;Word boundary&lt;/b&gt;
 &lt;p&gt;Select to insert the word boudary character (\b).&lt;/p&gt;</source>
         <translation>&lt;b&gt;Граница слова&lt;/b&gt;
-&lt;p&gt;Вставить символ границы слова (\b).&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа границы слова (\b).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="233"/>
@@ -43004,16 +43006,16 @@ E.g. &apos;^[A-Z]&apos; match lines starting with a capitalized character. &lt;/
 &lt;p&gt;Select to insert the word boudary character (\b). This character is used to express the fact that word 
 must begin or end at this position. E.g. &apos;\bcat\b&apos; matches exactly the word &apos;cat&apos; while &apos;concatenation&apos; is ignored.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Граница слова&lt;/b&gt;
-&lt;p&gt;Вставить символ границы слова (\b). Этот символ используется для обозначения того, что на 
-данной позиции должно начинаться или заканчиваться слово.
-Например, &apos;\bcat\b&apos; совпадает исключительно со словом &apos;cat&apos;, в то время как слово &apos;concatenation&apos; будет пропущено.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа границы слова (\b). Этот символ используется для обозначения того, что в 
+данной позиции слово должно начинаться или заканчиваться. Например, &apos;\bcat\b&apos; совпадает
+исключительно со словом &apos;cat&apos;, в то время как слово &apos;concatenation&apos; будет пропущено.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="242"/>
         <source>&lt;b&gt;Non word boundary&lt;/b&gt;
 &lt;p&gt;Select to insert the word boudary character (\B). \B is the negated version of \b.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Не граница слова&lt;/b&gt;
-&lt;p&gt;Вставить символ не границы слова (\B). Это выражение, обратное выражению \b.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа не границы слова (\B). Это выражение, обратное выражению \b.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="246"/>
@@ -43021,15 +43023,16 @@ must begin or end at this position. E.g. &apos;\bcat\b&apos; matches exactly the
 &lt;p&gt;Select to insert the word boudary character (\B). \B is the negated version of \b. \B matches at every position where \b 
 does not. Effectively, \B matches at any position between two word characters as well as at any position between two non-word characters.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Не граница слова&lt;/b&gt;
-&lt;p&gt;Вставить символ не границы слова (\B). Это выражение, обратное выражению \b. \B совпадает с любой позицией, с которой не совпадает \b. 
-Фактически, \B совпадает с любой позицией между символов в слове, и также с любой позицией между символов дополнения до слова&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа не границы слова (\B). Это выражение, обратное выражению \b.
+\B совпадает с любой позицией, с которой не совпадает \b. Фактически, \B соответствует любой
+позиции символов в слове, и также любой позиции символов вне слова&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="255"/>
         <source>&lt;b&gt;Positive lookahead: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert the positive lookhead brackets.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Положительная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки положительной предварительной проверки.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка скобок для выделения группы с положительной предварительной проверкой.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="259"/>
@@ -43038,16 +43041,17 @@ does not. Effectively, \B matches at any position between two word characters as
 Writting &apos;q(?=u)&apos; means that you want to match the &apos;q&apos; character only if it is followed by &apos;u&apos;. In this statement &apos;u&apos; is a trivial 
 regexp which may be replaced by a more complex expression; q(?=[abc])&apos; will match a &apos;q&apos; if followed by either &apos;a&apos;, &apos;b&apos; or &apos;c&apos;.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Положительная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки положительной предварительной проверки. В основном, положительная предварительная проверка используется для совпадения с символом, за которым следует другой символ
-Выражение &apos;q(?=u)&apos; совпадает с символом &apos;q&apos;, только если за ним следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое можно заменить на более 
-сложное: q(?=[abc])&apos; совпадает с &apos;q&apos;, если за ним следует &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка скобок для выделения группы с положительной предварительной проверкой. В основном, положительная предварительная 
+проверка используется для сопоставления символа если только за ним следует другой символ. Выражение &apos;q(?=u)&apos; совпадает с символом
+&apos;q&apos;, только если за ним следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое может быть заменено
+на более сложное: q(?=[abc])&apos; совпадает с &apos;q&apos;, если за ним следует &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="269"/>
         <source>&lt;b&gt;Negative lookahead: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert the negative lookhead brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки отрицательной предварительной проверки.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Негативная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок для выделения группы с негативной предварительной проверкой.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="273"/>
@@ -43055,17 +43059,18 @@ regexp which may be replaced by a more complex expression; q(?=[abc])&apos; will
 &lt;p&gt;Select to insert the negative lookhead brackets. Basically, negative lookhead is used to match a character only if it is not
 followed by a another one. Writting &apos;q(?!u)&apos; means that you want to match &apos;q&apos; only if it is not followed by &apos;u&apos;. In this statement, &apos;u&apos; is a
 trivial regexp which may be replaced by a more complex expression; &apos;q(?![abc])&apos; will match a &apos;q&apos; if it is followed by anything else than &apos;a&apos;, &apos;b&apos; or &apos;c&apos;.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки отрицательной предварительной проверки. В основном, отрицательная предварительная проверка используется для совпадения с символом, 
-за которым не следует другой символ. Выражение &apos;q(?!u)&apos; совпадает с символом &apos;q&apos;, только если за ним не следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это 
-простейшее регулярное выражение, которое можно заменить на более сложное: q(?![abc])&apos; совпадает с &apos;q&apos;, если за ним следует что угодно, кроме &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Негативная предварительная проверка: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок для выделения группы с негативной предварительной проверкой. В основном, негативная предварительная 
+проверка используется для сопоставления символа если только за ним следует другой символ. Выражение &apos;q(?!u)&apos; совпадает с 
+символом &apos;q&apos;, только если за ним не следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое может 
+быть заменено на более сложное: q(?![abc])&apos; совпадает с &apos;q&apos;, если за ним следует что угодно, кроме &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="327"/>
         <source>&lt;b&gt;Any character: &apos;.&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert a question mark (?) in your regexp.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Любой символ: &apos;.&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку знака вопроса (?) в ваше регулярное выражение.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка знака вопроса (?) в ваше регулярное выражение.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="331"/>
@@ -43073,32 +43078,31 @@ trivial regexp which may be replaced by a more complex expression; &apos;q(?![ab
 &lt;p&gt;Select to insert a question mark (?) in your regexp. The question mark matches a single character. 
 E.g. &apos;gr?y&apos; matches &apos;gray&apos;, &apos;grey&apos;, &apos;gr%y&apos;, etc.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Любой символ: &apos;.&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку знака вопроса (?) в ваше регулярное выражение. Знак вопроса совпадает с одиночным символом.
+&lt;p&gt;Вставка знака вопроса (?) в ваше регулярное выражение. Знак вопроса совпадает с одиночным символом.
 Например: &apos;gr?y&apos; совпадает с &apos;gray&apos;, &apos;grey&apos;, &apos;gr%y&apos;, и т.д.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="340"/>
         <source>&lt;b&gt;Repeat contents&lt;/b&gt;
 &lt;p&gt;Inserts a repetition (*) character into the regexp.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Повторение содержимого&lt;/b&gt;
-&lt;p&gt;Вставить знак повторения (*) в регулярное выражение.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Повтор содержимого&lt;/b&gt;
+&lt;p&gt;Вставка знак повтора (*) в регулярное выражение.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="344"/>
         <source>&lt;b&gt;Repeat contents&lt;/b&gt;
 &lt;p&gt;Inserts a repetition (*) character into the regexp. That will match zero or more of any character.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Повторение содержимого&lt;/b&gt;
-&lt;p&gt;Вставить знак повторения (*) в регулярное выражение. Число повторений - 0 и более раз.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Повтор содержимого&lt;/b&gt;
+&lt;p&gt;Вставка знака повторения (*) в регулярное выражение. Число повторений - 0 и более раз.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="423"/>
         <source>&lt;b&gt;Group: ()&lt;/b&gt;
 &lt;p&gt;Select to insert some capturing brackets. They can be used to apply a regexp quantifier (e.g. &apos;?&apos; or &apos;+&apos;) to the entire group of 
 characters inside the brakets. E.g. the regex &apos;Set(Value)?&apos; matches &apos;Set&apos; or &apos;SetValue&apos;.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Группа: ()&lt;/b&gt;
-&lt;p&gt;Вставить скобки с захватом содержимого.
-Они могут использоваться для того, чтобы применить квантификаторы (&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей
-группе символов внутри скобок. Например, регулярное выражение &apos;Set(Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Группа с захватом: ()&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу с захватом. Они могут использоваться для применения квантификаторов
+(&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей группе символов внутри скобок. Например, регулярное выражение &apos;Set(Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="436"/>
@@ -43106,9 +43110,9 @@ characters inside the brakets. E.g. the regex &apos;Set(Value)?&apos; matches &a
 &lt;p&gt;Select to insert the alternation symbol &apos;|&apos;. The alternation is used to match a single regular expression out of 
 several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matches words containing the word &apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; or &apos;fish&apos;.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Альтернативы: &apos;|&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку символа альтернативы &apos;|&apos;.  Альтернативы используются для совпадения с одним из нескольких 
-возможных регулярных выражений. Например, &apos;cat|dog|mouse|fish&apos; совпадает со словами, содержащими слово 
-&apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; или &apos;fish&apos;.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа альтернативы &apos;|&apos;. Альтернативы используются для установления соответствия с одним из
+нескольких возможных регулярных выражений. Например, &apos;cat|dog|mouse|fish&apos; совпадает со словами, 
+содержащими слово &apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; или &apos;fish&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegExpWizard/QRegExpWizardDialog.ui" line="463"/>
@@ -43156,7 +43160,7 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
     <message>
         <location filename="../Plugins/PluginWizardQRegularExpression.py" line="79"/>
         <source>&lt;b&gt;QRegularExpression Wizard&lt;/b&gt;&lt;p&gt;This wizard opens a dialog for entering all the parameters needed to create a QRegularExpression string. The generated code is inserted at the current cursor position.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Мастер регулярных выражений&lt;/b&gt;&lt;p&gt;Этот мастер запускает диалог для ввода параметров, необходимых для создания строки регулярных выражений. Сгенерированный код ставляется в текущую позицию курсора.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Мастер регулярных выражений&lt;/b&gt;&lt;p&gt;Этот мастер запускает диалог для ввода всех параметров, необходимых для создания строки регулярных выражений. Сгенерированный код ставляется в текущую позицию курсора.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/PluginWizardQRegularExpression.py" line="126"/>
@@ -43174,62 +43178,62 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="14"/>
         <source>Editor for character sets</source>
-        <translation>Редактор символьных наборов</translation>
+        <translation>Редактор наборов символов</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="23"/>
         <source>The defined characters should not match</source>
-        <translation>Кроме заданных символов</translation>
+        <translation>Определенные символы не должны совпадать</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="30"/>
         <source>Predefined character ranges</source>
-        <translation>Предварительно заданные множества</translation>
+        <translation>Предварительно определенные диапазоны символов</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="36"/>
         <source>Word character</source>
-        <translation>Символы, входящие в слова</translation>
+        <translation>Словообразующие символы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="43"/>
         <source>Digit</source>
-        <translation>Цифры</translation>
+        <translation>Цифровые символы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="50"/>
         <source>Newline</source>
-        <translation>Перевод строки</translation>
+        <translation>Новая строка</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="57"/>
         <source>Non-word character</source>
-        <translation>Символы, не входящие в слова</translation>
+        <translation>Несловообразующие символы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="64"/>
         <source>Non-digit</source>
-        <translation>Не цифры</translation>
+        <translation>Нецифровые символы</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="71"/>
         <source>Non-newline</source>
-        <translation>Не перевод строки</translation>
+        <translation>Не новая строка</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="78"/>
         <source>Whitespace character</source>
-        <translation>Символы пропуска</translation>
+        <translation>Пробельный символ</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="85"/>
         <source>Horizontal whitespace character</source>
-        <translation>Символы пропуска по горизонтали</translation>
+        <translation>Символ пропуска по горизонтали</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="92"/>
         <source>Vertical whitespace character</source>
-        <translation>Символы пропуска по вертикали</translation>
+        <translation>Символ пропуска по вертикали</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="99"/>
@@ -43239,12 +43243,12 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="106"/>
         <source>Non-horizontal whitespace character</source>
-        <translation>Негоризонтальные символы пропуска</translation>
+        <translation>Не символ пропуска по горизонтали</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="113"/>
         <source>Non-vertical whitespace character</source>
-        <translation>Невертикальные символы пропуска</translation>
+        <translation>Не символ пропуска по вертикали</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="129"/>
@@ -43254,7 +43258,7 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.ui" line="142"/>
         <source>Character ranges</source>
-        <translation>Символьные промежутки</translation>
+        <translation>Диапазоны символов</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.py" line="40"/>
@@ -43279,7 +43283,7 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.py" line="45"/>
         <source>Escape character (\e)</source>
-        <translation>Символ переключения (\e)</translation>
+        <translation>Escape-cимвол (\e)</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.py" line="45"/>
@@ -43289,7 +43293,7 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.py" line="45"/>
         <source>Line feed (\n)</source>
-        <translation>Перевод каретки (\n)</translation>
+        <translation>Перевод строки (\n)</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.py" line="45"/>
@@ -43319,7 +43323,7 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.py" line="45"/>
         <source>POSIX Named Set</source>
-        <translation>Именованное множество POSIX</translation>
+        <translation>Именованные наборы POSIX</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.py" line="45"/>
@@ -43339,7 +43343,7 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.py" line="45"/>
         <source>Not POSIX Named Set</source>
-        <translation>Не именованное множество POSIX</translation>
+        <translation>Не именованные наборы POSIX</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardCharactersDialog.py" line="128"/>
@@ -44164,7 +44168,7 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
         <source>&lt;b&gt;Comment: (?#)&lt;/b&gt;
 &lt;p&gt;Insert some comment inside your regexp.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Комментарий: (?#)&lt;/b&gt;
-&lt;p&gt;Вставить комментарий внутрь регулярного выражения.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка комментария внутрь регулярного выражения.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="56"/>
@@ -44173,7 +44177,7 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
 The following example could clarify the regexp which match a valid date: &lt;/p&gt;
 &lt;p&gt;(?#year)(19|20)\d\d[- /.](?#month)(0[1-9]|1[012])[- /.](?#day)(0[1-9]|[12][0-9]|3[01])&lt;/p&gt;</source>
         <translation>&lt;b&gt;Комментарий: (?#)&lt;/b&gt;
-&lt;p&gt;Вставить комментарий в регулярное выражение. Текст после (?# и до первой закрывающей круглой скобки игнорируется.
+&lt;p&gt;Вставка комментария внутрь  регулярного выражения. Текст после (?# и до первой закрывающей круглой скобки игнорируется.
 Следующий пример может пояснить регулярное выражение, описывающее корректную дату: &lt;/p&gt;
 &lt;p&gt;(?#year)(19|20)\d\d[- /.](?#month)(0[1-9]|1[012])[- /.](?#day)(0[1-9]|[12][0-9]|3[01])&lt;/p&gt;</translation>
     </message>
@@ -44181,20 +44185,20 @@ The following example could clarify the regexp which match a valid date: &lt;/p&
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="66"/>
         <source>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;
-&lt;p&gt;Выбрать  одиночный символ из диапазона посредством специального диалога.&lt;/p&gt;</translation>
+&lt;p&gt;Выбор одиночного символа из диапазона посредством специального диалога.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="69"/>
         <source>&lt;b&gt;Single character of a range (e.g. [abcd])&lt;/b&gt;&lt;p&gt;Select a single character of a range via a specific dialog. This dialog will help to edit the range of characters and add some specific conditions.&lt;/p&gt;s</source>
         <translation>&lt;b&gt;Одиночный символ из диапазона (напр. [abcd])&lt;/b&gt;
-&lt;p&gt;Выбрать  одиночный символ из диапазона посредством специального диалога. Этот диалог поможет изменить диапазон символов и добавить некоторые специфические условия.&lt;/p&gt;</translation>
+&lt;p&gt;Выбор одиночного символа из диапазона посредством специального диалога. Этот диалог помогает изменять диапазон символов и добавлять некоторые специфические условия.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="76"/>
         <source>&lt;b&gt;Any character: &apos;.&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert a dot (.) in your regexp.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Любой символ: &apos;.&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку точки (.) в ваше регулярное выражение.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка точки (.) в ваше регулярное выражение.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="80"/>
@@ -44203,22 +44207,23 @@ The following example could clarify the regexp which match a valid date: &lt;/p&
 E.g. &apos;gr.y&apos; matches &apos;gray&apos;, &apos;grey&apos;, &apos;gr%y&apos;, etc. Use the dot sparingly. Often, a character class or negated
 character class is faster and more precise.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Любой символ: &apos;.&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку точки (.) в ваше регулярное выражение. Точка совпадает с любым символом, кроме символа окончания строки (по умолчанию).
-Например, &apos;gr.y&apos; совпадает с &apos;gray&apos;, &apos;grey&apos;, &apos;gr%y&apos;, и т.д. Используйте точку без фанатизма. Часто использование класса символов или дополнения до класса символов быстрее и более точно.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка точки (.) в ваше регулярное выражение. Точка соответствует любому символу, кроме символа окончания строки (по умолчанию).
+Например, &apos;gr.y&apos; совпадает с &apos;gray&apos;, &apos;grey&apos;, &apos;gr%y&apos;, и т.д. Используйте точку без фанатизма. Зачастую, символьный класс или 
+обратный символьный класс является более быстрым и точным.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="94"/>
         <source>&lt;b&gt;Repeat contents&lt;/b&gt;
 &lt;p&gt;Select a repetition condition via a specific dialog. This dialog will help to specify the allowed range for repetitions.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Повтор содержания&lt;/b&gt;
-&lt;p&gt;Задайте условия повторения посредством специального диалога. Этот диалог поможет указать допустимые пределы для повторений.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Повтор содержимого&lt;/b&gt;
+&lt;p&gt;Выбор условий повтора посредством специального диалога. Этот диалог помогает определять допустимый диапазон повторов.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="102"/>
         <source>&lt;b&gt;Non capturing parentheses: (?:)&lt;/b&gt;
 &lt;p&gt;Select to insert some non capturing brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Скобки без захвата: (?:)&lt;/b&gt;
-&lt;p&gt;Вставить скобки, которые группируют, но не попадают в выражения захвата.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Группа без захвата: (?:)&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу, но без захвата.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="106"/>
@@ -44226,17 +44231,17 @@ character class is faster and more precise.&lt;/p&gt;</source>
 &lt;p&gt;Select to insert some non capturing brackets. It can be used to apply a regexp quantifier (eg. &apos;?&apos; or &apos;+&apos;) to the entire
 group of characters inside the brakets. E.g. the regex &apos;Set(?:Value)?&apos; matches &apos;Set&apos; or &apos;SetValue&apos;. The &apos;?:&apos; inside the brakets
 means that the content of the match (called the backreference) is not stored for further use.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Скобки без захвата: (?:)&lt;/b&gt;
-&lt;p&gt;Вставить скобки, которые группируют, но не попадают в выражения захвата. Они могут использоваться для того, чтобы применить квантификаторы (&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей
-группе символов внутри скобок. Например, регулярное выражение &apos;Set(?:Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.  &apos;?:&apos; внутри скобок
-означает, что содержимое скобок (называемое обратной ссылкой) не сохраняется для дальнейшего использования.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Группа без захвата: (?:)&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу, но без захвата. Они могут использоваться для примения квантификаторов
+(&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей группе символов внутри скобок. Например, регулярное выражение &apos;Set(?:Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.
+&apos;?:&apos; внутри скобок означает, что соответствие (называемое обратной ссылкой) не сохраняется для дальнейшего использования.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="116"/>
         <source>&lt;b&gt;Atomic non capturing parentheses: (?&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert some atomic non capturing brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Скобки без захвата: (?&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки, которые группируют, но не попадают в выражения захвата.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Атомарнаягруппа без захвата: (?&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу, но без захвата.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="120"/>
@@ -44244,17 +44249,17 @@ means that the content of the match (called the backreference) is not stored for
 &lt;p&gt;Select to insert some atomic non capturing brackets. It can be used to apply a regexp quantifier (eg. &apos;?&apos; or &apos;+&apos;) to the entire
 group of characters inside the brakets. E.g. the regex &apos;Set(?&gt;Value)?&apos; matches &apos;Set&apos; or &apos;SetValue&apos;. The &apos;?&gt;&apos; inside the brakets
 means that the content of the match (called the backreference) is not stored for further use.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Скобки без захвата: (?&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки, которые группируют, но не попадают в выражения захвата. Они могут использоваться для того, чтобы применить квантификаторы (&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей
-группе символов внутри скобок. Например, регулярное выражение &apos;Set(?:Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.  &apos;?&gt;&apos; внутри скобок
-означает, что содержимое скобок (называемое обратной ссылкой) не сохраняется для дальнейшего использования.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Атомарная группа без захвата: (?&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу, но без захвата. Они могут использоваться для примения квантификаторов
+(&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей группе символов внутри скобок. Например, регулярное выражение &apos;Set(?&gt;Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.
+&apos;?&gt;&apos; внутри скобок означает, что соответствие (называемое обратной ссылкой) не сохраняется для дальнейшего использования.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="130"/>
         <source>&lt;b&gt;Group: ()&lt;/b&gt;
 &lt;p&gt;Select to insert some capturing brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Группа: ()&lt;/b&gt;
-&lt;p&gt;Разрешить вставлять скобки с захватом содержимого.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Группа с захватом: ()&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу с захватом.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="134"/>
@@ -44264,20 +44269,19 @@ characters inside the brakets. E.g. the regex &apos;Set(Value)?&apos; matches &a
 the backreference matched inside the brakets is stored for further use (i.e. &apos;Value&apos; in the second example above). 
 One can access the backereference with the &apos;\1&apos; expression. &lt;/p&gt;
 &lt;p&gt;E.g. &apos;([a-c])x\1x\1&apos; will match &apos;axaxa&apos;, &apos;bxbxb&apos; and &apos;cxcxc&apos;.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Группа: ()&lt;/b&gt;
-&lt;p&gt;Разрешить вставлять скобки с захватом содержимого.
-Они могут использоваться для того, чтобы применить квантификаторы (&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей
-группе символов внутри скобок. Например, регулярное выражение &apos;Set(Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.
-В отличие от скобок без захвата, обратная ссылка сохраняется для дальнейшего использования  (т.е. &apos;Value&apos; из примера).
-Значение обратной ссылки можно получить с помощью выражения &apos;\1&apos;. &lt;/p&gt;
-&lt;p&gt;Например, &apos;([a-c])x\1x\1&apos; совпадёт с &apos;axaxa&apos;, &apos;bxbxb&apos; и &apos;cxcxc&apos;.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Группа с захватом: ()&lt;/b&gt;
+&lt;p&gt;Вставка скобок, которые выделяют группу с захватом. Они могут использоваться для применения квантификаторов 
+(&apos;?&apos;, &apos;*&apos;, или &apos;+&apos;) ко всей группе символов внутри скобок. Например, регулярное выражение &apos;Set(Value)?&apos; совпадает с &apos;Set&apos; или &apos;SetValue&apos;.
+В отличие от скобок без захвата, обратная ссылка, соответствующая выражению скобок, сохраняется для дальнейшего использования
+(т.е. &apos;Value&apos; из второго примера выше). Значение обратной ссылки можно получить с помощью выражения &apos;\1&apos;. &lt;/p&gt;
+&lt;p&gt;Например, &apos;([a-c])x\1x\1&apos; совпадет с &apos;axaxa&apos;, &apos;bxbxb&apos; и &apos;cxcxc&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="146"/>
         <source>&lt;b&gt;Named group: (?P&amp;lt;&lt;i&gt;groupname&lt;/i&gt;&amp;gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert some named group brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Именованная группа: (?P&amp;lt;&lt;i&gt;имя&lt;/i&gt;&amp;gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки именованной группы.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Именованная группа: (?P&amp;lt;&lt;i&gt;groupname&lt;/i&gt;&amp;gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок для выделения именованной группы.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="150"/>
@@ -44286,18 +44290,19 @@ One can access the backereference with the &apos;\1&apos; expression. &lt;/p&gt;
 backreference is also stored for further usage. The difference is that a name is given to the match. This is useful when 
 the work to do on the match becomes a bit complicated. One can access the backreference via the group name (i.e (?P=&lt;i&gt;groupname&lt;/i&gt;)).
 E.g. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x matches &apos;axaxax&apos;,&apos;bxbxbx&apos; or &apos;cxcxcx&apos; (&apos;foo&apos; is the group name)&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Именованная группа: (?P&amp;lt;&lt;i&gt;имя&lt;/i&gt;&amp;gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки именованной группы. Использование этой группы аналогично использованию стандартной группы. 
-Отличие состоит в том, что обратной ссылке присваивается имя. Это полезно, когда работа с группами становится 
-достаточно сложной. Доступ к обратной ссылке можно получить по имени (т.е. (?P=&lt;i&gt;groupname&lt;/i&gt;)).
-Напр. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x совпадает с &apos;axaxax&apos;,&apos;bxbxbx&apos; или &apos;cxcxcx&apos; (&apos;foo&apos; — это имя группы)&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Именованная группа: (?P&amp;lt;&lt;i&gt;groupname&lt;/i&gt;&amp;gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок для выделения именованной группы. Используется аналогично скобкам стандартной группы,
+соответствующая обратная ссылка также сохраняется для дальнейшего использования. Отличие состоит в том,
+что соответствию присваивается имя. Это полезно, когда работа с группами становится достаточно сложной. 
+Доступ к обратной ссылке можно получить по имени группы (т.е. (?P=&lt;i&gt;groupname&lt;/i&gt;)).
+Напр. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x совпадает с &apos;axaxax&apos;,&apos;bxbxbx&apos; или &apos;cxcxcx&apos; (&apos;foo&apos; — это groupname)&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="161"/>
         <source>&lt;b&gt;Reference named group: (?P=&lt;i&gt;groupname&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert a reference to named group previously declared.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Ссылка на именованную группу: (?P=&lt;i&gt;имя&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Сослаться на предварительно объявленную именованную группу.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Ссылка на именованную группу: (?P=&lt;i&gt;groupname&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка ссылки на предварительно объявленную именованную группу.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="165"/>
@@ -44305,9 +44310,10 @@ E.g. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x matches &apos;axaxax&apos;,&apos;bx
 &lt;p&gt;Select to insert a reference to named group previously declared. Each reference group refers to the match
  found by the corresponding named group. In the following example, (?P=foo) may refer to the charaters &apos;a&apos;,&apos;b&apos; or &apos;c&apos;.&lt;/p&gt;
 &lt;p&gt;E.g. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x matches &apos;axaxax&apos;,&apos;bxbxbx&apos; or &apos;cxcxcx&apos;.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Ссылка на именованную группу: (?P=&lt;i&gt;имя&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Сослаться на предварительно объявленную именованную группу.&lt;/p&gt;
-&lt;p&gt;Вставить ссылку на предварительно объявленную именованную группу. Каждая ссылка ссылается на совпадение, найденное соответствующей именованной группой. В следующем примере (?P=foo) может ссылаться на символ &apos;a&apos;,&apos;b&apos; или &apos;c&apos;.&lt;/p&gt;
+        <translation>&lt;b&gt;Ссылка на именованную группу: (?P=&lt;i&gt;groupname&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка ссылки на предварительно объявленную именованную группу.
+Каждая ссылка ссылается на совпадение, найденное соответствующей именованной группой. 
+В следующем примере (?P=foo) может ссылаться на символ &apos;a&apos;,&apos;b&apos; или &apos;c&apos;.&lt;/p&gt;
 &lt;p&gt;Напр. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x совпадает с &apos;axaxax&apos;,&apos;bxbxbx&apos; или &apos;cxcxcx&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -44315,7 +44321,7 @@ E.g. (?P&lt;foo&gt;[abc])x(?P=foo)x(?P=foo)x matches &apos;axaxax&apos;,&apos;bx
         <source>&lt;b&gt;Alternatives: &apos;|&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert the alternation symbol &apos;|&apos;. &lt;/p&gt;</source>
         <translation>&lt;b&gt;Альтернативы: &apos;|&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку символа альтернативы &apos;|&apos;. &lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа альтернативы &apos;|&apos;. &lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="179"/>
@@ -44325,19 +44331,18 @@ several possible regular expressions. E.g. &apos;cat|dog|mouse|fish&apos; matche
 Be aware that in the above example, the alternatives refer to whole or part of words. If you want to match exactly the
  words &apos;cat&apos;, &apos;dog&apos;, ... you should express the fact that you only want to match complete words: &apos;\b(cat|dog|mouse|fish)\b&apos;&lt;/p&gt;</source>
         <translation>&lt;b&gt;Альтернативы: &apos;|&apos;&lt;/b&gt;
-&lt;p&gt;Разрешить вставку символа альтернативы &apos;|&apos; в регулярное выражение. Альтернативы используются для совпадения с 
-одним из нескольких возможных регулярных выражений. Например, &apos;cat|dog|mouse|fish&apos; совпадает со словами, 
-содержащими слово &apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; или &apos;fish&apos;.
-Обратите внимание, что в приведённом примере альтернативы ссылаются как на целые слова, так и на части слов. 
-Если необходимо совпадение с целыми словами &apos;cat&apos;, &apos;dog&apos;, ... необходимо выразить это следующим 
-образом: &apos;\b(cat|dog|mouse|fish)\b&apos;&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа альтернативы &apos;|&apos;. Альтернативы используются для установления соответствия с одним из
+нескольких возможных регулярных выражений. Например, &apos;cat|dog|mouse|fish&apos; совпадает со словами, 
+содержащими слово &apos;cat&apos;, &apos;dog&apos;,&apos;mouse&apos; или &apos;fish&apos;. Обратите внимание, что в приведённом примере альтернативы 
+ссылаются как на целые слова, так и на части слов. Если необходимо совпадение с целыми словами &apos;cat&apos;, &apos;dog&apos;,
+... необходимо выразить это следующим образом: &apos;\b(cat|dog|mouse|fish)\b&apos;&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="190"/>
         <source>&lt;b&gt;Begin of line: &apos;^&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert the start line character (^).&lt;/p&gt;</source>
         <translation>&lt;b&gt;Начало строки: &apos;^&apos;&lt;/b&gt;
-&lt;p&gt;Вставить символ начала строки (^).&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа начала строки (^).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="194"/>
@@ -44345,29 +44350,29 @@ Be aware that in the above example, the alternatives refer to whole or part of w
 &lt;p&gt;Select to insert the start line character (^). It is used to find some expressions at the begining of lines.
 E.g. &apos;^[A-Z]&apos; match lines starting with a capitalized character. &lt;/p&gt;</source>
         <translation>&lt;b&gt;Начало строки: &apos;^&apos;&lt;/b&gt;
-&lt;p&gt;Вставить символ начала строки (^). Он используется, чтобы найти выражения с начала строк.
-Например, &apos;^[A-Z]&apos; совпадает заглавной латинской буквой, стоящей в начале строки. &lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа начала строки (^). Он используется для поиска выражений с начала строк.
+Например, &apos;^[A-Z]&apos; совпадает с заглавной латинской буквой, стоящей в начале строки. &lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="203"/>
         <source>&lt;b&gt;End of line: &apos;$&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert the end of line character ($).&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Окончание строки: &apos;$&apos;&lt;/b&gt;
-&lt;p&gt;Вставить символ окончания строки ($).&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Конец строки: &apos;$&apos;&lt;/b&gt;
+&lt;p&gt;Вставка символа конца строки ($).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="207"/>
         <source>&lt;b&gt;End of line: &apos;$&apos;&lt;/b&gt;
 &lt;p&gt;Select to insert the end of line character ($). It is used to find some expressions at the end of lines.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Конец строки: &apos;$&apos;&lt;/b&gt;
-&lt;p&gt;Вставить символ конца строки ($). Используется для поиска выражений в конце строк.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа конца строки ($). Он используется для поиска выражений в конце строк.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="215"/>
         <source>&lt;b&gt;Word boundary&lt;/b&gt;
 &lt;p&gt;Select to insert the word boudary character (\b).&lt;/p&gt;</source>
         <translation>&lt;b&gt;Граница слова&lt;/b&gt;
-&lt;p&gt;Вставить символ границы слова (\b).&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа границы слова (\b).&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="219"/>
@@ -44375,16 +44380,16 @@ E.g. &apos;^[A-Z]&apos; match lines starting with a capitalized character. &lt;/
 &lt;p&gt;Select to insert the word boudary character (\b). This character is used to express the fact that word 
 must begin or end at this position. E.g. &apos;\bcat\b&apos; matches exactly the word &apos;cat&apos; while &apos;concatenation&apos; is ignored.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Граница слова&lt;/b&gt;
-&lt;p&gt;Вставить символ границы слова (\b). Этот символ используется для обозначения того, что на 
-данной позиции должно начинаться или заканчиваться слово.
-Например, &apos;\bcat\b&apos; совпадает исключительно со словом &apos;cat&apos;, в то время как слово &apos;concatenation&apos; будет пропущено.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа границы слова (\b). Этот символ используется для обозначения того, что в 
+данной позиции слово должно начинаться или заканчиваться. Например, &apos;\bcat\b&apos; совпадает
+исключительно со словом &apos;cat&apos;, в то время как слово &apos;concatenation&apos; будет пропущено.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="228"/>
         <source>&lt;b&gt;Non word boundary&lt;/b&gt;
 &lt;p&gt;Select to insert the word boudary character (\B). \B is the negated version of \b.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Не граница слова&lt;/b&gt;
-&lt;p&gt;Вставить символ не границы слова (\B). Это выражение, обратное выражению \b.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа не границы слова (\B). Это выражение, обратное выражению \b.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="232"/>
@@ -44392,15 +44397,16 @@ must begin or end at this position. E.g. &apos;\bcat\b&apos; matches exactly the
 &lt;p&gt;Select to insert the word boudary character (\B). \B is the negated version of \b. \B matches at every position where \b 
 does not. Effectively, \B matches at any position between two word characters as well as at any position between two non-word characters.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Не граница слова&lt;/b&gt;
-&lt;p&gt;Вставить символ не границы слова (\B). Это выражение, обратное выражению \b. \B совпадает с любой позицией, с которой не совпадает \b. 
-Фактически, \B совпадает с любой позицией между символов в слове, и также с любой позицией между символов дополнения до слова&lt;/p&gt;</translation>
+&lt;p&gt;Вставка символа не границы слова (\B). Это выражение, обратное выражению \b.
+\B совпадает с любой позицией, с которой не совпадает \b. Фактически, \B соответствует любой
+позиции символов в слове, и также любой позиции символов вне слова&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="241"/>
         <source>&lt;b&gt;Positive lookahead: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert the positive lookhead brackets.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Положительная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки положительной предварительной проверки.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка скобок для выделения группы с положительной предварительной проверкой.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="245"/>
@@ -44409,16 +44415,17 @@ does not. Effectively, \B matches at any position between two word characters as
 Writting &apos;q(?=u)&apos; means that you want to match the &apos;q&apos; character only if it is followed by &apos;u&apos;. In this statement &apos;u&apos; is a trivial 
 regexp which may be replaced by a more complex expression; q(?=[abc])&apos; will match a &apos;q&apos; if followed by either &apos;a&apos;, &apos;b&apos; or &apos;c&apos;.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Положительная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки положительной предварительной проверки. В основном, положительная предварительная проверка используется для совпадения с символом, за которым следует другой символ
-Выражение &apos;q(?=u)&apos; совпадает с символом &apos;q&apos;, только если за ним следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое можно заменить на более 
-сложное: q(?=[abc])&apos; совпадает с &apos;q&apos;, если за ним следует &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка скобок для выделения группы с положительной предварительной проверкой. В основном, положительная предварительная 
+проверка используется для сопоставления символа если только за ним следует другой символ. Выражение &apos;q(?=u)&apos; совпадает с символом
+&apos;q&apos;, только если за ним следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое может быть заменено
+на более сложное: q(?=[abc])&apos; совпадает с &apos;q&apos;, если за ним следует &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="255"/>
         <source>&lt;b&gt;Negative lookahead: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert the negative lookhead brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки отрицательной предварительной проверки.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Негативная предварительная проверка: (?=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок для выделения группы с негативной предварительной проверкой.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="259"/>
@@ -44426,17 +44433,18 @@ regexp which may be replaced by a more complex expression; q(?=[abc])&apos; will
 &lt;p&gt;Select to insert the negative lookhead brackets. Basically, negative lookhead is used to match a character only if it is not
 followed by a another one. Writting &apos;q(?!u)&apos; means that you want to match &apos;q&apos; only if it is not followed by &apos;u&apos;. In this statement, &apos;u&apos; is a
 trivial regexp which may be replaced by a more complex expression; &apos;q(?![abc])&apos; will match a &apos;q&apos; if it is followed by anything else than &apos;a&apos;, &apos;b&apos; or &apos;c&apos;.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки отрицательной предварительной проверки. В основном, отрицательная предварительная проверка используется для совпадения с символом, 
-за которым не следует другой символ. Выражение &apos;q(?!u)&apos; совпадает с символом &apos;q&apos;, только если за ним не следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это 
-простейшее регулярное выражение, которое можно заменить на более сложное: q(?![abc])&apos; совпадает с &apos;q&apos;, если за ним следует что угодно, кроме &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Негативная предварительная проверка: (?!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок для выделения группы с негативной предварительной проверкой. В основном, негативная предварительная 
+проверка используется для сопоставления символа если только за ним следует другой символ. Выражение &apos;q(?!u)&apos; совпадает с 
+символом &apos;q&apos;, только если за ним не следует символ &apos;u&apos;. В этом примере, &apos;u&apos; — это простейшее регулярное выражение, которое может 
+быть заменено на более сложное: q(?![abc])&apos; совпадает с &apos;q&apos;, если за ним следует что угодно, кроме &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="269"/>
         <source>&lt;b&gt;Positive lookbehind: (?&amp;lt;=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert the positive lookbehind brackets.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Положительная ретроспективная проверка: (?&amp;lt;=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки положительной ретроспективной проверки.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка скобок для выделения группы с положительной ретроспективной проверкой.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="273"/>
@@ -44445,17 +44453,17 @@ trivial regexp which may be replaced by a more complex expression; &apos;q(?![ab
 It is used to match a character only if preceded by another one. Writting &apos;(?&amp;lt;=u)q&apos; means that you want to match the &apos;q&apos; character 
 only if it is preceded by &apos;u&apos;. As with lookhead, &apos;u&apos; may be replaced by a more complex expression; &apos;(?&amp;lt;=[abc])q&apos; will match a &apos;q&apos; if preceded by either &apos;a&apos;, &apos;b&apos; or &apos;c&apos;.&lt;/p&gt;</source>
         <translation>&lt;b&gt;Положительная ретроспективная проверка: (?&amp;lt;=&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки положительной ретроспективной проверки.&lt;/p&gt;. Ретроспективная проверка работает аналогично предварительной, но в обратную сторону. 
-Она используется, чтобы выразить совпадение с символом, если перед ним находится ещё один. Выражение &apos;(?&amp;lt;=u)q&apos; совпадает с символом &apos;q&apos;, 
-только если перед ним находится символ &apos;u&apos;. Как и при предварительной проверке, &apos;u&apos; можно заменить на более сложное регулярное выражение; 
-&apos;(?&amp;lt;=[abc])q&apos; совпадёт с &apos;q&apos;, если перед ней находится &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
+&lt;p&gt;Вставка скобок для выделения группы с положительной ретроспективной проверкой.&lt;/p&gt;. Ретроспективная проверка аналогична предварительной, 
+но работает в обратном направлении. Она используется для сопоставления символа если только перед ним находится ещё один. Выражение &apos;(?&amp;lt;=u)q&apos; 
+совпадает с символом &apos;q&apos;, только если перед ним находится символ &apos;u&apos;. Как и при предварительной проверке, &apos;u&apos; можно заменить на более сложное 
+регулярное выражение; &apos;(?&amp;lt;=[abc])q&apos; совпадёт с &apos;q&apos;, если перед ней находится &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="283"/>
         <source>&lt;b&gt;Negative lookbehind (?&amp;lt;!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
 &lt;p&gt;Select to insert the negative lookbehind brackets.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отрицательная предварительная проверка: (?&amp;lt;!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки отрицательной предварительной проверки.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Негативная предварительная проверка: (?&amp;lt;!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок для выделения группы с негативной предварительной проверкой.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="287"/>
@@ -44464,16 +44472,16 @@ only if it is preceded by &apos;u&apos;. As with lookhead, &apos;u&apos; may be 
 but works backwards. It is used to match a character only if not preceded by another one. Writting &apos;(?&amp;lt;!u)q&apos; means that you want to match the &apos;q&apos; 
 character only if it is not preceded by &apos;u&apos;. As other lookaround, &apos;u&apos; may be replaced by a more complex 
 expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if not preceded by either &apos;a&apos;, &apos;b&apos; nor &apos;c&apos;.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Отрицательная ретроспективная проверка: (?&amp;lt;!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
-&lt;p&gt;Вставить скобки отрицательной ретроспективной проверки.&lt;/p&gt;. Ретроспективная проверка работает аналогично предварительной, 
-но в обратную сторону. Она используется, чтобы выразить совпадение с символом, если перед ним не находится ещё один. Выражение &apos;(?&amp;lt;!u)q&apos; 
+        <translation>&lt;b&gt;Негативная ретроспективная проверка: (?&amp;lt;!&lt;i&gt;regexpr&lt;/i&gt;)&lt;/b&gt;
+&lt;p&gt;Вставка скобок для выделения группы с негативной предварительной проверкой.&lt;/p&gt;. Ретроспективная проверка аналогична предварительной, 
+но работает в обратном направлении. Она используется для сопоставления символа если только перед ним находится ещё один. Выражение &apos;(?&amp;lt;!u)q&apos; 
 совпадает с символом &apos;q&apos;, только если перед ним не находится символ &apos;u&apos;. Как и при предварительной проверке, &apos;u&apos; можно заменить на более 
 сложное регулярное выражение; &apos;(?&amp;lt;![abc])q&apos; совпадёт с &apos;q&apos;, если перед ней находится всё, кроме &apos;a&apos;, &apos;b&apos; или &apos;c&apos;.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="314"/>
         <source>&lt;b&gt;Undo last edit&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Отменить последнее изменение&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Отмена последнего изменения&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="321"/>
@@ -44498,37 +44506,37 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="403"/>
         <source>&quot;^&quot; matches beginning of line, &quot;$&quot; matches end of line</source>
-        <translation>&quot;^&quot; - начало строки, &quot;$&quot; - конец строки</translation>
+        <translation>&quot;^&quot; - соответствует началу строки, &quot;$&quot; - соответствует концу строки</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="406"/>
         <source>Match Linebreaks</source>
-        <translation>Включать переносы строк</translation>
+        <translation>Соответствие переносу строки</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="413"/>
         <source>&quot;.&quot; matches everything including linebreaks</source>
-        <translation>&quot;.&quot; включает также переносы строк</translation>
+        <translation>&quot;.&quot; соответствует всему, включая разрывы строк</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="416"/>
         <source>Dot matches everything</source>
-        <translation>&quot;.&quot; включает всё</translation>
+        <translation>&quot;.&quot; соответствует всему</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="423"/>
         <source>Extended Pattern Syntax</source>
-        <translation>Расширенный синтаксис</translation>
+        <translation>Расширенный синтаксис шаблона</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="430"/>
         <source>Inverted Greediness</source>
-        <translation>Инвертированная жадность</translation>
+        <translation>Инвертированная &quot;жадность&quot;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="437"/>
         <source>Unicode</source>
-        <translation>Юникод</translation>
+        <translation>Unicode</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.ui" line="444"/>
@@ -44551,7 +44559,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardRepeatDialog.ui" line="23"/>
         <source>Quantifier</source>
-        <translation>Счётчик</translation>
+        <translation>Квантификатор</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardRepeatDialog.ui" line="43"/>
@@ -44591,22 +44599,22 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardRepeatDialog.ui" line="160"/>
         <source>Greediness</source>
-        <translation>Жадность</translation>
+        <translation>&quot;Жадность&quot;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardRepeatDialog.ui" line="166"/>
         <source>Greedy</source>
-        <translation>Жадно</translation>
+        <translation>&quot;Жадно&quot;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardRepeatDialog.ui" line="173"/>
         <source>Possessive</source>
-        <translation>Собственнически</translation>
+        <translation>&quot;Ревниво&quot;</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardRepeatDialog.ui" line="180"/>
         <source>Lazy</source>
-        <translation>Лениво</translation>
+        <translation>&quot;Лениво&quot;</translation>
     </message>
 </context>
 <context>
@@ -44659,7 +44667,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.py" line="114"/>
         <source>Show the next match of the regular expression</source>
-        <translation>Показать следующее совпадение для регулярного выражения</translation>
+        <translation>Показать следующее совпадение регулярного выражения</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.py" line="127"/>
@@ -44684,7 +44692,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.py" line="289"/>
         <source>Select group name:</source>
-        <translation>Задайте имя группы:</translation>
+        <translation>Выберите имя группы:</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.py" line="453"/>
@@ -44714,7 +44722,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.py" line="506"/>
         <source>The regular expression is valid.</source>
-        <translation>Регулярное выражение верно.</translation>
+        <translation>Правильное регулярное выражение.</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.py" line="707"/>
@@ -44724,7 +44732,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.py" line="581"/>
         <source>Invalid regular expression: {0}</source>
-        <translation>Неверное регулярное выражение: {0}</translation>
+        <translation>Неправильное регулярное выражение: {0}</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.py" line="537"/>
@@ -44744,7 +44752,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.py" line="620"/>
         <source>Captures</source>
-        <translation>Группы</translation>
+        <translation>Захваты</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.py" line="628"/>
@@ -44764,7 +44772,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.py" line="651"/>
         <source>Capture #{0}</source>
-        <translation>Группа #{0}</translation>
+        <translation>Захват #{0}</translation>
     </message>
     <message>
         <location filename="../Plugins/WizardPlugins/QRegularExpressionWizard/QRegularExpressionWizardDialog.py" line="675"/>
@@ -44981,17 +44989,17 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="77"/>
         <source>Qt Tools</source>
-        <translation>Утилиты Qt</translation>
+        <translation>Инструменты Qt</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="108"/>
         <source>The tool executable is composed of the prefix, the tool name and the postfix. For win, the extension is added automatically.</source>
-        <translation>Имя исполняемого файла утилиты состоит из префикса, имени утилиты и постфикса. В win32 автоматически добавляется расширение.</translation>
+        <translation>Имя исполняемого файла программы состоит из префикса, имени программы и постфикса. В win32 автоматически добавляется расширение.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="154"/>
         <source>This gives an example of the complete tool name</source>
-        <translation>Предпросмотр полного имени утилиты</translation>
+        <translation>Пример полного имени инструмента</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="157"/>
@@ -45006,7 +45014,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="37"/>
         <source>Qt Translations Directory</source>
-        <translation>Директория Qt переводов</translation>
+        <translation>Директория переводов Qt </translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="67"/>
@@ -45016,7 +45024,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="43"/>
         <source>Enter the path of the Qt translations directory.</source>
-        <translation>Введите директорию переводов Qt.</translation>
+        <translation>Задайте путь к директории переводов Qt.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="57"/>
@@ -45046,7 +45054,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="169"/>
         <source>pyuic / pyside-uic Options</source>
-        <translation>Параметры утилиты pyuic / pyside-uic</translation>
+        <translation>Параметры pyuic / pyside-uic</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="175"/>
@@ -45066,22 +45074,22 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="85"/>
         <source>Tools Directory:</source>
-        <translation type="unfinished"></translation>
+        <translation>Директория инструментов:</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="92"/>
         <source>Enter the path of the Qt tools directory, if they are not found.</source>
-        <translation type="unfinished"></translation>
+        <translation>Задайте путь к директории инструментов Qt, если они не найдены.</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.ui" line="99"/>
         <source>Press to select the Qt tools directory via a directory selection dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбор директории инструментов QT посредством диалога выбора директории</translation>
     </message>
     <message>
         <location filename="../Preferences/ConfigurationPages/QtPage.py" line="70"/>
         <source>Select Qt Tools Directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбор директории инструментов Qt</translation>
     </message>
 </context>
 <context>
@@ -45337,7 +45345,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/QueuesExtension/ProjectHelper.py" line="117"/>
         <source>&lt;b&gt;Show Current Patch&lt;/b&gt;&lt;p&gt;This shows the contents of the current patch including any changes which have been made in the working directory since the last refresh.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Показать текущий патч&lt;/b&gt;&lt;p&gt;Отображение контента текущего патча, включая изменения в рабочей директории после последнего обновления.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;Показать текущий патч&lt;/b&gt;&lt;p&gt;Отображение контента текущего патча, включая изменения в рабочей директории после последнего освежения.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/QueuesExtension/ProjectHelper.py" line="126"/>
@@ -45877,7 +45885,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/QueuesExtension/ProjectHelper.py" line="835"/>
         <source>The project should be reread. Do this now?</source>
-        <translation>Необходимо перезагрузить проект. Перезагрузить сейчас?</translation>
+        <translation>Проект должен быть перепрочитан. Сделать это сейчас?</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/QueuesExtension/ProjectHelper.py" line="835"/>
@@ -46033,7 +46041,7 @@ expression; &apos;(?&amp;lt;![abc])q&apos; will match a &apos;q&apos; only if no
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/RebaseExtension/ProjectHelper.py" line="141"/>
         <source>The project should be reread. Do this now?</source>
-        <translation>Необходимо перезагрузить проект. Перезагрузить сейчас?</translation>
+        <translation>Проект должен быть перепрочитан. Сделать это сейчас?</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/RebaseExtension/ProjectHelper.py" line="126"/>
@@ -46887,7 +46895,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ShelveExtension/ProjectBrowserHelper.py" line="96"/>
         <source>The project should be reread. Do this now?</source>
-        <translation>Необходимо перезагрузить проект. Перезагрузить сейчас?</translation>
+        <translation>Проект должен быть перепрочитан. Сделать это сейчас?</translation>
     </message>
 </context>
 <context>
@@ -47025,7 +47033,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ShelveExtension/ProjectHelper.py" line="175"/>
         <source>The project should be reread. Do this now?</source>
-        <translation>Необходимо перезагрузить проект. Перезагрузить сейчас?</translation>
+        <translation>Проект должен быть перепрочитан. Сделать это сейчас?</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/ShelveExtension/ProjectHelper.py" line="204"/>
@@ -48293,7 +48301,7 @@ Function: {3}({4})</source>
     <message>
         <location filename="../SqlBrowser/SqlConnectionWidget.py" line="50"/>
         <source>Refresh</source>
-        <translation>Обновить</translation>
+        <translation>Освежить</translation>
     </message>
     <message>
         <location filename="../SqlBrowser/SqlConnectionWidget.py" line="51"/>
@@ -50218,12 +50226,12 @@ directory selection dialog.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnDiffDialog.py" line="48"/>
         <source>Refresh</source>
-        <translation>Обновить</translation>
+        <translation>Освежить</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnDiffDialog.py" line="50"/>
         <source>Press to refresh the display</source>
-        <translation>Обновить экран</translation>
+        <translation>Освежить экран</translation>
     </message>
 </context>
 <context>
@@ -50281,12 +50289,12 @@ directory selection dialog.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/SvnInfoDialog.py" line="114"/>
         <source>none</source>
-        <translation>нет</translation>
+        <translation>none</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/SvnInfoDialog.py" line="116"/>
         <source>unknown</source>
-        <translation>неизвестный</translation>
+        <translation>unknown</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/SvnInfoDialog.py" line="117"/>
@@ -50296,27 +50304,27 @@ directory selection dialog.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/SvnInfoDialog.py" line="122"/>
         <source>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Lock Owner:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</source>
-        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Владелец замка:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Блокировка владельца:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/SvnInfoDialog.py" line="125"/>
         <source>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Lock Creation Date:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</source>
-        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дата захвата:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Блокировка даты создания:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/SvnInfoDialog.py" line="130"/>
         <source>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Lock Expiration Date:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</source>
-        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Дата окончания захвата:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Блокировка даты окончания:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/SvnInfoDialog.py" line="134"/>
         <source>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Lock Token:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</source>
-        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Токен замка:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Блокировка токена:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/SvnInfoDialog.py" line="137"/>
         <source>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Lock Comment:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</source>
-        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Комментарий:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Блокировка комментария:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/SvnInfoDialog.py" line="144"/>
@@ -51881,12 +51889,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsPySvn/SvnPropListDialog.py" line="152"/>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>None</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnPropListDialog.py" line="45"/>
         <source>Refresh</source>
-        <translation>Обновить</translation>
+        <translation>Освежить</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnPropListDialog.py" line="47"/>
@@ -52343,12 +52351,12 @@ the repository and be placed in this directory.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnStatusDialog.py" line="59"/>
         <source>Refresh</source>
-        <translation>Обновить</translation>
+        <translation>Освежить</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnStatusDialog.py" line="61"/>
         <source>Press to refresh the status display</source>
-        <translation>Обновить отображение статуса</translation>
+        <translation>Освежить отображение статуса</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsSubversion/SvnStatusDialog.py" line="84"/>
@@ -53374,7 +53382,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
         <location filename="../UI/SymbolsWidget.py" line="141"/>
         <source>Block Elements</source>
         <translation>
-Блок элементы</translation>
+Блок элементов</translation>
     </message>
     <message>
         <location filename="../UI/SymbolsWidget.py" line="144"/>
@@ -54212,7 +54220,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Sync/SyncCheckPage.ui" line="17"/>
         <source>This page shows the status of the current synchronization process.</source>
-        <translation>Эта страница показывает текущее состояние процесса синхронизащии.</translation>
+        <translation>Эта страница отображает текущее состояние процесса синхронизащии.</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Sync/SyncCheckPage.ui" line="23"/>
@@ -54765,7 +54773,7 @@ In order to switch to the trunk version leave it empty.&lt;/p&gt;</source>
     <message>
         <location filename="../Helpviewer/Sync/SyncHostTypePage.ui" line="52"/>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>None</translation>
     </message>
     <message>
         <location filename="../Helpviewer/Sync/SyncHostTypePage.ui" line="39"/>
@@ -57081,7 +57089,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/TransplantExtension/TransplantDialog.ui" line="112"/>
         <source>Enter changesets by number, id, range or revset expression one per line</source>
-        <translation>Задайте именения с помощью номера, id, диапазона или revset-выражения (по одному в строке)</translation>
+        <translation>Задайте набор именений с помощью номера, id, выражения для диапазона или набора ревизий (по одному в строке)</translation>
     </message>
 </context>
 <context>
@@ -57114,7 +57122,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/TransplantExtension/ProjectHelper.py" line="135"/>
         <source>The project should be reread. Do this now?</source>
-        <translation>Необходимо перезагрузить проект. Перезагрузить сейчас?</translation>
+        <translation>Проект должен быть перепрочитан. Сделать это сейчас?</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/TransplantExtension/ProjectHelper.py" line="135"/>
@@ -57715,7 +57723,7 @@ be changed via the preferences dialog.&lt;/p&gt;
     <message>
         <location filename="../Graphics/UMLDialog.py" line="280"/>
         <source>Eric Graphics File (*.e5g);;All Files (*)</source>
-        <translation>Eric Graphics File (*.e5g);;Все файлы (*)</translation>
+        <translation>Файлы Eric Graphics (*.e5g);;Все файлы (*)</translation>
     </message>
 </context>
 <context>
@@ -58043,12 +58051,12 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../PyUnit/UnittestDialog.py" line="201"/>
         <source>Python3 Files ({1});;Python2 Files ({0});;All Files (*)</source>
-        <translation>Python3 файлы ({1});;Python2 файлы ({0});;Все файлы (*)</translation>
+        <translation>Файлы Python3 ({1});;Python2 файлы ({0});;Все файлы (*)</translation>
     </message>
     <message>
         <location filename="../PyUnit/UnittestDialog.py" line="205"/>
         <source>Python Files (*.py);;All Files (*)</source>
-        <translation>Python файлы (*.py);;Все файлы (*)</translation>
+        <translation>Файлы Python (*.py);;Все файлы (*)</translation>
     </message>
     <message>
         <location filename="../PyUnit/UnittestDialog.py" line="264"/>
@@ -60459,7 +60467,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Debugger/Config.py" line="18"/>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>None</translation>
     </message>
     <message>
         <location filename="../Debugger/Config.py" line="19"/>
@@ -61270,7 +61278,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../VCS/ProjectHelper.py" line="532"/>
         <source>The project should be reread. Do this now?</source>
-        <translation>Необходимо перезагрузить проект. Перезагрузить сейчас?</translation>
+        <translation>Проект должен быть перепрочитан. Сделать это сейчас?</translation>
     </message>
     <message>
         <location filename="../VCS/ProjectHelper.py" line="462"/>
@@ -64818,7 +64826,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Helpviewer/VirusTotal/VirusTotalDomainReportDialog.ui" line="170"/>
         <source>Resolved Date</source>
-        <translation>Resolved Date</translation>
+        <translation>Разрешенная дата</translation>
     </message>
     <message>
         <location filename="../Helpviewer/VirusTotal/VirusTotalDomainReportDialog.ui" line="187"/>
@@ -64887,7 +64895,7 @@ Double clicking on an entry will show the respective traceback.&lt;/p&gt;</sourc
     <message>
         <location filename="../Helpviewer/VirusTotal/VirusTotalIpReportDialog.ui" line="107"/>
         <source>Resolved Date</source>
-        <translation>Resolved Date</translation>
+        <translation>Разрешенная дата</translation>
     </message>
     <message>
         <location filename="../Helpviewer/VirusTotal/VirusTotalIpReportDialog.ui" line="124"/>
@@ -65338,7 +65346,7 @@ added to the size of the fonts used in the editor windows.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/hg.py" line="2156"/>
         <source>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Changeset&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</source>
-        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Изменения&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Набор изменений&lt;/b&gt;&lt;/td&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/hg.py" line="2176"/>
@@ -65389,7 +65397,7 @@ added to the size of the fonts used in the editor windows.&lt;/p&gt;</source>
         <location filename="../Plugins/VcsPlugins/vcsMercurial/hg.py" line="2148"/>
         <source>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Parent #{0}&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
 </source>
-        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Предки #{0}&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td&gt;&lt;b&gt;Предок #{0}&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
 </context>
 <context>
@@ -65487,7 +65495,7 @@ added to the size of the fonts used in the editor windows.&lt;/p&gt;</source>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="138"/>
         <source>no newline at end of file</source>
-        <translation>отсутствует перевод строки в конце файла</translation>
+        <translation>отсутствует символ новой строки в конце файла</translation>
     </message>
     <message>
         <location filename="../Plugins/CheckerPlugins/CodeStyleChecker/translations.py" line="141"/>
