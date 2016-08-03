@@ -414,7 +414,7 @@ class PluginSimpleUI(QObject):
 
         # fill the workspace with a right Value
         multiProjectDefaults={}
-        multiProjectDefaults["Workspace"] = QDir.tempPath() 
+        multiProjectDefaults["Workspace"] = QDir.homePath()
 
         for name, value in uiDefaults.iteritems():
             Preferences.setUI(name, value)
