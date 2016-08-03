@@ -313,6 +313,13 @@ class Socket_connection:
     def __expose_stream_methods(self):
         self.write = self.stream.send
 
+    def close(self):
+        self.stream.shutdown(Socket_connection.socket.SHUT_RDWR)
+        self.stream.close()
+
+    def keep_alive(self):
+        pass
+
     def authenticate(self, user, password):
         # needs no authentication
         return True
@@ -330,20 +337,25 @@ class Pyboard:
         self.__device = None
         self._connect(device, baudrate, user, password, connection_timeout, keep_alive, False)
 
-    def close(self):
+
+    def close_dont_notify(self):
         if self.connected == False:
             return
         try:
             self.keep_alive_interval.stop()
             self.connected = False
             self.connection.close()
-            try:
-                self.__disconnected_callback()
-            except:
-                pass
         except:
             # the connection might not exist, so ignore this one
             pass
+
+    def close(self):
+        self.close_dont_notify()
+        try:
+            self.__disconnected_callback()
+        except:
+            pass
+
 
     def get_connection_type(self):
         return self.__connectionType
@@ -366,14 +378,15 @@ class Pyboard:
             self.__baudrate = baudrate
             self.__username = user
             self.__password = password
+            self.__connection_timeout = connection_timeout
 
         if Serial_connection.is_serial_port(self.__device) == True:
             self.__connectionType = 'serial'
-            self.connection = Serial_connection(self.__device, baudrate=self.__baudrate, connection_timeout=connection_timeout)
+            self.connection = Serial_connection(self.__device, baudrate=self.__baudrate, connection_timeout=self.__connection_timeout)
         else:
             if raw == False:
                 self.__connectionType = 'telnet'
-                self.connection = Telnet_connection(self.__device, connection_timeout=connection_timeout)
+                self.connection = Telnet_connection(self.__device, connection_timeout=self.__connection_timeout)
             else:
                 self.__connectionType = 'socket'
                 self.connection = Socket_connection(self.__device)

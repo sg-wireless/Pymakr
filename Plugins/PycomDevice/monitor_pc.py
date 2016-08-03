@@ -1,51 +1,28 @@
 import time
 import struct
 import os
-import struct
-import binascii
 import json
-import serial
 
-class Sync():
-    def __init__(self, local, remote):
-        self.local = frozenset(local)
-        self.remote = frozenset(remote)
-
-    def to_update(self):
-        return list(self.local & self.remote)
-
-    def to_create(self):
-        return list(self.local - self.remote)
-
-    def to_delete(self):
-        return list(self.remote - self.local)
-
-    def filter_by_type(self, l, by):
-        return [i[0].encode('utf-8') for i in l if i[1] == by] # encode is done here because somehow the & operator over two frozensets convert bytes to unicode without being asked
-
-    def filter_by_type_order_by_depth(self, l, by, orderby, reverse=False):
-        # yeah... I know...
-        # encode is done here because somehow the & operator over two frozensets convert bytes to unicode without being asked
-        return [j[0] for j in sorted([(i[0].encode('utf-8'), i[2]) for i in l if i[1] == by], key=lambda tup: tup[1], reverse=reverse)]
-
-
-class Monitor_PC():
+class MonitorPC(object):
     def __init__(self, pyb):
-        f = open(os.path.dirname(os.path.realpath(__file__)) + '/monitor.py', 'rb')
-        monitor_code = f.read()
-        f.close()
+        """
+        Load the code that is going to be control the Pycom Board, execute it, and
+        setup the communication channel with it.
+        """
+
+        monitor_file = open(os.path.dirname(os.path.realpath(__file__)) + '/monitor.py', 'rb')
+        monitor_code = monitor_file.read()
+        monitor_file.close()
 
         self.pyb = pyb
         monitor_code = self.__get_script_parameters(pyb.get_connection_type()) + monitor_code
         self.pyb.enter_raw_repl_no_reset()
         self.pyb.exec_raw_no_follow(monitor_code)
-        time.sleep(0.5)
+        time.sleep(0.5) # give the Pycom board a little setup time
         self.__setup_channel()
 
-    def destroy(self):
-        self.exit_monitor()
-
     def __get_script_parameters(self, connection_type):
+        # variables that are going to be appended to the monitor code
         if connection_type == 'serial':
             return "connection_type = 'u'\n"
         else:
@@ -53,21 +30,31 @@ class Monitor_PC():
             return "connection_type = 's'\ntelnet_login = ('{}', '{}')\n".format(info[0], info[1])
 
     def __setup_channel(self):
+        """
+        Prepare to work with the monitor mode. In case of WiFi, switch to RAW sockets
+        """
         connection_type = self.pyb.get_connection_type()
 
         if connection_type == 'serial':
             self.connection = self.pyb.connection
             self.connection.stream.reset_input_buffer()
         else:
-            self.pyb._connect(device="", raw=True) # device was stored in the previous call to _connect
+            # device was stored in the previous call to _connect
+            self.pyb.close_dont_notify()
+            self.pyb._connect(device="", raw=True)
             self.connection = self.pyb.connection
 
     def __restore_channel(self):
+        """
+        Switch back to or previous connection style
+        """
         try:
             time.sleep(0.25)
             if self.pyb.get_connection_type() != 'serial':
-                time.sleep(0.1)
-                self.pyb._connect(device="", raw=False) # device was stored in the previous call to _connect
+                self.pyb.close_dont_notify()
+                time.sleep(0.25)
+                # device was stored in the previous call to _connect
+                self.pyb._connect(device="", raw=False)
             self.pyb.exit_raw_repl()
             self.pyb.flush()
         except:
@@ -77,10 +64,11 @@ class Monitor_PC():
     def get_string_block(string, block, block_size):
         return string[block * block_size: (block + 1) * block_size]
 
-    def __read_exactly(self, n):
-        return self.connection.read(n)
+    def __read_exactly(self, length):
+        return self.connection.read(length)
 
     def __send(self, data):
+        # escape ESC characters
         self.connection.write(data.replace(b'\x1b', b'\x1b\x1b'))
 
     def __send_command(self, cmd):
@@ -96,6 +84,9 @@ class Monitor_PC():
         self.connection.write(struct.pack('>L', i))
 
     def exit_monitor(self):
+        """
+        Tell the Monitor code that is running at the Pycom Board to exit
+        """
         self.__send_command(b'\x00\xff')
         self.__restore_channel()
 
@@ -109,23 +100,24 @@ class Monitor_PC():
         time.sleep(1)
         self.__restore_channel()
 
-    def write_file_contents(self, name, content):
+    def write_file(self, name, content):
+        """
+        Write a file in the Pycom Board
+
+        Send the write command, the len of the filename, the filename
+        len of the contents and finally the contents.
+
+        Contents are sent in 256 bytes long chunks. A request for acknowledge
+        is sent between those chunks
+        """
         data_len = len(content)
         self.__send_command(b'\x01\x00')
         self.__send_int_16(len(name))
         self.__send(name)
         self.__send_int_32(len(content))
         for i in range(1 + data_len // 256):
-            self.__send(Monitor_PC.get_string_block(content, i, 256))
+            self.__send(MonitorPC.get_string_block(content, i, 256))
             self.request_ack()
-
-    def write_file(self, local_name, remote_name=None):
-        with open(local_name, 'r') as content_file:
-            content = content_file.read()
-
-        if remote_name == None:
-            remote_name = b'/flash/' + local_name
-        self.write_file_contents(remote_name, content)
 
     def read_file(self, name):
         self.__send_command(b'\x01\x01')
@@ -154,36 +146,3 @@ class Monitor_PC():
         self.__send_command(b'\x01\x05')
         self.__send_int_16(len(name))
         self.__send(name)
-
-    def sync(self, local, remote):
-        s = Sync(local, remote)
-
-        # delete unused files
-        map(self.remove_file, s.filter_by_type(s.to_delete(), b'f'))
-
-        # then delete unused directories
-        map(self.remove_dir, s.filter_by_type_order_by_depth(s.to_delete(), b'd', True))
-
-        # now create new directories
-        map(self.create_dir, s.filter_by_type_order_by_depth(s.to_create(), b'd', False))
-
-        # upload the new files
-        map(self.write_file, s.filter_by_type(s.to_create(), b'f'))
-
-        # and update the ones that changed
-        map(self.write_file, s.filter_by_type(s.to_update(), b'f'))
-
-
-    def sync_pyboard(self, local):
-        remote = self.read_file("/flash/project.pymakr")
-        if remote == None:
-            remote = []
-        else:
-            remote = json.loads(remote)
-
-        for i in range(len(remote)):
-            remote[i] = tuple(remote[i])
-
-        self.sync(local, remote)
-
-        self.write_file_contents("/flash/project.pymakr", json.dumps(local))

@@ -1,57 +1,59 @@
-import sys
+"""
+Implement a simple binary protocol for Monitor mode
+
+Normally, a stream of bytes will flow, except for 0x1b, that is used
+to indicate the start of a RPC. Real (esc) chars need to be escaped.
+"""
+
 import struct
 import os
 import select
 import hashlib
 
-# This file implements a simple binary protocol for Monitor mode
 
-# Normally, a stream of bytes will flow normally, except for 0x1b, that is used to indicate the start of a RPC
-# real (esc) chars need to be escaped.
-
-class SerialPortConnection():
+class SerialPortConnection(object):
     def __init__(self):
         import machine
-        self.__original_term = os.dupterm()
+        self.original_term = os.dupterm()
         os.dupterm(None) # disconnect the current serial port connection
-        self.__serial = machine.UART(0, 115200)
-        self.__poll = select.poll()
-        self.__poll.register(self.__serial, select.POLLIN)
-        self.write = self.__serial.write
+        self.serial = machine.UART(0, 115200)
+        self.poll = select.poll()
+        self.poll.register(self.serial, select.POLLIN)
+        self.write = self.serial.write
 
     def destroy(self):
-        os.dupterm(self.__original_term)
+        os.dupterm(self.original_term)
 
-    def read(self, l):
-        self.__poll.poll()
-        return self.__serial.read(l)
+    def read(self, length):
+        self.poll.poll()
+        return self.serial.read(length)
 
-class SocketConnection():
+class SocketConnection(object):
     def __init__(self):
         from network import Server
         import socket
         server = Server()
-        self.__is_telnet_running = server.isrunning()
+        self.is_telnet_running = server.isrunning()
         server.deinit()
-        self.__poll = select.poll()
+        self.poll = select.poll()
         listening = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        listening.bind(('0.0.0.0', 23))
+        listening.bind(('', 23))
         listening.listen(1)
-        self.__socket = listening.accept()[0]
+        self.socket = listening.accept()[0]
         listening.close()
-        self.__poll.register(self.__socket, select.POLLIN)
-        self.__socket.setblocking(False)
-        self.write = self.__socket.write
+        self.poll.register(self.socket, select.POLLIN)
+        self.socket.setblocking(False)
+        self.write = self.socket.write
 
     def destroy(self):
-        self.__socket.close()
-        if self.__is_telnet_running == True:
+        self.socket.close()
+        if self.is_telnet_running is True:
             from network import Server
-            Server().init(login=telnet_login)
+            Server().init(login=telnet_login) # telnet_login is appended to the code at upload time
 
-    def read(self, l):
-        self.__poll.poll()
-        return self.__socket.read(l)
+    def read(self, length):
+        self.poll.poll()
+        return self.socket.read(length)
 
 class TransferError(Exception):
     def __init__(self, value, str_val):
@@ -61,17 +63,17 @@ class TransferError(Exception):
     def __str__(self):
         return self.str_val
 
-class InbandCommunication():
+class InbandCommunication(object):
     def __init__(self, stream, callback):
-        self.__stream = stream
-        self.__carry_over = b''
-        self.__callback = callback
+        self.stream = stream
+        self.carry_over = b''
+        self.callback = callback
 
     def read(self, size):
-        data = self.__stream.read(size)
-        if self.__carry_over != b'': # check if a previous call generated a surplus
-            data = self.__carry_over + data
-            self.__carry_over = b''
+        data = self.stream.read(size)
+        if self.carry_over != b'': # check if a previous call generated a surplus
+            data = self.carry_over + data
+            self.carry_over = b''
         max_idx = len(data) - 1
         esc_pos = data.find(b'\x1b') # see if there is any ESC in the bytestream
         while esc_pos != -1:
@@ -86,24 +88,24 @@ class InbandCommunication():
                     if max_idx - esc_pos < 2:
                         # no enough bytes to continue
                         # save the ones that belong to the command
-                        self.__carry_over = data[esc_pos:max_idx + 1]
+                        self.carry_over = data[esc_pos:max_idx + 1]
                         data = data[0:esc_pos]
                     else:
                         # get the command name
                         command = data[esc_pos + 1:esc_pos + 3]
                         # and store the rest for the next round
-                        self.__carry_over = data[esc_pos + 3:max_idx + 1]
-                        cont = self.__callback(command)
-                        if cont == True:
+                        self.carry_over = data[esc_pos + 3:max_idx + 1]
+                        cont = self.callback(command)
+                        if cont is True:
                             data = data[0:esc_pos]
                         else:
-                            raise(TransferError(0, 'aborted'))
+                            raise TransferError(0, 'aborted')
                     break
 
                 esc_pos = data.find(b'\x1b', esc_pos)
             else:
                 data = data[:-1]
-                self.__carry_over = b'\x1b' # buffer the lonely ESC for the future
+                self.carry_over = b'\x1b' # buffer the lonely ESC for the future
                 break
         return data
 
@@ -118,20 +120,20 @@ class InbandCommunication():
                 continue
 
             # if in here, len(data) > size, store the surplus bytes
-            self.__carry_over = data[size:] + self.__carry_over
+            self.carry_over = data[size:] + self.carry_over
             return data[:size]
 
     def send(self, data):
-        self.__stream.write(data)
+        self.stream.write(data)
 
-class Monitor():
+class Monitor(object):
     def __init__(self):
-        if connection_type == 'u':
-            self.__connection = SerialPortConnection()
+        if connection_type == 'u': # connection type is appended to the code at upload time
+            self.connection = SerialPortConnection()
         else:
-            self.__connection = SocketConnection()
-        self.__stream = InbandCommunication(self.__connection, self.process_command)
-        self.__commands = {
+            self.connection = SocketConnection()
+        self.stream = InbandCommunication(self.connection, self.process_command)
+        self.commands = {
             b"\x00\x00": self.ack,
             b"\x00\xFE": self.reset_board,
             b"\x00\xFF": self.exit_monitor,
@@ -144,19 +146,19 @@ class Monitor():
         }
 
     def process_command(self, cmd):
-        return self.__commands[cmd]()
+        return self.commands[cmd]()
 
     def read_int16(self):
-        return struct.unpack('>H', self.__stream.read_exactly(2))[0]
+        return struct.unpack('>H', self.stream.read_exactly(2))[0]
 
     def read_int32(self):
-        return struct.unpack('>L', self.__stream.read_exactly(4))[0]
+        return struct.unpack('>L', self.stream.read_exactly(4))[0]
 
-    def write_int16(self, x):
-        self.__stream.send(struct.pack('>H', x))
+    def write_int16(self, value):
+        self.stream.send(struct.pack('>H', value))
 
-    def write_int32(self, x):
-        self.__stream.send(struct.pack('>L', x))
+    def write_int32(self, value):
+        self.stream.send(struct.pack('>L', value))
 
     def init_hash(self, length):
         self.last_hash = hashlib.sha256(b'', length)
@@ -169,7 +171,7 @@ class Monitor():
             return (length, 0)
 
     def ack(self):
-        self.__stream.send(b'\x1b\x00\x00')
+        self.stream.send(b'\x1b\x00\x00')
         return True
 
     def reset_board(self):
@@ -177,8 +179,8 @@ class Monitor():
         machine.reset()
 
     def exit_monitor(self):
-        self.__running = False
-        self.__connection.destroy()
+        self.running = False
+        self.connection.destroy()
 
     @staticmethod
     def encode_str_len32(contents):
@@ -189,18 +191,18 @@ class Monitor():
         return struct.pack('>H', len(string))
 
     def write_to_file(self):
-        f = open(self.__stream.read_exactly(self.read_int16()), "w")
+        dest = open(self.stream.read_exactly(self.read_int16()), "w")
         data_len = self.read_int32()
         self.init_hash(data_len)
         while data_len != 0:
-            data = self.__stream.read(min(data_len, 256))
-            f.write(data)
+            data = self.stream.read(min(data_len, 256))
+            dest.write(data)
             self.last_hash.update(data)
             data_len -= len(data)
-        f.close()
+        dest.close()
 
     def read_from_file(self):
-        filename = self.__stream.read_exactly(self.read_int16())
+        filename = self.stream.read_exactly(self.read_int16())
         try:
             data_len = os.stat(filename)[6]
         except OSError:
@@ -208,42 +210,42 @@ class Monitor():
             return
         self.write_int32(data_len)
         self.init_hash(data_len)
-        f = open(filename, 'r')
+        source = open(filename, 'r')
         while data_len != 0:
             to_read, data_len = Monitor.block_split_helper(data_len)
-            data = f.read(to_read)
-            self.__stream.send(data)
+            data = source.read(to_read)
+            self.stream.send(data)
             self.last_hash.update(data)
-        f.close()
+        source.close()
 
     def remove_file(self):
         try:
-            os.remove(self.__stream.read_exactly(self.read_int16()))
+            os.remove(self.stream.read_exactly(self.read_int16()))
         except OSError:
             pass
 
     def hash_last_file(self):
-        h = self.last_hash.digest()
-        self.write_int16(len(h))
-        self.__stream.send(h)
+        digest = self.last_hash.digest()
+        self.write_int16(len(digest))
+        self.stream.send(digest)
 
     def create_dir(self):
         try:
-            os.mkdir(self.__stream.read_exactly(self.read_int16()))
+            os.mkdir(self.stream.read_exactly(self.read_int16()))
         except OSError:
             pass
 
     def remove_dir(self):
         try:
-            os.rmdir(self.__stream.read_exactly(self.read_int16()))
+            os.rmdir(self.stream.read_exactly(self.read_int16()))
         except OSError:
             pass
 
     def start_listening(self):
-        self.__running = True
-        while self.__running == True:
+        self.running = True
+        while self.running is True:
             try:
-                self.__stream.read(1)
+                self.stream.read(1)
             except TransferError:
                 pass
 

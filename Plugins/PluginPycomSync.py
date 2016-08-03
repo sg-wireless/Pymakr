@@ -9,12 +9,12 @@ from E5Gui.E5Action import E5Action
 import Preferences
 from REPL.Shell import ShellAssembly
 from PluginPycomDevice import PycomDeviceServer
-from PycomSync.monitor_pc import Monitor_PC
+from PycomSync.sync import Sync
 
 # Start-Of-Header
 name = "Pycom Sync"
 author = "Pycom"
-autoactivate = True
+autoactivate = False
 deactivateable = False
 version = "1.0.0"
 className = "PluginPycomSync"
@@ -154,9 +154,9 @@ class PluginPycomSync(QObject):
         pwd = os.getcwd()
         os.chdir(self.__getProjectPath())
         localFiles = self.__getProjectFiles()
-        monitor = Monitor_PC(self.__deviceServer.channel)
-        monitor.sync_pyboard(localFiles)
-        monitor.destroy()
+        sync = Sync(localFiles, self.__deviceServer.channel)
+        sync.sync_pyboard()
+        sync.finish_sync()
         os.chdir(pwd)
         self.__deviceServer.emitStatusChange("uploadend")
         self.__deviceServer = None
