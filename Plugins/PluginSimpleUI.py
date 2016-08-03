@@ -119,6 +119,10 @@ class PluginSimpleUI(QObject):
         self.__setupSidebars()
         self.__disableExtraPlugins()
 
+        # next couple of lines are needed to make the main window appear on foreground in macOS
+        self.__ui.show()
+        self.__ui.raise_()
+
         # I must run only once
         self.__ui.showEvent = self.__oldShowEvent
 
