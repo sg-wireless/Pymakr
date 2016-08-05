@@ -195,7 +195,7 @@ class DebuggerInterfacePython3(QObject):
                 rhost = "localhost"
             if rexec:
                 args = Utilities.parseOptionString(rexec) + \
-                    [rhost, interpreter, os.path.abspath(debugClient),
+                    [rhost, interpreter, debugClient,
                         noencoding, str(port), redirect, ipaddr]
                 args[0] = Utilities.getExecutablePath(args[0])
                 process = self.__startProcess(args[0], args[1:])

@@ -96,6 +96,7 @@ class CookiesExceptionsDialog(QDialog, Ui_CookiesExceptionsDialog):
         """
         from .CookieJar import CookieJar
         self.__exceptionsModel.addRule(self.domainEdit.text(), CookieJar.Block)
+        self.domainEdit.clear()
     
     @pyqtSlot()
     def on_allowForSessionButton_clicked(self):
@@ -105,6 +106,7 @@ class CookiesExceptionsDialog(QDialog, Ui_CookiesExceptionsDialog):
         from .CookieJar import CookieJar
         self.__exceptionsModel.addRule(self.domainEdit.text(),
                                        CookieJar.AllowForSession)
+        self.domainEdit.clear()
     
     @pyqtSlot()
     def on_allowButton_clicked(self):
@@ -113,3 +115,4 @@ class CookiesExceptionsDialog(QDialog, Ui_CookiesExceptionsDialog):
         """
         from .CookieJar import CookieJar
         self.__exceptionsModel.addRule(self.domainEdit.text(), CookieJar.Allow)
+        self.domainEdit.clear()

@@ -277,27 +277,14 @@ class ConfigurationWidget(QWidget):
                 "0helpPage":
                 [self.tr("Help"), "preferences-help.png",
                  None, None, None],
-                "helpAppearancePage":
-                [self.tr("Appearance"), "preferences-styles.png",
-                 "HelpAppearancePage", "0helpPage", None],
                 "helpDocumentationPage":
                 [self.tr("Help Documentation"),
                  "preferences-helpdocumentation.png",
                  "HelpDocumentationPage", "0helpPage", None],
-                "helpFlashCookieManagerPage":
-                [self.tr("Flash Cookie Manager"),
-                 "flashCookie16.png",
-                 "HelpFlashCookieManagerPage", "0helpPage", None],
                 "helpViewersPage":
                 [self.tr("Help Viewers"),
                  "preferences-helpviewers.png",
                  "HelpViewersPage", "0helpPage", None],
-                "helpVirusTotalPage":
-                [self.tr("VirusTotal Interface"), "virustotal.png",
-                 "HelpVirusTotalPage", "0helpPage", None],
-                "helpWebBrowserPage":
-                [self.tr("eric6 Web Browser"), "ericWeb.png",
-                 "HelpWebBrowserPage", "0helpPage", None],
                 
                 "0projectPage":
                 [self.tr("Project"), "preferences-project.png",
@@ -323,6 +310,25 @@ class ConfigurationWidget(QWidget):
                 [self.tr("Viewmanager"), "preferences-viewmanager.png",
                  "ViewmanagerPage", "0interfacePage", None],
             }
+            try:
+                from PyQt5 import QtWebKit      # __IGNORE_WARNING__
+                self.configItems.update({
+                    "helpAppearancePage":
+                    [self.tr("Appearance"), "preferences-styles.png",
+                     "HelpAppearancePage", "0helpPage", None],
+                    "helpFlashCookieManagerPage":
+                    [self.tr("Flash Cookie Manager"),
+                     "flashCookie16.png",
+                     "HelpFlashCookieManagerPage", "0helpPage", None],
+                    "helpVirusTotalPage":
+                    [self.tr("VirusTotal Interface"), "virustotal.png",
+                     "HelpVirusTotalPage", "0helpPage", None],
+                    "helpWebBrowserPage":
+                    [self.tr("eric6 Web Browser"), "ericWeb.png",
+                     "HelpWebBrowserPage", "0helpPage", None],
+                })
+            except ImportError:
+                pass
             
             self.configItems.update(
                 e5App().getObject("PluginManager").getPluginConfigData())
@@ -351,24 +357,30 @@ class ConfigurationWidget(QWidget):
                 "0helpPage":
                 [self.tr("Help"), "preferences-help.png",
                  None, None, None],
-                "helpAppearancePage":
-                [self.tr("Appearance"), "preferences-styles.png",
-                 "HelpAppearancePage", "0helpPage", None],
                 "helpDocumentationPage":
                 [self.tr("Help Documentation"),
                  "preferences-helpdocumentation.png",
                  "HelpDocumentationPage", "0helpPage", None],
-                "helpFlashCookieManagerPage":
-                [self.tr("Flash Cookie Manager"),
-                 "flashCookie16.png",
-                 "HelpFlashCookieManagerPage", "0helpPage", None],
-                "helpVirusTotalPage":
-                [self.tr("VirusTotal Interface"), "virustotal.png",
-                 "HelpVirusTotalPage", "0helpPage", None],
-                "helpWebBrowserPage":
-                [self.tr("eric6 Web Browser"), "ericWeb.png",
-                 "HelpWebBrowserPage", "0helpPage", None],
             }
+            try:
+                from PyQt5 import QtWebKit      # __IGNORE_WARNING__
+                self.configItems.update({
+                    "helpAppearancePage":
+                    [self.tr("Appearance"), "preferences-styles.png",
+                     "HelpAppearancePage", "0helpPage", None],
+                    "helpFlashCookieManagerPage":
+                    [self.tr("Flash Cookie Manager"),
+                     "flashCookie16.png",
+                     "HelpFlashCookieManagerPage", "0helpPage", None],
+                    "helpVirusTotalPage":
+                    [self.tr("VirusTotal Interface"), "virustotal.png",
+                     "HelpVirusTotalPage", "0helpPage", None],
+                    "helpWebBrowserPage":
+                    [self.tr("eric6 Web Browser"), "ericWeb.png",
+                     "HelpWebBrowserPage", "0helpPage", None],
+                })
+            except ImportError:
+                pass
         
         elif displayMode == ConfigurationWidget.TrayStarterMode:
             self.configItems = {

@@ -48,6 +48,15 @@ class HelpViewersPage(ConfigurationPageBase, Ui_HelpViewersPage):
         
         # set initial values
         hvId = Preferences.getHelp("HelpViewerType")
+        # check availability of QtWebKit
+        try:
+            from PyQt5 import QtWebKit      # __IGNORE_WARNING__
+        except ImportError:
+            # not available, reset help viewer to default
+            if hvId == 1:
+                hvId = Preferences.Prefs.helpDefaults["HelpViewerType"]
+            self.helpBrowserButton.setEnabled(False)
+        
         if hvId == 1:
             self.helpBrowserButton.setChecked(True)
         elif hvId == 2:

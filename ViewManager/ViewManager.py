@@ -11,11 +11,11 @@ from __future__ import unicode_literals
 
 import os
 
-from PyQt5.QtCore import pyqtSignal, QSignalMapper, QTimer, \
-    QFileInfo, QRegExp, QObject, Qt, QCoreApplication
+from PyQt5.QtCore import pyqtSignal, pyqtSlot, QSignalMapper, QTimer, \
+    QFileInfo, QRegExp, Qt, QCoreApplication
 from PyQt5.QtGui import QColor, QKeySequence, QPalette, QPixmap
 from PyQt5.QtWidgets import QLineEdit, QToolBar, QWidgetAction, QDialog, \
-    QApplication, QMenu, QComboBox
+    QApplication, QMenu, QComboBox, QWidget
 from PyQt5.Qsci import QsciScintilla
 
 from E5Gui.E5Application import e5App
@@ -85,7 +85,7 @@ class QuickSearchLineEdit(QLineEdit):
         super(QuickSearchLineEdit, self).focusInEvent(evt)   # pass it on
 
 
-class ViewManager(QObject):
+class ViewManager(QWidget):##QObject):
     """
     Base class inherited by all specific viewmanager classes.
     
@@ -441,6 +441,17 @@ class ViewManager(QObject):
         
         @param m flag indicating the modification status (boolean)
         @param editor editor window changed
+        @exception RuntimeError Not implemented
+        """
+        raise RuntimeError('Not implemented')
+    
+    def mainWidget(self):
+        """
+        Public method to return a reference to the main Widget of a
+        specific view manager subclass.
+        
+        @return reference to the main widget
+        @rtype QWidget
         @exception RuntimeError Not implemented
         """
         raise RuntimeError('Not implemented')
@@ -4529,7 +4540,7 @@ class ViewManager(QObject):
         @param filetype type of the source file (string)
         @param fn filename of this view
         @return reference to the new editor object (Editor.Editor) and the new
-            edito assembly object (EditorAssembly.EditorAssembly)
+            editor assembly object (EditorAssembly.EditorAssembly)
         """
         from QScintilla.EditorAssembly import EditorAssembly
         assembly = EditorAssembly(self.dbs, fn, self, filetype=filetype,
@@ -4567,8 +4578,9 @@ class ViewManager(QObject):
         @param fn filename of editor to update (string)
         @param line line number to highlight (int)
         """
-        self.openSourceFile(fn, line)
-        self.setFileLine(fn, line)
+        if not fn.startswith('<'):
+            self.openSourceFile(fn, line)
+            self.setFileLine(fn, line)
         
     def setFileLine(self, fn, line, error=False, syntaxError=False):
         """
@@ -4938,7 +4950,7 @@ class ViewManager(QObject):
         Public slot to generate a new empty editor.
         """
         from QScintilla.EditorAssembly import EditorAssembly
-        assembly = EditorAssembly(self.dbs, None, self,
+        assembly = EditorAssembly(self.dbs, "", self,
                                   tv=e5App().getObject("TaskViewer"))
         editor = assembly.getEditor()
         self.editors.append(editor)
@@ -6562,6 +6574,7 @@ class ViewManager(QObject):
         if editor:
             self.editorRenamedEd.emit(editor)
         
+##    @pyqtSlot(str, int, int)
     def __cursorChanged(self, fn, line, pos):
         """
         Private slot to handle the cursorChanged signal.

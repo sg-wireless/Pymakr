@@ -122,7 +122,7 @@ class AdBlockIcon(E5ClickableLabel):
         @return reference to the menu action (QAction)
         """
         if not self.__menuAction:
-            self.__menuAction = QAction(self.tr("AdBlock"))
+            self.__menuAction = QAction(self.tr("AdBlock"), self)
             self.__menuAction.setMenu(QMenu())
             self.__menuAction.menu().aboutToShow.connect(self.__createMenu)
         
@@ -163,6 +163,9 @@ class AdBlockIcon(E5ClickableLabel):
         @return flag indicating an exception (boolean)
         """
         browser = self.__mw.currentBrowser()
+        if browser is None:
+            return False
+        
         urlHost = browser.page().url().host()
         
         import Helpviewer.HelpWindow

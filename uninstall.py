@@ -21,6 +21,8 @@ import distutils.sysconfig
 if sys.version_info[0] == 2:
     import sip
     sip.setapi('QString', 2)
+else:
+    raw_input = input
 
 # get a local eric6config.py out of the way
 if os.path.exists("eric6config.py"):
@@ -50,11 +52,24 @@ def exit(rcode=0):
     
     @param rcode result code to report back (integer)
     """
+    global currDir
+    
     # restore the local eric6config.py
     if os.path.exists("eric6config.py.orig"):
         if os.path.exists("eric6config.py"):
             os.remove("eric6config.py")
         os.rename("eric6config.py.orig", "eric6config.py")
+    
+    if sys.platform.startswith("win"):
+        # different meaning of input between Py2 and Py3
+        try:
+            input("Press enter to continue...")
+        except (EOFError, SyntaxError):
+            pass
+    
+    os.chdir(currDir)
+    
+    sys.exit(rcode)
 
 
 def usage(rcode=2):
@@ -236,12 +251,8 @@ def removePluginDirectories():
             print("  - {0}".format(path))
         answer = "c"
         while answer not in ["y", "Y", "n", "N", ""]:
-            if sys.version_info[0] == 2:
-                answer = raw_input(
-                    "Shall these directories be removed (y/N)? ")
-            else:
-                answer = input(
-                    "Shall these directories be removed (y/N)? ")
+            answer = raw_input(
+                "Shall these directories be removed (y/N)? ")
         if answer in ["y", "Y"]:
             for path in pathsToRemove:
                 shutil.rmtree(path)
@@ -257,12 +268,8 @@ def removeDataDirectory():
         print("  - {0}".format(cfg))
         answer = "c"
         while answer not in ["y", "Y", "n", "N", ""]:
-            if sys.version_info[0] == 2:
-                answer = raw_input(
-                    "Shall this directory be removed (y/N)? ")
-            else:
-                answer = input(
-                    "Shall this directory be removed (y/N)? ")
+            answer = raw_input(
+                "Shall this directory be removed (y/N)? ")
         if answer in ["y", "Y"]:
             shutil.rmtree(cfg)
 
@@ -289,12 +296,8 @@ def removeConfigurationData():
         print("  - {0}".format(settingsDir))
         answer = "c"
         while answer not in ["y", "Y", "n", "N", ""]:
-            if sys.version_info[0] == 2:
-                answer = raw_input(
-                    "Shall this directory be removed (y/N)? ")
-            else:
-                answer = input(
-                    "Shall this directory be removed (y/N)? ")
+            answer = raw_input(
+                "Shall this directory be removed (y/N)? ")
         if answer in ["y", "Y"]:
             shutil.rmtree(settingsDir)
 
@@ -343,14 +346,10 @@ def main(argv):
         if opt == "-y":
             includePythonVariant = True
     
-    try:
-        uninstallEric()
-    except IOError as msg:
-        sys.stderr.write(
-            'IOError: {0}\nTry uninstall with admin rights.\n'.format(msg))
-    except OSError as msg:
-        sys.stderr.write(
-            'OSError: {0}\nTry uninstall with admin rights.\n'.format(msg))
+    print("\nUninstalling eric6 ...")
+    uninstallEric()
+    print("\nUninstallation complete.")
+    print()
     
     exit(0)
 

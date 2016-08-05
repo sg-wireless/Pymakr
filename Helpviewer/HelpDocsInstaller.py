@@ -76,14 +76,15 @@ class HelpDocsInstaller(QThread):
             "qtconcurrent", "qtcore", "qtdbus", "qtdesigner", "qtdoc",
             "qtenginio", "qtenginiooverview", "qtenginoqml",
             "qtgraphicaleffects", "qtgui", "qthelp", "qtimageformats",
-            "qtlinguist", "qtlocation", "qtmaxextras", "qtmultimedia",
-            "qtmultimediawidgets", "qtnetwork", "qtnfc", "qtopengl",
-            "qtplatformheaders", "qtpositioning", "qtprintsupport", "qtqml",
-            "qtquick", "qtquickcontrols", "qtquickdialogs", "qtquickextras",
-            "qtquicklayouts", "qtscript", "qtscripttools", "qtsensors",
-            "qtserialport", "qtsql", "qtsvg", "qttestlib", "qtuitools",
-            "qtwebchannel", "qtwebengine", "qtwebenginewidgets", "qtwebkit",
-            "qtwebkitexamples", "qtwebsockets", "qtwidgets", "qtwinextras",
+            "qtlabscontrols", "qtlinguist", "qtlocation", "qtmaxextras",
+            "qtmultimedia", "qtmultimediawidgets", "qtnetwork", "qtnfc",
+            "qtopengl", "qtplatformheaders", "qtpositioning", "qtprintsupport",
+            "qtqml", "qtquick", "qtquickcontrols", "qtquickdialogs",
+            "qtquickextras", "qtquicklayouts", "qtscript", "qtscripttools",
+            "qtsensors", "qtserialbus", "qtserialport", "qtsql", "qtsvg",
+            "qttestlib", "qtuitools", "qtwebchannel", "qtwebengine",
+            "qtwebenginewidgets", "qtwebkit", "qtwebkitexamples",
+            "qtwebsockets", "qtwebview", "qtwidgets", "qtwinextras",
             "qtx11extras", "qtxml", "qtxmlpatterns"]
         for qtDocs, version in [(qt4Docs, 4), (qt5Docs, 5)]:
             for doc in qtDocs:
@@ -127,7 +128,8 @@ class HelpDocsInstaller(QThread):
                 QDir.separator() + "qch")
         elif version == 5:
             docsPath = QLibraryInfo.location(QLibraryInfo.DocumentationPath)
-            if not os.path.isdir(docsPath):
+            if not os.path.isdir(docsPath) or \
+                    len(QDir(docsPath).entryList(["*.qch"])) == 0:
                 # Qt installer is a bit buggy; it's missing a symbolic link
                 docsPathList = QDir.fromNativeSeparators(docsPath).split("/")
                 docsPath = os.sep.join(

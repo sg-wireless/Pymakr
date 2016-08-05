@@ -211,6 +211,7 @@ class IrcNetworkWidget(QWidget, Ui_IrcNetworkWidget):
         return network.getChannels()
     
     @pyqtSlot(str)
+    @pyqtSlot()
     def on_nickCombo_currentIndexChanged(self, nick=""):
         """
         Private slot to use another nick name.

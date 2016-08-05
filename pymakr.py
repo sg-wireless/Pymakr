@@ -25,8 +25,8 @@ restartArgs = [arg for arg in sys.argv[1:]
 import Toolbox.PyQt4ImportHook  # __IGNORE_WARNING__
 
 try:  # Only for Py2
-    import StringIO as io   # __IGNORE_EXCEPTION__
     import Globals.compatibility_fixes     # __IGNORE_WARNING__
+    import StringIO as io   # __IGNORE_EXCEPTION__
     import locale
     coverage = 'Python'
 except ImportError:
@@ -61,6 +61,11 @@ except ImportError:
         "PyQt could not be imported. Please make sure"
         " it is installed and accessible.")
     sys.exit(100)
+
+try:
+    from PyQt5 import QtWebEngineWidgets    # __IGNORE_WARNING__
+except ImportError:
+    pass
 
 # some global variables needed to start the application
 args = None

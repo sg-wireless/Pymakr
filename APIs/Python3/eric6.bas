@@ -464,7 +464,7 @@ LexerXML Lexer QsciLexerXML
 LexerYAML Lexer QsciLexerYAML
 LfConvertDataDialog QDialog Ui_LfConvertDataDialog
 LfRevisionsInputDialog QDialog Ui_LfRevisionsInputDialog
-Listspace QSplitter ViewManager
+Listspace ViewManager
 LogViewer QWidget
 LogViewerEdit QTextEdit
 LogViewerPage ConfigurationPageBase Ui_LogViewerPage
@@ -553,7 +553,7 @@ PreferencesLexerError Exception
 PreferencesLexerLanguageError PreferencesLexerError
 PreviewProcessingThread QThread
 Previewer QStackedWidget
-PreviewerHTML QWidget Ui_PreviewerHTML
+PreviewerHTML QWidget
 PreviewerQSS QWidget Ui_PreviewerQSS
 Printer QsciPrinter
 PrinterPage ConfigurationPageBase Ui_PrinterPage
@@ -721,7 +721,7 @@ TabBar E5WheelTabBar
 TabWidget E5TabWidget
 TabnannyDialog QDialog Ui_TabnannyDialog
 TabnannyPlugin QObject
-Tabview QSplitter ViewManager
+Tabview ViewManager
 TagError Exception
 Task QTreeWidgetItem
 TaskFilterConfigDialog QDialog Ui_TaskFilterConfigDialog
@@ -789,7 +789,7 @@ VcsRepositoryInfoDialog QDialog Ui_VcsRepositoryInfoDialog
 VcsStatusMonitorThread QThread
 VcsSubversionPlugin QObject
 VersionControl QObject
-ViewManager QObject
+ViewManager QWidget
 ViewProfileDialog QDialog
 ViewmanagerPage ConfigurationPageBase Ui_ViewmanagerPage
 VirusTotalAPI QObject

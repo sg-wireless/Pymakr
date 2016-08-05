@@ -125,12 +125,14 @@ class HgStatusDialog(QWidget, Ui_HgStatusDialog):
                 self.lfActions.append(self.menu.addAction(
                     self.tr("Add as Normal File"),
                     lambda: self.__lfAdd("normal")))
+            self.menu.addSeparator()
             self.__diffAct = self.menu.addAction(
                 self.tr("Show differences"), self.__diff)
             self.menuactions.append(self.__diffAct)
             self.__sbsDiffAct = self.menu.addAction(
                 self.tr("Show differences side-by-side"), self.__sbsDiff)
             self.menuactions.append(self.__sbsDiffAct)
+            self.menu.addSeparator()
             self.__revertAct = self.menu.addAction(
                 self.tr("Revert changes"), self.__revert)
             self.menuactions.append(self.__revertAct)
@@ -162,8 +164,13 @@ class HgStatusDialog(QWidget, Ui_HgStatusDialog):
             self.__lfAddActions.append(
                 self.__addButtonMenu.addAction(self.tr("Add as Normal File"),
                                                lambda: self.__lfAdd("normal")))
-            self.addButton.setMenu(self.__addButtonMenu)
             self.__addButtonMenu.aboutToShow.connect(self.__showAddMenu)
+            if self.vcs.isExtensionActive("largefiles"):
+                self.addButton.setMenu(self.__addButtonMenu)
+        
+        if not mq:
+            self.vcs.activeExtensionsChanged.connect(
+                self.__activeExtensionsChanged)
         
         self.modifiedIndicators = [
             self.tr('added'),
@@ -188,6 +195,17 @@ class HgStatusDialog(QWidget, Ui_HgStatusDialog):
             '?': self.tr('not tracked'),
             '!': self.tr('missing'),
         }
+    
+    def __activeExtensionsChanged(self):
+        """
+        Private slot handling a change in the activated extensions.
+        """
+        if self.vcs.isExtensionActive("largefiles"):
+            if self.addButton.menu() is None:
+                self.addButton.setMenu(self.__addButtonMenu)
+        else:
+            if self.addButton.menu() is not None:
+                self.addButton.setMenu(None)
     
     def show(self):
         """

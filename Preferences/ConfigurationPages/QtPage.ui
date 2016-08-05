@@ -10,7 +10,7 @@
     <height>614</height>
    </rect>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
     <widget class="QLabel" name="headerLabel">
      <property name="text">
@@ -76,8 +76,33 @@
      <property name="title">
       <string>Qt Tools</string>
      </property>
-     <layout class="QGridLayout">
-      <item row="0" column="0" colspan="5">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Tools Directory:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="qtToolsDirEdit">
+          <property name="toolTip">
+           <string>Enter the path of the Qt tools directory, if they are not found.</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="qtToolsDirButton">
+          <property name="toolTip">
+           <string>Press to select the Qt tools directory via a directory selection dialog</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
        <widget class="QLabel" name="label">
         <property name="text">
          <string>The tool executable is composed of the prefix, the tool name and the postfix. For win, the extension is added automatically.</string>
@@ -87,49 +112,53 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_3">
-        <property name="text">
-         <string>Qt-Prefix:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QLineEdit" name="qt4PrefixEdit">
-        <property name="toolTip">
-         <string>Enter the prefix for the Qt tools name</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="QLabel" name="label_5">
-        <property name="text">
-         <string>Qt-Postfix:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="3">
-       <widget class="QLineEdit" name="qt4PostfixEdit">
-        <property name="toolTip">
-         <string>Enter the postfix for the Qt tools name</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="4">
-       <widget class="QLabel" name="qt4SampleLabel">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-          <horstretch>1</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="toolTip">
-         <string>This gives an example of the complete tool name</string>
-        </property>
-        <property name="text">
-         <string>designer</string>
-        </property>
-       </widget>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Qt-Prefix:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="qt4PrefixEdit">
+          <property name="toolTip">
+           <string>Enter the prefix for the Qt tools name</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Qt-Postfix:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="qt4PostfixEdit">
+          <property name="toolTip">
+           <string>Enter the postfix for the Qt tools name</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="qt4SampleLabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>This gives an example of the complete tool name</string>
+          </property>
+          <property name="text">
+           <string>designer</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
      </layout>
     </widget>
@@ -207,6 +236,8 @@
  <tabstops>
   <tabstop>qt4TransEdit</tabstop>
   <tabstop>qt4TransButton</tabstop>
+  <tabstop>qtToolsDirEdit</tabstop>
+  <tabstop>qtToolsDirButton</tabstop>
   <tabstop>qt4PrefixEdit</tabstop>
   <tabstop>qt4PostfixEdit</tabstop>
   <tabstop>pyuicIndentSpinBox</tabstop>

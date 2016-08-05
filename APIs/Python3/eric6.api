@@ -177,6 +177,7 @@ eric6.DebugClients.Python.DebugBase.DebugBase.set_watch?4(cond, temporary=0)
 eric6.DebugClients.Python.DebugBase.DebugBase.step?4(traceMode)
 eric6.DebugClients.Python.DebugBase.DebugBase.stepOut?4()
 eric6.DebugClients.Python.DebugBase.DebugBase.stop_here?4(frame)
+eric6.DebugClients.Python.DebugBase.DebugBase.storeFrameLocals?4(frmnr=0)
 eric6.DebugClients.Python.DebugBase.DebugBase.trace_dispatch?4(frame, event, arg)
 eric6.DebugClients.Python.DebugBase.DebugBase.user_exception?4(frame, (exctype, excval, exctb), unhandled=0)
 eric6.DebugClients.Python.DebugBase.DebugBase.user_line?4(frame)
@@ -200,7 +201,7 @@ eric6.DebugClients.Python.DebugClientBase.DebugClientBase.getRunning?4()
 eric6.DebugClients.Python.DebugClientBase.DebugClientBase.handleLine?4(line)
 eric6.DebugClients.Python.DebugClientBase.DebugClientBase.input?4(prompt)
 eric6.DebugClients.Python.DebugClientBase.DebugClientBase.main?4()
-eric6.DebugClients.Python.DebugClientBase.DebugClientBase.progTerminated?4(status, exit=False)
+eric6.DebugClients.Python.DebugClientBase.DebugClientBase.progTerminated?4(status)
 eric6.DebugClients.Python.DebugClientBase.DebugClientBase.raw_input?4(prompt, echo)
 eric6.DebugClients.Python.DebugClientBase.DebugClientBase.run_call?4(scriptname, func, *args)
 eric6.DebugClients.Python.DebugClientBase.DebugClientBase.sessionClose?4(exit=1)
@@ -310,6 +311,7 @@ eric6.DebugClients.Python.DebugThread.DebugThread.set_ident?4(id)
 eric6.DebugClients.Python.DebugThread.DebugThread.traceThread?4()
 eric6.DebugClients.Python.DebugThread.DebugThread.trace_dispatch?4(frame, event, arg)
 eric6.DebugClients.Python.DebugThread.DebugThread?1(dbgClient, targ=None, args=None, kwargs=None, mainThread=0)
+eric6.DebugClients.Python.FlexCompleter.Completer._callable_postfix?5(val, word)
 eric6.DebugClients.Python.FlexCompleter.Completer.attr_matches?4(text)
 eric6.DebugClients.Python.FlexCompleter.Completer.complete?4(text, state)
 eric6.DebugClients.Python.FlexCompleter.Completer.global_matches?4(text)
@@ -394,6 +396,7 @@ eric6.DebugClients.Python3.DebugBase.DebugBase.set_watch?4(cond, temporary=False
 eric6.DebugClients.Python3.DebugBase.DebugBase.step?4(traceMode)
 eric6.DebugClients.Python3.DebugBase.DebugBase.stepOut?4()
 eric6.DebugClients.Python3.DebugBase.DebugBase.stop_here?4(frame)
+eric6.DebugClients.Python3.DebugBase.DebugBase.storeFrameLocals?4(frmnr=0)
 eric6.DebugClients.Python3.DebugBase.DebugBase.trace_dispatch?4(frame, event, arg)
 eric6.DebugClients.Python3.DebugBase.DebugBase.user_exception?4(frame, excinfo, unhandled=False)
 eric6.DebugClients.Python3.DebugBase.DebugBase.user_line?4(frame)
@@ -417,7 +420,7 @@ eric6.DebugClients.Python3.DebugClientBase.DebugClientBase.getRunning?4()
 eric6.DebugClients.Python3.DebugClientBase.DebugClientBase.handleLine?4(line)
 eric6.DebugClients.Python3.DebugClientBase.DebugClientBase.input?4(prompt, echo=True)
 eric6.DebugClients.Python3.DebugClientBase.DebugClientBase.main?4()
-eric6.DebugClients.Python3.DebugClientBase.DebugClientBase.progTerminated?4(status, exit=False)
+eric6.DebugClients.Python3.DebugClientBase.DebugClientBase.progTerminated?4(status)
 eric6.DebugClients.Python3.DebugClientBase.DebugClientBase.run_call?4(scriptname, func, *args)
 eric6.DebugClients.Python3.DebugClientBase.DebugClientBase.sessionClose?4(exit=True)
 eric6.DebugClients.Python3.DebugClientBase.DebugClientBase.shouldSkip?4(fn)
@@ -5909,6 +5912,7 @@ eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.editorTextChanged
 eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.eventFilter?4(watched, event)
 eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.getSplitOrientation?4()
 eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.lastEditorClosed?7
+eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.mainWidget?4()
 eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.nextSplit?4()
 eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.prevSplit?4()
 eric6.Plugins.ViewManagerPlugins.Listspace.Listspace.Listspace.previewStateChanged?7
@@ -5984,6 +5988,7 @@ eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.getSplitOrientation?4()
 eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.getTabWidgetById?4(id_)
 eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.insertView?4(win, tabWidget, index, fn=None, noName="")
 eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.lastEditorClosed?7
+eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.mainWidget?4()
 eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.nextSplit?4()
 eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.preferencesChanged?4()
 eric6.Plugins.ViewManagerPlugins.Tabview.Tabview.Tabview.prevSplit?4()
@@ -6491,6 +6496,7 @@ eric6.Preferences.ConfigurationPages.PythonPage.create?4(dlg)
 eric6.Preferences.ConfigurationPages.QtPage.QtPage.on_qt4PostfixEdit_textChanged?4(txt)
 eric6.Preferences.ConfigurationPages.QtPage.QtPage.on_qt4PrefixEdit_textChanged?4(txt)
 eric6.Preferences.ConfigurationPages.QtPage.QtPage.on_qt4TransButton_clicked?4()
+eric6.Preferences.ConfigurationPages.QtPage.QtPage.on_qtToolsDirButton_clicked?4()
 eric6.Preferences.ConfigurationPages.QtPage.QtPage.save?4()
 eric6.Preferences.ConfigurationPages.QtPage.QtPage?1()
 eric6.Preferences.ConfigurationPages.QtPage.create?4(dlg)
@@ -7406,12 +7412,12 @@ eric6.QScintilla.Editor.Editor.updateMarkerMap?4()
 eric6.QScintilla.Editor.Editor.viewportEvent?4(evt)
 eric6.QScintilla.Editor.Editor.wheelEvent?4(evt)
 eric6.QScintilla.Editor.Editor.writeFile?4(fn, backup=True)
-eric6.QScintilla.Editor.Editor?1(dbs, fn=None, vm=None, filetype="", editor=None, tv=None)
+eric6.QScintilla.Editor.Editor?1(dbs, fn="", vm=None, filetype="", editor=None, tv=None)
 eric6.QScintilla.Editor.EditorAutoCompletionListID?7
 eric6.QScintilla.Editor.TemplateCompletionListID?7
 eric6.QScintilla.EditorAssembly.EditorAssembly.getEditor?4()
 eric6.QScintilla.EditorAssembly.EditorAssembly.shutdownTimer?4()
-eric6.QScintilla.EditorAssembly.EditorAssembly?1(dbs, fn=None, vm=None, filetype="", editor=None, tv=None)
+eric6.QScintilla.EditorAssembly.EditorAssembly?1(dbs, fn="", vm=None, filetype="", editor=None, tv=None)
 eric6.QScintilla.EditorMarkerMap.EditorMarkerMap._paintIt?5(painter)
 eric6.QScintilla.EditorMarkerMap.EditorMarkerMap.initColors?4()
 eric6.QScintilla.EditorMarkerMap.EditorMarkerMap?1(parent=None)
@@ -8586,6 +8592,7 @@ eric6.UI.Previewers.PreviewerHTML.PreviewerHTML.on_previewView_linkClicked?4(url
 eric6.UI.Previewers.PreviewerHTML.PreviewerHTML.on_previewView_titleChanged?4(title)
 eric6.UI.Previewers.PreviewerHTML.PreviewerHTML.on_ssiCheckBox_clicked?4(checked)
 eric6.UI.Previewers.PreviewerHTML.PreviewerHTML.processEditor?4(editor=None)
+eric6.UI.Previewers.PreviewerHTML.PreviewerHTML.resultCallback?4(resDict=resultDict)
 eric6.UI.Previewers.PreviewerHTML.PreviewerHTML.shutdown?4()
 eric6.UI.Previewers.PreviewerHTML.PreviewerHTML?1(parent=None)
 eric6.UI.Previewers.PreviewerHTML._StrikeThroughExtension.DEL_RE?7
@@ -9261,6 +9268,7 @@ eric6.ViewManager.ViewManager.ViewManager.insertNumber?4(txt)
 eric6.ViewManager.ViewManager.ViewManager.insertSymbol?4(txt)
 eric6.ViewManager.ViewManager.ViewManager.isConnected?4()
 eric6.ViewManager.ViewManager.ViewManager.lastEditorClosed?7
+eric6.ViewManager.ViewManager.ViewManager.mainWidget?4()
 eric6.ViewManager.ViewManager.ViewManager.newEditor?4()
 eric6.ViewManager.ViewManager.ViewManager.newEditorView?4(fn, caller, filetype="")
 eric6.ViewManager.ViewManager.ViewManager.nextSplit?4()
@@ -9370,6 +9378,24 @@ eric6.pymakr_webbrowser.createMainWidget?4(argv)
 eric6.pymakr_webbrowser.main?4()
 eric6.eric6config._pkg_config?8
 eric6.eric6config.getConfig?4(name)
+eric6.install-debugclients.cleanUp?4()
+eric6.install-debugclients.cleanupSource?4(dirName)
+eric6.install-debugclients.copyTree?4(src, dst, filters, excludeDirs=[], excludePatterns=[])
+eric6.install-debugclients.currDir?7
+eric6.install-debugclients.distDir?7
+eric6.install-debugclients.doCleanup?7
+eric6.install-debugclients.doCompile?7
+eric6.install-debugclients.exit?4(rcode=0)
+eric6.install-debugclients.initGlobals?4()
+eric6.install-debugclients.installEricDebugClients?4()
+eric6.install-debugclients.installPackage?7
+eric6.install-debugclients.main?4(argv)
+eric6.install-debugclients.modDir?7
+eric6.install-debugclients.progName?7
+eric6.install-debugclients.pyModDir?7
+eric6.install-debugclients.shutilCopy?4(src, dst, perm=0o644)
+eric6.install-debugclients.sourceDir?7
+eric6.install-debugclients.usage?4(rcode=2)
 eric6.install-i18n.configDir?7
 eric6.install-i18n.getConfigDir?4()
 eric6.install-i18n.installTranslations?4()
@@ -9432,6 +9458,16 @@ eric6.patch_modpython.main?4(argv)
 eric6.patch_modpython.modDir?7
 eric6.patch_modpython.progName?7
 eric6.patch_modpython.usage?4(rcode=2)
+eric6.uninstall-debugclients.currDir?7
+eric6.uninstall-debugclients.exit?4(rcode=0)
+eric6.uninstall-debugclients.initGlobals?4()
+eric6.uninstall-debugclients.installPackage?7
+eric6.uninstall-debugclients.main?4(argv)
+eric6.uninstall-debugclients.modDir?7
+eric6.uninstall-debugclients.progName?7
+eric6.uninstall-debugclients.pyModDir?7
+eric6.uninstall-debugclients.uninstallEricDebugClients?4()
+eric6.uninstall-debugclients.usage?4(rcode=2)
 eric6.uninstall.PythonMarkers?7
 eric6.uninstall.defaultMacAppBundleName?7
 eric6.uninstall.defaultMacAppBundlePath?7

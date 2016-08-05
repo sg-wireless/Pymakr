@@ -116,28 +116,17 @@ class AdBlockTreeWidget(E5TreeWidget):
             return
         
         if not filter:
-            filter = QInputDialog.getText(
+            filter, ok = QInputDialog.getText(
                 self,
                 self.tr("Add Custom Rule"),
                 self.tr("Write your rule here:"),
                 QLineEdit.Normal)
-            if filter == "":
+            if not ok or filter == "":
                 return
         
         from .AdBlockRule import AdBlockRule
         rule = AdBlockRule(filter, self.__subscription)
-        offset = self.__subscription.addRule(rule)
-        
-        item = QTreeWidgetItem()
-        item.setText(0, filter)
-        item.setData(0, Qt.UserRole, offset)
-        item.setFlags(item.flags() | Qt.ItemIsEditable)
-        
-        self.__itemChangingBlock = True
-        self.__topItem.addChild(item)
-        self.__itemChangingBlock = False
-        
-        self.__adjustItemFeatures(item, rule)
+        self.__subscription.addRule(rule)
     
     def removeRule(self):
         """

@@ -35,29 +35,47 @@ class QtPage(ConfigurationPageBase, Ui_QtPage):
         self.setObjectName("QtPage")
         
         self.qt4TransButton.setIcon(UI.PixmapCache.getIcon("open.png"))
+        self.qtToolsDirButton.setIcon(UI.PixmapCache.getIcon("open.png"))
         
         self.qt4TransCompleter = E5DirCompleter(self.qt4TransEdit)
+        self.qtToolsDirCompleter = E5DirCompleter(self.qtToolsDirEdit)
         
         # set initial values
         self.qt4TransEdit.setText(Preferences.getQt("Qt4TranslationsDir"))
+        self.qtToolsDirEdit.setText(Preferences.getQt("QtToolsDir"))
         self.qt4PrefixEdit.setText(Preferences.getQt("QtToolsPrefix4"))
         self.qt4PostfixEdit.setText(Preferences.getQt("QtToolsPostfix4"))
         self.__updateQt4Sample()
         self.pyuicIndentSpinBox.setValue(Preferences.getQt("PyuicIndent"))
         self.pyuicImportsCheckBox.setChecked(
             Preferences.getQt("PyuicFromImports"))
-        
+    
     def save(self):
         """
         Public slot to save the Qt configuration.
         """
         Preferences.setQt("Qt4TranslationsDir", self.qt4TransEdit.text())
+        Preferences.setQt("QtToolsDir", self.qtToolsDirEdit.text())
         Preferences.setQt("QtToolsPrefix4", self.qt4PrefixEdit.text())
         Preferences.setQt("QtToolsPostfix4", self.qt4PostfixEdit.text())
         Preferences.setQt("PyuicIndent", self.pyuicIndentSpinBox.value())
         Preferences.setQt("PyuicFromImports",
                           self.pyuicImportsCheckBox.isChecked())
+    
+    @pyqtSlot()
+    def on_qtToolsDirButton_clicked(self):
+        """
+        Private slot to handle the Qt tools directory selection.
+        """
+        dir = E5FileDialog.getExistingDirectory(
+            self,
+            self.tr("Select Qt Tools Directory"),
+            self.qtToolsDirEdit.text(),
+            E5FileDialog.Options(E5FileDialog.DontUseNativeDialog))
         
+        if dir:
+            self.qtToolsDirEdit.setText(Utilities.toNativeSeparators(dir))
+    
     @pyqtSlot()
     def on_qt4TransButton_clicked(self):
         """
@@ -71,7 +89,7 @@ class QtPage(ConfigurationPageBase, Ui_QtPage):
             
         if dir:
             self.qt4TransEdit.setText(Utilities.toNativeSeparators(dir))
-        
+    
     def __updateQt4Sample(self):
         """
         Private slot to update the Qt4 tools sample label.

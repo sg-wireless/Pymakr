@@ -190,13 +190,14 @@ class SpeedDial(QObject):
             self.pagesChanged.emit()
         else:
             allPages = \
-                'url:"http://www.pycom.io/solutions/pymakr/"|'\
+                'url:"http://www.pycom.io/solutions/pymakr/|'\
                 'title:"Pymakr Web Site";'\
-                'url:"http://www.riverbankcomputing.com/"|'\
+                'url:"https://www.riverbankcomputing.com/"|'\
                 'title:"PyQt Web Site";'\
                 'url:"http://www.qt.io/"|title:"Qt Web Site";'\
-                'url:"http://blog.qt.digia.com/"|title:"Qt Blog";'\
-                'url:"http://www.python.org"|title:"Python Language Website";'\
+                'url:"http://blog.qt.io/"|title:"Qt Blog";'\
+                'url:"https://www.python.org"|'\
+                'title:"Python Language Website";'\
                 'url:"http://www.google.com"|title:"Google";'
             self.changed(allPages)
     

@@ -1283,9 +1283,11 @@
     <Source>pymakr_webbrowser.py</Source>
     <Source>pymakr_webbrowser.pyw</Source>
     <Source>eric6config.py</Source>
+    <Source>install-debugclients.py</Source>
     <Source>install-i18n.py</Source>
     <Source>install.py</Source>
     <Source>patch_modpython.py</Source>
+    <Source>uninstall-debugclients.py</Source>
     <Source>uninstall.py</Source>
   </Sources>
   <Forms>
@@ -1622,7 +1624,6 @@
     <Form>UI/FindFileNameDialog.ui</Form>
     <Form>UI/NotificationWidget.ui</Form>
     <Form>UI/NumbersWidget.ui</Form>
-    <Form>UI/Previewers/PreviewerHTML.ui</Form>
     <Form>UI/Previewers/PreviewerQSS.ui</Form>
     <Form>UI/SearchWidget.ui</Form>
     <Form>UI/SymbolsWidget.ui</Form>
@@ -2119,14 +2120,6 @@
             </key>
             <value>
               <string>eric6</string>
-            </value>
-            <key>
-              <string>sourceExtensions</string>
-            </key>
-            <value>
-              <list>
-                <string></string>
-              </list>
             </value>
             <key>
               <string>useRecursion</string>

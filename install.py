@@ -469,10 +469,11 @@ def cleanupSource(dirName):
             if os.path.exists(os.path.join(dirName, sourceName + "c")):
                 os.remove(os.path.join(dirName, sourceName + "c"))
     
-    # step 2: delete the __pycache__ directory and all *.pyc files
+    # step 2: delete the __pycache__ directory and all remaining *.pyc files
     if os.path.exists(os.path.join(dirName, "__pycache__")):
         shutil.rmtree(os.path.join(dirName, "__pycache__"))
-    for name in [f for f in dirListing if fnmatch.fnmatch(f, "*.pyc")]:
+    for name in [f for f in os.listdir(dirName)
+                 if fnmatch.fnmatch(f, "*.pyc")]:
         os.remove(os.path.join(dirName, name))
     
     # step 3: descent into subdirectories and delete them if empty
@@ -899,10 +900,13 @@ def createMacAppBundle(pydir):
     if path:
         pybin = os.path.join(sys.exec_prefix, "bin")
         pathlist = path.split(os.pathsep)
-        if pybin not in pathlist:
-            pathLine = "PATH={0}{1}{2}\n".format(pybin, os.pathsep, path)
-        else:
-            pathLine = "PATH={0}\n".format(path)
+        pathlist_n = [pybin]
+        for path_ in pathlist:
+            if path_ and path_ not in pathlist_n:
+                pathlist_n.append(path_)
+        pathLine = "PATH={0}\n".format(os.pathsep.join(pathlist_n))
+    
+    # create the wrapper script
     wrapper = ('''#!/bin/sh\n'''
                '''\n'''
                '''{0}'''
@@ -1122,13 +1126,12 @@ def doDependancyChecks():
     if pyqtVariant == "PyQt4":
         impModulesList = [
             "PyQt4.QtGui", "PyQt4.QtNetwork", "PyQt4.QtSql",
-            "PyQt4.QtSvg", "PyQt4.QtWebKit",
+            "PyQt4.QtSvg",
         ]
     else:
         impModulesList = [
             "PyQt5.QtGui", "PyQt5.QtNetwork", "PyQt5.QtPrintSupport",
-            "PyQt5.QtSql", "PyQt5.QtSvg", "PyQt5.QtWebKit",
-            "PyQt5.QtWebKitWidgets", "PyQt5.QtWidgets",
+            "PyQt5.QtSql", "PyQt5.QtSvg", "PyQt5.QtWidgets",
         ]
     modulesOK = True
     for impModule in impModulesList:
@@ -1167,8 +1170,8 @@ def doDependancyChecks():
         import sip
         sipVersion = sip.SIP_VERSION_STR
         print("sip Version:", sipVersion.strip())
-        # always assume, that snapshots are new enough
-        if "snapshot" not in sipVersion:
+        # always assume, that snapshots or dev versions are new enough
+        if "snapshot" not in sipVersion and "dev" not in sipVersion:
             while sipVersion.count('.') < 2:
                 sipVersion += '.0'
             (maj, min, pat) = sipVersion.split('.')
@@ -1198,8 +1201,8 @@ def doDependancyChecks():
         from PyQt5.QtCore import PYQT_VERSION_STR
     pyqtVersion = PYQT_VERSION_STR
     print("PyQt Version:", pyqtVersion.strip())
-    # always assume, that snapshots are new enough
-    if "snapshot" not in pyqtVersion:
+    # always assume, that snapshots or dev versions are new enough
+    if "snapshot" not in pyqtVersion and "dev" not in pyqtVersion:
         while pyqtVersion.count('.') < 2:
             pyqtVersion += '.0'
         (maj, min, pat) = pyqtVersion.split('.')
@@ -1228,8 +1231,8 @@ def doDependancyChecks():
         from PyQt5.Qsci import QSCINTILLA_VERSION_STR
     scintillaVersion = QSCINTILLA_VERSION_STR
     print("QScintilla Version:", QSCINTILLA_VERSION_STR.strip())
-    # always assume, that snapshots are new enough
-    if "snapshot" not in scintillaVersion:
+    # always assume, that snapshots or dev versions are new enough
+    if "snapshot" not in scintillaVersion and "dev" not in scintillaVersion:
         while scintillaVersion.count('.') < 2:
             scintillaVersion += '.0'
         (maj, min, pat) = scintillaVersion.split('.')
@@ -1462,13 +1465,17 @@ def main(argv):
     
     if doCompile:
         print("\nCompiling source files ...")
+        if sys.version_info[0] == 3:
+            skipRe = re.compile(r"DebugClients[\\/]Python[\\/]")
+        else:
+            skipRe = re.compile(r"DebugClients[\\/]Python3[\\/]")
         # Hide compile errors (mainly because of Py2/Py3 differences)
         sys.stdout = io.StringIO()
         if distDir:
             compileall.compile_dir(
                 sourceDir,
                 ddir=os.path.join(distDir, modDir, cfg['ericDir']),
-                rx=re.compile(r"DebugClients[\\/]Python[\\/]"),
+                rx=skipRe,
                 quiet=True)
             py_compile.compile(
                 configName,
@@ -1477,7 +1484,7 @@ def main(argv):
             compileall.compile_dir(
                 sourceDir,
                 ddir=os.path.join(modDir, cfg['ericDir']),
-                rx=re.compile(r"DebugClients[\\/]Python[\\/]"),
+                rx=skipRe,
                 quiet=True)
             py_compile.compile(configName,
                                dfile=os.path.join(modDir, "eric6config.py"))
