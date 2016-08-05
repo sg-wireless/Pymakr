@@ -123,7 +123,10 @@ class PluginPycomDevice(QObject):
 class PycomDeviceServer(QThread):
     dataReceptionEvent = pyqtSignal(str)
     statusChanged = pyqtSignal(str)
+    firmwareDetected = pyqtSignal()
+
     channel = None
+    uname = None
     __device = None
     __user = None
     __password = None
@@ -155,6 +158,7 @@ class PycomDeviceServer(QThread):
             # assume first time the init runs, won't test for both
             PycomDeviceServer.dataReceptionEvent = self.dataReceptionEvent
             PycomDeviceServer.statusChanged = self.statusChanged
+            PycomDeviceServer.firmwareDetected = self.firmwareDetected
 
         pluginManager = e5App().getObject("PluginManager")
         pluginManager.activatePlugin("PluginPycomDevice")
@@ -216,6 +220,9 @@ class PycomDeviceServer(QThread):
     def emitStatusChange(self, status):
         PycomDeviceServer.statusChanged.emit(status)
 
+    def emitFirmwareDetected(self):
+        PycomDeviceServer.firmwareDetected.emit()
+
     def __handleChannelExceptions(self, err):
         if type(err) == pyboard.PyboardError:
             e = str(err)
@@ -229,6 +236,12 @@ class PycomDeviceServer(QThread):
                 self.emitStatusChange("error")
         else:
             self.emitStatusChange("error")
+
+    def __fetchFirmwareVersion(self):
+        from ast import literal_eval
+        PycomDeviceServer.channel.send("import os; [os.uname().sysname, os.uname().machine, os.uname().release]\r\n")
+        PycomDeviceServer.uname = literal_eval(PycomDeviceServer.channel.read_until(b'>>>').splitlines()[1].decode('utf8'))
+        self.emitFirmwareDetected()
 
     def __getConnected(self):
         self.emitStatusChange("connecting")
@@ -245,6 +258,8 @@ class PycomDeviceServer(QThread):
             try:
                 if continuing == False:
                     self.__getConnected()
+                    self.signalDataReception(PycomDeviceServer.channel.read_until(b'>>>').decode("utf-8"))
+                    self.__fetchFirmwareVersion()
                     attempt = 0
                 continuing = False
                 PycomDeviceServer.channel.recv(self.signalDataReception)
