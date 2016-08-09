@@ -620,6 +620,10 @@ class PluginSimpleUI(QObject):
             'Python', 'Qt', 'Security', 'Templates', 'Tray Starter',
             'Version Control Systems']
 
+
+        if Preferences.Prefs.settings.value("UI/AdvancedBottomSidebar", False) != "true":
+            toDeleteTxt.append('Log-Viewer')
+
         configList = dlg.cw.configList
 
         for i in xrange(configList.topLevelItemCount() - 1, 0, -1):
