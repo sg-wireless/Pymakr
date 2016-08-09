@@ -21,7 +21,7 @@ import Preferences
 from E5Gui.E5Application import e5App
 import UI.PixmapCache
 import sys
-
+import re
 
 class ShellAssembly(QWidget):
     """
@@ -135,7 +135,7 @@ class UPythonShell(QsciScintillaCompat):
         self.menu = QMenu(self)
         self.menu.addAction(self.tr('Cut'), self.cut)
         self.menu.addAction(self.tr('Copy'), self.copy)
-        self.menu.addAction(self.tr('Paste'), self.paste)
+        self.menu.addAction(self.tr('Paste'), self.__paste)
         self.menu.addSeparator()
         self.menu.addAction(self.tr('Find'), self.__find)
         self.menu.addSeparator()
@@ -178,7 +178,11 @@ class UPythonShell(QsciScintillaCompat):
         
         @param ev key event (QKeyEvent)
         """
-        txt = ev.text()
+
+        if ev.key() == Qt.Key_Enter: # make mac right "enter" key behave as "return"
+            txt = '\r'
+        else:
+            txt = ev.text()
         if not txt:
             txt = self.__toVT100(ev)
 
@@ -523,7 +527,6 @@ class UPythonShell(QsciScintillaCompat):
         
         @param s text to be displayed (string)
         """
-
         try:
             self.setCursorPosition(self.keyLine, self.keyCol)
         except:
@@ -552,6 +555,13 @@ class UPythonShell(QsciScintillaCompat):
         """
         self.buff += s
         self.prline, self.prcol = self.getCursorPosition()
+
+    def __paste(self):
+        text = QApplication.clipboard().text()
+        text = re.sub(re.compile('\r|\n|\r\n', re.MULTILINE),'\n', text)
+        text = re.sub(re.compile('^\s*', re.MULTILINE), '', text)
+        text = text.replace('\n', '\r')
+        self.dbs.send(text)
 
     def __clientStatement(self, more):
         """
