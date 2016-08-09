@@ -5,22 +5,22 @@
     <message>
         <location filename="../ConfigurationPage/AutoCompletionJediPage.ui" line="37"/>
         <source>Select, whether the jedi autocompletion support shall be enabled.</source>
-        <translation>Разрешить включение поддержки автозавершения Jedi.</translation>
+        <translation>Разрешить поддержку автодополнения Jedi.</translation>
     </message>
     <message>
         <location filename="../ConfigurationPage/AutoCompletionJediPage.ui" line="40"/>
         <source>Enable autocompletion</source>
-        <translation>Разрешить автозавершение</translation>
+        <translation>Разрешить автодополнение</translation>
     </message>
     <message>
         <location filename="../ConfigurationPage/AutoCompletionJediPage.ui" line="49"/>
         <source>Time to wait for completions:</source>
-        <translation>Время ожидания завершения:</translation>
+        <translation>Время ожидания дополнения:</translation>
     </message>
     <message>
         <location filename="../ConfigurationPage/AutoCompletionJediPage.ui" line="56"/>
         <source>Enter the time in milliseconds after which a list with completion proposals shall be shown</source>
-        <translation>Задайте задержку в миллисекундах, по истечении которой должен быть показан список с предложениями завершения</translation>
+        <translation>Задайте задержку в миллисекундах, по истечении которой должен быть показан список с предложениями дополнений</translation>
     </message>
     <message>
         <location filename="../ConfigurationPage/AutoCompletionJediPage.ui" line="68"/>
@@ -30,17 +30,17 @@
     <message>
         <location filename="../ConfigurationPage/AutoCompletionJediPage.ui" line="99"/>
         <source>Select to show QScintilla completions, if this plug-in fails</source>
-        <translation>Разрешить показ завершений QScintilla если этот плагин не работает</translation>
+        <translation>Разрешить показ дополнений QScintilla если этот плагин не работает</translation>
     </message>
     <message>
         <location filename="../ConfigurationPage/AutoCompletionJediPage.ui" line="102"/>
         <source>Show QScintilla completions, if plug-in fails</source>
-        <translation>Отображать завершения QScintilla если этот плагин не работает</translation>
+        <translation>Отображать дополнения QScintilla если этот плагин не работает</translation>
     </message>
     <message>
         <location filename="../ConfigurationPage/AutoCompletionJediPage.ui" line="17"/>
         <source>&lt;b&gt;Configure Jedi Completion&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Настройка автозавершения Jedi&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Настройка автодополнения Jedi&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -76,7 +76,7 @@
     <message>
         <location filename="../../PluginCompletionJedi.py" line="140"/>
         <source>Code Completion - Jedi</source>
-        <translation>Коды завершения - Jedi</translation>
+        <translation>Коды дополнения - Jedi</translation>
     </message>
 </context>
 <context>
@@ -97,7 +97,7 @@
     <message>
         <location filename="../ConfigurationPage/MouseClickHandlerJediPage.ui" line="37"/>
         <source>Select, whether the jedi mouse click handler support shall be enabled.</source>
-        <translation>Разрешить включение поддержки Jedi обработчика кликов мышки.</translation>
+        <translation>Разрешить поддержку Jedi обработчика кликов мышки.</translation>
     </message>
     <message>
         <location filename="../ConfigurationPage/MouseClickHandlerJediPage.ui" line="40"/>
