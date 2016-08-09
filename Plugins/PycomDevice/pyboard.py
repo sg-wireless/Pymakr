@@ -485,10 +485,10 @@ class Pyboard:
 
         self.want_exit_recv = False
 
-        while self.want_exit_recv == False:
+        while 1:
             try:
                 data = self.connection.read_some()
-                if data:
+                if data and self.want_exit_recv == False:
                     callback(data)
                 else:
                     break

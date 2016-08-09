@@ -178,6 +178,9 @@ class PycomDeviceServer(QThread):
                 return False
             if PycomDeviceServer.__main_thread == self:
                 self.start()
+            if PycomDeviceServer.__main_thread == None:
+                PycomDeviceServer.__main_thread = self
+                self.start()
         except:
             return False
 
@@ -292,6 +295,7 @@ class PycomDeviceServer(QThread):
         try:
             if PycomDeviceServer.getStatus() == True:
                 self.disconnect()
+                self.connect()
             if PycomDeviceServer.__keepTrying == True:
                 time.sleep(0.25)
                 self.connect()
