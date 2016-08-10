@@ -159,6 +159,10 @@ class PycomDeviceServer(QThread):
             PycomDeviceServer.dataReceptionEvent = self.dataReceptionEvent
             PycomDeviceServer.statusChanged = self.statusChanged
             PycomDeviceServer.firmwareDetected = self.firmwareDetected
+        else:
+            self.dataReceptionEvent = PycomDeviceServer.dataReceptionEvent
+            self.statusChanged = PycomDeviceServer.statusChanged
+            self.firmwareDetected = PycomDeviceServer.firmwareDetected
 
         pluginManager = e5App().getObject("PluginManager")
         pluginManager.activatePlugin("PluginPycomDevice")
