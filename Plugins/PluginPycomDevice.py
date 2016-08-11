@@ -120,10 +120,53 @@ class PluginPycomDevice(QObject):
         self.loadSettings()
         self.__pds.restart()
 
-class PycomDeviceServer(QThread):
+
+class PycomDeviceSingleton(QObject):
     dataReceptionEvent = pyqtSignal(str)
     statusChanged = pyqtSignal(str)
     firmwareDetected = pyqtSignal()
+    _instance = None
+    _initialized = False
+
+    def __new__(cls, *args, **kwargs):
+        if not cls._instance:
+            cls._instance = super(PycomDeviceSingleton, cls).__new__(
+                                cls, *args, **kwargs)
+        return cls._instance
+
+    def __init__(self):
+        # can run into problems with more than 1 thread calling at once
+        # but as Pymakr doesn't load the plugins in parallel, this shouldn't
+        # be a problem
+        if PycomDeviceSingleton._initialized == False:
+            PycomDeviceSingleton._initialized = True
+            super(PycomDeviceSingleton, self).__init__()
+            self.__master_thread = None
+
+    def postulateMeAsMaster(self):
+        # sets the thread of the caller as the master thread if no one else is
+        if self.__master_thread is None:
+            self.__master_thread = self.thread()
+
+    def amIMasterThread(self):
+        return self.__master_thread is self.thread()
+
+    def isThereMasterThread(self):
+        return self.__master_thread is not None
+
+    def relinquishMaster(self):
+        if self.__master_thread is self.thread():
+            self.__master_thread = None
+
+
+class PycomDeviceServer(QThread):
+    # PyQt imposes the following limitation (in the documentation):
+    #   "New signals should only be defined in sub-classes of QObject.
+    #   They must be part of the class definition and cannot be dynamically
+    #   added as class attributes after the class has been defined."
+
+    # By behavior, PyQt creates unbounded signals, and they'll become bounded
+    # when an actual object exists
 
     channel = None
     uname = None
@@ -132,37 +175,16 @@ class PycomDeviceServer(QThread):
     __password = None
     __keepTrying = False
     __overrideCallback = None
-    __main_thread = None
 
     def __init__(self):
         QThread.__init__(self)
 
-        if PycomDeviceServer.__main_thread == None or (not PycomDeviceServer.__main_thread.isRunning()):
-            PycomDeviceServer.__main_thread = self
+        self.__deviceSingleton = PycomDeviceSingleton()
 
-        # A single set of signals is desired for all the instances of this Class
+        self.dataReceptionEvent = self.__deviceSingleton.dataReceptionEvent
+        self.statusChanged = self.__deviceSingleton.statusChanged
+        self.firmwareDetected = self.__deviceSingleton.firmwareDetected
 
-        # PyQt imposes the following limitation (in the documentation):
-        #   "New signals should only be defined in sub-classes of QObject. 
-        #   They must be part of the class definition and cannot be dynamically
-        #   added as class attributes after the class has been defined."
-
-        # By behavior, PyQt creates unbounded signals, and they'll become bounded
-        # when an actual object exists
-        # On the first run, dataReceptionEvent and statusChanged will be unbounded, hence
-        # they won't have the emit member. If that's the case, the bounded versions
-        # of the first instance (the one created on plugin init) will be copied in
-        # their place 
-
-        if not getattr(PycomDeviceServer.dataReceptionEvent, 'emit', None):
-            # assume first time the init runs, won't test for both
-            PycomDeviceServer.dataReceptionEvent = self.dataReceptionEvent
-            PycomDeviceServer.statusChanged = self.statusChanged
-            PycomDeviceServer.firmwareDetected = self.firmwareDetected
-        else:
-            self.dataReceptionEvent = PycomDeviceServer.dataReceptionEvent
-            self.statusChanged = PycomDeviceServer.statusChanged
-            self.firmwareDetected = PycomDeviceServer.firmwareDetected
 
         pluginManager = e5App().getObject("PluginManager")
         pluginManager.activatePlugin("PluginPycomDevice")
@@ -184,10 +206,7 @@ class PycomDeviceServer(QThread):
         try:
             if not PycomDeviceServer.__device:
                 return False
-            if PycomDeviceServer.__main_thread == self:
-                self.start()
-            if PycomDeviceServer.__main_thread == None:
-                PycomDeviceServer.__main_thread = self
+            if not self.__deviceSingleton.isThereMasterThread():
                 self.start()
         except:
             return False
@@ -200,8 +219,7 @@ class PycomDeviceServer(QThread):
             PycomDeviceServer.channel.exit_recv()
             time.sleep(0.2)
             PycomDeviceServer.channel.close()
-            if PycomDeviceServer.__main_thread == self:
-                PycomDeviceServer.__main_thread = None
+            self.__deviceSingleton.relinquishMaster()
         except:
             pass
 
@@ -222,10 +240,10 @@ class PycomDeviceServer(QThread):
             return False
 
     def emitStatusChange(self, status):
-        PycomDeviceServer.statusChanged.emit(status)
+        self.statusChanged.emit(status)
 
     def emitFirmwareDetected(self):
-        PycomDeviceServer.firmwareDetected.emit()
+        self.firmwareDetected.emit()
 
     def __handleChannelExceptions(self, err):
         if type(err) == pyboard.PyboardError:
@@ -255,6 +273,7 @@ class PycomDeviceServer(QThread):
         self.emitStatusChange("connected")
 
     def run(self):
+        self.__deviceSingleton.postulateMeAsMaster()
         attempt = 0
         PycomDeviceServer.__shutdown = False
         continuing = False
@@ -293,7 +312,7 @@ class PycomDeviceServer(QThread):
                         break
 
     def signalDataReception(self, text):
-        PycomDeviceServer.dataReceptionEvent.emit(text)
+        self.dataReceptionEvent.emit(text)
 
     def overrideControl(self, callback):
         PycomDeviceServer.__overrideCallback = callback
