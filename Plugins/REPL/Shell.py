@@ -614,3 +614,5 @@ class UPythonShell(QsciScintillaCompat):
             self.__write(self.tr("\r\rUploading file(s). Please wait...\r"))
         elif status == "uploadend":
             self.__write(self.tr("Uploaded successfully!\r\r"))
+        elif status == "uploadfailed":
+            self.__write(self.tr("Uploaded failed!\r\r"))

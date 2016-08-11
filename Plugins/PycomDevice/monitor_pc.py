@@ -3,6 +3,9 @@ import struct
 import os
 import json
 
+class TransferError(Exception):
+    pass
+
 class MonitorPC(object):
     def __init__(self, pyb):
         """
@@ -24,10 +27,10 @@ class MonitorPC(object):
     def __get_script_parameters(self, connection_type):
         # variables that are going to be appended to the monitor code
         if connection_type == 'serial':
-            return "connection_type = 'u'\n"
+            return "connection_type = 'u'\nTIMEOUT = 5000\n"
         else:
             info = self.pyb.get_username_password()
-            return "connection_type = 's'\ntelnet_login = ('{}', '{}')\n".format(info[0], info[1])
+            return "connection_type = 's'\ntelnet_login = ('{}', '{}')\nTIMEOUT = 5000\n".format(info[0], info[1])
 
     def __setup_channel(self):
         """
@@ -67,6 +70,9 @@ class MonitorPC(object):
     def __read_exactly(self, length):
         return self.connection.read(length)
 
+    def __read_with_timeout(self, length, timeout):
+        return self.connection.read_with_timeout(length, timeout)
+
     def __send(self, data):
         # escape ESC characters
         self.connection.write(data.replace(b'\x1b', b'\x1b\x1b'))
@@ -92,8 +98,8 @@ class MonitorPC(object):
 
     def request_ack(self):
         self.__send_command(b'\x00\x00')
-        if self.__read_exactly(3) != b'\x1b\x00\x00':
-            raise Exception() #todo: add a real exception
+        if self.__read_with_timeout(3, 5.0) != b'\x1b\x00\x00':
+            raise TransferError()
 
     def reset_board(self):
         self.__send_command(b'\x00\xfe')

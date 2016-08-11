@@ -10,6 +10,7 @@ import Preferences
 from REPL.Shell import ShellAssembly
 from PluginPycomDevice import PycomDeviceServer
 from PycomSync.sync import Sync
+from PycomDevice.monitor_pc import TransferError
 
 # Start-Of-Header
 name = "Pycom Sync"
@@ -156,10 +157,13 @@ class PluginPycomSync(QObject):
         os.chdir(self.__getProjectPath())
         localFiles = self.__getProjectFiles()
         sync = Sync(localFiles, deviceServer.channel)
-        sync.sync_pyboard()
+        try:
+            sync.sync_pyboard()
+            deviceServer.emitStatusChange("uploadend")
+        except:
+            deviceServer.emitStatusChange("uploadfailed")
         sync.finish_sync()
         os.chdir(pwd)
-        deviceServer.emitStatusChange("uploadend")
         self.__busy = False
 
     def __runThisAct(self):

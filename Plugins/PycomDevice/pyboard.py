@@ -81,7 +81,7 @@ def separate_address_port(string):
 
     return address, port
 
-class PyboardError(BaseException):
+class PyboardError(Exception):
     pass
 
 def to_bytes(s):
@@ -208,6 +208,15 @@ class Serial_connection:
     def disable_binary(self):
         pass
 
+    def read_with_timeout(self, length, timeout):
+        buf = b''
+        original_timeout = self.gettimeout()
+        self.settimeout(timeout)
+        buf = self.stream.read(length)
+        self.settimeout(original_timeout)
+        return buf
+
+
 class Telnet_connection:
     import telnetlib
     import socket
@@ -319,6 +328,12 @@ class Socket_connection:
         self.stream.shutdown(Socket_connection.socket.SHUT_RDWR)
         self.stream.close()
 
+    def settimeout(self, value):
+        self.stream.timeout = value
+
+    def gettimeout(self):
+        return self.stream.timeout
+
     def keep_alive(self):
         pass
 
@@ -332,6 +347,14 @@ class Socket_connection:
             new_data = self.stream.recv(length % 4096) #todo: properly manage disconnections
             buf += new_data
             length -= len(new_data)
+        return buf
+
+    def read_with_timeout(self, length, timeout):
+        buf = b''
+        original_timeout = self.gettimeout()
+        self.settimeout(timeout)
+        buf = self.stream.recv(length)
+        self.settimeout(original_timeout)
         return buf
 
 class Pyboard:

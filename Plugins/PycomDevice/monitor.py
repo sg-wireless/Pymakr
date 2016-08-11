@@ -10,6 +10,8 @@ import os
 import select
 import hashlib
 
+class ReadTimeout(Exception):
+    pass
 
 class SerialPortConnection(object):
     def __init__(self):
@@ -25,7 +27,8 @@ class SerialPortConnection(object):
         os.dupterm(self.original_term)
 
     def read(self, length):
-        self.poll.poll()
+        if not self.poll.poll(TIMEOUT): # timeout is loaded at runtime
+            raise ReadTimeout
         return self.serial.read(length)
 
 class SocketConnection(object):
@@ -52,7 +55,8 @@ class SocketConnection(object):
             Server().init(login=telnet_login) # telnet_login is appended to the code at upload time
 
     def read(self, length):
-        self.poll.poll()
+        if not self.poll.poll(TIMEOUT): # timeout is loaded at runtime
+            raise ReadTimeout
         return self.socket.read(length)
 
 class TransferError(Exception):
@@ -248,6 +252,8 @@ class Monitor(object):
                 self.stream.read(1)
             except TransferError:
                 pass
+            except ReadTimeout:
+                self.exit_monitor()
 
 if __name__ == '__main__':
     monitor = Monitor()
