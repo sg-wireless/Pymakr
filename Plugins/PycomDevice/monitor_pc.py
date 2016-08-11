@@ -37,7 +37,7 @@ class MonitorPC(object):
 
         if connection_type == 'serial':
             self.connection = self.pyb.connection
-            self.connection.stream.reset_input_buffer()
+            self.connection.reset_input_buffer()
         else:
             # device was stored in the previous call to _connect
             self.pyb.close_dont_notify()

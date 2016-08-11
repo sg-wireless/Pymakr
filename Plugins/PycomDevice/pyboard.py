@@ -120,10 +120,12 @@ class Serial_connection:
                 try:
                     self.stream = serial.Serial(device, baudrate=baudrate, interCharTimeout=1)
                     self.__in_waiting = self.stream.inWaiting
+                    self.reset_input_buffer = self.stream.flushInput
                 except (TypeError):
                     # version 3 of the pyserial library changed everything
                     self.stream = serial.Serial(device, baudrate=baudrate, inter_byte_timeout=1)
                     self.__in_waiting = lambda: self.stream.in_waiting
+                    self.reset_input_buffer = self.stream.reset_input_buffer
                 self.__expose_stream_methods()
                 self.connected = True
                 if attempt != 0:
