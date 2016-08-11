@@ -40,6 +40,7 @@ class PluginPycomSync(QObject):
         self.__project.projectClosed.connect(self.__projectClosed)
         self.__viewManager.editorOpened.connect(self.__editorOpened)
         self.__viewManager.lastEditorClosed.connect(self.__lastEditorClosed)
+        self.__busy = False
 
     def activate(self):
         """
@@ -145,34 +146,34 @@ class PluginPycomSync(QObject):
         return self.__project.getProjectPath()
 
     def __syncAct(self):
-        if self.__project.isOpen() and self.__deviceServer == None and PycomDeviceServer.getStatus() == True:
-            self.__deviceServer = PycomDeviceServer()
-            self.__deviceServer.emitStatusChange("uploadinit")
-            self.__deviceServer.overrideControl(self.__continueSync)
+        if self.__project.isOpen() and PycomDeviceServer.getStatus() == True and not self.__busy:
+            self.__busy = True
+            PycomDeviceServer.overrideControl(self.__continueSync)
 
-    def __continueSync(self):
+    def __continueSync(self, deviceServer):
+        deviceServer.emitStatusChange("uploadinit")
         pwd = os.getcwd()
         os.chdir(self.__getProjectPath())
         localFiles = self.__getProjectFiles()
-        sync = Sync(localFiles, self.__deviceServer.channel)
+        sync = Sync(localFiles, deviceServer.channel)
         sync.sync_pyboard()
         sync.finish_sync()
         os.chdir(pwd)
-        self.__deviceServer.emitStatusChange("uploadend")
-        self.__deviceServer = None
+        deviceServer.emitStatusChange("uploadend")
+        self.__busy = False
 
     def __runThisAct(self):
         editor = self.__viewManager.activeWindow()
-        if editor != None and self.__deviceServer == None and PycomDeviceServer.getStatus() == True:
-            self.__deviceServer = PycomDeviceServer()
-            self.__deviceServer.overrideControl(self.__continueRun)
+        if editor != None and PycomDeviceServer.getStatus() == True and not self.__busy:
+            self.__busy = True
+            PycomDeviceServer.overrideControl(self.__continueRun)
 
-    def __continueRun(self):
+    def __continueRun(self, deviceServer):
         editor = self.__viewManager.activeWindow()
         if editor != None:
             code = editor.text()
-            self.__deviceServer.exec_code(code)
-        self.__deviceServer = None
+            deviceServer.exec_code(code)
+        self.__busy = False
 
     def __projectOpened(self):
         self.syncAct.setEnabled(True)

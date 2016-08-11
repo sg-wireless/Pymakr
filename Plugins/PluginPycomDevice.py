@@ -289,7 +289,7 @@ class PycomDeviceServer(QThread):
                 if PycomDeviceServer.__overrideCallback:
                     cb = PycomDeviceServer.__overrideCallback
                     PycomDeviceServer.__overrideCallback = None
-                    cb()
+                    cb(self)
                     continuing = True
                     continue
 
@@ -314,14 +314,15 @@ class PycomDeviceServer(QThread):
     def signalDataReception(self, text):
         self.dataReceptionEvent.emit(text)
 
-    def overrideControl(self, callback):
+    @staticmethod
+    def overrideControl(callback):
         PycomDeviceServer.__overrideCallback = callback
         PycomDeviceServer.channel.exit_recv()
 
     def exec_code(self, code):
-        self.channel.enter_raw_repl_no_reset()
-        self.channel.exec_raw_no_follow(code)
-        self.channel.exit_raw_repl()
+        PycomDeviceServer.channel.enter_raw_repl_no_reset()
+        PycomDeviceServer.channel.exec_raw_no_follow(code)
+        PycomDeviceServer.channel.exit_raw_repl()
 
     def send(self, text):
         try:
