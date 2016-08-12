@@ -242,7 +242,7 @@ class Telnet_connection:
         self.__socket.settimeout(value)
 
     def gettimeout(self):
-        self.__socket.gettimeout()
+        return self.__socket.gettimeout()
 
     def _wait_for_exact_text(self, remote_text):
         remote_text = to_bytes(remote_text)
@@ -329,10 +329,10 @@ class Socket_connection:
         self.stream.close()
 
     def settimeout(self, value):
-        self.stream.timeout = value
+        self.stream.settimeout(value)
 
     def gettimeout(self):
-        return self.stream.timeout
+        return self.stream.gettimeout()
 
     def keep_alive(self):
         pass
