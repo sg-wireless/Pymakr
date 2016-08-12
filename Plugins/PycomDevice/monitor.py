@@ -78,9 +78,9 @@ class InbandCommunication(object):
         if self.carry_over != b'': # check if a previous call generated a surplus
             data = self.carry_over + data
             self.carry_over = b''
-        max_idx = len(data) - 1
         esc_pos = data.find(b'\x1b') # see if there is any ESC in the bytestream
         while esc_pos != -1:
+            max_idx = len(data) - 1
             if esc_pos != max_idx:
                 # the ESC is not at the end
                 if data[esc_pos + 1] == 0x1b:
@@ -199,7 +199,7 @@ class Monitor(object):
         data_len = self.read_int32()
         self.init_hash(data_len)
         while data_len != 0:
-            data = self.stream.read(min(data_len, 256))
+            data = self.stream.read_exactly(min(data_len, 256))
             dest.write(data)
             self.last_hash.update(data)
             data_len -= len(data)
