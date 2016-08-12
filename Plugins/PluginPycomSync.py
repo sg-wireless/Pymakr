@@ -158,16 +158,16 @@ class PluginPycomSync(QObject):
             PycomDeviceServer.overrideControl(self.__continueSync)
 
     def __continueSync(self, deviceServer):
-        deviceServer.emitStatusChange("uploadinit")
+        deviceServer.emitStatusChange("syncinit")
         pwd = os.getcwd()
         os.chdir(self.__getProjectPath())
         localFiles = self.__getProjectFiles()
         sync = Sync(localFiles, deviceServer.channel)
         try:
             sync.sync_pyboard()
-            deviceServer.emitStatusChange("uploadend")
+            deviceServer.emitStatusChange("syncend")
         except:
-            deviceServer.emitStatusChange("uploadfailed")
+            deviceServer.emitStatusChange("syncfailed")
         sync.finish_sync()
         os.chdir(pwd)
         self.__busy = False

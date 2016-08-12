@@ -65,7 +65,7 @@ class PluginREPL(QObject):
             e5App().getObject("ViewManager"))
 
         self.__ui.bottomSidebar.insertTab(0, self.__shell,
-            UI.PixmapCache.getIcon("chip.png"), "MicroPython Console")
+            UI.PixmapCache.getIcon("chip.png"), "Pycom Console")
 
         self.__ui.bottomSidebar.setTabText(1, self.tr("Local Shell"))
 

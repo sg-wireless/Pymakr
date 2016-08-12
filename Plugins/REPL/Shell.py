@@ -105,12 +105,12 @@ class UPythonShell(QsciScintillaCompat):
         
         self.linesepRegExp = r"\r\n|\n|\r"
         
-        self.setWindowTitle(self.tr('MicroPython Shell'))
+        self.setWindowTitle(self.tr('Pycom Device Shell'))
 
         # #todo improve this text (original was more complete)        
         self.setWhatsThis(self.tr(
-            """<b>The MicroPython Shell Window</b>"""
-            """<p>This is a direct connection into a MicroPython Device</p>"""
+            """<b>The Pycom Shell Window</b>"""
+            """<p>This is a direct connection into a Pycom Device</p>"""
         ))
 
         self.linesChanged.connect(self.__resizeLinenoMargin)
@@ -587,32 +587,37 @@ class UPythonShell(QsciScintillaCompat):
 
     def __printWelcome(self):
         if not hasattr(QtGui, "qt_mac_set_native_menubar"):
-            notConfiguredMsg = "First proceed to configure one in: Settings > Preferences > MicroPython\r"
+            notConfiguredMsg = "First proceed to configure one in: Settings > Preferences > Pycom Device\r"
         else:
-            notConfiguredMsg = "First proceed to configure one in: Pymakr > Preferences > MicroPython\r"
-        self.__write(self.tr("Remember, you can always click on this window to connect to a MicroPython device!\r"))
+            notConfiguredMsg = "First proceed to configure one in: Pymakr > Preferences > Pycom Device\r"
+        self.__write(self.tr("Remember, you can always click on this window to connect to a Pycom device!\r"))
         if not self.dbs.isConfigured():
             self.__write(self.tr(notConfiguredMsg))
 
     @pyqtSlot(str)
     def notifyStatus(self, status):
+        if self.dbs.uname:
+            dev_str = self.dbs.uname[0]
+        else:
+            dev_str = "Pycom device"
+
         if status == "connecting":
-            self.__write(self.tr("Connecting...\r"))
+            self.__write(self.tr("Connecting to the {0}...\r".format(dev_str)))
         if status == "connected":
             self.__write(self.tr("Connected!\r"))
         elif status == "disconnected":
             self.__write(self.tr("Connection closed\r"))
         elif status == "error":
-            self.__write(self.tr("Error while communicating with the MicroPython device!\r"))
+            self.__write(self.tr("Error while communicating with the {0}!\r".format(dev_str)))
         elif status == "reattempt":
             self.__write(self.tr("Reattempting in a few seconds...\r"))
         elif status == "invcredentials":
             self.__write(self.tr("Invalid credentials, please check device username and password\r"))
         elif status == "invaddress":
             self.__write(self.tr("Invalid device address, please check the settings\r"))
-        elif status == "uploadinit":
-            self.__write(self.tr("\r\rUploading file(s). Please wait...\r"))
-        elif status == "uploadend":
-            self.__write(self.tr("Uploaded successfully!\r\r"))
-        elif status == "uploadfailed":
-            self.__write(self.tr("Uploaded failed!\r\r"))
+        elif status == "syncinit":
+            self.__write(self.tr("\r\rSyncing the project with the {0}. Please wait...\r".format(dev_str)))
+        elif status == "syncend":
+            self.__write(self.tr("Successfully synced!\r\r"))
+        elif status == "syncfailed":
+            self.__write(self.tr("Syncing failed!\r\r"))
