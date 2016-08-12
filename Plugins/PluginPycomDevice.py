@@ -126,7 +126,6 @@ class PycomDeviceSingleton(QObject):
     statusChanged = pyqtSignal(str)
     firmwareDetected = pyqtSignal()
     _instance = None
-    _initialized = False
 
     def __new__(cls, *args, **kwargs):
         if not cls._instance:
@@ -138,10 +137,10 @@ class PycomDeviceSingleton(QObject):
         # can run into problems with more than 1 thread calling at once
         # but as Pymakr doesn't load the plugins in parallel, this shouldn't
         # be a problem
-        if PycomDeviceSingleton._initialized == False:
-            PycomDeviceSingleton._initialized = True
-            super(PycomDeviceSingleton, self).__init__()
-            self.__master_thread = None
+
+        PycomDeviceSingleton.__init__ = lambda self: None # just run once
+        super(PycomDeviceSingleton, self).__init__()
+        self.__master_thread = None
 
     def postulateMeAsMaster(self):
         # sets the thread of the caller as the master thread if no one else is
