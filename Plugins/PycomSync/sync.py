@@ -56,7 +56,6 @@ class Sync(object):
 
 
     def sync_pyboard(self):
-        from PyQt5.QtCore import QThread
         remote = self.monitor.read_file(b"/flash/project.pymakr")
         if remote is None:
             remote = []
