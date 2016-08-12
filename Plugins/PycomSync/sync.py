@@ -21,10 +21,7 @@ class Sync(object):
         self.__original_local = local
         self.monitor = MonitorPC(pyb)
 
-    def to_update(self):
-        return list(self.local & self.remote)
-
-    def to_create(self):
+    def to_create_update(self):
         return list(self.local - self.remote)
 
     def to_delete(self):
@@ -46,14 +43,10 @@ class Sync(object):
         map(self.monitor.remove_dir, filter_by_type_order_by_depth(self.to_delete(), b'd', True))
 
         # now create new directories
-        map(self.monitor.create_dir, filter_by_type_order_by_depth(self.to_create(), b'd', False))
+        map(self.monitor.create_dir, filter_by_type_order_by_depth(self.to_create_update(), b'd', False))
 
-        # upload the new files
-        map(self.upload_file, filter_by_type(self.to_create(), b'f'))
-
-        # and update the ones that changed
-        map(self.upload_file, filter_by_type(self.to_update(), b'f'))
-
+        # upload the new files and the ones that changed
+        map(self.upload_file, filter_by_type(self.to_create_update(), b'f'))
 
     def sync_pyboard(self):
         remote = self.monitor.read_file(b"/flash/project.pymakr")

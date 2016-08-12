@@ -1,7 +1,7 @@
 import os
 from PyQt5.QtCore import QObject, QCoreApplication
 from PyQt5.QtWidgets import QToolBar
-
+import hashlib
 
 import UI
 from E5Gui.E5Application import e5App
@@ -28,6 +28,12 @@ pluginTypename="pycomsync"
 pyqtApi = 2
 python2Compatible = True
 
+def sha256(fname):
+    hash_sha = hashlib.sha256()
+    with open(fname, "rb") as f:
+        for chunk in iter(lambda: f.read(4096), b""):
+            hash_sha.update(chunk)
+    return hash_sha.hexdigest()
 
 class PluginPycomSync(QObject):
     def __init__(self,  ui):
@@ -132,15 +138,15 @@ class PluginPycomSync(QObject):
 
         for i in range(len(resources)):
             item = resources[i]
+
             directories.add(os.path.split(item)[0] + '/')
-            resources[i] = (item, b'f')
+            resources[i] = (item, b'f', sha256(item))
 
         for el in directories:
             subdirs = self.__splitSubdirectories(el)
             split_directories.update(subdirs)
 
         resources.extend(split_directories)
-
         return resources
 
     def __getProjectPath(self):
