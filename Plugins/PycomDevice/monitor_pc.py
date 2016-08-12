@@ -84,10 +84,10 @@ class MonitorPC(object):
         return struct.unpack('>H', self.__read_exactly(2))[0]
 
     def __send_int_16(self, i):
-        self.connection.write(struct.pack('>H', i))
+        self.__send(struct.pack('>H', i))
 
     def __send_int_32(self, i):
-        self.connection.write(struct.pack('>L', i))
+        self.__send(struct.pack('>L', i))
 
     def exit_monitor(self):
         """
