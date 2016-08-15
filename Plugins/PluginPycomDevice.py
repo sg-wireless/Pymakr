@@ -218,9 +218,9 @@ class PycomDeviceServer(QThread):
             PycomDeviceServer.channel.exit_recv()
             time.sleep(0.2)
             PycomDeviceServer.channel.close()
-            self.__deviceSingleton.relinquishMaster()
         except:
             pass
+        self.__deviceSingleton.relinquishMaster()
 
     def setConnectionParameters(self, device, user, password):
         PycomDeviceServer.__device = device
@@ -295,6 +295,7 @@ class PycomDeviceServer(QThread):
 
             except (Exception, BaseException) as err:
                 self.__handleChannelExceptions(err)
+                return
 
             if PycomDeviceServer.__keepTrying == False or PycomDeviceServer.__shutdown == True:
                 break
