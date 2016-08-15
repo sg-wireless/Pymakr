@@ -3,6 +3,7 @@
 # UI/AdvancedLanguages
 
 import os
+import sys
 
 from PyQt5.QtCore import QResource
 from PyQt5.QtCore import QObject
@@ -103,11 +104,17 @@ class PluginSimpleUI(QObject):
         Preferences.Prefs.settings.setValue("General/Configured", True)
 
     def __loadFont(self):
-        fontVariations = ["", "-Oblique"]
+        osFamily = sys.platform
+        if osFamily == 'darwin':
+            fontVariations = ["Thin", "ThinItalic"]
+            self.__defaultFontSize = 14
+        else:
+            fontVariations = ["Light", "LightItalic"]
+            self.__defaultFontSize = -1
 
         for variation in fontVariations:
             QFontDatabase.addApplicationFont(self.__path + 
-                "/SimpleUI/Fonts/DejaVuSansMono" + variation + ".ttf")
+                "/SimpleUI/Fonts/RobotoMono-" + variation + ".ttf")
 
     def __windowLoaded(self, event):
         """
@@ -336,7 +343,7 @@ class PluginSimpleUI(QObject):
         browser.tabBar().hide()
 
     def __setupDefaultParameters(self):
-        defaultFont = QFont("DejaVu Sans Mono", 11, -1, False)
+        defaultFont = QFont("Roboto Mono", self.__defaultFontSize, -1, False)
 
         uiDefaults = {
             "SidebarDelay": 500,
@@ -463,8 +470,7 @@ class PluginSimpleUI(QObject):
                 pluginManager.deactivatePlugin(name)
 
     def __applyMonokaiPython(self, lexerName):
-        defaultFont = "DejaVu Sans Mono"
-        defaultFontSize = 11
+        defaultFont = QFont("Roboto Mono", self.__defaultFontSize, -1, False)
         colors = ["#ffffff", "#888877", "#ae81ff", "#ffff88",
                   "#ffff88", "#ff3377", "#ffff88", "#ffff88",
                   "#aaff33", "#aaff47", "#ff3377", "#ffffff",
@@ -472,19 +478,20 @@ class PluginSimpleUI(QObject):
 
         lexer = PreferencesLexer(lexerName)
 
-        for i in xrange(0, 15):
+        for i in range(0, 15):
             lexer.setPaper(QColor(Qt.black), i)
-            lexer.setFont(QFont(defaultFont, defaultFontSize, -1, False), i)
+            lexer.setFont(defaultFont, i)
             lexer.setColor(QColor(colors[i]), i)
 
         # specific values now
         # comment
-        lexer.setFont(QFont(defaultFont, defaultFontSize, -1, True), 1)
+        defaultFont.setItalic(True)
+        lexer.setFont(defaultFont, 1)
+        defaultFont.setItalic(False)
 
         # class name
-        underlined = QFont(defaultFont, defaultFontSize, -1, False)
-        underlined.setUnderline(True)
-        lexer.setFont(underlined, 8)
+        defaultFont.setUnderline(True)
+        lexer.setFont(defaultFont, 8)
 
         # Unclosed string
         lexer.setPaper(QColor("#f92672"), 13)
