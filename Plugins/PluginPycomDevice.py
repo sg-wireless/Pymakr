@@ -267,6 +267,7 @@ class PycomDeviceServer(QThread):
 
     def __getConnected(self):
         self.emitStatusChange("connecting")
+        QThread.yieldCurrentThread()
         PycomDeviceServer.channel = pyboard.Pyboard(device=PycomDeviceServer.__device,
             user=PycomDeviceServer.__user, password=PycomDeviceServer.__password, keep_alive=3, connection_timeout=10)
         PycomDeviceServer.channel.reset()

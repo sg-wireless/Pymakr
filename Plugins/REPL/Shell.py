@@ -596,9 +596,10 @@ class UPythonShell(QsciScintillaCompat):
             notConfiguredMsg = "First proceed to configure one in: Settings > Preferences > Pycom Device\r"
         else:
             notConfiguredMsg = "First proceed to configure one in: Pymakr > Preferences > Pycom Device\r"
-        self.__write(self.tr("Remember, you can always click on this window to connect to a Pycom device!\r"))
         if not self.dbs.isConfigured():
             self.__write(self.tr(notConfiguredMsg))
+        else:
+            self.notifyStatus("connecting")
 
     @pyqtSlot(str)
     def notifyStatus(self, status):
@@ -608,13 +609,13 @@ class UPythonShell(QsciScintillaCompat):
             dev_str = "Pycom device"
 
         if status == "connecting":
-            self.__write(self.tr("Connecting to the {0}...\r".format(dev_str)))
+            self.__write(self.tr("Connecting to a {0}...\r".format(dev_str)))
         # elif status == "connected":
         #     self.__write(self.tr("Connected!\r"))
         elif status == "disconnected":
             self.__write(self.tr("Connection closed\r"))
         elif status == "error":
-            self.__write(self.tr("Error while communicating with the {0}! (click to reconnect)\r".format(dev_str)))
+            self.__write(self.tr("Error while communicating with the {0}! (click to attempt to reconnect)\r".format(dev_str)))
         elif status == "reattempt":
             self.__write(self.tr("Reattempting in a few seconds...\r"))
         elif status == "invcredentials":
