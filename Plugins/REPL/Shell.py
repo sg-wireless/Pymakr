@@ -192,6 +192,11 @@ class UPythonShell(QsciScintillaCompat):
         else:
             ev.ignore
 
+    def mouseReleaseEvent(self, event):
+        if event.button() == Qt.LeftButton and self.hasFocus():
+            self.focusChanged.emit(True)
+        super(UPythonShell, self).mouseReleaseEvent(event)
+
     def focusInEvent(self, event):
         """
         Protected method called when the shell receives focus.
@@ -224,7 +229,8 @@ class UPythonShell(QsciScintillaCompat):
         self.__searchPrevShortcut.setEnabled(True)
         self.setCaretWidth(self.caretWidth)
         self.setCursorFlashTime(QApplication.cursorFlashTime())
-        self.focusChanged.emit(True)
+        # moved the next line to the mouseRelease event
+        # self.focusChanged.emit(True)
         super(UPythonShell, self).focusInEvent(event)
         
     def focusOutEvent(self, event):
@@ -603,12 +609,12 @@ class UPythonShell(QsciScintillaCompat):
 
         if status == "connecting":
             self.__write(self.tr("Connecting to the {0}...\r".format(dev_str)))
-        if status == "connected":
-            self.__write(self.tr("Connected!\r"))
+        # elif status == "connected":
+        #     self.__write(self.tr("Connected!\r"))
         elif status == "disconnected":
             self.__write(self.tr("Connection closed\r"))
         elif status == "error":
-            self.__write(self.tr("Error while communicating with the {0}!\r".format(dev_str)))
+            self.__write(self.tr("Error while communicating with the {0}! (click to reconnect)\r".format(dev_str)))
         elif status == "reattempt":
             self.__write(self.tr("Reattempting in a few seconds...\r"))
         elif status == "invcredentials":

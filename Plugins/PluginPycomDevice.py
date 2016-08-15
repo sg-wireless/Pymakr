@@ -257,6 +257,7 @@ class PycomDeviceServer(QThread):
                 self.emitStatusChange("error")
         else:
             self.emitStatusChange("error")
+        self.disconnect()
 
     def __fetchFirmwareVersion(self):
         from ast import literal_eval
@@ -292,7 +293,6 @@ class PycomDeviceServer(QThread):
                     continuing = True
                     continue
 
-                self.emitStatusChange("disconnected")
             except (Exception, BaseException) as err:
                 self.__handleChannelExceptions(err)
 
