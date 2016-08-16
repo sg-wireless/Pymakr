@@ -75,7 +75,7 @@ class PluginPycomDevice(QObject):
         """
         self.__active = True
         if self.__windowLoaded == True:
-            self.__initializeShell()
+            self.__initializeConnectDevice()
         return None, True
 
     def deactivate(self):
@@ -90,7 +90,7 @@ class PluginPycomDevice(QObject):
         self.__ui.showEvent(event)
 
         if self.__active == True:
-            self.__initializeShell()
+            self.__initializeConnectDevice()
         self.__windowLoaded = True
 
     def __onWindowUnload(self, event):
@@ -98,7 +98,7 @@ class PluginPycomDevice(QObject):
         self.__pds.disconnect()
         self.__ui.closeEvent(event)
 
-    def __initializeShell(self):
+    def __initializeConnectDevice(self):
         self.__pds = PycomDeviceServer()
         self.loadSettings()
         self.__pds.connect()
@@ -335,10 +335,8 @@ class PycomDeviceServer(QThread):
         try:
             if PycomDeviceServer.getStatus() == True:
                 self.disconnect()
-                self.connect()
-            if PycomDeviceServer.__keepTrying == True:
                 time.sleep(0.25)
-                self.connect()
+            self.connect()
         except:
             pass
 
