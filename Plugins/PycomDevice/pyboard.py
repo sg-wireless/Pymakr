@@ -147,7 +147,7 @@ class Serial_connection:
         return True
 
     def keep_alive(self):
-        pass
+        return True
 
     def settimeout(self, value):
         self.stream.timeout = value
@@ -224,14 +224,14 @@ class Telnet_connection:
     def __init__(self, uri, connection_timeout=15, read_timeout=10):
         self.__read_timeout = read_timeout
         self.connected = False
+        self.__pending_AYT_RESP = False
         try:
             address, port = separate_address_port(uri)
             self.stream = Telnet_connection.telnetlib.Telnet(address, port, timeout=connection_timeout)
             self.__socket = self.stream.get_socket()
-            self.__socket.setsockopt(Telnet_connection.socket.SOL_SOCKET,
-                Telnet_connection.socket.SO_KEEPALIVE, 1)
             self.__socket.setsockopt(Telnet_connection.socket.IPPROTO_TCP,
                 Telnet_connection.socket.TCP_NODELAY, 1)
+            self.stream.set_option_negotiation_callback(self.__process_options)
             self.connected = True
             self.__expose_stream_methods()
 
@@ -283,10 +283,18 @@ class Telnet_connection:
         self.stream.write(data)
         return len(data)
 
+    def __process_options(self, telnet_socket, command, option):
+        if command == Telnet_connection.telnetlib.AYT:
+            self.__pending_AYT_RESP = False
+
     def keep_alive(self):
-        self.__socket.sendall(Telnet_connection.telnetlib.IAC +
-            Telnet_connection.telnetlib.NOP +
-            Telnet_connection.telnetlib.NOP)
+        if self.__pending_AYT_RESP == True:
+            return False
+        else:
+            self.__socket.sendall(Telnet_connection.telnetlib.IAC +
+                Telnet_connection.telnetlib.AYT)
+            self.__pending_AYT_RESP = True
+            return True
 
     def __expose_stream_methods(self):
         self.read_until = self.stream.read_until
@@ -335,7 +343,7 @@ class Socket_connection:
         return self.stream.gettimeout()
 
     def keep_alive(self):
-        pass
+        return True
 
     def authenticate(self, user, password):
         # needs no authentication
@@ -358,10 +366,11 @@ class Socket_connection:
         return buf
 
 class Pyboard:
+    LOST_CONNECTION = 1
+
     def __init__(self, device, baudrate=115200, user='micro', password='python', connection_timeout=0, keep_alive=0):
         self.__device = None
         self._connect(device, baudrate, user, password, connection_timeout, keep_alive, False)
-
 
     def close_dont_notify(self):
         if self.connected == False:
@@ -375,12 +384,13 @@ class Pyboard:
             pass
 
     def close(self):
+        if self.connected == False:
+            return
         self.close_dont_notify()
         try:
             self.__disconnected_callback()
         except:
             pass
-
 
     def get_connection_type(self):
         return self.__connectionType
@@ -430,9 +440,10 @@ class Pyboard:
         if self.connected == False:
             return
         try:
-            self.connection.keep_alive()
+            if self.connection.keep_alive() == False:
+                self.__disconnected_callback(Pyboard.LOST_CONNECTION)
         except:
-            self.close()
+             self.__disconnected_callback(Pyboard.LOST_CONNECTION)
 
     def check_connection(self):
         self._keep_alive()

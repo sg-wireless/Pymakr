@@ -610,10 +610,10 @@ class UPythonShell(QsciScintillaCompat):
 
         if status == "connecting":
             self.__write(self.tr("Connecting to a {0}...\r".format(dev_str)))
-        # elif status == "connected":
-        #     self.__write(self.tr("Connected!\r"))
         elif status == "disconnected":
             self.__write(self.tr("Connection closed\r"))
+        elif status == "lostconnection":
+            self.__write(self.tr("Lost connection with the {0}! (click to attempt to reconnect)\r".format(dev_str)))
         elif status == "error":
             self.__write(self.tr("Error while communicating with the {0}! (click to attempt to reconnect)\r".format(dev_str)))
         elif status == "reattempt":

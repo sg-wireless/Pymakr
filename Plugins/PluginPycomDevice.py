@@ -206,6 +206,7 @@ class PycomDeviceServer(QThread):
             if not PycomDeviceServer.__device:
                 return False
             if not self.__deviceSingleton.isThereMasterThread():
+                self.moveToThread(self)
                 self.start()
         except:
             return False
@@ -243,6 +244,11 @@ class PycomDeviceServer(QThread):
 
     def emitFirmwareDetected(self):
         self.firmwareDetected.emit()
+
+    def __disconnectedCallback(self, reason):
+        if reason == pyboard.Pyboard.LOST_CONNECTION:
+            self.disconnect()
+            self.emitStatusChange("lostconnection")
 
     def __handleChannelExceptions(self, err):
         if type(err) == pyboard.PyboardError:
@@ -284,6 +290,7 @@ class PycomDeviceServer(QThread):
                     self.__getConnected()
                     self.signalDataReception(PycomDeviceServer.channel.read_until(b'>>>').decode("utf-8"))
                     self.__fetchFirmwareVersion()
+                    PycomDeviceServer.channel.set_disconnected_callback(self.__disconnectedCallback)
                     attempt = 0
                 continuing = False
                 PycomDeviceServer.channel.recv(self.signalDataReception)
