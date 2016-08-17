@@ -513,10 +513,21 @@ class UPythonShell(QsciScintillaCompat):
         text = text.replace('\x04', '')
         self.replaceSelectedText(text)
 
+    def __insertNewLine(self):
+        line, col = self.__getEndPos()
+        self.setCursorPosition(line, col)
+        self.__overwrite("\n")
+
     def __simulateVT100(self, s):
         if s[0] == b'\x08':
             self.moveCursorLeft()
             self.__movement = True
+            return 1
+        elif s[0] == b'\r':
+            return 1
+        elif s[0] == b'\n':
+            self.__insertNewLine()
+            self._movement = True
             return 1
         elif s[0:2] == b'\x1b[':
             s = s[2:]
@@ -597,9 +608,9 @@ class UPythonShell(QsciScintillaCompat):
 
     def __printWelcome(self):
         if not hasattr(QtGui, "qt_mac_set_native_menubar"):
-            notConfiguredMsg = "First proceed to configure one in: Settings > Preferences > Pycom Device\r"
+            notConfiguredMsg = "First proceed to configure one in: Settings > Preferences > Pycom Device\n"
         else:
-            notConfiguredMsg = "First proceed to configure one in: Pymakr > Preferences > Pycom Device\r"
+            notConfiguredMsg = "First proceed to configure one in: Pymakr > Preferences > Pycom Device\n"
         if not self.dbs.isConfigured():
             self.__write(self.tr(notConfiguredMsg))
         else:
@@ -613,22 +624,22 @@ class UPythonShell(QsciScintillaCompat):
             dev_str = "Pycom device"
 
         if status == "connecting":
-            self.__write(self.tr("Connecting to a {0}...\r".format(dev_str)))
+            self.__write(self.tr("Connecting to a {0}...\n".format(dev_str)))
         elif status == "disconnected":
-            self.__write(self.tr("Connection closed\r"))
+            self.__write(self.tr("Connection closed\n"))
         elif status == "lostconnection":
-            self.__write(self.tr("Lost connection with the {0}! (click to attempt to reconnect)\r".format(dev_str)))
+            self.__write(self.tr("Lost connection with the {0}! (click to attempt to reconnect)\n".format(dev_str)))
         elif status == "error":
-            self.__write(self.tr("Error while communicating with the {0}! (click to attempt to reconnect)\r".format(dev_str)))
+            self.__write(self.tr("Error while communicating with the {0}! (click to attempt to reconnect)\n".format(dev_str)))
         elif status == "reattempt":
-            self.__write(self.tr("Reattempting in a few seconds...\r"))
+            self.__write(self.tr("Reattempting in a few seconds...\n"))
         elif status == "invcredentials":
-            self.__write(self.tr("Invalid credentials, please check device username and password\r"))
+            self.__write(self.tr("Invalid credentials, please check device username and password\n"))
         elif status == "invaddress":
-            self.__write(self.tr("Invalid device address, please check the settings\r"))
+            self.__write(self.tr("Invalid device address, please check the settings\n"))
         elif status == "syncinit":
-            self.__write(self.tr("\r\rSyncing the project with the {0}. Please wait...\r".format(dev_str)))
+            self.__write(self.tr("\n\nSyncing the project with the {0}. Please wait...\n".format(dev_str)))
         elif status == "syncend":
-            self.__write(self.tr("Successfully synced!\r\r"))
+            self.__write(self.tr("Successfully synced!\n\n"))
         elif status == "syncfailed":
-            self.__write(self.tr("Syncing failed!\r\r"))
+            self.__write(self.tr("Syncing failed!\n\n"))
