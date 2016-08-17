@@ -166,7 +166,11 @@ class UPythonShell(QsciScintillaCompat):
         elif key == Qt.Key_Right:
             return b'\x1b[C'
         elif key == Qt.Key_Left:
-            return b'\x1b[D'            
+            return b'\x1b[D'
+        elif key == Qt.Key_Home:
+            return b'\x01'
+        elif key == Qt.Key_End:
+            return b'\x05'
         return ''
 
     def patch(self):
