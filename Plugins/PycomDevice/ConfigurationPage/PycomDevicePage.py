@@ -17,7 +17,6 @@ class PycomDevicePage(ConfigurationPageBase, Ui_PycomDevicePage):
     Class implementing the PycomDevice configuration page.
     """
     def __init__(self, plugin):
-        import serial.tools.list_ports
         """
         Constructor
         
