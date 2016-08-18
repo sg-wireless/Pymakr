@@ -138,6 +138,7 @@
   </layout>
  </widget>
  <tabstops>
+  <tabstop>txt_device</tabstop>
   <tabstop>txt_user</tabstop>
   <tabstop>txt_password</tabstop>
  </tabstops>
