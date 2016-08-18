@@ -29,6 +29,7 @@ from SimpleUI.qdarkstyle import pyqt5_style_rc
 
 import Preferences
 from Preferences.PreferencesLexer import PreferencesLexer
+from PluginUpdate import calc_int_version
 
 import UI.Info
 
@@ -64,7 +65,7 @@ class PluginSimpleUI(QObject):
 
         self.__loadFont()
 
-        if not Preferences.isConfigured():
+        if not Preferences.isConfigured() or Preferences.Prefs.settings.value("General/IniVersion", 0) <= calc_int_version(UI.Info.Version):
             self.__firstLoad()
 
     def activate(self):
@@ -102,6 +103,7 @@ class PluginSimpleUI(QObject):
         self.__hideToolbars()
 
         Preferences.Prefs.settings.setValue("General/Configured", True)
+        Preferences.Prefs.settings.setValue("General/IniVersion", UI.Info.Version)
 
     def __loadFont(self):
         osFamily = sys.platform
