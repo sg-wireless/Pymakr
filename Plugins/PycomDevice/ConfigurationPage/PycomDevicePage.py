@@ -41,9 +41,16 @@ class PycomDevicePage(ConfigurationPageBase, Ui_PycomDevicePage):
             self.__plugin.getPreferences("password"))
 
         # load the rest of the list
-        for n, (portname, desc, hwid) in enumerate(sorted(serial.tools.list_ports.comports())):
-            if portname != current_address:
-                self.txt_device.addItem(portname)
+        self.loadSerialPortsList(current_address)
+
+    def loadSerialPortsList(self, current_address):
+        try:
+            import serial.tools.list_ports
+            for n, (portname, desc, hwid) in enumerate(sorted(serial.tools.list_ports.comports())):
+                if portname != current_address:
+                    self.txt_device.addItem(portname)            
+        except:
+            pass
 
     def save(self):
         """
