@@ -134,10 +134,6 @@ class FetchUpdates(QObject):
 
 
     def processPycomDeviceVersion(self):
-        # product = "pymakr"
-        # platform = "macos"
-        # url = "http://10.0.10.1:3000/findupgrade?product=%s&type=stable&platform=%s" % (product, platform)
-
         product = PycomDeviceServer.uname[0].lower()
         platform = PycomDeviceServer.uname[1].lower()
         url = "https://software.pycom.io/findupgrade?product=%s&type=stable&platform=%s" % (product, platform)
