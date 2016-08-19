@@ -607,11 +607,12 @@ class UPythonShell(QsciScintillaCompat):
         e5App().getObject("UserInterface").showPreferences("MicroPython")
 
     def __printWelcome(self):
-        if not hasattr(QtGui, "qt_mac_set_native_menubar"):
-            notConfiguredMsg = "First proceed to configure one in: Settings > Preferences > Pycom Device\n"
-        else:
-            notConfiguredMsg = "First proceed to configure one in: Pymakr > Preferences > Pycom Device\n"
         if not self.dbs.isConfigured():
+            if not hasattr(QtGui, "qt_mac_set_native_menubar"):
+                notConfiguredMsg = "Settings"
+            else:
+                notConfiguredMsg = "Pymakr"
+            notConfiguredMsg = "Proceed to configure a Pycom device in: {0} > Preferences > Pycom Device\n".format(notConfiguredMsg)
             self.__write(self.tr(notConfiguredMsg))
         else:
             self.notifyStatus("connecting")
