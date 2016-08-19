@@ -102,7 +102,6 @@ class PluginSimpleUI(QObject):
 
         Preferences.Prefs.settings.setValue("General/Configured", True)
         Preferences.Prefs.settings.setValue("General/IniVersion", UI.Info.Version)
-        self.__ui._UserInterface__preferencesChanged()
 
     def __loadFont(self):
         osFamily = sys.platform
