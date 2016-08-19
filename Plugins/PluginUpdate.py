@@ -13,13 +13,13 @@ import Preferences
 from PluginPycomDevice import PycomDeviceServer
 
 # Start-Of-Header
-name = "Updates"
+name = "Fetch Updates"
 author = "Pycom"
 autoactivate = True
 deactivateable = False
 version = "1.0.0"
-className = "FetchUpdates"
-packageName = "FetchUpdates"
+className = "PluginUpdate"
+packageName = "PluginUpdate"
 shortDescription = "Fetch software updates"
 longDescription = "Fetch update notifications for software and firmware from the web server"
 
@@ -76,9 +76,9 @@ def calc_int_version(version):
 
     return version
 
-class FetchUpdates(QObject):
+class PluginUpdate(QObject):
     def __init__(self,  ui):
-        super(FetchUpdates, self).__init__(ui)
+        super(PluginUpdate, self).__init__(ui)
         Preferences.Prefs.uiDefaults['VersionsUrls6'] = ["https://software.pycom.io/findupgrade?product=pymakr&pymakr=true&type=all&platform=" + self.detectOsFamily()]
         self.__ui = ui
         self.__ui._UserInterface__versionCheckResult = self.__versionCheckResult
@@ -99,7 +99,7 @@ class FetchUpdates(QObject):
         self.__deviceServer = PycomDeviceServer()
         if self.__deviceServer.uname != None:
             self.processPycomDeviceVersion()
-        PycomDeviceServer.firmwareDetected.connect(self.processPycomDeviceVersion)
+        self.__deviceServer.firmwareDetected.connect(self.processPycomDeviceVersion)
         return None, True
 
     def deactivate(self):
