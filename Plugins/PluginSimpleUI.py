@@ -100,10 +100,9 @@ class PluginSimpleUI(QObject):
         self.__ui.setStyle(Preferences.getUI("Style"),
                       Preferences.getUI("StyleSheet"))
 
-        self.__hideToolbars()
-
         Preferences.Prefs.settings.setValue("General/Configured", True)
         Preferences.Prefs.settings.setValue("General/IniVersion", UI.Info.Version)
+        self.__ui._UserInterface__preferencesChanged()
 
     def __loadFont(self):
         osFamily = sys.platform
@@ -273,7 +272,7 @@ class PluginSimpleUI(QObject):
         for toolbar in ["vcs", "start", "debug", "multiproject", "help",
                         "unittest", "tools", "settings", "view_profiles",
                         "subversion", "pysvn", "mercurial", "plugins",
-                        "view"]:
+                        "view", "bookmarks"]:
             self.__ui.getToolbar(toolbar)[1].hide()
             self.__ui.unregisterToolbar(toolbar)
 
@@ -303,11 +302,11 @@ class PluginSimpleUI(QObject):
         toResize = ["file", "edit", "project", "bookmarks",
                     "quicksearch", "search", "spelling"]
         for toolbar in toResize:
-            self.__ui.getToolbar(toolbar)[1].setIconSize(QSize(32, 32))
+            try:
+                self.__ui.getToolbar(toolbar)[1].setIconSize(QSize(32, 32))
+            except:
+                pass
 
-    def __hideToolbars(self):
-        for toolbar in ["bookmarks"]:
-            self.__ui.getToolbar(toolbar)[1].hide()
 
     def __setupSidebars(self):
         """
