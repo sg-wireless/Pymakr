@@ -1,6 +1,6 @@
 def removeWidgetActions(widget, items):
     """
-    Private method that removes widget items.
+    Method that removes widget items.
 
     @param widget QWidget to modify
     @param items list of names of the elements to remove
@@ -14,7 +14,7 @@ def removeWidgetActions(widget, items):
 
 def hideWidgetActions(widget, items):
     """
-    Private method that hides widget items.
+    Method that hides widget items.
 
     @param widget QWidget to modify
     @param items list of names of the elements to hide
@@ -27,9 +27,9 @@ def hideWidgetActions(widget, items):
             item.setVisible(False)
 
 
-def hideWidgetSeparator(widget, items,mode="after"):
+def hideWidgetSeparator(widget, items, mode="after"):
     """
-    Private method that hides the separator before/after some
+    Method that hides the separator before/after some
     widget items.
 
     @param widget QWidget to modify
@@ -42,7 +42,7 @@ def hideWidgetSeparator(widget, items,mode="after"):
     toHide = False
     for item in widget.actions():
         if mode == "after":
-            if item.text() == "" and toHide == True:
+            if item.text() == "" and toHide is True:
                 item.setVisible(False)
                 continue
 
@@ -76,6 +76,9 @@ def setToolbarSize(ui, toolbar, size):
         pass
 
 def hideItemsSidebar(sidebar, items):
+    for el, val in enumerate(items):
+        items[el] = sidebar.tr(val)
+
     for i in range(sidebar.count() - 1, 0, -1):
         if sidebar.tabText(i) in items:
             sidebar.removeTab(i)
