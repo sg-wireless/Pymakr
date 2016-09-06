@@ -5,7 +5,7 @@
 
 import os
 
-from PyQt5.QtCore import QObject, QSize, QCoreApplication, QDir
+from PyQt5.QtCore import QObject, QSize, QCoreApplication, QDir, Qt
 from PyQt5.QtWidgets import QDialog, QApplication
 from E5Gui.E5Application import e5App
 
@@ -448,11 +448,14 @@ class PluginFullUI(QObject):
         ui._UserInterface__lastConfigurationPageName = dlg.getConfigurationPageName()
         ui._UserInterface__expandedConfigurationEntries = dlg.getExpandedEntries()
 
+    def __hideViewManagerLed(self):
+        e5App().getObject("ViewManager").currentTabWidget.setCornerWidget(None, Qt.TopLeftCorner)
+
     def __hideExtras(self):
         self.__ui.sbVcsMonitorLed.hide()
         self.__ui.sbZoom.slider.hide()
-        e5App().getObject("ViewManager").currentTabWidget.indicator.hide()
+        self.__hideViewManagerLed()
 
     def __addSplit(self):
         self.__viewAddSplit()
-        e5App().getObject("ViewManager").currentTabWidget.indicator.hide()
+        self.__hideViewManagerLed()
