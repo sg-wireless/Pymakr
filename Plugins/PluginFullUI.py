@@ -3,8 +3,6 @@
 #   UI/AdvancedBottomSidebar
 #   UI/AdvancedLanguages
 
-
-
 import os
 
 from PyQt5.QtCore import QObject, QSize, QCoreApplication, QDir
@@ -264,6 +262,7 @@ class PluginFullUI(QObject):
             UiHelper.setMenuNonDetachable(self.__ui, menu)
 
         toRemove = {
+            "file":      ["New &Window"],
             "edit":      ["Clear",
                           "C&omment",
                           "Unco&mment",
@@ -286,17 +285,17 @@ class PluginFullUI(QObject):
                           "&Debug-Viewer",
                           "Co&operation-Viewer",
                           "&IRC"],
-            "help":       ["&Helpviewer...",
-                           "&Eric API Documentation",
-                           "&Pymakr API Documentation",
-                           "Python &3 Documentation",
-                           "Python &2 Documentation",
-                           "Qt&4 Documentation",
-                           "Qt&5 Documentation",
-                           "PyQt&4 Documentation",
-                           "PyQt&5 Documentation",
-                           "&About Pymakr",
-                           "About &Qt"]
+            "help":      ["&Helpviewer...",
+                          "&Eric API Documentation",
+                          "&Pymakr API Documentation",
+                          "Python &3 Documentation",
+                          "Python &2 Documentation",
+                          "Qt&4 Documentation",
+                          "Qt&5 Documentation",
+                          "PyQt&4 Documentation",
+                          "PyQt&5 Documentation",
+                          "&About Pymakr",
+                          "About &Qt"]
         }
 
         for menu, items in toRemove.iteritems():
@@ -332,6 +331,7 @@ class PluginFullUI(QObject):
             "file": ["New &Window", "&Close", "Save &Copy...", "&Quit"],
             "edit": ["Clear", "C&omment", "Unco&mment"]
         }
+
         for toolbar, items in toRemove.iteritems():
             UiHelper.removeWidgetActions(self.__ui.getToolbar(toolbar)[1], items)
 
