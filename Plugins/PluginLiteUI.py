@@ -176,5 +176,11 @@ class PluginLiteUI(QObject):
         for toolbar in ["project", "edit", "file", "quicksearch", "search", "spelling"]:
             UiHelper.hideToolbar(self.__ui, toolbar)
 
+        self.__fixToolbars()
+
+    def __fixToolbars(self):
+        for toolbar in self.__ui.findChildren(QToolBar):
+            toolbar.setMovable(False)
+
     def __hideStatusBar(self):
         self.__ui.statusBar().hide()
