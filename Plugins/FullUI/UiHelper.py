@@ -9,8 +9,11 @@ def removeWidgetActions(widget, items):
         items[i] = widget.tr(item)
 
     for item in widget.actions():
-        if item.text() in items:
-            widget.removeAction(item)
+        try:
+            if item.text() in items:
+                widget.removeAction(item)
+        except:
+            pass
 
 def hideWidgetActions(widget, items):
     """
@@ -23,8 +26,11 @@ def hideWidgetActions(widget, items):
         items[i] = widget.tr(item)
 
     for item in widget.actions():
-        if item.text() in items:
-            item.setVisible(False)
+        try:
+            if item.text() in items:
+                item.setVisible(False)
+        except:
+            pass
 
 
 def hideWidgetSeparator(widget, items, mode="after"):
@@ -64,14 +70,17 @@ def hideUnusedMenu(ui, name):
 def setMenuNonDetachable(ui, name):
     ui.getMenu(name).setTearOffEnabled(False)
 
-
 def hideToolbar(ui, toolbar):
-    ui.getToolbar(toolbar)[1].hide()
-    ui.unregisterToolbar(toolbar)
+    try:
+        ui.getToolbar(toolbar)[1].hide()
+        ui.unregisterToolbar(toolbar)
+    except:
+        pass
 
 def setToolbarSize(ui, toolbar, size):
     try:
-        ui.getToolbar(toolbar)[1].setIconSize(size)
+        if ui.getToolbar(toolbar)[1].isVisible():
+            ui.getToolbar(toolbar)[1].setIconSize(size)
     except:
         pass
 

@@ -333,7 +333,10 @@ class PluginFullUI(QObject):
         }
 
         for toolbar, items in toRemove.iteritems():
-            UiHelper.removeWidgetActions(self.__ui.getToolbar(toolbar)[1], items)
+            try:
+                UiHelper.removeWidgetActions(self.__ui.getToolbar(toolbar)[1], items)
+            except:
+                pass
 
         # remove separators before
         separatorsToHide = {
@@ -341,7 +344,10 @@ class PluginFullUI(QObject):
         }
 
         for toolbar, items in separatorsToHide.iteritems():
-            UiHelper.hideWidgetSeparator(self.__ui.getToolbar(toolbar)[1], items, "before")
+            try:
+                UiHelper.hideWidgetSeparator(self.__ui.getToolbar(toolbar)[1], items, "before")
+            except:
+                pass
 
         # remove separators after
         separatorsToHide = {
@@ -350,7 +356,10 @@ class PluginFullUI(QObject):
             "project":  ["&Close"]
         }
         for toolbar, items in separatorsToHide.iteritems():
-            UiHelper.hideWidgetSeparator(self.__ui.getToolbar(toolbar)[1], items)
+            try:
+                UiHelper.hideWidgetSeparator(self.__ui.getToolbar(toolbar)[1], items)
+            except:
+                pass
 
         # set toolbars size
         toResize = ["file", "edit", "project", "bookmarks",

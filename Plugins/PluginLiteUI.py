@@ -1,5 +1,9 @@
-from PyQt5.QtCore import QObject
+from PyQt5.QtCore import QObject, QSize, Qt
+from PyQt5.QtWidgets import QToolBar
 from FullUI import UiHelper
+from E5Gui.E5Application import e5App
+
+import UI
 
 # Start-Of-Header
 name = "Lite UI"
@@ -19,6 +23,11 @@ class PluginLiteUI(QObject):
     def __init__(self, ui):
         super(PluginLiteUI, self).__init__(ui)
         self.__ui = ui
+        self.__toolbars = e5App().getObject("ToolbarManager")
+
+        # override window loaded event
+        self.__oldShowEvent = self.__ui.showEvent
+        self.__ui.showEvent = self.__windowLoaded
 
     def activate(self):
         """
@@ -26,7 +35,8 @@ class PluginLiteUI(QObject):
 
         @return tuple of None and activation status (boolean)
         """
-        self.__setupMenu()
+        self.__setupMenus()
+
         return None, True
 
     def deactivate(self):
@@ -35,7 +45,18 @@ class PluginLiteUI(QObject):
         """
         pass
 
-    def __setupMenu(self):
+    def __windowLoaded(self, event):
+        """
+        Private method that gets called when the main window gets visible.
+        """
+        self.__oldShowEvent(event)
+        self.__setupToolbars()
+        self.__hideStatusBar()
+
+        # I must run only once
+        self.__ui.showEvent = self.__oldShowEvent
+
+    def __setupMenus(self):
         """
         Private method that hides engineer-level menus and makes the others
         non-detachable.
@@ -109,3 +130,51 @@ class PluginLiteUI(QObject):
             if el.text() == self.__ui.tr("&Search"):
                 UiHelper.removeWidgetActions(el.menu(), removeFromSearch)
                 break
+
+    def __initLiteToolbar(self, ui, toolbarManager):
+
+        # find first toolbar
+        firstToolbar = None
+
+        for toolbar in ui.findChildren(QToolBar):
+            if toolbar.isVisible():
+                firstToolbar = toolbar
+                break
+
+
+        toCopy = [
+                    ['file', ["&Save", "&Open...", "&New"]],
+                    ['project', ["&Save", "&Open...", "&New..."]],
+        ]
+
+        self.__toolbar = QToolBar(self.tr("Lite tools"), ui)
+        self.__toolbar.setIconSize(UI.Config.ToolBarIconSize)
+        self.__toolbar.setObjectName("LiteUI")
+        self.__toolbar.setToolTip(self.tr('Pymakr lite tools'))
+
+        title = self.__toolbar.windowTitle()
+        toolbarManager.addToolBar(self.__toolbar, title)
+
+        # load new toolbar actions
+        for bar in toCopy:
+            for el in self.__ui.getToolbar(bar[0])[1].actions():
+                if el.text() in bar[1]:
+                    self.__toolbar.addAction(el)
+                    toolbarManager.addAction(el, title)
+
+        ui.registerToolbar("lite", title, self.__toolbar)
+        if firstToolbar:
+            ui.insertToolBar(firstToolbar, self.__toolbar)
+        else:
+            ui.addToolBar(self.__toolbar)
+
+        self.__toolbar.setIconSize(QSize(32, 32))
+
+    def __setupToolbars(self):
+        self.__initLiteToolbar(self.__ui, self.__toolbars)
+
+        for toolbar in ["project", "edit", "file", "quicksearch", "search", "spelling"]:
+            UiHelper.hideToolbar(self.__ui, toolbar)
+
+    def __hideStatusBar(self):
+        self.__ui.statusBar().hide()
