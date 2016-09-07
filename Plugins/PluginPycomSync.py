@@ -1,5 +1,5 @@
 import os
-from PyQt5.QtCore import QObject, QCoreApplication
+from PyQt5.QtCore import QObject, QCoreApplication, QSize
 from PyQt5.QtWidgets import QToolBar
 import hashlib
 
@@ -116,6 +116,7 @@ class PluginPycomSync(QObject):
         toolbarManager.addAction(self.runThisAct, title)
 
         ui.registerToolbar("sync", title, self.__toolbar)
+        self.__toolbar.setIconSize(QSize(32, 32))
         ui.addToolBar(self.__toolbar)
 
 
