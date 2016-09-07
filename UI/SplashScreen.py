@@ -34,10 +34,12 @@ class SplashScreen(QSplashScreen):
         super(SplashScreen, self).__init__(ericPic)
         lblVersion = QLabel(self)
         lblVersion.setText(UI.Info.Version)
+        lblVersion.adjustSize()
         lblVersion.setStyleSheet("QLabel { color : white; }")
         lblVersion.setAttribute(Qt.WA_TranslucentBackground)
-        lblVersion.move(340, 195)
+        lblVersion.move(425 - lblVersion.width(), 195)
         self.show()
+        self.raise_() # needed for mac
         QApplication.flush()
         
     def showMessage(self, msg):
