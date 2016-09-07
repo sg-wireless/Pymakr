@@ -12,7 +12,7 @@ autoactivate = True
 deactivateable = False
 version = "1.0.0"
 className = "PluginLiteUI"
-packageName = "PluginFullUI"
+packageName = "PluginLiteUI"
 shortDescription = "Pycom Lite version of Eric's GUI"
 longDescription = "This plugin adapts the UI for a novice audience"
 
