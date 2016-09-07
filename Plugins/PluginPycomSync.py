@@ -15,16 +15,14 @@ from PycomDevice.monitor_pc import TransferError
 # Start-Of-Header
 name = "Pycom Sync"
 author = "Pycom"
-autoactivate = False
+autoactivate = True
 deactivateable = False
 version = "1.0.0"
 className = "PluginPycomSync"
 packageName = "PluginPycomSync"
 shortDescription = "Sync Pycom Devices"
 longDescription = "Allow users to upload their projects to their Pycom boards"
-displayString="Pycom Sync"
-pluginType="viewmanager"
-pluginTypename="pycomsync"
+
 pyqtApi = 2
 python2Compatible = True
 
@@ -42,12 +40,17 @@ class PluginPycomSync(QObject):
         self.__ui = ui
         self.__project = e5App().getObject("Project")
         self.__viewManager = e5App().getObject("ViewManager")
+        self.__toolbars = e5App().getObject("ToolbarManager")
         self.__project.projectOpened.connect(self.__projectOpened)
         self.__project.newProject.connect(self.__projectOpened)
         self.__project.projectClosed.connect(self.__projectClosed)
         self.__viewManager.editorOpened.connect(self.__editorOpened)
         self.__viewManager.lastEditorClosed.connect(self.__lastEditorClosed)
         self.__busy = False
+
+        # override window loaded event
+        self.__oldShowEvent = self.__ui.showEvent
+        self.__ui.showEvent = self.__windowLoaded
 
     def activate(self):
         """
@@ -63,10 +66,19 @@ class PluginPycomSync(QObject):
         """
         pass
 
-    def initToolbar(self, ui, toolbarManager):
+    def __windowLoaded(self, event):
+        """
+        Private method that gets called when the main window gets visible.
+        """
+        self.__oldShowEvent(event)
+        self.__initToolbar(self.__ui, self.__toolbars)
+
+        # I must run only once
+        self.__ui.showEvent = self.__oldShowEvent
+
+    def __initToolbar(self, ui, toolbarManager):
         self.createActions()
         self.createToolbar(ui, toolbarManager)
-
 
     def createActions(self):
         self.syncAct = E5Action(
