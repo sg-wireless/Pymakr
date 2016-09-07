@@ -151,21 +151,32 @@ def getProgrammingLanguages():
     return languages
 
 def modifyPreferencesDialog(dlg):
-    toDeleteTxt = ['Cooperation', 'CORBA', 'Debugger', 'Email', 'Graphics',
-                   'Help', 'Icons', 'IRC', 'Mimetypes', 'Network', 'Printer', 'Project',
-                   'Python', 'Qt', 'Security', 'Templates', 'Tray Starter',
-                   'Version Control Systems']
+    toDeleteTxt = ['Application', 'Cooperation', 'CORBA', 'Debugger', 'Email', 'Graphics',
+                   'Help', 'Icons', 'IRC', 'Mimetypes', 'Network', 'Notifications',
+                   'Plugin Manager', 'Printer', 'Project', 'Python', 'Qt', 'Security',
+                   'Templates', 'Tray Starter', 'Version Control Systems']
 
 
     if Preferences.Prefs.settings.value("UI/AdvancedBottomSidebar", False) != "true":
-        toDeleteTxt.append('Log-Viewer')
+        toDeleteTxt.extend(['Log-Viewer'])
 
     configList = dlg.cw.configList
+
+    subsectionsToDeleteTxt = {
+        'Editor': ['Mouse Click Handlers'],
+        'Interface': ['Viewmanager'],
+    }
 
     for i in range(configList.topLevelItemCount() - 1, 0, -1):
         item = configList.topLevelItem(i)
         if item.text(0) in toDeleteTxt:
             configList.takeTopLevelItem(i)
+        if item.text(0) in subsectionsToDeleteTxt:
+            listItemsToDelete = subsectionsToDeleteTxt[item.text(0)]
+            for j in range(item.childCount() - 1, 0, -1):
+                child = item.child(j)
+                if child.text(0) in listItemsToDelete:
+                    item.takeChild(j)
 
 
 class PluginFullUI(QObject):
@@ -379,9 +390,7 @@ class PluginFullUI(QObject):
                       "Template-Viewer",
                       "Symbols"]
 
-        toHideBottom = ["Task-Viewer",
-                        "Numbers",
-                        "Log-Viewer"]
+        toHideBottom = ["Log-Viewer"]
         UiHelper.hideItemsSidebar(self.__ui.leftSidebar, toHideLeft)
 
         if Preferences.Prefs.settings.value("UI/AdvancedBottomSidebar", False) != "true":
