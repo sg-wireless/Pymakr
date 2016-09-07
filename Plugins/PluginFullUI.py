@@ -184,6 +184,10 @@ class PluginFullUI(QObject):
         # override show preferences event
         self.__ui.showPreferences = self.__showPreferences
 
+        # hook method that creates toolbar menu
+        self.__old_populateToolbarsMenu = self.__ui._UserInterface__populateToolbarsMenu
+        self.__ui._UserInterface__populateToolbarsMenu = self.__populateToolbarsMenu
+
         # override methods that provide the supported languages
         Lexers.getSupportedLanguages = getSupportedLanguages
         Project.getProgrammingLanguages = getProgrammingLanguages
@@ -459,3 +463,10 @@ class PluginFullUI(QObject):
     def __addSplit(self):
         self.__viewAddSplit()
         self.__hideViewManagerLed()
+
+    def __populateToolbarsMenu(self, menu):
+        self.__old_populateToolbarsMenu(menu)
+        for i in menu.actions()[::-1]:
+            if i.text() == menu.tr("&Hide all"):
+                menu.removeAction(i)
+                break
