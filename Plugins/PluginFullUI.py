@@ -106,7 +106,7 @@ def enableAdvancedCompletion():
     for setting, value in settings.iteritems():
         storage.setValue("CompletionJedi/" + setting, value)
 
-def getSupportedLanguages():
+def getSupportedLanguages(self):
     """
     Function to get a dictionary of supported lexer languages
     (overrides the original function).
@@ -142,7 +142,7 @@ def customizeProjecTypeList():
 
     project.registerProjectType("Python", "Python Project")
 
-def getProgrammingLanguages():
+def getProgrammingLanguages(self):
     languages = ["Python2", "Python3"]
 
     if Preferences.Prefs.settings.value("UI/AdvancedLanguages", False) == "true":
