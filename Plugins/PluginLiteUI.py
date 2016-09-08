@@ -1,5 +1,5 @@
 from PyQt5.QtCore import QObject, QSize, Qt
-from PyQt5.QtWidgets import QToolBar
+from PyQt5.QtWidgets import QToolBar, QMenu
 from FullUI import UiHelper
 from E5Gui.E5Application import e5App
 
@@ -24,10 +24,17 @@ class PluginLiteUI(QObject):
         super(PluginLiteUI, self).__init__(ui)
         self.__ui = ui
         self.__toolbars = e5App().getObject("ToolbarManager")
+        self.__sourcesBrowser = e5App().getObject("ProjectBrowser").getProjectBrowser("sources")
 
         # override window loaded event
         self.__oldShowEvent = self.__ui.showEvent
         self.__ui.showEvent = self.__windowLoaded
+
+        self.__ui._UserInterface__populateToolbarsMenu = self.__populateToolbarsMenu
+
+        # override source browser createPythonPopupMenus
+        self.__oldCreatePythonPopupMenus = self.__sourcesBrowser._ProjectSourcesBrowser__createPythonPopupMenus
+        self.__sourcesBrowser._ProjectSourcesBrowser__createPythonPopupMenus = self.__createPythonPopupMenus
 
     def activate(self):
         """
@@ -53,6 +60,7 @@ class PluginLiteUI(QObject):
         self.__setupSidebars()
         self.__hideStatusBar()
         self.__setupToolbars()
+        e5App().getObject("ViewManager").editorOpenedEd.connect(self.__on_new_editor)
 
         # I must run only once
         self.__ui.showEvent = self.__oldShowEvent
@@ -188,16 +196,49 @@ class PluginLiteUI(QObject):
                       "Symbols",
                       "File-Browser"]
 
-        toHideBottom = ["Log-Viewer", "Shell", "Task-Viewer", "Numbers", "Local Shell"]
+        toHideBottom = ["Shell", "Task-Viewer", "Numbers", "Local Shell"]
         UiHelper.hideItemsSidebar(self.__ui.leftSidebar, toHideLeft)
         UiHelper.hideItemsSidebar(self.__ui.bottomSidebar, toHideBottom)
 
 
     def __fixToolbars(self):
-        self.__toolbars._fixedToolbars = True
-        for toolbar in self.__toolbars.toolBars():
-            if toolbar.isVisible():
-                toolbar.setMovable(False)
+        self.__toolbars._fixedToolbars = True # ask future toolbars to be fixed
+        for toolbar in self.__ui.findChildren(QToolBar):
+            toolbar.setMovable(False)
 
     def __hideStatusBar(self):
         self.__ui.statusBar().hide()
+
+    def __populateToolbarsMenu(self, menu):
+        menu.clear()
+
+    def __on_new_editor(self, editor):
+        itemstoHide = ["Autosave enabled",
+                       "Typing aids enabled",
+                       "Automatic Completion enabled",
+                       "Complete",
+                       "Calltip",
+                       "Check",
+                       "Show",
+                       "Diagrams",
+                       "Tools",
+                       "New Document View",
+                       "New Document View (with new split)",
+                       "Close",
+                       "Re-Open With Encoding",
+                       "Save",
+                       "Save As...",
+                       "Save Copy..."]
+
+        UiHelper.hideWidgetActions(editor.menu, itemstoHide)
+
+
+    def __createPythonPopupMenus(self):
+        itemsToRemove = ["Run unittest...",
+                         "Diagrams",
+                         "Check",
+                         "Show",
+                         "Configure..."]
+
+        self.__oldCreatePythonPopupMenus()
+        UiHelper.removeWidgetActions(self.__sourcesBrowser.sourceMenu, itemsToRemove)
