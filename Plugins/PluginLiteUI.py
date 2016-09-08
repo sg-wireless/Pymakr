@@ -51,6 +51,7 @@ class PluginLiteUI(QObject):
         """
         self.__oldShowEvent(event)
         self.__setupToolbars()
+        self.__setupSidebars()
         self.__hideStatusBar()
 
         # I must run only once
@@ -177,6 +178,20 @@ class PluginLiteUI(QObject):
             UiHelper.hideToolbar(self.__ui, toolbar)
 
         self.__fixToolbars()
+
+    def __setupSidebars(self):
+        """
+        Private method that hides the pro-level sidebars
+        """
+        toHideLeft = ["Multiproject-Viewer",
+                      "Template-Viewer",
+                      "Symbols",
+                      "File-Browser"]
+
+        toHideBottom = ["Log-Viewer", "Shell", "Task-Viewer", "Numbers", "Local Shell"]
+        UiHelper.hideItemsSidebar(self.__ui.leftSidebar, toHideLeft)
+        UiHelper.hideItemsSidebar(self.__ui.bottomSidebar, toHideBottom)
+
 
     def __fixToolbars(self):
         for toolbar in self.__ui.findChildren(QToolBar):

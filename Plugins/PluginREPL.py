@@ -67,6 +67,7 @@ class PluginREPL(QObject):
         self.__ui.bottomSidebar.insertTab(0, self.__shell,
             UI.PixmapCache.getIcon("chip.png"), "Pycom Console")
 
-        self.__ui.bottomSidebar.setTabText(1, self.tr("Local Shell"))
+        if self.__ui.bottomSidebar.count() > 1:
+            self.__ui.bottomSidebar.setTabText(1, self.tr("Local Shell"))
 
         self.__ui.bottomSidebar.setCurrentIndex(0)

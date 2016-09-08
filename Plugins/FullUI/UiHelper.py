@@ -88,6 +88,7 @@ def hideItemsSidebar(sidebar, items):
     for el, val in enumerate(items):
         items[el] = sidebar.tr(val)
 
-    for i in range(sidebar.count() - 1, 0, -1):
-        if sidebar.tabText(i) in items:
-            sidebar.removeTab(i)
+    tabCount = sidebar.count()
+    for i in range(tabCount, 0, -1):
+        if sidebar.tabText(i - 1) in items:
+            sidebar.removeTab(i - 1)
