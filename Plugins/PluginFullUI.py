@@ -106,49 +106,12 @@ def enableAdvancedCompletion():
     for setting, value in settings.iteritems():
         storage.setValue("CompletionJedi/" + setting, value)
 
-def getSupportedLanguages(self):
-    """
-    Function to get a dictionary of supported lexer languages
-    (overrides the original function).
-
-    @return dictionary of supported lexer languages. The keys are the
-        internal language names. The items are lists of three entries.
-        The first is the display string for the language, the second
-        is a dummy file name, which can be used to derive the lexer, and
-        the third is the name of an icon file.
-        (string, string, string)
-    """
-    supportedLanguages = {
-        "Python2": [QCoreApplication.translate('Lexers', "Python2"),
-                    'dummy.py', "lexerPython.png"],
-        "Python3": [QCoreApplication.translate('Lexers', "Python3"),
-                    'dummy.py', "lexerPython3.png"]
-    }
-
-    advancedLanguages = {
-        "C++": [QCoreApplication.translate('Lexers', "C/C++"), 'dummy.cpp',
-                "lexerCPP.png"]
-    }
-
-    if Preferences.Prefs.settings.value("UI/AdvancedLanguages", False) == "true":
-        supportedLanguages.update(advancedLanguages)
-
-    return supportedLanguages
-
-def customizeProjecTypeList():
+def customizeProjectTypeList():
     project = e5App().getObject("Project")
     for n in project.getProjectTypes("Python3").iteritems():
         project.unregisterProjectType(n)
 
     project.registerProjectType("Python", "Python Project")
-
-def getProgrammingLanguages(self):
-    languages = ["Python2", "Python3"]
-
-    if Preferences.Prefs.settings.value("UI/AdvancedLanguages", False) == "true":
-        languages.append("C++")
-
-    return languages
 
 def modifyPreferencesDialog(dlg):
     toDeleteTxt = ['Application', 'Cooperation', 'CORBA', 'Debugger', 'Email', 'Graphics',
@@ -200,8 +163,8 @@ class PluginFullUI(QObject):
         self.__ui._UserInterface__populateToolbarsMenu = self.__populateToolbarsMenu
 
         # override methods that provide the supported languages
-        Lexers.getSupportedLanguages = getSupportedLanguages
-        Project.getProgrammingLanguages = getProgrammingLanguages
+        Lexers.getSupportedLanguages = self.__getSupportedLanguages
+        Project.getProgrammingLanguages = self.__getProgrammingLanguages
 
         # first time settings initialization
         if not Preferences.isConfigured() or \
@@ -221,7 +184,7 @@ class PluginFullUI(QObject):
         """
         self.__setupMenu()
         setupProjectBrowser()
-        customizeProjecTypeList()
+        customizeProjectTypeList()
         self.__hideExtras()
 
         e5App().getObject("ViewManager").addSplit = self.__addSplit
@@ -402,6 +365,35 @@ class PluginFullUI(QObject):
         self.__ui.rightSidebar.hide()
         self.__ui.rightSidebar.clear()
 
+    def __getSupportedLanguages(self):
+        """
+        Method to get a dictionary of supported lexer languages
+        (overrides the original function).
+
+        @return dictionary of supported lexer languages. The keys are the
+            internal language names. The items are lists of three entries.
+            The first is the display string for the language, the second
+            is a dummy file name, which can be used to derive the lexer, and
+            the third is the name of an icon file.
+            (string, string, string)
+        """
+        supportedLanguages = {
+            "Python2": [QCoreApplication.translate('Lexers', "Python2"),
+                        'dummy.py', "lexerPython.png"],
+            "Python3": [QCoreApplication.translate('Lexers', "Python3"),
+                        'dummy.py', "lexerPython3.png"]
+        }
+
+        advancedLanguages = {
+            "C++": [QCoreApplication.translate('Lexers', "C/C++"), 'dummy.cpp',
+                    "lexerCPP.png"]
+        }
+
+        if Preferences.Prefs.settings.value("UI/AdvancedLanguages", False) == "true":
+            supportedLanguages.update(advancedLanguages)
+
+        return supportedLanguages
+
     def __on_new_editor(self, editor):
         menu = editor.getMenu('Languages')
         for action in menu.actions():
@@ -428,6 +420,15 @@ class PluginFullUI(QObject):
                        'Save Copy...']
 
         UiHelper.hideWidgetActions(editor.menu, itemstoHide)
+
+    def __getProgrammingLanguages(self):
+        languages = ["Python2", "Python3"]
+
+        if Preferences.Prefs.settings.value("UI/AdvancedLanguages", False) == "true":
+            languages.append("C++")
+
+        return languages
+
 
     def __showPreferences(self, pageName=None):
         """
