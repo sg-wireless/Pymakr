@@ -79,6 +79,11 @@ class PluginPycomSync(QObject):
     def __initToolbar(self, ui, toolbarManager):
         self.createActions()
         self.createToolbar(ui, toolbarManager)
+        try:
+            if self.__toolbars._fixedToolbars == True:
+                self.__toolbar.setMovable(False)
+        except:
+            pass
 
     def createActions(self):
         self.syncAct = E5Action(

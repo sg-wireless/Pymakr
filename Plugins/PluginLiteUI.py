@@ -50,9 +50,9 @@ class PluginLiteUI(QObject):
         Private method that gets called when the main window gets visible.
         """
         self.__oldShowEvent(event)
-        self.__setupToolbars()
         self.__setupSidebars()
         self.__hideStatusBar()
+        self.__setupToolbars()
 
         # I must run only once
         self.__ui.showEvent = self.__oldShowEvent
@@ -194,8 +194,10 @@ class PluginLiteUI(QObject):
 
 
     def __fixToolbars(self):
-        for toolbar in self.__ui.findChildren(QToolBar):
-            toolbar.setMovable(False)
+        self.__toolbars._fixedToolbars = True
+        for toolbar in self.__toolbars.toolBars():
+            if toolbar.isVisible():
+                toolbar.setMovable(False)
 
     def __hideStatusBar(self):
         self.__ui.statusBar().hide()
