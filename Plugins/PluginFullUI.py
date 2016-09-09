@@ -108,7 +108,7 @@ def enableAdvancedCompletion():
 
 def customizeProjectTypeList():
     project = e5App().getObject("Project")
-    for n in project.getProjectTypes("Python3").iteritems():
+    for n, val in project.getProjectTypes("Python3").iteritems():
         project.unregisterProjectType(n)
 
     project.registerProjectType("Python", "Python Project")
