@@ -18,8 +18,7 @@ from PluginUpdate import calc_int_version
 
 import Preferences
 
-
-
+import FullUI.ProjectProperties.PropertiesDialog
 import UI.Info
 
 
@@ -140,6 +139,11 @@ def modifyPreferencesDialog(dlg):
                 child = item.child(j)
                 if child.text(0) in listItemsToDelete:
                     item.takeChild(j)
+
+
+def __projectPropertiesDialog_setupUi(self, PropertiesDialog):
+    self.__oldProjectPropertiesDialog(self, PropertiesDialog)
+    self.languageComboBox.hide()
 
 
 class PluginFullUI(QObject):
