@@ -119,6 +119,9 @@
  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
  <tabstops>
   <tabstop>nameEdit</tabstop>
+  <tabstop>dirEdit</tabstop>
+  <tabstop>dirButton</tabstop>
+  <tabstop>projectTypeComboBox</tabstop>
   <tabstop>buttonBox</tabstop>
  </tabstops>
  <resources/>
