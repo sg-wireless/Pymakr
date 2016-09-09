@@ -18,6 +18,7 @@ from PluginUpdate import calc_int_version
 
 import Preferences
 
+import FullUI.Preferences.SimplifyPreferences
 import FullUI.ProjectProperties.PropertiesDialog
 import UI.Info
 
@@ -112,40 +113,6 @@ def customizeProjectTypeList():
 
     project.registerProjectType("Python", "Python Project")
 
-def modifyPreferencesDialog(dlg):
-    toDeleteTxt = ['Application', 'Cooperation', 'CORBA', 'Debugger', 'Email', 'Graphics',
-                   'Help', 'Icons', 'IRC', 'Mimetypes', 'Network', 'Notifications',
-                   'Plugin Manager', 'Printer', 'Project', 'Python', 'Qt', 'Security',
-                   'Templates', 'Tray Starter', 'Version Control Systems']
-
-
-    if Preferences.Prefs.settings.value("UI/AdvancedBottomSidebar", False) != "true":
-        toDeleteTxt.extend(['Log-Viewer'])
-
-    configList = dlg.cw.configList
-
-    subsectionsToDeleteTxt = {
-        'Editor': ['Mouse Click Handlers'],
-        'Interface': ['Viewmanager'],
-    }
-
-    for i in range(configList.topLevelItemCount() - 1, 0, -1):
-        item = configList.topLevelItem(i)
-        if item.text(0) in toDeleteTxt:
-            configList.takeTopLevelItem(i)
-        if item.text(0) in subsectionsToDeleteTxt:
-            listItemsToDelete = subsectionsToDeleteTxt[item.text(0)]
-            for j in range(item.childCount() - 1, 0, -1):
-                child = item.child(j)
-                if child.text(0) in listItemsToDelete:
-                    item.takeChild(j)
-
-
-def __projectPropertiesDialog_setupUi(self, PropertiesDialog):
-    self.__oldProjectPropertiesDialog(self, PropertiesDialog)
-    self.languageComboBox.hide()
-
-
 class PluginFullUI(QObject):
     def __init__(self, ui):
         super(PluginFullUI, self).__init__(ui)
@@ -158,9 +125,6 @@ class PluginFullUI(QObject):
         # override window loaded event
         self.__oldShowEvent = self.__ui.showEvent
         self.__ui.showEvent = self.__windowLoaded
-
-        # override show preferences event
-        self.__ui.showPreferences = self.__showPreferences
 
         # hook method that creates toolbar menu
         self.__old_populateToolbarsMenu = self.__ui._UserInterface__populateToolbarsMenu
@@ -291,13 +255,6 @@ class PluginFullUI(QObject):
 
         for menu, items in toHide.iteritems():
             UiHelper.hideWidgetActions(self.__ui.getMenu(menu), items)
-
-        # get the settings > preferences item, connect it to the new method
-        for item in self.__ui.getMenu("settings").actions():
-            if item.text() == self.tr("&Preferences..."):
-                item.triggered.disconnect()
-                item.triggered.connect(self.__showPreferences)
-                break
 
     def __setupToolbars(self):
         """
@@ -432,39 +389,6 @@ class PluginFullUI(QObject):
             languages.append("C++")
 
         return languages
-
-
-    def __showPreferences(self, pageName=None):
-        """
-        Show modified preferences dialog
-
-        @param pageName name of the configuration page to show (string)
-        """
-        ui = self.__ui
-        from Preferences.ConfigurationDialog import ConfigurationDialog
-        dlg = ConfigurationDialog(
-            ui, 'Configuration',
-            expandedEntries=ui._UserInterface__expandedConfigurationEntries,
-        )
-
-        modifyPreferencesDialog(dlg)
-        dlg.preferencesChanged.connect(ui._UserInterface__preferencesChanged)
-        dlg.masterPasswordChanged.connect(ui._UserInterface__masterPasswordChanged)
-        dlg.show()
-        if pageName is not None:
-            dlg.showConfigurationPageByName(pageName)
-        elif ui._UserInterface__lastConfigurationPageName:
-            dlg.showConfigurationPageByName(ui._UserInterface__lastConfigurationPageName)
-        else:
-            dlg.showConfigurationPageByName("empty")
-        dlg.exec_()
-        QApplication.processEvents()
-        if dlg.result() == QDialog.Accepted:
-            dlg.setPreferences()
-            Preferences.syncPreferences()
-            ui._UserInterface__preferencesChanged()
-        ui._UserInterface__lastConfigurationPageName = dlg.getConfigurationPageName()
-        ui._UserInterface__expandedConfigurationEntries = dlg.getExpandedEntries()
 
     def __hideViewManagerLed(self):
         e5App().getObject("ViewManager").currentTabWidget.setCornerWidget(None, Qt.TopLeftCorner)

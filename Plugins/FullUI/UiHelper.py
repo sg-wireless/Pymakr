@@ -92,3 +92,29 @@ def hideItemsSidebar(sidebar, items):
     for i in range(tabCount, 0, -1):
         if sidebar.tabText(i - 1) in items:
             sidebar.removeTab(i - 1)
+
+def removeTreeTopElements(tree, toDelete):
+    childCount = tree.topLevelItemCount()
+    for i in range(childCount, 0, -1):
+        child = tree.topLevelItem(i - 1)
+        if child.text(0) in toDelete:
+            tree.takeTopLevelItem(i - 1)
+
+def removeTreeElements(tree, toDelete, name='', level=0):
+    if level:
+        childCount = tree.childCount()
+        for i in range(childCount, 0, -1):
+            child = tree.child(i - 1)
+            if name + child.text(0) in toDelete:
+                tree.takeChild(i - 1)
+            else:
+                removeTreeElements(child, toDelete, name + child.text(0) + '/', level + 1)
+
+    else:
+        childCount = tree.topLevelItemCount()
+        for i in range(childCount, 0, -1):
+            child = tree.topLevelItem(i - 1)
+            if child.text(0) in toDelete:
+                tree.takeTopLevelItem(i - 1)
+            else:
+                removeTreeElements(child, toDelete, child.text(0) + '/', level + 1)

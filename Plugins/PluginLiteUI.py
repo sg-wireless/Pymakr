@@ -3,6 +3,8 @@ from PyQt5.QtWidgets import QToolBar, QMenu
 from FullUI import UiHelper
 from E5Gui.E5Application import e5App
 
+import FullUI.Preferences.SimplifyPreferences
+
 import UI
 
 # Start-Of-Header
@@ -35,6 +37,9 @@ class PluginLiteUI(QObject):
         # override source browser createPythonPopupMenus
         self.__oldCreatePythonPopupMenus = self.__sourcesBrowser._ProjectSourcesBrowser__createPythonPopupMenus
         self.__sourcesBrowser._ProjectSourcesBrowser__createPythonPopupMenus = self.__createPythonPopupMenus
+
+        # remove preferences items
+        self.__simplifyPreferences()
 
     def activate(self):
         """
@@ -242,3 +247,11 @@ class PluginLiteUI(QObject):
 
         self.__oldCreatePythonPopupMenus()
         UiHelper.removeWidgetActions(self.__sourcesBrowser.sourceMenu, itemsToRemove)
+
+    def __simplifyPreferences(self):
+        toDeleteTxt = ['Shell', 'Tasks', 'Interface',
+                       'Editor/Autocompletion', 'Editor/Calltips', 'Editor/Code Checkers',
+                       'Editor/Exporters', 'Editor/Filehandling', 'Editor/Highlighters/Properties',
+                       'Editor/Searching', 'Editor/Spell checking', 'Editor/Typing'
+                       ]
+        FullUI.Preferences.SimplifyPreferences.toDeleteExtend(toDeleteTxt)
