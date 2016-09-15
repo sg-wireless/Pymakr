@@ -5,9 +5,10 @@
 
 import os
 
-from PyQt5.QtCore import QObject, QSize, QCoreApplication, QDir, Qt
+from PyQt5.QtCore import QObject, QSize, QCoreApplication, QDir, Qt, QByteArray
 from PyQt5.QtWidgets import QDialog, QApplication
 from E5Gui.E5Application import e5App
+from E5Gui.E5Action import E5Action
 
 from Project.Project import Project
 
@@ -18,7 +19,7 @@ from PluginUpdate import calc_int_version
 
 import Preferences
 
-import FullUI.Preferences.SimplifyPreferences
+import FullUI.PreferencesDialog.SimplifyPreferences
 import FullUI.ProjectProperties.PropertiesDialog
 import UI.Info
 
@@ -91,7 +92,6 @@ def disableExtraPlugins():
         n = obj[0]
         if n in pluginsToDisable:
             pluginManager.deactivatePlugin(n)
-
 
 def enableAdvancedCompletion():
     settings = {
@@ -183,6 +183,7 @@ class PluginFullUI(QObject):
         self.__setupToolbars()
         self.__setupSidebars()
         disableExtraPlugins()
+        self.__setUiSwitchMenu()
 
         # next couple of lines are needed to make the main window appear on foreground in macOS
         self.__ui.show()
@@ -260,6 +261,7 @@ class PluginFullUI(QObject):
         """
         Private method that hides the unused toolbars
         """
+
         for toolbar in ["vcs", "start", "debug", "multiproject", "help",
                         "unittest", "tools", "settings", "view_profiles",
                         "subversion", "pysvn", "mercurial", "plugins",
@@ -408,3 +410,70 @@ class PluginFullUI(QObject):
             if i.text() == menu.tr("&Hide all"):
                 menu.removeAction(i)
                 break
+
+    def __setUiSwitchMenu(self):
+        pluginManager = e5App().getObject("PluginManager")
+        self.__LiteUiEnabled = pluginManager.isPluginActive('PluginLiteUI')
+ 
+        if self.__LiteUiEnabled == True:
+            # the LiteUI interface is running, show a menu for full interface
+            menuText=self.tr("Switch to expert interface")
+        else:
+            menuText=self.tr("Switch to lite interface")
+
+        settingsMenu = self.__ui.getMenu("settings")
+
+        tooltipText = self.tr(menuText + '. This action will reset the program')
+        self.switchUiStyleAct = E5Action(
+            menuText,
+            menuText + '...',
+            0, 0, self, 'switch_ui_style')
+        self.switchUiStyleAct.setStatusTip(tooltipText)
+        self.switchUiStyleAct.setWhatsThis(
+            """<b>""" + menuText + """</b>"""
+            """<b>""" +tooltipText + """</b>"""
+        )
+        self.switchUiStyleAct.triggered.connect(self.__switchUi)
+        self.__ui.actions.append(self.switchUiStyleAct)
+
+        settingsMenu.addAction(self.switchUiStyleAct)
+        settingsMenu.addSeparator()
+
+    def __switchUi(self):
+        # actually, the hook ain't needed, but is here to avoid
+        # fast computers to load the new pymakr instance load old settings
+        # while they are still being stored
+        self.__oldCloseAllWindows = e5App().closeAllWindows
+        e5App().closeAllWindows = self.__continueSwitchUi
+
+        self.__ui._UserInterface__restart()
+
+        e5App().closeAllWindows = self.__oldCloseAllWindows
+
+    def __continueSwitchUi(self):
+        self.__oldCloseAllWindows()
+        pluginManager = e5App().getObject("PluginManager")
+        if self.__LiteUiEnabled == True:
+            pluginManager.deactivatePlugin("PluginLiteUI")
+            # recover a copy of the expert toolbar, if found
+            try:
+                Preferences.Prefs.settings.setValue("UI/ToolbarManagerState", Preferences.Prefs.settings.value("UI/ExpertToolbarManagerState"))
+                Preferences.Prefs.settings.setValue("UI/ViewProfiles2", Preferences.Prefs.settings.value("UI/ExpertViewProfiles2"))
+            except:
+                Preferences.Prefs.settings.remove("UI/ViewProfiles2")
+                Preferences.Prefs.settings.remove("UI/ToolbarManagerState")
+        else:
+            # before going out, save a copy of the toolbars
+            Preferences.Prefs.settings.setValue("UI/ExpertToolbarManagerState", Preferences.Prefs.settings.value("UI/ToolbarManagerState"))
+            Preferences.Prefs.settings.setValue("UI/ExpertViewProfiles2", Preferences.Prefs.settings.value("UI/ViewProfiles2"))
+            pluginManager.activatePlugin("PluginLiteUI")
+
+        self.__manuallySaveInactivePlugins()
+        Preferences.syncPreferences()
+
+    def __manuallySaveInactivePlugins(self):
+        names = []
+        pluginManager = e5App().getObject("PluginManager")
+        for name in list(pluginManager._PluginManager__inactiveModules.keys()):
+            names.append(name)
+        Preferences.Prefs.settings.setValue(pluginManager._PluginManager__inactivePluginsKey, names)

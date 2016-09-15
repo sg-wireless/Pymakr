@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QToolBar, QMenu
 from FullUI import UiHelper
 from E5Gui.E5Application import e5App
 
-import FullUI.Preferences.SimplifyPreferences
+import FullUI.PreferencesDialog.SimplifyPreferences
 
 import UI
 
@@ -11,11 +11,11 @@ import UI
 name = "Lite UI"
 author = "Pycom"
 autoactivate = True
-deactivateable = False
+deactivateable = True
 version = "1.0.0"
 className = "PluginLiteUI"
 packageName = "PluginLiteUI"
-shortDescription = "Pycom Lite version of Eric's GUI"
+shortDescription = "Pycom light version of Eric's GUI"
 longDescription = "This plugin adapts the UI for a novice audience"
 
 pyqtApi = 2
@@ -24,6 +24,7 @@ python2Compatible = True
 class PluginLiteUI(QObject):
     def __init__(self, ui):
         super(PluginLiteUI, self).__init__(ui)
+
         self.__ui = ui
         self.__toolbars = e5App().getObject("ToolbarManager")
         self.__sourcesBrowser = e5App().getObject("ProjectBrowser").getProjectBrowser("sources")
@@ -38,8 +39,6 @@ class PluginLiteUI(QObject):
         self.__oldCreatePythonPopupMenus = self.__sourcesBrowser._ProjectSourcesBrowser__createPythonPopupMenus
         self.__sourcesBrowser._ProjectSourcesBrowser__createPythonPopupMenus = self.__createPythonPopupMenus
 
-        # remove preferences items
-        self.__simplifyPreferences()
 
     def activate(self):
         """
@@ -47,7 +46,6 @@ class PluginLiteUI(QObject):
 
         @return tuple of None and activation status (boolean)
         """
-        self.__setupMenus()
 
         return None, True
 
@@ -61,7 +59,13 @@ class PluginLiteUI(QObject):
         """
         Private method that gets called when the main window gets visible.
         """
+        # remove preferences items
+        self.__simplifyPreferences()
+        self.__setupMenus()
+
+
         self.__oldShowEvent(event)
+
         self.__setupSidebars()
         self.__hideStatusBar()
         self.__setupToolbars()
@@ -254,4 +258,4 @@ class PluginLiteUI(QObject):
                        'Editor/Exporters', 'Editor/Filehandling', 'Editor/Highlighters/Properties',
                        'Editor/Searching', 'Editor/Spell checking', 'Editor/Typing'
                        ]
-        FullUI.Preferences.SimplifyPreferences.toDeleteExtend(toDeleteTxt)
+        FullUI.PreferencesDialog.SimplifyPreferences.toDeleteExtend(toDeleteTxt)

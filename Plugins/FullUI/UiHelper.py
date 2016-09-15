@@ -1,3 +1,5 @@
+import Preferences
+
 def removeWidgetActions(widget, items):
     """
     Method that removes widget items.
