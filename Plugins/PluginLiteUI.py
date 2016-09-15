@@ -2,9 +2,10 @@ from PyQt5.QtCore import QObject, QSize, Qt
 from PyQt5.QtWidgets import QToolBar, QMenu
 from FullUI import UiHelper
 from E5Gui.E5Application import e5App
+from E5Gui.E5MessageBox import E5MessageBox
 
 import FullUI.PreferencesDialog.SimplifyPreferences
-
+import Preferences
 import UI
 
 # Start-Of-Header
@@ -73,6 +74,7 @@ class PluginLiteUI(QObject):
 
         # I must run only once
         self.__ui.showEvent = self.__oldShowEvent
+        self.__showInitialTip()
 
     def __setupMenus(self):
         """
@@ -259,3 +261,10 @@ class PluginLiteUI(QObject):
                        'Editor/Searching', 'Editor/Spell checking', 'Editor/Typing'
                        ]
         FullUI.PreferencesDialog.SimplifyPreferences.toDeleteExtend(toDeleteTxt)
+
+    def __showInitialTip(self):
+        if Preferences.Prefs.settings.value("UI/AdvancedInterfaceTipShown", False) != "true":
+            E5MessageBox.information(self.__ui,
+                self.__ui.tr("Pymakr hint"),
+                self.__ui.tr("<b>Hint</b><br><br>If you're an expert, you can always switch to the full interface by selecting<i>Settings > Switch to expert interface</i> in the main menu."))
+            Preferences.Prefs.settings.setValue("UI/AdvancedInterfaceTipShown", "true")
