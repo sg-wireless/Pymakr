@@ -137,8 +137,7 @@ class PluginFullUI(QObject):
 
         # first time settings initialization
         if not Preferences.isConfigured() or \
-           Preferences.Prefs.settings.value("General/IniVersion", 0) <= \
-                calc_int_version(UI.Info.Version) or \
+           Preferences.Prefs.settings.value("General/IniVersion", "1.0.0.b1") == "1.0.0.b1" or \
            hasattr(ui, 'firstBoot'):
             ui.firstBoot = True
             self.__firstLoad()
