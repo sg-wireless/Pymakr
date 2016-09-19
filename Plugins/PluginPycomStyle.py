@@ -11,6 +11,8 @@ from PluginUpdate import calc_int_version
 from PycomStyle.qdarkstyle import pyqt5_style_rc
 
 import UI.Info
+from PycomStyle import StyleHelper
+from E5Gui.E5Application import e5App
 
 
 # Start-Of-Header
@@ -31,6 +33,7 @@ class PluginPycomStyle(QObject):
     def __init__(self, ui):
         super(PluginPycomStyle, self).__init__(ui)
         self.__ui = ui
+        self.__ui.preferencesChanged.connect(self.preferencesChanged)
         self.__path = os.path.dirname(os.path.realpath(__file__))
         self.__loadFont()
 
@@ -40,6 +43,8 @@ class PluginPycomStyle(QObject):
            hasattr(ui, 'firstBoot'):
             ui.firstBoot = True
             self.__firstLoad()
+
+        self.__styleSheet = Preferences.getUI("StyleSheet")
 
     def activate(self):
         """
@@ -55,15 +60,24 @@ class PluginPycomStyle(QObject):
         """
         pass
 
+    def preferencesChanged(self):
+        if Preferences.getUI("StyleSheet") != self.__styleSheet:
+            self.__styleSheet = Preferences.getUI
+            self.__loadQssColors()
+            self.__loadPythonColors()
+
+
     def __firstLoad(self):
         """
         Private method called if there are no settings.
         """
+        Preferences.setUI("StyleSheet", \
+            self.__path + "/PycomStyle/qdarkstyle/style.qss")
+
+        self.__ui.setStyle(Preferences.getUI("Style"), Preferences.getUI("StyleSheet"))
+        self.__loadQssColors()
         self.__setupDefaultParameters()
         self.__loadPythonColors()
-
-        self.__ui.setStyle(Preferences.getUI("Style"),
-                           Preferences.getUI("StyleSheet"))
 
     def __loadFont(self):
         osFamily = sys.platform
@@ -81,17 +95,13 @@ class PluginPycomStyle(QObject):
 
     def __applyMonokaiPython(self, lexerName):
         defaultFont = QFont("Roboto Mono", self.__defaultFontSize, -1, False)
-        colors = ["#ffffff", "#888877", "#ae81ff", "#ffff88",
-                  "#ffff88", "#ff3377", "#ffff88", "#ffff88",
-                  "#aaff33", "#aaff47", "#ff3377", "#ffffff",
-                  "#888877", "#f8f8f0", "#ffe892", "#aa88ff"]
 
         lexer = PreferencesLexer(lexerName)
 
         for i in range(0, 15):
-            lexer.setPaper(QColor(Qt.black), i)
+            lexer.setPaper(self.editorColorsDefaults['EditAreaBackground'], i)
             lexer.setFont(defaultFont, i)
-            lexer.setColor(QColor(colors[i]), i)
+            lexer.setColor(QColor(self.textColors[i]), i)
 
         # specific values now
         # comment
@@ -150,34 +160,6 @@ class PluginPycomStyle(QObject):
             "MiniContextMenu": True,
             "AnnotationsEnabled": False}
 
-        editorColorsDefaults = {
-            "MatchingBrace": QColor(Qt.green),
-            "MatchingBraceBack": QColor(Qt.darkGray),
-            "CallTipsBackground": QColor(Qt.lightGray),
-            "NonmatchingBrace": QColor(Qt.red),
-            "NonmatchingBraceBack": QColor(Qt.darkGray),
-            "SelectionBackground": QColor("#49483E"),
-            "SelectionForeground": QColor(Qt.white),
-            "SearchMarkers": QColor("#FFE792"),
-            "CaretForeground": QColor(Qt.white),
-            "CaretLineBackground": QColor("#202020"),
-            "WhitespaceForeground": QColor(Qt.black),
-            "WhitespaceBackground": QColor(Qt.black),
-            "IndentationGuidesBackground": QColor(Qt.black),
-            "IndentationGuidesForeground": QColor("#303030"),
-            "OnlineChangeTraceMarkerUnsaved": QColor("#FF3377"),
-            "OnlineChangeTraceMarkerSaved": QColor("#AAFF33"),
-            "EditAreaBackground": QColor(Qt.black),
-            "MarginsForeground": QColor("#808080"),
-            "MarginsBackground": QColor("#202020"),
-            "FoldMarkersForeground": QColor("#808080"),
-            "FoldMarkersBackground": QColor(Qt.black),
-            "FoldmarginBackground": QColor(Qt.black),
-            "MarkerMapBackground": QColor("#202020"),
-            "CurrentMap": QColor(Qt.white),
-            "Edge": QColor("#303030")}
-
-
         for n, value in editorOtherFontsDefaults.iteritems():
             Preferences.setEditorOtherFonts(n, value)
 
@@ -187,10 +169,12 @@ class PluginPycomStyle(QObject):
         for n, value in editorDefaults.iteritems():
             Preferences.setEditor(n, value)
 
-        for n, value in editorColorsDefaults.iteritems():
+        for n, value in self.editorColorsDefaults.iteritems():
             Preferences.setEditorColour(n, value)
 
-        Preferences.setUI("StyleSheet", \
-            self.__path + "/PycomStyle/qdarkstyle/style.qss")
-
-        self.__ui.setStyle(Preferences.getUI("Style"), Preferences.getUI("StyleSheet"))
+    def __loadQssColors(self):
+        qssColors = StyleHelper.readQssColors()
+        if qssColors:
+            self.textColors = qssColors['colors']
+            del qssColors['colors']
+            self.editorColorsDefaults = qssColors

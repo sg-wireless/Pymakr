@@ -21,6 +21,37 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
+PycomEditorColors
+{
+    MatchingBrace: #00ff00;
+    MatchingBraceBack: #808080;
+    CallTipsBackground: #c0c0c0;
+    NonmatchingBrace: #ff0000;
+    NonmatchingBraceBack: #808080;
+    SelectionBackground: #49483E;
+    SelectionForeground: #ffffff;
+    SearchMarkers: #FFE792;
+    CaretForeground: #ffffff;
+    CaretLineBackground: #202020;
+    WhitespaceForeground: #000000;
+    WhitespaceBackground: #000000;
+    IndentationGuidesBackground: #000000;
+    IndentationGuidesForeground: #303030;
+    OnlineChangeTraceMarkerUnsaved: #FF3377;
+    OnlineChangeTraceMarkerSaved: #AAFF33;
+    EditAreaBackground: #000000;
+    MarginsForeground: #808080;
+    MarginsBackground: #202020;
+    FoldMarkersForeground: #808080;
+    FoldMarkersBackground: #000000;
+    FoldmarginBackground: #000000;
+    MarkerMapBackground: #202020;
+    CurrentMap: #ffffff;
+    Edge: #303030;
+    colors: #ffffff, #888877, #ae81ff, #ffff88, #ffff88, #ff3377, #ffff88, #ffff88, #aaff33, #aaff47, #ff3377, #ffffff, #888877, #f8f8f0, #ffe892, #aa88ff;
+}
+
 QToolTip
 {
     border: 1px solid #76797C;
