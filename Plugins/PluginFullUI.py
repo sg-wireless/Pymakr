@@ -5,7 +5,8 @@
 
 import os
 
-from PyQt5.QtCore import QObject, QSize, QCoreApplication, QDir, Qt, QByteArray
+from PyQt5.QtCore import QObject, QSize, QCoreApplication, QDir, Qt, QByteArray, QUrl
+from PyQt5.QtGui import QDesktopServices
 from PyQt5.QtWidgets import QDialog, QApplication
 from E5Gui.E5Application import e5App
 from E5Gui.E5Action import E5Action
@@ -22,7 +23,7 @@ import Preferences
 import FullUI.PreferencesDialog.SimplifyPreferences
 import FullUI.ProjectProperties.PropertiesDialog
 import UI.Info
-
+ 
 
 # Start-Of-Header
 name = "Full UI"
@@ -257,6 +258,9 @@ class PluginFullUI(QObject):
         for menu, items in toHide.iteritems():
             UiHelper.hideWidgetActions(self.__ui.getMenu(menu), items)
 
+        # add help entries
+        self.__addLinksIntoHelp()
+
     def __setupToolbars(self):
         """
         Private method that hides the unused toolbars
@@ -477,3 +481,26 @@ class PluginFullUI(QObject):
         for name in list(pluginManager._PluginManager__inactiveModules.keys()):
             names.append(name)
         Preferences.Prefs.settings.setValue(pluginManager._PluginManager__inactivePluginsKey, names)
+
+    def __addLinksIntoHelp(self):
+        helpMenu = self.__ui.getMenu("help")
+
+        menuText = "Go to Pycom documentation"
+        tooltipText = "Open a web browser with the boards' documentation"
+        self.goPycomDocAct = E5Action(
+            menuText,
+            menuText + '...',
+            0, 0, self, 'go_to_doc')
+        self.goPycomDocAct.setStatusTip(tooltipText)
+        self.goPycomDocAct.setWhatsThis(
+            """<b>""" + menuText + """</b>"""
+            """<b>""" +tooltipText + """</b>"""
+        )
+        self.goPycomDocAct.triggered.connect(self.__goPycomDoc)
+        self.__ui.actions.append(self.goPycomDocAct)
+
+        helpMenu.addAction(self.goPycomDocAct)
+        helpMenu.addSeparator()
+
+    def __goPycomDoc(self):
+        QDesktopServices.openUrl(QUrl("https://docs.pycom.io"))
