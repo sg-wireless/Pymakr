@@ -28,17 +28,22 @@ def modifiedSetupUI(self, ui_interfacepage):
 
 #override InterfacePage
 def save(self):
+    print("Save override InterfacePage")
+    newStyleSheet = getNewStyleSheet(self)
+    self.styleSheetEdit.setText(newStyleSheet)
+    # Preferences.setUI(
+    #         "StyleSheet",
+    #         newStyleSheet)
     oldSave(self)
-    Preferences.setUI(
-            "StyleSheet",
-            getNewStyleSheet(self))
 
 #override InterfacePage
 def init(self):
     oldInit(self)
+    print("Init override InterfacePage")
     fakeComboBox = QComboBox()
     self.colorComboBox = fakeComboBox
     self.__path = os.path.dirname(os.path.realpath(__file__))
+    self.__pluginsPath = self.__path[0:self.__path.index('/Plugins/')+8]
     populateColorStyleCombo(self)
 
 def getCurrentStyle():
@@ -50,8 +55,8 @@ def getCurrentStyle():
 
 def getNewStyleSheet(self):
     boxIndex = self.colorComboBox.currentIndex()
-    styleSheets = ['darkstyle/style.qss','darkstyle/style-light.qss']
-    return self.__path + "/PycomStyle/" + styleSheets[boxIndex]
+    styleSheets = ['qdarkstyle/style.qss','qdarkstyle/style-light.qss']
+    return self.__pluginsPath + "/PycomStyle/" + styleSheets[boxIndex]
 
 def populateColorStyleCombo(self):
     curStyle = getCurrentStyle()

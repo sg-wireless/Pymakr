@@ -165,7 +165,7 @@
       </widget>
      </item>
      <item row="0" column="1" colspan="2">
-      <widget class="QComboBox" name="colorComboBox">
+      <widget class="QComboBox" name="styleComboBox">
        <property name="toolTip">
         <string>Select the interface style</string>
        </property>
@@ -550,7 +550,7 @@
   <tabstop>fileFiltersEdit</tabstop>
   <tabstop>uiCaptionShowsFilenameGroupBox</tabstop>
   <tabstop>filenameLengthSpinBox</tabstop>
-  <tabstop>colorComboBox</tabstop>
+  <tabstop>styleComboBox</tabstop>
   <tabstop>tlTopButton</tabstop>
   <tabstop>tlLeftButton</tabstop>
   <tabstop>trTopButton</tabstop>
