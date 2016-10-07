@@ -324,7 +324,7 @@ class PluginFullUI(QObject):
                       "Template-Viewer",
                       "Symbols"]
 
-        toHideBottom = []#["Log-Viewer"]
+        toHideBottom = ["Log-Viewer"]
         UiHelper.hideItemsSidebar(self.__ui.leftSidebar, toHideLeft)
 
         if Preferences.Prefs.settings.value("UI/AdvancedBottomSidebar", False) != "true":
