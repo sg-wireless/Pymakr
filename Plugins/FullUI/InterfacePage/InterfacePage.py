@@ -18,7 +18,6 @@ def interfacePage_setupUi(self, interfacepage):
     fakeLabel = QLabel()
     fakeButton = QToolButton()
     fakeComboBox = QComboBox()
-    print("Modiffied setupUI activated")
     self.label_3 = fakeLabel
     self.styleSheetEdit = fakeLineEdit
     self.styleSheetButton = fakeButton
