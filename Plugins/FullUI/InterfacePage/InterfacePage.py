@@ -13,7 +13,6 @@ def replaceInterfacePage():
     originalSetupUi = Ui_InterfacePage.Ui_InterfacePage.setupUi
     Ui_InterfacePage.Ui_InterfacePage.setupUi = interfacePage_setupUi
 
-
 def interfacePage_setupUi(self, interfacepage):
     fakeLineEdit = QLineEdit()
     fakeLabel = QLabel()

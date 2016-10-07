@@ -22,8 +22,11 @@ import Preferences
 
 import FullUI.PreferencesDialog.SimplifyPreferences
 import FullUI.ProjectProperties.PropertiesDialog
-import FullUI.InterfacePage.InterfacePage
+
+import FullUI.InterfacePage.InterfacePage as NewInterfacePage
+
 import FullUI.InterfacePage.SimplifyInterfacePage
+
 import UI.Info
  
 
