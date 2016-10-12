@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QToolButton, QLineEdit, QComboBox, QLabel, QPushButton
+from PyQt5.QtWidgets import QToolButton, QLineEdit, QTextEdit, QCheckBox, QComboBox, QLabel, QPushButton
 
 from Project import Ui_PropertiesDialog
 from Plugins.FullUI.ProjectProperties import Ui_PropertiesDialog as New_Ui_PropertiesDialog
@@ -19,7 +19,9 @@ def replaceProjectPropertiesDialog():
 def projectPropertiesDialog_setupUi(self, PropertiesDialog):
     fakeToolButton = QToolButton()
     fakeLineEdit = QLineEdit()
+    fakeTextEdit = QTextEdit()
     fakeComboBox = QComboBox()
+    fakeCheckBox = QCheckBox()
     fakeLabel = QLabel()
     fakePushButton = QPushButton()
     self.mainscriptButton = fakeToolButton
@@ -28,6 +30,12 @@ def projectPropertiesDialog_setupUi(self, PropertiesDialog):
     self.versionEdit = fakeLineEdit
     self.vcsLabel = fakeLabel
     self.vcsInfoButton = fakePushButton
+    self.authorEdit = fakeLineEdit
+    self.emailEdit = fakeLineEdit
+    self.descriptionEdit = fakeTextEdit
+    self.mixedLanguageCheckBox =fakeCheckBox
+    self.eolComboBox = fakeComboBox
+    self.vcsCheckBox = fakeCheckBox
 
     originalSetupUi(self, PropertiesDialog)
 
