@@ -29,6 +29,14 @@ longDescription = "This plugin sets colors, fonts and control sizes and shapes"
 pyqtApi = 2
 python2Compatible = True
 
+path = os.path.dirname(os.path.realpath(__file__))
+print(path)
+pluginsPath = path[0:path.index('/Plugins')+8] + "/PycomStyle/"
+
+# data
+styles = ['Dark','Light']
+styleSheets = ['qdarkstyle/style.qss','qdarkstyle/style-light.qss']
+
 class PluginPycomStyle(QObject):
     def __init__(self, ui):
         super(PluginPycomStyle, self).__init__(ui)
@@ -45,6 +53,16 @@ class PluginPycomStyle(QObject):
             self.__firstLoad()
 
         self.__styleSheet = Preferences.getUI("StyleSheet")
+        
+        # detect wrong path of stylesheet and correct it
+        stylesheetUrls = []
+        for sheet in styleSheets:
+            stylesheetUrls.append(pluginsPath+sheet)
+        if self.__styleSheet not in stylesheetUrls:)
+            for style in styleSheets:
+                if style in self.__styleSheet:
+                    self.__styleSheet = pluginsPath+style
+            
 
     def activate(self):
         """
