@@ -242,7 +242,8 @@ class PluginFullUI(QObject):
                           "PyQt&4 Documentation",
                           "PyQt&5 Documentation",
                           "&About Pymakr",
-                          "About &Qt"]
+                          "About &Qt"],
+            "plugins":    ["Configure..."]
         }
 
         for menu, items in toRemove.iteritems():
