@@ -184,6 +184,7 @@ class PluginFullUI(QObject):
         self.__setupSidebars()
         disableExtraPlugins()
         self.__setUiSwitchMenu()
+        self.__simplifyPreferences()
 
         # next couple of lines are needed to make the main window appear on foreground in macOS
         self.__ui.show()
@@ -320,7 +321,7 @@ class PluginFullUI(QObject):
                       "Template-Viewer",
                       "Symbols"]
 
-        toHideBottom = ["Log-Viewer"]
+        toHideBottom = ["Log-Viewer","Translator"]
         UiHelper.hideItemsSidebar(self.__ui.leftSidebar, toHideLeft)
 
         if Preferences.Prefs.settings.value("UI/AdvancedBottomSidebar", False) != "true":
@@ -501,6 +502,12 @@ class PluginFullUI(QObject):
 
         helpMenu.addAction(self.goPycomDocAct)
         helpMenu.addSeparator()
+
+
+    def __simplifyPreferences(self):
+        toDeleteTxt = ['Translator']
+        FullUI.PreferencesDialog.SimplifyPreferences.toDeleteExtend(toDeleteTxt)
+
 
     def __goPycomDoc(self):
         QDesktopServices.openUrl(QUrl("https://docs.pycom.io"))
