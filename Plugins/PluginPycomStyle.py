@@ -58,7 +58,7 @@ class PluginPycomStyle(QObject):
         stylesheetUrls = []
         for sheet in styleSheets:
             stylesheetUrls.append(pluginsPath+sheet)
-        if self.__styleSheet not in stylesheetUrls:)
+        if self.__styleSheet not in stylesheetUrls:
             for style in styleSheets:
                 if style in self.__styleSheet:
                     self.__styleSheet = pluginsPath+style
