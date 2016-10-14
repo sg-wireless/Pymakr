@@ -29,7 +29,9 @@ class PluginREPL(QObject):
         self.__ui = ui
         self.__oldShowEvent = self.__ui.showEvent
         self.__ui.showEvent = self.__onWindowLoad
+        self.__ui.preferencesChanged.connect(self.__preferencesChanged)
         self.__windowLoaded = False
+        self.__styleSheet = Preferences.getUI("StyleSheet")
 
     def activate(self):
         """
@@ -57,6 +59,10 @@ class PluginREPL(QObject):
         if self.__active == True:
             self.__initializeShell()
         self.__windowLoaded = True
+
+    def __preferencesChanged(self):
+        if Preferences.getUI("StyleSheet") != self.__styleSheet:
+            self.__shell.shell().refreshLexer()
 
     def __initializeShell(self):
         self.__pds = PycomDeviceServer()

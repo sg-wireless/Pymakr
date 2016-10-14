@@ -30,7 +30,6 @@ pyqtApi = 2
 python2Compatible = True
 
 path = os.path.dirname(os.path.realpath(__file__))
-print(path)
 pluginsPath = path[0:path.index('/Plugins')+8] + "/PycomStyle/"
 
 # data
@@ -62,7 +61,6 @@ class PluginPycomStyle(QObject):
             for style in styleSheets:
                 if style in self.__styleSheet:
                     self.__styleSheet = pluginsPath+style
-            
 
     def activate(self):
         """
@@ -83,6 +81,7 @@ class PluginPycomStyle(QObject):
             self.__styleSheet = Preferences.getUI
             self.__loadQssColors()
             self.__loadPythonColors()
+            self.__overrideStyleConfig()
 
 
     def __firstLoad(self):
@@ -90,7 +89,7 @@ class PluginPycomStyle(QObject):
         Private method called if there are no settings.
         """
         Preferences.setUI("StyleSheet", \
-            self.__path + "/PycomStyle/qdarkstyle/style.qss")
+            self.__path + "/PycomStyle/" + styleSheets[0])
 
         self.__ui.setStyle(Preferences.getUI("Style"), Preferences.getUI("StyleSheet"))
         self.__loadQssColors()
@@ -110,7 +109,10 @@ class PluginPycomStyle(QObject):
             QFontDatabase.addApplicationFont(self.__path + \
               "/PycomStyle/Fonts/RobotoMono-" + variation + ".ttf")
 
-
+    def __overrideStyleConfig(self):
+         for key in self.editorColorsDefaults:
+            Preferences.setEditorColour(key,self.editorColorsDefaults[key])
+        
     def __applyMonokaiPython(self, lexerName):
         defaultFont = QFont("Roboto Mono", self.__defaultFontSize, -1, False)
 
@@ -134,7 +136,6 @@ class PluginPycomStyle(QObject):
         # Unclosed string
         lexer.setPaper(QColor("#f92672"), 13)
         lexer.setEolFill(True, 13)
-
 
         lexer.writeSettings(Preferences.Prefs.settings, "Scintilla")
 

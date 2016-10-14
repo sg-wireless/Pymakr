@@ -24,32 +24,33 @@
 
 PycomEditorColors
 {
-    MatchingBrace: #00ff00;
-    MatchingBraceBack: #808080;
-    CallTipsBackground: #c0c0c0;
-    NonmatchingBrace: #ff0000;
-    NonmatchingBraceBack: #808080;
-    SelectionBackground: #49483E;
-    SelectionForeground: #ffffff;
-    SearchMarkers: #FFE792;
-    CaretForeground: #ffffff;
-    CaretLineBackground: #202020;
-    WhitespaceForeground: #000000;
-    WhitespaceBackground: #000000;
-    IndentationGuidesBackground: #000000;
-    IndentationGuidesForeground: #303030;
-    OnlineChangeTraceMarkerUnsaved: #FF3377;
-    OnlineChangeTraceMarkerSaved: #AAFF33;
-    EditAreaBackground: #000000;
-    MarginsForeground: #808080;
-    MarginsBackground: #202020;
-    FoldMarkersForeground: #808080;
-    FoldMarkersBackground: #000000;
-    FoldmarginBackground: #000000;
-    MarkerMapBackground: #202020;
-    CurrentMap: #ffffff;
-    Edge: #303030;
-    colors: #ffffff, #888877, #ae81ff, #ffff88, #ffff88, #ff3377, #ffff88, #ffff88, #aaff33, #aaff47, #ff3377, #ffffff, #888877, #f8f8f0, #ffe892, #aa88ff;
+    WhitespaceBackground:#ffffff;
+    FoldMarkersForeground:#ffffff;
+    MarginsForeground:#c0c0c0;
+    CallTipsBackground:#c0c0c0;
+    CurrentMap:#00fdff;
+    MarkerMapBackground:#ffffff;
+    FoldmarginBackground:#ffffff;
+    MatchingBrace:#00ff00;
+    NonmatchingBrace:#ff0000;
+    SelectionForeground:#c0c0c0;
+    EditAreaBackground:#ffffff;
+    CaretLineBackground:#ffffff;
+    SearchMarkers:#ffe792;
+    NonmatchingBraceBack:#808080;
+    MatchingBraceBack:#808080;
+    OnlineChangeTraceMarkerSaved:#fbfffb;
+    CaretForeground:#ffffff;
+    MarginsBackground:#ffffff;
+    FoldMarkersBackground:#ffffff;
+    WhitespaceForeground:#ffffff;
+    SelectionBackground:#e0e0e0;
+    Edge:#ffffff;
+    OnlineChangeTraceMarkerUnsaved:#e6e6e6;
+    IndentationGuidesBackground:#d4d4d4;
+    IndentationGuidesForeground:#ffffff;
+    colors: #808080, #007F00, #007F7F, #7F007F, #7F007F, #000077, #7F0000, #7F0000, #00FFFF, #007F7F, #000000, #000000, #7F7F7F, #000000 ,#000000, #407090, #805000;
+    
 }
 QToolTip
 {

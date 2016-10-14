@@ -250,6 +250,9 @@ class UPythonShell(QsciScintillaCompat):
         self.focusChanged.emit(False)
         super(UPythonShell, self).focusOutEvent(event)
 
+    def refreshLexer(self):
+        self.__bindLexer()
+
     def __bindLexer(self, language='Python3'):
         """
         Private slot to set the lexer.
@@ -287,6 +290,7 @@ class UPythonShell(QsciScintillaCompat):
         
         self.lexer_.setDefaultColor(self.lexer_.color(0))
         self.lexer_.setDefaultPaper(self.lexer_.paper(0))
+        
 
     def __setMargin0(self):
         """
