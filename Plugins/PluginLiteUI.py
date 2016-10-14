@@ -22,6 +22,9 @@ longDescription = "This plugin adapts the UI for a novice audience"
 pyqtApi = 2
 python2Compatible = True
 
+bottomTabsToShow = {"Pycom Console"} # options: "Pycom Console","Shell", "Task-Viewer", "Numbers", "Translator","Local Shell","Log-Viewer"
+leftTabsToShow = {"File-Browser","Project-Viewer"} # options: "File-Browser","Project-Viewer","Multiproject-Viewer","Template-Viewer","Symbols","File-Browser"
+
 class PluginLiteUI(QObject):
     def __init__(self, ui):
         super(PluginLiteUI, self).__init__(ui)
@@ -202,12 +205,18 @@ class PluginLiteUI(QObject):
         """
         Private method that hides the pro-level sidebars
         """
-        toHideLeft = ["Multiproject-Viewer",
+        allLeftTabs = {"File-Browser",
+                      "Project-Viewer",
+                      "Multiproject-Viewer",
                       "Template-Viewer",
                       "Symbols",
-                      "File-Browser"]
+                      "File-Browser"}
 
-        toHideBottom = ["Shell", "Task-Viewer", "Numbers", "Local Shell"]
+        allBottomTabs = {"Pycom Console", "Shell", "Task-Viewer", "Numbers", "Translator","Local Shell","Log-Viewer"}
+
+        toHideBottom = list(allBottomTabs - bottomTabsToShow)
+        toHideLeft = list(allLeftTabs - leftTabsToShow)
+
         UiHelper.hideItemsSidebar(self.__ui.leftSidebar, toHideLeft)
         UiHelper.hideItemsSidebar(self.__ui.bottomSidebar, toHideBottom)
 

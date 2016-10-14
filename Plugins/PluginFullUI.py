@@ -40,6 +40,11 @@ pyqtApi = 2
 python2Compatible = True
 
 
+bottomTabsToShow = {"Pycom Console","Shell","Task-Viewer","Numbers","Local Shell"} # options: "Pycom Console","Shell", "Task-Viewer", "Numbers", "Translator","Local Shell","Log-Viewer"
+leftTabsToShow = {"File-Browser","Project-Viewer"} # options: "File-Browser","Project-Viewer","Multiproject-Viewer","Template-Viewer","Symbols"
+
+
+
 def setupProjectBrowser():
     """
     Function that hides the project browser tabs
@@ -317,11 +322,19 @@ class PluginFullUI(QObject):
         """
         Private method that hides the pro-level sidebars
         """
-        toHideLeft = ["Multiproject-Viewer",
-                      "Template-Viewer",
-                      "Symbols"]
+        allLeftTabs = {"File-Browser",
+                    "Project-Viewer",
+                    "Multiproject-Viewer",
+                    "Template-Viewer",
+                    "Symbols",
+                    "File-Browser"}
 
-        toHideBottom = ["Log-Viewer","Translator"]
+        allBottomTabs = {"Pycom Console", "Shell", "Task-Viewer", "Numbers", "Translator","Local Shell","Log-Viewer"}
+
+        toHideBottom = list(allBottomTabs - bottomTabsToShow)
+        toHideLeft = list(allLeftTabs - leftTabsToShow)
+
+        
         UiHelper.hideItemsSidebar(self.__ui.leftSidebar, toHideLeft)
 
         if Preferences.Prefs.settings.value("UI/AdvancedBottomSidebar", False) != "true":
