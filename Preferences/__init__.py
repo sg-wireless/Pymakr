@@ -1078,7 +1078,7 @@ class Prefs(object):
     pluginManagerDefaults = {
         "ActivateExternal": True,
         "DownloadPath": "",
-        "UpdatesCheckInterval": 3,
+        "UpdatesCheckInterval": 0,
         # 0 = off
         # 1 = daily
         # 2 = weekly
