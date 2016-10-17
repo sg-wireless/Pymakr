@@ -40,6 +40,11 @@ pyqtApi = 2
 python2Compatible = True
 
 
+bottomTabsToShow = {"Pycom Console","Shell","Task-Viewer","Numbers","Local Shell"} # options: "Pycom Console","Shell", "Task-Viewer", "Numbers", "Translator","Local Shell","Log-Viewer"
+leftTabsToShow = {"File-Browser","Project-Viewer"} # options: "File-Browser","Project-Viewer","Multiproject-Viewer","Template-Viewer","Symbols"
+
+
+
 def setupProjectBrowser():
     """
     Function that hides the project browser tabs
@@ -184,6 +189,7 @@ class PluginFullUI(QObject):
         self.__setupSidebars()
         disableExtraPlugins()
         self.__setUiSwitchMenu()
+        self.__simplifyPreferences()
 
         # next couple of lines are needed to make the main window appear on foreground in macOS
         self.__ui.show()
@@ -242,7 +248,8 @@ class PluginFullUI(QObject):
                           "PyQt&4 Documentation",
                           "PyQt&5 Documentation",
                           "&About Pymakr",
-                          "About &Qt"]
+                          "About &Qt"],
+            "plugins":    ["Configure..."]
         }
 
         for menu, items in toRemove.iteritems():
@@ -315,11 +322,19 @@ class PluginFullUI(QObject):
         """
         Private method that hides the pro-level sidebars
         """
-        toHideLeft = ["Multiproject-Viewer",
-                      "Template-Viewer",
-                      "Symbols"]
+        allLeftTabs = {"File-Browser",
+                    "Project-Viewer",
+                    "Multiproject-Viewer",
+                    "Template-Viewer",
+                    "Symbols",
+                    "File-Browser"}
 
-        toHideBottom = ["Log-Viewer"]
+        allBottomTabs = {"Pycom Console", "Shell", "Task-Viewer", "Numbers", "Translator","Local Shell","Log-Viewer"}
+
+        toHideBottom = list(allBottomTabs - bottomTabsToShow)
+        toHideLeft = list(allLeftTabs - leftTabsToShow)
+
+        
         UiHelper.hideItemsSidebar(self.__ui.leftSidebar, toHideLeft)
 
         if Preferences.Prefs.settings.value("UI/AdvancedBottomSidebar", False) != "true":
@@ -500,6 +515,12 @@ class PluginFullUI(QObject):
 
         helpMenu.addAction(self.goPycomDocAct)
         helpMenu.addSeparator()
+
+
+    def __simplifyPreferences(self):
+        toDeleteTxt = ['Translator']
+        FullUI.PreferencesDialog.SimplifyPreferences.toDeleteExtend(toDeleteTxt)
+
 
     def __goPycomDoc(self):
         QDesktopServices.openUrl(QUrl("https://docs.pycom.io"))
