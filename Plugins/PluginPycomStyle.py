@@ -83,7 +83,14 @@ class PluginPycomStyle(QObject):
             self.__loadQssColors()
             self.__loadPythonColors()
             self.__overrideStyleConfig()
+            self.__refreshEditor()
 
+    def __refreshEditor(self):
+        viewManager = e5App().getObject('ViewManager')
+        openFiles = viewManager.getOpenFilenames()
+        for fn in openFiles:
+            editor = viewManager.getOpenEditor(fn)
+            editor.setLanguage(fn,editor.getLanguage()) # get and set language to refresh lexer
 
     def __firstLoad(self):
         """
