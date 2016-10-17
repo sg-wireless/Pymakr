@@ -37,6 +37,7 @@ styles = ['Dark','Light']
 styleSheets = ['qdarkstyle/style.qss','qdarkstyle/style-light.qss']
 
 class PluginPycomStyle(QObject):
+
     def __init__(self, ui):
         super(PluginPycomStyle, self).__init__(ui)
         self.__ui = ui
@@ -78,7 +79,7 @@ class PluginPycomStyle(QObject):
 
     def preferencesChanged(self):
         if Preferences.getUI("StyleSheet") != self.__styleSheet:
-            self.__styleSheet = Preferences.getUI
+            self.__styleSheet = Preferences.getUI("StyleSheet")
             self.__loadQssColors()
             self.__loadPythonColors()
             self.__overrideStyleConfig()

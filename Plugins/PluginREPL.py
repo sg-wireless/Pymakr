@@ -62,7 +62,9 @@ class PluginREPL(QObject):
 
     def __preferencesChanged(self):
         if Preferences.getUI("StyleSheet") != self.__styleSheet:
+            self.__styleSheet = Preferences.getUI("StyleSheet")
             self.__shell.shell().refreshLexer()
+            
 
     def __initializeShell(self):
         self.__pds = PycomDeviceServer()

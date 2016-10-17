@@ -252,6 +252,8 @@ class UPythonShell(QsciScintillaCompat):
 
     def refreshLexer(self):
         self.__bindLexer()
+        self.__setTextDisplay()
+        self.__setMargin0()
 
     def __bindLexer(self, language='Python3'):
         """
@@ -261,7 +263,7 @@ class UPythonShell(QsciScintillaCompat):
         """
         self.language = language
         if Preferences.getShell("SyntaxHighlightingEnabled"):
-            from QScintilla import Lexers
+            from QScintilla import Lexers 
             self.lexer_ = Lexers.getLexer(self.language, self)
         else:
             self.lexer_ = None
