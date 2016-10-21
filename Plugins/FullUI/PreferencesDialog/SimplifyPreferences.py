@@ -5,10 +5,10 @@ oldInit = None
 
 toDeleteTxt = ['Application', 'Cooperation', 'CORBA', 'Debugger', 'Email', 'Graphics',
                 'Help', 'Icons', 'IRC', 'Mimetypes', 'Network', 'Notifications',
-                'Plugin Manager', 'Printer', 'Project', 'Python', 'Qt', 'Security',
+                'Plugin Manager', 'Printer', 'Python', 'Qt', 'Security',
                 'Templates', 'Tray Starter', 'Version Control Systems', 'Editor/APIs',
                 'Editor/Mouse Click Handlers', 'Interface/Viewmanager',
-                'Editor/Highlighters/Filetype Associations']
+                'Editor/Highlighters/Filetype Associations','Project/Project','Project/Project Viewer']
 
 def modifyPreferencesDialog(dlg):
     if Preferences.Prefs.settings.value("UI/AdvancedBottomSidebar", False) != "true":
