@@ -31,7 +31,7 @@ PycomEditorColors
     CurrentMap:#00fdff;
     MarkerMapBackground:#ffffff;
     FoldmarginBackground:#ffffff;
-    MatchingBrace:#00ff00;
+    MatchingBrace:#ffffff;
     NonmatchingBrace:#ff0000;
     SelectionForeground:#c0c0c0;
     EditAreaBackground:#ffffff;
@@ -42,13 +42,13 @@ PycomEditorColors
     OnlineChangeTraceMarkerSaved:#fbfffb;
     CaretForeground:#ffffff;
     MarginsBackground:#ffffff;
-    FoldMarkersBackground:#ffffff;
+    FoldMarkersBackground:#c0c0c0;
     WhitespaceForeground:#ffffff;
     SelectionBackground:#e0e0e0;
     Edge:#ffffff;
     OnlineChangeTraceMarkerUnsaved:#e6e6e6;
     IndentationGuidesBackground:#d4d4d4;
-    IndentationGuidesForeground:#ffffff;
+    IndentationGuidesForeground:#d4d4d4;
     colors: #808080, #007F00, #007F7F, #7F007F, #7F007F, #000077, #7F0000, #7F0000, #00FFFF, #007F7F, #000000, #000000, #7F7F7F, #000000 ,#000000, #407090, #805000;
     
 }
