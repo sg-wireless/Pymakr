@@ -195,12 +195,6 @@ class TabWidget(E5TabWidget):
         self.__navigationMenu.triggered.connect(self.__navigationMenuTriggered)
         
         self.navigationButton = QToolButton(self)
-        self.navigationButton.setIcon(UI.PixmapCache.getIcon("1downarrow.png"))
-        self.navigationButton.setToolTip(self.tr("Show a navigation menu"))
-        self.navigationButton.setPopupMode(QToolButton.InstantPopup)
-        self.navigationButton.setMenu(self.__navigationMenu)
-        self.navigationButton.setEnabled(False)
-        self.rightCornerWidgetLayout.addWidget(self.navigationButton)
         
         if Preferences.getUI("SingleCloseButton") or \
            not hasattr(self, 'setTabsClosable'):
@@ -229,9 +223,17 @@ class TabWidget(E5TabWidget):
         self.emptyLabel = QLabel()
         self.emptyLabel.setPixmap(ericPic)
         self.emptyLabel.setAlignment(Qt.AlignVCenter | Qt.AlignHCenter)
-        super(TabWidget, self).addTab(
-            self.emptyLabel,
-            UI.PixmapCache.getIcon("empty.png"), "")
+        # super(TabWidget, self).addTab(
+        #     self.emptyLabel,
+        #     UI.PixmapCache.getIcon("empty.png"), "")
+
+    def __initNavigationButton(self):
+        self.navigationButton.setIcon(UI.PixmapCache.getIcon("1downarrow.png"))
+        self.navigationButton.setToolTip(self.tr("Show a navigation menu"))
+        self.navigationButton.setPopupMode(QToolButton.InstantPopup)
+        self.navigationButton.setEnabled(True)
+        self.navigationButton.setMenu(self.__navigationMenu)
+        self.rightCornerWidgetLayout.addWidget(self.navigationButton)
         
     def __initMenu(self):
         """
@@ -359,7 +361,7 @@ class TabWidget(E5TabWidget):
             self.closeButton.setEnabled(True)
         else:
             self.setTabsClosable(True)
-        self.navigationButton.setEnabled(True)
+        self.__initNavigationButton()
         
         if editor not in self.editors:
             self.editors.append(editor)
@@ -390,6 +392,7 @@ class TabWidget(E5TabWidget):
         else:
             self.setTabsClosable(True)
         self.navigationButton.setEnabled(True)
+        self.navigationButton.setMenu(self.__navigationMenu)
         
         if editor not in self.editors:
             self.editors.append(editor)
@@ -460,9 +463,9 @@ class TabWidget(E5TabWidget):
             self.removeTab(index)
         
         if not self.editors:
-            super(TabWidget, self).addTab(
-                self.emptyLabel, UI.PixmapCache.getIcon("empty.png"), "")
-            self.emptyLabel.show()
+            # super(TabWidget, self).addTab(
+            #     self.emptyLabel, UI.PixmapCache.getIcon("empty.png"), "")
+            # self.emptyLabel.show()
             if self.closeButton:
                 self.closeButton.setEnabled(False)
             else:
