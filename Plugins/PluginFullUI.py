@@ -39,10 +39,34 @@ longDescription = "This plugin adapts the UI for an engineering audience"
 pyqtApi = 2
 python2Compatible = True
 
-
 bottomTabsToShow = {"Pycom Console","Shell","Task-Viewer","Numbers","Local Shell"} # options: "Pycom Console","Shell", "Task-Viewer", "Numbers", "Translator","Local Shell","Log-Viewer"
 leftTabsToShow = {"File-Browser","Project-Viewer"} # options: "File-Browser","Project-Viewer","Multiproject-Viewer","Template-Viewer","Symbols"
 
+
+def getConfigData():
+    """
+    Module function returning data as required by the configuration dialog.
+
+    @return dictionary with key "Project" containing the relevant
+        data
+    """
+    path = os.path.dirname(os.path.realpath(__file__))
+    return {
+        "Project":
+        [QCoreApplication.translate("Project", "Project"),
+        path + "/FullUI/ProjectPage/img/preferences-project.png", createProjectConfigurationPage,
+        None, None]
+    }
+
+def createProjectConfigurationPage(configDlg):
+    """
+    Module function to create the configuration page.
+
+    @param configDlg reference to the configuration dialog (QDialog)
+    @return reference to the configuration page
+    """
+    from Plugins.FullUI.ProjectPage.ProjectPage import ProjectPage
+    return ProjectPage()
 
 
 def setupProjectBrowser():
