@@ -60,6 +60,10 @@ def getConfigData():
         "Project":
         [QCoreApplication.translate("Project", "Project"),
         path + "/FullUI/ProjectPage/img/preferences-project.png", createProjectConfigurationPage,
+        None, None],
+        "Interface":
+        [QCoreApplication.translate("Interface", "Interface "),
+        path + "/FullUI/InterfacePage/img/preferences-interface.png", createInterfaceConfigurationPage,
         None, None]
     }
 
@@ -72,6 +76,19 @@ def createProjectConfigurationPage(configDlg):
     """
     from Plugins.FullUI.ProjectPage.ProjectPage import ProjectPage
     return ProjectPage()
+
+
+def createInterfaceConfigurationPage(configDlg):
+    """
+    Module function to create the configuration page.
+
+    @param configDlg reference to the configuration dialog (QDialog)
+    @return reference to the configuration page
+    """
+    from Preferences.ConfigurationPages.InterfacePage import InterfacePage
+    return InterfacePage()
+
+    
 
 
 def setupProjectBrowser():

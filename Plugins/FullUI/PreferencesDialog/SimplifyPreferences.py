@@ -7,7 +7,7 @@ toDeleteTxt = ['Application', 'Cooperation', 'CORBA', 'Debugger', 'Email', 'Grap
                 'Help', 'Icons', 'IRC', 'Mimetypes', 'Network', 'Notifications',
                 'Plugin Manager', 'Printer', 'Python', 'Qt', 'Security',
                 'Templates', 'Tray Starter', 'Version Control Systems', 'Editor/APIs',
-                'Editor/Mouse Click Handlers', 'Interface/Viewmanager',
+                'Editor/Mouse Click Handlers','Interface',
                 'Editor/Highlighters/Filetype Associations','Project','Project/Project Viewer']
 
 def modifyPreferencesDialog(dlg):
