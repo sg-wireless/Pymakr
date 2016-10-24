@@ -134,20 +134,21 @@ class PluginUpdate(QObject):
 
 
     def processPycomDeviceVersion(self):
-        product = PycomDeviceServer.uname[0].lower()
-        platform = PycomDeviceServer.uname[1].lower()
-        url = "https://software.pycom.io/findupgrade?product=%s&type=stable&platform=%s" % (product, platform)
-        try:
-            request = QNetworkRequest(QUrl(url))
-            networkManager = QNetworkAccessManager()
-            request.setAttribute(QNetworkRequest.CacheLoadControlAttribute,
-                                QNetworkRequest.AlwaysNetwork)
-            self.__request = request
-            self.__networkManager = networkManager
-            self.__reply = networkManager.get(self.__request)
-            self.__reply.finished.connect(self.__PycomDeviceDownloadDone)
-        except:
-            pass
+        if PycomDeviceServer.uname != None:
+            product = PycomDeviceServer.uname[0].lower()
+            platform = PycomDeviceServer.uname[1].lower()
+            url = "https://software.pycom.io/findupgrade?product=%s&type=stable&platform=%s" % (product, platform)
+            try:
+                request = QNetworkRequest(QUrl(url))
+                networkManager = QNetworkAccessManager()
+                request.setAttribute(QNetworkRequest.CacheLoadControlAttribute,
+                                    QNetworkRequest.AlwaysNetwork)
+                self.__request = request
+                self.__networkManager = networkManager
+                self.__reply = networkManager.get(self.__request)
+                self.__reply.finished.connect(self.__PycomDeviceDownloadDone)
+            except:
+                pass
 
     def __PycomDeviceDownloadDone(self):
         """
