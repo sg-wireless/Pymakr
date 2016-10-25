@@ -121,8 +121,8 @@ class PluginPycomStyle(QObject):
          for key in self.editorColorsDefaults:
             Preferences.setEditorColour(key,self.editorColorsDefaults[key])
         
-    def __applyMonokaiPython(self, lexerName):
-        defaultFont = QFont("Roboto Mono", self.__defaultFontSize, -1, False)
+    def __applyMonokaiPython(self, lexerName, fontName="Roboto Mono"):
+        defaultFont = QFont(fontName, self.__defaultFontSize, -1, False)
 
         lexer = PreferencesLexer(lexerName)
 
@@ -147,10 +147,10 @@ class PluginPycomStyle(QObject):
 
         lexer.writeSettings(Preferences.Prefs.settings, "Scintilla")
 
-    def __loadPythonColors(self):
-        self.__applyMonokaiPython("C++")
-        self.__applyMonokaiPython("Python2")
-        self.__applyMonokaiPython("Python3")
+    def __loadPythonColors(self, fontName="Roboto Mono"):
+        self.__applyMonokaiPython("C++",fontName)
+        self.__applyMonokaiPython("Python2",fontName)
+        self.__applyMonokaiPython("Python3",fontName)
 
     def __setupDefaultParameters(self):
         defaultFont = QFont("Roboto Mono", self.__defaultFontSize, -1, False)

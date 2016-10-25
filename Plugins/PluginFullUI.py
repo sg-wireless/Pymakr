@@ -44,7 +44,7 @@ longDescription = "This plugin adapts the UI for an engineering audience"
 pyqtApi = 2
 python2Compatible = True
 
-bottomTabsToShow = {"Pycom Console","Shell","Task-Viewer","Numbers","Local Shell"} # options: "Pycom Console","Shell", "Task-Viewer", "Numbers", "Translator","Local Shell","Log-Viewer"
+bottomTabsToShow = {"Pycom Console","Shell","Task-Viewer","Numbers","Local Shell","Log-Viewer"} # options: "Pycom Console","Shell", "Task-Viewer", "Numbers", "Translator","Local Shell","Log-Viewer"
 leftTabsToShow = {"File-Browser","Project-Viewer"} # options: "File-Browser","Project-Viewer","Multiproject-Viewer","Template-Viewer","Symbols"
 
 

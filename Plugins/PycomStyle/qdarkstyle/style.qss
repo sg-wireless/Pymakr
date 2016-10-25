@@ -49,6 +49,7 @@ PycomEditorColors
     MarkerMapBackground: #202020;
     CurrentMap: #ffffff;
     Edge: #303030;
+    HyperlinkColor: #ffffff;
     colors: #ffffff, #888877, #ae81ff, #ffff88, #ffff88, #ff3377, #ffff88, #ffff88, #aaff33, #aaff47, #ff3377, #ffffff, #888877, #f8f8f0, #ffe892, #aa88ff;
 }
 

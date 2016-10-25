@@ -49,6 +49,7 @@ PycomEditorColors
     OnlineChangeTraceMarkerUnsaved:#e6e6e6;
     IndentationGuidesBackground:#d4d4d4;
     IndentationGuidesForeground:#d4d4d4;
+    HyperlinkColor: #000000;
     colors: #808080, #007F00, #007F7F, #7F007F, #7F007F, #000077, #7F0000, #7F0000, #00FFFF, #007F7F, #000000, #000000, #7F7F7F, #000000 ,#000000, #407090, #805000;
     
 }
