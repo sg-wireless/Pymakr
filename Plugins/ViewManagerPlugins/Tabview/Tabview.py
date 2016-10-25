@@ -223,9 +223,9 @@ class TabWidget(E5TabWidget):
         self.emptyLabel = QLabel()
         self.emptyLabel.setPixmap(ericPic)
         self.emptyLabel.setAlignment(Qt.AlignVCenter | Qt.AlignHCenter)
-        # super(TabWidget, self).addTab(
-        #     self.emptyLabel,
-        #     UI.PixmapCache.getIcon("empty.png"), "")
+        super(TabWidget, self).addTab(
+            self.emptyLabel,
+            UI.PixmapCache.getIcon("empty.png"), "")
 
     def __initNavigationButton(self):
         self.navigationButton.setIcon(UI.PixmapCache.getIcon("1downarrow.png"))
@@ -463,9 +463,9 @@ class TabWidget(E5TabWidget):
             self.removeTab(index)
         
         if not self.editors:
-            # super(TabWidget, self).addTab(
-            #     self.emptyLabel, UI.PixmapCache.getIcon("empty.png"), "")
-            # self.emptyLabel.show()
+            super(TabWidget, self).addTab(
+                self.emptyLabel, UI.PixmapCache.getIcon("empty.png"), "")
+            self.emptyLabel.show()
             if self.closeButton:
                 self.closeButton.setEnabled(False)
             else:
