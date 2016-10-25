@@ -667,6 +667,7 @@ QComboBox
     border-radius: 2px;
     padding: 5px;
     min-width: 75px;
+    margin:3px;
 }
 
 QPushButton:checked{
@@ -682,8 +683,6 @@ QComboBox:hover,QPushButton:hover,QAbstractSpinBox:hover,QLineEdit:hover,QTextEd
 
 QComboBox:on
 {
-    padding-top: 3px;
-    padding-left: 4px;
     selection-background-color: #4a4a4a;
 }
 
