@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>294</height>
+    <width>421</width>
+    <height>290</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -121,6 +121,32 @@
       </spacer>
      </item>
     </layout>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_4">
+     <property name="maximumSize">
+      <size>
+       <width>725</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Note:&lt;br/&gt;To connect to a device over serial, REPL needs to be enabled from &lt;br/&gt;the boot.py file. Visit the &lt;/span&gt;&lt;a href=&quot;https://docs.pycom.io/wipy/wipy/tutorial/repl.html&quot;&gt;&lt;span style=&quot; font-style:italic; text-decoration: underline; color:#ffffff;&quot;&gt;documentation&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-style:italic;&quot;&gt; for more information.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
    </item>
    <item>
     <spacer name="verticalSpacer_2">
