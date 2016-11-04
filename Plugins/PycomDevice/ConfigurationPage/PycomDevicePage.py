@@ -34,10 +34,15 @@ class PycomDevicePage(ConfigurationPageBase, Ui_PycomDevicePage):
 
         # set initial values
         self.txt_device.addItem(current_address)
+        self.txt_device.lineEdit().setPlaceholderText("Set the device IP address or com port")
         self.txt_user.setText(
             self.__plugin.getPreferences("username"))
+        self.txt_user.setPlaceholderText("Default: micro")
         self.txt_password.setText(
             self.__plugin.getPreferences("password"))
+        self.txt_password.setPlaceholderText("Default: python")
+
+        self.label_4.setOpenExternalLinks(True)
 
         # load the rest of the list
         self.loadSerialPortsList(current_address)

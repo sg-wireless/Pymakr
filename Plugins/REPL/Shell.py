@@ -96,6 +96,7 @@ class UPythonShell(QsciScintillaCompat):
         @param parent parent widget (QWidget)
         """
         super(UPythonShell, self).__init__(parent)
+        self.__rxBuffer = None
         self.patch()
         self.setUtf8(True)
         
@@ -546,6 +547,8 @@ class UPythonShell(QsciScintillaCompat):
                 self.__moveCursorRel(-numChars)
                 self.__movement = True
                 return 3 + pos
+        elif s[0] == b'\x1b':
+            return 0
         return -1
 
     def __write(self, s):
@@ -560,12 +563,18 @@ class UPythonShell(QsciScintillaCompat):
             pass
 
         i = 0
+        if self.__rxBuffer:
+            s = self.__rxBuffer + s
+            self.__rxBuffer = None
         while i < len(s):
             self.__movement = False
             advance = self.__simulateVT100(s[i:])
             if advance == -1:
                 self.__overwrite(s[i])
                 i += 1
+            elif advance == 0:
+                self.__rxBuffer = s[i:]
+                break
             else:
                 i += advance
 

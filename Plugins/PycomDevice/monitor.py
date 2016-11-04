@@ -197,11 +197,11 @@ class Monitor(object):
     def write_to_file(self):
         dest = open(self.stream.read_exactly(self.read_int16()), "w")
         data_len = self.read_int32()
-        self.init_hash(data_len)
+        # self.init_hash(data_len)
         while data_len != 0:
             data = self.stream.read_exactly(min(data_len, 256))
             dest.write(data)
-            self.last_hash.update(data)
+            # self.last_hash.update(data)
             data_len -= len(data)
         dest.close()
 
@@ -213,13 +213,13 @@ class Monitor(object):
             self.write_int32(0xFFFFFFFF)
             return
         self.write_int32(data_len)
-        self.init_hash(data_len)
+        # self.init_hash(data_len)
         source = open(filename, 'r')
         while data_len != 0:
             to_read, data_len = Monitor.block_split_helper(data_len)
             data = source.read(to_read)
             self.stream.send(data)
-            self.last_hash.update(data)
+            # self.last_hash.update(data)
         source.close()
 
     def remove_file(self):

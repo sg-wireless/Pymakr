@@ -42,4 +42,5 @@ class AboutPymakr(QDialog, Ui_AboutPymakr):
         self.lblTitle.setText(Info.Builder + " " + Info.Program)
         self.lblVersion.setText(self.tr("Version ") + Info.Version)
         self.lblDescription.setText(self.tr(descriptionText % (color,color,color,color,color)))
+        self.lblDescription.setOpenExternalLinks(True)
         self.imgIcon.setPixmap(QPixmap(self.__path + '/img/icon.png').scaled(80, 80))
