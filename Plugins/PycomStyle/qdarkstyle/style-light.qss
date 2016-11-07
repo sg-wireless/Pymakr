@@ -26,7 +26,7 @@ PycomEditorColors
 {
     WhitespaceBackground:#ffffff;
     FoldMarkersForeground:#ffffff;
-    MarginsForeground:#c0c0c0;
+    MarginsForeground:#b0b0b0;
     CallTipsBackground:#c0c0c0;
     CurrentMap:#00fdff;
     MarkerMapBackground:#ffffff;
@@ -40,8 +40,8 @@ PycomEditorColors
     NonmatchingBraceBack:#808080;
     MatchingBraceBack:#808080;
     OnlineChangeTraceMarkerSaved:#fbfffb;
-    CaretForeground:#ffffff;
-    MarginsBackground:#ffffff;
+    CaretForeground:#000000;
+    MarginsBackground:#F9F9F9;
     FoldMarkersBackground:#c0c0c0;
     WhitespaceForeground:#ffffff;
     SelectionBackground:#e0e0e0;
