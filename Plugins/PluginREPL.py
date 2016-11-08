@@ -31,7 +31,7 @@ class PluginREPL(QObject):
         self.__ui.showEvent = self.__onWindowLoad
         self.__ui.preferencesChanged.connect(self.__preferencesChanged)
         self.__windowLoaded = False
-        self.__styleSheet = Preferences.getUI("StyleSheet")
+        self.__storeSettings()
 
     def activate(self):
         """
@@ -60,11 +60,22 @@ class PluginREPL(QObject):
             self.__initializeShell()
         self.__windowLoaded = True
 
+
+    def __storeSettings(self):
+        self.__styleSheet = Preferences.getUI("StyleSheet")
+        self.__useMonospacedFont = Preferences.getEditor("UseMonospacedFont")
+        self.__monospacedFont = Preferences.getEditorOtherFonts("MonospacedFont")
+        self.__defaultFont = Preferences.getEditorOtherFonts("DefaultFont")
+
+    def __fontChanged(self):
+        return (Preferences.getEditor("UseMonospacedFont") != self.__useMonospacedFont or
+                Preferences.getEditorOtherFonts("MonospacedFont") != self.__monospacedFont or
+                Preferences.getEditorOtherFonts("DefaultFont") != self.__defaultFont)
+
     def __preferencesChanged(self):
-        if Preferences.getUI("StyleSheet") != self.__styleSheet:
-            self.__styleSheet = Preferences.getUI("StyleSheet")
+        if Preferences.getUI("StyleSheet") != self.__styleSheet or self.__fontChanged():
+            self.__storeSettings()
             self.__shell.shell().refreshLexer()
-            
 
     def __initializeShell(self):
         self.__pds = PycomDeviceServer()

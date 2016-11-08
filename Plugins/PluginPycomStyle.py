@@ -51,10 +51,11 @@ class PluginPycomStyle(QObject):
            hasattr(ui, 'firstBoot'):
             ui.firstBoot = True
             self.__firstLoad()
+        
+        self.__storePreviousSettings()
+        # detect wrong path of stylesheet and correct it
 
         self.__styleSheet = Preferences.getUI("StyleSheet")
-        
-        # detect wrong path of stylesheet and correct it
         stylesheetUrls = []
         for sheet in styleSheets:
             stylesheetUrls.append(pluginsPath+sheet)
@@ -63,6 +64,7 @@ class PluginPycomStyle(QObject):
                 if style in self.__styleSheet:
                     self.__styleSheet = pluginsPath+style
 
+    
     def activate(self):
         """
         Public method to activate this plugin.
@@ -78,12 +80,20 @@ class PluginPycomStyle(QObject):
         pass
 
     def preferencesChanged(self):
+    
         if Preferences.getUI("StyleSheet") != self.__styleSheet:
-            self.__styleSheet = Preferences.getUI("StyleSheet")
+            self.__storePreviousSettings()
             self.__loadQssColors()
             self.__loadPythonColors()
             self.__overrideStyleConfig()
             self.__refreshEditor()
+        
+        if self.__fontChanged():
+            self.__storePreviousSettings()
+            self.__loadQssColors()
+            self.__loadPythonColors()
+            self.__refreshEditor()
+    
 
     def __refreshEditor(self):
         viewManager = e5App().getObject('ViewManager')
@@ -104,6 +114,23 @@ class PluginPycomStyle(QObject):
         self.__setupDefaultParameters()
         self.__loadPythonColors()
 
+    def __storePreviousSettings(self):
+        self.__styleSheet = Preferences.getUI("StyleSheet")
+        self.__useMonospacedFont = Preferences.getEditor("UseMonospacedFont")
+        self.__monospacedFont = Preferences.getEditorOtherFonts("MonospacedFont")
+        self.__defaultFont = Preferences.getEditorOtherFonts("DefaultFont")
+
+    def __fontChanged(self):
+        return (Preferences.getEditor("UseMonospacedFont") != self.__useMonospacedFont or
+                Preferences.getEditorOtherFonts("MonospacedFont") != self.__monospacedFont or
+                Preferences.getEditorOtherFonts("DefaultFont") != self.__defaultFont)
+
+    def __getFont(self):
+        if Preferences.getEditor("UseMonospacedFont"):
+            return Preferences.getEditorOtherFonts("MonospacedFont")
+        else:
+            return Preferences.getEditorOtherFonts("DefaultFont")
+
     def __loadFont(self):
         osFamily = sys.platform
         if osFamily == 'darwin':
@@ -121,9 +148,11 @@ class PluginPycomStyle(QObject):
          for key in self.editorColorsDefaults:
             Preferences.setEditorColour(key,self.editorColorsDefaults[key])
         
-    def __applyMonokaiPython(self, lexerName, fontName="Roboto Mono"):
-        defaultFont = QFont(fontName, self.__defaultFontSize, -1, False)
-
+    def __applyMonokaiPython(self, lexerName, defaultFont=None):
+        # defaultFont = QFont(fontName, self.__defaultFontSize, -1, False)
+        if defaultFont == None:
+            defaultFont = self.__getFont()
+        
         lexer = PreferencesLexer(lexerName)
 
         for i in range(0, 15):
@@ -147,13 +176,14 @@ class PluginPycomStyle(QObject):
 
         lexer.writeSettings(Preferences.Prefs.settings, "Scintilla")
 
-    def __loadPythonColors(self, fontName="Roboto Mono"):
-        self.__applyMonokaiPython("C++",fontName)
-        self.__applyMonokaiPython("Python2",fontName)
-        self.__applyMonokaiPython("Python3",fontName)
+    def __loadPythonColors(self):
+        self.__applyMonokaiPython("C++")
+        self.__applyMonokaiPython("Python2")
+        self.__applyMonokaiPython("Python3")
 
     def __setupDefaultParameters(self):
-        defaultFont = QFont("Roboto Mono", self.__defaultFontSize, -1, False)
+        # defaultFont = QFont("Roboto Mono", self.__defaultFontSize, -1, False)
+        defaultFont = self.__getFont()
 
         editorOtherFontsDefaults = {
             "MarginsFont": defaultFont,
