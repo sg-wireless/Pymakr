@@ -538,15 +538,26 @@ class UPythonShell(QsciScintillaCompat):
             return 1
         elif s[0:2] == b'\x1b[':
             s = s[2:]
+
+            # when the command itself is not in this message, add back to the buffer
+            if len(s) == 0:
+                return 0
+
+            # erase from cursor to end of line	
             if s[0] == 'K':
                 self.deleteLineRight()
                 return 3
+
+            # Cursor Backward
             if s.find('D') != -1:
                 pos = s.find('D')
                 numChars = int(s[:pos])
                 self.__moveCursorRel(-numChars)
                 self.__movement = True
                 return 3 + pos
+            
+            # when there is data but no D or K, add it back to the buffer
+            return 0
         elif s[0] == b'\x1b':
             return 0
         return -1
