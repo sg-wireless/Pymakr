@@ -155,7 +155,6 @@ class PluginLiteUI(QObject):
                 break
 
     def __initLiteToolbar(self, ui, toolbarManager):
-
         # find first toolbar
         firstToolbar = None
 
@@ -180,10 +179,11 @@ class PluginLiteUI(QObject):
 
         # load new toolbar actions
         for bar in toCopy:
-            for el in self.__ui.getToolbar(bar[0])[1].actions():
-                if el.text() in bar[1]:
-                    self.__toolbar.addAction(el)
-                    toolbarManager.addAction(el, title)
+            if self.__ui.getToolbar(bar[0]) != None and self.__ui.getToolbar(bar[0])[1] != None:
+                for el in self.__ui.getToolbar(bar[0])[1].actions():
+                    if el.text() in bar[1]:
+                        self.__toolbar.addAction(el)
+                        toolbarManager.addAction(el, title)
 
         ui.registerToolbar("lite", title, self.__toolbar)
         if firstToolbar:

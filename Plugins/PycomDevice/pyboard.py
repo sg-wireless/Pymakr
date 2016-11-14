@@ -135,12 +135,12 @@ class Serial_connection:
                 if connection_timeout == 0:
                     continue
 
-                if attempt == 0 and connection_timeout != 0:
-                    sys.stdout.write('Waiting {} seconds for pyboard '.format(connection_timeout))
+                # if attempt == 0 and connection_timeout != 0:
+                #     sys.stdout.write('Waiting {} seconds for pyboard '.format(connection_timeout))
 
                 time.sleep(1)
-                sys.stdout.write('.')
-                sys.stdout.flush()
+                # sys.stdout.write('.')
+                # sys.stdout.flush()
 
     def authenticate(self, user, password):
         # needs no authentication
@@ -442,6 +442,8 @@ class Pyboard:
         try:
             if self.connection.keep_alive() == False:
                 self.__disconnected_callback(Pyboard.LOST_CONNECTION)
+        except AttributeError:
+            pass
         except:
              self.__disconnected_callback(Pyboard.LOST_CONNECTION)
 

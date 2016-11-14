@@ -268,8 +268,10 @@ class PycomDeviceServer(QThread):
     def __fetchFirmwareVersion(self):
         from ast import literal_eval
         PycomDeviceServer.channel.send("import os; [os.uname().sysname, os.uname().machine, os.uname().release]\r\n")
-        PycomDeviceServer.uname = literal_eval(PycomDeviceServer.channel.read_until(b'>>>').splitlines()[1].decode('utf8'))
-        self.emitFirmwareDetected()
+        uname = literal_eval(PycomDeviceServer.channel.read_until(b'>>>').splitlines()[1].decode('utf8'))
+        if isinstance(uname, list) and len(uname) > 2:
+            PycomDeviceServer.uname = uname
+            self.emitFirmwareDetected()
 
     def __getConnected(self):
         self.emitStatusChange("connecting")

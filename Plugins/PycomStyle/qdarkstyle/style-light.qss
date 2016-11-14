@@ -344,7 +344,7 @@ QAbstractItemView:disabled
 
 QAbstractItemView
 {
-    alternate-background-color: #f0f0f0;
+    alternate-background-color: #ffffff;
     color: #333;
     border: 1px solid #333;
     border-radius: 2px;
