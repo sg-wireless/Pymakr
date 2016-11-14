@@ -236,6 +236,7 @@ class PluginFullUI(QObject):
         disableExtraPlugins()
         self.__setUiSwitchMenu()
         self.__simplifyPreferences()
+        self.__disableVcs()
 
         # next couple of lines are needed to make the main window appear on foreground in macOS
         self.__ui.show()
@@ -566,6 +567,12 @@ class PluginFullUI(QObject):
     def __simplifyPreferences(self):
         toDeleteTxt = ['Translator']
         FullUI.PreferencesDialog.SimplifyPreferences.toDeleteExtend(toDeleteTxt)
+
+    def __disableVcs(self):
+        Project.initVCS = self.__returnNone 
+    
+    def __returnNone(self):
+        return None
 
 
     def __goPycomDoc(self):
