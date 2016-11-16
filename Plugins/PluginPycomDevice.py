@@ -290,7 +290,11 @@ class PycomDeviceServer(QThread):
             try:
                 if continuing == False:
                     self.__getConnected()
-                    self.signalDataReception(PycomDeviceServer.channel.read_until(b'>>>').decode("utf-8"))
+                    rawData = PycomDeviceServer.channel.read_until(b'>>>')
+                    # fix for mistake in lopy firmware ~0.9.4.b2, where there is a 0xFF coming in as a first character after a reboot
+                    if rawData[0] == 255: #first char 0xff
+                        rawData = rawData[1:]
+                    self.signalDataReception(rawData.decode("utf-8"))
                     self.__fetchFirmwareVersion()
                     PycomDeviceServer.channel.set_disconnected_callback(self.__disconnectedCallback)
                     attempt = 0

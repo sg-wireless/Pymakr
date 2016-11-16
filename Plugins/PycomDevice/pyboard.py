@@ -128,8 +128,8 @@ class Serial_connection:
                     self.reset_input_buffer = self.stream.reset_input_buffer
                 self.__expose_stream_methods()
                 self.connected = True
-                if attempt != 0:
-                    print('')   # to break the dotted line printed on retries
+                # if attempt != 0:
+                #     print('')   # to break the dotted line printed on retries
                 break
             except (OSError, IOError): # Py2 and Py3 have different errors
                 if connection_timeout == 0:
@@ -471,13 +471,11 @@ class Pyboard:
         self.connection.write(b'\x04') # ctrl-D: soft reset
         data = self.read_until(b'soft reboot\r\n')
         if not data.endswith(b'soft reboot\r\n'):
-            print(data)
             raise PyboardError('could not enter raw repl')
         # By splitting this into 2 reads, it allows boot.py to print stuff,
         # which will show up after the soft reboot and before the raw REPL.
         data = self.read_until(b'raw REPL; CTRL-B to exit\r\n')
         if not data.endswith(b'raw REPL; CTRL-B to exit\r\n'):
-            print(data)
             raise PyboardError('could not enter raw repl')
 
 
@@ -489,7 +487,6 @@ class Pyboard:
         self.connection.write(b'\r\x01') # ctrl-A: enter raw REPL
         data = self.read_until(b'raw REPL; CTRL-B to exit\r\n')
         if not data.endswith(b'raw REPL; CTRL-B to exit\r\n'):
-            print(data)
             raise PyboardError('could not enter raw repl')
 
     def exit_raw_repl(self):
