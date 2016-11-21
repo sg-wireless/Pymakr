@@ -652,6 +652,8 @@ class UPythonShell(QsciScintillaCompat):
 
         if status == "connecting":
             self.__write(self.tr("Connecting to a {0}...\n".format(dev_str)))
+        if status == "connected":
+            self.__write(self.tr("Connected\n"))
         elif status == "disconnected":
             self.__write(self.tr("Connection closed\n"))
         elif status == "lostconnection":
@@ -670,3 +672,9 @@ class UPythonShell(QsciScintillaCompat):
             self.__write(self.tr("Successfully synced!\n\n"))
         elif status == "syncfailed":
             self.__write(self.tr("Syncing failed!\n\n"))
+        elif status == "syncfailed_connection":
+            self.__write(self.tr("Sync failed, connection to the {0} was lost\n\n".format(dev_str)))
+        elif status == "syncfailed_busy":
+            self.__write(self.tr("Sync is already in progress\n\n"))
+        elif status == "syncfailed_project":
+            self.__write(self.tr("Syncing failed, there is no project selected\n\n"))

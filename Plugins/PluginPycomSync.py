@@ -171,9 +171,19 @@ class PluginPycomSync(QObject):
         return self.__project.getProjectPath()
 
     def __syncAct(self):
-        if self.__project.isOpen() and PycomDeviceServer.getStatus() == True and not self.__busy:
+        if PycomDeviceServer.getStatus() != True:
+            pass
+            # print("Unable to sync, not connected")
+        elif self.__busy:
+            pass
+            # print("Unable to sync, busy")
+        elif not self.__project.isOpen():
+            pass
+            # print("Unable to sync, no project open")
+        else:
             self.__busy = True
             PycomDeviceServer.overrideControl(self.__continueSync)
+        
 
     def __continueSync(self, deviceServer):
         deviceServer.emitStatusChange("syncinit")

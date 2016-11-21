@@ -434,6 +434,8 @@ class Pyboard:
         if keep_alive != 0:
             self.keep_alive_interval = Periodic(keep_alive, self._keep_alive)
 
+        
+
         self.connected = True
 
     def _keep_alive(self):
@@ -478,9 +480,12 @@ class Pyboard:
         if not data.endswith(b'raw REPL; CTRL-B to exit\r\n'):
             raise PyboardError('could not enter raw repl')
 
+    def stop_running_programs(self):
+        self.connection.write(b'\r\x03\x03') # ctrl-C twice: interrupt any running program
+        self.read_until(b'>>>')
 
     def enter_raw_repl_no_reset(self):
-        self.connection.write(b'\r\x03\x03') # ctrl-C twice: interrupt any running program
+        self.stop_running_programs()
 
         self.flush()
 
@@ -491,6 +496,11 @@ class Pyboard:
 
     def exit_raw_repl(self):
         self.connection.write(b'\r\x02') # ctrl-B: enter friendly REPL
+
+    def enter_friendly_repl(self):
+        self.connection.write(b'\r\x02') # ctrl-B: enter friendly REPL
+        if not self._wait_for_exact_text(b'Type "help()" for more information.\r\n'):
+            raise PyboardError('could not enter friendly repl')
 
     def follow(self, timeout, data_consumer=None):
         # wait for normal output
@@ -543,9 +553,8 @@ class Pyboard:
         return remote_text in self.read_until(remote_text)
 
     def reset(self):
-        self.exit_raw_repl()
-        if not self._wait_for_exact_text(b'Type "help()" for more information.\r\n'):
-            raise PyboardError('could not enter reset')
+        self.enter_friendly_repl()
+
         self.connection.write(b'\x04')
         if not self._wait_for_exact_text(b'PYB: soft reboot\r\n'):
             raise PyboardError('could not enter reset')
