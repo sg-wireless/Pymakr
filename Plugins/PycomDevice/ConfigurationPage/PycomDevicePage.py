@@ -10,6 +10,7 @@ Module implementing the PycomDevice configuration page.
 from Preferences.ConfigurationPages.ConfigurationPageBase import \
     ConfigurationPageBase
 from .Ui_PycomDevicePage import Ui_PycomDevicePage
+from PyQt5.QtCore import Qt
 
 
 class PycomDevicePage(ConfigurationPageBase, Ui_PycomDevicePage):
@@ -31,6 +32,13 @@ class PycomDevicePage(ConfigurationPageBase, Ui_PycomDevicePage):
 
         # current address
         current_address = self.__plugin.getPreferences("address")
+    
+        self.softRebootConnectState = self.__plugin.getPreferences("softRebootConnect")
+        self.softRebootScriptsState = self.__plugin.getPreferences("softRebootScripts")
+
+        if self.softRebootConnectState == None:
+            self.softRebootConnectState = Qt.Unchecked
+            self.softRebootScriptsState = Qt.Unchecked
 
         # set initial values
         self.txt_device.addItem(current_address)
@@ -43,6 +51,9 @@ class PycomDevicePage(ConfigurationPageBase, Ui_PycomDevicePage):
         self.txt_password.setPlaceholderText("Default: python")
 
         self.label_4.setOpenExternalLinks(True)
+
+        self.softRebootConnect.setCheckState(int(self.softRebootConnectState))
+        self.softRebootScripts.setCheckState(int(self.softRebootScriptsState))
 
         # load the rest of the list
         self.loadSerialPortsList(current_address)
@@ -66,4 +77,8 @@ class PycomDevicePage(ConfigurationPageBase, Ui_PycomDevicePage):
             self.txt_user.text())
         self.__plugin.setPreferences("password",
             self.txt_password.text())
+        self.__plugin.setPreferences("softRebootConnect",
+            self.softRebootConnect.checkState())
+        self.__plugin.setPreferences("softRebootScripts",
+            self.softRebootScripts.checkState())
         self.__plugin.preferencesChanged()

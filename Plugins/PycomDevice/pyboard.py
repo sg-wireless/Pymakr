@@ -556,7 +556,8 @@ class Pyboard:
         self.enter_friendly_repl()
 
         self.connection.write(b'\x04')
-        if not self._wait_for_exact_text(b'PYB: soft reboot\r\n'):
+        if not self._wait_for_exact_text(b'Type "help()" for more information.\r\n'):
+        # if not self._wait_for_exact_text(b'PYB: soft reboot\r\n'):
             raise PyboardError('could not enter reset')
 
     def exec_raw_no_follow(self, command):
@@ -579,7 +580,7 @@ class Pyboard:
             raise PyboardError('could not exec command')
 
     def exec_raw(self, command, timeout=10, data_consumer=None):
-        self.exec_raw_no_follow(command);
+        self.exec_raw_no_follow(command)
         return self.follow(timeout, data_consumer)
 
     def eval(self, expression):

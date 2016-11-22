@@ -1,5 +1,5 @@
 import os
-from PyQt5.QtCore import QObject, QCoreApplication, QSize
+from PyQt5.QtCore import QObject, QCoreApplication, QSize, Qt
 from PyQt5.QtWidgets import QToolBar
 import hashlib
 
@@ -149,6 +149,10 @@ class PluginPycomSync(QObject):
             level -= 1
         return directories[::-1]
 
+
+    def getPreferences(self, name, default=None):
+        return Preferences.Prefs.settings.value("PycomDevice/" + name, default)
+
     def __getProjectFiles(self):
         directories = set()
         split_directories = set()
@@ -208,9 +212,13 @@ class PluginPycomSync(QObject):
 
     def __continueRun(self, deviceServer):
         editor = self.__viewManager.activeWindow()
+        if self.getPreferences("softRebootScripts") == Qt.Checked:
+            deviceServer.channel.reset()
+            
         if editor != None:
             code = editor.text()
             deviceServer.exec_code(code)
+            
         self.__busy = False
 
     def __projectOpened(self):

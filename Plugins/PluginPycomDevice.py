@@ -4,7 +4,7 @@ from PyQt5.QtCore import QObject, QCoreApplication
 import UI
 from E5Gui.E5Application import e5App
 import Preferences
-from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot, QThread
+from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot, QThread, Qt
 from PycomDevice import pyboard
 import time
 
@@ -278,9 +278,18 @@ class PycomDeviceServer(QThread):
         QThread.yieldCurrentThread()
         PycomDeviceServer.channel = pyboard.Pyboard(device=PycomDeviceServer.__device,
             user=PycomDeviceServer.__user, password=PycomDeviceServer.__password, keep_alive=3, connection_timeout=10)
-        PycomDeviceServer.channel.stop_running_programs()    
-        PycomDeviceServer.channel.enter_friendly_repl()
+        
+    
+        if int(self.getPreferences("softRebootConnect")) == 2:
+            PycomDeviceServer.channel.reset()
+        else:
+            PycomDeviceServer.channel.stop_running_programs()    
+            PycomDeviceServer.channel.enter_friendly_repl()
+        
         self.emitStatusChange("connected")
+
+    def getPreferences(self, name, default=None):
+        return Preferences.Prefs.settings.value("PycomDevice/" + name, default)
 
     def run(self):
         self.__deviceSingleton.postulateMeAsMaster()
