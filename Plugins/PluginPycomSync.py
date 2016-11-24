@@ -211,20 +211,16 @@ class PluginPycomSync(QObject):
             PycomDeviceServer.overrideControl(self.__continueRun)
 
     def __continueRun(self, deviceServer):
-        try:
-            editor = self.__viewManager.activeWindow()
-            if int(self.getPreferences("softResetScripts")) == 2: # Qt.Checked is 2
-                deviceServer.channel.reset()
-                deviceServer.emitStatusChange("softreset")
+        editor = self.__viewManager.activeWindow()
+        if int(self.getPreferences("softResetScripts")) == 2: # Qt.Checked is 2
+            deviceServer.channel.reset()
+            deviceServer.emitStatusChange("softreset")
 
-            if editor != None:
-                code = editor.text()
-                deviceServer.exec_code(code)
-            
-            self.__busy = False
-        except Exception:
-            import traceback
-            traceback.print_exc()
+        if editor != None:
+            code = editor.text()
+            deviceServer.exec_code(code)
+        
+        self.__busy = False
 
     def __projectOpened(self):
         self.syncAct.setEnabled(True)

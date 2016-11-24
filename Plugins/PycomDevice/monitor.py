@@ -179,7 +179,6 @@ class Monitor(object):
         return True
 
     def reset_board(self):
-        print("Resetting board")
         import machine
         machine.reset()
 

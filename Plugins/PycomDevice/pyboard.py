@@ -142,9 +142,6 @@ class Serial_connection:
                 # sys.stdout.write('.')
                 # sys.stdout.flush()
 
-                import traceback
-                traceback.print_exc()
-
     def authenticate(self, user, password):
         # needs no authentication
         return True
@@ -450,12 +447,10 @@ class Pyboard:
         except AttributeError:
             pass
         except:
-            import traceback
-            traceback.print_exc()
             self.__disconnected_callback(Pyboard.LOST_CONNECTION)
 
     def check_connection(self):
-        self._keep_alive()
+        # self._keep_alive()
         return self.connected
 
     def read_until(self, ending, timeout=10, data_consumer=None):
