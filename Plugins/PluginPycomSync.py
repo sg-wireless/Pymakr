@@ -215,7 +215,9 @@ class PluginPycomSync(QObject):
         if int(self.getPreferences("softResetScripts")) == 2: # Qt.Checked is 2
             deviceServer.channel.reset()
             deviceServer.emitStatusChange("softreset")
-
+        else:
+            deviceServer.channel.stop_running_programs()
+            
         if editor != None:
             code = editor.text()
             deviceServer.exec_code(code)
