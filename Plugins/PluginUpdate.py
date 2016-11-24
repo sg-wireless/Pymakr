@@ -120,6 +120,8 @@ class PluginUpdate(QObject):
         osFamily = sys.platform.rstrip('1234567890')
         if osFamily == 'linux':
             osFamily = self.detectLinuxVersion()
+        elif osFamily == 'win' or osFamily == 'win64':
+            osFamily = 'win32'
         elif osFamily == 'darwin':
             osFamily = 'macos'
         return osFamily
