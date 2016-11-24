@@ -278,12 +278,12 @@ class PycomDeviceServer(QThread):
         QThread.yieldCurrentThread()
         PycomDeviceServer.channel = pyboard.Pyboard(device=PycomDeviceServer.__device,
             user=PycomDeviceServer.__user, password=PycomDeviceServer.__password, keep_alive=3, connection_timeout=10)
-        
-    
-        if int(self.getPreferences("softRebootConnect")) == 2:
+
+        if int(self.getPreferences("softResetConnect")) == 2:
             PycomDeviceServer.channel.reset()
+            self.emitStatusChange("softreset")
         else:
-            PycomDeviceServer.channel.stop_running_programs()    
+            PycomDeviceServer.channel.stop_running_programs()
             PycomDeviceServer.channel.enter_friendly_repl()
         
         self.emitStatusChange("connected")

@@ -154,9 +154,12 @@ class UPythonShell(QsciScintillaCompat):
         
         self.grabGesture(Qt.PinchGesture)
 
-        self.focusChanged.connect(dbs.tryConnecting)
+        self.focusChanged.connect(self.tryConnecting)
         self.dbs.statusChanged.connect(self.notifyStatus)
         self.__printWelcome()
+
+    def tryConnecting(self,result):
+        self.dbs.tryConnecting(result)
 
     def __toVT100(self, key):
         key = key.key()
@@ -658,6 +661,8 @@ class UPythonShell(QsciScintillaCompat):
             self.__write(self.tr("Connection closed\n"))
         elif status == "lostconnection":
             self.__write(self.tr("Lost connection with the {0}! (click to attempt to reconnect)\n".format(dev_str)))
+        elif status == "softreset":
+            self.__write(self.tr("Soft resetting the {0}\n".format(dev_str)))
         elif status == "error":
             self.__write(self.tr("Error while communicating with the {0}! (click to attempt to reconnect)\n".format(dev_str)))
         elif status == "reattempt":

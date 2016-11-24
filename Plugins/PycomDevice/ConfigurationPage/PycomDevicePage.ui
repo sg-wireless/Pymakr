@@ -123,16 +123,16 @@
     </layout>
    </item>
    <item>
-    <widget class="QCheckBox" name="softRebootConnect">
+    <widget class="QCheckBox" name="softResetConnect">
      <property name="text">
-      <string>Soft-reboot on connect</string>
+      <string>Soft-reset on connect</string>
      </property>
     </widget>
    </item>
    <item>
-    <widget class="QCheckBox" name="softRebootScripts">
+    <widget class="QCheckBox" name="softResetScripts">
      <property name="text">
-      <string>Soft-reboot before running scripts</string>
+      <string>Soft-reset before running scripts</string>
      </property>
     </widget>
    </item>

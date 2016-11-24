@@ -33,12 +33,12 @@ class PycomDevicePage(ConfigurationPageBase, Ui_PycomDevicePage):
         # current address
         current_address = self.__plugin.getPreferences("address")
     
-        self.softRebootConnectState = self.__plugin.getPreferences("softRebootConnect")
-        self.softRebootScriptsState = self.__plugin.getPreferences("softRebootScripts")
+        self.softResetConnectState = self.__plugin.getPreferences("softResetConnect")
+        self.softResetScriptsState = self.__plugin.getPreferences("softResetScripts")
 
-        if self.softRebootConnectState == None:
-            self.softRebootConnectState = Qt.Unchecked
-            self.softRebootScriptsState = Qt.Unchecked
+        if self.softResetConnectState == None: 
+            self.softResetConnectState = Qt.Unchecked
+            self.softResetScriptsState = Qt.Unchecked
 
         # set initial values
         self.txt_device.addItem(current_address)
@@ -52,8 +52,8 @@ class PycomDevicePage(ConfigurationPageBase, Ui_PycomDevicePage):
 
         self.label_4.setOpenExternalLinks(True)
 
-        self.softRebootConnect.setCheckState(int(self.softRebootConnectState))
-        self.softRebootScripts.setCheckState(int(self.softRebootScriptsState))
+        self.softResetConnect.setCheckState(int(self.softResetConnectState))
+        self.softResetScripts.setCheckState(int(self.softResetScriptsState))
 
         # load the rest of the list
         self.loadSerialPortsList(current_address)
@@ -77,8 +77,8 @@ class PycomDevicePage(ConfigurationPageBase, Ui_PycomDevicePage):
             self.txt_user.text())
         self.__plugin.setPreferences("password",
             self.txt_password.text())
-        self.__plugin.setPreferences("softRebootConnect",
-            self.softRebootConnect.checkState())
-        self.__plugin.setPreferences("softRebootScripts",
-            self.softRebootScripts.checkState())
+        self.__plugin.setPreferences("softResetConnect",
+            self.softResetConnect.checkState())
+        self.__plugin.setPreferences("softResetScripts",
+            self.softResetScripts.checkState())
         self.__plugin.preferencesChanged()
