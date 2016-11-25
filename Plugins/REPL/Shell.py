@@ -158,6 +158,10 @@ class UPythonShell(QsciScintillaCompat):
         self.dbs.statusChanged.connect(self.notifyStatus)
         self.__printWelcome()
 
+        # advanced key features
+        self.ctrl_active = False
+        self.cmd_active = False
+
     def tryConnecting(self,result):
         self.dbs.tryConnecting(result)
 
@@ -180,6 +184,12 @@ class UPythonShell(QsciScintillaCompat):
     def patch(self):
         self.passive = False
 
+    def keyReleaseEvent(self, ev):
+        if ev.key() == Qt.Key_Control:
+            self.cmd_active = False
+        elif ev.key() == Qt.Key_Meta:
+            self.ctrl_active = False
+
     def keyPressEvent(self, ev):
         """
         Protected method to handle the user input a key at a time.
@@ -199,6 +209,20 @@ class UPythonShell(QsciScintillaCompat):
             ev.accept()
         else:
             ev.ignore
+
+        if ev.key() == Qt.Key_Control:
+            self.ctrl_active = True
+        elif ev.key() == Qt.Key_Meta:
+            self.cmd_active = True
+
+        if (self.ctrl_active or self.cmd_active) and ev.key() == Qt.Key_V:
+            self.__paste()
+            pass
+        elif (self.ctrl_active or self.cmd_active) and ev.key() == Qt.Key_C:
+            self.copy()
+            # self.__stopRunningPrograms() # TODO
+            pass 
+        
 
     def mouseReleaseEvent(self, event):
         if event.button() == Qt.LeftButton and self.hasFocus():
@@ -500,6 +524,12 @@ class UPythonShell(QsciScintillaCompat):
         Private slot to handle the 'reset' context menu entry.
         """
         self.dbs.restart()
+
+    def __stopRunningPrograms(self):
+        """
+        Private slot to handle a ctrl c in the console
+        """
+        self.dbs.stopRunningPrograms()
 
     def __initialize(self):
         """

@@ -366,6 +366,12 @@ class PycomDeviceServer(QThread):
             self.connect()
         except:
             pass
+    
+    def stopRunningPrograms(self):
+        try:
+            self.channel.stop_running_programs()
+        except:
+            pass
 
     @pyqtSlot(bool)
     def tryConnecting(self, state):
