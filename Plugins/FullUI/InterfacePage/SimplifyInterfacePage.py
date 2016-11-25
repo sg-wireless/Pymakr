@@ -6,8 +6,13 @@ from Preferences.ConfigurationPages.InterfacePage import InterfacePage as OldInt
 
 originalSave = None
 originalInit = None
+
 path = os.path.dirname(os.path.realpath(__file__))
-pluginsPath = path[0:path.index('/Plugins/')+8]
+sl = "/"
+if "\Plugins" in path:
+    sl = "\\"
+pluginsPath = path[0:path.index(sl+'Plugins'+sl)+8]
+
 
 # data
 styles = ['Dark','Light']

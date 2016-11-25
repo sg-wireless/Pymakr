@@ -30,7 +30,10 @@ pyqtApi = 2
 python2Compatible = True
 
 path = os.path.dirname(os.path.realpath(__file__))
-pluginsPath = path[0:path.index('/Plugins')+8] + "/PycomStyle/"
+sl = "/"
+if "\Plugins" in path:
+    sl = "\\"
+pluginsPath = path[0:path.index(sl+'Plugins')+8] + sl+"PycomStyle"+sl
 
 # data
 styles = ['Dark','Light']
