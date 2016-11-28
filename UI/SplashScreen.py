@@ -13,8 +13,8 @@ import os.path
 import logging
 
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPixmap, QColor, QLabel
-from PyQt5.QtWidgets import QApplication, QSplashScreen
+from PyQt5.QtGui import QPixmap, QColor
+from PyQt5.QtWidgets import QApplication, QSplashScreen, QLabel
 
 from eric6config import getConfig
 import UI.Info

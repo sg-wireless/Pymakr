@@ -154,7 +154,7 @@ class UPythonShell(QsciScintillaCompat):
         
         self.grabGesture(Qt.PinchGesture)
 
-        self.focusChanged.connect(self.tryConnecting)
+        self.focusChanged.connect(self.__focusChanged)
         self.dbs.statusChanged.connect(self.notifyStatus)
         self.__printWelcome()
 
@@ -162,8 +162,10 @@ class UPythonShell(QsciScintillaCompat):
         self.ctrl_active = False
         self.cmd_active = False
 
-    def tryConnecting(self,result):
+    def __focusChanged(self,result):
         self.dbs.tryConnecting(result)
+        self.ctrl_active = False
+        self.cmd_active = False
 
     def __toVT100(self, key):
         key = key.key()
@@ -186,9 +188,9 @@ class UPythonShell(QsciScintillaCompat):
 
     def keyReleaseEvent(self, ev):
         if ev.key() == Qt.Key_Control:
-            self.cmd_active = False
-        elif ev.key() == Qt.Key_Meta:
             self.ctrl_active = False
+        elif ev.key() == Qt.Key_Meta:
+            self.cmd_active = False
 
     def keyPressEvent(self, ev):
         """
