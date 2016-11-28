@@ -189,6 +189,7 @@ class UPythonShell(QsciScintillaCompat):
     def keyReleaseEvent(self, ev):
         if ev.key() == Qt.Key_Control:
             self.ctrl_active = False
+            
         elif ev.key() == Qt.Key_Meta:
             self.cmd_active = False
 
@@ -212,6 +213,10 @@ class UPythonShell(QsciScintillaCompat):
         else:
             ev.ignore
 
+        osFamily = sys.platform.rstrip('1234567890')
+        if osFamily == 'win32' or osFamily == 'win64':
+            osFamily == 'win'
+
         if ev.key() == Qt.Key_Control:
             self.ctrl_active = True
         elif ev.key() == Qt.Key_Meta:
@@ -219,11 +224,17 @@ class UPythonShell(QsciScintillaCompat):
 
         if (self.ctrl_active or self.cmd_active) and ev.key() == Qt.Key_V:
             self.__paste()
-            pass
         elif (self.ctrl_active or self.cmd_active) and ev.key() == Qt.Key_C:
-            self.copy()
-            # self.__stopRunningPrograms() # TODO
-            pass 
+            if self.cmd_active: 
+                self.__stopRunningPrograms()
+            elif self.ctrl_active:
+                if osFamily == 'win': # for windows, we want the ctrl to do both copy as well as reset
+                    if self.hasSelectedText():
+                        self.copy()
+                    else:
+                        self.__stopRunningPrograms()
+                else:
+                    self.copy()
         
 
     def mouseReleaseEvent(self, event):
@@ -531,7 +542,8 @@ class UPythonShell(QsciScintillaCompat):
         """
         Private slot to handle a ctrl c in the console
         """
-        self.dbs.stopRunningPrograms()
+        self.dbs.send(b'\x03')
+        # self.dbs.stopRunningPrograms()
 
     def __initialize(self):
         """
