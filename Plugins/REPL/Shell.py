@@ -156,6 +156,7 @@ class UPythonShell(QsciScintillaCompat):
 
         self.focusChanged.connect(self.__focusChanged)
         self.dbs.statusChanged.connect(self.notifyStatus)
+        self.dbs.pyboardError.connect(self.pyboardError)
         self.__printWelcome()
 
         # advanced key features
@@ -221,7 +222,8 @@ class UPythonShell(QsciScintillaCompat):
             self.ctrl_active = True
         elif ev.key() == Qt.Key_Meta:
             self.cmd_active = True
-
+        
+        # ctrl-c ctrl-v logic.
         if (self.ctrl_active or self.cmd_active) and ev.key() == Qt.Key_V:
             self.__paste()
         elif (self.ctrl_active or self.cmd_active) and ev.key() == Qt.Key_C:
@@ -231,8 +233,8 @@ class UPythonShell(QsciScintillaCompat):
                 if osFamily == 'win': # for windows, we want the ctrl to do both copy as well as reset
                     if self.hasSelectedText():
                         self.copy()
-                    else:
-                        self.__stopRunningPrograms()
+                    # else: 
+                    #     self.__stopRunningPrograms() # turns out, this is not needed, because ctrl-c already works in windows! somehow....
                 else:
                     self.copy()
         
@@ -689,6 +691,15 @@ class UPythonShell(QsciScintillaCompat):
             self.__write(self.tr(notConfiguredMsg))
         else:
             self.notifyStatus("connecting")
+
+    @pyqtSlot(str)
+    def pyboardError(self,error):
+        if self.dbs.uname:
+            dev_str = self.dbs.uname[0]
+        else:
+            dev_str = "Pycom device"
+
+        self.__write(self.tr("> {0}. (click to attempt to reconnect)\n".format(error)))
 
     @pyqtSlot(str)
     def notifyStatus(self, status):

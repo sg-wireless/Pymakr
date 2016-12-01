@@ -198,7 +198,7 @@ class PluginPycomSync(QObject):
         try:
             sync.sync_pyboard()
             deviceServer.emitStatusChange("syncend")
-        except:
+        except Exception as e:
             deviceServer.emitStatusChange("syncfailed")
         sync.finish_sync()
         os.chdir(pwd)

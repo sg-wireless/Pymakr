@@ -111,7 +111,7 @@ class Periodic:
 
 
 class Serial_connection:
-    def __init__(self, device, baudrate=115200, connection_timeout=10):
+    def __init__(self, device, baudrate=115200, connection_timeout=10,reconnectingCallback=None):
         import serial
         delayed = False
         self.connected = False
@@ -124,6 +124,7 @@ class Serial_connection:
                 except (TypeError):
                     # version 3 of the pyserial library changed everything
                     self.stream = serial.Serial(device, baudrate=baudrate, inter_byte_timeout=1)
+
                     self.__in_waiting = lambda: self.stream.in_waiting
                     self.reset_input_buffer = self.stream.reset_input_buffer
                 self.__expose_stream_methods()
@@ -137,6 +138,8 @@ class Serial_connection:
 
                 # if attempt == 0 and connection_timeout != 0:
                 #     sys.stdout.write('Waiting {} seconds for pyboard '.format(connection_timeout))
+                if reconnectingCallback:
+                    reconnectingCallback()
 
                 time.sleep(1)
                 # sys.stdout.write('.')
@@ -147,6 +150,13 @@ class Serial_connection:
         return True
 
     def keep_alive(self):
+        if self.stream == None:
+            return False
+        try:
+            self.stream.dtr = True
+            return True
+        except IOError:
+            return False
         return True
 
     def settimeout(self, value):
@@ -368,9 +378,9 @@ class Socket_connection:
 class Pyboard:
     LOST_CONNECTION = 1
 
-    def __init__(self, device, baudrate=115200, user='micro', password='python', connection_timeout=0, keep_alive=0):
+    def __init__(self, device, baudrate=115200, user='micro', password='python', connection_timeout=0, keep_alive=0,reconnectingCallback=None):
         self.__device = None
-        self._connect(device, baudrate, user, password, connection_timeout, keep_alive, False)
+        self._connect(device, baudrate, user, password, connection_timeout, keep_alive, False,reconnectingCallback=reconnectingCallback)
 
     def close_dont_notify(self):
         if self.connected == False:
@@ -406,7 +416,7 @@ class Pyboard:
         while self.connection.read_eager():
             pass
 
-    def _connect(self, device, baudrate=115200, user='micro', password='python', connection_timeout=0, keep_alive=0, raw=False):
+    def _connect(self, device, baudrate=115200, user='micro', password='python', connection_timeout=0, keep_alive=0, raw=False,reconnectingCallback=None):
         self.connected = False
         if self.__device == None:
             self.__device = device
@@ -417,7 +427,7 @@ class Pyboard:
 
         if Serial_connection.is_serial_port(self.__device) == True:
             self.__connectionType = 'serial'
-            self.connection = Serial_connection(self.__device, baudrate=self.__baudrate, connection_timeout=self.__connection_timeout)
+            self.connection = Serial_connection(self.__device, baudrate=self.__baudrate, connection_timeout=self.__connection_timeout,reconnectingCallback=reconnectingCallback)
         else:
             if raw == False:
                 self.__connectionType = 'telnet'
@@ -426,10 +436,10 @@ class Pyboard:
                 self.__connectionType = 'socket'
                 self.connection = Socket_connection(self.__device)
         if self.connection.connected == False:
-            raise PyboardError('\nFailed to establish a connection with the board at: ' + self.__device)
+            raise PyboardError('\nFailed to establish a connection with the board')
 
         if self.connection.authenticate(self.__username, self.__password) == False:
-            raise PyboardError('\nFailed to authenticate with the board at: ' + self.__device)
+            raise PyboardError('\nFailed to authenticate with the board')
 
         if keep_alive != 0:
             self.keep_alive_interval = Periodic(keep_alive, self._keep_alive)
@@ -439,15 +449,18 @@ class Pyboard:
         self.connected = True
 
     def _keep_alive(self):
-        if self.connected == False:
-            return
+        
         try:
-            if self.connection.keep_alive() == False:
+            if self.connected == False:
                 self.__disconnected_callback(Pyboard.LOST_CONNECTION)
-        except AttributeError:
+                return
+            try:
+                if self.connection.keep_alive() == False:
+                    self.__disconnected_callback(Pyboard.LOST_CONNECTION)
+            except:
+                self.__disconnected_callback(Pyboard.LOST_CONNECTION)
+        except AttributeError: # happens when __disconnected_callback is not defines
             pass
-        except:
-            self.__disconnected_callback(Pyboard.LOST_CONNECTION)
 
     def check_connection(self):
         # self._keep_alive()
@@ -473,12 +486,12 @@ class Pyboard:
         self.connection.write(b'\x04') # ctrl-D: soft reset
         data = self.read_until(b'soft reboot\r\n')
         if not data.endswith(b'soft reboot\r\n'):
-            raise PyboardError('could not enter raw repl')
+            raise PyboardError('Soft reboot failed')
         # By splitting this into 2 reads, it allows boot.py to print stuff,
         # which will show up after the soft reboot and before the raw REPL.
         data = self.read_until(b'raw REPL; CTRL-B to exit\r\n')
         if not data.endswith(b'raw REPL; CTRL-B to exit\r\n'):
-            raise PyboardError('could not enter raw repl')
+            raise PyboardError('Could not enter raw repl')
 
     def stop_running_programs(self):
         self.connection.write(b'\r\x03\x03') # ctrl-C twice: interrupt any running program
@@ -492,7 +505,7 @@ class Pyboard:
         self.connection.write(b'\r\x01') # ctrl-A: enter raw REPL
         data = self.read_until(b'raw REPL; CTRL-B to exit\r\n')
         if not data.endswith(b'raw REPL; CTRL-B to exit\r\n'):
-            raise PyboardError('could not enter raw repl')
+            raise PyboardError('Could not enter raw repl')
 
     def exit_raw_repl(self):
         self.connection.write(b'\r\x02') # ctrl-B: enter friendly REPL
@@ -500,19 +513,19 @@ class Pyboard:
     def enter_friendly_repl(self):
         self.connection.write(b'\r\x02') # ctrl-B: enter friendly REPL
         if not self._wait_for_exact_text(b'Type "help()" for more information.\r\n'):
-            raise PyboardError('could not enter friendly repl')
+            raise PyboardError('Could not enter friendly repl')
 
     def follow(self, timeout, data_consumer=None):
         # wait for normal output
         data = self.read_until(b'\x04', timeout=timeout, data_consumer=data_consumer)
         if not data.endswith(b'\x04'):
-            raise PyboardError('timeout waiting for first EOF reception')
+            raise PyboardError('Timeout waiting for first EOF reception')
         data = data[:-1]
 
         # wait for error output
         data_err = self.read_until(b'\x04', timeout=timeout)
         if not data_err.endswith(b'\x04'):
-            raise PyboardError('timeout waiting for second EOF reception')
+            raise PyboardError('Timeout waiting for second EOF reception')
         data_err = data_err[:-1]
 
         # return normal and error output
@@ -558,7 +571,7 @@ class Pyboard:
         self.connection.write(b'\x04')
         if not self._wait_for_exact_text(b'Type "help()" for more information.\r\n'):
         # if not self._wait_for_exact_text(b'PYB: soft reboot\r\n'):
-            raise PyboardError('could not enter reset')
+            raise PyboardError('Could not enter reset')
 
     def exec_raw_no_follow(self, command):
         command_bytes = to_bytes(command)
@@ -566,7 +579,7 @@ class Pyboard:
         # check we have a prompt
         data = self.read_until(b'>')
         if not data.endswith(b'>'):
-            raise PyboardError('could not enter raw repl')
+            raise PyboardError('Could not enter repl')
 
         # write command
         for i in range(0, len(command_bytes), 256):
@@ -577,7 +590,7 @@ class Pyboard:
         # check if we could exec command
         data = self.read_until(b'OK')
         if data != b'OK':
-            raise PyboardError('could not exec command')
+            raise PyboardError('Could not execute command')
 
     def exec_raw(self, command, timeout=10, data_consumer=None):
         self.exec_raw_no_follow(command)
@@ -591,7 +604,7 @@ class Pyboard:
     def exec_(self, command):
         ret, ret_err = self.exec_raw(command)
         if ret_err:
-            raise PyboardError('exception', ret, ret_err)
+            raise PyboardError(ret_err)
         return ret
 
     def execfile(self, filename):

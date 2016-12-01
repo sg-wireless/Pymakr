@@ -124,6 +124,7 @@ class PluginPycomDevice(QObject):
 class PycomDeviceSingleton(QObject):
     dataReceptionEvent = pyqtSignal(str)
     statusChanged = pyqtSignal(str)
+    pyboardError = pyqtSignal(str)
     firmwareDetected = pyqtSignal()
     _instance = None
 
@@ -182,6 +183,7 @@ class PycomDeviceServer(QThread):
 
         self.dataReceptionEvent = self.__deviceSingleton.dataReceptionEvent
         self.statusChanged = self.__deviceSingleton.statusChanged
+        self.pyboardError = self.__deviceSingleton.pyboardError
         self.firmwareDetected = self.__deviceSingleton.firmwareDetected
 
 
@@ -199,7 +201,7 @@ class PycomDeviceServer(QThread):
         try:
             if self.isRunning():
                 return True
-        except:
+        except Exception as e:
             pass
 
         try:
@@ -242,6 +244,9 @@ class PycomDeviceServer(QThread):
     def emitStatusChange(self, status):
         self.statusChanged.emit(status)
 
+    def emitPyboardError(self,error):
+        self.pyboardError.emit(error)
+
     def emitFirmwareDetected(self):
         self.firmwareDetected.emit()
 
@@ -249,6 +254,9 @@ class PycomDeviceServer(QThread):
         if reason == pyboard.Pyboard.LOST_CONNECTION:
             self.disconnect()
             self.emitStatusChange("lostconnection")
+
+    def __reconnectingCallback(self,reason):
+        self.emitStatusChange("reattempt")        
 
     def __handleChannelExceptions(self, err):
         if type(err) == pyboard.PyboardError:
@@ -260,7 +268,7 @@ class PycomDeviceServer(QThread):
                 self.emitStatusChange("invaddress")
                 PycomDeviceServer.__shutdown = True
             else:
-                self.emitStatusChange("error")
+                self.emitPyboardError(e.strip('\n'))
         else:
             self.emitStatusChange("error")
         self.disconnect()
@@ -268,16 +276,21 @@ class PycomDeviceServer(QThread):
     def __fetchFirmwareVersion(self):
         from ast import literal_eval
         PycomDeviceServer.channel.send("import os; [os.uname().sysname, os.uname().machine, os.uname().release]\r\n")
-        uname = literal_eval(PycomDeviceServer.channel.read_until(b'>>>').splitlines()[1].decode('utf8'))
-        if isinstance(uname, list) and len(uname) > 2:
-            PycomDeviceServer.uname = uname
-            self.emitFirmwareDetected()
+        try:
+            uname = literal_eval(PycomDeviceServer.channel.read_until(b'>>>').splitlines()[1].decode('utf8'))
+            if isinstance(uname, list) and len(uname) > 2:
+                PycomDeviceServer.uname = uname
+                self.emitFirmwareDetected()
+        except SyntaxError: ## happens when read_until returns a line with >>> instead of the expected array
+            pass
+
+        
 
     def __getConnected(self):
         self.emitStatusChange("connecting")
         QThread.yieldCurrentThread()
         PycomDeviceServer.channel = pyboard.Pyboard(device=PycomDeviceServer.__device,
-            user=PycomDeviceServer.__user, password=PycomDeviceServer.__password, keep_alive=5, connection_timeout=10)
+            user=PycomDeviceServer.__user, password=PycomDeviceServer.__password, keep_alive=3, connection_timeout=10,reconnectingCallback=self.__reconnectingCallback)
 
         self.emitStatusChange("connected")
 
@@ -364,7 +377,7 @@ class PycomDeviceServer(QThread):
                 self.disconnect()
                 time.sleep(0.25)
             self.connect()
-        except:
+        except Exception as e:
             pass
     
     def stopRunningPrograms(self):

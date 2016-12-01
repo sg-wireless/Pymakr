@@ -7,7 +7,7 @@ import os
 
 from PyQt5.QtCore import QObject, QSize, QCoreApplication, QDir, Qt, QByteArray, QUrl
 from PyQt5.QtGui import QDesktopServices
-from PyQt5.QtWidgets import QDialog, QApplication
+from PyQt5.QtWidgets import QDialog
 from E5Gui.E5Application import e5App
 from E5Gui.E5Action import E5Action
 
