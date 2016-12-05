@@ -398,7 +398,7 @@ class Pyboard:
             return
         self.close_dont_notify()
         try:
-            self.__disconnected_callback()
+            self.__disconnected_callback(Pyboard.LOST_CONNECTION)
         except:
             pass
 
@@ -452,7 +452,6 @@ class Pyboard:
         
         try:
             if self.connected == False:
-                self.__disconnected_callback(Pyboard.LOST_CONNECTION)
                 return
             try:
                 if self.connection.keep_alive() == False:
