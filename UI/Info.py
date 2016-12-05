@@ -11,7 +11,7 @@ from __future__ import unicode_literals
 
 Builder = 'Pycom'
 Program = 'Pymakr'
-Version = '1.0.0.b7'
+Version = '1.0.0.b8'
 OriginalProgram = 'eric6'
 OriginalVersion = '@@VERSION@@ (rev. @@REVISION@@)'
 Copyright = 'Copyright (c) 2002 - 2016 Detlev Offenbach' \
