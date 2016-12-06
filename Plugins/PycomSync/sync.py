@@ -53,7 +53,10 @@ class Sync(object):
         if remote is None:
             remote = []
         else:
-            remote = json.loads(remote)
+            try:
+                remote = json.loads(remote)
+            except ValueError:
+                remote = []
 
         for i, element in enumerate(remote):
             remote[i] = tuple(element)
