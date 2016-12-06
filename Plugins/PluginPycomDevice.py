@@ -175,6 +175,7 @@ class PycomDeviceServer(QThread):
     __password = None
     __keepTrying = False
     __overrideCallback = None
+    
 
     def __init__(self):
         QThread.__init__(self)
@@ -186,7 +187,7 @@ class PycomDeviceServer(QThread):
         self.pyboardError = self.__deviceSingleton.pyboardError
         self.firmwareDetected = self.__deviceSingleton.firmwareDetected
 
-
+        
         pluginManager = e5App().getObject("PluginManager")
         pluginManager.activatePlugin("PluginPycomDevice")
         PycomDeviceServer.__shutdown = False
@@ -220,7 +221,7 @@ class PycomDeviceServer(QThread):
             PycomDeviceServer.__shutdown = True
             PycomDeviceServer.channel.exit_recv()
             time.sleep(0.2)
-            PycomDeviceServer.channel.close()
+            PycomDeviceServer.channel.close(reset=True)
         except:
             pass
         self.__deviceSingleton.relinquishMaster()
@@ -254,6 +255,9 @@ class PycomDeviceServer(QThread):
         if reason == pyboard.Pyboard.LOST_CONNECTION:
             self.disconnect()
             self.emitStatusChange("lostconnection")
+
+        if reason == pyboard.RESET:
+            self.disconnect()
 
     def __reconnectingCallback(self,reason):
         self.emitStatusChange("reattempt")        

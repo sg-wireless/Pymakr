@@ -138,7 +138,7 @@ class Serial_connection:
 
                 # if attempt == 0 and connection_timeout != 0:
                 #     sys.stdout.write('Waiting {} seconds for pyboard '.format(connection_timeout))
-                if reconnectingCallback:
+                if attempt == 0 and reconnectingCallback:
                     reconnectingCallback()
 
                 time.sleep(1)
@@ -377,6 +377,7 @@ class Socket_connection:
 
 class Pyboard:
     LOST_CONNECTION = 1
+    RESET = 2
 
     def __init__(self, device, baudrate=115200, user='micro', password='python', connection_timeout=0, keep_alive=0,reconnectingCallback=None):
         self.__device = None
@@ -393,12 +394,12 @@ class Pyboard:
             # the connection might not exist, so ignore this one
             pass
 
-    def close(self):
+    def close(self,reset=False):
         if self.connected == False:
             return
         self.close_dont_notify()
         try:
-            self.__disconnected_callback(Pyboard.LOST_CONNECTION)
+            self.__disconnected_callback(Pyboard.RESET if reset else Pyboard.LOST_CONNECTION)
         except:
             pass
 
@@ -455,9 +456,13 @@ class Pyboard:
                 return
             try:
                 if self.connection.keep_alive() == False:
-                    self.__disconnected_callback(Pyboard.LOST_CONNECTION)
-            except:
-                self.__disconnected_callback(Pyboard.LOST_CONNECTION)
+                    self.close()
+                    # self.keep_alive_interval.stop()
+                    # self.__disconnected_callback(Pyboard.LOST_CONNECTION)
+            except: # catch an exception in .keep_alive
+                self.close()
+                # self.keep_alive_interval.stop()
+                # self.__disconnected_callback(Pyboard.LOST_CONNECTION)
         except AttributeError: # happens when __disconnected_callback is not defines
             pass
 
