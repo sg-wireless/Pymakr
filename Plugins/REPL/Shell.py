@@ -22,6 +22,7 @@ from E5Gui.E5Application import e5App
 import UI.PixmapCache
 import sys
 import re
+import os
 
 class ShellAssembly(QWidget):
     """
@@ -103,6 +104,7 @@ class UPythonShell(QsciScintillaCompat):
         self.vm = vm
         self.__mainWindow = parent
         self.__lastSearch = ()
+        self.__viewManager = e5App().getObject("ViewManager")
         
         self.linesepRegExp = r"\r\n|\n|\r"
         
@@ -158,6 +160,8 @@ class UPythonShell(QsciScintillaCompat):
         self.dbs.statusChanged.connect(self.notifyStatus)
         self.dbs.pyboardError.connect(self.pyboardError)
         self.__printWelcome()
+
+        
 
         # advanced key features
         self.ctrl_active = False
@@ -708,6 +712,7 @@ class UPythonShell(QsciScintillaCompat):
         else:
             dev_str = "Pycom device"
 
+
         if status == "connecting":
             self.__write(self.tr("Connecting to a {0}...\n".format(dev_str)))
         if status == "connected":
@@ -726,6 +731,12 @@ class UPythonShell(QsciScintillaCompat):
             self.__write(self.tr("Invalid credentials, please check device username and password\n"))
         elif status == "invaddress":
             self.__write(self.tr("Invalid device address, please check the settings\n"))
+        elif status == "runinit":
+            editor = self.__viewManager.activeWindow()
+            code = editor.text()
+            fn = editor.getFileName()
+            txt = os.path.basename(fn)
+            self.__write(self.tr("\n\nRunning {0}\n".format(txt)))
         elif status == "syncinit":
             self.__write(self.tr("\n\nSyncing the project with the {0}. Please wait...\n".format(dev_str)))
         elif status == "syncend":
