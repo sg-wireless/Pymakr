@@ -176,14 +176,12 @@ class PluginPycomSync(QObject):
 
     def __syncAct(self):
         if PycomDeviceServer.getStatus() != True:
+            # open space for debugging statements if needed
             pass
-            # print("Unable to sync, not connected")
         elif self.__busy:
             pass
-            # print("Unable to sync, busy")
         elif not self.__project.isOpen():
             pass
-            # print("Unable to sync, no project open")
         else:
             self.__busy = True
             PycomDeviceServer.overrideControl(self.__continueSync)
@@ -194,13 +192,19 @@ class PluginPycomSync(QObject):
         pwd = os.getcwd()
         os.chdir(self.__getProjectPath())
         localFiles = self.__getProjectFiles()
-        sync = Sync(localFiles, deviceServer.channel)
         try:
-            sync.sync_pyboard()
-            deviceServer.emitStatusChange("syncend")
-        except Exception as e:
+
+            sync = Sync(localFiles, deviceServer.channel)
+            try:
+                sync.sync_pyboard()
+                deviceServer.emitStatusChange("syncend")
+            except Exception as e:
+                deviceServer.emitStatusChange("syncfailed")
+            sync.finish_sync()
+
+        except:
             deviceServer.emitStatusChange("syncfailed")
-        sync.finish_sync()
+
         os.chdir(pwd)
         self.__busy = False
 
@@ -221,6 +225,7 @@ class PluginPycomSync(QObject):
         if editor != None:
             code = editor.text()
             deviceServer.exec_code(code)
+        
         
         self.__busy = False
 

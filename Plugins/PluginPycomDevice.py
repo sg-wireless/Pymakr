@@ -211,6 +211,7 @@ class PycomDeviceServer(QThread):
             if not self.__deviceSingleton.isThereMasterThread():
                 self.moveToThread(self)
                 self.start()
+            
         except:
             return False
 
@@ -255,11 +256,10 @@ class PycomDeviceServer(QThread):
         if reason == pyboard.Pyboard.LOST_CONNECTION:
             self.disconnect()
             self.emitStatusChange("lostconnection")
-
-        if reason == pyboard.RESET:
+        if reason == pyboard.Pyboard.RESET:
             self.disconnect()
 
-    def __reconnectingCallback(self,reason):
+    def __reconnectingCallback(self):
         self.emitStatusChange("reattempt")        
 
     def __handleChannelExceptions(self, err):

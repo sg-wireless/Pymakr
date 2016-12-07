@@ -129,21 +129,15 @@ class Serial_connection:
                     self.reset_input_buffer = self.stream.reset_input_buffer
                 self.__expose_stream_methods()
                 self.connected = True
-                # if attempt != 0:
-                #     print('')   # to break the dotted line printed on retries
                 break
             except (OSError, IOError): # Py2 and Py3 have different errors
                 if connection_timeout == 0:
                     continue
 
-                # if attempt == 0 and connection_timeout != 0:
-                #     sys.stdout.write('Waiting {} seconds for pyboard '.format(connection_timeout))
                 if attempt == 0 and reconnectingCallback:
                     reconnectingCallback()
 
                 time.sleep(1)
-                # sys.stdout.write('.')
-                # sys.stdout.flush()
 
     def authenticate(self, user, password):
         # needs no authentication
@@ -156,6 +150,8 @@ class Serial_connection:
             self.stream.dtr = True
             return True
         except IOError:
+            return False
+        except Exception:
             return False
         return True
 
@@ -382,13 +378,14 @@ class Pyboard:
     def __init__(self, device, baudrate=115200, user='micro', password='python', connection_timeout=0, keep_alive=0,reconnectingCallback=None):
         self.__device = None
         self._connect(device, baudrate, user, password, connection_timeout, keep_alive, False,reconnectingCallback=reconnectingCallback)
+        
 
     def close_dont_notify(self):
         if self.connected == False:
             return
         try:
-            self.keep_alive_interval.stop()
             self.connected = False
+            self.keep_alive_interval.stop()
             self.connection.close()
         except:
             # the connection might not exist, so ignore this one
@@ -401,6 +398,7 @@ class Pyboard:
         try:
             self.__disconnected_callback(Pyboard.RESET if reset else Pyboard.LOST_CONNECTION)
         except:
+
             pass
 
     def get_connection_type(self):
@@ -419,6 +417,7 @@ class Pyboard:
 
     def _connect(self, device, baudrate=115200, user='micro', password='python', connection_timeout=0, keep_alive=0, raw=False,reconnectingCallback=None):
         self.connected = False
+        
         if self.__device == None:
             self.__device = device
             self.__baudrate = baudrate
@@ -457,17 +456,12 @@ class Pyboard:
             try:
                 if self.connection.keep_alive() == False:
                     self.close()
-                    # self.keep_alive_interval.stop()
-                    # self.__disconnected_callback(Pyboard.LOST_CONNECTION)
             except: # catch an exception in .keep_alive
                 self.close()
-                # self.keep_alive_interval.stop()
-                # self.__disconnected_callback(Pyboard.LOST_CONNECTION)
         except AttributeError: # happens when __disconnected_callback is not defines
             pass
 
     def check_connection(self):
-        # self._keep_alive()
         return self.connected
 
     def read_until(self, ending, timeout=10, data_consumer=None):
@@ -539,7 +533,7 @@ class Pyboard:
         data = to_bytes(data)
         try:
             self.connection.write(data)
-        except:
+        except Exception as e:
             self.close()
 
     def recv(self, callback):
