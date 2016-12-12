@@ -97,6 +97,7 @@ class MonitorPC(object):
         self.__restore_channel()
 
     def request_ack(self):
+        time.sleep(0.1)
         self.__send_command(b'\x00\x00')
         if self.__read_with_timeout(3, 5.0) != b'\x1b\x00\x00':
             raise TransferError()
@@ -122,6 +123,7 @@ class MonitorPC(object):
         self.__send(name)
         self.__send_int_32(len(content))
         for i in range(1 + data_len // 256):
+            time.sleep(0.2)
             self.__send(MonitorPC.get_string_block(content, i, 256))
             self.request_ack()
 
