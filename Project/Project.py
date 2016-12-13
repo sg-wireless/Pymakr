@@ -2700,7 +2700,6 @@ class Project(QObject):
                                     vcsSystem = vcsData[0][0]
                                 self.pdata["VCS"] = [vcsSystem]
                                 self.vcs = self.initVCS()
-                                self.setDirty(True)
                     if self.vcs is not None and \
                         (self.vcs.vcsRegisteredState(self.ppath) !=
                             self.vcs.canBeCommitted):
