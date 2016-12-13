@@ -185,12 +185,15 @@ class PluginLiteUI(QObject):
                         self.__toolbar.addAction(el)
                         toolbarManager.addAction(el, title)
 
-        ui.registerToolbar("lite", title, self.__toolbar)
-        if firstToolbar:
-            ui.insertToolBar(firstToolbar, self.__toolbar)
-        else:
-            ui.addToolBar(self.__toolbar)
-
+        try:
+            ui.registerToolbar("lite", title, self.__toolbar)
+        
+            if firstToolbar:
+                ui.insertToolBar(firstToolbar, self.__toolbar)
+            else:
+                ui.addToolBar(self.__toolbar)
+        except KeyError:
+            pass # happens when toolbar is already registered
         self.__toolbar.setIconSize(QSize(32, 32))
 
     def __setupToolbars(self):
