@@ -11,6 +11,7 @@ from REPL.Shell import ShellAssembly
 from PluginPycomDevice import PycomDeviceServer
 from PycomSync.sync import Sync
 from PycomDevice.monitor_pc import TransferError
+from PycomDevice.pyboard import PyboardError
 
 # Start-Of-Header
 name = "Pycom Sync"
@@ -217,17 +218,21 @@ class PluginPycomSync(QObject):
     def __continueRun(self, deviceServer):
         deviceServer.emitStatusChange("runinit")
         editor = self.__viewManager.activeWindow()
-        if int(self.getPreferences("softResetScripts")) == 2: # Qt.Checked is 2
-            deviceServer.channel.reset()
-            deviceServer.emitStatusChange("softreset")
-        else:
-            deviceServer.channel.stop_running_programs()
-            
-        if editor != None:
-            code = editor.text()
-            deviceServer.exec_code(code)
-        
-        
+        try:
+            if int(self.getPreferences("softResetScripts")) == 2: # Qt.Checked is 2
+                deviceServer.channel.reset()
+                deviceServer.emitStatusChange("softreset")
+            else:
+                deviceServer.channel.stop_running_programs()
+
+            if editor != None:
+                code = editor.text()
+                deviceServer.exec_code(code)
+                
+        except PyboardError as e:
+            self.__busy = False
+            raise e
+
         self.__busy = False
 
     def __projectOpened(self):
