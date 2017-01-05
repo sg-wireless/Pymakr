@@ -63,6 +63,8 @@ class PluginPycomDevice(QObject):
         self.__oldCloseEvent = self.__ui.closeEvent
         self.__ui.closeEvent = self.__onWindowUnload
 
+        self.__pds = None
+
         self.__windowLoaded = False
         self.__path = os.path.dirname(os.path.realpath(__file__))
         UI.PixmapCache.addSearchPath(self.__path + "/PycomDevice/img")
@@ -82,7 +84,8 @@ class PluginPycomDevice(QObject):
         """
         Public method to deactivate this plugin.
         """
-        self.__pds.disconnect()
+        if self.__pds: 
+            self.__pds.disconnect()
 
     def __onWindowLoad(self, event):
         # I must run only once
@@ -95,7 +98,8 @@ class PluginPycomDevice(QObject):
 
     def __onWindowUnload(self, event):
         self.__ui.closeEvent = self.__oldCloseEvent
-        self.__pds.disconnect()
+        if self.__pds: 
+            self.__pds.disconnect()
         self.__ui.closeEvent(event)
 
     def __initializeConnectDevice(self):
@@ -104,11 +108,12 @@ class PluginPycomDevice(QObject):
         self.__pds.connect()
 
     def loadSettings(self):
-        self.__pds.setConnectionParameters(
-            self.getPreferences("address"),
-            self.getPreferences("username"),
-            self.getPreferences("password")
-            )
+        if self.__pds: 
+            self.__pds.setConnectionParameters(
+                self.getPreferences("address"),
+                self.getPreferences("username"),
+                self.getPreferences("password")
+                )
 
     def getPreferences(self, name, default=None):
         return Preferences.Prefs.settings.value("PycomDevice/" + name, default)
@@ -118,7 +123,8 @@ class PluginPycomDevice(QObject):
 
     def preferencesChanged(self):
         self.loadSettings()
-        self.__pds.restart()
+        if self.__pds: 
+            self.__pds.restart()
 
 
 class PycomDeviceSingleton(QObject):

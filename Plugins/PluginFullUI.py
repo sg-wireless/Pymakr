@@ -382,12 +382,17 @@ class PluginFullUI(QObject):
         toHideBottom = list(allBottomTabs - bottomTabsToShow)
         toHideLeft = list(allLeftTabs - leftTabsToShow)
 
-        UiHelper.hideItemsSidebar(self.__ui.leftSidebar, toHideLeft)
+        try:
+            UiHelper.hideItemsSidebar(self.__ui.leftSidebar, toHideLeft)
+            self.__ui.leftSidebar.setMaximumWidth(300)
+
+        except AttributeError:
+            # most likely the leftSidebar is not initialized, which can happen on windows sometimes
+            pass
 
         if Preferences.Prefs.settings.value("UI/AdvancedBottomSidebar", False) != "true":
             UiHelper.hideItemsSidebar(self.__ui.bottomSidebar, toHideBottom)
 
-        self.__ui.leftSidebar.setMaximumWidth(300)
         self.__ui.bottomSidebar.setMaximumHeight(200)
 
         self.__ui.rightSidebar.hide()

@@ -219,8 +219,12 @@ class PluginLiteUI(QObject):
 
         toHideBottom = list(allBottomTabs - bottomTabsToShow)
         toHideLeft = list(allLeftTabs - leftTabsToShow)
+        try:
+            UiHelper.hideItemsSidebar(self.__ui.leftSidebar, toHideLeft)
+        except AttributeError:
+            # most likely the leftSidebar is not initialized, which can happen on windows sometimes
+            pass
 
-        UiHelper.hideItemsSidebar(self.__ui.leftSidebar, toHideLeft)
         UiHelper.hideItemsSidebar(self.__ui.bottomSidebar, toHideBottom)
 
 
