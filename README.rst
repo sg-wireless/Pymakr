@@ -1,3 +1,10 @@
+
+# deprecated
+This project is no longer maintained. Pymakr has been replaced by plugins for Atom and VSCode:
+
+https://github.com/pycom/pymakr-atom/
+https://github.com/pycom/pymakr-vsc/
+
 ========================
 README for the eric6 IDE
 ========================
@@ -99,7 +106,7 @@ correct installation order (see above) is followed. An API file for eric6 is
 installed in the same place.
 
 In order to use autocompletion and calltips in eric6 please configure these
-functions in the "Preferences Dialog" on the "Editor -> APIs", 
+functions in the "Preferences Dialog" on the "Editor -> APIs",
 "Editor -> Autocompletion" and "Editor -> Calltips" pages.
 
 7. Remote Debugger
@@ -115,7 +122,7 @@ debug client. ``DebugClient.py`` is the traditional debugger and
 ``DebugClientThreads.py`` is a multithreading variant of the debug client.
 Please copy all needed files to a place accessible through the Python path
 of the remote machine and set the entries of the a.m. configuration tab
-accordingly. 
+accordingly.
 
 8. Passive Debugging
 --------------------
@@ -125,7 +132,7 @@ see the file README-passive-debugging.rst.
 
 9. Plug-in System
 -----------------
-eric6 contains a plug-in system, that is used to extend eric6's 
+eric6 contains a plug-in system, that is used to extend eric6's
 functionality. Some plug-ins are part of eric6. Additional plugins
 are available via the Internet. Please use the built-in plug-in
 repository dialog to get a list of available (official) plug-ins
@@ -137,23 +144,23 @@ please see the documentation area.
 At the moment eric6 provides interfaces to the following software
 packages.
 
-    Qt-Designer 
+    Qt-Designer
         This is part of the Qt distribution and is used to generate user
         interfaces.
-    
-    Qt-Linguist 
+
+    Qt-Linguist
         This is part of the Qt distribution and is used to generate
         translations.
-    
-    Qt-Assistant 
+
+    Qt-Assistant
         This is part of the Qt distribution and may be used to display help
         files.
-    
+
     Mercurial
         This is a distributed version control system available from
         <http://mercurial.selenic.com>. It is the one used by eric6 itself.
-    
-    Subversion 
+
+    Subversion
         This is a version control system available from
         <http://subversion.apache.org>. eric6 supports two different Subversion
         interfaces. One is using the svn command line tool, the other is using
@@ -161,17 +168,17 @@ packages.
         automatically depending on the installed software. The PySvn interface
         is prefered. This automatism can be overridden an a per project basis
         using the "User Properties" dialog.
-    
-    coverage.py 
+
+    coverage.py
         This is a tool to check Python code coverage. A slightly modified
         version is part of the eric6 distribution. The original version is
         available from <http://www.nedbatchelder.com/code/modules/coverage.html>
-    
-    tabnanny 
+
+    tabnanny
         This is a tool to check Python code for white-space related problems.
         It is part of the standard Python installation.
-    
-    profile 
+
+    profile
         This is part of the standard Python distribution and is used to profile
         Python source code.
 
@@ -199,10 +206,10 @@ the file README-eric6-doc.rst.
 
 14. License
 -----------
-eric6 (and the others) is released under the conditions of the GPL. See 
+eric6 (and the others) is released under the conditions of the GPL. See
 separate license file for more details. Third party software included in
 eric6 is released under their respective license and contained in the
-eric6 distribution for convenience. 
+eric6 distribution for convenience.
 
 15. Bugs and other reports
 --------------------------
